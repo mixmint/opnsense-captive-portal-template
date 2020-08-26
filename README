@@ -10,3 +10,4 @@ To read more about the captive portal, I suggest you have a look here: https://d
 
 This template supports multilingualism, checks what is the preferred language of the browser, saves a cookie with information about which language has been read or which has been selected manually. It uses the translations stored in the files lang_xx.json in the js directory.
 The base64 logo is set in the settings.js file.
+<img src="screenshot.jpg" />
