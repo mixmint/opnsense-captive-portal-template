@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html dir="ltr">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="robots" content="noindex, nofollow, noodp, noydir" />
+		<meta name="keywords" content="" />
+		<meta name="description" content="" />
+		<meta name="copyright" content="Mirosław Majka, mix@proask.pl" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
+
+		<title>System logowania użytkowników | ProASK Networks</title>
+		<link href="images/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon">
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+		<link href="css/cpModal.min.css" rel="stylesheet">
+		<link href="css/custom.css" rel="stylesheet">
+
+		<script src="js/zone.js"></script>
+
+		<script src="js/jquery-1.11.2.min.js"></script>
+		<script src="js/css_browser_selector.js"></script>
+		<script src="js/cpModal.min.js"></script>
+		<script src="js/jquery.polyglot.language.switcher.js"></script>
+
+		<script>
+			var langText = {};
+			function getURLparams() {
+				var vars = [], hash;
+				var hashes = window.location.href.slice(window.location.href.indexOf('?') + 1).split('&');
+				for(var i = 0; i < hashes.length; i++) {
+					hash = hashes[i].split('=');
+					vars.push(hash[0]);
+					vars[hash[0]] = hash[1];
+				}
+				return vars;
+			}
+			function loadSETTINGS() {
+				var file = 'js/settings.json';
+				$.ajax({
+					url: file,
+					dataType: 'json',
+					success: function(data) {
+						$.each(JSON.parse(JSON.stringify(data)),function(i, item) {
+							if (~i.indexOf('logo')) {
+								$('#logo').html('<img class="brand-logo" src="' + item + '" height="150" width="150">');
+							} else {
+								$('#' + i).text(item);
+							}
+						});
+					}
+				});
+			}
+			function loadJSON(lang) {
+				var file = 'js/lang_' + lang + '.json';
+				return $.ajax({
+					url: file,
+					dataType: 'json',
+					success: function(data) {
+						$.extend(langText, JSON.parse(JSON.stringify(data)));
+						$.each(JSON.parse(JSON.stringify(data)),function(i, item) {
+							if (~i.indexOf('pagetitle')) {
+								$('title').text(item);
+							} else if (~i.indexOf('_placeholder')) {
+								$('#' + i.replace("_placeholder",'')).attr('placeholder',item);
+							} else {
+								$('#' + i).text(item);
+							}
+						});
+					}
+				});
+			}
+			function setLang(id) {
+				$(id).polyglotLanguageSwitcher({
+					effect: 'slide',
+					testMode: true,
+					onChange: function(evt){
+						setTimeout(createCookie('lang', evt.selectedItem, 31),100);
+						loadJSON(evt.selectedItem);
+						$('#inputUsername').prop('readonly', false);
+						$('#inputUsername').focus();
+					}
+				});
+			}
+
+			function setLangLayout(arr, sel, id) {
+				var html = '<div id="polyglotLanguageSwitcher"><form action="javascript:void(0);"><select id="polyglot-language-options">';
+				$.each(arr, function(key, val) {
+					html += '<option id="' + key + '" value="' + key + '"';
+					if (key == sel) html += ' selected';
+					html += '>' + val + '</option>';
+				});
+				html += '</select></form></div>';
+				$(id).replaceWith(html);
+				setLang(id);
+			}
+
+			function clientInfo(stringId,val) {
+				$(document).find('[id*="' + stringId + '"]').text(val);
+			}
+
+			function createCookie(name,value,days) {
+				var d = new Date();
+				d.setTime(d.getTime() + (days*24*60*60*1000));
+				var expires = "expires=" + d.toGMTString();
+				document.cookie = name + "=" + value + ";" + expires + ";path=/";
+			}
+
+			function getCookie(cname) {
+				var name = cname + "=";
+				var decodedCookie = decodeURIComponent(document.cookie);
+				var ca = decodedCookie.split(';');
+				for(var i = 0; i < ca.length; i++) {
+					var c = ca[i];
+					while (c.charAt(0) == ' ') {
+						c = c.substring(1);
+					}
+					if (c.indexOf(name) == 0) {
+						return c.substring(name.length, c.length);
+					}
+				}
+				return "";
+			}
+
+			function authFailed() {
+				$('#MSG').cpModal({
+					title: langText.cp_error_login_err,
+					subtitle: langText.cp_error_info_title,
+					padding: 20,
+					headerColor: '#f12184',
+					iconText: '&#9888;',
+					borderBottom: false,
+					timeout: 5000,
+					timeoutProgressbar: true,
+					pauseOnHover: true,
+					overlayColor: 'rgba(0,0,0,.3)',
+					onClosed: function(){
+						$('#MSG').replaceWith('<div id="MSG"></div>');
+					},
+					afterRender: function(){
+						$('#MSG .cpModal-content').append(langText.cp_error_info + langText.cp_error_solution_title + langText.cp_error_solution);
+					}
+				});
+				$('#MSG').cpModal('open');
+			}
+
+			function showRules() {
+				$('#MSG').cpModal({
+					title: langText.cp_rules_title,
+					subtitle: langText.cp_rules_info_title,
+					padding: 20,
+					top: 70,
+					bottom: 70,
+					width: 800,
+					headerColor: '#4ca1af',
+					iconText: '&#167;',
+					borderBottom: false,
+					timeout: false,
+					overlayColor: 'rgba(0,0,0,.3)',
+					onClosed: function(){
+						$('#MSG').replaceWith('<div id="MSG"></div>');
+					},
+					afterRender: function(){
+						$('#MSG .cpModal-content').append(langText.cp_rules_content);
+					}
+				});
+				$('#MSG').cpModal('open');
+			}
+
+			function connFailed() {
+				$('#MSG').cpModal({
+					title: langText.cp_error_title,
+					subtitle: langText.cp_error_server_connection,
+					headerColor: '#f12184',
+					iconText: '&#9888;',
+					borderBottom: false,
+					timeout: false,
+					overlayColor: 'rgba(0,0,0,.3)',
+					onClosed: function(){
+						$('#MSG').replaceWith('<div id="MSG"></div>');
+					}
+				});
+				$('#MSG').cpModal('open');
+			}
+
+			$(document).ready(function() {
+				loadSETTINGS();
+				var langs = {
+					'pl':'Polski',
+					'en':'English'
+				};
+				var langsRTL = ['ar','dv','fa','he','ku','ur'];
+				var lang = ((navigator.language || navigator.userLanguage).substring(0,2)).toLowerCase();
+				if (getCookie('lang')) lang = getCookie('lang');
+				
+				if (lang in langs) {
+					$('html').attr('lang',lang);
+					if ($.inArray(lang,langsRTL) !== -1) $('html').attr('dir','rtl');
+						else $('html').attr('dir','ltr');
+					if (!getCookie('lang')) createCookie('lang', lang, 31);
+				} else {
+					lang = 'en';
+					$('html').attr('lang',lang);
+					$('html').attr('dir','ltr');
+					createCookie('lang', lang, 31);
+				}
+				
+				$.when(loadJSON(lang)).done(function(){
+					setLangLayout(langs, lang, '#polyglotLanguageSwitcher');
+					$('#t-login-rules').prop('checked', false);
+					$('#t-login-rules-anon').prop('checked', false);
+					$('#signin').prop('disabled', true);
+					$('#signin_anon').prop('disabled', true);
+					$('#t-login-rules').on('click', function() {
+						if ($('#t-login-rules').prop('checked')) $('#signin').prop('disabled', false);
+							else $('#signin').prop('disabled', true);
+					});
+					$('#t-login-rules-anon').on('click', function() {
+						if ($('#t-login-rules-anon').prop('checked')) $('#signin_anon').prop('disabled', false);
+							else $('#signin_anon').prop('disabled', true);
+					});
+					
+					$("input[readonly]").on('focus', function() {$("input[readonly]").prop('readonly', false);});
+					$("input:not([readonly])").on('blur', function() {$("input:not([readonly])").prop('readonly', true);});
+
+					/**
+					* logon action
+					*/
+					$("#signin").click(function (event) {
+						event.preventDefault();
+						// try to login
+						$.ajax({
+							type: "POST",
+							url: "/api/captiveportal/access/logon/" + zoneid + "/",
+							dataType:"json",
+							data:{ user: $("#inputUsername").val(), password: $("#inputPassword").val() }
+						}).done(function(data) {
+							// redirect on successful login
+							if (data['clientState'] == 'AUTHORIZED') {
+								if (getURLparams()['redirurl'] != undefined) {
+									window.location = 'http://'+getURLparams()['redirurl']+'?refresh';
+								} else {
+									// no target, reload page
+									window.location.reload();
+								}
+							} else {
+								$("#inputUsername").val("");
+								$("#inputPassword").val("");
+								authFailed();
+							}
+						}).fail(function(){
+							connFailed();
+						});
+					});
+
+					/**
+					* login anonymous, only applicable when server is configured without authentication
+					*/
+					$("#signin_anon").click(function (event) {
+						event.preventDefault();
+						// try to login
+						$.ajax({
+							type: "POST",
+							url: "/api/captiveportal/access/logon/" + zoneid + "/",
+							dataType:"json",
+							data:{ user: '', password: '' }
+						}).done(function(data) {
+							clientInfo('ipAddress',data['ipAddress']);
+							// redirect on successful login
+							if (data['clientState'] == 'AUTHORIZED') {
+								if (getURLparams()['redirurl'] != undefined) {
+									window.location = 'http://'+getURLparams()['redirurl']+'?refresh';
+								} else {
+									window.location.reload();
+								}
+							} else {
+								$("#inputUsername").val("");
+								$("#inputPassword").val("");
+								authFailed();
+							}
+						}).fail(function(){
+							connFailed();
+						});
+					});
+
+					/**
+					* logoff action
+					*/
+					$("#logoff").click(function (event) {
+						event.preventDefault();
+						// try to login
+						$.ajax({
+							type: "POST",
+							url: "/api/captiveportal/access/logoff/" + zoneid + "/",
+							dataType:"json",
+							data:{ user: '', password: '' }
+						}).done(function(data) {
+							// refresh page
+							window.location.reload();
+						}).fail(function(){
+							connFailed();
+						});
+					});
+
+					/**
+					* close / hide error message
+					*/
+					$('[id^="rules"].link').click(function(){
+						showRules();
+					});
+					/**
+					* execute after pageload
+					*/
+					$.ajax({
+						type: "POST",
+						url: "/api/captiveportal/access/status/" + zoneid + "/",
+						dataType:"json",
+						data:{ user: $("#inputUsername").val(), password: $("#inputPassword").val() }
+					}).done(function(data) {
+						if (data['clientState'] == 'AUTHORIZED') {
+							clientInfo('ipAddress',data['ipAddress']);
+							clientInfo('macAddress',data['macAddress']);
+							$('#login_form').addClass('hidden');
+							$("#logout_frm").removeClass('hidden');
+						} else if (data['authType'] == 'none') {
+							clientInfo('ipAddress',data['ipAddress']);
+							$('#login_form').addClass('hidden');
+							$("#login_none").removeClass('hidden');
+						} else {
+							clientInfo('ipAddress',data['ipAddress']);
+							$("#login_password").removeClass('hidden');
+						}
+					}).fail(function(){
+						connFailed();
+					});
+				});
+			});
+		</script>
+	</head>
+	<body class="no-sidebar using-mouse">
+		<div id="particles-js"></div>
+		<div class="captiveportal">
+			<section class="t-element box-0 t-section t-section-content-middle t-section-boxed t-section-items-middle t-top-section">
+				<div class="t-container">
+					<div class="t-row">
+						<div class="t-element t-column t-col-100">
+							<div class="t-column-wrap t-element-populated">
+								<div class="t-widget-wrap">
+									<div class="t-element box-1 t-section-content-middle t-section-boxed t-section t-inner-section">
+										<div class="t-container t-column-gap-default">
+											<div class="t-row">
+												<div class="t-element box-2 t-column t-col-50 t-inner-column">
+													<div class="t-column-wrap t-element-populated">
+														<div class="t-widget-wrap">
+															<div class="t-element box-3 t-view-stacked t-shape-circle t-widget t-widget-icon">
+																<div class="t-widget-container">
+																	<div class="t-icon-wrapper">
+																		<div id="logo" class="t-icon"></div>
+																		<div class="t-widget-heading">
+																			<h2 id="cp_portal_head_title" class="t-heading-title t-size-default"></h2>
+																		</div>
+																	</div>
+																</div>
+															</div>
+															<div class="t-element box-5 t-widget t-widget-text-editor">
+																<div class="t-widget-container">
+																	<div class="t-text-editor t-clearfix">
+																		<p id="cp_portal_info1">
+																	</div>
+																</div>
+															</div>
+															<div class="t-element box-6 t-widget t-widget-spacer">
+																<div class="t-widget-container">
+																	<div class="t-spacer">
+																		<div id="cp_portal_cookies_note" class="t-spacer-inner"></div>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="t-element box-7 t-column t-col-50 t-inner-column">
+													<div class="t-column-wrap t-element-populated">
+														<div class="t-widget-wrap">
+															<div class="t-element box-8 t-button-align-stretch t-widget t-widget-login">
+																<div class="t-widget-container">
+																	<div class="t-form-fields-wrapper">
+																		<div id="polyglotLanguageSwitcher"></div>
+																		<form id="login_form" class="t-login t-form">
+																			<div id="fieldUsername" class="t-field-type-text t-field-group t-column t-col-100 t-field-required">
+																				<label id="username" for="inputUsername"></label>
+																				<input type="text" id="inputUsername" class="t-field t-field-textual t-size-sm" required autocomplete="off" autocapitalize="none" readonly>
+																			</div>
+																			<div id="fieldPassword" class="t-field-type-text t-field-group t-column t-col-100 t-field-required">
+																				<label id="userpass" for="inputPassword"></label>
+																				<input type="password" id="inputPassword" class="t-field t-field-textual t-size-sm" required readonly>
+																			</div>
+																			<div class="t-field-type-checkbox t-field-group t-column t-col-100 t-rules-checkbox">
+																				<label for="t-login-rules">
+																					<input type="checkbox" id="t-login-rules" name="rules"><span></span>
+																					<span class="text"><span id="termcondition1"></span> <span id="rules" class="link"></span> <span id="termcondition2"></span></span>
+																				</label>
+																			</div>
+																			<div id="signin-box" class="t-field-group t-column t-field-type-submit t-col-100">
+																				<button class="t-size-md t-button" id="signin" type="button"></button>
+																			</div>
+																			<div class="t-field-group t-column t-col-100 interface-config">
+																				<p class="flex-100"><span id="cp_portal_if_config"></span>
+																				<p><span id="cp_portal_if_config_ip" class="if-title"></span> <span id="ipAddress" class="ip-address"></span>
+																			</div>
+																		</form>
+																	</div>
+																	<!-- User option 3: Already logged in, show logout button -->
+																	<div id="logout_frm" class="t-form-fields-wrapper t-field-group hidden">
+																		<div id="status_info" class="t-widget-wrap">
+																			<div class="t-widget-heading">
+																				<h4 id="status" class="t-heading-title"></h4>
+																			</div>
+																			<div class="t-field-group t-column t-col-100 interface-config">
+																				<p><span id="cp_portal_log_ip" class="if-title"></span> <span id="connected_ipAddress" class="ip-address"></span>
+																				<p><span id="cp_portal_log_mac" class="if-title"></span> <span id="connected_macAddress" class="mac-address"></span>
+																			</div>
+																			<p id="status_pretext1" class="pretext">
+																			<p id="status_pretext2" class="pretext">
+																		</div>
+																		<div class="t-widget-wrap">
+																			<form class="t-column t-col-100">
+																				<div class="t-field-group t-column t-field-type-submit t-col-100">
+																					<button class="t-size-md t-button" id="logoff" type="button"></button>
+																				</div>
+																			</form>
+																		</div>
+																	</div>
+																	<!-- User option 2: login needed, without username, password -->
+																	<div id="login_none" class="t-form-fields-wrapper t-field-group hidden">
+																		<div id="anon_info" class="t-widget-wrap">
+																			<div class="t-widget-heading">
+																				<h4 id="anon_title" class="t-heading-title"></h4>
+																			</div>
+																			<p id="anon_pretext1" class="pretext">
+																			<p id="anon_pretext2" class="pretext">
+																		</div>
+																		<div class="t-field-type-checkbox t-field-group t-column t-col-100 t-rules-checkbox">
+																			<label for="t-login-rules-anon">
+																				<input type="checkbox" id="t-login-rules-anon" name="rules"><span></span>
+																				<span class="text"><span id="termcondition_anon1"></span> <span id="rules_anon" class="link"></span> <span id="termcondition_anon2"></span></span>
+																			</label>
+																		</div>
+																		<form class="t-column t-col-100">
+																			<div class="t-field-group t-column t-field-type-submit t-col-100">
+																				<button class="t-size-md t-button" id="signin_anon" type="button"></button>
+																			</div>
+																		</form>
+																		<div class="t-field-group t-column t-col-100"></div>
+																		<div class="t-field-group t-column t-col-100 interface-config">
+																			<p class="flex-100"><span id="cp_portal_if_anon_config"></span>
+																			<p><span id="cp_portal_if_anon_ip" class="if-title"></span> <span id="anon_ipAddress" class="ip-address"></span>
+																		</div>
+																	</div>
+																	<!-- Message dialog -->
+																	<div id="MSG"></div>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</div>
+		<script src="js/particles.min.js"></script>
+		<script src="js/particles-settings.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+	</body>
+</html>
