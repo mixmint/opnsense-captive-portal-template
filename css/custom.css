@@ -1005,8 +1005,8 @@ label > input[type="checkbox"]:not(old):checked + span:not([id]):not([class]):be
 	display: table-cell;
 	width: 20px;
 	height: 20px;
-	font-size: 22px;
-	line-height: 18px;
+	font-size: 24px;
+	line-height: 20px;
 	text-align: center;
 	font-weight: normal;
 	box-sizing: border-box;
@@ -1017,7 +1017,7 @@ label > input[type=radio]:not(old):checked + span:not([id]):not([class]) > span:
 	display: table-cell;
 	width: 18px;
 	height: 18px;
-	line-height: 18px;
+	line-height: 20px;
 	text-align: center;
 	font-weight: normal;
 	box-sizing: border-box;
