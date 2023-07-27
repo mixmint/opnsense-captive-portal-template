@@ -99,6 +99,7 @@ function setLangLayout(arr, sel, id) {
 }
 
 function clientInfo(data) {
+	console.log(data);
 	let selector = $('#cp_portal_event_' + data['authType']);
 	if (typeof data['ipAddress'] !== 'undefined' && data['ipAddress'].length) {
 		selector.append('<p><span class="if-title">' + langText.cp_portal_ifconfig_ip_address + '</span> <span class="config-address">' + data['ipAddress'] + '</span></p>');
@@ -326,23 +327,17 @@ $(document).ready(function() {
 			}).done(function(data) {
 				clientInfo(data);
 				if (data['clientState'] == 'AUTHORIZED') {
-					$('.right-side').removeClass('hidden');
-					$('#login_normal').addClass('hidden')
+					$('#login_normal').addClass('hidden');
 					$('#logout_undefined').removeClass('hidden');
 					$('.row').addClass('ready');
 				} else if (data['authType'] == 'none') {
-					$('.left-side').addClass('col-lg-7');
-					$('.right-side').removeClass('hidden');
-					$('#login_undefined').removeClass('hidden');
 					$('#login_normal').addClass('hidden');
+					$('#login_none').removeClass('hidden');
 					$('.row').addClass('ready');
 				} else {
-					$('.left-side').addClass('col-lg-7');
-					$('.right-side').removeClass('hidden');
 					$('#login_normal').removeClass('hidden');
 					$('.row').addClass('ready');
 				}
-
 			}).fail(function(){
 				setTimeout(connFailed(),1000);
 			});
