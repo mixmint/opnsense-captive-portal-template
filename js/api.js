@@ -337,7 +337,6 @@ $(document).ready(function() {
 					$('#login_normal').removeClass('hidden');
 					$('.row').addClass('ready');
 				}
-
 			}).fail(function(){
 				setTimeout(connFailed(),1000);
 			});
