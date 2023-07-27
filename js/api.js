@@ -326,19 +326,14 @@ $(document).ready(function() {
 			}).done(function(data) {
 				clientInfo(data);
 				if (data['clientState'] == 'AUTHORIZED') {
-					$('.right-side').removeClass('hidden');
 					$('#login_normal').addClass('hidden')
 					$('#logout_undefined').removeClass('hidden');
 					$('.row').addClass('ready');
 				} else if (data['authType'] == 'none') {
-					$('.left-side').addClass('col-lg-7');
-					$('.right-side').removeClass('hidden');
-					$('#login_undefined').removeClass('hidden');
+					$('#logout_undefined').removeClass('hidden');
 					$('#login_normal').addClass('hidden');
 					$('.row').addClass('ready');
 				} else {
-					$('.left-side').addClass('col-lg-7');
-					$('.right-side').removeClass('hidden');
 					$('#login_normal').removeClass('hidden');
 					$('.row').addClass('ready');
 				}
