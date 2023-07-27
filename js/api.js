@@ -326,12 +326,12 @@ $(document).ready(function() {
 			}).done(function(data) {
 				clientInfo(data);
 				if (data['clientState'] == 'AUTHORIZED') {
-					$('#login_normal').addClass('hidden')
+					$('#login_normal').addClass('hidden');
 					$('#logout_undefined').removeClass('hidden');
 					$('.row').addClass('ready');
 				} else if (data['authType'] == 'none') {
-					$('#logout_undefined').removeClass('hidden');
 					$('#login_normal').addClass('hidden');
+					$('#login_none').removeClass('hidden');
 					$('.row').addClass('ready');
 				} else {
 					$('#login_normal').removeClass('hidden');
