@@ -1,6 +1,11 @@
 {
+	"isp_info": {
+		"isp_name": "< Nazwa ISP > - dostawca us\u0142ug internetowych",
+		"isp_address": "Nazwa ulicy 10, miasto i kod pocztowy itp.",
+		"isp_id": "Pozosta\u0142e informacje."
+	},
+	"footer_isp_info": {},
 	"pagetitle": "System logowania u\u017cytkownik\u00f3w | < Nazwa ISP >",
-	"firm_slogan": "< Nazwa ISP > - dostawca us\u0142ug internetowych",
 	"username": "Nazwa u\u017cytkownika",
 	"inputUsername_placeholder": "Nazwa u\u017cytkownika",
 	"userpass": "Has\u0142o",

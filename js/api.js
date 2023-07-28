@@ -1,9 +1,7 @@
-var langText = {};
-var settings = {};
-var lang, langsRTL = ['ar','dv','fa','ha','he','sy'], _root = document.querySelector(':root');;
+var settings = {}, langText = {}, lang, langsRTL = ['ar','dv','fa','ha','he','sy'], _root = document.querySelector(':root');
 
-const iso = (timeStamp=Date.now()) => {
-	return new Date(timeStamp - (new Date().getTimezoneOffset() * 60 * 1000)).toISOString().slice(0,-5).split('T')
+const iso = (timeStamp = Date.now()) => {
+	return new Date(timeStamp - (new Date().getTimezoneOffset() * 60 * 1000)).toISOString().slice(0,-5).split('T');
 }
 
 function getURLparams() {
@@ -12,7 +10,7 @@ function getURLparams() {
 	for(var i = 0; i < hashes.length; i++) {
 		hash = hashes[i].split('=');
 		vars.push(hash[0]);
-		vars[hash[0]] = hash[1];
+		vars[hash[0]] = hash[1].replace(/^(?:(.*:)?\/\/)?(.*)/i, (match, schemma, nonSchemmaUrl) => schemma ? match : `http://${nonSchemmaUrl}`);
 	}
 	return vars;
 }
@@ -24,9 +22,8 @@ function loadSETTINGS() {
 		url: file,
 		dataType: 'json'
 	}).done(function(data) {
-			$.extend(settings, JSON.parse(JSON.stringify(data)));
-		}
-	);
+		$.extend(settings, JSON.parse(JSON.stringify(data)));
+	});
 }
 
 function loadLANGS(lang) {
@@ -36,9 +33,14 @@ function loadLANGS(lang) {
 		url: file,
 		dataType: 'json'
 	}).done(function(data) {
-		$.extend(langText, JSON.parse(JSON.stringify(data)));
-		$.each(JSON.parse(JSON.stringify(data)),function(i, item) {
-			if (~i.indexOf('pagetitle')) {
+		data = JSON.parse(JSON.stringify(data));
+		$.extend(langText, data);
+		$.each(data,function(i, item) {
+			if (typeof item === 'object') {
+				var content = '';
+				$.each(item, function(k, v) {content += '<div class="' + k + '">' + v + '</div>';});
+				$('#' + i).html(content);
+			} else if (~i.indexOf('pagetitle')) {
 				$('title').text(item);
 			} else if (~i.indexOf('_placeholder')) {
 				$('#' + i.replace('_placeholder','')).attr('placeholder',item);
@@ -47,31 +49,29 @@ function loadLANGS(lang) {
 			}
 		});
 	}).fail(function(data, status) {
-		if(status === 'timeout') {
-			$('#MSG').cpModal({
-				title: 'An error occured',
-				subtitle: 'Translation content is unavailable',
-				padding: 20,
-				headerColor: settings.modal['auth_failed_header_color'],
-				iconText: '&#9888;',
-				borderBottom: false,
-				timeout: settings.modal['timeout'],
-				timeoutProgressbar: true,
-				pauseOnHover: true,
-				overlayColor: settings.modal['overlay_color'],
-				onClosed: function(){
-					$('#MSG').replaceWith('<div id="MSG"></div>');
-					$.when(setTimeout(createCookie('lang', 'en', 31),100)).done(function() {
-						setLangLayout(settings.langs, 'en', '#polyglotLanguageSwitcher');
-						loadLANGS('en');
-					});
-				},
-				afterRender: function(){
-					$('#MSG .cpModal-content').append('<p>Unfortunately, the language file could not be loaded. The login system will automatically switch to English.</p>');
-				}
-			});
-			$('#MSG').cpModal('open');
-		}
+		$('#MSG').cpModal({
+			title: 'An error occured',
+			subtitle: 'Translation content is unavailable',
+			padding: 20,
+			headerColor: settings.modal['auth_failed_header_color'],
+			iconText: '&#9888;',
+			borderBottom: false,
+			timeout: settings.modal['timeout'],
+			timeoutProgressbar: true,
+			pauseOnHover: true,
+			overlayColor: settings.modal['overlay_color'],
+			onClosed: function(){
+				$('#MSG').replaceWith('<div id="MSG"></div>');
+				$.when(setTimeout(createCookie('lang', 'en', 31),100)).done(function() {
+					setLangLayout(settings.langs, 'en', '#polyglotLanguageSwitcher');
+					loadLANGS('en');
+				});
+			},
+			afterRender: function(){
+				$('#MSG .cpModal-content').append('<p>Unfortunately, the language file could not be loaded. The login system will automatically switch to English.</p>');
+			}
+		});
+		$('#MSG').cpModal('open');
 	});
 }
 
@@ -81,6 +81,7 @@ function setLang(id) {
 		testMode: true,
 		onChange: function(evt){
 			setTimeout(createCookie('lang', evt.selectedItem, 31),100);
+			langText = {};
 			loadLANGS(evt.selectedItem);
 			$('#inputUsername').prop('readonly', false);
 			$('#inputUsername').focus();
@@ -90,8 +91,8 @@ function setLang(id) {
 
 function setLangLayout(arr, sel, id) {
 	var html = '<div id="polyglotLanguageSwitcher"><form action="javascript:void(0);"><select id="polyglot-language-options">';
-	$.each(arr, function(key, val) {
-		html += '<option id="' + key + '" value="' + key + '"' + (key == sel ? ' selected' : '') + '>' + val + '</option>';
+	$.each(arr, function(key, value) {
+		html += '<option id="' + key + '" value="' + key + '"' + (key == sel ? ' selected' : '') + '>' + value + '</option>';
 	});
 	html += '</select></form></div>';
 	$(id).replaceWith(html);
@@ -113,7 +114,7 @@ function clientInfo(data) {
 	}
 }
 
-function createCookie(name,value,days) {
+function createCookie(name, value, days) {
 	var d = new Date();
 	d.setTime(d.getTime() + (days*24*60*60*1000));
 	var expires = "expires=" + d.toGMTString();
@@ -200,8 +201,8 @@ function connFailed() {
 
 $(document).ready(function() {
 	$.when(loadSETTINGS()).done(function() {
-		if (typeof settings.colors !== 'undefined') {
-			$.each(settings.colors, function(key, value) {
+		if (typeof settings.css_params !== 'undefined') {
+			$.each(settings.css_params, function(key, value) {
 				_root.style.setProperty('--' + key, value);
 			});
 		}
@@ -261,7 +262,7 @@ $(document).ready(function() {
 				}).done(function(data) {
 					if (data['clientState'] == 'AUTHORIZED') {
 						if (getURLparams()['redirurl'] != undefined) {
-							window.location = 'http://' + getURLparams()['redirurl']+'?refresh';
+							window.location = getURLparams()['redirurl'] + '?refresh';
 						} else {
 							window.location.reload();
 						}
@@ -286,7 +287,7 @@ $(document).ready(function() {
 					clientInfo(data);
 					if (data['clientState'] == 'AUTHORIZED') {
 						if (getURLparams()['redirurl'] != undefined) {
-							window.location = 'http://'+getURLparams()['redirurl']+'?refresh';
+							window.location = getURLparams()['redirurl'] + '?refresh';
 						} else {
 							window.location.reload();
 						}
@@ -328,14 +329,14 @@ $(document).ready(function() {
 				if (data['clientState'] == 'AUTHORIZED') {
 					$('#login_normal').addClass('hidden');
 					$('#logout_undefined').removeClass('hidden');
-					$('.row').addClass('ready');
+					$('.row, .footer-isp-info').addClass('ready');
 				} else if (data['authType'] == 'none') {
 					$('#login_normal').addClass('hidden');
 					$('#login_none').removeClass('hidden');
-					$('.row').addClass('ready');
+					$('.row, .footer-isp-info').addClass('ready');
 				} else {
 					$('#login_normal').removeClass('hidden');
-					$('.row').addClass('ready');
+					$('.row, .footer-isp-info').addClass('ready');
 				}
 			}).fail(function(){
 				setTimeout(connFailed(),1000);
