@@ -389,6 +389,47 @@ button span {
 	content: "";
 	min-height: inherit;
 }
+.captiveportal .isp-info,
+.captiveportal .footer-isp-info {
+	font-size: 12px;
+}
+.captiveportal .isp-info {
+	color: var(--color_primary);
+	display: contents;
+}
+.captiveportal .footer-isp-info {
+	display: flex;
+	flex-wrap: wrap;
+}
+.captiveportal .isp-info *:first-child {
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: end;
+}
+.captiveportal .isp-info *:first-child,
+.captiveportal .footer-isp-info *:first-child {
+	font-weight: 700;
+	width: 100%;
+}
+.captiveportal .footer-isp-info {
+	opacity: 0;
+}
+.captiveportal .footer-isp-info.ready {
+	opacity: 1;
+	transition: all var(--fadein);
+}
+.captiveportal .footer-isp-info {
+	padding: 0 15px 40px;
+	justify-content: space-between;
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	margin-left: auto;
+	margin-right: auto;
+	color: var(--color_secondary);
+}
 .captiveportal .interface-config {
 	font-size: 12px;
 	display: flex;
