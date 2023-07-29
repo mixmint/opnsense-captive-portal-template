@@ -78,13 +78,14 @@ function loadLANGS(lang) {
 function setLang(id) {
 	$(id).polyglotLanguageSwitcher({
 		effect: 'slide',
-		testMode: true,
+		noRefresh: true,
 		onChange: function(evt){
 			setTimeout(createCookie('lang', evt.selectedItem, 31),100);
 			langText = {};
 			loadLANGS(evt.selectedItem);
-			$('#inputUsername').prop('readonly', false);
-			$('#inputUsername').focus();
+			if (typeof $('#inputUsername') !== 'undefined') {
+				$('#inputUsername').prop('readonly', false).focus();
+			}
 		}
 	});
 }

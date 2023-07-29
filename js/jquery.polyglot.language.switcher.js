@@ -307,7 +307,7 @@ License URI: http://www.opensource.org/licenses/mit-license.php
 			} else {
 				var href = document.URL.replace('#', '');
 				var params = parseQueryString();
-				params[settings.paramName] = value;
+				//params[settings.paramName] = value;
 				if (href.indexOf('?') > 0) {
 					href = href.substring(0, href.indexOf('?'));
 				}
@@ -344,21 +344,20 @@ License URI: http://www.opensource.org/licenses/mit-license.php
 		}
 
 		function toQueryString(params) {
-			if (settings.testMode) {
-				return '#';
-			} else {
-				var queryString = '?';
-				var i = 0;
-				for (var param in params) {
-					var x = '';
-					if (i > 0) {
-						x = '&';
-					}
-					queryString += x + param + "=" + params[param];
-					i++;
+			var queryString = '?';
+			var i = 0;
+			for (var param in params) {
+				var x = '';
+				if (i > 0) {
+					x = '&';
 				}
-				return queryString;
+				queryString += x + param + "=" + params[param];
+				i++;
 			}
+			if (settings.noRefresh) {
+				queryString += '#';
+			}
+			return queryString;
 		}
 
 		ls.open = function () {
@@ -380,7 +379,7 @@ License URI: http://www.opensource.org/licenses/mit-license.php
 		paramName:'lang',
 		pagePrefix:'',
 		websiteType:'dynamic',
-		testMode:false,
+		noRefresh:false,
 		onChange:NaN,
 		afterLoad:NaN,
 		beforeOpen:NaN,
