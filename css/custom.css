@@ -452,7 +452,7 @@ button span {
 }
 .captiveportal .row.ready {
 	opacity: 1;
-	transition: all 0.6s;
+	transition: all var(--fadein);
 }
 .captiveportal .row:before {
 	content: "";
