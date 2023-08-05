@@ -307,7 +307,7 @@ License URI: http://www.opensource.org/licenses/mit-license.php
 			} else {
 				var href = document.URL.replace('#', '');
 				var params = parseQueryString();
-				//params[settings.paramName] = value;
+				params[settings.paramName] = value;
 				if (href.indexOf('?') > 0) {
 					href = href.substring(0, href.indexOf('?'));
 				}
