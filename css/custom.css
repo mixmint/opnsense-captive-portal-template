@@ -79,7 +79,7 @@ img.brand-logo {
 	height: 150px !important;
 }
 ol li:hover:before {
-	color: var(--link_hover);
+	color: var(--link_hover, initial);
 }
 button, input {
 	font-size: 100%;
@@ -93,7 +93,7 @@ input[type=button], input[type=submit] {
 	cursor: pointer;
 	-webkit-appearance: button;
 	padding: 10px 20px;
-	color: var(--color_secondary);
+	color: var(--color_secondary, initial);
 }
 button::-moz-focus-inner, input::-moz-focus-inner {
 	border: 0;
@@ -164,12 +164,12 @@ a, a:visited, a:hover, a:focus {
 	text-decoration: none;
 }
 .captiveportal .link {
-	color: var(--link);
+	color: var(--link, initial);
 	cursor: pointer;
 	font-weight: 400;
 }
 .captiveportal .link:hover {
-	color: var(--link_hover);
+	color: var(--link_hover, initial);
 }
 .captiveportal hr {
 	margin: 0;
@@ -232,9 +232,9 @@ section > .container {
 .field-group .field-text {
 	width: 100%;
 	max-width: 100%;
-	border: 1px solid var(--bg_alternate);
+	border: 1px solid var(--bg_alternate, initial);
 	background-color: transparent;
-	color: var(--color_alternate);
+	color: var(--color_alternate, initial);
 	vertical-align: middle;
 	-webkit-box-flex: 1;
 	-webkit-flex-grow: 1;
@@ -300,14 +300,14 @@ section > .container {
 button {
 	display: inline-block;
 	line-height: 1;
-	background-color: var(--bg_alternate);
-	color: var(--color_secondary);
+	background-color: var(--bg_alternate, transparent);
+	color: var(--color_secondary, initial);
 	text-align: center;
 	-webkit-transition: all .5s;
 	transition: all .5s;
 }
 button:focus, button:hover, button:visited {
-	color: var(--color_secondary);
+	color: var(--color_secondary, initial);
 }
 button.size-xs {
 	min-height: 33px;
@@ -374,12 +374,16 @@ button span {
 .field-group > a,
 #status_info .widget-heading .heading-title,
 #anon_info .widget-heading .heading-title {
-	color: var(--color_primary);
+	color: var(--color_primary, initial);
 }
 .captiveportal section {
 	width: 100vw;
 	height: 100%;
-	background: var(--bg_section);
+	background-color: var(--bg_section, transparent);
+	background-image: var(--bg_image, none);
+	background-repeat: var(--bg_repeat, initial);
+	background-size: var(--bg_size, initial);
+	background-attachment: var(--bg_attachment, initial);
 }
 .captiveportal section .container {
 	max-width: 1000px;
@@ -394,7 +398,7 @@ button span {
 	font-size: 12px;
 }
 .captiveportal .isp-info {
-	color: var(--color_primary);
+	color: var(--color_primary, initial);
 	display: contents;
 }
 .captiveportal .footer-isp-info {
@@ -417,7 +421,7 @@ button span {
 }
 .captiveportal .footer-isp-info.ready {
 	opacity: 1;
-	transition: all var(--fadein);
+	transition: all var(--fadein, initial);
 }
 .captiveportal .footer-isp-info {
 	padding: 0 15px 40px;
@@ -428,7 +432,7 @@ button span {
 	left: 0;
 	margin-left: auto;
 	margin-right: auto;
-	color: var(--color_secondary);
+	color: var(--color_secondary, initial);
 }
 .captiveportal .interface-config {
 	font-size: 12px;
@@ -442,17 +446,17 @@ button span {
 	flex: 0 0 50%;
 }
 .captiveportal .interface-config .if-title {
-	color: var(--link);
+	color: var(--link, initial);
 }
 .captiveportal .config-address {
-	color: var(--link_hover);
+	color: var(--link_hover, initial);
 }
 .captiveportal .row {
 	opacity: 0;
 }
 .captiveportal .row.ready {
 	opacity: 1;
-	transition: all var(--fadein);
+	transition: all var(--fadein, initial);
 }
 .captiveportal .row:before {
 	content: "";
@@ -470,15 +474,15 @@ button span {
 }
 
 .captiveportal .left-side {
-	color: var(--color_secondary);
+	color: var(--color_secondary, initial);
 	padding: 75px;
 	background-color: transparent;
-	background-image: var(--bg_left_side);
+	background-image: var(--bg_left_side, none);
 	transition: width 0.3s ease-in;
 }
 
 .captiveportal .right-side {
-	background-color: var(--bg_right_side);
+	background-color: var(--bg_right_side, transparent);
 	padding: 50px;
 	display: flex;
 	flex-direction: column;
@@ -493,7 +497,7 @@ button span {
 	padding-bottom: 45px;
 }
 .captiveportal .logo {
-	background-color: var(--bg_right_side);
+	background-color: var(--bg_right_side, transparent);
 	border-radius: 6px;
 	width: max-content;
 	padding: 1em;
@@ -529,8 +533,8 @@ button span {
 }
 
 .captiveportal .field-group .field {
-	background-color: var(--input_field_bg);
-	border-color: var(--input_field_border);
+	background-color: var(--input_field_bg, transparent);
+	border-color: var(--input_field_border, initial);
 	border-width: 0 !important;
 	border-radius: unset !important;
 	width: 100%;
@@ -539,12 +543,12 @@ button span {
 .captiveportal button {
 	text-transform: uppercase;
 	letter-spacing: 2.8px;
-	background-color: var(--button_bg);
+	background-color: var(--button_bg, transparent);
 	border-radius: unset !important;
 }
 
 .captiveportal button:hover {
-	background-color: var(--button_hover_bg)
+	background-color: var(--button_hover_bg, transparent)
 }
 .captiveportal .rules-checkbox label {
 	float: none;
@@ -605,7 +609,7 @@ button span {
 	top: 0;
 	bottom: 0;
 	font-size: 26px;
-	color: var(--button_bg);
+	color: var(--button_bg, initial);
 	margin-top: auto;
 	margin-bottom: auto;
 	margin-left: 9px;
@@ -624,7 +628,7 @@ button span {
 }
 .captiveportal #signin-box #signin[disabled]:hover:after,
 .captiveportal #login_none #signin_anon[disabled]:hover:after {
-	color: var(--button_hover_bg);
+	color: var(--button_hover_bg, initial);
 	background: rgba(0, 0, 0, .5);
 }
 .captiveportal #cp_portal_cookies_note {
@@ -720,7 +724,7 @@ label > input[type="radio"]:not(old):checked + span:not([id]):not([class]) > spa
 	display: table;
 	display: block;
 	position: relative;
-	background-color: var(--lang_switcher_link);
+	background-color: var(--lang_switcher_link, transparent);
 	overflow: hidden;
 	padding: 15px 45px 11px 13px;
 	text-decoration: none;
@@ -746,7 +750,7 @@ label > input[type="radio"]:not(old):checked + span:not([id]):not([class]) > spa
 #polyglotLanguageSwitcher a.current:link,
 #polyglotLanguageSwitcher a.current:visited,
 #polyglotLanguageSwitcher a.current:active {
-	background-color: var(--lang_switcher);
+	background-color: var(--lang_switcher, transparent);
 	overflow: hidden;
 	text-decoration: none;
 	white-space: nowrap;
@@ -756,8 +760,8 @@ label > input[type="radio"]:not(old):checked + span:not([id]):not([class]) > spa
 	-webkit-backface-visibility: hidden;
 }
 #polyglotLanguageSwitcher a.current:hover {
-	background-color: var(--lang_switcher_hover);
-	color: var(--color_secondary);
+	background-color: var(--lang_switcher_hover, transparent);
+	color: var(--color_secondary, initial);
 	outline: none;
 }
 #polyglotLanguageSwitcher a.active {
@@ -765,7 +769,7 @@ label > input[type="radio"]:not(old):checked + span:not([id]):not([class]) > spa
 }
 #polyglotLanguageSwitcher span.trigger {
 	display: block;
-	background: var(--lang_switcher_trigger) url(../images/language-selector-arrow.png) no-repeat right center;
+	background: var(--lang_switcher_trigger, transparent) url(../images/language-selector-arrow.png) no-repeat right center;
 	border-left: 2px solid rgba(52, 73, 94, 0.1);
 	height: 100%;
 	position: absolute;
@@ -779,15 +783,15 @@ label > input[type="radio"]:not(old):checked + span:not([id]):not([class]) > spa
 }
 #polyglotLanguageSwitcher a.current:active span.trigger,
 #polyglotLanguageSwitcher a.active span.trigger {
-	background-color: var(--lang_switcher);
-	color: var(--color_secondary);
+	background-color: var(--lang_switcher, transparent);
+	color: var(--color_secondary, initial);
 	outline: none;
 }
 #polyglotLanguageSwitcher a.current:hover span.trigger {
-	background-color: var(--lang_switcher_hover);
+	background-color: var(--lang_switcher_hover, transparent);
 }
 #polyglotLanguageSwitcher a.current:active span.trigger:active {
-	background-color: var(--lang_switcher);
+	background-color: var(--lang_switcher, transparent);
 	outline: none;
 }
 #polyglotLanguageSwitcher ul.dropdown {
@@ -809,7 +813,7 @@ label > input[type="radio"]:not(old):checked + span:not([id]):not([class]) > spa
 	content: "";
 	border-style: solid;
 	border-width: 0 9px 9px 9px;
-	border-color: transparent transparent var(--lang_switcher_dropdown) transparent;
+	border-color: transparent transparent var(--lang_switcher_dropdown, transparent) transparent;
 	height: 0px;
 	position: absolute;
 	right: 12px;
@@ -825,7 +829,7 @@ label > input[type="radio"]:not(old):checked + span:not([id]):not([class]) > spa
 	z-index: 100;
 }
 #polyglotLanguageSwitcher ul.dropdown li {
-	background-color: var(--lang_switcher_dropdown);
+	background-color: var(--lang_switcher_dropdown, transparent);
 	border-radius: 5px;
 	margin: 0;
 	max-height: 244px;
@@ -844,7 +848,7 @@ label > input[type="radio"]:not(old):checked + span:not([id]):not([class]) > spa
 	transition: all .2s ease-in;
 }
 #polyglotLanguageSwitcher ul.dropdown li a:hover {
-	background-color: var(--lang_switcher_dropdown_hover);
+	background-color: var(--lang_switcher_dropdown_hover, transparent);
 }
 #polyglotLanguageSwitcher a.active + ul.dropdown {
 	margin-top: -1px;
@@ -864,7 +868,7 @@ canvas {
 }
 .cpModal .solution-title {
 	margin-top: 10px;
-	color: var(--color_primary);
+	color: var(--color_primary, initial);
 }
 .cpModal ol,
 .cpModal ul {
@@ -873,7 +877,7 @@ canvas {
 	list-style-type: none;
 	font-size: 12px;
 	line-height: 18px;
-	color: var(--color_primary);
+	color: var(--color_primary, initial);
 	padding-left: 20px;
 }
 .cpModal ol,
@@ -909,20 +913,20 @@ canvas {
 	color: var(--link);
 }
 .cpModal ul:not(.numeric):not(.none-style) li:hover:before {
-	color: var(--link_hover);
+	color: var(--link_hover, initial);
 	font-size: 20px;
 	content: "\026AC";
 }
 .cpModal ol:not(.none-style) li:before,
 .cpModal ul.numeric:not(.none-style) li:before {
 	content: counter(counter);
-	background: var(--link);
-	color: var(--color_secondary);
+	background: var(--link, transparent);
+	color: var(--color_secondary, initial);
 	border-radius: 50%;
 }
 .cpModal ol:not(.none-style) li:hover:before,
 .cpModal ul.numeric:not(.none-style) li:hover:before {
-	background: var(--link_hover);
+	background: var(--link_hover, transparent);
 }
 .cpModal ol li.tel:before,
 .cpModal ul li.tel:before {
