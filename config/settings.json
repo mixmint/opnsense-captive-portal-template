@@ -9,6 +9,11 @@
 	},
 	"css_params": {
 		"bg_section": "#4ca1af",
+		"bg_image": "",
+		"bg_repeat": "no-repeat",
+		"bg_position": "center center",
+		"bg_size": "cover",
+		"bg_attachment": "",
 		"bg_left_side": "linear-gradient(290deg, #6ccdd9 0%, #41aab9 100%)",
 		"bg_right_side": "#ffffff",
 		"bg_alternate": "#818a91",
