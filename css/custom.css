@@ -558,6 +558,7 @@ button span {
 	flex-wrap: nowrap;
 	align-items: start;
 	padding: 0;
+	caret-color: transparent;
 }
 .captiveportal .rules-checkbox label .text {
 	padding-top: 6px;
