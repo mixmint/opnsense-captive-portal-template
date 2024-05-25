@@ -4,7 +4,7 @@ const iso = (timeStamp = Date.now()) => {
 	return new Date(timeStamp - (new Date().getTimezoneOffset() * 60 * 1000)).toISOString().slice(0,-5).split('T');
 }
 
-function getURLparams() {
+function getUrlparams() {
 	var vars = [], hash;
 	var hashes = window.location.href.slice(window.location.href.indexOf('?') + 1).split('&');
 	for(var i = 0; i < hashes.length; i++) {
@@ -15,7 +15,7 @@ function getURLparams() {
 	return vars;
 }
 
-function loadSETTINGS() {
+function loadSettings() {
 	var file = 'config/settings.json';
 	return $.ajax({
 		type: 'GET',
@@ -26,7 +26,7 @@ function loadSETTINGS() {
 	});
 }
 
-function loadLANGS(lang) {
+function loadLangs(lang) {
 	var file = 'langs/' + lang + '.json';
 	return $.ajax({
 		type: 'GET',
@@ -64,7 +64,7 @@ function loadLANGS(lang) {
 				$('#MSG').replaceWith('<div id="MSG"></div>');
 				$.when(setTimeout(createCookie('lang', 'en', 31),100)).done(function() {
 					setLangLayout(settings.langs, 'en', '#polyglotLanguageSwitcher');
-					loadLANGS('en');
+					loadLangs('en');
 				});
 			},
 			afterRender: function(){
@@ -82,7 +82,7 @@ function setLang(id) {
 		onChange: function(evt){
 			setTimeout(createCookie('lang', evt.selectedItem, 31),100);
 			langText = {};
-			loadLANGS(evt.selectedItem);
+			loadLangs(evt.selectedItem);
 			if (typeof $('#inputUsername') !== 'undefined') {
 				$('#inputUsername').prop('readonly', false).focus();
 			}
@@ -201,7 +201,7 @@ function connFailed() {
 }
 
 $(document).ready(function() {
-	$.when(loadSETTINGS()).done(function() {
+	$.when(loadSettings()).done(function() {
 		if (typeof settings.css_params !== 'undefined') {
 			$.each(settings.css_params, function(key, value) {
 				_root.style.setProperty('--' + key, value);
@@ -227,28 +227,32 @@ $(document).ready(function() {
 			createCookie('lang', lang, 31);
 		}
 
-		$.when(loadLANGS(lang)).done(function() {
+		$.when(loadLangs(lang)).done(function() {
 			if (Object.keys(settings.langs).length > 1) {
 				setLangLayout(settings.langs, lang, '#polyglotLanguageSwitcher');
 			}
-			$('#login-rules').prop('checked', false);
-			$('#login-rules-anon').prop('checked', false);
-			$('#signin').prop('disabled', true);
-			$('#signin_anon').prop('disabled', true);
-			$('#login-rules').on('click', function() {
-				if ($('#login-rules').prop('checked')) {
-					$('#signin').prop('disabled', false);
-				} else {
-					$('#signin').prop('disabled', true);
-				}
-			});
-			$('#login-rules-anon').on('click', function() {
-				if ($('#login-rules-anon').prop('checked')) {
-					$('#signin_anon').prop('disabled', false);
-				} else {
-					$('#signin_anon').prop('disabled', true);
-				}
-			});
+			if (settings.layout.enable_rules) {
+				$('#login-rules').prop('checked', false);
+				$('#login-rules-anon').prop('checked', false);
+				$('#signin').prop('disabled', true);
+				$('#signin_anon').prop('disabled', true);
+				$('#login-rules').on('click', function() {
+					if ($('#login-rules').prop('checked')) {
+						$('#signin').prop('disabled', false);
+					} else {
+						$('#signin').prop('disabled', true);
+					}
+				});
+				$('#login-rules-anon').on('click', function() {
+					if ($('#login-rules-anon').prop('checked')) {
+						$('#signin_anon').prop('disabled', false);
+					} else {
+						$('#signin_anon').prop('disabled', true);
+					}
+				});
+			} else {
+				$('.rules-checkbox').html('<br />');
+			}
 
 			$('input[readonly]').on('focus', function() {$('input[readonly]').prop('readonly', false);});
 			$('input:not([readonly])').on('blur', function() {$('input:not([readonly])').prop('readonly', true);});
@@ -262,8 +266,8 @@ $(document).ready(function() {
 					data: {user: $('#inputUsername').val(), password: $('#inputPassword').val()}
 				}).done(function(data) {
 					if (data['clientState'] == 'AUTHORIZED') {
-						if (getURLparams()['redirurl'] != undefined) {
-							window.location = getURLparams()['redirurl'] + '?refresh';
+						if (getUrlparams()['redirurl'] != undefined) {
+							window.location = getUrlparams()['redirurl'] + '?refresh';
 						} else {
 							window.location.reload();
 						}
@@ -287,8 +291,8 @@ $(document).ready(function() {
 				}).done(function(data) {
 					clientInfo(data);
 					if (data['clientState'] == 'AUTHORIZED') {
-						if (getURLparams()['redirurl'] != undefined) {
-							window.location = getURLparams()['redirurl'] + '?refresh';
+						if (getUrlparams()['redirurl'] != undefined) {
+							window.location = getUrlparams()['redirurl'] + '?refresh';
 						} else {
 							window.location.reload();
 						}
