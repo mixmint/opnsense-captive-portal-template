@@ -8,14 +8,26 @@
 		"en": "en-GB"
 	},
 	"css_params": {
-		"bg_section": "#4ca1af",
+		"bg_section": "#252828",
 		"bg_image": "",
 		"bg_repeat": "no-repeat",
 		"bg_position": "center center",
 		"bg_size": "cover",
 		"bg_attachment": "",
-		"bg_left_side": "linear-gradient(290deg, #6ccdd9 0%, #41aab9 100%)",
-		"bg_right_side": "#ffffff",
+		"bg_left_side": "url('/images/bg_left_side.png')",
+		"bg_left_side_repeat": "no-repeat",
+		"bg_left_side_position": "top left",
+		"bg_left_side_size": "cover",
+		"bg_left_side_attachment": "",
+		"bg_left_side_blend": "linear-gradient(180deg, #005f6b4d 0%, #005f6bbf 83.85%)",
+		"bg_right_side": "rgba(249, 253, 255, 1)",
+		"bg_right_side_repeat": "no-repeat",
+		"bg_right_side_position": "top left",
+		"bg_right_side_size": "cover",
+		"bg_right_side_attachment": "",
+		"bg_right_side_blend": "",
+		"left_side_shadow": "0 0 40px 0 rgba(0, 0, 0, .35)",
+		"right_side_shadow": "0 0 40px 0 rgba(0, 0, 0, .35)",
 		"bg_alternate": "#818a91",
 		"color_primary": "#7a7a7a",
 		"color_secondary": "#ffffff",
@@ -23,19 +35,22 @@
 		"link": "#348893",
 		"link_hover": "#f12184",
 		"input_field_color": "#e8e8e8",
-		"input_field_bg": "#e8e8e8",
+		"input_field_bg": "#ffffff",
 		"input_field_border": "rgba(145, 156, 167, .27)",
-		"button_bg": "#6ccdd9",
+		"input_field_placeholder_color": "#4ca1af",
+		"button_bg": "#00b5cb",
 		"button_hover_bg": "#f12184",
 		"button_color": "#ffffff",
 		"button_hover_color": "#ffffff",
-		"lang_switcher": "#6ccdd9",
-		"lang_switcher_trigger": "#5cc0cd",
+		"lang_switcher": "#00b5cb",
+		"lang_switcher_trigger": "#009db1",
 		"lang_switcher_link": "#41aab9",
 		"lang_switcher_hover": "#f12184",
 		"lang_switcher_dropdown": "#216f7a",
 		"lang_switcher_dropdown_hover": "#f12184",
-		"fadein": "0.5s"
+		"fadein": "0.5s",
+		"block_padding": "50px",
+		"block_radius": "15px"
 	},
 	"modal": {
 		"auth_failed_header_color": "#f12184",
@@ -43,6 +58,92 @@
 		"show_rules_header_color": "#4ca1af",
 		"overlay_color": "rgba(0,0,0,.3)",
 		"timeout": 5000
+	},
+	"animate": {
+		"effect": "globe",
+		"params": {
+			"el": "#animate-js",
+			"mouseControls": true,
+			"touchControls": true,
+			"gyroControls": false,
+			"minHeight": 200.00,
+			"minWidth": 200.00
+		},
+		"preset": {
+			"birds": {
+				"scale": 1.00,
+				"scaleMobile": 1.00,
+				"alignment": 20.00,
+				"backgroundAlpha": 1.00,
+				"backgroundColor": "#252828",
+				"birdSize": 1.00,
+				"cohesion": 20.00,
+				"color1": "#005f6b",
+				"color2": "#00e0fe",
+				"colorMode": "varianceGradient",
+				"separation": 20.00,
+				"speedLimit": 5.00,
+				"quantity": 5.00,
+				"wingSpan": 30.00
+			},
+			"cells": {
+				"scale": 1.00,
+				"color1": "#252828",
+				"color2": "#005f6b",
+				"size": 1.50,
+				"speed": 1.00
+			},
+			"fog": {
+				"highlightColor": "#005f6b",
+				"midtoneColor": "#252828",
+				"lowlightColor": "#00b5cb",
+				"baseColor": "#ffffff",
+				"blurFactor": 0.49,
+				"speed": 1.00,
+				"zoom": 1.00
+			},
+			"globe": {
+				"scaleMobile": "1.00",
+				"size": "1.00",
+				"backgroundColor": "#252828",
+				"color": "#008b9e",
+				"color2": "#ffffff"
+			},
+			"halo": {
+				"baseColor": "#008b9e",
+				"backgroundColor": "#252828",
+				"amplitudeFactor": 1.00,
+				"xOffset": 0.00,
+				"yOffset": 0.00,
+				"size": 1.00
+			},
+			"net": {
+				"scale": 1.00,
+				"scaleMobile": 1.00,
+				"backgroundColor": "#252828",
+				"color": "#005f6b",
+				"points": 10.00,
+				"maxDistance": 20.00,
+				"spacing": 15.00,
+				"showDots": true
+			},
+			"rings": {
+				"scale": 1.00,
+				"scaleMobile": 1.00,
+				"backgroundAlpha": 1.00,
+				"backgroundColor": "#252828",
+				"color": "#008b9e"
+			},
+			"waves": {
+				"scale": 1.00,
+				"scaleMobile": 1.00,
+				"color": "#373a3c",
+				"shininess": 30.00,
+				"waveHeight": 15.000,
+				"waveSpeed": 1.0,
+				"zoom": 1.00
+			}
+		}
 	},
 	"layout": {
 		"enable_rules": true
