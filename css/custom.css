@@ -660,9 +660,6 @@ color: var(--color_primary, initial);
 	width: 30px;
 	height: 30px;
 	background: rgba(255, 255, 255, .5);
-	display: flex;
-	justify-content: center;
-	align-items: center;
 	z-index: 100;
 	-webkit-transition: 0.25s;
 	-moz-transition: 0.25s;
@@ -1001,6 +998,11 @@ canvas {
 .cpModal .cpModal-header-icon {
 	height: 40px;
 	line-height: 46px;
+}
+
+html.linux .captiveportal #signin-box #signin[disabled]:after,
+html.linux .captiveportal #login_none #signin_anon[disabled]:after {
+	height: 28px;
 }
 
 [dir="rtl"] .captiveportal .left-side {
