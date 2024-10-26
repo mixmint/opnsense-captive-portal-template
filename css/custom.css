@@ -661,8 +661,8 @@ color: var(--color_primary, initial);
 	height: 30px;
 	background: rgba(255, 255, 255, .5);
 	display: flex;
-	flex-direction: column;
 	justify-content: center;
+	align-items: center;
 	z-index: 100;
 	-webkit-transition: 0.25s;
 	-moz-transition: 0.25s;
@@ -728,6 +728,7 @@ label > input[type="checkbox"]:not(old), label > input[type="radio"]:not(old) {
 input[type="checkbox"]:not(old) + label > span:not([id]):not([class]), input[type="radio"]:not(old) + label > span:not([id]):not([class]),
 label > input[type="checkbox"]:not(old) + span:not([id]):not([class]), label > input[type="radio"]:not(old) + span:not([id]):not([class]) {
 	display: flex;
+	justify-content: center;
 	align-items: center;
 	width: 22px !important;
 	min-width: 22px;
@@ -748,8 +749,8 @@ input[type="checkbox"]:not(old):checked + label > span:not([id]):not([class]):be
 label > input[type="checkbox"]:not(old):checked + span:not([id]):not([class]):before {
 	content: "×";
 	display: table-cell;
-	width: 20px;
-	height: 20px;
+	width: auto;
+	height: auto;
 	font-size: 22px;
 	line-height: 18px;
 	text-align: center;
