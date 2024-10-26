@@ -12,7 +12,7 @@
 <p>The captive portal templates that I have seen so far most often lack multilingual support. I've always wondered why it should only be in English or only in one language at all? Well, let's look below. This template supports multilingualism, checks your preferred browser language, saves a cookie with information about which language was read or which language you chose using the selector. Uses language translations saved in the <strong>xx.json</strong> file. So, according to the layout, you can prepare your own translation, which you later have to declare in the <strong>settings.json</strong> file in the <strong>config</strong> directory.</p>
 <blockquote>"langs": {<br /> "pl":"Polski",<br /> "en":"English"<br /> };</blockquote>
 <p>and (parameters necessary to display the logged-in user's session)</p>
-<blockquote>"langs": {<br /> "pl":"pl-PL",<br /> "en":"en-GB"<br /> };</blockquote>
+<blockquote>"langs_iso": {<br /> "pl":"pl-PL",<br /> "en":"en-GB"<br /> };</blockquote>
 <p>Based on the keys of the langs variable object, the template will automatically determine whether it should display the LTR or RTL content.</p>
 <p>The base64 logo is set in the <strong>settings.json</strong> file. Due to the universal application, the frame of the image of the logo must keep the proportions of a square.</p>
 <p>&nbsp;</p>
