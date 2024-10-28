@@ -12,8 +12,7 @@ $(document).ready(function() {
 			var scripts = ['three.r134.min.js', 'vanta.' + effect + '.min.js'];
 
 			$.when($.getMultiScripts(scripts, 'js/vanta/')).done(function() {
-				var fname = effect.toUpperCase() + '(' + JSON.stringify($.extend({}, settings.animate.params, preset)) + ')';
-				eval('VANTA.' + fname);
+				window['VANTA'][effect.toUpperCase()]($.extend({}, settings.animate.params, preset));
 			});
 		}
 
