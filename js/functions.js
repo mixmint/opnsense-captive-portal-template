@@ -8,7 +8,7 @@ $.getMultiScripts = function(batch, path) {
     $.executeInOrder = function(source, code, resolve) {
         if (source == batch[0]) {
             batch.shift();
-            eval(code);
+            Function(`"use strict";${code}`)($.this);
             resolve();
         } else {
             setTimeout(function(){$.executeInOrder(source, code, resolve);}, 10);
