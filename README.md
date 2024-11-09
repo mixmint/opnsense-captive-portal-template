@@ -1,3 +1,7 @@
+<p>If you like my work and appreciate my commitment, you can buy me a coffee.</p>
+<p>
+<a href="https://www.buymeacoffee.com/mixmint" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" style="height: 60px !important; width: 217px !important;" ></a>
+</p>
 <p>A Captive Portal allows you to force authentication, or redirection to a click through page for network access. This is commonly used on hotspot networks, but is also widely used in corporate networks for an additional layer of security on wireless or Internet access.</p>
 <p>OPNsense’s unique template manager makes setting up your own login page an easy task. At the same time it offers additional functionalities, such as:</p>
 <ul>
