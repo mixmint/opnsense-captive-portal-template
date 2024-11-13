@@ -1,11 +1,13 @@
 {
 	"langs": {
 		"pl": "Polski",
-		"en": "English"
+		"en": "English",
+		"sk": "Sloven\u010dina"
 	},
 	"langs_iso": {
 		"pl": "pl-PL",
-		"en": "en-GB"
+		"en": "en-GB",
+		"sk": "sk-SK"
 	},
 	"css_params": {
 		"bg_section": "#252828",
