@@ -29,6 +29,9 @@
 	<li>CSS declarations have been improved, rtl support has been improved - unfortunately, I am not sure how to display individual elements in rtl mode, hence if you find an error in this, please feedback - I will correct it,</li>
 	<li>particles.js has been abandoned, <strong>Vanta.js</strong> has been implemented in its place - thanks and respect to <a href="https://github.com/tengbao/vanta" target="_blank" rel="noopener"><strong>@tengbao</strong></a> - great job!<br />The following effects are available: <strong>birds</strong>, <strong>cells</strong>, <strong>fog,</strong> <strong>globe</strong>, <strong>halo</strong>, <strong>net</strong>, <strong>rings</strong> and <strong>waves</strong>, which can be configured in a simplified way in settings.json in the <strong>"animate"</strong> key as the preferred <strong>"effect"</strong>, its <strong>"params"</strong> and the <strong>"preset"</strong> of the declared effect.<br />You can view your settings here <a href="https://www.vantajs.com/" target="_blank" rel="noopener">https://www.vantajs.com/</a></li>
 	<li>Slovak translation included - thanks to <a href="https://github.com/Gouster4" target="_blank" rel="noopener"><strong>@Gouster4</strong></a>.</li>
+	<li>optimizing the code of javascript functions</li>
+	<li>splitting CSS into smaller portions, nesting CSS selectors</li>
+	<li>blocking the ability to log into the system for a specified period of time, after a specified number of possible attempts</li>
 </ul>
 <p>&nbsp;</p>
 <h4>What I plan to change:</h4>
