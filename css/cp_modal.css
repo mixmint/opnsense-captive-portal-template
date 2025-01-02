@@ -1,0 +1,93 @@
+@import "cpModal.min.css";
+
+.cpModal {
+    .solution-title {
+        margin-top: 10px;
+        color: var(--color_primary, initial);
+    }
+    ol,
+    ul {
+        margin-top: 0;
+        margin-bottom: 0;
+        list-style-type: none;
+        font-size: 12px;
+        line-height: 18px;
+        color: var(--color_primary, initial);
+        padding-left: 20px;
+        li {
+            + li {
+                margin-top: 8px;
+            }
+            &.tel:before {
+                content: "\02706" !important;
+            }
+        }
+        &:not(.none-style) {
+            li {
+                counter-increment: counter;
+                display: flex;
+                &:before {
+                    font-size: 12px;
+                    line-height: 14px;
+                    margin-left: -24px;
+                    width: 21px;
+                    height: 21px;
+                    margin-right: 10px;
+                    -webkit-transition: all .2s ease-in;
+                    transition: all .2s ease-in;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+            }
+        }
+    }
+    ol,
+    ul.numeric {
+        counter-reset: counter;
+        &:not(.none-style) {
+            li {
+                &:before {
+                    content: counter(counter);
+                    background: var(--link, transparent);
+                    color: var(--color_secondary, initial);
+                    border-radius: 50%;
+                }
+                &:hover {
+                    &:before {
+                        background: var(--link_hover, transparent);
+                    }
+                }
+            }
+        }
+    }
+    ul {
+        &:not(.numeric) {
+            &:not(.none-style) {
+                li {
+                    &:before {
+                        content: "\02022";
+                        font-size: 24px;
+                        color: var(--link);
+                    }
+                    &:hover {
+                        &:before {
+                            color: var(--link_hover, initial);
+                            font-size: 20px;
+                            content: "\026AC";
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .cpModal-header-icon {
+        height: 40px;
+        line-height: 46px;
+        font-style: unset;
+    }
+}
+.cpModal-overlay {
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+}
