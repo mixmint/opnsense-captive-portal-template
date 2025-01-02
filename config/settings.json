@@ -1,4 +1,5 @@
 {
+	"default_lang": "pl",
 	"langs": {
 		"pl": "Polski",
 		"en": "English",
@@ -146,6 +147,11 @@
 				"zoom": 1.00
 			}
 		}
+	},
+	"login": {
+		"control": false,
+		"attempts": 3,
+		"delay": 10
 	},
 	"layout": {
 		"enable_rules": true
