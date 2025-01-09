@@ -102,9 +102,9 @@ const configureInputFocusBehavior = () => {
 };
 
 const setupAuthHandlers = () => {
-    $('#signin').click(handleSignIn);
-    $('#signin_anon').click(handleAnonymousSignIn);
-    $('#logoff').click(handleLogoff);
+    $('#signin').on('click', handleSignIn);
+    $('#signin_anon').on('click', handleAnonymousSignIn);
+    $('#logoff').on('click', handleLogoff);
 };
 
 const handleSignIn = (event) => {
@@ -147,7 +147,7 @@ const authenticateUser = (credentials) => {
 };
 
 const setupRulesLink = () => {
-    $('[id^="rules"].link').click($.showRules);
+    $('[id^="rules"].link').on('click', $.showRules);
 };
 
 const checkConnectionStatus = () => {
