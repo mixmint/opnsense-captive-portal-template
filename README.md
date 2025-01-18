@@ -19,7 +19,7 @@
 <blockquote>"langs_iso": {<br /> "pl":"pl-PL",<br /> "en":"en-GB",<br /> "sk": "sk-SK"<br /> };</blockquote>
 <p>Based on the keys of the langs variable object, the template will automatically determine whether it should display the LTR or RTL content.</p>
 <p>The base64 logo is set in the <strong>settings.json</strong> file. Due to the universal application, the frame of the image of the logo must keep the proportions of a square.</p>
-<p><img src="images/diagram.jpg" alt="" width="2536" height="1403" /></p>
+<p><img src="images/diagram.jpg" alt="" /></p>
 <h4>Rest of the setup</h4>
 <p>CSS Configuration Group "<strong>css_params": {<br /></strong></p>
 <blockquote>
