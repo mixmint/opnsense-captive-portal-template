@@ -63,7 +63,7 @@
                 a {
                     font-weight: 500;
                     border-radius: 3px;
-                    color: white;
+                    color: var(--lang_switcher_link, inherit);
                     display: block;
                     padding: 15px 9px 11px;
                     background-color: unset;
@@ -73,6 +73,7 @@
                     -ms-transition: all .2s ease-in;
                     transition: all .2s ease-in;
                     &:hover {
+                        color: var(--lang_switcher_link_hover, inherit);
                         background-color: var(--lang_switcher_dropdown_hover, transparent);
                     }
                 }

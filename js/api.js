@@ -87,16 +87,16 @@ const toggleSignInButtons = (checkboxSelector, buttonSelector) => {
     $(checkboxSelector).prop('checked', false);
     $(buttonSelector).prop('disabled', true);
 
-    $(checkboxSelector).on('click', function () {
+    $(checkboxSelector).on('click', () => {
         $(buttonSelector).prop('disabled', !$(this).prop('checked'));
     });
 };
 
 const configureInputFocusBehavior = () => {
-    $('input[readonly]').on('focus', function () {
+    $('input[readonly]').on('focus', () => {
         $(this).prop('readonly', false);
     });
-    $('input:not([readonly])').on('blur', function () {
+    $('input:not([readonly])').on('blur', () => {
         $(this).prop('readonly', true);
     });
 };
