@@ -1,6 +1,8 @@
 <p>If you like my work and appreciate my commitment, you can buy me a coffee.</p>
 <p><a href="https://www.buymeacoffee.com/mixmint" target="_blank" rel="noopener"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" style="height: 60px !important; width: 217px !important;" /></a></p>
-<p>A Captive Portal allows you to force authentication, or redirection to a click through page for network access. This is commonly used on hotspot networks, but is also widely used in corporate networks for an additional layer of security on wireless or Internet access.</p>
+<p>If you want to customize this template to your own needs, please contact me! ( <a href="mailto:mix@proask.pl">mix@proask.pl</a> ) I offer professional help in customizing solutions that perfectly match your requirements. Write what you need, and together we will create something exceptional! 🚀</p>
+<h3>What is a Captive Portal?</h3>
+<p>A Captive Portal allows you to force authentication or redirect to a clickable page to access the network. This is commonly used in hotspot networks, but is also widely used in corporate networks or small local area networks (e.g. shopping malls, restaurants, hotels, airports, etc.) as an additional layer of security for wireless or internet access.</p>
 <p>OPNsense’s unique template manager makes setting up your own login page an easy task. At the same time it offers additional functionalities, such as:</p>
 <ul>
 	<li>URL redirection</li>
@@ -12,6 +14,7 @@
 <p><img src="images/screenshot.jpg" alt="" /></p>
 <p>&nbsp;</p>
 <p>The captive portal templates that I have seen so far most often lack multilingual support. I've always wondered why it should only be in English or only in one language at all? Well, let's look below. This template supports multilingualism, checks your preferred browser language, saves a cookie with information about which language was read or which language you chose using the selector. Uses language translations saved in the <strong>xx.json</strong> file. So, according to the layout, you can prepare your own translation, which you later have to declare in the <strong>settings.json</strong> file in the <strong>config</strong> directory.</p>
+<p>The first (and probably most important) "default_lang" key specifies what language will be loaded by default when the Captive Portal client's web browser's preferred language is different from the languages ​​supported by the platform.</p>
 <blockquote>"default_lang": "en"</blockquote>
 <p>In the current release, the settings key defines the default language that will be loaded in case the client browser language is not available in our available languages ​​configuration (list below)</p>
 <blockquote>"langs": {<br /> "pl":"Polski",<br /> "en":"English",<br /> "sk": "Slovenčina"<br /> };</blockquote>
@@ -21,7 +24,7 @@
 <p>The base64 logo is set in the <strong>settings.json</strong> file. Due to the universal application, the frame of the image of the logo must keep the proportions of a square.</p>
 <p><img src="images/diagram.jpg" alt="" /></p>
 <h4>Rest of the setup</h4>
-<p>CSS Configuration Group "<strong>css_params": {<br /></strong></p>
+<p>CSS Configuration Group "<strong>css_params"</strong><br /></p>
 <blockquote>
 	<p>"css_params": {</p>
 	<table style="width: 100%;">
