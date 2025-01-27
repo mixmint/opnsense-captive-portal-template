@@ -23,7 +23,7 @@
 <p>Based on the keys of the langs variable object, the template will automatically determine whether it should display the LTR or RTL content.</p>
 <p>The base64 logo is set in the <strong>settings.json</strong> file. Due to the universal application, the frame of the image of the logo must keep the proportions of a square.</p>
 <p>Login Control Configuration Group <strong>"login"</strong><br /></p>
-<p>The system allows for a defined number of failed login attempts. After exceeding the allowed number of attempts, the ability to log in will be blocked for a set period of time.</p>
+<p>A mechanism that allows a specified number of failed login attempts. After exceeding the allowed number of attempts, the ability to log in will be blocked for a specified period of time.</p>
 <p>Of course, this is not a perfect protection against an attempt to force credentials, but the Captive Portal in OPNsense does not yet have a similar protection.</p>
 <blockquote>
 	<p>"login": {</p>
