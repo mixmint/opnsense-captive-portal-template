@@ -93,10 +93,10 @@ const toggleSignInButtons = (checkboxSelector, buttonSelector) => {
 };
 
 const configureInputFocusBehavior = () => {
-    $('input[readonly]').on('focus', () => {
+    $('input[readonly]').on('focus', function () {
         $(this).prop('readonly', false);
     });
-    $('input:not([readonly])').on('blur', () => {
+    $('input:not([readonly])').on('blur', function () {
         $(this).prop('readonly', true);
     });
 };
