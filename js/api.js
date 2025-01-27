@@ -87,7 +87,7 @@ const toggleSignInButtons = (checkboxSelector, buttonSelector) => {
     $(checkboxSelector).prop('checked', false);
     $(buttonSelector).prop('disabled', true);
 
-    $(checkboxSelector).on('click', () => {
+    $(checkboxSelector).on('click', function () {
         $(buttonSelector).prop('disabled', !$(this).prop('checked'));
     });
 };
