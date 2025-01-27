@@ -6,7 +6,18 @@
  * @license GNU/GPL license: http://www.gnu.org/copyleft/gpl.html
  */
 
-let settings = {}, layout = {}, langText = {}, lang, localId, langsRTL = ['ar','dv','fa','ha','he','sy'], _root = document.querySelector(':root'), attempt = 0;
+let settings = {},
+    layout = {},
+    langText = {},
+    lang,
+    localId,
+    langsRTL = ['ar','dv','fa','ha','he','sy'],
+    _root = document.querySelector(':root'),
+    attempt = 0;
+
+const loadJson = (path, file) => {
+    return $.ajax({ url: `${path}/${file}.json`, dataType: 'json' });
+}
 
 const formatISO = (timeStamp = Date.now()) => {
     return new Date(timeStamp - (new Date().getTimezoneOffset() * 60000)).toISOString().slice(0,-5).split('T');
@@ -120,7 +131,7 @@ $.getUrlparams = () => {
 
 $.loadSettings = async () => {
     try {
-        const response = await $.ajax({ url: 'config/settings.json', dataType: 'json' });
+        const response = await loadJson('/config', 'settings');
         Object.assign(settings, response);
 
     } catch (error) {
@@ -128,16 +139,16 @@ $.loadSettings = async () => {
     }
 };
 
-$.loadLangs = async (language) => {
+$.loadLangs = async (language = settings.default_lang) => {
     try {
-        const response = await $.ajax({ url: `langs/${language}.json`, dataType: 'json' });
+        const response = await loadJson('/langs', language);
         Object.assign(langText, response);
         updateUIWithLangText(langText);
     } catch {
         showModal({
             title: 'An error occurred',
             subtitle: 'Translation content is unavailable',
-            content: '<p>Unfortunately, the language file could not be loaded. The login system will automatically switch to English.</p>',
+            content: `<p>Unfortunately, the language file could not be loaded. The login system will automatically switch to ${settings.langs[settings.default_lang]}.</p>`,
             iconText: '&#9888;',
             customStyles: {
                 headerColor: settings.modal.auth_failed_header_color,
@@ -146,12 +157,12 @@ $.loadLangs = async (language) => {
                 timeoutProgressbar: true,
                 pauseOnHover: true
             },
-            onOpen: () => {
-                $.loadLangs('en');
+            onOpen: async () => {
+                await $.loadLangs(settings.default_lang);
             },
             onClose: () => {
-                $.setLangLayout(settings.langs, 'en', '#polyglotLanguageSwitcher');
-                $.createCookie('lang', 'en', 31);
+                $.setLangLayout(settings.langs, settings.default_lang, '#polyglotLanguageSwitcher');
+                $.createCookie('lang', settings.default_lang, 31);
             }
         });
     }
@@ -330,7 +341,7 @@ $.connectionLogon = (data) => {
 
 $.connectionStatus = (data) => {
     if (data.clientState != 'AUTHORIZED' && data.authType != undefined && null == localId) {
-        localId   = [...data.ipAddress].map((x, i) => (x.codePointAt() ^ data.authType.charCodeAt(i % data.authType.length) % 255).toString(16).padStart(2,'0')).join('');
+        localId = [...data.ipAddress].map((x, i) => (x.codePointAt() ^ data.authType.charCodeAt(i % data.authType.length) % 255).toString(16).padStart(2,'0')).join('');
     }
 
     if (data['clientState'] == 'AUTHORIZED') {
@@ -383,6 +394,6 @@ $.setAttempt = (batch) => {
 }
 
 $.getAttempt = (data) => {
-    data.local   = window.localStorage.getItem('loginAttempt');
+    data.local = window.localStorage.getItem('loginAttempt');
     return data;
 }

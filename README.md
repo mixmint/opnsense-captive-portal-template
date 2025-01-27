@@ -17,14 +17,46 @@
 <p>The first (and probably most important) "default_lang" key specifies what language will be loaded by default when the Captive Portal client's web browser's preferred language is different from the languages ​​supported by the platform.</p>
 <blockquote>"default_lang": "en"</blockquote>
 <p>In the current release, the settings key defines the default language that will be loaded in case the client browser language is not available in our available languages ​​configuration (list below)</p>
-<blockquote>"langs": {<br /> "pl":"Polski",<br /> "en":"English",<br /> "sk": "Slovenčina"<br /> };</blockquote>
+<blockquote>"langs": {<br /> "en":"English",<br /> "pl":"Polski",<br /> "sk": "Slovenčina"<br /> };</blockquote>
 <p>and (parameters necessary to display the logged-in user's session)</p>
-<blockquote>"langs_iso": {<br /> "pl":"pl-PL",<br /> "en":"en-GB",<br /> "sk": "sk-SK"<br /> };</blockquote>
+<blockquote>"langs_iso": {<br /> "en":"en-GB",<br /> "pl":"pl-PL",<br /> "sk": "sk-SK"<br /> };</blockquote>
 <p>Based on the keys of the langs variable object, the template will automatically determine whether it should display the LTR or RTL content.</p>
 <p>The base64 logo is set in the <strong>settings.json</strong> file. Due to the universal application, the frame of the image of the logo must keep the proportions of a square.</p>
+<p>Login Control Configuration Group <strong>"login"</strong><br /></p>
+<p>The system allows for a defined number of failed login attempts. After exceeding the allowed number of attempts, the ability to log in will be blocked for a set period of time.</p>
+<p>Of course, this is not a perfect protection against an attempt to force credentials, but the Captive Portal in OPNsense does not yet have a similar protection.</p>
+<blockquote>
+	<p>"login": {</p>
+	<table style="width: 100%;">
+		<tbody>
+			<tr>
+				<td>"control": false,</td>
+				<td><span class="HwtZe" lang="en"><span class="jCAhz ChMk0b"><span class="ryNqvb">false - disabled, true - enabled</span></span></span></td>
+			</tr>
+			<tr>
+				<td>"attempts": 3,</td>
+				<td><span class="HwtZe" lang="en"><span class="jCAhz ChMk0b"><span class="ryNqvb">Allowed number of login attempts</span></span></span></td>
+			</tr>
+			<tr>
+				<td>"delay": 10,</td>
+				<td><span class="HwtZe" lang="en"><span class="jCAhz ChMk0b"><span class="ryNqvb">Time in minutes that must elapse before the next login</span></span></span></td>
+			</tr>
+		</tbody>
+	</table>
+	<p>},</p>
+</blockquote>
+<p>&nbsp;</p>
+<p>Layout Configuration Group <strong>"layout"</strong><br /></p>
+<p>Enables or disables the required consent to the provisions contained in the ISP provider's Regulations.</p>
+<blockquote>
+	<p>"login": {</p>
+	<p>"enable_rules": true</p>
+	<p>},</p>
+</blockquote>
+<p>&nbsp;</p>
 <p><img src="images/diagram.jpg" alt="" /></p>
 <h4>Rest of the setup</h4>
-<p>CSS Configuration Group "<strong>css_params"</strong><br /></p>
+<p>CSS Configuration Group <strong>"css_params"</strong><br /></p>
 <blockquote>
 	<p>"css_params": {</p>
 	<table style="width: 100%;">
@@ -253,7 +285,7 @@
 	</table>
 	<p>};</p>
 </blockquote>
-<p>Animate Configuration Group "<strong>animate": {<br /></strong></p>
+<p>Animate Configuration Group <strong>"animate"</strong><br /></p>
 <blockquote>
 	<p>"animate": {</p>
 	<table style="width: 100%;">
