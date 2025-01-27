@@ -49,9 +49,7 @@
 <p>Layout Configuration Group <strong>"layout"</strong><br /></p>
 <p>Enables or disables the required consent to the provisions contained in the ISP provider's Regulations.</p>
 <blockquote>
-	<p>"login": {</p>
-	<p>"enable_rules": true</p>
-	<p>},</p>
+	<p>"login": {<br /> "enable_rules": true<br /> },</p>
 </blockquote>
 <p>&nbsp;</p>
 <p><img src="images/diagram.jpg" alt="" /></p>
