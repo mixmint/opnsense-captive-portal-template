@@ -310,11 +310,11 @@
 			</tr>
 			<tr>
 				<td style="padding-left: 30px;">"touchControls": true,</td>
-				<td><span class="HwtZe" lang="en"><span class="jCAhz ChMk0b"><span class="ryNqvb">Controlling the animation by swiping on the touch screen</span></span></span></td>
+				<td><span class="HwtZe" lang="en"><span class="jCAhz ChMk0b"><span class="ryNqvb">Controlling animation by swiping on the touch screen</span></span></span></td>
 			</tr>
 			<tr>
 				<td style="padding-left: 30px;">"gyroControls": false,</td>
-				<td>Illustration as background of the <span style="color: #008000;"><strong>left side</strong></span> of the login portal</td>
+				<td><span class="jCAhz ChMk0b"><span class="ryNqvb">Controlling animations with the gyrocompass of mobile devices</span></span></span></td>
 			</tr>
 			<tr>
 				<td style="padding-left: 30px;">"minHeight": 200.00,</td>
