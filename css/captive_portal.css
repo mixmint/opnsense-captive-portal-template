@@ -373,6 +373,15 @@
             }
         }
     }
+    &.single-lang {
+        .form {
+            .field-type-text {
+                &:first-child {
+                    margin-top: unset;
+                }
+            }
+        }
+    }
 }
 
 #status_info,

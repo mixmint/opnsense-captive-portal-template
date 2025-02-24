@@ -40,6 +40,15 @@ const updateUIWithLangText = (texts) => {
     });
 };
 
+const isValidUrl = (string) => {
+    try {
+        new URL(string);
+        return true;
+    } catch (err) {
+        return false;
+    }
+}
+
 const showModal = ({ title, subtitle, content, iconText = '&#9888;', customStyles = {}, callback, onOpen, onClose }) => {
     const defaultStyles = {
         padding: 20,
@@ -312,7 +321,9 @@ $.connectionLogon = (data) => {
             delete data.loginTime;
         }
 
-        if ($.getUrlparams()['redirurl'] != undefined) {
+        if (settings.layout.redirect_url.length > 0 && isValidUrl(settings.layout.redirect_url)) {
+            window.location.replace(settings.layout.redirect_url);
+        } else if ($.getUrlparams()['redirurl'] != undefined) {
             window.location = $.getUrlparams()['redirurl'] + '?refresh';
         } else {
             window.location.reload();

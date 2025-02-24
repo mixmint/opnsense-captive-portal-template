@@ -21,6 +21,7 @@
 <p>and (parameters necessary to display the logged-in user's session)</p>
 <blockquote>"langs_iso": {<br /> "en":"en-GB",<br /> "pl":"pl-PL",<br /> "sk": "sk-SK"<br /> };</blockquote>
 <p>Based on the keys of the langs variable object, the template will automatically determine whether it should display the LTR or RTL content.</p>
+<p>If only one translation language is defined in the "langs" group, then the language switcher will not be included in the layout. The language translation will be based on the language defined in the "default_lang" key.</p>
 <p>The base64 logo is set in the <strong>settings.json</strong> file. Due to the universal application, the frame of the image of the logo must keep the proportions of a square.</p>
 <p>Login Control Configuration Group <strong>"login"</strong><br /></p>
 <p>A mechanism that allows a specified number of failed login attempts. After exceeding the allowed number of attempts, the ability to log in will be blocked for a specified period of time.</p>
@@ -49,7 +50,7 @@
 <p>Layout Configuration Group <strong>"layout"</strong><br /></p>
 <p>Enables or disables the required consent to the provisions contained in the ISP provider's Regulations.</p>
 <blockquote>
-	<p>"login": {<br /> "enable_rules": true<br /> },</p>
+	<p>"layout": {<br /> "enable_rules": true,<br /> "redirect_url": ""<br /> },</p>
 </blockquote>
 <p>&nbsp;</p>
 <p><img src="images/diagram.jpg" alt="" /></p>
