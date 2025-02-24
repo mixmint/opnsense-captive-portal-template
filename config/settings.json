@@ -16,7 +16,8 @@
 		"delay": 10
 	},
 	"layout": {
-		"enable_rules": true
+		"enable_rules": true,
+		"redirect_url": ""
 	},
 	"css_params": {
 		"bg_section": "#252828",

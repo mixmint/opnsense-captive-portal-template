@@ -69,7 +69,14 @@ const setupLanguage = () => {
 
     $.when($.loadLangs(lang)).done(() => {
         if (Object.keys(settings.langs).length > 1) {
+            $('.captiveportal').hasClass('single-lang')
+                ? $('.captiveportal').removeClass('single-lang').addClass('multiple-langs')
+                : $('.captiveportal').addClass('multiple-langs');
             $.setLangLayout(settings.langs, lang, '#polyglotLanguageSwitcher');
+        } else {
+            $('.captiveportal').hasClass('multiple-langs')
+                ? $('.captiveportal').removeClass('multiple-langs').addClass('single-lang')
+                : $('.captiveportal').addClass('single-lang');
         }
     });
 };
