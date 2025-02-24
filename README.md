@@ -49,6 +49,7 @@
 <p>&nbsp;</p>
 <p>Layout Configuration Group <strong>"layout"</strong><br /></p>
 <p>Enables or disables the required consent to the provisions contained in the ISP provider's Regulations.</p>
+<p>Redirection url address. If the value is not set or the set value is not a valid url address, the redirection functionality to the specified address will not be implemented.</p>
 <blockquote>
 	<p>"layout": {<br /> "enable_rules": true,<br /> "redirect_url": ""<br /> },</p>
 </blockquote>
