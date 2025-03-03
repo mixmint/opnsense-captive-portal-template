@@ -332,7 +332,7 @@
 			</tr>
 			<tr>
 				<td>"preset": {</td>
-				<td>Coverage of the <span style="color: #008000;"><strong>left side</strong></span> of the login portal background illustration surface</td>
+				<td>Animation presets</td>
 			</tr>
 			<tr>
 				<td style="padding-left: 30px;">...</td>
