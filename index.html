@@ -1,147 +1,147 @@
 <!DOCTYPE html>
 <html dir="ltr">
-	<head>
-		<meta charset="UTF-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<meta name="robots" content="noindex, nofollow, noodp, noydir" />
-		<meta name="keywords" content="" />
-		<meta name="description" content="" />
-		<meta name="copyright" content="Mirosław Majka, mix@proask.pl" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="robots" content="noindex, nofollow, noodp, noydir" />
+        <meta name="keywords" content="" />
+        <meta name="description" content="" />
+        <meta name="copyright" content="Mirosław Majka, mix@proask.pl" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
 
-		<title>User login system | ISP Name</title>
-		<link rel="apple-touch-icon" sizes="57x57" href="/images/icons/favicon-57x57.png">
-		<link rel="apple-touch-icon" sizes="60x60" href="/images/icons/favicon-60x60.png">
-		<link rel="apple-touch-icon" sizes="72x72" href="/images/icons/favicon-72x72.png">
-		<link rel="apple-touch-icon" sizes="76x76" href="/images/icons/favicon-76x76.png">
-		<link rel="apple-touch-icon" sizes="114x114" href="/images/icons/favicon-114x114.png">
-		<link rel="apple-touch-icon" sizes="120x120" href="/images/icons/favicon-120x120.png">
-		<link rel="apple-touch-icon" sizes="144x144" href="/images/icons/favicon-144x144.png">
-		<link rel="apple-touch-icon" sizes="152x152" href="/images/icons/favicon-152x152.png">
-		<link rel="apple-touch-icon" sizes="180x180" href="/images/icons/favicon-180x180.png">
-		<link rel="icon" type="image/svg+xml" href="/images/icons/favicon.svg">
-		<link rel="icon" type="image/png" sizes="16x16" href="/images/icons/favicon-16x16.png">
-		<link rel="icon" type="image/png" sizes="32x32" href="/images/icons/favicon-32x32.png">
-		<link rel="icon" type="image/png" sizes="96x96" href="/images/icons/favicon-96x96.png">
-		<link rel="icon" type="image/png" sizes="192x192" href="/images/icons/favicon-192x192.png">
-		<link rel="shortcut icon" type="image/x-icon" href="/images/icons/favicon.ico">
-		<link rel="icon" type="image/x-icon" href="/images/icons/favicon.ico">
-		<meta name="msapplication-TileColor" content="#ffffff">
-		<meta name="msapplication-TileImage" content="/images/icons/favicon-144x144.png">
-		<meta name="msapplication-config" content="/images/icons/browserconfig.xml">
-		<link href="css/master.css" rel="stylesheet">
+        <title>User login system | ISP Name</title>
+        <link rel="apple-touch-icon" sizes="57x57" href="/images/icons/favicon-57x57.png">
+        <link rel="apple-touch-icon" sizes="60x60" href="/images/icons/favicon-60x60.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="/images/icons/favicon-72x72.png">
+        <link rel="apple-touch-icon" sizes="76x76" href="/images/icons/favicon-76x76.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="/images/icons/favicon-114x114.png">
+        <link rel="apple-touch-icon" sizes="120x120" href="/images/icons/favicon-120x120.png">
+        <link rel="apple-touch-icon" sizes="144x144" href="/images/icons/favicon-144x144.png">
+        <link rel="apple-touch-icon" sizes="152x152" href="/images/icons/favicon-152x152.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="/images/icons/favicon-180x180.png">
+        <link rel="icon" type="image/svg+xml" href="/images/icons/favicon.svg">
+        <link rel="icon" type="image/png" sizes="16x16" href="/images/icons/favicon-16x16.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/images/icons/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="96x96" href="/images/icons/favicon-96x96.png">
+        <link rel="icon" type="image/png" sizes="192x192" href="/images/icons/favicon-192x192.png">
+        <link rel="shortcut icon" type="image/x-icon" href="/images/icons/favicon.ico">
+        <link rel="icon" type="image/x-icon" href="/images/icons/favicon.ico">
+        <meta name="msapplication-TileColor" content="#ffffff">
+        <meta name="msapplication-TileImage" content="/images/icons/favicon-144x144.png">
+        <meta name="msapplication-config" content="/images/icons/browserconfig.xml">
+        <link href="css/master.css" rel="stylesheet">
 
-		<script src="js/zone.js"></script>
+        <script src="js/zone.js"></script>
 
-		<script src="js/jquery-3.7.1.min.js"></script>
-		<script src="js/sprintf.min.js"></script>
-		<script src="js/css_browser_selector.js"></script>
-		<script src="js/cpModal.min.js"></script>
-		<script src="js/jquery.polyglot.language.switcher.js"></script>
-	</head>
-	<body class="no-sidebar using-mouse">
-		<div class="captiveportal">
-			<section id="animate-js">
-				<div class="container d-block d-xl-flex align-items-center">
-					<div class="row">
-						<div class="col-12 col-xl-6 left-side">
-							<div class="wrapper">
-								<div class="header pb-5">
-									<div id="logo" class="logo"></div>
-									<div class="heading">
-										<h2 id="cp_portal_head_title" class="heading-title"></h2>
-									</div>
-								</div>
-								<div class="clearfix">
-									<p id="cp_portal_info"></p>
-								</div>
-								<div id="cp_portal_cookies_note" class="spacer-inner"></div>
-							</div>
-						</div>
-						<div class="col-12 col-xl-6 right-side">
-							<div class="wrapper">
-								<div class="form-fields-wrapper">
-									<div id="polyglotLanguageSwitcher"></div>
-								</div>
-								<div id="login_normal" class="form-fields-wrapper d-none">
-									<form class="login form">
-										<div id="fieldUsername" class="field-type-text field-group w-100 field-required">
-											<label id="username" for="inputUsername"></label>
-											<input type="text" id="inputUsername" class="field field-text size-sm" required autocomplete="off" autocapitalize="none" readonly>
-										</div>
-										<div id="fieldPassword" class="field-type-text field-group w-100 field-required">
-											<label id="userpass" for="inputPassword"></label>
-											<input type="password" id="inputPassword" class="field field-text size-sm" required readonly>
-										</div>
-										<div class="field-type-checkbox field-group w-100 rules-checkbox">
-											<label for="login-rules">
-												<input type="checkbox" id="login-rules" name="rules"><span></span>
-												<span class="text"><span id="termcondition1"></span> <span id="rules" class="link"></span> <span id="termcondition2"></span></span>
-											</label>
-										</div>
-										<div id="signin-box" class="field-group field-type-submit w-100">
-											<button class="size-md w-100" id="signin" type="button"></button>
-										</div>
-										<div id="cp_portal_event_normal" class="interface-config">
-											<p class="flex-100"><span id="cp_portal_ifconfig_event_normal"></span></p>
-										</div>
-									</form>
-								</div>
-								<div id="logout_undefined" class="form-fields-wrapper field-group d-none">
-									<div id="status_info" class="widget-wrap">
-										<div class="widget-heading">
-											<h4 id="status" class="heading-title"></h4>
-										</div>
-										<div id="cp_portal_event_undefined" class="interface-config">
-											<p class="flex-100"><span id="cp_portal_ifconfig_event_undefined"></span></p>
-										</div>
-										<p id="status_pretext1" class="pretext">
-										<p id="status_pretext2" class="pretext">
-									</div>
-									<div class="widget-wrap">
-										<form class="w-100">
-											<div class="field-group field-type-submit w-100">
-												<button class="size-md w-100" id="logoff" type="button"></button>
-											</div>
-										</form>
-									</div>
-								</div>
-								<div id="login_none" class="form-fields-wrapper field-group d-none">
-									<div id="anon_info" class="widget-wrap">
-										<div class="widget-heading">
-											<h4 id="anon_title" class="heading-title"></h4>
-										</div>
-										<p id="anon_pretext1" class="pretext">
-										<p id="anon_pretext2" class="pretext">
-									</div>
-									<div class="field-type-checkbox field-group w-100 rules-checkbox">
-										<label for="login-rules-anon">
-											<input type="checkbox" id="login-rules-anon" name="rules"><span></span>
-											<span class="text"><span id="termcondition_anon1"></span> <span id="rules_anon" class="link"></span> <span id="termcondition_anon2"></span></span>
-										</label>
-									</div>
-									<form class="w-100">
-										<div class="field-group field-type-submit w-100">
-											<button class="size-md w-100" id="signin_anon" type="button"></button>
-										</div>
-									</form>
-									<div class="field-group w-100"></div>
-									<div id="cp_portal_event_none" class="interface-config">
-										<p class="flex-100"><span id="cp_portal_ifconfig_event_none"></span></p>
-									</div>
-								</div>
-								<div id="isp_info" class="isp-info"></div>
-							</div>
-						</div>
-					</div>
-					<div id="footer_isp_info" class="footer-isp-info"></div>
-					<div id="MSG"></div>
-				</div>
-			</section>
-		</div>
+        <script src="js/jquery-3.7.1.min.js"></script>
+        <script src="js/sprintf.min.js"></script>
+        <script src="js/css_browser_selector.js"></script>
+        <script src="js/cpModal.min.js"></script>
+        <script src="js/jquery.polyglot.language.switcher.js"></script>
+    </head>
+    <body class="no-sidebar using-mouse">
+        <div class="captiveportal">
+            <section id="animate-js">
+                <div class="container d-block d-xl-flex align-items-center">
+                    <div class="row">
+                        <div class="col-12 col-xl-6 left-side">
+                            <div class="wrapper">
+                                <div class="header pb-5">
+                                    <div id="logo" class="logo"></div>
+                                    <div class="heading">
+                                        <h2 id="cp_portal_head_title" class="heading-title"></h2>
+                                    </div>
+                                </div>
+                                <div class="clearfix">
+                                    <p id="cp_portal_info"></p>
+                                </div>
+                                <div id="cp_portal_cookies_note" class="spacer-inner"></div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-xl-6 right-side">
+                            <div class="wrapper">
+                                <div class="form-fields-wrapper">
+                                    <div id="polyglotLanguageSwitcher"></div>
+                                </div>
+                                <div id="login_normal" class="form-fields-wrapper d-none">
+                                    <form class="login form">
+                                        <div id="fieldUsername" class="field-type-text field-group w-100 field-required">
+                                            <label id="username" for="inputUsername"></label>
+                                            <input type="text" id="inputUsername" class="field field-text size-sm" required autocomplete="off" autocapitalize="none" readonly>
+                                        </div>
+                                        <div id="fieldPassword" class="field-type-text field-group w-100 field-required">
+                                            <label id="userpass" for="inputPassword"></label>
+                                            <input type="password" id="inputPassword" class="field field-text size-sm" required readonly>
+                                        </div>
+                                        <div class="field-type-checkbox field-group w-100 rules-checkbox">
+                                            <label for="login-rules">
+                                                <input type="checkbox" id="login-rules" name="rules"><span></span>
+                                                <span class="text"><span id="termcondition1"></span> <span id="rules" class="link"></span> <span id="termcondition2"></span></span>
+                                            </label>
+                                        </div>
+                                        <div id="signin-box" class="field-group field-type-submit w-100">
+                                            <button class="size-md w-100" id="signin" type="button"></button>
+                                        </div>
+                                        <div id="cp_portal_event_normal" class="interface-config">
+                                            <p class="flex-100"><span id="cp_portal_ifconfig_event_normal"></span></p>
+                                        </div>
+                                    </form>
+                                </div>
+                                <div id="logout_undefined" class="form-fields-wrapper field-group d-none">
+                                    <div id="status_info" class="widget-wrap">
+                                        <div class="widget-heading">
+                                            <h4 id="status" class="heading-title"></h4>
+                                        </div>
+                                        <div id="cp_portal_event_undefined" class="interface-config">
+                                            <p class="flex-100"><span id="cp_portal_ifconfig_event_undefined"></span></p>
+                                        </div>
+                                        <p id="status_pretext1" class="pretext">
+                                        <p id="status_pretext2" class="pretext">
+                                    </div>
+                                    <div class="widget-wrap">
+                                        <form class="w-100">
+                                            <div class="field-group field-type-submit w-100">
+                                                <button class="size-md w-100" id="logoff" type="button"></button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                                <div id="login_none" class="form-fields-wrapper field-group d-none">
+                                    <div id="anon_info" class="widget-wrap">
+                                        <div class="widget-heading">
+                                            <h4 id="anon_title" class="heading-title"></h4>
+                                        </div>
+                                        <p id="anon_pretext1" class="pretext">
+                                        <p id="anon_pretext2" class="pretext">
+                                    </div>
+                                    <div class="field-type-checkbox field-group w-100 rules-checkbox">
+                                        <label for="login-rules-anon">
+                                            <input type="checkbox" id="login-rules-anon" name="rules"><span></span>
+                                            <span class="text"><span id="termcondition_anon1"></span> <span id="rules_anon" class="link"></span> <span id="termcondition_anon2"></span></span>
+                                        </label>
+                                    </div>
+                                    <form class="w-100">
+                                        <div class="field-group field-type-submit w-100">
+                                            <button class="size-md w-100" id="signin_anon" type="button"></button>
+                                        </div>
+                                    </form>
+                                    <div class="field-group w-100"></div>
+                                    <div id="cp_portal_event_none" class="interface-config">
+                                        <p class="flex-100"><span id="cp_portal_ifconfig_event_none"></span></p>
+                                    </div>
+                                </div>
+                                <div id="isp_info" class="isp-info"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="footer_isp_info" class="footer-isp-info"></div>
+                    <div id="MSG"></div>
+                </div>
+            </section>
+        </div>
 
-		<script src="js/functions.js"></script>
-		<script src="js/api.js"></script>
-		<script src="js/bootstrap533.min.js"></script>
-	</body>
+        <script src="js/functions.js"></script>
+        <script src="js/api.js"></script>
+        <script src="js/bootstrap533.min.js"></script>
+    </body>
 </html>

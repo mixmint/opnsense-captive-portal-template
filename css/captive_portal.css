@@ -222,8 +222,8 @@
         font-weight: 100;
     }
     #cp_portal_info {
-    font-weight: 300;
-    line-height: 1.6em;
+        font-weight: 300;
+        line-height: 1.6em;
     }
     .field-group {
         margin-bottom: 12px;
@@ -285,65 +285,65 @@
 
     #signin[disabled],
     #signin_anon[disabled] {
-    position: relative;
-    overflow: hidden;
-    -webkit-transition: 0.25s;
-    -moz-transition: 0.25s;
-    transition: 0.25s;
-    &:before {
-        content: "";
-        position: absolute;
-        left: -46px;
-        right: 0;
-        top: 0;
-        bottom: 0;
-        z-index: 1;
-        background: -webkit-repeating-linear-gradient(145deg, rgba(0, 0, 0, 0) 1px, rgba(255, 255, 255, .2) 2px, rgba(255, 255, 255, .2) 11px, rgba(0, 0, 0, 0) 12px, rgba(0, 0, 0, 0) 20px);
-        background: repeating-linear-gradient(-55deg, rgba(0, 0, 0, 0) 1px, rgba(255, 255, 255, .2) 2px, rgba(255, 255, 255, .2) 11px, rgba(0, 0, 0, 0) 12px, rgba(0, 0, 0, 0) 20px);
-        -webkit-animation-name: MOVE-BG;
-        -webkit-animation-duration: .6s;
-        -webkit-animation-timing-function: linear;
-        -webkit-animation-iteration-count: infinite;
-        animation-name: MOVE-BG;
-        animation-duration: .6s;
-        animation-timing-function: linear;
-        animation-iteration-count: infinite;
-    }
-    }
-    #signin-box #signin[disabled],
-    #login_none #signin_anon[disabled] {
-    &:after {
-        content: "×";
-        position: absolute;
-        left: 0;
-        right: 0;
-        top: 0;
-        bottom: 0;
-        font-size: 26px;
-        color: var(--button_bg, initial);
-        margin-top: auto;
-        margin-bottom: auto;
-        margin-left: 9px;
-        padding-left: 3px;
-        margin-right: auto;
-        width: 30px;
-        height: 30px;
-        background: rgba(255, 255, 255, .5);
-        z-index: 100;
+        position: relative;
+        overflow: hidden;
         -webkit-transition: 0.25s;
         -moz-transition: 0.25s;
         transition: 0.25s;
-    }
-    &:hover {
-        &:after {
-            color: var(--button_hover_bg, initial);
-            background: rgba(0, 0, 0, .5);
+        &:before {
+            content: "";
+            position: absolute;
+            left: -46px;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            z-index: 1;
+            background: -webkit-repeating-linear-gradient(145deg, rgba(0, 0, 0, 0) 1px, rgba(255, 255, 255, .2) 2px, rgba(255, 255, 255, .2) 11px, rgba(0, 0, 0, 0) 12px, rgba(0, 0, 0, 0) 20px);
+            background: repeating-linear-gradient(-55deg, rgba(0, 0, 0, 0) 1px, rgba(255, 255, 255, .2) 2px, rgba(255, 255, 255, .2) 11px, rgba(0, 0, 0, 0) 12px, rgba(0, 0, 0, 0) 20px);
+            -webkit-animation-name: MOVE-BG;
+            -webkit-animation-duration: .6s;
+            -webkit-animation-timing-function: linear;
+            -webkit-animation-iteration-count: infinite;
+            animation-name: MOVE-BG;
+            animation-duration: .6s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
         }
     }
+    #signin-box #signin[disabled],
+    #login_none #signin_anon[disabled] {
+        &:after {
+            content: "×";
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            font-size: 26px;
+            color: var(--button_bg, initial);
+            margin-top: auto;
+            margin-bottom: auto;
+            margin-left: 9px;
+            padding-left: 3px;
+            margin-right: auto;
+            width: 30px;
+            height: 30px;
+            background: rgba(255, 255, 255, .5);
+            z-index: 100;
+            -webkit-transition: 0.25s;
+            -moz-transition: 0.25s;
+            transition: 0.25s;
+        }
+        &:hover {
+            &:after {
+                color: var(--button_hover_bg, initial);
+                background: rgba(0, 0, 0, .5);
+            }
+        }
     }
     #cp_portal_cookies_note {
-    font-size: 12px;
-    line-height: 16px;
+        font-size: 12px;
+        line-height: 16px;
     }
     .field-type-text {
         background-color: #fff;

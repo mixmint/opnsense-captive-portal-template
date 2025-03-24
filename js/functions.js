@@ -1,5 +1,5 @@
 /**
- * @version 2.0.8
+ * @version 2.0.9
  * @package Multilanguage Captive Portal Template for OPNsense
  * @author Mirosław Majka (mix@proask.pl)
  * @copyright (C) 2025 Mirosław Majka <mix@proask.pl>
@@ -18,6 +18,18 @@ let settings = {},
 const loadJson = (path, file) => {
     return $.ajax({ url: `${path}/${file}.json`, dataType: 'json' });
 }
+
+const waitForObject = async (element, maxWait = 2000) => {
+    const startTime = Date.now();
+    while (Object.keys(element).length === 0) {
+        if (Date.now() - startTime > maxWait) {
+            console.error('Timeout waiting for \'element\' object to load');
+            return false;
+        }
+        await new Promise(resolve => setTimeout(resolve, 50));
+    }
+    return true;
+};
 
 const formatISO = (timeStamp = Date.now()) => {
     return new Date(timeStamp - (new Date().getTimezoneOffset() * 60000)).toISOString().slice(0,-5).split('T');
@@ -130,11 +142,13 @@ $.getMultiScripts = (batch, path) => {
 $.getUrlparams = () => {
     var vars = [], hash;
     var hashes = window.location.href.slice(window.location.href.indexOf('?') + 1).split('&');
+
     for(var i = 0; i < hashes.length; i++) {
         hash = hashes[i].split('=');
         vars.push(hash[0]);
         vars[hash[0]] = (typeof hash[1] !== 'undefined' ? hash[1].replace(/^(?:(.*:)?\/\/)?(.*)/i, (match, schemma, nonSchemmaUrl) => schemma ? match : `http://${nonSchemmaUrl}`) : '');
     }
+
     return vars;
 }
 
@@ -204,19 +218,104 @@ $.setLangLayout = (langs, selectedLang, container) => {
     $.setLang(container);
 };
 
-$.clientInfo = (data) => {
+$.clientInfo = async (data) => {
+    await waitForObject(langText);
+
     const container = $(`#cp_portal_event_${data.authType}`);
-    if (!container.length) return;
 
-    const appendInfo = (title, value, className = 'config-address') => container.append(`<p><span class="if-title">${title}</span> <span class="${className}">${value}</span></p>`);
+    if (!container.length) {
+        return;
+    }
 
-    if (data.ipAddress) appendInfo(langText.cp_portal_ifconfig_ip_address, data.ipAddress);
-    if (data.macAddress) appendInfo(langText.cp_portal_ifconfig_mac_address, data.macAddress);
+    const appendInfo = (wrapperClass, title, value, className = 'config-address') => container.append(`<p class="${wrapperClass}"><span class="if-title">${title}</span> <span class="${className}">${value}</span></p>`);
+
+    data.ipAddress && appendInfo('flex-50', langText.cp_portal_ifconfig_ip_address, data.ipAddress);
+    data.macAddress && appendInfo('flex-50', langText.cp_portal_ifconfig_mac_address, data.macAddress);
 
     if (typeof data.startTime === 'number') {
-        const sessionStart = formatISO(data.startTime * 1000).join(' ');
-        appendInfo(langText.cp_session_start_time, sessionStart, 'config-info');
+        appendInfo('flex-100', langText.cp_session_start_time, formatISO(data.startTime * 1000).join(' '), 'config-info');
     }
+
+    if (data.acc_session_timeout != null && $('.wrapperTimeLeft').length === 0) {
+        let timeLeft = parseInt(data.acc_session_timeout, 10);
+        const sinceLogon = (Date.now() / 1000) - parseInt(data.startTime, 10);
+        timeLeft = Math.max(timeLeft - sinceLogon, 0);
+
+        appendInfo('wrapperTimeLeft flex-100', langText.cp_session_time_left, updateTimeLeft(timeLeft), 'time-left-value');
+
+        const timer = setInterval(() => {
+            timeLeft -= 60;
+
+            if (timeLeft <= 0) {
+                clearInterval(timer);
+                showModal({
+                    title: langText.cp_session_timeout_title,
+                    subtitle: langText.cp_session_timeout_info_title,
+                    content: langText.cp_session_timeout_content,
+                    iconText: '&#x27f3;',
+                    customStyles: {
+                        timeout: settings.modal.timeout,
+                        timeoutProgressbar: true,
+                        pauseOnHover: true
+                    },
+                    onClose: () => window.location.reload()
+                });
+            }
+
+            $('.wrapperTimeLeft .time-left-value').text(updateTimeLeft(timeLeft));
+        }, 60000);
+    }
+};
+
+const updateTimeLeft = (timeLeft) => {
+    const days = Math.floor(timeLeft / 43200);
+    const hours = Math.floor((timeLeft % 43200) / 3600);
+    const minutes = Math.floor((timeLeft % 3600) / 60);
+
+    const formatTime = (value, texts) => {
+        if (value === 0) {
+            return '';
+        }
+
+        const lastTwoDigits = value % 100;
+        const lastDigit = value % 10;
+
+        if (lastTwoDigits >= 11 && lastTwoDigits <= 14) {
+            return `${value} ${texts.other}`;
+        }
+
+        if (value === 1) {
+            return `${value} ${texts.one}`;
+        }
+
+        if (lastDigit >= 2 && lastDigit <= 4) {
+            return `${value} ${texts.few}`;
+        }
+
+        return `${value} ${texts.other}`;
+    };
+
+    const daysText = formatTime(days, {
+        one: langText.cp_session_time_left_one_day,
+        few: langText.cp_session_time_left_two_four_days,
+        other: langText.cp_session_time_left_other_days
+    });
+
+    const hoursText = formatTime(hours, {
+        one: langText.cp_session_time_left_one_hour,
+        few: langText.cp_session_time_left_two_four_hours,
+        other: langText.cp_session_time_left_other_hours
+    });
+
+    const minutesText = (days === 0 && hours === 0 && minutes < 1)
+    ? langText.cp_session_time_left_less_than_minute
+    : formatTime(minutes, {
+        one: langText.cp_session_time_left_one_minute,
+        few: langText.cp_session_time_left_two_four_minutes,
+        other: langText.cp_session_time_left_other_minutes
+    });
+
+    return [daysText, hoursText, minutesText].filter(Boolean).join(', ');
 };
 
 $.createCookie = (name, value, days) => {
@@ -240,6 +339,7 @@ $.getCookie = (cname) => {
             return c.substring(name.length, c.length);
         }
     }
+
     return "";
 }
 
@@ -316,7 +416,7 @@ $.connectionLogon = (data) => {
         $.connectionBlocked(data.local);
     }
 
-    if (data['clientState'] == 'AUTHORIZED') {
+    if (data.clientState == 'AUTHORIZED') {
         if (settings.login.control && typeof data.loginTime !== 'undefined') {
             delete data.loginTime;
         }
@@ -355,10 +455,10 @@ $.connectionStatus = (data) => {
         localId = [...data.ipAddress].map((x, i) => (x.codePointAt() ^ data.authType.charCodeAt(i % data.authType.length) % 255).toString(16).padStart(2,'0')).join('');
     }
 
-    if (data['clientState'] == 'AUTHORIZED') {
+    if (data.clientState == 'AUTHORIZED') {
         $('#login_normal').addClass('d-none');
         $('#logout_undefined').removeClass('d-none');
-    } else if (data['authType'] == 'none') {
+    } else if (data.authType == 'none') {
         $('#login_normal').addClass('d-none');
         $('#login_none').removeClass('d-none');
     } else {
