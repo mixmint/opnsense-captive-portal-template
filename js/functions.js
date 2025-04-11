@@ -1,5 +1,5 @@
 /**
- * @version 2.0.9
+ * @version 2.1.0
  * @package Multilanguage Captive Portal Template for OPNsense
  * @author Mirosław Majka (mix@proask.pl)
  * @copyright (C) 2025 Mirosław Majka <mix@proask.pl>

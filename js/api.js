@@ -1,5 +1,5 @@
 /**
- * @version 2.0.9
+ * @version 2.1.0
  * @package Multilanguage Captive Portal Template for OPNsense
  * @author Mirosław Majka (mix@proask.pl)
  * @copyright (C) 2025 Mirosław Majka <mix@proask.pl>
@@ -131,7 +131,7 @@ const handleLogoff = (event) => {
     event.preventDefault();
     $.ajax({
         type: 'POST',
-        url: `/api/captiveportal/access/logoff/${zoneid}/`,
+        url: '/api/captiveportal/access/logoff/',
         dataType: 'json',
         data: { user: '', password: '' },
     })
@@ -142,7 +142,7 @@ const handleLogoff = (event) => {
 const authenticateUser = (credentials) => {
     $.ajax({
         type: 'POST',
-        url: `/api/captiveportal/access/logon/${zoneid}/`,
+        url: '/api/captiveportal/access/logon/',
         dataType: 'json',
         data: credentials,
     })
@@ -160,7 +160,7 @@ const setupRulesLink = () => {
 const checkConnectionStatus = () => {
     $.ajax({
         type: 'POST',
-        url: `/api/captiveportal/access/status/${zoneid}/`,
+        url: '/api/captiveportal/access/status/',
         dataType: 'json',
         data: {
             user: $('#inputUsername').val(),
