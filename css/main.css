@@ -71,7 +71,14 @@ small {
 img {
     height: auto;
     max-width: 100%;
-    .brand-logo {
+    &.brand-logo {
+        max-width: unset !important;
+        width: 150px !important;
+        height: 150px !important;
+    }
+}
+div {
+    &.brand-logo {
         max-width: unset !important;
         width: 150px !important;
         height: 150px !important;
@@ -273,7 +280,7 @@ section {
         font-weight: 400;
     }
     .field,
-    > a {
+    & > a {
         color: var(--color_primary, initial);
     }
 }
@@ -307,7 +314,7 @@ section {
 }
 .form {
     button {
-        > span {
+        & > span {
             display: -webkit-box;
             display: -webkit-flex;
             display: flex;
