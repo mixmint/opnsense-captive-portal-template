@@ -47,9 +47,9 @@
     input[type="checkbox"],
     input[type="radio"] {
         &:not(old) {
-            + label {
+            & + label {
                 margin: -2px -1.7em 15px 0;
-                > span {
+                & > span {
                     &:not([id]):not([class]) {
                         margin: 0.25em 0 0.25em 0.5em;
                     }
@@ -58,11 +58,11 @@
         }
     }
     label {
-        > input[type="checkbox"],
-        > input[type="radio"] {
+        & > input[type="checkbox"],
+        & > input[type="radio"] {
             &:not(old) {
                 margin: 0.25em 0 0.25em 0.5em;
-                + span {
+                & + span {
                     &:not([id]):not([class]) {
                         margin: 0.25em 0 0.25em 0.5em;
                     }

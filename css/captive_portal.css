@@ -158,7 +158,7 @@
             background-position: var(--bg_left_side_position, none);
             background-size: var(--bg_left_side_size, none);
             transition: width 0.3s ease-in;
-            > * {
+            & > * {
                 position: relative;
                 z-index: 2;
             }
@@ -227,7 +227,7 @@
     }
     .field-group {
         margin-bottom: 12px;
-        > label {
+        & > label {
             padding-bottom: 0;
         }
         .field {
@@ -357,7 +357,7 @@
             &:first-child {
                 margin-top: 40px;
             }
-            + .field-type-checkbox {
+            & + .field-type-checkbox {
                 margin-top: 40px;
             }
             &:before {
@@ -394,7 +394,7 @@
 }
 
 .rules {
-    > p {
+    & > p {
         margin-top: 1em;
         margin-bottom: 0.5em;
         &:first-child {

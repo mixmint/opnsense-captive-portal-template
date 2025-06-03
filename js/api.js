@@ -1,5 +1,5 @@
 /**
- * @version 2.1.0
+ * @version 2.1.1
  * @package Multilanguage Captive Portal Template for OPNsense
  * @author Mirosław Majka (mix@proask.pl)
  * @copyright (C) 2025 Mirosław Majka <mix@proask.pl>
@@ -42,12 +42,57 @@ const initializeVantaEffect = () => {
     }
 };
 
-const updateLogo = () => {
-    if (settings.logo) {
-        $('#logo').html(
-            `<img class="brand-logo" src="${settings.logo}" height="150" width="150">`
+const updateLogo = async () => {
+    const logoContainer = $('#logo');
+    const fallback      = '/images/default-logo.svg';
+    const extensions    = ['svg', 'png', 'jpg'];
+    const basePath      = '/images/logo';
+
+    if (settings.logo && settings.logo.startsWith('data:image/')) {
+        logoContainer.html(
+            `<img class="brand-logo" src="${settings.logo}" height="150" width="150" alt="Logo">`
         );
+
+        return;
     }
+
+    if (settings.logo && typeof settings.logo === 'string') {
+        try {
+            const res = await fetch(settings.logo, { method: 'HEAD' });
+
+            if (res.ok) {
+                logoContainer.html(
+                    `<img class="brand-logo" src="${settings.logo}" height="150" width="150" alt="Logo">`
+                );
+
+                return;
+            }
+        } catch (e) {
+
+        }
+    }
+
+    const urls = extensions.map(ext => `${basePath}.${ext}`);
+
+    for (const url of urls) {
+        try {
+            const res = await fetch(url, { method: 'HEAD' });
+
+            if (res.ok) {
+                logoContainer.html(
+                    `<img class="brand-logo" src="${url}" height="150" width="150" alt="Logo">`
+                );
+
+                return;
+            }
+        } catch (e) {
+
+        }
+    }
+
+    logoContainer.html(
+        `<img class="brand-logo" src="${fallback}" height="150" width="150" alt="Logo">`
+    );
 };
 
 const setupLanguage = () => {

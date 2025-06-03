@@ -35,8 +35,8 @@ input[type="radio"] {
 input[type="checkbox"] {
     &:not(old) {
         &:checked {
-            + label {
-                > span {
+            & + label {
+                & > span {
                     &:not([id]):not([class]) {
                         &:before {
                             content: "×";
@@ -99,8 +99,8 @@ input[type="radio"] {
     }
 }
 label {
-    > input[type="checkbox"],
-    > input[type="radio"] {
+    & > input[type="checkbox"],
+    & > input[type="radio"] {
         &:not(old) {
             display: inline-block;
             margin: 0.25em 0.5em 0.25em 0;
@@ -109,7 +109,7 @@ label {
             position: absolute;
             width: 22px;
             height: 22px;
-            + span {
+            & + span {
                 &:not([id]):not([class]) {
                     display: flex;
                     justify-content: center;
@@ -128,17 +128,17 @@ label {
             }
         }
     }
-    > input[type="radio"] {
+    & > input[type="radio"] {
         &:not(old) {
-            + span {
+            & + span {
                 &:not([id]):not([class]) {
                     border-radius: 100%;
                 }
             }
             &:checked {
-                + span {
+                & + span {
                     &:not([id]):not([class]) {
-                        > span {
+                        & > span {
                             &:before {
                                 content: "•";
                                 display: table-cell;
@@ -155,10 +155,10 @@ label {
             }
         }
     }
-    > input[type="checkbox"] {
+    & > input[type="checkbox"] {
         &:not(old) {
             &:checked {
-                + span {
+                & + span {
                     &:not([id]):not([class]) {
                         &:before {
                             content: "×";
