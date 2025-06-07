@@ -359,7 +359,7 @@
 	<li>splitting CSS into smaller portions, nesting CSS selectors,</li>
 	<li>blocking the ability to log into the system for a specified period of time, after a specified number of possible attempts,</li>
 	<li>With the release of version 25 of OPNsense, the logo has been changed - many thanks for the update and vigilance to <a href="https://github.com/OctoCharm" target="_blank" rel="noopener"><strong>@OctoCharm</strong></a>.</li>
-	<li>New translation provided by <strong>Christian</strong> - thanks.</li>
+	<li>New translation provided by <strong>Christian Sahlmüller</strong> - thanks.</li>
 </ul>
 <p>&nbsp;</p>
 <h4>What I plan to change:</h4>
