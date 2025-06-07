@@ -3,12 +3,14 @@
 	"langs": {
 		"en": "English",
 		"pl": "Polski",
-		"sk": "Sloven\u010dina"
+		"sk": "Sloven\u010dina",
+		"de": "Deutsch"
 	},
 	"langs_iso": {
 		"en": "en-GB",
 		"pl": "pl-PL",
-		"sk": "sk-SK"
+		"sk": "sk-SK",
+		"de": "de-DE"
 	},
 	"login": {
 		"control": false,
