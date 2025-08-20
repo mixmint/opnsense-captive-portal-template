@@ -202,10 +202,11 @@ License URI: http://www.opensource.org/licenses/mit-license.php
 
         function doAction(item) {
             close();
-            var selectedAElement = $(item).children(":first-child");
-
-            var selectedId = $(selectedAElement).attr("id");
-            var selectedText = $(selectedAElement).text();
+            var selectedAElement  = $(item).children(":first-child");
+            var selectedId        = $(selectedAElement).attr("id");
+            var selectedAriaLabel = $(selectedAElement).attr("aria-label");
+            var selectedTitle     = $(selectedAElement).attr("title");
+            var selectedText      = $(selectedAElement).text();
 
             $(ulElement).children().each(function () {
                 $(this).detach();
@@ -217,6 +218,8 @@ License URI: http://www.opensource.org/licenses/mit-license.php
             }
             var innerSpanElement = aElement.children(":first-child");
             aElement.attr("id", selectedId);
+            aElement.attr("aria-label", selectedAriaLabel);
+            aElement.attr("title", selectedTitle);
             aElement.text(selectedText);
             aElement.append(innerSpanElement);
         }
@@ -256,8 +259,8 @@ License URI: http://www.opensource.org/licenses/mit-license.php
                 var selected;
                 if (isStaticWebSite) {
                     selected = selectedId === id;
-                }else{
-                    selected = $(this).attr("selected")
+                } else {
+                    selected = $(this).attr("selected");
                 }
                 var liElement = toLiElement($(this));
                 if (selected) {
@@ -267,7 +270,7 @@ License URI: http://www.opensource.org/licenses/mit-license.php
                 if (length > 0) {
                     ulElement.append(liElement);
                 } else {
-                    aElement = $("<a id=\"" + $(this).attr("id") + "\" class=\"current\" href=\"javascript:void(0);\">" + $(this).text() + " <span class=\"trigger\"></span></a>");
+                    aElement = $("<a id=\"" + $(this).attr("id") + "\" class=\"current\" href=\"javascript:void(0);\" title=\"" + $(this).attr("data-title") + "\" aria-label=\"" + $(this).attr("aria-label") + "\">" + $(this).text() + " <span class=\"trigger\"></span></a>");
                     if (settings.openMode == 'hover') {
                         aElement.hover(function () {
                             open();
@@ -296,13 +299,15 @@ License URI: http://www.opensource.org/licenses/mit-license.php
         function toLiElement(option) {
             var id = $(option).attr("id");
             var value = $(option).attr("value");
+            var aria_label = $(option).attr("aria-label");
+            var title = $(option).attr("data-title");
             var text = $(option).text();
             var liElement;
             if (isStaticWebSite) {
                 var url = window.location.href;
                 var page = url.substring(url.lastIndexOf("/")+1);
                 var urlPage = 'http://' + document.domain + '/' + settings.pagePrefix + id + '/' + page;
-                liElement = $("<li><a id=\"" + id + "\" href=\"" + urlPage + "\">" + text + "</a></li>");
+                liElement = $("<li><a id=\"" + id + "\" href=\"" + urlPage + "\" title=\"" + title + "\" aria-label=\"" + aria_label + "\">" + text + "</a></li>");
             } else {
                 var href = document.URL.replace('#', '');
                 var params = parseQueryString();
@@ -311,7 +316,7 @@ License URI: http://www.opensource.org/licenses/mit-license.php
                     href = href.substring(0, href.indexOf('?'));
                 }
                 href += toQueryString(params);
-                liElement = $("<li><a id=\"" + id + "\" href=\"" + href + "\">" + text + "</a></li>");
+                liElement = $("<li><a id=\"" + id + "\" href=\"" + href + "\" title=\"" + title + "\" aria-label=\"" + aria_label + "\">" + text + "</a></li>");
             }
             liElement.bind('click', function () {
                 triggerEvent({name:'onChange', selectedItem: $(this).children(":first").attr('id'), element:rootElement, instance:ls});

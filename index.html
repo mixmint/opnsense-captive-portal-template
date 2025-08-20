@@ -59,7 +59,7 @@
                         <div class="col-12 col-xl-6 right-side">
                             <div class="wrapper">
                                 <div class="form-fields-wrapper">
-                                    <div id="polyglotLanguageSwitcher"></div>
+                                    <div id="polyglotLanguageSwitcher" role="group"></div>
                                 </div>
                                 <div id="login_normal" class="form-fields-wrapper d-none">
                                     <form class="login form">
@@ -73,8 +73,8 @@
                                         </div>
                                         <div class="field-type-checkbox field-group w-100 rules-checkbox">
                                             <label for="login-rules">
-                                                <input type="checkbox" id="login-rules" name="rules"><span></span>
-                                                <span class="text"><span id="termcondition1"></span> <span id="rules" class="link"></span> <span id="termcondition2"></span></span>
+                                                <input type="checkbox" id="login-rules" name="rules" aria-describedby="rules-text"><span></span>
+                                                <span id="rules-text" class="text"><span id="termcondition1"></span> <span id="rules" class="link"></span> <span id="termcondition2"></span></span>
                                             </label>
                                         </div>
                                         <div id="signin-box" class="field-group field-type-submit w-100">
@@ -86,7 +86,7 @@
                                     </form>
                                 </div>
                                 <div id="logout_undefined" class="form-fields-wrapper field-group d-none">
-                                    <div id="status_info" class="widget-wrap">
+                                    <div id="status_info" class="widget-wrap" role="status">
                                         <div class="widget-heading">
                                             <h4 id="status" class="heading-title"></h4>
                                         </div>
@@ -114,8 +114,8 @@
                                     </div>
                                     <div class="field-type-checkbox field-group w-100 rules-checkbox">
                                         <label for="login-rules-anon">
-                                            <input type="checkbox" id="login-rules-anon" name="rules"><span></span>
-                                            <span class="text"><span id="termcondition_anon1"></span> <span id="rules_anon" class="link"></span> <span id="termcondition_anon2"></span></span>
+                                            <input type="checkbox" id="login-rules-anon" name="rules" aria-describedby="rules-text-anon"><span></span>
+                                            <span id="rules-text-anon" class="text"><span id="termcondition_anon1"></span> <span id="rules_anon" class="link"></span> <span id="termcondition_anon2"></span></span>
                                         </label>
                                     </div>
                                     <form class="w-100">
@@ -128,7 +128,7 @@
                                         <p class="flex-100"><span id="cp_portal_ifconfig_event_none"></span></p>
                                     </div>
                                 </div>
-                                <div id="isp_info" class="isp-info"></div>
+                                <div id="isp_info" class="isp-info" role="region"></div>
                             </div>
                         </div>
                     </div>

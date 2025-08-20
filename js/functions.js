@@ -15,6 +15,10 @@ let settings = {},
     _root = document.querySelector(':root'),
     attempt = 0;
 
+const allowedAttrs = ['aria-label', 'title'];
+
+const isAllowedAttr = (attr) => allowedAttrs.includes(attr.toLowerCase()) || attr.toLowerCase().startsWith('data-');
+
 const loadJson = (path, file) => {
     return $.ajax({ url: `${path}/${file}.json`, dataType: 'json' });
 }
@@ -35,14 +39,18 @@ const formatISO = (timeStamp = Date.now()) => {
     return new Date(timeStamp - (new Date().getTimezoneOffset() * 60000)).toISOString().slice(0,-5).split('T');
 }
 
-const getFlagEmoji = (langCode) => {
-    const code = langCode.toUpperCase();
-    return code.replace(/./g, char => String.fromCodePoint(127397 + char.charCodeAt()));
-};
-
 const updateUIWithLangText = (texts) => {
     Object.entries(texts).forEach(([key, value]) => {
-        if (typeof value === 'object') {
+        if (key.startsWith('attr_')) {
+            const targetId = key.replace('attr_', '');
+            if (typeof value === 'object') {
+                Object.entries(value).forEach(([attrName, attrValue]) => {
+                    if (isAllowedAttr(attrName)) {
+                        $(`#${targetId}`).attr(attrName, attrValue);
+                    }
+                });
+            }
+        } else if (typeof value === 'object') {
             const content = Object.entries(value)
             .map(([k, v]) => `<div class="${k}">${v}</div>`)
             .join('');
@@ -223,7 +231,7 @@ $.setLangLayout = (langs, selectedLang, container) => {
                 <form action="javascript:void(0);">
                     <select id="polyglot-language-options" class="flags-select ${langFlagsDir}">
                         ${Object.entries(langs).map(([key, value]) =>
-                            `<option id="${key}" value="${key}"${key === selectedLang ? ' selected' : ''}>
+                            `<option id="${key}" value="${key}" data-title="${value}" aria-label="${value}"${key === selectedLang ? ' selected' : ''}>
                                 ${value}
                             </option>`).join('')}
                     </select>
@@ -235,7 +243,7 @@ $.setLangLayout = (langs, selectedLang, container) => {
                 <form action="javascript:void(0);">
                     <select id="polyglot-language-options" class="flags-only-select ${langFlagsDir}">
                         ${Object.entries(langs).map(([key, value]) =>
-                            `<option id="${key}" value="${key}"${key === selectedLang ? ' selected' : ''}>
+                            `<option id="${key}" value="${key}" data-title="${value}" aria-label="${value}"${key === selectedLang ? ' selected' : ''}>
                                 &nbsp;
                             </option>`).join('')}
                     </select>
@@ -247,7 +255,7 @@ $.setLangLayout = (langs, selectedLang, container) => {
                 <ul id="polyglotLanguageSwitcher" class="d-flex flex-wrap justify-content-end gap-3 pb-3">
                     ${Object.entries(langs).map(([key, value]) =>
                         `<li id="${key}" data-lang="${key}" class="flag-item${key === selectedLang ? ' selected' : ''}" title="${value}">
-                            <img src="/images/flags/${langFlagsDir}/${key}.svg" alt="${value}" />
+                            <img src="/images/flags/${langFlagsDir}/${key}.svg" alt="${value}" data-title="${value}" aria-label="${value}" />
                         </li>`).join('')}
                 </ul>`;
             break;
@@ -258,7 +266,7 @@ $.setLangLayout = (langs, selectedLang, container) => {
                 <form action="javascript:void(0);">
                     <select id="polyglot-language-options">
                         ${Object.entries(langs).map(([key, value]) =>
-                            `<option id="${key}" value="${key}"${key === selectedLang ? ' selected' : ''}>
+                            `<option id="${key}" value="${key}" data-title="${value}" aria-label="${value}"${key === selectedLang ? ' selected' : ''}>
                                 ${value}
                             </option>`).join('')}
                     </select>
@@ -266,13 +274,8 @@ $.setLangLayout = (langs, selectedLang, container) => {
             break;
     }
 
-    if (!$(container).hasClass(layoutType)) {
-        $(container).addClass(layoutType);
-    }
-
-    if (!$(container).hasClass('flags-' + langFlagsDir)) {
-        $(container).addClass('flags-' + langFlagsDir);
-    }
+    $(container).addClass(layoutType + ' flags-' + langFlagsDir);
+    $(container).attr('aria-label', $(container).attr('aria-label') || langText.cp_portal_select_lang);
 
     $(container).html(html);
     $.setLang(container);

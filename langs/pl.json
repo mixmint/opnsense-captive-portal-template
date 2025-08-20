@@ -4,6 +4,9 @@
         "isp_address": "Nazwa ulicy 10, miasto i kod pocztowy itp.",
         "isp_id": "Pozosta\u0142e informacje."
     },
+    "attr_isp_info": {
+        "aria-label": "Informacje o dostawcy internetu"
+    },
     "footer_isp_info": {},
     "pagetitle": "System logowania u\u017cytkownik\u00f3w | < Nazwa ISP >",
     "username": "Nazwa u\u017cytkownika (Login)",
@@ -36,6 +39,7 @@
     "cp_portal_ifconfig_event_undefined": "Konfiguracja interfejsu sieciowego",
     "cp_portal_ifconfig_ip_address": "IP",
     "cp_portal_ifconfig_mac_address": "MAC",
+    "cp_portal_select_lang": "Wyb\u00f3r j\u0119zyka",
     "cp_session_start_time": "Urz\u0105dzenie zosta\u0142o zalogowane od:",
     "cp_session_time_left": "Czas do zako\u0144czenia sesji:",
     "cp_session_time_left_one_minute": "minuta",
