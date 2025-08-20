@@ -19,14 +19,13 @@
             position: absolute;
             margin-top: -21px;
             padding-top: 14px;
-            position: absolute;
             right: 0;
             left: 0;
             margin-left: auto;
             opacity: 0;
             width: 80%;
             z-index: -100;
-            display: none\9;
+            display: none;
             -webkit-transition: 0.3s ease-out;
             -moz-transition: 0.3s ease-out;
             transition: 0.3s ease-out;
@@ -99,10 +98,12 @@
         font-size: 14px;
         font-weight: 500;
         line-height: 14px;
+        background-repeat: no-repeat;
         &:hover {
             color: #000;
         }
         &.current {
+            border-radius: 5px;
             &:link,
             &:visited,
             &:active {
@@ -177,6 +178,212 @@
             -moz-transition: 0.25s;
             transition: 0.25s;
             -webkit-backface-visibility: hidden;
+        }
+    }
+
+    &.flags-list {
+        li {
+            cursor: pointer;
+            box-shadow: inset 0 0 0 1px var(--flags_outline_color, transparent);
+            -webkit-box-shadow: inset 0 0 0 1px var(--flags_outline_color, transparent);
+            border-radius: 5px;
+            padding: 3px;
+            &.selected {
+                box-shadow: inset 0 0 0 1px var(--flags_outline_active_color, transparent);
+                -webkit-box-shadow: inset 0 0 0 1px var(--flags_outline_active_color, transparent);
+            }
+            &:hover {
+                box-shadow: inset 0 0 0 1px var(--flags_outline_hover_color, transparent);
+                -webkit-box-shadow: inset 0 0 0 1px var(--flags_outline_hover_color, transparent);
+            }
+            img {
+                border-radius: 2px;
+            }
+        }
+        &.flags-1x1 {
+            li {
+                width: 31px;
+                height: auto;
+            }
+        }
+        &.flags-4x3 {
+            li {
+                width: 37px;
+                height: auto;
+            }
+        }
+    }
+
+    &.flags-select,
+    &.flags-only-select {
+        a {
+            &[id] {
+                &:before {
+                    content: "";
+                    display: block;
+                    height: 25px;
+                    border-radius: 3px;
+                    background-size: 100% 25px;
+                    background-clip: padding-box;
+                    background-repeat: no-repeat;
+                    background-position: left center;
+                }
+            }
+        }
+    }
+
+    &.flags-select {
+        a {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            padding: 10px 45px 10px 13px;
+            &[id] {
+                &:before {
+                    display: block;
+                    width: 33px;
+                    position: relative;
+                }
+            }
+            &.current {
+                &[id] {
+                    display: flex;
+                    align-items: center;
+                    position: relative;
+                    border-radius: 5px;
+                }
+            }
+        }
+        .dropdown {
+            li {
+                a {
+                    display: flex;
+                    align-items: center;
+                    position: relative;
+                    padding: 7px;
+                }
+            }
+        }
+        &.flags-1x1 {
+            a {
+                &[id] {
+                    &:before {
+                        width: 25px;
+                    }
+                }
+            }
+        }
+    }
+
+    &.flags-only-select {
+        a {
+            &[id] {
+                &:before {
+                    width: calc(100% - 57px);
+                    position: absolute;
+                    top: 0;
+                    bottom: 0;
+                    left: 8px;
+                    margin-top: auto;
+                    margin-bottom: auto;
+                }
+            }
+            &.current {
+                &[id] {
+                    display: block;
+                    margin-left: auto;
+                    max-width: fit-content;
+                    padding-right: 77px;
+                    position: relative;
+                    font-size: 0;
+                    border-radius: 5px;
+                    &:after {
+                        content: "";
+                        position: absolute;
+                        width: 48px;
+                        height: 40px;
+                        pointer-events: none;
+                        top: 0;
+                        bottom: 0;
+                        left: 0;
+                        margin-top: auto;
+                        margin-bottom: auto;
+                    }
+                }
+            }
+        }
+        .dropdown {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            gap: 15px;
+            padding-top: 27px;
+            width: max-content;
+            padding-right: 15px;
+            padding-left: 15px;
+            max-width: 180px;
+            &:after {
+                content: "";
+                width: 100%;
+                height: 100%;
+                display: block;
+                position: absolute;
+                z-index: -1;
+                background-color: var(--lang_switcher_dropdown, transparent);
+                border-radius: 5px;
+            }
+            li {
+                background-color: unset;
+                width: 40px;
+                &:first-child {
+                    border-top-right-radius: unset;
+                    border-top-left-radius: unset;
+                }
+                &:last-child {
+                    border-bottom-right-radius: unset;
+                    border-bottom-left-radius: unset;
+                }
+                a {
+                    display: flex;
+                    padding: unset !important;
+                    font-size: 0;
+                    line-height: 0;
+                    width: auto;
+                    height: 25px;
+                    position: relative;
+                    &:before {
+                        left: 0 !important;
+                        width: 100% !important;
+                    }
+                    &:hover {
+                        background-color: unset !important;
+                    }
+                }
+            }
+        }
+        &.flags-1x1 {
+            a {
+                &.current {
+                    &[id] {
+                        padding-right: 69px;
+                        &:before {
+                            width: calc(100% - 57px);
+                            height: 25px;
+                        }
+                        &:after {
+                            width: 40px;
+                            height: 40px;
+                        }
+                    }
+                }
+            }
+            .dropdown {
+                max-width: 200px;
+                li {
+                    width: 31px;
+                }
+            }
         }
     }
 }

@@ -1,5 +1,5 @@
 /**
- * @version 2.1.2
+ * @version 2.1.3
  * @package Multilanguage Captive Portal Template for OPNsense
  * @author Mirosław Majka (mix@proask.pl)
  * @copyright (C) 2025 Mirosław Majka <mix@proask.pl>
@@ -34,6 +34,11 @@ const waitForObject = async (element, maxWait = 2000) => {
 const formatISO = (timeStamp = Date.now()) => {
     return new Date(timeStamp - (new Date().getTimezoneOffset() * 60000)).toISOString().slice(0,-5).split('T');
 }
+
+const getFlagEmoji = (langCode) => {
+    const code = langCode.toUpperCase();
+    return code.replace(/./g, char => String.fromCodePoint(127397 + char.charCodeAt()));
+};
 
 const updateUIWithLangText = (texts) => {
     Object.entries(texts).forEach(([key, value]) => {
@@ -208,14 +213,76 @@ $.setLang = (id) => {
 }
 
 $.setLangLayout = (langs, selectedLang, container) => {
-    const options = Object.entries(langs)
-    .map(([key, value]) => `<option id="${key}" value="${key}"${key === selectedLang ? ' selected' : ''}>${value}</option>`)
-    .join('');
+    const layoutType   = settings.layout.lang_layout || 'select';
+    const langFlagsDir = settings.layout.lang_flags_dir || '4x3';
+    let html = '';
 
-    const dropdownHTML = `<div id="polyglotLanguageSwitcher"><form action="javascript:void(0);"><select id="polyglot-language-options">${options}</select></form></div>`;
+    switch (layoutType) {
+        case 'flags-select':
+            html = `
+                <form action="javascript:void(0);">
+                    <select id="polyglot-language-options" class="flags-select ${langFlagsDir}">
+                        ${Object.entries(langs).map(([key, value]) =>
+                            `<option id="${key}" value="${key}"${key === selectedLang ? ' selected' : ''}>
+                                ${value}
+                            </option>`).join('')}
+                    </select>
+                </form>`;
+            break;
 
-    $(container).html(dropdownHTML);
+        case 'flags-only-select':
+            html = `
+                <form action="javascript:void(0);">
+                    <select id="polyglot-language-options" class="flags-only-select ${langFlagsDir}">
+                        ${Object.entries(langs).map(([key, value]) =>
+                            `<option id="${key}" value="${key}"${key === selectedLang ? ' selected' : ''}>
+                                &nbsp;
+                            </option>`).join('')}
+                    </select>
+                </form>`;
+            break;
+
+        case 'flags-list':
+            html = `
+                <ul id="polyglotLanguageSwitcher" class="d-flex flex-wrap justify-content-end gap-3 pb-3">
+                    ${Object.entries(langs).map(([key, value]) =>
+                        `<li id="${key}" data-lang="${key}" class="flag-item${key === selectedLang ? ' selected' : ''}" title="${value}">
+                            <img src="/images/flags/${langFlagsDir}/${key}.svg" alt="${value}" />
+                        </li>`).join('')}
+                </ul>`;
+            break;
+
+        case 'select':
+        default:
+            html = `
+                <form action="javascript:void(0);">
+                    <select id="polyglot-language-options">
+                        ${Object.entries(langs).map(([key, value]) =>
+                            `<option id="${key}" value="${key}"${key === selectedLang ? ' selected' : ''}>
+                                ${value}
+                            </option>`).join('')}
+                    </select>
+                </form>`;
+            break;
+    }
+
+    if (!$(container).hasClass(layoutType)) {
+        $(container).addClass(layoutType);
+    }
+
+    if (!$(container).hasClass('flags-' + langFlagsDir)) {
+        $(container).addClass('flags-' + langFlagsDir);
+    }
+
+    $(container).html(html);
     $.setLang(container);
+
+    if (layoutType === 'flags-list') {
+        $('#polyglotLanguageSwitcher li').on('click', function () {
+            $.createCookie('lang', $(this).data('lang'), 31);
+            location.reload();
+        });
+    }
 };
 
 $.clientInfo = async (data) => {
