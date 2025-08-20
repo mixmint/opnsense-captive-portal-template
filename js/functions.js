@@ -15,7 +15,9 @@ let settings = {},
     _root = document.querySelector(':root'),
     attempt = 0;
 
-const disallowedAttrs = ['id', 'class', 'name'];
+const allowedAttrs = ['aria-label', 'title'];
+
+const isAllowedAttr = (attr) => allowedAttrs.includes(attr.toLowerCase()) || attr.toLowerCase().startsWith('data-');
 
 const loadJson = (path, file) => {
     return $.ajax({ url: `${path}/${file}.json`, dataType: 'json' });
@@ -43,9 +45,8 @@ const updateUIWithLangText = (texts) => {
             const targetId = key.replace('attr_', '');
             if (typeof value === 'object') {
                 Object.entries(value).forEach(([attrName, attrValue]) => {
-                    const attr = attrName.toLowerCase();
-                    if (!disallowedAttrs.includes(attr)) {
-                        $(`#${targetId}`).attr(attr, attrValue);
+                    if (isAllowedAttr(attrName)) {
+                        $(`#${targetId}`).attr(attrName, attrValue);
                     }
                 });
             }
