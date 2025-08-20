@@ -259,9 +259,9 @@
         text-transform: uppercase;
         letter-spacing: 2.8px;
         background-color: var(--button_bg, transparent);
-        border-radius: unset !important;
+        border-radius: 5px !important;
         &:hover {
-            background-color: var(--button_hover_bg, transparent)
+            background-color: var(--button_hover_bg, transparent);
         }
     }
     .rules-checkbox {
@@ -329,6 +329,7 @@
             width: 30px;
             height: 30px;
             background: rgba(255, 255, 255, .5);
+            border-radius: 3px;
             z-index: 100;
             -webkit-transition: 0.25s;
             -moz-transition: 0.25s;
@@ -347,10 +348,11 @@
     }
     .field-type-text {
         background-color: #fff;
-        border-radius: 4px;
         position: relative;
         margin-top: 15px;
         padding-left: 15px;
+        border-top-right-radius: 5px;
+        border-bottom-right-radius: 5px;
     }
     .form {
         .field-type-text {
@@ -367,6 +369,8 @@
                 background-color: var(--input_field_placeholder_color, transparent);
                 position: absolute;
                 left: 0;
+                border-top-left-radius: 5px;
+                border-bottom-left-radius: 5px;
             }
             label {
                 background-color: #fff;
