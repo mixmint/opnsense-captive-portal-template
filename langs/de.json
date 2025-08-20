@@ -4,6 +4,9 @@
         "isp_address": "STRA\u00deE, PLZ ORT",
         "isp_id": "WEITERE INFORMATIONEN."
     },
+    "attr_isp_info": {
+        "aria-label": "Informationen \u00fcber Ihren Internet-Provider"
+    },
     "footer_isp_info": {},
     "pagetitle": "Benutzer-Login-System | <Name ISP>",
     "username": "Benutzername (Login)",
@@ -36,6 +39,7 @@
     "cp_portal_ifconfig_event_undefined": "Network interface configuration",
     "cp_portal_ifconfig_ip_address": "IP",
     "cp_portal_ifconfig_mac_address": "MAC",
+    "cp_portal_select_lang": "Sprachauswahl",
     "cp_session_start_time": "Das Ger\u00e4t ist angemeldet seit:",
     "cp_session_time_left": "Diese Sitzung endet in:",
     "cp_session_time_left_one_minute": "Minute",
