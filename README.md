@@ -17,7 +17,7 @@
 <p>The first (and probably most important) "default_lang" key specifies what language will be loaded by default when the Captive Portal client's web browser's preferred language is different from the languages ​​supported by the platform.</p>
 <blockquote>"default_lang": "en"</blockquote>
 <p>In the current release, the settings key defines the default language that will be loaded in case the client browser language is not available in our available languages ​​configuration (list below)</p>
-<blockquote>"langs": {<br /> "en":"English",<br /> "pl":"Polski",<br /> "sk": "Slovenčina"<br /> "dk": "Deutsch"<br /> };</blockquote>
+<blockquote>"langs": {<br /> "en":"English",<br /> "pl":"Polski",<br /> "sk": "Slovenčina"<br /> "de": "Deutsch"<br /> };</blockquote>
 <p>and (parameters necessary to display the logged-in user's session)</p>
 <blockquote>"langs_iso": {<br /> "en":"en-GB",<br /> "pl":"pl-PL",<br /> "sk": "sk-SK"<br /> };</blockquote>
 <p>Based on the keys of the langs variable object, the template will automatically determine whether it should display the LTR or RTL content.</p>
