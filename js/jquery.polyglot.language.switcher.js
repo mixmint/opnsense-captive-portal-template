@@ -257,20 +257,25 @@ License URI: http://www.opensource.org/licenses/mit-license.php
             options.each(function () {
                 var id = $(this).attr("id");
                 var selected;
+
                 if (isStaticWebSite) {
                     selected = selectedId === id;
                 } else {
                     selected = $(this).attr("selected");
                 }
+
                 var liElement = toLiElement($(this));
                 if (selected) {
                     selectedItem = liElement;
                 }
+
                 liElements.push(liElement);
                 if (length > 0) {
                     ulElement.append(liElement);
                 } else {
-                    aElement = $("<a id=\"" + $(this).attr("id") + "\" class=\"current\" href=\"javascript:void(0);\" title=\"" + $(this).attr("data-title") + "\" aria-label=\"" + $(this).attr("aria-label") + "\">" + $(this).text() + " <span class=\"trigger\"></span></a>");
+                    let triggerLabel = rootElement.attr('data-trigger-label') || $(this).attr('aria-label');
+                    aElement = $("<a id=\"" + $(this).attr("id") + "\" class=\"current\" href=\"javascript:void(0);\" title=\"" + $(this).attr("data-title") + "\" aria-label=\"" + $(this).attr("aria-label") + "\" tabindex=\"0\">" + $(this).text() + " <span class=\"trigger\" role=\"button\" tabindex=\"0\" aria-label=\"" + triggerLabel + "\"></span></a>");
+
                     if (settings.openMode == 'hover') {
                         aElement.hover(function () {
                             open();
@@ -286,11 +291,14 @@ License URI: http://www.opensource.org/licenses/mit-license.php
                         );
                     }
                 }
+
                 length++;
             });
+
             $("#" + rootElementId + " form:first-child").remove();
             rootElement.append(aElement);
             rootElement.append(ulElement);
+
             if (selectedItem) {
                 doAction(selectedItem);
             }
@@ -303,11 +311,12 @@ License URI: http://www.opensource.org/licenses/mit-license.php
             var title = $(option).attr("data-title");
             var text = $(option).text();
             var liElement;
+
             if (isStaticWebSite) {
                 var url = window.location.href;
                 var page = url.substring(url.lastIndexOf("/")+1);
                 var urlPage = 'http://' + document.domain + '/' + settings.pagePrefix + id + '/' + page;
-                liElement = $("<li><a id=\"" + id + "\" href=\"" + urlPage + "\" title=\"" + title + "\" aria-label=\"" + aria_label + "\">" + text + "</a></li>");
+                liElement = $("<li><a id=\"" + id + "\" href=\"" + urlPage + "\" title=\"" + title + "\" aria-label=\"" + aria_label + "\" tabindex=\"0\">" + text + "</a></li>");
             } else {
                 var href = document.URL.replace('#', '');
                 var params = parseQueryString();
@@ -316,12 +325,14 @@ License URI: http://www.opensource.org/licenses/mit-license.php
                     href = href.substring(0, href.indexOf('?'));
                 }
                 href += toQueryString(params);
-                liElement = $("<li><a id=\"" + id + "\" href=\"" + href + "\" title=\"" + title + "\" aria-label=\"" + aria_label + "\">" + text + "</a></li>");
+                liElement = $("<li><a id=\"" + id + "\" href=\"" + href + "\" title=\"" + title + "\" aria-label=\"" + aria_label + "\" tabindex=\"0\">" + text + "</a></li>");
             }
+
             liElement.bind('click', function () {
                 triggerEvent({name:'onChange', selectedItem: $(this).children(":first").attr('id'), element:rootElement, instance:ls});
                 doAction($(this));
             });
+
             if (settings.openMode == 'hover') {
                 liElement.hover(function () {
                     suspendCloseAction();
@@ -329,6 +340,7 @@ License URI: http://www.opensource.org/licenses/mit-license.php
                     resumeCloseAction();
                 });
             }
+
             return liElement;
         }
 

@@ -1,5 +1,5 @@
 /**
- * @version 2.1.4
+ * @version 2.2.0
  * @package Multilanguage Captive Portal Template for OPNsense
  * @author Mirosław Majka (mix@proask.pl)
  * @copyright (C) 2025 Mirosław Majka <mix@proask.pl>
@@ -13,9 +13,22 @@ let settings = {},
     localId,
     langsRTL = ['ar','dv','fa','ha','he','sy'],
     _root = document.querySelector(':root'),
-    attempt = 0;
+    attempt = 0,
+    langsFlags = {
+        af:"za",am:"et",ar:"sa",az:"az",be:"by",bg:"bg",bn:"bd",bs:"ba",
+        ca:"es",cs:"cz",cy:"gb",da:"dk",de:"de",el:"gr",en:"gb",es:"es",
+        et:"ee",eu:"es",fa:"ir",fi:"fi",fil:"ph",fr:"fr",ga:"ie",gl:"es",
+        gu:"in",he:"il",hi:"in",hr:"hr",hu:"hu",hy:"am",id:"id",is:"is",
+        it:"it",ja:"jp",ka:"ge",kk:"kz",km:"kh",kn:"in",ko:"kr",ky:"kg",
+        lt:"lt",lv:"lv",mk:"mk",ml:"in",mn:"mn",mr:"in",ms:"my",mt:"mt",
+        nb:"no",ne:"np",nl:"nl",pa:"in",pl:"pl",ps:"af",pt:"pt",ro:"ro",
+        ru:"ru",si:"lk",sk:"sk",sl:"si",sq:"al",sr:"rs",sv:"se",sw:"ke",
+        ta:"in",te:"in",th:"th",tr:"tr",uk:"ua",ur:"pk",uz:"uz",vi:"vn",
+        zh:"cn",zu:"za"
+    };
 
-const allowedAttrs = ['aria-label', 'title'];
+const allowedAttrs    = ['aria-label', 'title'];
+const hour12Countries = ['us','ca','ph','au','nz','mx','co','pk','in','ie','my','sg','bd','jm','gb'];
 
 const isAllowedAttr = (attr) => allowedAttrs.includes(attr.toLowerCase()) || attr.toLowerCase().startsWith('data-');
 
@@ -78,6 +91,8 @@ const showModal = ({ title, subtitle, content, iconText = '&#9888;', customStyle
     const defaultStyles = {
         padding: 20,
         headerColor: settings.modal.show_rules_header_color,
+        iconColor: settings.modal.icon_color,
+        background: settings.modal.bg_color,
         overlayColor: settings.modal.overlay_color,
         borderBottom: false,
         timeout: false,
@@ -90,10 +105,21 @@ const showModal = ({ title, subtitle, content, iconText = '&#9888;', customStyle
 
     const styles = { ...defaultStyles, ...customStyles };
 
+    if (settings.layout.a11y && settings.layout.a11y_contrast) {
+        Object.entries(styles).forEach(([key, value]) => {
+            styles[key] = $.adjustContrast(value, {
+                factor: settings.layout.a11y_factor,
+                treshhold: settings.layout.a11y_treshhold
+            });
+        });
+    }
+
     $('#MSG').cpModal({
         title,
         subtitle,
         headerColor: styles.headerColor,
+        iconColor: styles.iconColor,
+        background: styles.background,
         iconText: iconText,
         padding: styles.padding,
         width: styles.width,
@@ -121,13 +147,13 @@ const showModal = ({ title, subtitle, content, iconText = '&#9888;', customStyle
 };
 
 $.getMultiScripts = (batch, path) => {
-    $.executeInOrder = (source, code, resolve) => {
+    const executeInOrder = (source, code, resolve) => {
         if (source == batch[0]) {
             batch.shift();
             Function(`"use strict";${code}`)($.this);
             resolve();
         } else {
-            setTimeout(() => {$.executeInOrder(source, code, resolve);}, 10);
+            setTimeout(() => {executeInOrder(source, code, resolve);}, 10);
         }
     }
 
@@ -138,7 +164,7 @@ $.getMultiScripts = (batch, path) => {
                 url: (path || '') + source,
                    dataType: "text",
                    success: (code) => {
-                       $.executeInOrder(source, code, resolve);
+                       executeInOrder(source, code, resolve);
                    },
                    cache: true
             });
@@ -253,10 +279,13 @@ $.setLangLayout = (langs, selectedLang, container) => {
         case 'flags-list':
             html = `
                 <ul id="polyglotLanguageSwitcher" class="d-flex flex-wrap justify-content-end gap-3 pb-3">
-                    ${Object.entries(langs).map(([key, value]) =>
-                        `<li id="${key}" data-lang="${key}" class="flag-item${key === selectedLang ? ' selected' : ''}" title="${value}">
-                            <img src="/images/flags/${langFlagsDir}/${key}.svg" alt="${value}" data-title="${value}" aria-label="${value}" />
-                        </li>`).join('')}
+                    ${Object.entries(langs).map(([key, value]) => {
+                        const flag = langsFlags[key] || key;
+                        return `
+                        <li id="${key}" data-lang="${key}" class="flag-item${key === selectedLang ? ' selected' : ''}" title="${value}" aria-label="${value}" role="button" tabindex="0">
+                                <img src="/images/flags/${langFlagsDir}/${flag}.svg" alt="${value}" data-title="${value}" />
+                            </li>`;
+                    }).join('')}
                 </ul>`;
             break;
 
@@ -276,14 +305,20 @@ $.setLangLayout = (langs, selectedLang, container) => {
 
     $(container).addClass(layoutType + ' flags-' + langFlagsDir);
     $(container).attr('aria-label', $(container).attr('aria-label') || langText.cp_portal_select_lang);
+    $(container).attr('data-trigger-label', langText.cp_portal_select_lang);
 
     $(container).html(html);
     $.setLang(container);
 
     if (layoutType === 'flags-list') {
         $('#polyglotLanguageSwitcher li').on('click', function () {
-            $.createCookie('lang', $(this).data('lang'), 31);
-            location.reload();
+            const lang = $(this).data('lang');
+            $.createCookie('lang', lang, 31);
+
+            const url = new URL(window.location.href);
+            url.searchParams.set('lang', lang);
+            url.hash = '#';
+            window.location.href = url.toString();
         });
     }
 };
@@ -303,7 +338,28 @@ $.clientInfo = async (data) => {
     data.macAddress && appendInfo('flex-50', langText.cp_portal_ifconfig_mac_address, data.macAddress);
 
     if (typeof data.startTime === 'number') {
-        appendInfo('flex-100', langText.cp_session_start_time, formatISO(data.startTime * 1000).join(' '), 'config-info');
+        const date    = new Date(data.startTime * 1000);
+        const lang    = document.documentElement.lang;
+        const country = langsFlags[lang];
+        const locale  = country ? `${lang}-${country.toUpperCase()}` : null;
+
+        const hour12  = country ? hour12Countries.includes(country.toLowerCase()) : false;
+
+        const options = {
+            hour: '2-digit',
+            minute: '2-digit',
+            second: '2-digit',
+            year: 'numeric',
+            month: '2-digit',
+            day: '2-digit',
+            hour12
+        };
+
+        const formatted = locale
+            ? date.toLocaleString(locale, options)
+            : formatISO(data.startTime * 1000).join(' ');
+
+        appendInfo('flex-100', langText.cp_session_start_time, formatted, 'config-info');
     }
 
     if (data.acc_session_timeout != null && $('.wrapperTimeLeft').length === 0) {
@@ -578,3 +634,332 @@ $.getAttempt = (data) => {
     data.local = window.localStorage.getItem('loginAttempt');
     return data;
 }
+
+$.adjustContrast = (value, opts = {}) => {
+    if (!settings?.layout?.a11y) {
+        return value;
+    }
+
+    if (typeof value !== 'string') {
+        return value;
+    }
+
+    const FACTOR          = typeof opts.factor === 'number' ? Math.max(0, Math.min(1, opts.factor)) : 0.2;
+    const LIGHT_THRESHOLD = typeof opts.threshold === 'number' ? opts.threshold : 0.5;
+
+    const clamp = (v, a = 0, b = 255) => Math.max(a, Math.min(b, Math.round(v)));
+
+    const srgbToLinear = (c) => {
+        c = c / 255;
+        return c <= 0.03928 ? c / 12.92 : Math.pow((c + 0.055) / 1.055, 2.4);
+    };
+    const luminance = (r,g,b) => 0.2126*srgbToLinear(r) + 0.7152*srgbToLinear(g) + 0.0722*srgbToLinear(b);
+
+    const parseHex = (hex) => {
+        const h = hex.replace('#','');
+        if (h.length === 3) {
+            return { r: parseInt(h[0]+h[0],16), g: parseInt(h[1]+h[1],16), b: parseInt(h[2]+h[2],16), a: 1, format: 'hex3' };
+        }
+        if (h.length === 4) {
+            return { r: parseInt(h[0]+h[0],16), g: parseInt(h[1]+h[1],16), b: parseInt(h[2]+h[2],16), a: parseInt(h[3]+h[3],16)/255, format: 'hex4' };
+        }
+        if (h.length === 6) {
+            return { r: parseInt(h.slice(0,2),16), g: parseInt(h.slice(2,4),16), b: parseInt(h.slice(4,6),16), a: 1, format: 'hex6' };
+        }
+        if (h.length === 8) {
+            return { r: parseInt(h.slice(0,2),16), g: parseInt(h.slice(2,4),16), b: parseInt(h.slice(4,6),16), a: parseInt(h.slice(6,8),16)/255, format: 'hex8' };
+        }
+        return null;
+    };
+
+    const parseRgb = (str) => {
+        const m = str.match(/rgba?\(\s*([^\)]+)\s*\)/i);
+
+        if (!m) {
+            return null;
+        }
+
+        const parts = m[1].split(',').map(p => p.trim());
+        const r     = parseFloat(parts[0]);
+        const g     = parseFloat(parts[1]);
+        const b     = parseFloat(parts[2]);
+        const a     = parts.length === 4 ? parseFloat(parts[3]) : 1;
+
+        return { r, g, b, a, format: parts.length === 4 ? 'rgba' : 'rgb' };
+    };
+
+    const formatColor = (col) => {
+        if (col.origFormat.startsWith('hex')) {
+            const toHex = n => n.toString(16).padStart(2,'0');
+
+            if (col.origFormat === 'hex4' || col.origFormat === 'hex8') {
+                const alpha = clamp(Math.round(col.a * 255), 0, 255);
+                return `#${toHex(col.r)}${toHex(col.g)}${toHex(col.b)}${toHex(alpha)}`;
+            }
+
+            return `#${toHex(col.r)}${toHex(col.g)}${toHex(col.b)}`;
+        }
+
+        if (col.origFormat === 'rgb') {
+            return `rgb(${col.r}, ${col.g}, ${col.b})`;
+        }
+
+        if (col.origFormat === 'rgba') {
+            return `rgba(${col.r}, ${col.g}, ${col.b}, ${+col.a.toFixed(3)})`;
+        }
+
+        return null;
+    };
+
+    const adjustRGB = (r,g,b,a, origFormat) => {
+        const lum = luminance(r,g,b);
+        const isLight = lum >= LIGHT_THRESHOLD;
+        let nr, ng, nb;
+
+        if (isLight) {
+            nr = clamp(r + (255 - r) * FACTOR);
+            ng = clamp(g + (255 - g) * FACTOR);
+            nb = clamp(b + (255 - b) * FACTOR);
+        } else {
+            nr = clamp(r * (1 - FACTOR));
+            ng = clamp(g * (1 - FACTOR));
+            nb = clamp(b * (1 - FACTOR));
+        }
+        return { r: nr, g: ng, b: nb, a, origFormat };
+    };
+
+    const colorRegex = /#(?:[0-9a-fA-F]{3,4}|[0-9a-fA-F]{6}|[0-9a-fA-F]{8})\b|rgba?\(\s*([^)]+)\)/g;
+
+    if (!value.match(colorRegex)) {
+        return value;
+    }
+
+    const replaced = value.replace(colorRegex, (match) => {
+        match      = match.trim();
+        let parsed = null;
+
+        if (match.startsWith('#')) {
+            parsed = parseHex(match);
+
+            if (!parsed) {
+                return match;
+            }
+
+            parsed.origFormat = parsed.format.startsWith('hex') ? parsed.format : 'hex6';
+        } else if (match.toLowerCase().startsWith('rgb')) {
+            parsed = parseRgb(match);
+
+            if (!parsed) {
+                return match;
+            }
+
+            parsed.origFormat = parsed.format;
+        } else {
+            return match;
+        }
+
+        const adjusted = adjustRGB(parsed.r, parsed.g, parsed.b, parsed.a, parsed.origFormat);
+        return formatColor(adjusted);
+    });
+
+    return replaced;
+};
+
+$.initKeyboardAccessibility = () => {
+    if (!settings?.layout?.a11y) {
+        return;
+    }
+
+    const baseSelectors = [
+        "#inputUsername",
+        "#inputPassword",
+        "#login-rules",
+        "#rules",
+        "#signin",
+        "#signin_anon",
+        "#logoff",
+        ".cpModal-button-close",
+        "a.current"
+    ];
+
+    const langSelectors = Object.keys(langsFlags).map(lang => `#${lang}`);
+    const selectors     = [...baseSelectors, ...langSelectors];
+    const elements      = document.querySelectorAll(selectors.join(","));
+
+    elements.forEach(el => {
+        if (!el.hasAttribute("tabindex")) {
+            el.setAttribute("tabindex", "0");
+        }
+
+        el.addEventListener("focus", () => el.classList.add("kbd-focus"));
+        el.addEventListener("blur", () => el.classList.remove("kbd-focus"));
+
+        el.addEventListener("keydown", e => {
+            switch (e.key) {
+                case "Enter":
+                case " ":
+                    e.preventDefault();
+
+                    if (el.type === "checkbox" && e.key === " ") {
+                        el.checked = !el.checked;
+                        el.dispatchEvent(new Event("change", { bubbles: true }));
+                    } else {
+                        el.click();
+                    }
+
+                    break;
+
+                case "Escape":
+                    document.querySelector(".cpModal-button-close")?.click();
+                    break;
+
+                case "ArrowLeft": {
+                    const prevLang = Array.from(langSelectors).map(sel => document.querySelector(sel)).find(x => x && x.classList.contains("current"));
+
+                    if (prevLang) {
+                        let idx = langSelectors.indexOf(`#${prevLang.id}`);
+                        idx = (idx - 1 + langSelectors.length) % langSelectors.length;
+                        document.querySelector(langSelectors[idx])?.click();
+                    }
+
+                    break;
+                }
+
+                case "ArrowRight": {
+                    const currLang = Array.from(langSelectors).map(sel => document.querySelector(sel)).find(x => x && x.classList.contains("current"));
+
+                    if (currLang) {
+                        let idx = langSelectors.indexOf(`#${currLang.id}`);
+                        idx = (idx + 1) % langSelectors.length;
+                        document.querySelector(langSelectors[idx])?.click();
+                    }
+
+                    break;
+                }
+            }
+        });
+    });
+
+    let keyBuffer = [];
+    let bufferTimeout;
+    const pressedKeys = new Set();
+
+    const resetBuffer = () => {
+        keyBuffer = [];
+        clearTimeout(bufferTimeout);
+        bufferTimeout = null;
+    };
+
+    const triggerLang = code => {
+        const langEl = document.getElementById(code);
+
+        if (langEl) {
+            langEl.click();
+            langEl.classList.add("flash");
+            setTimeout(() => langEl.classList.remove("flash"), 300);
+        }
+    };
+
+    let leftShiftPressed = false;
+    let leftAltPressed   = false;
+
+    document.addEventListener("keydown", e => {
+        const activeInput = ["INPUT", "TEXTAREA"].includes(document.activeElement.tagName);
+        const key = e.key.toLowerCase();
+
+        if (e.code === "ShiftLeft") leftShiftPressed = true;
+        if (e.code === "AltLeft") leftAltPressed = true;
+
+        if (e.shiftKey && /^[a-z]$/.test(key) && !leftAltPressed) {
+            let isShortcut = pressedKeys.size > 0 || !activeInput;
+
+            pressedKeys.add(key);
+
+            if (pressedKeys.size === 2) {
+                const combo = Array.from(pressedKeys).sort().join("");
+
+                if (langsFlags[combo]) {
+                    e.preventDefault();
+                    triggerLang(combo);
+                    pressedKeys.clear();
+                    resetBuffer();
+
+                    return;
+                }
+            }
+
+            keyBuffer.push(key);
+            if (bufferTimeout) {
+                clearTimeout(bufferTimeout);
+            }
+
+            bufferTimeout = setTimeout(resetBuffer, 1000);
+
+            if (keyBuffer.length === 2) {
+                const code = keyBuffer.join("");
+
+                if (langsFlags[code]) {
+                    e.preventDefault();
+                    triggerLang(code);
+                }
+
+                resetBuffer();
+            }
+
+            if (isShortcut && activeInput) e.preventDefault();
+
+            return;
+        }
+
+        if (leftShiftPressed && leftAltPressed && /^[a-z]$/.test(key)) {
+            e.preventDefault();
+
+            switch (key) {
+                case "u":
+                    document.querySelector("#inputUsername")?.focus();
+                    break;
+
+                case "p":
+                    document.querySelector("#inputPassword")?.focus();
+                    break;
+
+                case "a": {
+                    const checkbox = document.querySelector("#login-rules");
+
+                    if (checkbox) {
+                        checkbox.checked = !checkbox.checked;
+                        checkbox.dispatchEvent(new Event("change", { bubbles: true }));
+                    }
+
+                    break;
+                }
+
+                case "r":
+                    document.querySelector("#rules")?.click();
+                    break;
+
+                case "i": {
+                    const loginVisible = Array.from(document.querySelectorAll("#signin, #signin_anon")).find(el => !el.classList.contains("d-none"));
+                    loginVisible?.click();
+                    break;
+                }
+
+                case "o":
+                    document.querySelector("#logoff")?.click();
+                    break;
+
+                case "l": {
+                    const trigger = document.querySelector(".trigger") || document.querySelector("a.current");
+                    trigger?.click();
+                    break;
+                }
+            }
+        }
+    });
+
+    document.addEventListener("keyup", e => {
+        if (e.code === "ShiftLeft") leftShiftPressed = false;
+        if (e.code === "AltLeft") leftAltPressed = false;
+        pressedKeys.delete(e.key.toLowerCase());
+    });
+};

@@ -1,5 +1,5 @@
 /**
- * @version 2.1.4
+ * @version 2.2.0
  * @package Multilanguage Captive Portal Template for OPNsense
  * @author Mirosław Majka (mix@proask.pl)
  * @copyright (C) 2025 Mirosław Majka <mix@proask.pl>
@@ -9,6 +9,7 @@
 $(document).ready(() => {
     $.when($.loadSettings()).done(() => {
         applyCssSettings();
+        useWCAG();
         initializeVantaEffect();
         updateLogo();
         setupLanguage();
@@ -23,6 +24,16 @@ $(document).ready(() => {
 const applyCssSettings = () => {
     if (settings.css_params) {
         Object.entries(settings.css_params).forEach(([key, value]) => {
+            if (settings.layout.a11y && settings.layout.a11y_contrast) {
+                value = $.adjustContrast(
+                    value,
+                    {
+                        factor: settings.layout.a11y_factor,
+                        treshhold: settings.layout.a11y_treshhold
+                    }
+                );
+            }
+
             _root.style.setProperty(`--${key}`, value);
         });
     }
@@ -32,6 +43,7 @@ const applyCssSettings = () => {
 
     if (langLayout === 'flags-only-select' || langLayout === 'flags-select') {
         let styleEl = document.getElementById('flags');
+
         if (!styleEl) {
             styleEl = document.createElement('style');
             styleEl.id = 'flags';
@@ -41,12 +53,38 @@ const applyCssSettings = () => {
         styleEl.innerHTML = '';
 
         Object.keys(settings.langs).forEach(lang => {
-            const url = `/images/flags/${flagsDir}/${lang}.svg`;
+            const flag = langsFlags[lang] || lang;
+            const url  = `/images/flags/${flagsDir}/${flag}.svg`;
 
             styleEl.innerHTML += `#${lang}::before {background-image: url("${url}");}`;
         });
     }
 };
+
+const useWCAG = () => {
+    if (!settings.layout.a11y) {
+        return;
+    }
+
+    $('body').addClass('a11y');
+
+    if (settings.layout.a11y_contrast) {
+        $('body').addClass('a11y-contrast');
+    }
+
+    if (settings.layout.a11y_highlight) {
+        $('body').addClass('a11y-highlight');
+    }
+
+    if (settings.layout.a11y_mono) {
+        $('body').addClass('a11y-mono');
+    }
+
+    if (settings.layout.a11y_keyboard) {
+        $('body').addClass('a11y-keyboard');
+        $.initKeyboardAccessibility();
+    }
+}
 
 const initializeVantaEffect = () => {
     if (settings.animate?.effect) {
@@ -58,6 +96,13 @@ const initializeVantaEffect = () => {
             window['VANTA'][effect.toUpperCase()](
                 { ...settings.animate.params, ...preset }
             );
+
+            if (settings.layout.a11y) {
+                document.querySelectorAll('.vanta-canvas').forEach(canvas => {
+                    canvas.setAttribute('role', 'presentation');
+                    canvas.setAttribute('aria-hidden', 'true');
+                });
+            }
         });
     }
 };
@@ -159,7 +204,7 @@ const toggleSignInButtons = (checkboxSelector, buttonSelector) => {
     $(checkboxSelector).prop('checked', false);
     $(buttonSelector).prop('disabled', true);
 
-    $(checkboxSelector).on('click', function () {
+    $(checkboxSelector).on('change', function () {
         $(buttonSelector).prop('disabled', !$(this).prop('checked'));
     });
 };
@@ -168,6 +213,7 @@ const configureInputFocusBehavior = () => {
     $('input[readonly]').on('focus', function () {
         $(this).prop('readonly', false);
     });
+
     $('input:not([readonly])').on('blur', function () {
         $(this).prop('readonly', true);
     });
