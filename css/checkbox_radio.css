@@ -39,11 +39,11 @@ input[type="checkbox"] {
                 & > span {
                     &:not([id]):not([class]) {
                         &:before {
-                            content: "×";
+                            content: "\2715";
                             display: table-cell;
                             width: auto;
                             height: auto;
-                            font-size: 22px;
+                            font-size: 21px;
                             line-height: 18px;
                             text-align: center;
                             font-weight: normal;
@@ -71,7 +71,7 @@ input[type="radio"] {
                     &:not([id]):not([class]) {
                         border-radius: 100%;
                         &:before {
-                            content: "•";
+                            content: "\2022";
                             display: table-cell;
                             width: 18px;
                             height: 18px;
@@ -82,7 +82,7 @@ input[type="radio"] {
                         }
                         & > span {
                             :before {
-                                content: "•";
+                                content: "\2022";
                                 display: table-cell;
                                 width: 18px;
                                 height: 18px;
@@ -140,7 +140,7 @@ label {
                     &:not([id]):not([class]) {
                         & > span {
                             &:before {
-                                content: "•";
+                                content: "\2022";
                                 display: table-cell;
                                 width: 18px;
                                 height: 18px;
@@ -161,11 +161,11 @@ label {
                 & + span {
                     &:not([id]):not([class]) {
                         &:before {
-                            content: "×";
+                            content: "\2715";
                             display: table-cell;
                             width: auto;
                             height: auto;
-                            font-size: 22px;
+                            font-size: 21px;
                             line-height: 18px;
                             text-align: center;
                             font-weight: normal;
