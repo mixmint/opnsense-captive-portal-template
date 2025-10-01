@@ -313,7 +313,7 @@
     #signin-box #signin[disabled],
     #login_none #signin_anon[disabled] {
         &:after {
-            content: "×";
+            content: "\2715";
             position: absolute;
             left: 0;
             right: 0;
@@ -390,14 +390,20 @@
 
 .a11y {
     &.a11y-highlight {
-        .right-side {
-            .link {
-                padding: 2px 4px;
-                border: 2px dotted var(--color_primary, red);
+        .captiveportal {
+            .right-side {
+                .link {
+                    padding: 2px 4px;
+                    border: 2px dotted var(--color_primary, red);
+                }
+                .field-group {
+                    .field {
+                        border: 2px dotted var(--color_primary, red) !important;
+                    }
+                }
             }
         }
     }
-
     &.a11y-mono {
         filter: grayscale(100%);
     }
