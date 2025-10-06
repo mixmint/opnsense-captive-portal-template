@@ -190,7 +190,7 @@ Accessibility options:
   Hold ⇧ Shift and press two letters of the language code (ISO 639-1) at once or one after the other
 
   Examples:  
-  - ⇧ Shift + R + L → switches to Polish (pl)  
+  - ⇧ Shift + P + L → switches to Polish (pl)  
   - ⇧ Shift + E + N → switches to English (en)  
   - ⇧ Shift + D + E → switches to Deutsch (de)  
   - ⇧ Shift + F + R → switches to Français (fr)  
