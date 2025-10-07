@@ -68,6 +68,7 @@ In the current release, the settings key defines the default language that will 
 	"is": "Íslenska",
 	"sr": "Srpski",
 	"bs": "Bosanski",
+	"me": "Crnogorski",
 	"mk": "Македонски",
 	"sq": "Shqip",
 	"ka": "ქართული",
