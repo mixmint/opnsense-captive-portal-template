@@ -1028,17 +1028,22 @@ $.initTour = () => {
         return null;
     }
 
-    if (!document.getElementById("tourBtn")) {
-        const keysWrapper = document.createElement("div");
+    const createTourTrigger = () => {
+        if (document.getElementById("tourBtn")) {
+            return;
+        }
+
+        const keysWrapper     = document.createElement("div");
+        keysWrapper.id        = "a11y-keys-wrapper";
         keysWrapper.innerHTML = `
             <div id="a11y-keys"></div>
             <div id="a11y-lang-keys"></div>
         `;
 
-        const tourWrapper = document.createElement("div");
-        tourWrapper.id = "tourBtn";
+        const tourWrapper         = document.createElement("div");
+        tourWrapper.id            = "tourBtn";
         tourWrapper.style.display = "block";
-        tourWrapper.innerHTML = `
+        tourWrapper.innerHTML     = `
             <div class="helper help-btn">
                 <a id="launchTour" href="javascript:void(0);">
                     <h3>
@@ -1051,7 +1056,32 @@ $.initTour = () => {
 
         portal.appendChild(keysWrapper);
         portal.appendChild(tourWrapper);
-    }
+    };
+
+    const breakpoint = settings.a11y_helper_breakpoint || 1200;
+
+    const updateTourTriggerVisibility = () => {
+        const tourBtn = document.getElementById("tourBtn");
+        const keysWrapper = document.getElementById("a11y-keys-wrapper");
+
+        if (window.innerWidth >= breakpoint) {
+            if (tourBtn) {
+                tourBtn.style.display = "block";
+                if (keysWrapper) keysWrapper.style.display = "block";
+            } else {
+                createTourTrigger();
+            }
+        } else {
+            if (tourBtn) {
+                tourBtn.style.display = "none";
+                if (keysWrapper) keysWrapper.style.display = "none";
+            }
+        }
+    };
+
+    updateTourTriggerVisibility();
+
+    window.addEventListener("resize", updateTourTriggerVisibility);
 
     const allowedAttrs = new Set([
         "data-title",
@@ -1068,12 +1098,14 @@ $.initTour = () => {
         if (!el) {
             return false;
         }
+
         let current = el;
         while (current && current !== document.body) {
             const style = window.getComputedStyle(current);
             if (style.display === "none" || current.classList.contains("d-none")) {
                 return false;
             }
+
             current = current.parentElement;
         }
         return true;
@@ -1083,6 +1115,7 @@ $.initTour = () => {
         if (!window.shortcutMap) {
             return "";
         }
+
         for (const [letter, selectorString] of Object.entries(shortcutMap)) {
             const selectors = selectorString.split(",").map(s => s.trim()).filter(Boolean);
             for (const sel of selectors) {
@@ -1091,6 +1124,7 @@ $.initTour = () => {
                     if (!target) {
                         continue;
                     }
+
                     if (target === containerEl || containerEl.contains(target)) {
                         return `Shift + Alt + ${letter.toUpperCase()}`;
                     }
@@ -1108,38 +1142,46 @@ $.initTour = () => {
                 label = ariaChild.getAttribute("aria-label").trim();
             }
         }
+
         if (!label) {
             const lbl = targetEl.querySelector("label[for]");
             if (lbl && isVisible(lbl)) {
                 label = lbl.textContent.trim();
             }
         }
+
         if (!label) {
             const innerField = targetEl.querySelector("input, textarea, select, button");
             if (innerField && innerField.placeholder && isVisible(innerField)) {
                 label = innerField.placeholder.trim();
             }
         }
+
         if (!label) {
             label = targetEl.textContent.trim();
         }
+
         return label;
     };
 
-    const steps = [];
+    const steps             = [];
     const processedElements = new Set();
 
     const fillSteps = () => {
-        let allDone = true;
+        let allDone  = true;
         steps.length = 0;
 
         for (const langKey of Object.keys(langText)) {
             const idx = langKey.indexOf("_data-");
-            if (idx === -1) continue;
+            if (idx === -1) {
+                continue;
+            }
 
             const prefix = langKey.substring(0, idx);
             const attrWithData = langKey.substring(idx + 1);
-            if (!allowedAttrs.has(attrWithData)) continue;
+            if (!allowedAttrs.has(attrWithData)) {
+                continue;
+            }
 
             const targetEl = document.getElementById(prefix);
             if (!targetEl || !isVisible(targetEl)) {
@@ -1148,10 +1190,12 @@ $.initTour = () => {
             }
 
             let value = String(langText[langKey] || "").trim();
-            if (!value) continue;
+            if (!value) {
+                continue;
+            }
 
             const shortcut = findShortcutForElement(targetEl);
-            const label = getLabelForElement(targetEl);
+            const label    = getLabelForElement(targetEl);
 
             try {
                 value = sprintf(value, shortcut, label);
@@ -1179,7 +1223,8 @@ $.initTour = () => {
     };
 
     const maxRetries = 10;
-    let retries = 0;
+    let retries      = 0;
+
     const retryInterval = setInterval(() => {
         const done = fillSteps();
         retries++;
@@ -1201,6 +1246,7 @@ $.initTour = () => {
         showStepDots: true,
         showStepProgress: true,
         autoScroll: true,
+        debug: false,
         nextLabel: langText.a11y_helper_next || 'Next',
         prevLabel: langText.a11y_helper_prev || 'Back',
         finishLabel: langText.a11y_helper_done || 'Done'
