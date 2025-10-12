@@ -80,6 +80,7 @@
         "a11y_highlight": false,
         "a11y_mono": false,
         "a11y_helper": true,
+        "a11y_helper_breakpoint": 1200,
         "a11y_factor": 0.5,
         "a11y_treshhold": 0.5
     },
