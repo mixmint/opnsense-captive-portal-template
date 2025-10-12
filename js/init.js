@@ -1,5 +1,5 @@
 /**
- * @version 2.2.0
+ * @version 2.3.0
  * @package Multilanguage Captive Portal Template for OPNsense
  * @author Mirosław Majka (mix@proask.pl)
  * @copyright (C) 2025 Mirosław Majka <mix@proask.pl>
@@ -9,10 +9,10 @@
 $(document).ready(() => {
     $.when($.loadSettings()).done(() => {
         applyCssSettings();
-        useWCAG();
-        initializeVantaEffect();
-        updateLogo();
         setupLanguage();
+        initializeVantaEffect();
+        useWCAG();
+        updateLogo();
         setupRulesSection();
         configureInputFocusBehavior();
         setupAuthHandlers();
@@ -83,28 +83,66 @@ const useWCAG = () => {
     if (settings.layout.a11y_keyboard) {
         $('body').addClass('a11y-keyboard');
         $.initKeyboardAccessibility();
+
+        if (settings.layout.a11y_helper) {
+            $('body').addClass('a11y-helper');
+
+            const resources = [
+                'tour.min.css',
+                'tour-rtl.min.css',
+                'tour.min.js'
+            ];
+
+            $.getMultiResources(resources, 'tourguide').then(() => {
+                if (typeof $.initTour === 'function') {
+                    const tour = $.initTour();
+                    if (tour) {
+                        const launchBtn = document.getElementById("launchTour");
+                        if (launchBtn) {
+                            launchBtn.addEventListener("click", () => {
+                                tour.start();
+                            });
+                        }
+                    }
+                } else {
+                    console.warn("Bootstrap Tour does not exist after loading resources!");
+                }
+            })
+            .catch(err => {
+                console.error("Error loading Bootstrap Tour resources:", err);
+            });
+        }
     }
 }
 
 const initializeVantaEffect = () => {
-    if (settings.animate?.effect) {
-        const effect = settings.animate.effect.toLowerCase();
-        const preset = settings.animate.preset[effect];
-        const scripts = [`three.r134.min.js`, `vanta.${effect}.min.js`];
-
-        $.when($.getMultiScripts(scripts, 'js/vanta/')).done(() => {
-            window['VANTA'][effect.toUpperCase()](
-                { ...settings.animate.params, ...preset }
-            );
-
-            if (settings.layout.a11y) {
-                document.querySelectorAll('.vanta-canvas').forEach(canvas => {
-                    canvas.setAttribute('role', 'presentation');
-                    canvas.setAttribute('aria-hidden', 'true');
-                });
-            }
-        });
+    if (!settings.animate?.effect) {
+        return;
     }
+
+    const effect = settings.animate.effect.toLowerCase();
+    const preset = settings.animate.preset[effect];
+
+    const vantaResources = [
+        'vanta.css',
+        'three.r134.min.js',
+        `vanta.${effect}.min.js`
+    ];
+
+    $.getMultiResources(vantaResources, 'vanta')
+    .then(() => {
+        window['VANTA'][effect.toUpperCase()]({
+            ...settings.animate.params,
+            ...preset
+        });
+
+        if (settings.layout.a11y) {
+            document.querySelectorAll('.vanta-canvas').forEach(canvas => {
+                canvas.setAttribute('role', 'presentation');
+                canvas.setAttribute('aria-hidden', 'true');
+            });
+        }
+    });
 };
 
 const updateLogo = async () => {

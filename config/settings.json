@@ -72,13 +72,14 @@
     "layout": {
         "enable_rules": true,
         "redirect_url": "",
-        "lang_layout": "select",
+        "lang_layout": "flags-select",
         "lang_flags_dir": "4x3",
-        "a11y": false,
-        "a11y_contrast": true,
+        "a11y": true,
+        "a11y_contrast": false,
         "a11y_keyboard": true,
-        "a11y_highlight": true,
+        "a11y_highlight": false,
         "a11y_mono": false,
+        "a11y_helper": true,
         "a11y_factor": 0.5,
         "a11y_treshhold": 0.5
     },
@@ -130,7 +131,10 @@
         "block_radius": "15px",
         "flags_outline_color": "#eeeeee",
         "flags_outline_hover_color": "#f12184",
-        "flags_outline_active_color": "#41aab9"
+        "flags_outline_active_color": "#41aab9",
+        "helper_bg_color": "#00b5cb",
+        "helper_color": "#ffffff",
+        "helper_size": "78px"
     },
     "modal": {
         "auth_failed_header_color": "#f12184",

@@ -16,7 +16,7 @@ OPNsense’s unique template manager makes setting up your own login page an eas
 
 To read more about the captive portal, I suggest you have a look here: [OPNsense Captive Portal](https://docs.opnsense.org/manual/captiveportal.html?highlight=captive%20portal)
 
-<p><img src="images/screenshot.jpg" alt="" /></p>
+<p><img src="images/screenshot.webp" alt="" /></p>
 
 ## ⚖️ License and Commercial Version
 
@@ -170,6 +170,7 @@ Accessibility options:
     "a11y_keyboard": true|false,
     "a11y_highlight": true|false,
     "a11y_mono": true|false,
+    "a11y_helper": true|false,
     "a11y_factor": 0.5,
     "a11y_treshhold": 0.5,
 },
@@ -199,11 +200,17 @@ Accessibility options:
 
 - `a11y_highlight` – highlights the currently focused element (e.g., input, button) to facilitate keyboard navigation  
 - `a11y_mono` – monochrome mode reduces the colors in the interface to visually simplify the UI (optional)  
+- `a11y_helper` – interactive Accessibility Tour Guide:
+  - Provides a step-by-step, WCAG-compliant tour of the portal  
+  - Highlights and explains all key elements, including username/password fields, login/logout buttons, the "accept rules" checkbox, and language selector  
+  - Fully keyboard-navigable: use arrow keys to move between steps, Enter/Space to confirm, Esc to exit  
+  - Dynamically adapts to the selected portal language  
+  - Adds visual focus indicators to help users see which element is currently highlighted  
 - `a11y_factor` – contrast adjustment factor for `a11y_contrast` - higher values = greater contrast increase  
 - `a11y_treshhold` – contrast threshold – specifies the minimum contrast required between the background and text colors. If the current contrast is below this value, it is automatically adjusted.
 
 ## CSS Configuration Group `"css_params"`
-<p><img src="images/diagram.jpg" alt="" /></p>
+<p><img src="images/diagram.webp" alt="" /></p>
 <blockquote>
 	<p>"css_params": {</p>
 	<table style="width: 100%;">
@@ -428,6 +435,21 @@ Accessibility options:
 				<td>←&nbsp;44&nbsp;→</td>
 				<td>Left and right column content wrapper border radius</td>
 			</tr>
+			<tr>
+				<td>"helper_bg_color": "#00b5cb"</td>
+				<td>←&nbsp;45&nbsp;→</td>
+				<td>Background color of the TourGuide trigger button</td>
+			</tr>
+			<tr>
+				<td>"helper_color": "#ffffff"</td>
+				<td>←&nbsp;46&nbsp;→</td>
+				<td>Text color of the TourGuide trigger button</td>
+			</tr>
+			<tr>
+				<td>"helper_size": "78px"</td>
+				<td>←&nbsp;47&nbsp;→</td>
+				<td>Size (width and height) of the TourGuide trigger button</td>
+			</tr>
 		</tbody>
 	</table>
 	<p>};</p>
@@ -505,14 +527,15 @@ Accessibility options:
 - CSS declarations have been improved, rtl support has been improved
 - Particles.js has been abandoned, **Vanta.js** has been implemented in its place - thanks and respect to [@tengbao](https://github.com/tengbao/vanta) - great job!
 The following effects are available: **birds**, **cells**, **fog**, **globe**, **halo**, **net**, **rings** and **waves**, which can be configured in a simplified way in settings.json in the **animate** key as the preferred **effect**, its **params** and the **preset** of the declared effect.
-- Slovak translation included - thanks to [@Gouster4](https://github.com/Gouster4)
-- Optimizing the code of javascript functions
-- Splitting CSS into smaller portions, nesting CSS selectors
-- Blocking the ability to log into the system for a specified period of time, after a specified number of possible attempts
-- Logo update for OPNsense v25 - many thanks for the update and vigilance to [@OctoCharm](https://github.com/OctoCharm)
-- Language selector layout modified
-- New translations generated using AI for multiple languages
-- Expanded digital accessibility support (**WCAG**)
+- Slovak translation included - thanks to [@Gouster4](https://github.com/Gouster4).
+- Optimizing the code of javascript functions.
+- Splitting CSS into smaller portions, nesting CSS selectors.
+- Blocking the ability to log into the system for a specified period of time, after a specified number of possible attempts.
+- Logo update for OPNsense v25 - many thanks for the update and vigilance to [@OctoCharm](https://github.com/OctoCharm).
+- Language selector layout modified.
+- New translations generated using AI for multiple languages.
+- Expanded digital accessibility support (**WCAG**).
+- Introduced a new interactive Accessibility Tour Guide (TourGuide) compliant with WCAG 2.1 AA.
 
 ## What I plan to change:
 
