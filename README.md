@@ -172,6 +172,7 @@ Accessibility options:
     "a11y_highlight": true|false,
     "a11y_mono": true|false,
     "a11y_helper": true|false,
+	"a11y_helper_breakpoint": 1200,
     "a11y_factor": 0.5,
     "a11y_treshhold": 0.5,
 },
@@ -206,7 +207,8 @@ Accessibility options:
   - Highlights and explains all key elements, including username/password fields, login/logout buttons, the "accept rules" checkbox, and language selector  
   - Fully keyboard-navigable: use arrow keys to move between steps, Enter/Space to confirm, Esc to exit  
   - Dynamically adapts to the selected portal language  
-  - Adds visual focus indicators to help users see which element is currently highlighted  
+  - Adds visual focus indicators to help users see which element is currently highlighted
+- `a11y_helper_breakpoint` - specifies the minimum viewport width (in pixels) at which the Accessibility Tour Guide trigger is displayed. On smaller screens (e.g., smartphones), the trigger is automatically hidden to avoid UI clutter  
 - `a11y_factor` – contrast adjustment factor for `a11y_contrast` - higher values = greater contrast increase  
 - `a11y_treshhold` – contrast threshold – specifies the minimum contrast required between the background and text colors. If the current contrast is below this value, it is automatically adjusted.
 
