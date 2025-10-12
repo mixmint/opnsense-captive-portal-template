@@ -1,0 +1,10 @@
+[dir="rtl"] {
+    .tg-dialog {
+        .tg-dialog-header {
+            .tg-dialog-title {
+                margin-right: unset;
+                margin-left: auto;
+            }
+        }
+    }
+}

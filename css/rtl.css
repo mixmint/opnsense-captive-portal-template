@@ -71,8 +71,73 @@
         }
     }
     #polyglotLanguageSwitcher {
+        &:has(a.active):before {
+            right: unset;
+            left: 12px;
+        }
         a {
-            padding-right: 58px;
+            padding-right: 13px;
+            padding-left: 58px;
+        }
+        &.flags-only-select {
+            margin-left: unset;
+            margin-right: auto;
+            a {
+                &[id] {
+                    &:before {
+                        left: unset;
+                        right: 8px;
+                    }
+                }
+            }
+        }
+        span {
+            &.trigger {
+                right: unset;
+                left: 0;
+                border-left: unset;
+                border-right: 2px solid rgba(52, 73, 94, 0.1);
+            }
+        }
+        ul {
+            &.dropdown {
+                margin-left: unset;
+                margin-right: auto;
+                &+ .mouse-scroll {
+                    right: unset;
+                    left: -30px;
+                    .arrow {
+                        margin: 0 4px 3px 0;
+                    }
+                }
+            }
+        }
+    }
+    .a11y {
+        &.a11y-helper {
+            #tourBtn {
+                right: unset;
+                left: 100px;
+                .helper {
+                    float: right;
+                    a {
+                        h3 {
+                            margin: 0 var(--helper_size, 78px) 0 0;
+                            small {
+                                &:before {
+                                    left: unset;
+                                    right: 0;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        #a11y-keys,
+        #a11y-lang-keys {
+            right: unset;
+            left: 20px;
         }
     }
 }

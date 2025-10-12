@@ -282,7 +282,6 @@
         }
     }
 
-
     #signin[disabled],
     #signin_anon[disabled] {
         position: relative;
@@ -407,6 +406,97 @@
     &.a11y-mono {
         filter: grayscale(100%);
     }
+    &.a11y-helper {
+        #tourBtn,
+        #a11y-keys,
+        #a11y-lang-keys {
+            position: fixed;
+            z-index: 10;
+        }
+        #tourBtn {
+            right: 100px;
+            bottom: 100px;
+            display: none;
+            .helper {
+                height: var(--helper_size, 78px);
+                width: var(--helper_size, 78px);
+                position: relative;
+                z-index: 1;
+                overflow: hidden;
+                float: left;
+                background-color: var(--helper_bg_color, inherit);
+                -webkit-border-radius: calc(var(--helper_size, 78px) / 2);
+                border-radius: calc(var(--helper_size, 78px) / 2);
+                -webkit-transition: width 1s ease !important;
+                transition: width 1s ease !important;
+                &:hover {
+                    width: 310px;
+                }
+                a {
+                    color: var(--helper_color, initial);
+                    text-decoration: none;
+                    outline: 0;
+                    h3 {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        justify-content: center;
+                        width: 215px;
+                        height: var(--helper_size, 78px);
+                        font-size: 30px;
+                        line-height: 1;
+                        color: var(--helper_color, initial);
+                        margin: 0 0 0 var(--helper_size, 78px);
+                        small {
+                            font-size: 15px;
+                            &:before {
+                                content: "\003F";
+                                position: absolute;
+                                font-size: calc(var(--helper_size, 78px) - 3px);
+                                font-weight: 900;
+                                line-height: calc(var(--helper_size, 78px) - 3px);
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                width: var(--helper_size, 78px);
+                                height: var(--helper_size, 78px);
+                                top: 0;
+                                left: 0;
+                            }
+                        }
+                    }
+                }
+            }
+            &:not(:hover) {
+                &:after {
+                    content: "";
+                    position: absolute;
+                    z-index: 0;
+                    top: -15px;
+                    left: -15px;
+                    display: block;
+                    width: calc(var(--helper_size, 78px) + 30px);
+                    height: calc(var(--helper_size, 78px) + 30px);
+                    opacity: 0.5;
+                    border-radius: 50%;
+                    background-color: var(--helper_bg_color, inherit);
+                    -webkit-animation-duration: 2s;
+                    animation-duration: 2s;
+                    -webkit-animation-name: GLOW;
+                    animation-name: GLOW;
+                    -webkit-animation-iteration-count: infinite;
+                    animation-iteration-count: infinite;
+                }
+            }
+        }
+    }
+    #a11y-keys,
+    #a11y-lang-keys {
+        width: 0;
+        height: 0;
+        top: 5px;
+        right: 20px;
+    }
 }
 
 #status_info,
@@ -505,5 +595,36 @@ html {
     }
     to {
         transform: translateX(46px);
+    }
+}
+
+@-webkit-keyframes GLOW {
+    0% {
+        opacity: 0;
+        -webkit-transform: scale3d(.4, .4, .4);
+        transform: scale3d(.4, .4, .4);
+    }
+
+    50% {
+        opacity: 0.5;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes GLOW {
+    0% {
+        opacity: 0;
+        -webkit-transform: scale3d(.4, .4, .4);
+        transform: scale3d(.4, .4, .4);
+    }
+
+    50% {
+        opacity: 0.5;
+    }
+
+    100% {
+        opacity: 0;
     }
 }
