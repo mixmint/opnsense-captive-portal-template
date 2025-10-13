@@ -16,6 +16,19 @@ OPNsense’s unique template manager makes setting up your own login page an eas
 
 To read more about the captive portal, I suggest you have a look here: [OPNsense Captive Portal](https://docs.opnsense.org/manual/captiveportal.html?highlight=captive%20portal)
 
+## Demo OPNsense Captive Portal Page
+- [Globe animation](https://opnsense.myhome.cool:8001)
+- [Globe animation WCAG](https://opnsense.myhome.cool:8002)
+- [Birds animation](https://opnsense.myhome.cool:8003)
+- [Cells animation](https://opnsense.myhome.cool:8004)
+- [Fog animation](https://opnsense.myhome.cool:8005)
+- [Halo animation](https://opnsense.myhome.cool:8006)
+- [Net animation](https://opnsense.myhome.cool:8007)
+- [Rings animation](https://opnsense.myhome.cool:8008)
+- [Waves animation](https://opnsense.myhome.cool:8009)
+
+<p>login: demo<br />password: demo</p>
+
 <p><img src="images/screenshot.webp" alt="" /></p>
 
 ## ⚖️ License and Commercial Version
