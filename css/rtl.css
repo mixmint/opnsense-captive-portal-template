@@ -30,8 +30,13 @@
             &:before {
                 right: 0;
                 left: unset;
+                border-top-left-radius: unset;
+                border-bottom-left-radius: unset;
+                border-top-right-radius: 5px;
+                border-bottom-right-radius: 5px;
             }
         }
+
     }
     input[type="checkbox"],
     input[type="radio"] {
@@ -138,6 +143,23 @@
         #a11y-lang-keys {
             right: unset;
             left: 20px;
+        }
+    }
+
+    .cpModal {
+        & ul {
+            padding-left: unset;
+            padding-right: 20px;
+        }
+        & ol, & ul {
+            &:not(.none-style) {
+                & li {
+                    &::before {
+                        margin-right: -24px;
+                        margin-left: 15px;
+                    }
+                }
+            }
         }
     }
 }

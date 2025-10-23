@@ -1,5 +1,5 @@
 /**
- * @version 2.3.0
+ * @version 2.3.1
  * @package Multilanguage Captive Portal Template for OPNsense
  * @author Mirosław Majka (mix@proask.pl)
  * @copyright (C) 2025 Mirosław Majka <mix@proask.pl>
@@ -137,6 +137,7 @@ const showModal = ({ title, subtitle, content, iconText = '&#9888;', customStyle
         padding: styles.padding,
         width: styles.width,
         top: styles.top,
+        rtl: document.documentElement.dir === 'rtl',
         borderBottom: styles.borderBottom,
         timeout: styles.timeout,
         timeoutProgressbar: styles.timeoutProgressbar,
@@ -1261,4 +1262,3 @@ $.initTour = () => {
 
     return tour;
 };
-
