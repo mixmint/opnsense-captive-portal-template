@@ -1113,10 +1113,6 @@ $.initTour = () => {
     };
 
     const findShortcutForElement = (containerEl) => {
-        if (!window.shortcutMap) {
-            return "";
-        }
-
         for (const [letter, selectorString] of Object.entries(shortcutMap)) {
             const selectors = selectorString.split(",").map(s => s.trim()).filter(Boolean);
             for (const sel of selectors) {
