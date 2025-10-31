@@ -113,7 +113,13 @@ In the current release, the settings key defines the default language that will 
 	"ur": "اُردُو",
 	"vi": "Tiếng Việt",
 	"zu": "Zulu",
-	"ky": "Кыргызча"
+	"ky": "Кыргызча",
+	"dv": "ދިވެހި",
+	"ha": "Hausa",
+	"ku": "Kurdî",
+	"ps": "پښتو",
+	"sy": "ܣܘܪܝܝܐ",
+	"yi": "ייִדיש"
 };
 ```
 The langs_iso parameter, which was previously included in the configuration, has been removed from the manual settings. In the new template version, ISO values ​​for languages ​​are automatically generated based on the keys defined in the "langs" section.
