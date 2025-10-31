@@ -1,5 +1,5 @@
 /**
- * @version 2.3.1
+ * @version 2.3.2
  * @package Multilanguage Captive Portal Template for OPNsense
  * @author Mirosław Majka (mix@proask.pl)
  * @copyright (C) 2025 Mirosław Majka <mix@proask.pl>
@@ -11,7 +11,7 @@ let settings = {},
     langText = {},
     lang,
     localId,
-    langsRTL = ['ar','he','fa','ur','dv','ha','sy','ku','ps','yi'],
+    langsRTL = ['ar','he','fa','ur','dv','sy','ku','ps','yi'],
     _root = document.querySelector(':root'),
     attempt = 0,
     langsFlags = {
@@ -24,7 +24,7 @@ let settings = {},
         nb:"no",ne:"np",nl:"nl",pa:"in",pl:"pl",ps:"af",pt:"pt",ro:"ro",
         ru:"ru",si:"lk",sk:"sk",sl:"si",sq:"al",sr:"rs",sv:"se",sw:"ke",
         ta:"in",te:"in",th:"th",tr:"tr",uk:"ua",ur:"pk",uz:"uz",vi:"vn",
-        zh:"cn",zu:"za"
+        zh:"cn",zu:"za",dv:"mv",ha:"ng",ku:"iq",sy:"sy",yi:"il"
     };
 
 const shortcutMap = {

@@ -31,6 +31,7 @@
         "is": "Íslenska",
         "sr": "Srpski",
         "bs": "Bosanski",
+        "me": "Crnogorski",
         "mk": "Македонски",
         "sq": "Shqip",
         "ka": "ქართული",
@@ -62,7 +63,13 @@
         "ur": "اُردُو",
         "vi": "Tiếng Việt",
         "zu": "Zulu",
-        "ky": "Кыргызча"
+        "ky": "Кыргызча",
+        "dv": "ދިވެހި",
+        "ha": "Hausa",
+        "ku": "Kurdî",
+        "ps": "پښتو",
+        "sy": "ܣܘܪܝܝܐ",
+        "yi": "ייִדיש"
     },
     "login": {
         "control": false,
