@@ -37,7 +37,7 @@ To read more about the captive portal, I suggest you have a look here: [OPNsense
 - A commercial version will be released soon, including additional features and available for use in commercial projects.
 - Features available in the free version remain compliant with the non-commercial use policy, and any premium features present in the commercial version will not be included in the GPL/free version.
 
-## Multilingual Support
+## 🌐 Multilingual Support
 
 The captive portal templates that I have seen so far most often lack multilingual support. I've always wondered why it should only be in English or only in one language at all? Well, let's look below. This template supports multilingualism, checks your preferred browser language, saves a cookie with information about which language was read or which language you chose using the selector. Uses language translations saved in the **xx.json** file. So, according to the layout, you can prepare your own translation, which you later have to declare in the **settings.json** file in the **config** directory.
 
