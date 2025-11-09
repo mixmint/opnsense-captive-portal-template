@@ -1,5 +1,5 @@
 /**
- * @version 2.3.2
+ * @version 2.3.3
  * @package Multilanguage Captive Portal Template for OPNsense
  * @author Mirosław Majka (mix@proask.pl)
  * @copyright (C) 2025 Mirosław Majka <mix@proask.pl>
@@ -1029,60 +1029,7 @@ $.initTour = () => {
         return null;
     }
 
-    const createTourTrigger = () => {
-        if (document.getElementById("tourBtn")) {
-            return;
-        }
-
-        const keysWrapper     = document.createElement("div");
-        keysWrapper.id        = "a11y-keys-wrapper";
-        keysWrapper.innerHTML = `
-            <div id="a11y-keys"></div>
-            <div id="a11y-lang-keys"></div>
-        `;
-
-        const tourWrapper         = document.createElement("div");
-        tourWrapper.id            = "tourBtn";
-        tourWrapper.style.display = "block";
-        tourWrapper.innerHTML     = `
-            <div class="helper help-btn">
-                <a id="launchTour" href="javascript:void(0);">
-                    <h3>
-                        <small>${langText.a11y_helper1 || "Need help?"}</small>
-                        <div>${langText.a11y_helper2 || "Click here"}</div>
-                    </h3>
-                </a>
-            </div>
-        `;
-
-        portal.appendChild(keysWrapper);
-        portal.appendChild(tourWrapper);
-    };
-
     const breakpoint = settings.a11y_helper_breakpoint || 1200;
-
-    const updateTourTriggerVisibility = () => {
-        const tourBtn = document.getElementById("tourBtn");
-        const keysWrapper = document.getElementById("a11y-keys-wrapper");
-
-        if (window.innerWidth >= breakpoint) {
-            if (tourBtn) {
-                tourBtn.style.display = "block";
-                if (keysWrapper) keysWrapper.style.display = "block";
-            } else {
-                createTourTrigger();
-            }
-        } else {
-            if (tourBtn) {
-                tourBtn.style.display = "none";
-                if (keysWrapper) keysWrapper.style.display = "none";
-            }
-        }
-    };
-
-    updateTourTriggerVisibility();
-
-    window.addEventListener("resize", updateTourTriggerVisibility);
 
     const allowedAttrs = new Set([
         "data-title",
@@ -1094,6 +1041,64 @@ $.initTour = () => {
         "data-tooltip-class",
         "data-highlight-class"
     ]);
+
+    const createTourTrigger = () => {
+        if (!document.getElementById("a11y-keys-wrapper")) {
+            const keysWrapper = document.createElement("div");
+            keysWrapper.id = "a11y-keys-wrapper";
+            keysWrapper.innerHTML = `
+                <div id="a11y-keys"></div>
+                <div id="a11y-lang-keys"></div>
+            `;
+
+            portal.appendChild(keysWrapper);
+        }
+
+        if (!document.getElementById("tourBtn")) {
+            const tourWrapper = document.createElement("div");
+            tourWrapper.id = "tourBtn";
+            tourWrapper.style.display = "block";
+            tourWrapper.innerHTML = `
+                <div class="helper help-btn">
+                    <a id="launchTour" href="javascript:void(0);">
+                        <h3>
+                            <small>${langText.a11y_helper1 || "Need help?"}</small>
+                            <div>${langText.a11y_helper2 || "Click here"}</div>
+                        </h3>
+                    </a>
+                </div>
+            `;
+            portal.appendChild(tourWrapper);
+        }
+    };
+
+    const updateTourTriggerVisibility = () => {
+        const tourBtn = document.getElementById("tourBtn");
+        const keysWrapper = document.getElementById("a11y-keys-wrapper");
+        const isWide = window.innerWidth >= breakpoint;
+
+        if (isWide) {
+            if (!tourBtn || !keysWrapper) {
+                createTourTrigger();
+            }
+
+            const newTourBtn = document.getElementById("tourBtn");
+
+            if (newTourBtn && newTourBtn.style.display !== "block") {
+                newTourBtn.style.display = "block";
+            }
+        } else {
+            if (tourBtn && tourBtn.style.display !== "none") {
+                tourBtn.style.display = "none";
+            }
+        }
+    };
+
+    createTourTrigger();
+    updateTourTriggerVisibility();
+    window.addEventListener("resize", () => {
+        updateTourTriggerVisibility();
+    });
 
     const isVisible = (el) => {
         if (!el) {
@@ -1161,8 +1166,8 @@ $.initTour = () => {
         return label;
     };
 
-    const steps             = [];
-    const processedElements = new Set();
+    let steps             = [];
+    let processedElements = new Set();
 
     const fillSteps = () => {
         let allDone  = true;
