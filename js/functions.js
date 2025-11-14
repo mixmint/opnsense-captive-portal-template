@@ -122,7 +122,7 @@ const showModal = ({ title, subtitle, content, iconText = '&#9888;', customStyle
         Object.entries(styles).forEach(([key, value]) => {
             styles[key] = $.adjustContrast(value, {
                 factor: settings.layout.a11y_factor,
-                treshhold: settings.layout.a11y_treshhold
+                treshold: settings.layout.a11y_treshold
             });
         });
     }

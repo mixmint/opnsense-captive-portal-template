@@ -29,7 +29,7 @@ const applyCssSettings = () => {
                     value,
                     {
                         factor: settings.layout.a11y_factor,
-                        treshhold: settings.layout.a11y_treshhold
+                        treshold: settings.layout.a11y_treshold
                     }
                 );
             }
