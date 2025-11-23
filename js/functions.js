@@ -1,5 +1,5 @@
 /**
- * @version 2.3.3
+ * @version 2.4
  * @package Multilanguage Captive Portal Template for OPNsense
  * @author Mirosław Majka (mix@proask.pl)
  * @copyright (C) 2025 Mirosław Majka <mix@proask.pl>
@@ -17,14 +17,14 @@ let settings = {},
     langsFlags = {
         af:"za",am:"et",ar:"sa",az:"az",be:"by",bg:"bg",bn:"bd",bs:"ba",
         ca:"es",cs:"cz",cy:"gb",da:"dk",de:"de",el:"gr",en:"gb",es:"es",
-        et:"ee",eu:"es",fa:"ir",fi:"fi",fil:"ph",fr:"fr",ga:"ie",gl:"es",
+        et:"ee",eu:"es",fa:"ir",fi:"fi",tl:"ph",fr:"fr",ga:"ie",gl:"es",
         gu:"in",he:"il",hi:"in",hr:"hr",hu:"hu",hy:"am",id:"id",is:"is",
         it:"it",ja:"jp",ka:"ge",kk:"kz",km:"kh",kn:"in",ko:"kr",ky:"kg",
         lt:"lt",lv:"lv",mk:"mk",ml:"in",mn:"mn",mr:"in",ms:"my",mt:"mt",
         nb:"no",ne:"np",nl:"nl",pa:"in",pl:"pl",ps:"af",pt:"pt",ro:"ro",
         ru:"ru",si:"lk",sk:"sk",sl:"si",sq:"al",sr:"rs",sv:"se",sw:"ke",
         ta:"in",te:"in",th:"th",tr:"tr",uk:"ua",ur:"pk",uz:"uz",vi:"vn",
-        zh:"cn",zu:"za",dv:"mv",ha:"ng",ku:"iq",sy:"sy",yi:"il"
+        zh:"cn",zu:"za",dv:"mv",ha:"ng",ku:"iq",kmr:"tr",sy:"sy",yi:"il"
     };
 
 const shortcutMap = {
@@ -40,6 +40,7 @@ const shortcutMap = {
 
 const allowedAttrs    = ['aria-label', 'title'];
 const hour12Countries = ['us','ca','ph','au','nz','mx','co','pk','in','ie','my','sg','bd','jm','gb'];
+
 var loadedScripts     = new Set();
 var loadedStyles      = new Set();
 
@@ -910,12 +911,27 @@ $.initKeyboardAccessibility = () => {
 
     let keyBuffer = [];
     let bufferTimeout;
-    const pressedKeys = new Set();
+
+    const pressedKeys   = new Set();
+    const maxCodeLength = Math.max(...Object.keys(langsFlags).map(k => k.length));
 
     const resetBuffer = () => {
         keyBuffer = [];
         clearTimeout(bufferTimeout);
         bufferTimeout = null;
+    };
+
+    const checkLangBuffer = () => {
+        for (let len = Math.min(keyBuffer.length, maxCodeLength); len > 0; len--) {
+            const attempt = keyBuffer.slice(-len).join("");
+            if (langsFlags[attempt]) {
+                triggerLang(attempt);
+                resetBuffer();
+                return true;
+            }
+        }
+
+        return false;
     };
 
     const triggerLang = code => {
@@ -972,34 +988,18 @@ $.initKeyboardAccessibility = () => {
         }
 
         if (e.shiftKey && /^[a-z]$/.test(key) && !leftAltPressed) {
-            let isShortcut = pressedKeys.size > 0 || !activeInput;
-            pressedKeys.add(key);
-
-            if (pressedKeys.size === 2) {
-                const combo = Array.from(pressedKeys).sort().join("");
-                if (langsFlags[combo]) {
-                    e.preventDefault();
-                    triggerLang(combo);
-                    pressedKeys.clear();
-                    resetBuffer();
-                    return;
-                }
-            }
-
             keyBuffer.push(key);
-            if (bufferTimeout) clearTimeout(bufferTimeout);
-            bufferTimeout = setTimeout(resetBuffer, 1000);
-
-            if (keyBuffer.length === 2) {
-                const code = keyBuffer.join("");
-                if (langsFlags[code]) {
-                    e.preventDefault();
-                    triggerLang(code);
-                }
-                resetBuffer();
+            if (keyBuffer.length > maxCodeLength) {
+                keyBuffer.shift();
             }
 
-            if (isShortcut && activeInput) {
+            if (bufferTimeout) {
+                clearTimeout(bufferTimeout);
+            }
+
+            bufferTimeout = setTimeout(checkLangBuffer, 1000);
+
+            if (activeInput) {
                 e.preventDefault();
             }
 
@@ -1013,8 +1013,14 @@ $.initKeyboardAccessibility = () => {
     });
 
     document.addEventListener("keyup", e => {
-        if (e.code === "ShiftLeft") leftShiftPressed = false;
-        if (e.code === "AltLeft") leftAltPressed = false;
+        if (e.code === "ShiftLeft") {
+            leftShiftPressed = false;
+        }
+
+        if (e.code === "AltLeft") {
+            leftAltPressed = false;
+        }
+
         pressedKeys.delete(e.key.toLowerCase());
     });
 };

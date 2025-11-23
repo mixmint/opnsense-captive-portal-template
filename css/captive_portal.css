@@ -577,6 +577,19 @@ html {
             padding-top: 2em;
             flex: 0 0 50%;
         }
+        #polyglotLanguageSwitcher {
+            &.flags-select {
+                & ul {
+                    &.dropdown {
+                        max-height: 246px;
+                        width: 100%;
+                        & + .mouse-scroll {
+                            right: -25px;
+                        }
+                    }
+                }
+            }
+        }
     }
 }
 
