@@ -1,5 +1,5 @@
 /**
- * @version 2.3.3
+ * @version 2.4
  * @package Multilanguage Captive Portal Template for OPNsense
  * @author Mirosław Majka (mix@proask.pl)
  * @copyright (C) 2025 Mirosław Majka <mix@proask.pl>
@@ -129,8 +129,7 @@ const initializeVantaEffect = () => {
         `vanta.${effect}.min.js`
     ];
 
-    $.getMultiResources(vantaResources, 'vanta')
-    .then(() => {
+    $.getMultiResources(vantaResources, 'vanta').then(() => {
         window['VANTA'][effect.toUpperCase()]({
             ...settings.animate.params,
             ...preset
