@@ -51,9 +51,9 @@ In the current release, the settings key defines the default language that will 
 
 ```
 "langs": {
-    "en":"English",
-    "pl":"Polski",
-    "sk": "Slovenčina",
+	"en": "English",
+	"pl": "Polski",
+	"sk": "Slovenčina",
 	"fr": "Français",
 	"de": "Deutsch",
 	"nl": "Nederlands",
@@ -61,6 +61,7 @@ In the current release, the settings key defines the default language that will 
 	"sv": "Svenska",
 	"fi": "Suomi",
 	"es": "Español",
+	"ca": "Català",
 	"ja": "日本語",
 	"zh": "中文",
 	"pt": "Português",
@@ -75,6 +76,7 @@ In the current release, the settings key defines the default language that will 
 	"ro": "Română",
 	"hr": "Hrvatski",
 	"ga": "Gaeilge",
+	"ad": "Català",
 	"mt": "Malti",
 	"sl": "Slovenščina",
 	"hu": "Magyar",
@@ -107,6 +109,7 @@ In the current release, the settings key defines the default language that will 
 	"nb": "Norsk bokmål",
 	"ne": "नेपाली",
 	"si": "සිංහල",
+	"dz": "རྫོང་ཁ",
 	"sw": "Kiswahili",
 	"th": "ไทย",
 	"uz": "Oʻzbek",
