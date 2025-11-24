@@ -96,7 +96,7 @@ In the current release, the settings key defines the default language that will 
 	"cy": "Cymraeg",
 	"eu": "Euskara",
 	"fa": "فارسی",
-	"fil": "Filipino",
+	"tl": "Filipino",
 	"gl": "Galego",
 	"gu": "ગુજરાતી",
 	"he": "עברית",
@@ -116,7 +116,8 @@ In the current release, the settings key defines the default language that will 
 	"ky": "Кыргызча",
 	"dv": "ދިވެހި",
 	"ha": "Hausa",
-	"ku": "Kurdî",
+	"ku": "کوردی (سۆرانی)",
+	"kmr": "Kurdî (Kurmancî)",
 	"ps": "پښتو",
 	"sy": "ܣܘܪܝܝܐ",
 	"yi": "ייִדיש"
@@ -558,9 +559,5 @@ The following effects are available: **birds**, **cells**, **fog**, **globe**, *
 - New translations generated using AI for multiple languages.
 - Expanded digital accessibility support (**WCAG**).
 - Introduced a new interactive Accessibility Tour Guide (TourGuide) compliant with WCAG 2.1 AA.
-
-## What I plan to change:
-
-- Implement a method for embedding (or dynamically generating) the layout and its dependencies
 
 
