@@ -63,6 +63,7 @@ In the current release, the settings key defines the default language that will 
 	"es": "Español",
 	"ca": "Català",
 	"ja": "日本語",
+	"ko": "한국어",
 	"zh": "中文",
 	"pt": "Português",
 	"it": "Italiano",
@@ -76,7 +77,6 @@ In the current release, the settings key defines the default language that will 
 	"ro": "Română",
 	"hr": "Hrvatski",
 	"ga": "Gaeilge",
-	"ad": "Català",
 	"mt": "Malti",
 	"sl": "Slovenščina",
 	"hu": "Magyar",
@@ -123,7 +123,22 @@ In the current release, the settings key defines the default language that will 
 	"kmr": "Kurdî (Kurmancî)",
 	"ps": "پښتو",
 	"sy": "ܣܘܪܝܝܐ",
-	"yi": "ייִדיש"
+	"yi": "ייִדיש",
+	"rw": "Kinyarwanda",
+	"so": "Soomaali",
+	"tg": "Тоҷикӣ",
+	"mg": "Malagasy",
+	"my": "မြန်မာဘာသာ",
+	"km": "ភាសាខ្មែរ",
+	"lo": "ພາສາລາວ",
+	"ti": "ትግርኛ",
+	"rn": "Ikirundi",
+	"xh": "IsiXhosa",
+	"st": "Sesotho",
+	"tn": "Setswana",
+	"ss": "siSwati",
+	"nd": "isiNdebele",
+	"aa": "Qafaraf Af"
 };
 ```
 The langs_iso parameter, which was previously included in the configuration, has been removed from the manual settings. In the new template version, ISO values ​​for languages ​​are automatically generated based on the keys defined in the "langs" section.
