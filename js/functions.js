@@ -1,5 +1,5 @@
 /**
- * @version 2.4.1
+ * @version 2.4.2
  * @package Multilanguage Captive Portal Template for OPNsense
  * @author Mirosław Majka (mix@proask.pl)
  * @copyright (C) 2025 Mirosław Majka <mix@proask.pl>
@@ -18,24 +18,27 @@ let settings = {},
         af:"za",am:"et",ar:"sa",az:"az",be:"by",bg:"bg",bn:"bd",bs:"ba",ca:"es-ct",cs:"cz",cy:"gb",
         da:"dk",de:"de",el:"gr",en:"gb",es:"es",et:"ee",eu:"es",fa:"ir",fi:"fi",tl:"ph",fr:"fr",
         ga:"ie",gl:"es",gu:"in",he:"il",hi:"in",hr:"hr",hu:"hu",hy:"am",id:"id",is:"is",it:"it",
-        ja:"jp",ka:"ge",kk:"kz",km:"kh",kn:"in",ko:"kr",ky:"kg",lt:"lt",lv:"lv",mk:"mk",ml:"in",
-        mn:"mn",mr:"in",ms:"my",mt:"mt",nb:"no",ne:"np",nl:"nl",pa:"in",pl:"pl",ps:"af",pt:"pt",
-        ro:"ro",ru:"ru",si:"lk",sk:"sk",sl:"si",sq:"al",sr:"rs",sv:"se",sw:"ke",ta:"in",te:"in",
-        th:"th",tr:"tr",uk:"ua",ur:"pk",uz:"uz",vi:"vn",zh:"cn",zu:"za",dv:"mv",ha:"ng",ku:"iq",
-        kmr:"tr",sy:"sy",yi:"il",dz:"bt",ad:"ad"
+        ja:"jp",ko:"kr",ka:"ge",kk:"kz",km:"kh",kn:"in",ko:"kr",ky:"kg",lt:"lt",lv:"lv",mk:"mk",
+        ml:"in",mn:"mn",mr:"in",ms:"my",mt:"mt",nb:"no",ne:"np",nl:"nl",pa:"in",pl:"pl",ps:"af",
+        pt:"pt",ro:"ro",ru:"ru",si:"lk",sk:"sk",sl:"si",sq:"al",sr:"rs",sv:"se",sw:"ke",ta:"in",
+        te:"in",th:"th",tr:"tr",uk:"ua",ur:"pk",uz:"uz",vi:"vn",zh:"cn",zu:"za",dv:"mv",ha:"ng",
+        ku:"iq",kmr:"tr",sy:"sy",yi:"il",dz:"bt",rw:"rw",so:"so",tg:"tj",mg:"mg",my:"mm",km:"kh",
+        lo:"la",ti:"er",rn:"bi",xh:"za",st:"ls",tn:"bw",ss:"sz",nd:"zw",aa:"er"
     },
     langISOMap = {
         en:"en-GB",pl:"pl-PL",sk:"sk-SK",fr:"fr-FR",de:"de-DE",nl:"nl-NL",no:"nb-NO",sv:"sv-SE",
-        fi:"fi-FI",es:"es-ES",ca:"ca-ES",ja:"ja-JP",zh:"zh-CN",pt:"pt-PT",it:"it-IT",da:"da-DK",
-        af:"af-ZA",am:"am-ET",ar:"ar-SA",az:"az-AZ",be:"be-BY",bg:"bg-BG",bn:"bn-BD",bs:"bs-BA",
-        cs:"cs-CZ",cy:"cy-GB",el:"el-GR",et:"et-EE",eu:"eu-ES",fa:"fa-IR",tl:"tl-PH",ga:"ga-IE",
-        gl:"gl-ES",gu:"gu-IN",he:"he-IL",hi:"hi-IN",hr:"hr-HR",hu:"hu-HU",hy:"hy-AM",id:"id-ID",
-        is:"is-IS",ka:"ka-GE",kk:"kk-KZ",km:"km-KH",kn:"kn-IN",ko:"ko-KR",ky:"ky-KG",lt:"lt-LT",
-        lv:"lv-LV",mk:"mk-MK",ml:"ml-IN",mn:"mn-MN",mr:"mr-IN",ms:"ms-MY",mt:"mt-MT",nb:"nb-NO",
-        ne:"ne-NP",pa:"pa-IN",ps:"ps-AF",ro:"ro-RO",ru:"ru-RU",si:"si-LK",sl:"sl-SI",sq:"sq-AL",
-        sr:"sr-RS",sw:"sw-KE",ta:"ta-IN",te:"te-IN",th:"th-TH",tr:"tr-TR",uk:"uk-UA",ur:"ur-PK",
-        uz:"uz-UZ",vi:"vi-VN",zu:"zu-ZA",dv:"dv-MV",ha:"ha-NG",ku:"ku-TR",kmr:"ku-TR",sy:"ar-SY",
-        yi:"he-IL",dz:"dz-BT",ad:"ca-AD"
+        fi:"fi-FI",es:"es-ES",ca:"ca-ES",ja:"ja-JP",ko:"ko-KR",zh:"zh-CN",pt:"pt-PT",it:"it-IT",
+        da:"da-DK",af:"af-ZA",am:"am-ET",ar:"ar-SA",az:"az-AZ",be:"be-BY",bg:"bg-BG",bn:"bn-BD",
+        bs:"bs-BA",cs:"cs-CZ",cy:"cy-GB",el:"el-GR",et:"et-EE",eu:"eu-ES",fa:"fa-IR",tl:"tl-PH",
+        ga:"ga-IE",gl:"gl-ES",gu:"gu-IN",he:"he-IL",hi:"hi-IN",hr:"hr-HR",hu:"hu-HU",hy:"hy-AM",
+        id:"id-ID",is:"is-IS",ka:"ka-GE",kk:"kk-KZ",km:"km-KH",kn:"kn-IN",ko:"ko-KR",ky:"ky-KG",
+        lt:"lt-LT",lv:"lv-LV",mk:"mk-MK",ml:"ml-IN",mn:"mn-MN",mr:"mr-IN",ms:"ms-MY",mt:"mt-MT",
+        nb:"nb-NO",ne:"ne-NP",pa:"pa-IN",ps:"ps-AF",ro:"ro-RO",ru:"ru-RU",si:"si-LK",sl:"sl-SI",
+        sq:"sq-AL",sr:"sr-RS",sw:"sw-KE",ta:"ta-IN",te:"te-IN",th:"th-TH",tr:"tr-TR",uk:"uk-UA",
+        ur:"ur-PK",uz:"uz-UZ",vi:"vi-VN",zu:"zu-ZA",dv:"dv-MV",ha:"ha-NG",ku:"ku-TR",kmr:"ku-TR",
+        sy:"ar-SY",yi:"he-IL",dz:"dz-BT",rw:"rw-RW",so:"so-SO",tg:"tg-TJ",mg:"mg-MG",my:"my-MM",
+        lo:"lo-LA",ti:"ti-ER",rn:"rn-BI",xh:"xh-ZA",st:"st-LS",tn:"tn-BW",ss:"ss-SZ",nd:"nd-ZW",
+        aa:"aa-ER"
     };
 
 const shortcutMap = {
