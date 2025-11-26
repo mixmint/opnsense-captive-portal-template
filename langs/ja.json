@@ -65,7 +65,7 @@
     "cp_error_solution": "<ul><li>ログインIDとパスワードを正しく入力しているか確認する<\/li><li>アカウント料金が支払われているか確認する<\/li><li class=\"tel\">問題が解決しない場合は、<a href=\"tel:+48123456789\">ネットワークサポート<\/a>にお問い合わせください<\/li><\/ul>",
     "cp_rules_title": "利用規約",
     "cp_rules_info_title": "インターネット接続サービスの利用規約",
-    "cp_rules_content": "<div class=\"rules\"><p>1. 規約は通常のHTMLで記載<\/p>\r\n<ul class=\"none-style\">\r\n<li>Lorem ipsum dolor sit amet, consectetur adipiscing elit...<\/li>\r\n<\/ul><\/div>",
+    "cp_rules_content": "<div class=\"rules\"><p>1. 規約は通常のHTMLで記載<\/p>\r\n<ul class=\"none-style\">\r\n<li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin nibh augue, suscipit a, scelerisque sed, lacinia in, mi. Cras vel lorem. Etiam pellentesque aliquet tellus. Phasellus pharetra nulla ac diam. Quisque semper justo at risus. Donec venenatis, turpis vel hendrerit interdum, dui ligula ultricies purus, sed posuere libero dui id orci. Nam congue, pede vitae dapibus aliquet, elit magna vulputate arcu, vel tempus metus leo non est. Etiam sit amet lectus quis est congue mollis. Phasellus congue lacus eget neque. Phasellus ornare, ante vitae consectetuer consequat, purus sapien ultricies dolor, et mollis pede metus eget nisi. Praesent sodales velit quis augue. Cras suscipit, urna at aliquam rhoncus, urna quam viverra nisi, in interdum massa nibh nec erat.<\/li>\r\n<\/ul><\/div>",
     "cp_login_attempt_title": "ログイン試行制限",
     "cp_login_attempt_info_title": "ログイン試行回数を超えました",
     "cp_login_attempt_content": "システムでは誤ったログインを%s回まで許可します。回数を超えると、ログインは%s %sの間ブロックされます。",
