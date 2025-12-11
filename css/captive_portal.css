@@ -18,11 +18,11 @@
         text-decoration: none;
     }
     .link {
-        color: var(--link, initial);
+        color: var(--link_color, initial);
         cursor: pointer;
         font-weight: 400;
         &:hover {
-            color: var(--link_hover, initial);
+            color: var(--link_hover_color, initial);
         }
     }
     hr {
@@ -109,10 +109,10 @@
         flex: 0 0 50%;
     }
     .interface-config .if-title {
-        color: var(--link, initial);
+        color: var(--link_color, initial);
     }
     .config-address {
-        color: var(--link_hover, initial);
+        color: var(--link_hover_color, initial);
     }
     .row {
         opacity: 0;
@@ -185,6 +185,10 @@
         .wrapper {
             height: calc(100% + (2* var(--block_padding, 0)));
             background-color: var(--bg_color_right_side, transparent);
+            background-image: var(--bg_img_right_side, none);
+            background-repeat: var(--bg_img_right_side_repeat, none);
+            background-position: var(--bg_img_right_side_position, none);
+            background-size: var(--bg_img_right_side_size, none);
             padding: 75px 75px 75px calc(75px + var(--block_padding, 0));
             display: flex;
             flex-direction: column;
@@ -231,8 +235,8 @@
             padding-bottom: 0;
         }
         .field {
-            background-color: var(--input_field_bg, transparent);
-            border-color: var(--input_field_border, initial);
+            background-color: var(--input_field_bg_color, transparent);
+            border-color: var(--input_field_border_color, initial);
             border-width: 0 !important;
             border-radius: unset !important;
             width: 100%;
@@ -258,10 +262,12 @@
     button {
         text-transform: uppercase;
         letter-spacing: 2.8px;
-        background-color: var(--button_bg, transparent);
+        background-color: var(--button_bg_color, transparent);
+        color: var(--button_color, inherit);
         border-radius: 5px !important;
         &:hover {
-            background-color: var(--button_hover_bg, transparent);
+            background-color: var(--button_hover_bg_color, transparent);
+            color: var(--button_hover_color, inherit);
         }
     }
     .rules-checkbox {
@@ -319,7 +325,7 @@
             top: 0;
             bottom: 0;
             font-size: 26px;
-            color: var(--button_bg, initial);
+            color: var(--button_bg_color, initial);
             margin-top: auto;
             margin-bottom: auto;
             margin-left: 9px;
@@ -336,7 +342,7 @@
         }
         &:hover {
             &:after {
-                color: var(--button_hover_bg, initial);
+                color: var(--button_hover_bg_color, initial);
                 background: rgba(0, 0, 0, .5);
             }
         }
@@ -501,11 +507,11 @@
 
 #status_info,
 #anon_info {
-    .widget-heading {
-        .heading-title {
-            color: var(--color_primary, initial);
-        }
+.widget-heading {
+    .heading-title {
+        color: var(--color_primary, initial);
     }
+}
 }
 
 .rules {
@@ -570,7 +576,7 @@ html {
             font-size: 28px;
         }
         #cp_portal_info {
-            font-size: 15px
+            font-size: 15px;
         }
         .heading {
             padding-left: 2em;
@@ -578,17 +584,17 @@ html {
             flex: 0 0 50%;
         }
         #polyglotLanguageSwitcher {
-            &.flags-select {
-                & ul {
-                    &.dropdown {
-                        max-height: 246px;
-                        width: 100%;
-                        & + .mouse-scroll {
-                            right: -25px;
-                        }
+        &.flags-select {
+            & ul {
+                &.dropdown {
+                    max-height: 246px;
+                    width: 100%;
+                    & + .mouse-scroll {
+                        right: -25px;
                     }
                 }
             }
+        }
         }
     }
 }
