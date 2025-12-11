@@ -40,10 +40,10 @@ h1, h2, h3, h4, h5, h6 {
 fieldset {
     padding: 0;
     border: 0;
-    min-width: inherit
+    min-width: inherit;
     legend {
         padding: 0;
-        margin-bottom: 1.5em
+        margin-bottom: 1.5em;
     }
 }
 h1, h2, h3 {
@@ -87,7 +87,7 @@ div {
 ol {
     li {
         &:hover:before {
-            color: var(--link_hover, initial);
+            color: var(--link_hover_color, initial);
         }
     }
 }
@@ -96,7 +96,6 @@ input {
     font-size: 100%;
     margin: 0;
     vertical-align: baseline;
-    *vertical-align: middle;
 }
 button,
 input[type=button],
@@ -104,6 +103,7 @@ input[type=submit] {
     border: 1px solid transparent;
     cursor: pointer;
     -webkit-appearance: button;
+    appearance: button;
     padding: 10px 20px;
     color: var(--color_secondary, initial);
 }
@@ -205,6 +205,18 @@ section {
 }
 .flex-100 {
     flex: 0 0 100% !important;
+}
+.w-0 {
+    width: 0 !important;
+}
+.h-0 {
+    height: 0 !important;
+}
+.w-85 {
+    width: 85% !important;
+}
+.h-85 {
+    height: 85% !important;
 }
 .clearfix:after {
     content: "";
