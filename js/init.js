@@ -1,5 +1,5 @@
 /**
- * @version 2.4.3
+ * @version 2.5.0
  * @package Multilanguage Captive Portal Template for OPNsense
  * @author Mirosław Majka (mix@proask.pl)
  * @copyright (C) 2025 Mirosław Majka <mix@proask.pl>
@@ -8,6 +8,7 @@
 
 $(document).ready(() => {
     $.when($.loadSettings()).done(() => {
+        setupLocalesData();
         applyCssSettings();
         setupLanguage();
         initializeVantaEffect();
@@ -20,6 +21,14 @@ $(document).ready(() => {
         checkConnectionStatus();
     });
 });
+
+const setupLocalesData = () => {
+    if (!settings.layout.force_locales_data) {
+        return;
+    }
+
+    forceLocalesData();
+};
 
 const applyCssSettings = () => {
     if (settings.css_params) {
