@@ -200,6 +200,18 @@ Flag directory `lang_flags_dir`:
 - `4x3` – a 4:3 flag aspect ratio (standard rectangular)  
 - `1x1` – a square flag aspect ratio  
 
+Automatic locale and flag mapping `force_locales_data`:
+
+```
+"layout": {
+    "force_locales_data": true|false,
+}
+```
+
+- When `true`, updates `langsFlags` and `langISOMap` from the browser's `navigator.language`.  
+- Only modifies entries if a region is present (e.g., `en-CA`, `pt-BR`).  
+- Leaves two-letter languages (e.g., `en`, `fr`, `es`, `pt`) unchanged.
+
 Accessibility options:
 
 ```
@@ -287,208 +299,218 @@ Accessibility options:
 				<td>Sets the scrolling of the background image (if set in <strong>bg_image</strong>)</td>
 			</tr>
 			<tr>
-				<td>"bg_left_side": "url('/images/bg_left_side.png')",</td>
+				<td>"bg_color_left_side": "",</td>
 				<td>←&nbsp;7&nbsp;→</td>
+				<td>Background color of the <span style="color: #008000;"><strong>left side</strong></span> of the login portal</td>
+			</tr>
+			<tr>
+				<td>"bg_img_left_side": "url('/images/bg_left_side.png')",</td>
+				<td>←&nbsp;8&nbsp;→</td>
 				<td>Illustration as background of the <span style="color: #008000;"><strong>left side</strong></span> of the login portal</td>
 			</tr>
 			<tr>
-				<td>"bg_left_side_repeat": "no-repeat",</td>
-				<td>←&nbsp;8&nbsp;→</td>
+				<td>"bg_img_left_side_repeat": "no-repeat",</td>
+				<td>←&nbsp;9&nbsp;→</td>
 				<td>Set the repeatability of the background illustration of the <span style="color: #008000;"><strong>left side</strong></span> of the login portal</td>
 			</tr>
 			<tr>
-				<td>"bg_left_side_position": "top left",</td>
-				<td>←&nbsp;9&nbsp;→</td>
+				<td>"bg_img_left_side_position": "top left",</td>
+				<td>←&nbsp;10&nbsp;→</td>
 				<td>Position of the <span style="color: #008000;"><strong>left side</strong></span> background image of the login portal</td>
 			</tr>
 			<tr>
-				<td>"bg_left_side_size": "cover",</td>
-				<td>←&nbsp;10&nbsp;→</td>
+				<td>"bg_img_left_side_size": "cover",</td>
+				<td>←&nbsp;11&nbsp;→</td>
 				<td>Coverage of the <span style="color: #008000;"><strong>left side</strong></span> of the login portal background illustration surface</td>
 			</tr>
 			<tr>
-				<td>"bg_left_side_attachment": "",</td>
-				<td>←&nbsp;11&nbsp;→</td>
+				<td>"bg_img_left_side_attachment": "",</td>
+				<td>←&nbsp;12&nbsp;→</td>
 				<td>Setting the scrolling background image of the <span style="color: #008000;"><strong>left side</strong></span> of the login portal</td>
 			</tr>
 			<tr>
 				<td>"bg_left_side_blend": "linear-gradient(180deg, #005f6b4d 0%, #005f6bbf 83.85%)",</td>
-				<td>←&nbsp;12&nbsp;→</td>
+				<td>←&nbsp;13&nbsp;→</td>
 				<td>Setting the background blend of the <span style="color: #008000;"><strong>left side</strong></span> of the login portal - in this case it allows you to cover the background illustration of the left side of the login portal with a linear gradient</td>
 			</tr>
 			<tr>
-				<td>"bg_right_side": "rgba(249, 253, 255, 1)",</td>
-				<td>←&nbsp;13&nbsp;→</td>
+				<td>"bg_color_right_side": "rgba(249, 253, 255, 1)",</td>
+				<td>←&nbsp;14&nbsp;→</td>
+				<td>Background color of the <span style="color: #008000;"><strong>right side</strong></span> of the login portal</td>
+			</tr>
+			<tr>
+				<td>"bg_img_right_side": "",</td>
+				<td>←&nbsp;15&nbsp;→</td>
 				<td>Illustration as background of the <span style="color: #ff0000;"><strong>right side</strong></span> of the login portal</td>
 			</tr>
 			<tr>
-				<td>"bg_right_side_repeat": "no-repeat",</td>
-				<td>←&nbsp;14&nbsp;→</td>
+				<td>"bg_img_right_side_repeat": "no-repeat",</td>
+				<td>←&nbsp;16&nbsp;→</td>
 				<td>Set the repeatability of the background illustration of the <span style="color: #ff0000;"><strong>right side</strong></span> of the login portal</td>
 			</tr>
 			<tr>
-				<td>"bg_right_side_position": "top left",</td>
-				<td>←&nbsp;15&nbsp;→</td>
+				<td>"bbg_img_right_side_position": "top left",</td>
+				<td>←&nbsp;17&nbsp;→</td>
 				<td>Position of the <span style="color: #ff0000;"><strong>right side</strong></span> background image of the login portal</td>
 			</tr>
 			<tr>
-				<td>"bg_right_side_size": "cover",</td>
-				<td>←&nbsp;16&nbsp;→</td>
+				<td>"bg_img_right_side_size": "cover",</td>
+				<td>←&nbsp;18&nbsp;→</td>
 				<td>Coverage of the <span style="color: #ff0000;"><strong>right side</strong></span> of the login portal background illustration surface</td>
 			</tr>
 			<tr>
-				<td>"bg_right_side_attachment": "",</td>
-				<td>←&nbsp;17&nbsp;→</td>
+				<td>"bg_img_right_side_attachment": "",</td>
+				<td>←&nbsp;19&nbsp;→</td>
 				<td>Setting the scrolling background image of the <span style="color: #ff0000;"><strong>right side</strong></span> of the login portal</td>
 			</tr>
 			<tr>
 				<td>"bg_right_side_blend": "",</td>
-				<td>←&nbsp;18&nbsp;→</td>
+				<td>←&nbsp;20&nbsp;→</td>
 				<td>Setting the background blend of the <span style="color: #ff0000;"><strong>right side</strong></span> of the login portal - in this case it allows you to cover the background illustration of the left side of the login portal with a linear gradient</td>
 			</tr>
 			<tr>
 				<td>"left_side_shadow": "0 0 40px 0 rgba(0, 0, 0, .35)",</td>
-				<td>←&nbsp;19&nbsp;→</td>
+				<td>←&nbsp;21&nbsp;→</td>
 				<td>Shadow under <span style="color: #339966;"><strong>left side</strong></span> of login portal</td>
 			</tr>
 			<tr>
 				<td>"right_side_shadow": "0 0 40px 0 rgba(0, 0, 0, .35)",</td>
-				<td>←&nbsp;20&nbsp;→</td>
+				<td>←&nbsp;22&nbsp;→</td>
 				<td>Shadow under <span style="color: #ff0000;"><strong>right side</strong></span> of login portal</td>
 			</tr>
 			<tr>
 				<td>"bg_alternate": "#818a91",</td>
-				<td>←&nbsp;21&nbsp;→</td>
+				<td>←&nbsp;23&nbsp;→</td>
 				<td>Alternate background color - used in buttons as the background color and text fields as the border color</td>
 			</tr>
 			<tr>
 				<td>"color_primary": "#7a7a7a",</td>
-				<td>←&nbsp;22&nbsp;→</td>
+				<td>←&nbsp;24&nbsp;→</td>
 				<td>Main text color</td>
 			</tr>
 			<tr>
 				<td>"color_secondary": "#ffffff",</td>
-				<td>←&nbsp;23&nbsp;→</td>
+				<td>←&nbsp;25&nbsp;→</td>
 				<td>Text secondary color</td>
 			</tr>
 			<tr>
 				<td>"color_alternate": "#373a3c",</td>
-				<td>←&nbsp;24&nbsp;→</td>
+				<td>←&nbsp;26&nbsp;→</td>
 				<td>Text alternate color</td>
 			</tr>
 			<tr>
 				<td>"link": "#348893",</td>
-				<td>←&nbsp;25&nbsp;→</td>
+				<td>←&nbsp;27&nbsp;→</td>
 				<td>Link color</td>
 			</tr>
 			<tr>
 				<td>"link_hover": "#f12184",</td>
-				<td>←&nbsp;26&nbsp;→</td>
+				<td>←&nbsp;28&nbsp;→</td>
 				<td>Link hover color</td>
 			</tr>
 			<tr>
 				<td>"input_field_color": "#e8e8e8",</td>
-				<td>←&nbsp;27&nbsp;→</td>
+				<td>←&nbsp;29&nbsp;→</td>
 				<td>Input field text color</td>
 			</tr>
 			<tr>
-				<td>"input_field_bg": "#ffffff",</td>
-				<td>←&nbsp;28&nbsp;→</td>
+				<td>"input_field_bg_color": "#ffffff",</td>
+				<td>←&nbsp;30&nbsp;→</td>
 				<td>Input field background color&nbsp;</td>
 			</tr>
 			<tr>
-				<td>"input_field_border": "rgba(145, 156, 167, .27)",</td>
-				<td>←&nbsp;29&nbsp;→</td>
+				<td>"input_field_border_color": "rgba(145, 156, 167, .27)",</td>
+				<td>←&nbsp;31&nbsp;→</td>
 				<td>Input field border color</td>
 			</tr>
 			<tr>
 				<td>"input_field_placeholder_color": "#4ca1af",</td>
-				<td>←&nbsp;30&nbsp;→</td>
+				<td>←&nbsp;32&nbsp;→</td>
 				<td>Input field placeholder color</td>
 			</tr>
 			<tr>
-				<td>"button_bg": "#00b5cb",</td>
-				<td>←&nbsp;31&nbsp;→</td>
+				<td>"button_bg_color": "#00b5cb",</td>
+				<td>←&nbsp;33&nbsp;→</td>
 				<td>Button background color</td>
 			</tr>
 			<tr>
-				<td>"button_hover_bg": "#f12184",</td>
-				<td>←&nbsp;32&nbsp;→</td>
+				<td>"button_hover_bg_color": "#f12184",</td>
+				<td>←&nbsp;34&nbsp;→</td>
 				<td>Button hover background color</td>
 			</tr>
 			<tr>
 				<td>"button_color": "#ffffff",</td>
-				<td>←&nbsp;33&nbsp;→</td>
+				<td>←&nbsp;35&nbsp;→</td>
 				<td>Button text color</td>
 			</tr>
 			<tr>
 				<td>"button_hover_color": "#ffffff",</td>
-				<td>←&nbsp;34&nbsp;→</td>
+				<td>←&nbsp;36&nbsp;→</td>
 				<td>Button hover text color</td>
 			</tr>
 			<tr>
 				<td>"lang_switcher": "#00b5cb",</td>
-				<td>←&nbsp;35&nbsp;→</td>
+				<td>←&nbsp;37&nbsp;→</td>
 				<td>Language selector switch</td>
 			</tr>
 			<tr>
 				<td>"lang_switcher_trigger": "#009db1",</td>
-				<td>←&nbsp;36&nbsp;→</td>
+				<td>←&nbsp;38&nbsp;→</td>
 				<td>Language selector switch trigger</td>
 			</tr>
 			<tr>
 				<td>"lang_switcher_link": "#ffffff",</td>
-				<td>←&nbsp;37&nbsp;→</td>
+				<td>←&nbsp;39&nbsp;→</td>
 				<td>Language selector switch link color</td>
 			</tr>
 			<tr>
 				<td>"lang_switcher_link_hover": "#ffffff",</td>
-				<td>←&nbsp;38&nbsp;→</td>
+				<td>←&nbsp;40&nbsp;→</td>
 				<td>Language selector switch link hover color</td>
 			</tr>
 			<tr>
 				<td>"lang_switcher_hover": "#f12184",</td>
-				<td>←&nbsp;39&nbsp;→</td>
+				<td>←&nbsp;41&nbsp;→</td>
 				<td>Language selector switch link background hover color</td>
 			</tr>
 			<tr>
 				<td>"lang_switcher_dropdown": "#216f7a",</td>
-				<td>←&nbsp;40&nbsp;→</td>
+				<td>←&nbsp;42&nbsp;→</td>
 				<td>Language selector switch dropdown background color</td>
 			</tr>
 			<tr>
 				<td>"lang_switcher_dropdown_hover": "#f12184",</td>
-				<td>←&nbsp;41&nbsp;→</td>
+				<td>←&nbsp;43&nbsp;→</td>
 				<td>Language selector switch dropdown background hover color</td>
 			</tr>
 			<tr>
 				<td>"fadein": "0.5s",</td>
-				<td>←&nbsp;42&nbsp;→</td>
+				<td>←&nbsp;44&nbsp;→</td>
 				<td>Duration fading to opaque the layout once it's fully loaded</td>
 			</tr>
 			<tr>
 				<td>"block_padding": "50px",</td>
-				<td>←&nbsp;43&nbsp;→</td>
+				<td>←&nbsp;45&nbsp;→</td>
 				<td>Padding used on left and right column</td>
 			</tr>
 			<tr>
 				<td>"block_radius": "15px"</td>
-				<td>←&nbsp;44&nbsp;→</td>
+				<td>←&nbsp;46&nbsp;→</td>
 				<td>Left and right column content wrapper border radius</td>
 			</tr>
 			<tr>
 				<td>"helper_bg_color": "#00b5cb"</td>
-				<td>←&nbsp;45&nbsp;→</td>
+				<td>←&nbsp;47&nbsp;→</td>
 				<td>Background color of the TourGuide trigger button</td>
 			</tr>
 			<tr>
 				<td>"helper_color": "#ffffff"</td>
-				<td>←&nbsp;46&nbsp;→</td>
+				<td>←&nbsp;48&nbsp;→</td>
 				<td>Text color of the TourGuide trigger button</td>
 			</tr>
 			<tr>
 				<td>"helper_size": "78px"</td>
-				<td>←&nbsp;47&nbsp;→</td>
+				<td>←&nbsp;49&nbsp;→</td>
 				<td>Size (width and height) of the TourGuide trigger button</td>
 			</tr>
 		</tbody>
@@ -577,5 +599,4 @@ The following effects are available: **birds**, **cells**, **fog**, **globe**, *
 - New translations generated using AI for multiple languages.
 - Expanded digital accessibility support (**WCAG**).
 - Introduced a new interactive Accessibility Tour Guide (TourGuide) compliant with WCAG 2.1 AA.
-
-
+- Automatic locale and flag mapping has been added, updating flags and locales based on the browser's language while keeping two-letter language codes unchanged.

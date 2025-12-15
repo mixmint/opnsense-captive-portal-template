@@ -100,6 +100,7 @@
         "redirect_url": "",
         "lang_layout": "flags-select",
         "lang_flags_dir": "4x3",
+        "force_locales_data": true,
         "a11y": true,
         "a11y_contrast": false,
         "a11y_keyboard": true,
