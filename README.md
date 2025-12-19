@@ -269,249 +269,279 @@ Accessibility options:
 	<table style="width: 100%;">
 		<tbody>
 			<tr>
-				<td>"bg_section": "#252828",</td>
-				<td>←&nbsp;1&nbsp;→</td>
-				<td>Background color of the entire section</td>
+				<td>"bg_section": "#252828"</td>
+				<td>← 1 →</td>
+				<td>Global background color of the entire login section</td>
 			</tr>
 			<tr>
-				<td>"bg_image": "",</td>
-				<td>←&nbsp;2&nbsp;→</td>
-				<td>Illustration as background (used regardless of the color set in <strong>bg_section</strong>)</td>
+				<td>"bg_image": ""</td>
+				<td>← 2 →</td>
+				<td>Optional background image displayed over <strong>bg_section</strong></td>
 			</tr>
 			<tr>
-				<td>"bg_repeat": "no-repeat",</td>
-				<td>←&nbsp;3&nbsp;→</td>
-				<td>Set the repeatability of the background illustration (if set in <strong>bg_image</strong>)</td>
+				<td>"bg_repeat": "no-repeat"</td>
+				<td>← 3 →</td>
+				<td>Defines background image repeat behavior</td>
 			</tr>
 			<tr>
-				<td>"bg_position": "center center",</td>
-				<td>←&nbsp;4&nbsp;→</td>
-				<td>Set the position of the background illustration (if set in <strong>bg_image</strong>)</td>
+				<td>"bg_position": "center center"</td>
+				<td>← 4 →</td>
+				<td>Position of the global background image</td>
 			</tr>
 			<tr>
-				<td>"bg_size": "cover",</td>
-				<td>←&nbsp;5&nbsp;→</td>
-				<td>Coverage of the background illustration surface (if set in <strong>bg_image</strong>)</td>
+				<td>"bg_size": "cover"</td>
+				<td>← 5 →</td>
+				<td>Scaling method of the global background image</td>
 			</tr>
 			<tr>
-				<td>"bg_attachment": "",</td>
-				<td>←&nbsp;6&nbsp;→</td>
-				<td>Sets the scrolling of the background image (if set in <strong>bg_image</strong>)</td>
+				<td>"bg_attachment": ""</td>
+				<td>← 6 →</td>
+				<td>Controls background image scroll behavior (fixed / scroll)</td>
 			</tr>
 			<tr>
-				<td>"bg_color_left_side": "",</td>
-				<td>←&nbsp;7&nbsp;→</td>
-				<td>Background color of the <span style="color: #008000;"><strong>left side</strong></span> of the login portal</td>
+				<td>"bg_color_left_side": ""</td>
+				<td>← 7 →</td>
+				<td>Background color of the <strong>left panel</strong></td>
 			</tr>
 			<tr>
-				<td>"bg_img_left_side": "url('/images/bg_left_side.png')",</td>
-				<td>←&nbsp;8&nbsp;→</td>
-				<td>Illustration as background of the <span style="color: #008000;"><strong>left side</strong></span> of the login portal</td>
+				<td>"bg_img_left_side": "url('/images/bg_left_side.png')"</td>
+				<td>← 8 →</td>
+				<td>Background image of the <strong>left panel</strong></td>
 			</tr>
 			<tr>
-				<td>"bg_img_left_side_repeat": "no-repeat",</td>
-				<td>←&nbsp;9&nbsp;→</td>
-				<td>Set the repeatability of the background illustration of the <span style="color: #008000;"><strong>left side</strong></span> of the login portal</td>
+				<td>"bg_img_left_side_repeat": "no-repeat"</td>
+				<td>← 9 →</td>
+				<td>Repeat behavior of the left panel background image</td>
 			</tr>
 			<tr>
-				<td>"bg_img_left_side_position": "top left",</td>
-				<td>←&nbsp;10&nbsp;→</td>
-				<td>Position of the <span style="color: #008000;"><strong>left side</strong></span> background image of the login portal</td>
+				<td>"bg_img_left_side_position": "top left"</td>
+				<td>← 10 →</td>
+				<td>Position of the left panel background image</td>
 			</tr>
 			<tr>
-				<td>"bg_img_left_side_size": "cover",</td>
-				<td>←&nbsp;11&nbsp;→</td>
-				<td>Coverage of the <span style="color: #008000;"><strong>left side</strong></span> of the login portal background illustration surface</td>
+				<td>"bg_img_left_side_size": "cover"</td>
+				<td>← 11 →</td>
+				<td>Scaling method of the left panel background image</td>
 			</tr>
 			<tr>
-				<td>"bg_img_left_side_attachment": "",</td>
-				<td>←&nbsp;12&nbsp;→</td>
-				<td>Setting the scrolling background image of the <span style="color: #008000;"><strong>left side</strong></span> of the login portal</td>
+				<td>"bg_img_left_side_attachment": ""</td>
+				<td>← 12 →</td>
+				<td>Scroll behavior of the left panel background image</td>
 			</tr>
 			<tr>
-				<td>"bg_left_side_blend": "linear-gradient(180deg, #005f6b4d 0%, #005f6bbf 83.85%)",</td>
-				<td>←&nbsp;13&nbsp;→</td>
-				<td>Setting the background blend of the <span style="color: #008000;"><strong>left side</strong></span> of the login portal - in this case it allows you to cover the background illustration of the left side of the login portal with a linear gradient</td>
+				<td>"bg_left_side_blend": "linear-gradient(0deg, #005f6b4d 0%, #005f6bbf 83.85%)"</td>
+				<td>← 13 →</td>
+				<td>Gradient overlay blended with the left panel background image</td>
 			</tr>
 			<tr>
-				<td>"bg_color_right_side": "rgba(249, 253, 255, 1)",</td>
-				<td>←&nbsp;14&nbsp;→</td>
-				<td>Background color of the <span style="color: #008000;"><strong>right side</strong></span> of the login portal</td>
+				<td>"logo_bg_color": "rgba(249, 253, 255, 1)"</td>
+				<td>← 14 →</td>
+				<td>Background color of the logo container</td>
 			</tr>
 			<tr>
-				<td>"bg_img_right_side": "",</td>
-				<td>←&nbsp;15&nbsp;→</td>
-				<td>Illustration as background of the <span style="color: #ff0000;"><strong>right side</strong></span> of the login portal</td>
+				<td>"logo_bg_border_radius": "6px 6px 6px 6px"</td>
+				<td>← 15 →</td>
+				<td>Border radius of the logo container</td>
 			</tr>
 			<tr>
-				<td>"bg_img_right_side_repeat": "no-repeat",</td>
-				<td>←&nbsp;16&nbsp;→</td>
-				<td>Set the repeatability of the background illustration of the <span style="color: #ff0000;"><strong>right side</strong></span> of the login portal</td>
+				<td>"bg_color_right_side": "rgba(249, 253, 255, 1)"</td>
+				<td>← 16 →</td>
+				<td>Background color of the <strong>right panel</strong></td>
 			</tr>
 			<tr>
-				<td>"bbg_img_right_side_position": "top left",</td>
-				<td>←&nbsp;17&nbsp;→</td>
-				<td>Position of the <span style="color: #ff0000;"><strong>right side</strong></span> background image of the login portal</td>
+				<td>"bg_img_right_side": ""</td>
+				<td>← 17 →</td>
+				<td>Background image of the right panel</td>
 			</tr>
 			<tr>
-				<td>"bg_img_right_side_size": "cover",</td>
-				<td>←&nbsp;18&nbsp;→</td>
-				<td>Coverage of the <span style="color: #ff0000;"><strong>right side</strong></span> of the login portal background illustration surface</td>
+				<td>"bg_img_right_side_repeat": "no-repeat"</td>
+				<td>← 18 →</td>
+				<td>Repeat behavior of the right panel background image</td>
 			</tr>
 			<tr>
-				<td>"bg_img_right_side_attachment": "",</td>
-				<td>←&nbsp;19&nbsp;→</td>
-				<td>Setting the scrolling background image of the <span style="color: #ff0000;"><strong>right side</strong></span> of the login portal</td>
+				<td>"bg_img_right_side_position": "top left"</td>
+				<td>← 19 →</td>
+				<td>Position of the right panel background image</td>
 			</tr>
 			<tr>
-				<td>"bg_right_side_blend": "",</td>
-				<td>←&nbsp;20&nbsp;→</td>
-				<td>Setting the background blend of the <span style="color: #ff0000;"><strong>right side</strong></span> of the login portal - in this case it allows you to cover the background illustration of the left side of the login portal with a linear gradient</td>
+				<td>"bg_img_right_side_size": "cover"</td>
+				<td>← 20 →</td>
+				<td>Scaling method of the right panel background image</td>
 			</tr>
 			<tr>
-				<td>"left_side_shadow": "0 0 40px 0 rgba(0, 0, 0, .35)",</td>
-				<td>←&nbsp;21&nbsp;→</td>
-				<td>Shadow under <span style="color: #339966;"><strong>left side</strong></span> of login portal</td>
+				<td>"bg_img_right_side_attachment": ""</td>
+				<td>← 21 →</td>
+				<td>Scroll behavior of the right panel background image</td>
 			</tr>
 			<tr>
-				<td>"right_side_shadow": "0 0 40px 0 rgba(0, 0, 0, .35)",</td>
-				<td>←&nbsp;22&nbsp;→</td>
-				<td>Shadow under <span style="color: #ff0000;"><strong>right side</strong></span> of login portal</td>
+				<td>"bg_right_side_blend": ""</td>
+				<td>← 22 →</td>
+				<td>Optional gradient overlay for the right panel background</td>
 			</tr>
 			<tr>
-				<td>"bg_alternate": "#818a91",</td>
-				<td>←&nbsp;23&nbsp;→</td>
-				<td>Alternate background color - used in buttons as the background color and text fields as the border color</td>
+				<td>"left_side_shadow": "0 0 40px 0 rgba(0, 0, 0, .35)"</td>
+				<td>← 23 →</td>
+				<td>Shadow cast by the left panel</td>
 			</tr>
 			<tr>
-				<td>"color_primary": "#7a7a7a",</td>
-				<td>←&nbsp;24&nbsp;→</td>
+				<td>"right_side_shadow": "0 0 40px 0 rgba(0, 0, 0, .35)"</td>
+				<td>← 24 →</td>
+				<td>Shadow cast by the right panel</td>
+			</tr>
+			<tr>
+				<td>"bg_alternate": "#818a91"</td>
+				<td>← 25 →</td>
+				<td>Alternate background color used for UI accents and borders</td>
+			</tr>
+			<tr>
+				<td>"color_primary": "#7a7a7a"</td>
+				<td>← 26 →</td>
 				<td>Main text color</td>
 			</tr>
 			<tr>
-				<td>"color_secondary": "#ffffff",</td>
-				<td>←&nbsp;25&nbsp;→</td>
-				<td>Text secondary color</td>
+				<td>"color_secondary": "#ffffff"</td>
+				<td>← 27 →</td>
+				<td>Secondary text color</td>
 			</tr>
 			<tr>
-				<td>"color_alternate": "#373a3c",</td>
-				<td>←&nbsp;26&nbsp;→</td>
-				<td>Text alternate color</td>
+				<td>"color_alternate": "#373a3c"</td>
+				<td>← 28 →</td>
+				<td>Alternate text color (labels, placeholders)</td>
 			</tr>
 			<tr>
-				<td>"link": "#348893",</td>
-				<td>←&nbsp;27&nbsp;→</td>
-				<td>Link color</td>
+				<td>"link_color": "#348893"</td>
+				<td>← 29 →</td>
+				<td>Default link color</td>
 			</tr>
 			<tr>
-				<td>"link_hover": "#f12184",</td>
-				<td>←&nbsp;28&nbsp;→</td>
+				<td>"link_hover_color": "#f12184"</td>
+				<td>← 30 →</td>
 				<td>Link hover color</td>
 			</tr>
 			<tr>
-				<td>"input_field_color": "#e8e8e8",</td>
-				<td>←&nbsp;29&nbsp;→</td>
-				<td>Input field text color</td>
+				<td>"input_field_color": "#e8e8e8"</td>
+				<td>← 31 →</td>
+				<td>Text color inside input fields</td>
 			</tr>
 			<tr>
-				<td>"input_field_bg_color": "#ffffff",</td>
-				<td>←&nbsp;30&nbsp;→</td>
-				<td>Input field background color&nbsp;</td>
+				<td>"input_field_label_color": "#373a3c"</td>
+				<td>← 32 →</td>
+				<td>Label color for input fields</td>
 			</tr>
 			<tr>
-				<td>"input_field_border_color": "rgba(145, 156, 167, .27)",</td>
-				<td>←&nbsp;31&nbsp;→</td>
-				<td>Input field border color</td>
+				<td>"input_field_bg_color": "#ffffff"</td>
+				<td>← 33 →</td>
+				<td>Background color of input fields</td>
 			</tr>
 			<tr>
-				<td>"input_field_placeholder_color": "#4ca1af",</td>
-				<td>←&nbsp;32&nbsp;→</td>
-				<td>Input field placeholder color</td>
+				<td>"input_field_border_color": "rgba(145, 156, 167, .27)"</td>
+				<td>← 34 →</td>
+				<td>Border color of input fields</td>
 			</tr>
 			<tr>
-				<td>"button_bg_color": "#00b5cb",</td>
-				<td>←&nbsp;33&nbsp;→</td>
-				<td>Button background color</td>
+				<td>"input_field_border_radius": "5px 0px 0px 5px"</td>
+				<td>← 35 →</td>
+				<td>Border radius of input fields</td>
 			</tr>
 			<tr>
-				<td>"button_hover_bg_color": "#f12184",</td>
-				<td>←&nbsp;34&nbsp;→</td>
-				<td>Button hover background color</td>
+				<td>"input_field_before_bg_color": "#00b5cb"</td>
+				<td>← 36 →</td>
+				<td>Background color of input prefix element</td>
 			</tr>
 			<tr>
-				<td>"button_color": "#ffffff",</td>
-				<td>←&nbsp;35&nbsp;→</td>
-				<td>Button text color</td>
+				<td>"input_field_after_bg_color": "#00b5cb"</td>
+				<td>← 37 →</td>
+				<td>Background color of input suffix element</td>
 			</tr>
 			<tr>
-				<td>"button_hover_color": "#ffffff",</td>
-				<td>←&nbsp;36&nbsp;→</td>
-				<td>Button hover text color</td>
+				<td>"input_field_placeholder_color": "#373a3c"</td>
+				<td>← 38 →</td>
+				<td>Placeholder text color</td>
 			</tr>
 			<tr>
-				<td>"lang_switcher": "#00b5cb",</td>
-				<td>←&nbsp;37&nbsp;→</td>
-				<td>Language selector switch</td>
+				<td>"button_bg_color": "#00b5cb"</td>
+				<td>← 39 →</td>
+				<td>Primary button background color</td>
 			</tr>
 			<tr>
-				<td>"lang_switcher_trigger": "#009db1",</td>
-				<td>←&nbsp;38&nbsp;→</td>
-				<td>Language selector switch trigger</td>
+				<td>"button_hover_bg_color": "#f12184"</td>
+				<td>← 40 →</td>
+				<td>Primary button hover background color</td>
 			</tr>
 			<tr>
-				<td>"lang_switcher_link": "#ffffff",</td>
-				<td>←&nbsp;39&nbsp;→</td>
-				<td>Language selector switch link color</td>
+				<td>"button_color": "#ffffff"</td>
+				<td>← 41 →</td>
+				<td>Primary button text color</td>
 			</tr>
 			<tr>
-				<td>"lang_switcher_link_hover": "#ffffff",</td>
-				<td>←&nbsp;40&nbsp;→</td>
-				<td>Language selector switch link hover color</td>
+				<td>"button_hover_color": "#ffffff"</td>
+				<td>← 42 →</td>
+				<td>Primary button hover text color</td>
 			</tr>
 			<tr>
-				<td>"lang_switcher_hover": "#f12184",</td>
-				<td>←&nbsp;41&nbsp;→</td>
-				<td>Language selector switch link background hover color</td>
+				<td>"lang_switcher": "#00b5cb"</td>
+				<td>← 43 →</td>
+				<td>Language switcher main background</td>
 			</tr>
 			<tr>
-				<td>"lang_switcher_dropdown": "#216f7a",</td>
-				<td>←&nbsp;42&nbsp;→</td>
-				<td>Language selector switch dropdown background color</td>
+				<td>"lang_switcher_trigger": "#009db1"</td>
+				<td>← 44 →</td>
+				<td>Language switcher trigger background</td>
 			</tr>
 			<tr>
-				<td>"lang_switcher_dropdown_hover": "#f12184",</td>
-				<td>←&nbsp;43&nbsp;→</td>
-				<td>Language selector switch dropdown background hover color</td>
+				<td>"lang_switcher_link": "#5aecff"</td>
+				<td>← 45 →</td>
+				<td>Language option link color</td>
 			</tr>
 			<tr>
-				<td>"fadein": "0.5s",</td>
-				<td>←&nbsp;44&nbsp;→</td>
-				<td>Duration fading to opaque the layout once it's fully loaded</td>
+				<td>"lang_switcher_hover": "#f12184"</td>
+				<td>← 46 →</td>
+				<td>Language option hover background</td>
 			</tr>
 			<tr>
-				<td>"block_padding": "50px",</td>
-				<td>←&nbsp;45&nbsp;→</td>
-				<td>Padding used on left and right column</td>
+				<td>"lang_switcher_dropdown": "#216f7a"</td>
+				<td>← 47 →</td>
+				<td>Language dropdown background</td>
 			</tr>
 			<tr>
-				<td>"block_radius": "15px"</td>
-				<td>←&nbsp;46&nbsp;→</td>
-				<td>Left and right column content wrapper border radius</td>
+				<td>"lang_switcher_dropdown_hover": "#f12184"</td>
+				<td>← 48 →</td>
+				<td>Language dropdown hover background</td>
+			</tr>
+			<tr>
+				<td>"fadein": "0.5s"</td>
+				<td>← 49 →</td>
+				<td>Fade-in animation duration after page load</td>
+			</tr>
+			<tr>
+				<td>"block_padding": "50px"</td>
+				<td>← 50 →</td>
+				<td>Inner padding of left and right panels</td>
+			</tr>
+			<tr>
+				<td>"left_side_block_radius": "15px 15px 15px 15px"</td>
+				<td>← 51 →</td>
+				<td>Border radius of left panel content wrapper</td>
+			</tr>
+			<tr>
+				<td>"right_side_block_radius": "15px 15px 15px 15px"</td>
+				<td>← 52 →</td>
+				<td>Border radius of right panel content wrapper</td>
 			</tr>
 			<tr>
 				<td>"helper_bg_color": "#00b5cb"</td>
-				<td>←&nbsp;47&nbsp;→</td>
-				<td>Background color of the TourGuide trigger button</td>
+				<td>← 53 →</td>
+				<td>Background color of the TourGuide helper button</td>
 			</tr>
 			<tr>
 				<td>"helper_color": "#ffffff"</td>
-				<td>←&nbsp;48&nbsp;→</td>
-				<td>Text color of the TourGuide trigger button</td>
+				<td>← 54 →</td>
+				<td>Text/icon color of the TourGuide helper button</td>
 			</tr>
 			<tr>
 				<td>"helper_size": "78px"</td>
-				<td>←&nbsp;49&nbsp;→</td>
-				<td>Size (width and height) of the TourGuide trigger button</td>
+				<td>← 55 →</td>
+				<td>Width and height of the TourGuide helper button</td>
 			</tr>
 		</tbody>
 	</table>

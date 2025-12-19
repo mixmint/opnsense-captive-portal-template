@@ -506,7 +506,6 @@
         :focus {
             outline: 2px solid var(--color_secondary, red);
             outline-offset: 2px;
-            box-shadow: 0 0 3px rgba(0, 181, 203, 0.7);
         }
     }
 
