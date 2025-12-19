@@ -245,9 +245,9 @@ section {
     .field-text {
         width: 100%;
         max-width: 100%;
-        border: 1px solid var(--bg_alternate, initial);
-        background-color: transparent;
-        color: var(--color_alternate, initial);
+        color: var(--input_field_color, initial);
+        background-color: var(--input_field_bg_color, transparent);
+        border: 1px solid var(--input_field_border_color, initial);
         vertical-align: middle;
         -webkit-box-flex: 1;
         -webkit-flex-grow: 1;
@@ -273,6 +273,7 @@ section {
             font-family: inherit;
             font-style: italic;
             opacity: .6;
+            color: var(--input_field_placeholder_color, initial);
         }
         &:focus {
             &::-webkit-input-placeholder {
