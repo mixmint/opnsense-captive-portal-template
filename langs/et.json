@@ -7,6 +7,75 @@
     "attr_isp_info": {
         "aria-label": "Teave internetiteenuse pakkuja kohta"
     },
+    "menu": {
+        "title": "GuardianSuit Menu",
+        "item1": {
+            "title": "Internet",
+            "icon": "I",
+            "href": "https://yourdomain.com/#",
+            "target": "_blank"
+        },
+        "item2": {
+            "title": "Televisioon",
+            "icon": "V",
+            "href": "https://yourdomain.com/#",
+            "target": "_blank"
+        },
+        "item3": {
+            "title": "Telefon",
+            "icon": "T",
+            "href": "https://yourdomain.com/#",
+            "target": "_blank"
+        },
+        "item4": {
+            "title": "Täiendavad teenused",
+            "icon": "D",
+            "href": "https://yourdomain.com/#",
+            "target": "_blank"
+        },
+        "item5": {
+            "title": "Kontakt",
+            "icon": "K",
+            "href": "https://yourdomain.com/#",
+            "target": "_blank"
+        },
+        "item6": {
+            "title": "Privaatsuspoliitika",
+            "icon": "&#167;",
+            "href": {"type": "modal", "title": "privacy_title", "subtitle": "privacy_subtitle", "content": "privacy_content", "iconText": "&#167;"},
+            "target": "_self"
+        },
+        "item7": {
+            "title": "Cookies",
+            "icon": "&#9865;",
+            "href": {"type": "modal", "title": "cookies_title", "subtitle": "cookies_subtitle", "content": "cookies_content", "iconText": "&#9865;"},
+            "target": "_self"
+        },
+        "item8": {
+            "title": "Dokumentatsioon",
+            "icon": "&#9783;",
+            "href": "https://github.com/mixmint/opnsense-captive-portal-template/blob/main/README.md",
+            "target": "_blank"
+        },
+        "item9": {
+            "title": "Rakenduse kohta",
+            "icon": "&#9873;",
+            "href": {"type": "modal", "title": "about_title", "subtitle": "about_subtitle", "content": "about_content", "iconText": "&#9873;"},
+            "target": "_self"
+        },
+        "group1": {
+            "title": "Pakkumine",
+            "items": ["item1", "item2", "item3", "item4", "item5"]
+        },
+        "group2": {
+            "title": "Teave",
+            "items": ["item6", "item7"]
+        },
+        "group3": {
+            "title": "Abi",
+            "items": ["item8", "item9"]
+        }
+    },
     "footer_isp_info": {},
     "pagetitle": "Kasutaja sisselogimise süsteem | <ISP nimi>",
     "username": "Kasutajanimi (Login)",
@@ -77,7 +146,7 @@
     "a11y_helper_prev": "Tagasi",
     "a11y_helper_done": "Valmis",
     "a11y-keys_data-title": "Kiirklahvid",
-    "a11y-keys_data-content": "<span style=\"font-size: 14px\">Klahvikombinatsioon <br \/><strong>⇧ Shift (vasak) <br \/>+&nbsp;⌥ Alt (vasak) <br \/>+&nbsp;täht<\/strong><br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;U<\/strong><br \/>fookus kasutajanime väljale<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;P<\/strong><br \/>fookus parooliväljale<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;A<\/strong><br \/>märgib/tühistab märkeruudu \"Nõustun reeglitega\"<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;R<\/strong><br \/>avab reeglite modaalakna<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;I<\/strong><br \/>logib kasutaja sisse<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;O<\/strong><br \/>logib kasutaja välja<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;L<\/strong><br \/>käivitab keelevaliku tööriista<\/span>",
+    "a11y-keys_data-content": "<span style=\"font-size: 14px\">Klahvikombinatsioon <br \/><strong>⇧ Shift (vasak) <br \/>+&nbsp;⌥ Alt (vasak) <br \/>+&nbsp;täht<\/strong><br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;U<\/strong><br \/>fookus kasutajanime väljale<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;P<\/strong><br \/>fookus parooliväljale<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;A<\/strong><br \/>märgib/tühistab märkeruudu \"Nõustun reeglitega\"<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;R<\/strong><br \/>avab reeglite modaalakna<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;I<\/strong><br \/>logib kasutaja sisse<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;O<\/strong><br \/>logib kasutaja välja<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;L<\/strong><br \/>käivitab keelevaliku tööriista<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;M<\/strong><br \/>avab offcanvas-menüü (kui see on lubatud)<\/span>",
     "a11y-lang-keys_data-title": "Keele kiirklahvid",
     "a11y-lang-keys_data-content": "<span style=\"font-size: 14px\">Hoidke all <strong>⇧ Shift (vasak) ja vajutage korraga kahte keelekoodi tähte<\/strong> (ISO 639-1) või ükshaaval.<br \/><br \/>Näited:<br \/><strong>⇧ Shift&nbsp;+&nbsp;P&nbsp;+&nbsp;L<\/strong> → lülitab Poola keelele (pl)<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;E&nbsp;+&nbsp;N<\/strong> → lülitab inglise keelele (en)<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;D&nbsp;+&nbsp;E<\/strong> → lülitab saksa keelele (de)<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;F&nbsp;+&nbsp;R<\/strong> → lülitab prantsuse keelele (fr)<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;E&nbsp;+&nbsp;S<\/strong> → lülitab hispaania keelele (es)<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;I&nbsp;+&nbsp;T<\/strong> → lülitab itaalia keelele (it)<br \/>...<\/span>",
     "polyglotLanguageSwitcher_data-title": "Keele valik",
@@ -97,5 +166,16 @@
     "signin_anon_data-title": "Logi sisse",
     "signin_anon_data-content": "Klõpsates nupul <strong>Logi sisse<\/strong>, loote internetiühenduse.",
     "logoff_data-title": "Logi välja",
-    "logoff_data-content": "Klõpsates nupul <strong>Logi välja<\/strong>, katkestate internetiühenduse."
+    "logoff_data-content": "Klõpsates nupul <strong>Logi välja<\/strong>, katkestate internetiühenduse.",
+    "menuTrigger_data-title": "Offcanvas-menüü",
+    "menuTrigger_data-content": "Klõpsates <strong>&#9776; offcanvas-hamburger<\/strong> või vajutades klaviatuuril samaaegselt <strong>%s<\/strong>, avad kontekstimenüü.",
+    "about_title": "GuardianSuit",
+    "about_subtitle": "Täiustatud Captive Portali mall OPNsense jaoks",
+    "about_content": "<p><b>GuardianSuit<\/b> on kaasaegne, reageeriv ja animeeritud Captive Portali mall OPNsense jaoks. See pakub kasutajatele atraktiivset sisselogimiskogemust ning administraatoritele täielikku kontrolli tervituslehe välimuse ja funktsionaalsuse üle.<\/p><p><b>Põhifunktsioonid:<\/b><\/p><ul><li>Reageeriv disain ja animatsioonid.<\/li><li>Mitmekeelsus.<\/li><li>Kergesti kohandatav välimus ja värvipalett.<\/li><li>Intuitiivne UX ja vastavus WCAG nõuetele.<\/li><li>Lihtne integreerimine OPNsense-ga.<\/li><\/ul><p><b>Kasutusvaldkond:<\/b><br \/>Ideaalne ettevõttevõrkudele, hotellidele, kohvikutele ja teistele kohtadele, kus on vaja visuaalselt atraktiivset Captive Portali tervituslehte.<\/p><p><b>Autor:<\/b> Mirosław Majka &lt;mix@proask.pl&gt; | &copy; 2025 GuardianSuit<\/p>",
+    "cookies_title": "Cookies",
+    "cookies_subtitle": "Kuidas kasutatakse küpsiseid.",
+    "cookies_content": "<h5>Mis on küpsis?<\/h5><p>Küpsised (nn väikesed tekstifailid) on väikesed tekstifailid, mis luuakse automaatselt veebibrauseri poolt veebilehti külastades. Konkreetse küpsise sisu saab lugeda ainult leht, kust see fail pärineb. Seega ei saa veebileht juurde pääseda teistele failidele, mis asuvad kasutaja arvutis.<\/p><p>Küpsistes sisalduva teabe abil \"teab\" leht, kuidas sa seda kasutad, ja saab vastavalt kohandada sinu jaoks kuvatavat sisu või pakkuda abi.<\/p><h5>Milleks me küpsiseid kasutame?<\/h5><p>Veebilehel kasutame tehnilisi küpsiseid, mis on vajalikud lehe korrektseks toimimiseks. Me kasutame neid, et optimeerida meie veebilehte seadmete ja brauserite jaoks, mida külastajad kõige sagedamini kasutavad – tänu sellele kuvatakse see sinu arvutis, tahvelarvutis või telefonis õigesti ja loetavalt, salvestades, kas oled andnud nõusoleku teatud sisu kuvamiseks veebilehel.<\/p><p>Kasutajal ei ole võimalik keelduda tehnilistest küpsistest.<\/p><h5>Kui kaua me küpsiseid kasutame?<\/h5><p>Me kasutame nn püsivaid küpsiseid, mis jäävad sinu seadmesse kindlaks ajaks või kuni need käsitsi kustutatakse.<\/li><\/ul><h5>Milliseid andmeid me küpsiste kaudu kogume?<\/h5><p>Küpsiste tehnoloogia abil kogume sinust ainult anonüümseid tehnilisi andmeid, mis aitavad parandada meie lehe kasutusmugavust.<\/p><p>Me ei kogu ühtegi andmet, mis võimaldaks sind tuvastada. Ainus kasutajainfo, mis ilma teiste andmetega ühendamata ei võimalda isiku tuvastamist, on IP-aadress, millest kasutaja ühendub.<\/p>",
+    "privacy_title": "Privaatsuspoliitika",
+    "privacy_subtitle": "Isikuandmete töötlemine",
+    "privacy_content": "<p>Oleme selle dokumendi loonud, et teavitada sind meie Privaatsuspoliitikast. Siit leiad, kes me oleme, kuidas me kogume, kasutame, avalikustame ja jagame isikuandmeid <b><&nbsp;ISP nimi&nbsp;><\/b> raames, asukohaga [ Tänav 10, linn ja postiindeks ], milleks me seda teeme ning kuidas andmesubjektid saavad oma privaatsusõigusi teostada.<\/p><p><&nbsp;ISP nimi&nbsp;> vastutab isikuandmete töötlemise eest vastavalt käesolevale Privaatsuspoliitikale.<\/p><h5>MEIST<\/h5><p>Andmete töötleja, see tähendab üksus, kes töötleb isikuandmeid seoses sinu teenuse kasutamisega, on <&nbsp;ISP nimi&nbsp;>, [ Tänav 10, linn ja postiindeks ]; KMKR 1234567890, Regon 123456789,<\/p><h5>KONTAKT<\/h5><ul><li>elektrooniliselt e-posti aadressil: aadress@email.ee,<\/li><li>kirjalikult aadressil: ISP nimi, [ Tänav 10, linn ja postiindeks ]<\/li><\/ul><h5>PRINTSIIDID KÄESOLEVAS POLIITIKAS<\/h5><p>Tagame, et sinu andmete töötlemine toimuks vastavalt Euroopa Parlamendi ja Nõukogu määrusele (EL) 2016/679 27. aprillist 2016 isikuandmete kaitse kohta ja nende vaba liikumise kohta ning direktiivi 95/46/EÜ tühistamise kohta (edaspidi \"GDPR\"), isikuandmete kaitse seadusele ning eripõhistele õigusaktidele. Käesolev privaatsuspoliitika on koostatud nende põhimõtete järgi. Anname selgelt teada, kuidas me kogume isikuandmeid ja millistel eesmärkidel neid kasutatakse.<\/p><p>Pöörame tähelepanu, et <&nbsp;ISP nimi&nbsp;> kogub isikuandmeid ja ärialast teavet oma (potentsiaalsetelt) klientidelt ja lepingupartneritelt ning andmeid teenuse internetiühenduse kasutamise ajal.<\/p><h5>ISIKUANDMETE KOGUMINE<\/h5><p>Kogume kasutajatelt edastatud isikuandmeid järgmistel juhtudel:<\/p><ul><li>pakkumiste esitamine, koostöötingimuste määramine ja/või teabe edastamine <&nbsp;ISP nimi&nbsp;> teenuste ja muude tegevuste kohta,<\/li><li>lepingute sõlmimine ja täitmine ning kliendisuhtluse säilitamine,<\/li><li>õigusaktidest tulenevate kohustuste täitmine,<\/li><li>küsimustele vastamine, kaebuste lahendamine ja muud järelteenindustööd,<\/li><li>otse-turundus (välja arvatud uudiskirjad),<\/li><li>arhiivieesmärgid (tõendamise), võimalike nõuete kindlakstegemine, menetlemine või kaitsmine.<\/li><\/ul><h5>ANDMETE HOIDMINE JA KUSTUTAMINE<\/h5><p>Andmete turvalisuse tagamiseks oleme töötanud välja sisemised protseduurid ja soovitused, mis takistavad andmete kättesaamist volitamata isikutelt. Kasutame tehnoloogilisi, lepingulisi, halduslikke ja füüsilisi meetmeid andmete kaitseks volitamata juurdepääsu eest. Jälgime nende täitmist ja kontrollime pidevalt nende vastavust kehtivatele seadustele.<\/p><p>Kasutaja isikuandmeid hoitakse ainult ajavahemiku jooksul, mis on vajalik nende kogumise eesmärkide täitmiseks.<\/p><h5>ANDMETE JAGAMINE JA AVALIKUSTAMINE<\/h5><p>Me ei müü ega jaga kasutaja isikuandmeid kolmandate osapooltega ilma nende nõusolekuta. Kasutaja andmeid ei analüüsita profiliseerimise eesmärgil.<\/p><p>Sõltuvalt koostöö tüübist ja ulatusest kasutaja ja <&nbsp;ISP nimi&nbsp;> vahel võime vajadusel edastada kasutaja andmeid, kui seda nõuab kehtiv seadus, või kui see on vajalik õiguspäraste toimingute täitmiseks, lepinguliste kohustuste täitmiseks, nõuete lahendamiseks või õiguste, vara või turvalisuse kaitsmiseks.<\/p><h5>ANDMETE TÖÖTLEMISE PÕHIMÕTTED<\/h5><p>Rakendame maksimaalset hoolikust, et kaitsta isikute huve, kelle andmeid töödeldakse, tagades, et andmed oleksid:<\/p><ul><li>töödeldud seaduse kohaselt, ausalt ja läbipaistvalt andmesubjekti jaoks,<\/li><li>kogutud konkreetsetel, selgetel ja õiguspärastel eesmärkidel ning mitte töödeldud nendest eesmärkidest kõrvalekalduvalt,<\/li><li>asjakohased, piisavad ja piiratud vajalikuga eesmärkide täitmiseks,<\/li><li>täpsed ja vajadusel ajakohastatud; võtame meetmeid ebaõigete andmete viivitamatuks parandamiseks või kustutamiseks,<\/li><li>hoitud kujul, mis võimaldab andmesubjekti tuvastamist ainult niikaua, kui see on vajalik töötlemise eesmärkide täitmiseks,<\/li><li>töödeldud viisil, mis tagab andmete turvalisuse, sh kaitse volitamata või ebaseadusliku töötlemise, juhusliku kadumise või hävimise eest.<\/li><\/ul><p>Enamasti töötleme sinu isikuandmeid sinu nõusoleku alusel, mida saab igal ajal tagasi võtta. Teine juhtum on, kui andmete töötlemine on vajalik sinu ja meie vahelise lepingu täitmiseks või sinu nõudel toimingute alustamiseks enne lepingu sõlmimist. Mõnes olukorras on töötlemine vajalik seadusest tulenevate kohustuste täitmiseks, mis lasuvad meil kui andmete haldajal, näiteks tööõiguse või raamatupidamise seadusest. Töötlemine võib olla vajalik ka meie õigustatud huvide täitmiseks, näiteks äriliste nõuete tagamiseks.<\/p><h5>SINU ÕIGUSED<\/h5><p>Sul on järgmised õigused:<\/p><ul><li>Juurdepääs oma isikuandmetele ning teave andmete kategooriate, töötlemise eesmärkide ja koopiate saamiseks,<\/li><li>Ebaõigete andmete parandamine ja puuduvate andmete täiendamine ning kustutamisõigus, mis tähendab, et saad nõuda ilma õiguspäraselt töötlemata andmete kustutamist,<\/li><li>Nõusoleku tagasivõtmine igal ajal töötlemiseks ilma mõjuvarasust õiguspärasusele, mis toimus enne nõusoleku tagasivõtmist (kui töötlemine toimub GDPR artikli 6 lõike 1 a või artikli 9 lõike 2 a alusel).<\/li><\/ul><h5>COOKIES<\/h5><p><&nbsp;ISP nimi&nbsp;> kasutab küpsiseid teenuse lihtsustamiseks. Teenust kasutades nõustud meie küpsiste kasutamisega. Kui sa ei blokeeri neid, nõustud nende kasutamise ja seadmesse salvestamisega.<\/p><h5>ISIKUANDMETE KAITSE POLIITIKA MUUDATUSI<\/h5><p><&nbsp;ISP nimi&nbsp;> jätab endale õiguse muuta privaatsuspoliitikat, mida võivad mõjutada veebitehnoloogia areng, võimalikud seadusmuudatused isikuandmete kaitse valdkonnas ja teenuse areng, mida haldab administraator. Kõikidest muudatustest teavitame selgelt ja arusaadavalt.<\/p><p>Kõik küsimused privaatsuspoliitika kohta palume saata e-posti aadressile: aadress@email.ee<\/p>"
 }

@@ -7,6 +7,75 @@
     "attr_isp_info": {
         "aria-label": "Inligting oor internetverskaffer"
     },
+    "menu": {
+        "title": "GuardianSuit Spyskaart",
+        "item1": {
+            "title": "Internet",
+            "icon": "I",
+            "href": "https://yourdomain.com/#",
+            "target": "_blank"
+        },
+        "item2": {
+            "title": "Televisie",
+            "icon": "T",
+            "href": "https://yourdomain.com/#",
+            "target": "_blank"
+        },
+        "item3": {
+            "title": "Telefoon",
+            "icon": "F",
+            "href": "https://yourdomain.com/#",
+            "target": "_blank"
+        },
+        "item4": {
+            "title": "Bykomende Dienste",
+            "icon": "B",
+            "href": "https://yourdomain.com/#",
+            "target": "_blank"
+        },
+        "item5": {
+            "title": "Kontak",
+            "icon": "K",
+            "href": "https://yourdomain.com/#",
+            "target": "_blank"
+        },
+        "item6": {
+            "title": "Privaatheidsbeleid",
+            "icon": "&#167;",
+            "href": {"type": "modal", "title": "privacy_title", "subtitle": "privacy_subtitle", "content": "privacy_content", "iconText": "&#167;"},
+            "target": "_self"
+        },
+        "item7": {
+            "title": "Koekies",
+            "icon": "&#9865;",
+            "href": {"type": "modal", "title": "cookies_title", "subtitle": "cookies_subtitle", "content": "cookies_content", "iconText": "&#9865;"},
+            "target": "_self"
+        },
+        "item8": {
+            "title": "Dokumentasie",
+            "icon": "&#9783;",
+            "href": "hhttps://github.com/mixmint/opnsense-captive-portal-template/blob/main/README.md",
+            "target": "_blank"
+        },
+        "item9": {
+            "title": "O Program",
+            "icon": "&#9873;",
+            "href": {"type": "modal", "title": "about_title", "subtitle": "about_subtitle", "content": "about_content", "iconText": "&#9873;"},
+            "target": "_self"
+        },
+        "group1": {
+            "title": "Aanbod",
+            "items": ["item1", "item2", "item3", "item4", "item5"]
+        },
+        "group2": {
+            "title": "Inligting",
+            "items": ["item6", "item7"]
+        },
+        "group3": {
+            "title": "Hulp",
+            "items": ["item8", "item9"]
+        }
+    },
     "footer_isp_info": {},
     "pagetitle": "Gebruiker aanmeldstelsel | < ISP Naam >",
     "username": "Gebruikersnaam (Login)",
@@ -77,7 +146,7 @@
     "a11y_helper_prev": "Vorige",
     "a11y_helper_done": "Klaar",
     "a11y-keys_data-title": "Sneltoetse",
-    "a11y-keys_data-content": "<span style=\"font-size: 14px\">Sleutel kombinasie <br \/><strong>⇧ Shift (links) <br \/>+&nbsp;⌥ Alt (links) <br \/>+&nbsp;letter<\/strong><br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;U<\/strong><br \/>fokus op Gebruikersnaam veld<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;P<\/strong><br \/>fokus op Wagwoord veld<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;A<\/strong><br \/>merk/ontmerk die veld \"Ek aanvaar die bepalings\"<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;R<\/strong><br \/>open die modale venster met bepalings<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;I<\/strong><br \/>meld die gebruiker aan<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;O<\/strong><br \/>meld die gebruiker uit<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;L<\/strong><br \/>aktiveer taalwisselaar<\/span>",
+    "a11y-keys_data-content": "<span style=\"font-size: 14px\">Sleutel kombinasie <br \/><strong>⇧ Shift (links) <br \/>+&nbsp;⌥ Alt (links) <br \/>+&nbsp;letter<\/strong><br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;U<\/strong><br \/>fokus op Gebruikersnaam veld<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;P<\/strong><br \/>fokus op Wagwoord veld<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;A<\/strong><br \/>merk/ontmerk die veld \"Ek aanvaar die bepalings\"<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;R<\/strong><br \/>open die modale venster met bepalings<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;I<\/strong><br \/>meld die gebruiker aan<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;O<\/strong><br \/>meld die gebruiker uit<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;L<\/strong><br \/>aktiveer taalwisselaar<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;M<\/strong><br \/>maak die offcanvas-kieslys oop (indien geaktiveer)<\/span>",
     "a11y-lang-keys_data-title": "Sneltoetse vir taalvertalings",
     "a11y-lang-keys_data-content": "<span style=\"font-size: 14px\">Hou <strong>⇧ Shift (links) en druk die twee letter kode van die taal<\/strong> (ISO 639-1) gelyktydig of een vir een.<br \/><br \/>Voorbeelde:<br \/><strong>⇧ Shift&nbsp;+&nbsp;P&nbsp;+&nbsp;L<\/strong> → skakel na Pools (pl)<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;E&nbsp;+&nbsp;N<\/strong> → skakel na Engels (en)<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;D&nbsp;+&nbsp;E<\/strong> → skakel na Duits (de)<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;F&nbsp;+&nbsp;R<\/strong> → skakel na Frans (fr)<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;E&nbsp;+&nbsp;S<\/strong> → skakel na Spaans (es)<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;I&nbsp;+&nbsp;T<\/strong> → skakel na Italiaans (it)<br \/>...<\/span>",
     "polyglotLanguageSwitcher_data-title": "Taalkeuse",
@@ -97,5 +166,16 @@
     "signin_anon_data-title": "Aanmelding",
     "signin_anon_data-content": "Wanneer jy die knoppie <strong>Aanmelding<\/strong> druk, sal jy met die internet verbind word.",
     "logoff_data-title": "Afmelding",
-    "logoff_data-content": "Wanneer jy die knoppie <strong>Afmelding<\/strong> druk, beëindig jy die internetverbinding."
+    "logoff_data-content": "Wanneer jy die knoppie <strong>Afmelding<\/strong> druk, beëindig jy die internetverbinding.",
+    "menuTrigger_data-title": "Offcanvas Spyskaart",
+    "menuTrigger_data-content": "Deur te klik op <strong>&#9776; offcanvas hamburger<\/strong> of terselfdertyd <strong>%s<\/strong> op jou sleutelbord te druk, sal jy die konteksmenu oopmaak.",
+    "about_title": "GuardianSuit",
+    "about_subtitle": "Gevorderde Captive Portal-tema vir OPNsense",
+    "about_content": "<p><b>GuardianSuit<\/b> is 'n moderne, responsiewe en geanimeerde Captive Portal-tema vir OPNsense. Dit bied gebruikers 'n aantreklike aanmeldervaring en gee bestuurders volle beheer oor die voorkoms en funksionaliteit van die verwelkomingsblad.<\/p><p><b>Belangrike funksies:<\/b><\/p><ul><li>Responsiwiteit en animasies.<\/li><li>Meertaligheid.<\/li><li>Maklike aanpassing van voorkoms en kleurskema.<\/li><li>Intuïtiewe UX en WCAG-nakoming.<\/li><li>Eenvoudige integrasie met OPNsense.<\/li><\/ul><p><b>Toepassing:<\/b><br \/>Ideaal vir maatskappy-netwerke, hotelle, kafee's en ander plekke wat 'n aantreklike Captive Portal-blad vereis.<\/p><p><b>Skepper:<\/b> Mirosław Majka &lt;mix@proask.pl&gt; | &copy; 2025 GuardianSuit<\/p>",
+    "cookies_title": "Koekies",
+    "cookies_subtitle": "Hoe koekies gebruik word.",
+    "cookies_content": "<h5>Wat is 'n koekie?<\/h5><p>Koekies is klein tekslêers wat outomaties deur jou webblaaier geskep word wanneer jy webblaaie besoek. Inligting in 'n koekie kan slegs deur die bladsy waarvan dit afkomstig is, gelees word. Dit beteken dat ander lêers op jou toestel nie toegang het tot hierdie koekie nie.<\/p><p>Met die inligting in koekies weet die webwerf hoe jy dit gebruik en kan dit die inhoud aanpas of hulp bied.<\/p><h5>Waarvoor gebruik ons koekies?<\/h5><p>Ons gebruik tegniese koekies wat noodsaaklik is vir die behoorlike werking van die webwerf. Hulle help om die webwerf te optimaliseer vir toestelle en blaaiers wat besoekers die meeste gebruik, sodat jou rekenaar, tablet of foon dit korrek en duidelik kan vertoon, terwyl dit onthou of jy toestemming gegee het om spesifieke inhoud te wys.<\/p><p>Gebruikers kan nie van tegniese koekies ontslaan nie.<\/p><h5>Hoe lank hou ons koekies?<\/h5><p>Ons gebruik permanente koekies wat op jou toestel bly vir 'n spesifieke tyd of totdat jy dit handmatig verwyder.<\/p><h5>Watter data versamel ons deur koekies?<\/h5><p>Ons versamel slegs anonieme tegniese data om die gebruiksgemak van ons webwerf te verbeter.<\/p><p>Ons versamel geen persoonlike identifiseerbare data nie. Die enigste inligting oor die gebruiker wat nie in kombinasie met ander data identifiseerbaar is nie, is die IP-adres vanwaar die gebruiker verbinding maak.<\/p>",
+    "privacy_title": "Privaatheidsbeleid",
+    "privacy_subtitle": "Verwerking van persoonlike data",
+    "privacy_content": "<p>Ons skep hierdie dokument om jou in kennis te stel van ons Privaatheidsbeleid. Hier sal jy leer wie ons is, hoe ons data versamel, gebruik, openbaar maak en deel binne <b><&nbsp;ISP Naam&nbsp;><\/b>, geleë by [ Straatnaam 10, stad en poskode ], waarom ons dit doen en hoe persone wie se data ons verwerk hul privaatheidsregte kan afdwing.<\/p><p><&nbsp;ISP Naam&nbsp;> is verantwoordelik vir die verwerking van persoonlike data soos uiteengesit in hierdie Privaatheidsbeleid.<\/p><h5>OOR ONS<\/h5><p>Die administrateur van hierdie diens, wat jou persoonlike data verwerk, is <&nbsp;ISP Naam&nbsp;>, [ Straatnaam 10, stad en poskode ]; VAT 1234567890, Registernommer 123456789.<\/p><h5>KONTAK MET ONS<\/h5><ul><li>Per e-pos: adres@email.pl,<\/li><li>Per pos: ISP Naam, [ Straatnaam 10, stad en poskode ]<\/li><\/ul><h5>PRINSIPE IN HIERDIE PRIVATHEIDSBELEID<\/h5><p>Ons sorg dat jou data in ooreenstemming met die wet verwerk word en dat dit:</p><ul><li>geregtig en deursigtig verwerk word,<\/li><li>vir spesifieke en wettig-gegronde doeleindes ingesamel word en nie verder vir ander doeleindes gebruik word nie,<\/li><li>relevant en beperk tot die nodige data is,<\/li><li>akkuraat is en waar nodig opgedateer word,<\/li><li>gestoor word sodat identifikasie moontlik is slegs vir die nodige tydperk,<\/li><li>veilig verwerk word teen onbevoegde toegang of verlies.<\/li><\/ul><h5>JOU REGS<\/h5><p>Jy het die reg om toegang tot jou data te kry, dit reg te stel, te laat vergeet en jou toestemming te trek sonder om die wettigheid van verwerking te beïnvloed wat voorheen gebaseer was op jou toestemming.<\/p><h5>COOKIES<\/h5><p><&nbsp;ISP Naam&nbsp;> gebruik koekies om die gebruik van die diens te vergemaklik. Deur die diens te gebruik, stem jy in met die gebruik van koekies en dat dit in jou toestel se geheue gestoor word.<\/p><h5>WYSIGINGS AAN PRIVATHEIDSBELEID<\/h5><p><&nbsp;ISP Naam&nbsp;> behou die reg om hierdie beleid aan te pas indien tegnologie, wetgewing of diensontwikkeling veranderinge vereis. Ons sal alle veranderinge duidelik en verstaanbaar kommunikeer.<\/p><p>Vrae oor privaatheidbeleid stuur asseblief na: adres@email.pl<\/p>"
 }

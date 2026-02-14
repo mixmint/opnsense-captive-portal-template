@@ -7,6 +7,75 @@
     "attr_isp_info": {
         "aria-label": "인터넷 서비스 제공자 정보"
     },
+    "menu": {
+        "title": "GuardianSuit 메뉴",
+        "item1": {
+            "title": "인터넷",
+            "icon": "인",
+            "href": "https://yourdomain.com/#",
+            "target": "_blank"
+        },
+        "item2": {
+            "title": "텔레비전",
+            "icon": "텔",
+            "href": "https://yourdomain.com/#",
+            "target": "_blank"
+        },
+        "item3": {
+            "title": "전화",
+            "icon": "전",
+            "href": "https://yourdomain.com/#",
+            "target": "_blank"
+        },
+        "item4": {
+            "title": "추가 서비스",
+            "icon": "추",
+            "href": "https://yourdomain.com/#",
+            "target": "_blank"
+        },
+        "item5": {
+            "title": "연락처",
+            "icon": "연",
+            "href": "https://yourdomain.com/#",
+            "target": "_blank"
+        },
+        "item6": {
+            "title": "개인정보 처리방침",
+            "icon": "&#167;",
+            "href": {"type": "modal", "title": "privacy_title", "subtitle": "privacy_subtitle", "content": "privacy_content", "iconText": "&#167;"},
+            "target": "_self"
+        },
+        "item7": {
+            "title": "쿠키",
+            "icon": "&#9865;",
+            "href": {"type": "modal", "title": "cookies_title", "subtitle": "cookies_subtitle", "content": "cookies_content", "iconText": "&#9865;"},
+            "target": "_self"
+        },
+        "item8": {
+            "title": "문서",
+            "icon": "&#9783;",
+            "href": "https://github.com/mixmint/opnsense-captive-portal-template/blob/main/README.md",
+            "target": "_blank"
+        },
+        "item9": {
+            "title": "프로그램 정보",
+            "icon": "&#9873;",
+            "href": {"type": "modal", "title": "about_title", "subtitle": "about_subtitle", "content": "about_content", "iconText": "&#9873;"},
+            "target": "_self"
+        },
+        "group1": {
+            "title": "서비스",
+            "items": ["item1", "item2", "item3", "item4", "item5"]
+        },
+        "group2": {
+            "title": "정보",
+            "items": ["item6", "item7"]
+        },
+        "group3": {
+            "title": "도움말",
+            "items": ["item8", "item9"]
+        }
+    },
     "footer_isp_info": {},
     "pagetitle": "사용자 로그인 시스템 | <ISP 이름>",
     "username": "사용자 이름 (로그인)",
@@ -77,7 +146,7 @@
     "a11y_helper_prev": "이전",
     "a11y_helper_done": "완료",
     "a11y-keys_data-title": "단축키",
-    "a11y-keys_data-content": "<span style=\"font-size: 14px\">키 조합 <br \/><strong>⇧ Shift (왼쪽) <br \/>+&nbsp;⌥ Alt (왼쪽) <br \/>+&nbsp;문자<\/strong><br \/><br \/><strong>⇧ Shift + ⌥ Alt + U<\/strong><br \/>사용자 이름 필드로 포커스 이동<br \/><br \/><strong>⇧ Shift + ⌥ Alt + P<\/strong><br \/>비밀번호 필드로 포커스 이동<br \/><br \/><strong>⇧ Shift + ⌥ Alt + A<\/strong><br \/>\"이용 약관 동의\" 체크박스 선택/해제<br \/><br \/><strong>⇧ Shift + ⌥ Alt + R<\/strong><br \/>약관 모달 창 열기<br \/><br \/><strong>⇧ Shift + ⌥ Alt + I<\/strong><br \/>사용자 로그인<br \/><br \/><strong>⇧ Shift + ⌥ Alt + O<\/strong><br \/>사용자 로그아웃<br \/><br \/><strong>⇧ Shift + ⌥ Alt + L<\/strong><br \/>언어 선택기 실행<\/span>",
+    "a11y-keys_data-content": "<span style=\"font-size: 14px\">키 조합 <br \/><strong>⇧ Shift (왼쪽) <br \/>+&nbsp;⌥ Alt (왼쪽) <br \/>+&nbsp;문자<\/strong><br \/><br \/><strong>⇧ Shift + ⌥ Alt + U<\/strong><br \/>사용자 이름 필드로 포커스 이동<br \/><br \/><strong>⇧ Shift + ⌥ Alt + P<\/strong><br \/>비밀번호 필드로 포커스 이동<br \/><br \/><strong>⇧ Shift + ⌥ Alt + A<\/strong><br \/>\"이용 약관 동의\" 체크박스 선택/해제<br \/><br \/><strong>⇧ Shift + ⌥ Alt + R<\/strong><br \/>약관 모달 창 열기<br \/><br \/><strong>⇧ Shift + ⌥ Alt + I<\/strong><br \/>사용자 로그인<br \/><br \/><strong>⇧ Shift + ⌥ Alt + O<\/strong><br \/>사용자 로그아웃<br \/><br \/><strong>⇧ Shift + ⌥ Alt + L<\/strong><br \/>언어 선택기 실행<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;M<\/strong><br \/>오프캔버스 메뉴를 엽니다 (활성화된 경우)<\/span>",
     "a11y-lang-keys_data-title": "언어 전환 단축키",
     "a11y-lang-keys_data-content": "<span style=\"font-size: 14px\"><strong>⇧ Shift (왼쪽) 키를 누른 상태에서 언어 코드 두 글자<\/strong> (ISO 639-1)를 동시에 또는 순차적으로 누르세요.<br \/><br \/>예시:<br \/><strong>⇧ Shift + P + L<\/strong> → 한국어로 전환 (pl)<br \/><br \/><strong>⇧ Shift + E + N<\/strong> → 영어로 전환 (en)<br \/><br \/><strong>⇧ Shift + D + E<\/strong> → 독일어로 전환 (de)<br \/><br \/><strong>⇧ Shift + F + R<\/strong> → 프랑스어로 전환 (fr)<br \/><br \/><strong>⇧ Shift + E + S<\/strong> → 스페인어로 전환 (es)<br \/><br \/><strong>⇧ Shift + I + T<\/strong> → 이탈리아어로 전환 (it)<br \/>...<\/span>",
     "polyglotLanguageSwitcher_data-title": "언어 선택기",
@@ -97,5 +166,16 @@
     "signin_anon_data-title": "로그인",
     "signin_anon_data-content": "<strong>로그인<\/strong> 버튼을 클릭하여 인터넷 연결을 시작합니다.",
     "logoff_data-title": "로그아웃",
-    "logoff_data-content": "<strong>로그아웃<\/strong> 버튼을 클릭하여 인터넷 연결을 종료합니다."
+    "logoff_data-content": "<strong>로그아웃<\/strong> 버튼을 클릭하여 인터넷 연결을 종료합니다.",
+    "menuTrigger_data-title": "오프캔버스 메뉴",
+    "menuTrigger_data-content": "<strong>&#9776; 오프캔버스 햄버거<\/strong>를 클릭하거나 키보드에서 동시에 <strong>%s<\/strong>를 눌러 컨텍스트 메뉴를 열 수 있습니다.",
+    "about_title": "GuardianSuit",
+    "about_subtitle": "OPNsense용 고급 Captive Portal 템플릿",
+    "about_content": "<p><b>GuardianSuit<\/b>는 OPNsense용 최신 반응형 애니메이션 Captive Portal 템플릿입니다. 사용자에게 매력적인 로그인 경험을 제공하며, 관리자는 환영 페이지의 외관과 기능을 완전히 제어할 수 있습니다.<\/p><p><b>주요 기능:<\/b><\/p><ul><li>반응형 디자인 및 애니메이션.<\/li><li>다국어 지원.<\/li><li>쉬운 외관 및 색상 커스터마이징.<\/li><li>직관적인 UX 및 WCAG 준수.<\/li><li>OPNsense와 간단한 통합.<\/li><\/ul><p><b>적용 사례:<\/b><br \/>기업 네트워크, 호텔, 카페 및 시각적으로 매력적인 Captive Portal 환영 페이지가 필요한 기타 장소에 이상적입니다.<\/p><p><b>저자:<\/b> Mirosław Majka &lt;mix@proask.pl&gt; | &copy; 2025 GuardianSuit<\/p>",
+    "cookies_title": "쿠키",
+    "cookies_subtitle": "쿠키 사용 방법",
+    "cookies_content": "<h5>쿠키란 무엇인가요?<\/h5><p>쿠키는 웹 브라우저가 자동으로 생성하는 작은 텍스트 파일입니다. 웹사이트를 방문할 때 생성되며, 해당 쿠키에 담긴 정보는 쿠키를 생성한 웹사이트에서만 읽을 수 있습니다. 따라서 다른 파일이나 사용자의 컴퓨터 내 다른 데이터에는 접근할 수 없습니다.<\/p><p>쿠키에 담긴 정보를 통해 웹사이트는 사용자가 어떻게 사이트를 이용하는지 이해하고, 이에 맞춰 콘텐츠를 제공하거나 도움을 제공할 수 있습니다.<\/p><h5>쿠키는 어떤 용도로 사용되나요?<\/h5><p>사이트에서는 정상적인 서비스 제공을 위해 필수적인 기술적 쿠키를 사용합니다. 쿠키를 사용하여 방문자의 장치 및 브라우저에 맞게 웹사이트를 최적화하고, 사용자가 선택한 콘텐츠 표시 동의를 기억하여 컴퓨터, 태블릿, 또는 휴대폰에서 사이트가 올바르게 표시되도록 합니다.<\/p><p>사용자는 필수 기술 쿠키를 거부할 수 없습니다.<\/p><h5>쿠키는 얼마나 오래 유지되나요?<\/h5><p>저희는 일정 기간 동안 사용자 장치에 남아 있거나, 수동으로 삭제될 때까지 유지되는 지속 쿠키를 사용합니다.<\/li><\/ul><h5>쿠키를 통해 수집하는 정보는 무엇인가요?<\/h5><p>쿠키 기술을 사용하여 수집하는 정보는 오직 익명화된 기술 정보이며, 웹사이트 사용 편의성 향상을 위해 사용됩니다.<\/p><p>개인 식별이 가능한 정보는 수집하지 않습니다. 사용자를 식별할 수 없는 유일한 정보는 사용자가 접속하는 IP 주소입니다.<\/p>",
+    "privacy_title": "개인정보 보호정책",
+    "privacy_subtitle": "개인 정보 처리",
+    "privacy_content": "<p>이 문서는 우리의 개인정보 보호정책에 대해 안내하기 위해 작성되었습니다. 여기에서 우리는 누구이며, <b><ISP 이름><\/b>에서 개인정보를 어떻게 수집, 사용, 공개 및 제공하는지, 그 목적과 개인정보 주체가 자신의 권리를 어떻게 행사할 수 있는지를 확인할 수 있습니다. 주소: [거리 이름 10, 도시, 우편번호]<\/p><p><ISP 이름>은 본 개인정보 보호정책에 따라 개인정보 처리에 대한 책임을 집니다.<\/p><h5>회사 소개<\/h5><p>서비스 이용과 관련하여 개인정보를 처리하는 주체는 <ISP 이름>, [거리 이름 10, 도시, 우편번호]; 사업자 등록번호 1234567890, 기관번호 123456789입니다.<\/p><h5>연락처<\/h5><ul><li>이메일: adres@email.pl<\/li><li>우편: <ISP 이름>, [거리 이름 10, 도시, 우편번호]<\/li><\/ul><h5>개인정보 처리 원칙<\/h5><p>당사는 사용자의 개인정보 처리 시 유럽연합 일반 데이터 보호 규정(UE) 2016/679(이하 'GDPR'), 개인정보 보호법 등 관련 법규를 준수합니다. 본 정책은 이러한 법규에 따라 작성되었으며, 개인정보를 수집하고 사용하는 목적을 명확히 안내합니다.<\/p><p><ISP 이름>은 잠재 고객 및 거래처로부터 제공받은 개인정보와 회사 정보를 수집하며, 인터넷 접속 서비스를 이용하는 과정에서 수집된 데이터도 포함됩니다.<\/p><h5>개인정보 수집<\/h5><p>사용자로부터 수집하는 개인정보는 다음과 같은 경우에 이루어집니다:<\/p><ul><li>서비스 제공 및 협력 조건 설정, 정보 제공<\/li><li>계약 체결 및 이행, 고객/거래처와의 연락 유지<\/li><li>법적 의무 이행<\/li><li>문의 응답, 불만 처리 및 사후 서비스<\/li><li>뉴스레터 외 직접 마케팅<\/li><li>증거 확보, 청구권 확인, 주장 또는 방어 목적<\/li><\/ul><h5>데이터 보관 및 삭제<\/h5><p>사용자의 데이터를 안전하게 보호하기 위해 내부 절차와 권장사항을 마련하였으며, 무단 접근을 방지하기 위한 기술적·계약적·관리적·물리적 조치를 적용합니다. 이를 지속적으로 점검하고 법규 준수를 확인합니다.<\/p><p>개인정보는 수집 목적을 달성하는 데 필요한 기간 동안만 보관됩니다.<\/p><h5>데이터 제공 및 공개<\/h5><p>사용자의 개인정보를 동의 없이 제3자에게 판매하거나 제공하지 않습니다. 또한 개인정보는 프로파일링되지 않습니다.<\/p><p>사용자와 <ISP 이름>의 협력 범위에 따라 법적 요구 사항 준수, 계약 이행, 권리·자산·안전 보호 등의 목적으로 개인정보를 제공할 수 있습니다.<\/p><h5>개인정보 처리 원칙<\/h5><p>개인정보는 다음 원칙에 따라 처리됩니다:<\/p><ul><li>법규 준수, 공정하고 투명하게 처리<\/li><li>명확하고 합법적 목적에 따라 수집, 목적 외 사용 금지<\/li><li>적절하고 필요한 범위 내에서만 수집<\/li><li>정확하고 필요한 경우 업데이트, 오류 시 즉시 수정 또는 삭제<\/li><li>식별 가능한 형태로 필요한 기간 동안만 보관<\/li><li>무단 접근, 불법 처리, 우발적 손실이나 파괴 방지<\/li><\/ul><p>개인정보는 일반적으로 사용자의 동의에 근거하여 처리되며, 언제든 철회할 수 있습니다. 또한 계약 이행이나 요청에 따른 사전 조치, 법적 의무 이행, 정당한 사업적 이익 등 필요한 경우에도 처리됩니다.<\/p><h5>사용자의 권리<\/h5><p>사용자는 다음 권리를 가집니다:<\/p><ul><li>개인정보 열람 및 처리 목적, 범주 확인, 사본 획득<\/li><li>잘못되거나 누락된 정보 수정 및 삭제 요청(잊혀질 권리)<\/li><li>동의 기반 처리 철회, 철회 전 합법적 처리에 영향 없음<\/li><\/ul><h5>쿠키<\/h5><p><ISP 이름>은 서비스 이용 편의를 위해 쿠키를 사용합니다. 사용자는 쿠키 사용에 동의하며, 차단하지 않는 경우 기기에 저장됩니다.<\/p><h5>정책 변경<\/h5><p><ISP 이름>은 인터넷 기술 발전, 개인정보 보호법 변경 및 서비스 개선에 따라 개인정보 보호정책을 수정할 권리를 보유하며, 변경 사항은 명확히 안내됩니다.<\/p><p>개인정보 보호정책 관련 문의는 이메일 adres@email.pl 로 보내주시기 바랍니다.<\/p>"
 }

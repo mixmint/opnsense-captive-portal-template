@@ -7,6 +7,75 @@
     "attr_isp_info": {
         "aria-label": "Informacione për ofruesin e internetit"
     },
+    "menu": {
+        "title": "Menu GuardianSuit",
+        "item1": {
+            "title": "Internet",
+            "icon": "I",
+            "href": "https://yourdomain.com/#",
+            "target": "_blank"
+        },
+        "item2": {
+            "title": "Televizioni",
+            "icon": "T",
+            "href": "https://yourdomain.com/#",
+            "target": "_blank"
+        },
+        "item3": {
+            "title": "Telefoni",
+            "icon": "F",
+            "href": "https://yourdomain.com/#",
+            "target": "_blank"
+        },
+        "item4": {
+            "title": "Shërbime shtesë",
+            "icon": "S",
+            "href": "https://yourdomain.com/#",
+            "target": "_blank"
+        },
+        "item5": {
+            "title": "Kontakt",
+            "icon": "K",
+            "href": "https://yourdomain.com/#",
+            "target": "_blank"
+        },
+        "item6": {
+            "title": "Politika e privatësisë",
+            "icon": "&#167;",
+            "href": {"type": "modal", "title": "privacy_title", "subtitle": "privacy_subtitle", "content": "privacy_content", "iconText": "&#167;"},
+            "target": "_self"
+        },
+        "item7": {
+            "title": "Cookies",
+            "icon": "&#9865;",
+            "href": {"type": "modal", "title": "cookies_title", "subtitle": "cookies_subtitle", "content": "cookies_content", "iconText": "&#9865;"},
+            "target": "_self"
+        },
+        "item8": {
+            "title": "Dokumentacioni",
+            "icon": "&#9783;",
+            "href": "https://github.com/mixmint/opnsense-captive-portal-template/blob/main/README.md",
+            "target": "_blank"
+        },
+        "item9": {
+            "title": "Rreth programit",
+            "icon": "&#9873;",
+            "href": {"type": "modal", "title": "about_title", "subtitle": "about_subtitle", "content": "about_content", "iconText": "&#9873;"},
+            "target": "_self"
+        },
+        "group1": {
+            "title": "Oferta",
+            "items": ["item1", "item2", "item3", "item4", "item5"]
+        },
+        "group2": {
+            "title": "Informacione",
+            "items": ["item6", "item7"]
+        },
+        "group3": {
+            "title": "Ndihmë",
+            "items": ["item8", "item9"]
+        }
+    },
     "footer_isp_info": {},
     "pagetitle": "Sistemi i hyrjes së përdoruesve | <Emri ISP>",
     "username": "Emri i përdoruesit (Login)",
@@ -77,7 +146,7 @@
     "a11y_helper_prev": "Mbrapa",
     "a11y_helper_done": "Fundi",
     "a11y-keys_data-title": "Shkurtoret e tastierës",
-    "a11y-keys_data-content": "<span style=\"font-size: 14px\">Kombinimi i tastierës <br \/><strong>⇧ Shift (majtas) <br \/>+&nbsp;⌥ Alt (majtas) <br \/>+&nbsp;shkronjë<\/strong><br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;U<\/strong><br \/>fokus në fushën Emri i përdoruesit<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;P<\/strong><br \/>fokus në fushën Fjalëkalimi<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;A<\/strong><br \/>zgjedh/ç’zgjedh kutinë \"Pranoj rregulloren\"<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;R<\/strong><br \/>hap dritaren modale me rregulloren<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;I<\/strong><br \/>bën login përdoruesin<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;O<\/strong><br \/>bën logout përdoruesin<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;L<\/strong><br \/>aktivizon ndërrimin e gjuhës<\/span>",
+    "a11y-keys_data-content": "<span style=\"font-size: 14px\">Kombinimi i tastierës <br \/><strong>⇧ Shift (majtas) <br \/>+&nbsp;⌥ Alt (majtas) <br \/>+&nbsp;shkronjë<\/strong><br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;U<\/strong><br \/>fokus në fushën Emri i përdoruesit<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;P<\/strong><br \/>fokus në fushën Fjalëkalimi<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;A<\/strong><br \/>zgjedh/ç’zgjedh kutinë \"Pranoj rregulloren\"<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;R<\/strong><br \/>hap dritaren modale me rregulloren<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;I<\/strong><br \/>bën login përdoruesin<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;O<\/strong><br \/>bën logout përdoruesin<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;L<\/strong><br \/>aktivizon ndërrimin e gjuhës<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;M<\/strong><br \/>hap menun offcanvas (nëse është aktivizuar)<\/span>",
     "a11y-lang-keys_data-title": "Shkurtoret për gjuhët",
     "a11y-lang-keys_data-content": "<span style=\"font-size: 14px\">Mbani shtypur <strong>⇧ Shift (majtas) dhe shtypni dy shkronjat e kodit të gjuhës<\/strong> (ISO 639-1) njëkohësisht ose një nga një.<br \/><br \/>Shembuj:<br \/><strong>⇧ Shift&nbsp;+&nbsp;P&nbsp;+&nbsp;L<\/strong> → ndryshon në gjuhën polake (pl)<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;E&nbsp;+&nbsp;N<\/strong> → ndryshon në gjuhën angleze (en)<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;D&nbsp;+&nbsp;E<\/strong> → ndryshon në gjuhën gjermane (de)<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;F&nbsp;+&nbsp;R<\/strong> → ndryshon në gjuhën frënge (fr)<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;E&nbsp;+&nbsp;S<\/strong> → ndryshon në gjuhën spanjolle (es)<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;I&nbsp;+&nbsp;T<\/strong> → ndryshon në gjuhën italiane (it)<br \/>...<\/span>",
     "polyglotLanguageSwitcher_data-title": "Zgjedhës gjuhe",
@@ -97,5 +166,16 @@
     "signin_anon_data-title": "Hyrje",
     "signin_anon_data-content": "Duke klikuar butonin <strong>Hyrje<\/strong> do të nisni lidhjen në internet.",
     "logoff_data-title": "Dalje",
-    "logoff_data-content": "Duke klikuar butonin <strong>Dalje<\/strong> do të ndërprisni lidhjen në internet."
+    "logoff_data-content": "Duke klikuar butonin <strong>Dalje<\/strong> do të ndërprisni lidhjen në internet.",
+    "menuTrigger_data-title": "Menu offcanvas",
+    "menuTrigger_data-content": "Duke klikuar në <strong>&#9776; hamburger offcanvas<\/strong> ose duke shtypur njëkohësisht në tastierë <strong>%s<\/strong> do të hapet menuja kontekstuale.",
+    "about_title": "GuardianSuit",
+    "about_subtitle": "Model i avancuar Captive Portal për OPNsense",
+    "about_content": "<p><b>GuardianSuit<\/b> është një model modern, i përgjegjshëm dhe i animuar i Captive Portal për OPNsense. Siguron përdoruesve një përvojë tërheqëse të logimit dhe administratorëve kontroll të plotë mbi pamjen dhe funksionalitetin e faqes së mirëseardhjes.<\/p><p><b>Karakteristikat kryesore:<\/b><\/p><ul><li>Përshtatshmëri dhe animacione.<\/li><li>Multigjuhësim.<\/li><li>Personalizim i lehtë i pamjes dhe ngjyrave.<\/li><li>UX intuitiv dhe përputhshmëri me WCAG.<\/li><li>Integrim i thjeshtë me OPNsense.<\/li><\/ul><p><b>Përdorimi:<\/b><br \/>Ideal për rrjete biznesi, hotele, kafene dhe vende të tjera që kërkojnë një faqe tërheqëse vizualisht të Captive Portal.<\/p><p><b>Autori:<\/b> Mirosław Majka &lt;mix@proask.pl&gt; | &copy; 2025 GuardianSuit<\/p>",
+    "cookies_title": "Cookies",
+    "cookies_subtitle": "Si përdoren skedarët cookie.",
+    "cookies_content": "<h5>Çfarë është një skedar cookie?<\/h5><p>Skedarët cookie (të njohur si \"biskota\") janë skedarë të vegjël teksti që krijohen automatikisht nga shfletuesi i internetit gjatë vizitës së faqeve të internetit. Informacionet e përfshira në një skedar cookie mund të lexohet vetëm nga faqja nga e cila ky skedar vjen. Kjo do të thotë që faqja e internetit nuk ka qasje në skedarë të tjerë që ndodhen në kompjuterin e përdoruesit.<\/p><p>Falë informacionit të ruajtur në skedarët cookie, faqja \"di\" se si e përdor përdoruesi dhe mund të përshtasë përmbajtjen e shfaqur ose t'ju ofrojë ndihmë.<\/p><h5>Për çfarë përdorim skedarët cookie?<\/h5><p>Ne përdorim skedarë cookie teknikë në faqen tonë, të cilët janë të nevojshëm për funksionimin e duhur të faqes. I përdorim për të optimizuar faqen tonë për pajisjet dhe shfletuesit që përdoruesit zakonisht përdorin – kështu kompjuteri, tableti ose telefoni juaj do ta shfaqë faqen saktë dhe qartë, duke ruajtur nëse keni dhënë pëlqimin për shfaqjen e përmbajtjes së zgjedhur në faqen e internetit.<\/p><p>Përdoruesi nuk mund të heqë dorë nga skedarët cookie teknikë.<\/p><h5>Sa kohë përdoren skedarët cookie?<\/h5><p>Ne përdorim skedarë cookie të qëndrueshëm, të cilët mbeten në pajisjen tuaj për një kohë të caktuar ose deri në momentin kur i fshini manualisht.<\/p><h5>Cilat të dhëna mbledhim përmes skedarëve cookie?<\/h5><p>Përmes teknologjisë cookie, ne mbledhim vetëm të dhëna teknike anonime për të përmirësuar përdorimin e faqes sonë.<\/p><p>Ne nuk mbledhim asnjë të dhënë që mund t'ju identifikojë. E vetmja informacion për përdoruesin, e cila pa lidhje me të dhëna të tjera nuk mund të identifikojë përdoruesin, është adresa IP nga e cila lidhet përdoruesi.<\/p>",
+    "privacy_title": "Politika e Privatësisë",
+    "privacy_subtitle": "Përpunimi i të Dhënave Personale",
+    "privacy_content": "<p>Krijojmë këtë dokument për t'ju informuar mbi Politikën tonë të Privatësisë. Këtu do të mësoni kush jemi, si mbledhim, përdorim, zbulojmë dhe shpërndajmë të dhënat personale brenda <b><&nbsp;Emri ISP&nbsp;><\/b>, me seli në [ Emri i Rrugës 10, qyteti dhe kodi postar ], për qëllimet që kryejmë këto veprime dhe si personat të cilëve u përpunohen të dhënat mund të ushtrojnë të drejtat e tyre për privatësi.<\/p><p><&nbsp;Emri ISP&nbsp;> është përgjegjës për përpunimin e të dhënave personale sipas kësaj Politike Privatësie.<\/p><h5>PËR NE<\/h5><p>Administratori, dmth. subjekti që përpunon të dhënat personale lidhur me shfrytëzimin tuaj të shërbimit, është <&nbsp;Emri ISP&nbsp;>, [ Emri i Rrugës 10, qyteti dhe kodi postar ]; NIP 1234567890, Regon 123456789,<\/p><h5>KONTAKTI ME NE<\/h5><ul><li>elektronikisht në adresën e-mail: adresë@email.pl,<\/li><li>me shkrim në adresën: Emri ISP, [ Emri i Rrugës 10, qyteti dhe kodi postar ]<\/li><\/ul><h5>PARAJSITË NË KËTË POLITIKË PRIVATËSIE<\/h5><p>Kujdesemi që përpunimi i të dhënave tuaja të kryhet sipas rregullave të Rregullores së Parlamentit Evropian dhe Këshillit (BE) nr. 2016/679 dt. 27 prill 2016 për mbrojtjen e individëve lidhur me përpunimin e të dhënave personale dhe lëvizjen e lirë të këtyre të dhënave, si dhe për të hequr Direktivën 95/46/WE (\"RODO\"), ligjit për mbrojtjen e të dhënave personale dhe legjislacionit të veçantë. Kjo Politikë e Privatësisë është përgatitur sipas këtyre rregullave. Informojmë qartë se si mbledhim të dhëna personale dhe për çfarë përdoren.<\/p><p>Shtojmë vëmendjen se <&nbsp;Emri ISP&nbsp;> mbledh të dhëna personale dhe informacione biznesi të dhëna nga klientët dhe kontraktorët (potencialë), si dhe të dhëna të fituara gjatë përdorimit të shërbimit të internetit.<\/p><h5>MBLEDHJA E TË DHËNAVE PERSONALE<\/h5><p>Ne mbledhim të dhëna personale të dhëna nga përdoruesit në rastet e mëposhtme:<\/p><ul><li>ofrimi i ofertave, përcaktimi i kushteve të bashkëpunimit dhe/ose ofrimi i informacionit mbi shërbimet dhe veprimet e tjera të <&nbsp;Emri ISP&nbsp;>,<\/li><li>nënshkrimi dhe zbatimi i kontratave dhe mbajtja e kontaktit me klientin/kontraktorin,<\/li><li>përmbushja e detyrimeve ligjore,<\/li><li>përgjigjja ndaj pyetjeve, shqyrtimi i ankesave dhe shërbimit pas shitjes,<\/li><li>marketingu direkt (jo newsletter),<\/li><li>për qëllime arkivore (provave), për vendosje, hetim ose mbrojtje ndaj kërkesave.<\/li><\/ul><h5>RUANJA DHE FSHIRJA E TË DHËNAVE<\/h5><p>Për të mbrojtur të dhënat e dhëna, kemi krijuar procedura dhe udhëzime të brendshme për të parandaluar qasjen e paautorizuar. Përdorim masa teknologjike, kontraktuale, administrative dhe fizike për të mbrojtur të dhënat. Kontrollojmë zbatimin e tyre dhe shqyrtojmë vazhdimisht përputhshmërinë me ligjin.<\/p><p>Ruajmë të dhënat personale të përdoruesit vetëm për periudhën e nevojshme për realizimin e qëllimeve për të cilat janë mbledhur.<\/p><h5>SHPËRNDARJA DHE ZBULIMI I TË DHËNAVE<\/h5><p>Ne nuk shesim apo shpërndajmë të dhëna personale të përdoruesve tek palë të treta pa pëlqimin e tyre. Të dhënat e përdoruesve nuk profilizohen.<\/p><p>Sipas llojit dhe natyrës së bashkëpunimit me përdoruesin dhe <&nbsp;Emri ISP&nbsp;>, mund të dorëzojmë të dhëna në përputhje me ligjin ose për nevoja ligjore, mbrojtje të të drejtave, pasurisë ose sigurisë.<\/p><h5>PRINCIPET E PËRPU NË PËRPU NË TË DHËNAT TUJA<\/h5><p>Bëjmë maksimumin për të mbrojtur interesin e personave, duke siguruar që të dhënat të jenë:<\/p><ul><li>të përpunuara ligjërisht, në mënyrë të drejtë dhe transparente për personin e dhënave,<\/li><li>mbledhur për qëllime konkrete dhe të ligjshme, dhe të mos përdoren më tej në mënyrë të papërshtatshme,<\/li><li>të përshtatshme, të nevojshme dhe të kufizuara vetëm për realizimin e qëllimeve,<\/li><li>të sakta dhe të azhurnuara kur është e nevojshme. Të dhënat jo të sakta të korrigjohen ose fshihen menjëherë,<\/li><li>ruajtja në mënyrë që identifikimi i personit të mundësohet vetëm për periudhën e nevojshme,<\/li><li>përpunimi duke siguruar siguri të duhur kundër përpunimit të paligjshëm ose aksidental ose humbjes së të dhënave.<\/li><\/ul><p>Të dhënat tuaja përpunohen zakonisht bazuar në pëlqim, i cili mund të tërhiqet në çdo kohë. Përpunimi mund të jetë i nevojshëm për ekzekutimin e kontratës, për kërkesën tuaj paraprake, për detyrime ligjore ose për interesat e ligjshme të administratorit, përfshirë marrjen e masave kundër pretendimeve.<\/p><h5>TË DREJTAT TUAJA<\/h5><p>Keni këto të drejta:<\/p><ul><li>Të keni akses në përmbajtjen e të dhënave tuaja personale dhe informacion mbi kategori, qëllime dhe kopje të tyre,<\/li><li>Të korrigjoni të dhëna të pasakta ose të plotësoni të dhëna të mungueshme, dhe të kërkoni fshirjen e të dhënave të përpunuara pa bazë ligjore,<\/li><li>Tërheqjen e pëlqimit për përpunimin e të dhënave në çdo moment pa ndikuar në ligjshmërinë e përpunimit të kryer përpara tërheqjes.<\/li><\/ul><h5>COOKIES<\/h5><p><&nbsp;Emri ISP&nbsp;> përdor skedarë cookie për të lehtësuar përdorimin e shërbimit. Duke përdorur shërbimin ju jepni pëlqimin për përdorimin e tyre. Nëse nuk i bllokoni, ju pranoni përdorimin dhe ruajtjen e tyre në pajisje.<\/p><h5>NDËRPRERJE NË POLITIKËN E TË DHËNAVE PERSONALE<\/h5><p><&nbsp;Emri ISP&nbsp;> rezervon të drejtën për të ndryshuar politikën e të dhënave personale në përputhje me zhvillimin e teknologjisë, ndryshime ligjore dhe shërbimin e ofruar. Çdo ndryshim do të komunikojë qartë.<\/p><p>Për pyetje mbi politikën e të dhënave personale, dërgoni email në adresë: adresë@email.pl<\/p>"
 }

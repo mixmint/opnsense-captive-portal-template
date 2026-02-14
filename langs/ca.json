@@ -7,6 +7,75 @@
     "attr_isp_info": {
         "aria-label": "Informació sobre el proveïdor d'Internet"
     },
+    "menu": {
+        "title": "Menú GuardianSuit",
+        "item1": {
+            "title": "Internet",
+            "icon": "I",
+            "href": "https://yourdomain.com/#",
+            "target": "_blank"
+        },
+        "item2": {
+            "title": "Televisió",
+            "icon": "V",
+            "href": "https://yourdomain.com/#",
+            "target": "_blank"
+        },
+        "item3": {
+            "title": "Telèfon",
+            "icon": "T",
+            "href": "https://yourdomain.com/#",
+            "target": "_blank"
+        },
+        "item4": {
+            "title": "Serveis addicionals",
+            "icon": "U",
+            "href": "https://yourdomain.com/#",
+            "target": "_blank"
+        },
+        "item5": {
+            "title": "Contacte",
+            "icon": "K",
+            "href": "https://yourdomain.com/#",
+            "target": "_blank"
+        },
+        "item6": {
+            "title": "Política de privacitat",
+            "icon": "&#167;",
+            "href": {"type": "modal", "title": "privacy_title", "subtitle": "privacy_subtitle", "content": "privacy_content", "iconText": "&#167;"},
+            "target": "_self"
+        },
+        "item7": {
+            "title": "Arxius Cookies",
+            "icon": "&#9865;",
+            "href": {"type": "modal", "title": "cookies_title", "subtitle": "cookies_subtitle", "content": "cookies_content", "iconText": "&#9865;"},
+            "target": "_self"
+        },
+        "item8": {
+            "title": "Documentació",
+            "icon": "&#9783;",
+            "href": "hhttps://github.com/mixmint/opnsense-captive-portal-template/blob/main/README.md",
+            "target": "_blank"
+        },
+        "item9": {
+            "title": "Sobre el programa",
+            "icon": "&#9873;",
+            "href": {"type": "modal", "title": "about_title", "subtitle": "about_subtitle", "content": "about_content", "iconText": "&#9873;"},
+            "target": "_self"
+        },
+        "group1": {
+            "title": "Oferta",
+            "items": ["item1", "item2", "item3", "item4", "item5"]
+        },
+        "group2": {
+            "title": "Informació",
+            "items": ["item6", "item7"]
+        },
+        "group3": {
+            "title": "Ajuda",
+            "items": ["item8", "item9"]
+        }
+    },
     "footer_isp_info": {},
     "pagetitle": "Sistema d'inici de sessió d'usuaris | < Nom de l'ISP >",
     "username": "Nom d'usuari (Login)",
@@ -77,7 +146,7 @@
     "a11y_helper_prev": "Enrere",
     "a11y_helper_done": "Fi",
     "a11y-keys_data-title": "Dreceres del teclat",
-    "a11y-keys_data-content": "<span style=\"font-size: 14px\">Combinació de tecles <br \/><strong>⇧ Shift (esquerra) <br \/>+&nbsp;⌥ Alt (esquerra) <br \/>+&nbsp;lletra<\/strong><br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;U<\/strong><br \/>focus al camp Nom d'usuari<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;P<\/strong><br \/>focus al camp Contrasenya<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;A<\/strong><br \/>selecciona/deselecciona la casella \"Accepto el reglament\"<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;R<\/strong><br \/>obre la finestra modal amb el reglament<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;I<\/strong><br \/>inicia sessió de l'usuari<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;O<\/strong><br \/>tanca la sessió de l'usuari<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;L<\/strong><br \/>obre el selector d'idioma<\/span>",
+    "a11y-keys_data-content": "<span style=\"font-size: 14px\">Combinació de tecles <br \/><strong>⇧ Shift (esquerra) <br \/>+&nbsp;⌥ Alt (esquerra) <br \/>+&nbsp;lletra<\/strong><br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;U<\/strong><br \/>focus al camp Nom d'usuari<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;P<\/strong><br \/>focus al camp Contrasenya<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;A<\/strong><br \/>selecciona/deselecciona la casella \"Accepto el reglament\"<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;R<\/strong><br \/>obre la finestra modal amb el reglament<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;I<\/strong><br \/>inicia sessió de l'usuari<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;O<\/strong><br \/>tanca la sessió de l'usuari<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;L<\/strong><br \/>obre el selector d'idioma<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;M<\/strong><br \/>obreix el menú offcanvas (si està activat)<\/span>",
     "a11y-lang-keys_data-title": "Dreceres del teclat per als idiomes",
     "a11y-lang-keys_data-content": "<span style=\"font-size: 14px\">Mantén premut <strong>⇧ Shift (esquerra) i prem dues lletres del codi d'idioma<\/strong> (ISO 639-1) alhora o una rere l'altra.<br \/><br \/>Exemples:<br \/><strong>⇧ Shift&nbsp;+&nbsp;P&nbsp;+&nbsp;L<\/strong> → canvia a polonès (pl)<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;E&nbsp;+&nbsp;N<\/strong> → canvia a anglès (en)<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;D&nbsp;+&nbsp;E<\/strong> → canvia a alemany (de)<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;F&nbsp;+&nbsp;R<\/strong> → canvia a francès (fr)<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;E&nbsp;+&nbsp;S<\/strong> → canvia a espanyol (es)<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;I&nbsp;+&nbsp;T<\/strong> → canvia a italià (it)<br \/>...<\/span>",
     "polyglotLanguageSwitcher_data-title": "Selector d'idioma",
@@ -97,5 +166,16 @@
     "signin_anon_data-title": "Inici de sessió",
     "signin_anon_data-content": "En fer clic al botó <strong>Inici de sessió<\/strong> iniciaràs la connexió a Internet.",
     "logoff_data-title": "Tancament de sessió",
-    "logoff_data-content": "En fer clic al botó <strong>Tancament de sessió<\/strong> finalitzaràs la connexió a Internet."
+    "logoff_data-content": "En fer clic al botó <strong>Tancament de sessió<\/strong> finalitzaràs la connexió a Internet.",
+    "menuTrigger_data-title": "Menú offcanvas",
+    "menuTrigger_data-content": "Fent clic a <strong>&#9776; hamburguesa offcanvas<\/strong> o prement simultàniament <strong>%s<\/strong> al teclat, s'obrirà el menú contextual.",
+    "about_title": "GuardianSuit",
+    "about_subtitle": "Plantilla avançada de Captive Portal per a OPNsense",
+    "about_content": "<p><b>GuardianSuit<\/b> és una plantilla moderna, responsiva i animada de Captive Portal per a OPNsense. Proporciona als usuaris una experiència d'inici de sessió atractiva i als administradors un control complet sobre l'aspecte i la funcionalitat de la pàgina de benvinguda.<\/p><p><b>Funcions clau:<\/b><\/p><ul><li>Responsivitat i animacions.<\/li><li>Multilingüe.<\/li><li>Fàcil personalització de l'aspecte i la paleta de colors.<\/li><li>UX intuïtiu i compatibilitat amb WCAG.<\/li><li>Integració senzilla amb OPNsense.<\/li><\/ul><p><b>Aplicació:<\/b><br \/>Ideal per a xarxes empresarials, hotels, cafeteries i altres llocs que requereixin una pàgina de benvinguda visualment atractiva per al Captive Portal.<\/p><p><b>Autor:<\/b> Mirosław Majka &lt;mix@proask.pl&gt; | &copy; 2025 GuardianSuit<\/p>",
+    "cookies_title": "Arxius Cookies",
+    "cookies_subtitle": "Com s'utilitzen els arxius cookies.",
+    "cookies_content": "<h5>Què és un arxiu cookie?<\/h5><p>Els arxius cookies (també coneguts com galetes) són petits arxius de text, creats automàticament pel navegador web quan visites pàgines web. La informació continguda en un cookie només pot ser llegida pel lloc web del qual prové. Així, la pàgina web no pot accedir a altres arxius presents al teu ordinador.<\/p><p>Gràcies a la informació continguda als cookies, el lloc web \"sàpiga\" com l'utilitzes i pot ajustar el contingut mostrat o oferir-te assistència de manera adequada.<\/p><h5>Per a què utilitzem els arxius cookies?<\/h5><p>Al lloc web utilitzem cookies tècniques que són necessàries per al correcte funcionament del lloc. Les fem servir per optimitzar la pàgina web segons els dispositius i navegadors que utilitzen habitualment els visitants: així l'ordinador, tablet o telèfon mostrarà correctament i de manera clara el contingut, recordant si has acceptat mostrar determinats continguts al lloc web.<\/p><p>L'usuari no pot desactivar les cookies tècniques.<\/p><h5>Quant de temps utilitzem els arxius cookies?<\/h5><p>Utilitzem els anomenats cookies persistents, que romandran al teu dispositiu durant un període determinat o fins que els eliminis manualment.<\/p><h5>Quines dades recollim a través dels arxius cookies?<\/h5><p>Mitjançant la tecnologia cookie, només recollim dades tècniques anònimes sobre tu, destinades a millorar la comoditat d'ús del nostre lloc.<\/p><p>No recopilem cap dada que permeti identificar-te. L'única informació sobre l'usuari que, sense combinació amb altres dades, no permet la seva identificació, és l'adreça IP des de la qual es connecta l'usuari.<\/p>",
+    "privacy_title": "Política de privacitat",
+    "privacy_subtitle": "Tractament de dades personals",
+    "privacy_content": "<p>Creem aquest document per informar-te sobre la nostra Política de Privacitat. Aquí aprendràs qui som, com recopilem, utilitzem, revelem i compartim dades personals dins de <b><&nbsp;Nom de l'ISP&nbsp;><\/b>, amb seu a [ Nom del carrer 10, ciutat i codi postal ], amb quina finalitat ho fem i com les persones de les quals processem dades poden exercir els seus drets de privacitat.<\/p><p><&nbsp;Nom de l'ISP&nbsp;> és responsable del tractament de dades personals d'acord amb aquesta Política de Privacitat.<\/p><h5>QUI SOM<\/h5><p>L'administrador, és a dir, l'entitat que processa dades personals en relació amb l'ús d'aquest servei per part teva, és <&nbsp;Nom de l'ISP&nbsp;>, [ Nom del carrer 10, ciutat i codi postal ]; NIF 1234567890, Registre 123456789,<\/p><h5>CONTACTE AMB NOSALTRES<\/h5><ul><li>electrònicament a l'adreça de correu electrònic: adreça@email.com,<\/li><li>per escrit a l'adreça: Nom de l'ISP, [ Nom del carrer 10, ciutat i codi postal ]<\/li><\/ul><h5>PRINCIPIS D'AQUESTA POLÍTICA DE PRIVACITAT<\/h5><p>Ens assegurem que el tractament de les teves dades es dugui a terme d'acord amb el Reglament (UE) 2016/679 del Parlament Europeu i del Consell de 27 d'abril de 2016 sobre la protecció de les persones físiques pel que fa al tractament de dades personals i sobre la lliure circulació d'aquestes dades (RGPD), la llei de protecció de dades personals i altres normatives específiques. Aquesta Política de Privacitat s'ha preparat d'acord amb aquests principis, informant clarament sobre com recopilem i utilitzem les dades personals.<\/p><p>Cal destacar que <&nbsp;Nom de l'ISP&nbsp;> recopila dades personals i informació empresarial proporcionades pels seus clients i proveïdors (potencials), així com dades obtingudes durant l'ús del servei d'accés a Internet.<\/p><h5>RECOLLIDA DE DADES PERSONALS<\/h5><p>Recopilem dades personals proporcionades pels Usuaris en els següents casos:<\/p><ul><li>presentació d'ofertes, establiment de condicions de col·laboració i/o subministrament d'informació sobre serveis i altres activitats de <&nbsp;Nom de l'ISP&nbsp;>,<\/li><li>celebració i execució de contractes i manteniment del contacte amb clients/proveïdors,<\/li><li>compliment de les obligacions legals aplicables,<\/li><li>resposta a preguntes, tramitació de reclamacions i altres serveis postvenda,<\/li><li>màrqueting directe (excloent butlletins),<\/li><li>fins a arxiu (prova), possibles investigacions o defensa davant reclamacions.<\/li><\/ul><h5>EMMAGATZEMAMENT I ELIMINACIÓ DE DADES<\/h5><p>Per protegir la seguretat de les dades proporcionades, hem establert procediments interns i recomanacions per evitar que persones no autoritzades hi tinguin accés. Utilitzem mesures tecnològiques, contractuals, administratives i físiques per protegir les dades contra l'accés no autoritzat. Supervisem el compliment i comprovem contínuament la seva conformitat amb les normatives aplicables.<\/p><p>Emmagatzemem les dades personals de l'Usuari només durant el temps necessari per complir les finalitats per a les quals van ser recollides.<\/p><h5>COMPARTICIÓ I DIVULGACIÓ DE DADES<\/h5><p>No venem ni compartim dades personals dels Usuaris amb tercers sense el seu consentiment. Les dades dels Usuaris no són objecte de perfilatge.<\/p><p>Depenent del tipus i l'abast de la col·laboració entre l'Usuari i <&nbsp;Nom de l'ISP&nbsp;>, i en el marc de les activitats desenvolupades, podem transmetre les dades de l'Usuari si així ho requereix la normativa aplicable o si és necessari per al compliment legal, resposta a reclamacions o per protegir drets, béns o seguretat.<\/p><h5>PRINCIPIS DEL TRACTAMENT DE LES TEVES DADES<\/h5><p>Prendrem les màximes precaucions per protegir els interessos de les persones de les quals tractem dades personals, garantint especialment que les dades siguin:<\/p><ul><li>tractades d'acord amb la llei, de manera justa i transparent per a la persona afectada,<\/li><li>recollides amb finalitats concretes, explícites i legítimes i no processades més enllà d'aquestes finalitats,<\/li><li>adients, pertinents i limitades al necessari per assolir les finalitats del tractament,<\/li><li>correctes i actualitzades quan calgui. Les dades personals incorrectes es corregiran o eliminaran immediatament,<\/li><li>emmagatzemades de manera que permetin identificar la persona només durant el temps necessari per a la finalitat del tractament,<\/li><li>tractades de manera segura per protegir-les contra l'accés no autoritzat, il·legal o accidental, pèrdua o destrucció.<\/li><\/ul><p>Normalment processem les teves dades personals basant-nos en el consentiment, que pot ser retirat en qualsevol moment. També poden ser necessàries per a l'execució d'un contracte entre tu i nosaltres, per accions a la teva petició abans de formalitzar el contracte, per complir obligacions legals o per protegir interessos legítims (ex. reclamacions comercials).<\/p><h5>ELS TEUS DRETS<\/h5><p>Tens els següents drets:<\/p><ul><li>Accés al contingut de les teves dades personals i obtenir informació sobre categories de dades, finalitats de tractament i obtenir-ne còpies,<\/li><li>Rectificació de dades incorrectes i complement de dades incompletes, així com dret a l'oblit (eliminació de dades processades indegudament),<\/li><li>Retirar el consentiment per al tractament de dades en qualsevol moment sense afectar la legalitat del processament fet abans de la retirada (si s'aplica art. 6.1.a o art. 9.2.a RGPD).<\/li><\/ul><h5>COOKIES<\/h5><p><&nbsp;Nom de l'ISP&nbsp;> utilitza cookies per facilitar l'ús del servei. En utilitzar el servei, acceptes l'ús de cookies. Si no bloqueges les cookies, acceptes el seu ús i emmagatzematge al dispositiu.<\/p><h5>CANVIS EN LA POLÍTICA DE PROTECCIÓ DE DADES<\/h5><p><&nbsp;Nom de l'ISP&nbsp;> es reserva el dret a modificar la política de protecció de dades segons evolucioni la tecnologia web, canvis legislatius o serveis proporcionats per l'administrador. Qualsevol canvi serà comunicat de manera clara i transparent.<\/p><p>Per a qualsevol consulta sobre la política de protecció de dades, contacta a l'adreça de correu electrònic: adreça@email.com<\/p>"
 }

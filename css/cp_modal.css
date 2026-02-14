@@ -7,11 +7,11 @@
     }
     ol,
     ul {
-        margin-top: 0;
-        margin-bottom: 0;
+        /*margin-top: 0;
+        margin-bottom: 0;*/
         list-style-type: none;
-        font-size: 12px;
-        line-height: 18px;
+        font-size: 15px;
+        line-height: 20px;
         color: var(--color_primary, initial);
         padding-left: 20px;
         li {
@@ -27,8 +27,9 @@
                 counter-increment: counter;
                 display: flex;
                 &:before {
-                    font-size: 12px;
-                    line-height: 14px;
+                    flex-shrink: 0;
+                    font-size: 15px;
+                    line-height: 17px;
                     margin-left: -24px;
                     width: 21px;
                     height: 21px;

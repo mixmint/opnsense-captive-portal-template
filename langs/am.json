@@ -7,6 +7,75 @@
     "attr_isp_info": {
         "aria-label": "የኢንተርኔት አገልግሎት መረጃ"
     },
+    "menu": {
+        "title": "GuardianSuit ምናሌ",
+        "item1": {
+            "title": "ኢንተርኔት",
+            "icon": "ኢ",
+            "href": "https://yourdomain.com/#",
+            "target": "_blank"
+        },
+        "item2": {
+            "title": "ቴሌቪዥን",
+            "icon": "ቴ",
+            "href": "https://yourdomain.com/#",
+            "target": "_blank"
+        },
+        "item3": {
+            "title": "ቴሌፎን",
+            "icon": "ፎ",
+            "href": "https://yourdomain.com/#",
+            "target": "_blank"
+        },
+        "item4": {
+            "title": "ተጨማሪ አገልግሎቶች",
+            "icon": "ተ",
+            "href": "https://yourdomain.com/#",
+            "target": "_blank"
+        },
+        "item5": {
+            "title": "አግኝተው ያነጋግሩ",
+            "icon": "አ",
+            "href": "https://yourdomain.com/#",
+            "target": "_blank"
+        },
+        "item6": {
+            "title": "የግል መንግስት ፖሊሲ",
+            "icon": "&#167;",
+            "href": {"type": "modal", "title": "privacy_title", "subtitle": "privacy_subtitle", "content": "privacy_content", "iconText": "&#167;"},
+            "target": "_self"
+        },
+        "item7": {
+            "title": "ኩኪዎች",
+            "icon": "&#9865;",
+            "href": {"type": "modal", "title": "cookies_title", "subtitle": "cookies_subtitle", "content": "cookies_content", "iconText": "&#9865;"},
+            "target": "_self"
+        },
+        "item8": {
+            "title": "ሰነዶች",
+            "icon": "&#9783;",
+            "href": "hhttps://github.com/mixmint/opnsense-captive-portal-template/blob/main/README.md",
+            "target": "_blank"
+        },
+        "item9": {
+            "title": "ስለ ፕሮግራሙ",
+            "icon": "&#9873;",
+            "href": {"type": "modal", "title": "about_title", "subtitle": "about_subtitle", "content": "about_content", "iconText": "&#9873;"},
+            "target": "_self"
+        },
+        "group1": {
+            "title": "እቅድ",
+            "items": ["item1", "item2", "item3", "item4", "item5"]
+        },
+        "group2": {
+            "title": "መረጃ",
+            "items": ["item6", "item7"]
+        },
+        "group3": {
+            "title": "እገዛ",
+            "items": ["item8", "item9"]
+        }
+    },
     "footer_isp_info": {},
     "pagetitle": "የተጠቃሚ መግቢያ ስርዓት | < ISP ስም >",
     "username": "የተጠቃሚ ስም (Login)",
@@ -77,7 +146,7 @@
     "a11y_helper_prev": "ቀዳሚ",
     "a11y_helper_done": "ተጠናቋል",
     "a11y-keys_data-title": "የቁልፍ አዘጋጅት",
-    "a11y-keys_data-content": "<span style=\"font-size: 14px\">የቁልፍ አዘጋጅት <br \/><strong>⇧ Shift (ግራ) <br \/>+&nbsp;⌥ Alt (ግራ) <br \/>+&nbsp;ፊደል<\/strong><br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;U<\/strong><br \/>በተጠቃሚ ስም መስክ ላይ ማቀናበር<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;P<\/strong><br \/>በየቁልፍ መስክ ላይ ማቀናበር<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;A<\/strong><br \/>\"እኔ የህግ መመሪያዎችን እሸከማለሁ\" ቦታን መምረጥ/ማስወገድ<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;R<\/strong><br \/>የህግ መሰረታዊ መረጃ መከፈት<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;I<\/strong><br \/>ተጠቃሚን መግባት<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;O<\/strong><br \/>ተጠቃሚን መውጣት<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;L<\/strong><br \/>ቋንቋ መቀየር<\/span>",
+    "a11y-keys_data-content": "<span style=\"font-size: 14px\">የቁልፍ አዘጋጅት <br \/><strong>⇧ Shift (ግራ) <br \/>+&nbsp;⌥ Alt (ግራ) <br \/>+&nbsp;ፊደል<\/strong><br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;U<\/strong><br \/>በተጠቃሚ ስም መስክ ላይ ማቀናበር<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;P<\/strong><br \/>በየቁልፍ መስክ ላይ ማቀናበር<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;A<\/strong><br \/>\"እኔ የህግ መመሪያዎችን እሸከማለሁ\" ቦታን መምረጥ/ማስወገድ<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;R<\/strong><br \/>የህግ መሰረታዊ መረጃ መከፈት<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;I<\/strong><br \/>ተጠቃሚን መግባት<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;O<\/strong><br \/>ተጠቃሚን መውጣት<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;L<\/strong><br \/>ቋንቋ መቀየር<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;M<\/strong><br \/>ኦፍፍካንቫስ ምናሌን ይክፈት (ከተነሳ ከሆነ)<\/span>",
     "a11y-lang-keys_data-title": "የቋንቋ ትርጉሞች የቁልፍ አዘጋጅት",
     "a11y-lang-keys_data-content": "<span style=\"font-size: 14px\"><strong>⇧ Shift (ግራ) ይጠብቁ እና የቋንቋ ሁለት ፊደል ኮድ ይጫኑ<\/strong> (ISO 639-1) በአንድ ጊዜ ወይም በተከታታይ እንደሚከተለው።<br \/><br \/>አማራጮች:<br \/><strong>⇧ Shift&nbsp;+&nbsp;P&nbsp;+&nbsp;L<\/strong> → ወደ ፖላንድ ቋንቋ (pl) ማቀየር<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;E&nbsp;+&nbsp;N<\/strong> → ወደ እንግሊዝኛ (en) ማቀየር<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;D&nbsp;+&nbsp;E<\/strong> → ወደ ጀርመን (de) ማቀየር<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;F&nbsp;+&nbsp;R<\/strong> → ወደ ፈረንሳይኛ (fr) ማቀየር<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;E&nbsp;+&nbsp;S<\/strong> → ወደ ስፔንኛ (es) ማቀየር<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;I&nbsp;+&nbsp;T<\/strong> → ወደ ጣሊያንኛ (it) ማቀየር<br \/>...<\/span>",
     "polyglotLanguageSwitcher_data-title": "የቋንቋ መምረጫ",
@@ -97,5 +166,16 @@
     "signin_anon_data-title": "መግባት",
     "signin_anon_data-content": "በ <strong>መግባት<\/strong> አዝራር ጠቅ በማድረግ ኢንተርኔት ግንኙነት ይቀጥላል።",
     "logoff_data-title": "መውጣት",
-    "logoff_data-content": "በ <strong>መውጣት<\/strong> አዝራር ጠቅ በማድረግ ኢንተርኔት ግንኙነት ይዘጋል።"
+    "logoff_data-content": "በ <strong>መውጣት<\/strong> አዝራር ጠቅ በማድረግ ኢንተርኔት ግንኙነት ይዘጋል።",
+    "menuTrigger_data-title": "ኦፍፍካንቫስ ምናሌ",
+    "menuTrigger_data-content": "በ <strong>&#9776; ኦፍፍካንቫስ ሃምበርገር<\/strong> ማጫን ወይም በ ቁልፍ ላይ በተአምር <strong>%s<\/strong> መጫን እንደምትከፈት የምናሌን ያንብቡ።",
+    "about_title": "GuardianSuit",
+    "about_subtitle": "ለ OPNsense የተለያዩ የ Captive Portal አርእስት",
+    "about_content": "<p><b>GuardianSuit<\/b> ወደአሁኑ ዘመን የሚያስተናጋጅ ፣ እንዲሁም ተንቀሳቃሽ እና አንደኛ የሆነ የ Captive Portal አርእስት ነው ለ OPNsense። ለተጠቃሚዎች ምርጥ የግቤት ልምድ እንዲሰጥ እንዲሁም ለአስተዳዳሪዎች በአንደኛው ላይ ሙሉ ቁጥጥር እንዲያደርጉ ይሰጣል።<\/p><p><b>ቁልፍ ባህሪዎች:<\/b><\/p><ul><li>ተንቀሳቃሽነት እና አንደኛ የሆነ አንቀጽ ስራዎች<\/li><li>በቋንቋ በተለያዩ የሚያስተናጋጅ የቋንቋ ዝርዝር<\/li><li>ቀላል የቅርጸ ተንኮላት ማሻሻያ እና ቀለም ማስተካከያ<\/li><li>ቀላል የተጠቃሚ ልምድ (UX) እና WCAG መስማማት<\/li><li>ከ OPNsense ጋር ቀላል ማካተት<\/li><\/ul><p><b>መተግበሪያ:<\/b><br \/>የተለያዩ የንግድ መስመሮች፣ ሆቴሎች፣ ካፌዎች እና ሌሎች ቦታዎች እንደ እርስዎ አስደሳች የ Visual ገጽታ ያላቸው የ Captive Portal የመግቢያ ገጽ ይፈልጋሉ<\/p><p><b>ደራሲ:<\/b> ሚሮስላው ማይካ &lt;mix@proask.pl&gt; | &copy; 2025 GuardianSuit<\/p>",
+    "cookies_title": "ኩኪዎች",
+    "cookies_subtitle": "ኩኪዎች እንዴት እንደሚጠቀሙ ማስታወቂያ።",
+    "cookies_content": "<h5>ኩኪ ምንድነው?<\/h5><p>ኩኪዎች (በጣም አጠቃላይ እንደ “ኩኪዎች”) ትንሽ የጽሑፍ ፋይሎች ናቸው፣ በኢንተርኔት በአውቶማቲክ በአሳሽ በሚፈጥሩ ጊዜ የሚፈጠሩ። በኩኪው ውስጥ ያሉ መረጃዎች በተወሰነ ድር ጣቢያ ብቻ ሊነበቡ ይችላሉ። በዚህ ምክንያት የድር ጣቢያ ሌሎች በኮምፒውተር ያሉ ፋይሎችን መዳረሻ አልኖረውም።<\/p><p>በኩኪዎች ውስጥ ያሉ መረጃዎች ምክንያት ጣቢያው \"እንዴት እንደምትጠቀሙ\" ሊያውቅ ይችላል እና የሚሰጥዎትን ይህን ማስተካከል ወይም ማገዶ ማቅረብ ይችላል።<\/p><h5>ኩኪዎችን ለምን እንጠቀማለን?<\/h5><p>በድር ጣቢያው እንደሚፈለጉ ሰዎች ሲጎበኙ የጣቢያው ትክክለኛ ስራ እንዲሠራ አስፈላጊ የሆኑ ቴክኒካዊ ኩኪዎችን እንጠቀማለን። እነዚህን እንጠቀማለን በማስተካከል የጣቢያውን ድር ላይ በሚገኙ መሣሪያዎችና በብዙ ጊዜ የሚጠቀሙትን አሳሾች በተስተናገድ ማስተካከል ይችላል – እንደዚህ ኮምፒውተርህ፣ ታብሌትህ ወይም ስልኮት ጥሩ እና በትክክል ይታያል እና ተለዋዋጭ የሆነ እንዲቀመጥ ይደረጋል።<\/p><p>ተጠቃሚው ከቴክኒካዊ ኩኪዎች መከላከል አይችልም።<\/p><h5>እስከ መቶ ጊዜ ኩኪዎችን እንጠቀማለን?<\/h5><p>የተለያዩ ቋሚ ኩኪዎችን እንጠቀማለን፣ እነዚህም በአካልህ ላይ የተቀመጡ በጊዜ ተወላጅ ወይም እርስዎ ሲነሱ ድረስ ይኖራሉ።<\/p><h5>ኩኪዎች እንዴት መረጃ እንደሚሰበሰብ ይወቁ?<\/h5><p>በኩኪ ቴክኖሎጂ ላይ ተመሰርተው ያሉ መረጃዎች በተጠቃሚዎች ላይ ሳይገቡ ብቻ አሰባሰብ ይፈጽማል።<\/p><p>እኛ የግል መረጃዎችን አንሰበሰብም። የተጠቃሚ መረጃ በሌሎች መረጃዎች ጋር በተገናኘች እንኳን ሊማረክ አይችልም፤ የተጠቃሚው አይዲ አድራሻ (IP) ብቻ ነው፣ እንዲሁም በሌሎች መረጃዎች ጋር በተገናኘች አይማረክም።<\/p>",
+    "privacy_title": "የግል መረጃ ፖሊሲ",
+    "privacy_subtitle": "የግል መረጃ ማከማቻ እና ማንበብ",
+    "privacy_content": "<p>ይህን ሰነድ ለመፍጠር እና ስለ የግል መረጃ ፖሊሲችን ለመማረድ እንደሚረዱ እንወዳድራለን። እዚህ ላይ እኛ ማን እንደሆንን፣ እንዴት መረጃ እንሰበስባለን፣ እንጠቀማለን፣ እንጋርማለን እና እንዴት ለሌሎች እንደምንያዝ መረጃዎችን እንደምንሰጥ ታውቃላችሁ፣ <b><&nbsp;Nazwa ISP&nbsp;><\/b> በሚገኙበት [ የጎርፍ መንገድ 10, ከተማ እና ፖስታ ኮድ ]፣ ምን ያህል እንደምንሰራ እና ማንኛው የግል መረጃ ተጠቃሚ እንዴት መብቶቹን ማስፈፀም እንደሚችል ይገልጻል።<\/p><p><&nbsp;Nazwa ISP&nbsp;> በዚህ የግል መረጃ ፖሊሲ መሰረት የግል መረጃ ማከማቻ የሚኖረው ነው።<\/p><h5>ስለ እኛ<\/h5><p>አስተዳደሩ ማን እንደሆነ እና በዚህ አገልግሎት በመጠቀም ላይ ያሉ ግል መረጃዎችን እንዴት እንደምንሰበስብ የሚቀርበው ነው፣ <&nbsp;Nazwa ISP&nbsp;>, [ የጎርፍ መንገድ 10, ከተማ እና ፖስታ ኮድ ]; NIP 1234567890, Regon 123456789,<\/p><h5>ከኛ ጋር ያግኙ<\/h5><ul><li>በኢሜይል በኤሌክትሮኒክ መንገድ፦ adres@email.pl,<\/li><li>በደብዳቤ በአድራሻ፦ Nazwa ISP, [ የጎርፍ መንገድ 10, ከተማ እና ፖስታ ኮድ ]<\/li><\/ul><h5>በዚህ ፖሊሲ የተገለጸው መሠረት<\/h5><p>እኛ ግል መረጃዎችን በመስራት እንዳስፈለገው ሕጎችን እንከተላለፋለን፣ በመሆኑም ምን እንደምንሰበስብ እና ለምን እንጠቀማለን በግልጽነት እና በትክክል ይገልጻል።<\/p><p>በኩነት የእኛ ድርጅት <&nbsp;Nazwa ISP&nbsp;> የግል መረጃዎችን እና ንግድ መረጃዎችን እንሰበስባለን በእኛ ደንበኞች እና ኮንትራክተኞች በመስጠት እና ከኢንተርኔት አገልግሎት መጠቀም ጊዜ ያገኙ መረጃዎችን በአስተዳደር እንደምንሰበስብ ታውቃላችሁ።<\/p><h5>የግል መረጃ ሰብሰባ<\/h5><p>እኛ የተጠቃሚዎችን ግል መረጃ በሚከተሉት ጊዜያት እንሰበስባለን፦<\/p><ul><li>የኦፈር ማቅረብ፣ የተግባራዊ ውሎችን ማቅረብ እና ሌሎች የአገልግሎት መረጃዎችን ማቅረብ <&nbsp;Nazwa ISP&nbsp;>,<\/li><li>ውሎችን መፈጸም እና ከደንበኞች/ኮንትራክተኞች ጋር መገናኘት፣<\/li><li>በሕግ መሠረት የሚከሰቱ ተግባራትን መፈጸም፣<\/li><li>ጥያቄዎችን መለስ ፣ ቅሬታዎችን ማጽደቅ እና ሌሎች የሽያጭ ተግባራትን መስጠት፣<\/li><li>ቀጥታ ማስታወቂያ (የኢሜይል እንደተለየ)፣<\/li><li>አርክቶ ማስተካከል እና ምክንያታዊ መረጃዎችን ማስተካከል ወይም የጥፋት እና ጥያቄዎችን መከላከል።<\/li><\/ul><h5>መረጃዎችን መቆጣጠር እና ማጥፋት<\/h5><p>የተሰጡ መረጃዎችን ከደንበኞች አልደረስንም እና የማይፈቀድ ሰዎች በመጠቀም አይከፈትም። መረጃዎችን ለሚከለክሉ መርምሮ የተዘጋጀ የውስጥ ሂደት እና ምክር አለ፣ መረጃዎችን ከተሳሳተ መዳረሻ ለማከማቻ እንደሚከለክሉ ይሁን።<\/p><p>የተጠቃሚዎች ግል መረጃ እስከ ድረስ እንደሚያስፈልጋቸው ብቻ ይቀመጣል።<\/p><h5>መረጃዎችን ማስተላለፊያ እና መግለጫ<\/h5><p>እኛ ግል መረጃዎችን በሌሎች ሰዎች ማስረከብ አንሸጥም። የተጠቃሚዎች መረጃ ማስተናገድ አይደለም።<\/p><p>እንደ ምን ያህል ሁኔታዎች እንደሚያስፈልጉ የግል መረጃዎችን ማስተናገድ ይችላሉ፣ የሕግ መሠረት እና የውሎች እንደሚያስፈልጉ፣ እንዲሁም የንግድ ፍላጎቶች እንዲፈጸሙ የሚያስፈልጋቸውን ነው።<\/p><h5>የእርስዎ መብቶች<\/h5><p>እንዲሁ የተሰጡ መብቶች እንዲኖሩዎት ነው፦<\/p><ul><li>የግል መረጃዎች ዝርዝሮችን ማየት እና የመረጃዎች እቃ ማግኘት፣<\/li><li>የተሳሳተ መረጃ መስተካከል እና የጎደለ መረጃ ማስፋፋት፣<\/li><li>መቀበል መረጃ ማስረጃ ማስወገድ እና የመረጃዎችን ከፈቃድ በስተቀር አስወግድ ወይም አስር ዘግተው ማስወገድ ብቻ ነው።<\/li><\/ul><h5>ኩኪዎች<\/h5><p><&nbsp;Nazwa ISP&nbsp;>, ኩኪዎችን በአገልግሎት እንዲቀላቀሉ ይጠቀማል። አገልግሎትን በመጠቀም እንደ ተስፋ ስላለዎት ኩኪዎችን መጠቀም ተስፋ ይሰጣል። ከኩኪዎችን በመከላከል ከሆነ በእርስዎ ተስፋ ላይ ይገባል።<\/p><h5>የግል መረጃ ፖሊሲ ለውጦች<\/h5><p><&nbsp;Nazwa ISP&nbsp;> በድር ቴክኖሎጂ ልማት፣ በሕግ ለውጦች እና በአስተዳደር አገልግሎት ላይ የሚኖሩ ለውጦች ማሻሻል መብት አለው። ሁሉንም ለውጦች በግልጽነት እና በትክክል እንደምንገልጻል።<\/p><p>ስለ የግል መረጃ ፖሊሲ ሁሉም ጥያቄዎች በኢሜይል በዚህ አድራሻ ላይ ይደርሳሉ፦ adres@email.pl<\/p>"
 }

@@ -7,6 +7,75 @@
     "attr_isp_info": {
         "aria-label": "インターネットサービスプロバイダ情報"
     },
+    "menu": {
+        "title": "GuardianSuit メニュー",
+        "item1": {
+            "title": "インターネット",
+            "icon": "イ",
+            "href": "https://yourdomain.com/#",
+            "target": "_blank"
+        },
+        "item2": {
+            "title": "テレビ",
+            "icon": "テ",
+            "href": "https://yourdomain.com/#",
+            "target": "_blank"
+        },
+        "item3": {
+            "title": "電話",
+            "icon": "デ",
+            "href": "https://yourdomain.com/#",
+            "target": "_blank"
+        },
+        "item4": {
+            "title": "追加サービス",
+            "icon": "ツ",
+            "href": "https://yourdomain.com/#",
+            "target": "_blank"
+        },
+        "item5": {
+            "title": "お問い合わせ",
+            "icon": "オ",
+            "href": "https://yourdomain.com/#",
+            "target": "_blank"
+        },
+        "item6": {
+            "title": "プライバシーポリシー",
+            "icon": "&#167;",
+            "href": {"type": "modal", "title": "privacy_title", "subtitle": "privacy_subtitle", "content": "privacy_content", "iconText": "&#167;"},
+            "target": "_self"
+        },
+        "item7": {
+            "title": "クッキー",
+            "icon": "&#9865;",
+            "href": {"type": "modal", "title": "cookies_title", "subtitle": "cookies_subtitle", "content": "cookies_content", "iconText": "&#9865;"},
+            "target": "_self"
+        },
+        "item8": {
+            "title": "ドキュメント",
+            "icon": "&#9783;",
+            "href": "https://github.com/mixmint/opnsense-captive-portal-template/blob/main/README.md",
+            "target": "_blank"
+        },
+        "item9": {
+            "title": "このソフトについて",
+            "icon": "&#9873;",
+            "href": {"type": "modal", "title": "about_title", "subtitle": "about_subtitle", "content": "about_content", "iconText": "&#9873;"},
+            "target": "_self"
+        },
+        "group1": {
+            "title": "提供",
+            "items": ["item1", "item2", "item3", "item4", "item5"]
+        },
+        "group2": {
+            "title": "情報",
+            "items": ["item6", "item7"]
+        },
+        "group3": {
+            "title": "ヘルプ",
+            "items": ["item8", "item9"]
+        }
+    },
     "footer_isp_info": {},
     "pagetitle": "ユーザーログインシステム | <ISP名>",
     "username": "ユーザー名（ログインID）",
@@ -77,7 +146,7 @@
     "a11y_helper_prev": "戻る",
     "a11y_helper_done": "終了",
     "a11y-keys_data-title": "キーボードショートカット",
-    "a11y-keys_data-content": "<span style=\"font-size: 14px\">キーの組み合わせ <br \/><strong>⇧ Shift（左） <br \/>+&nbsp;⌥ Alt（左） <br \/>+&nbsp;文字<\/strong><br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;U<\/strong><br \/>ユーザー名フィールドにフォーカス<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;P<\/strong><br \/>パスワードフィールドにフォーカス<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;A<\/strong><br \/>\"規約に同意する\"チェックボックスを選択/解除<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;R<\/strong><br \/>規約モーダルを開く<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;I<\/strong><br \/>ユーザーをログイン<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;O<\/strong><br \/>ユーザーをログアウト<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;L<\/strong><br \/>言語切替を起動<\/span>",
+    "a11y-keys_data-content": "<span style=\"font-size: 14px\">キーの組み合わせ <br \/><strong>⇧ Shift（左） <br \/>+&nbsp;⌥ Alt（左） <br \/>+&nbsp;文字<\/strong><br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;U<\/strong><br \/>ユーザー名フィールドにフォーカス<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;P<\/strong><br \/>パスワードフィールドにフォーカス<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;A<\/strong><br \/>\"規約に同意する\"チェックボックスを選択/解除<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;R<\/strong><br \/>規約モーダルを開く<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;I<\/strong><br \/>ユーザーをログイン<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;O<\/strong><br \/>ユーザーをログアウト<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;L<\/strong><br \/>言語切替を起動<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;M<\/strong><br \/>オフキャンバスメニューを開く（有効になっている場合）<\/span>",
     "a11y-lang-keys_data-title": "言語切替ショートカット",
     "a11y-lang-keys_data-content": "<span style=\"font-size: 14px\"><strong>⇧ Shift（左）を押しながら、ISO 639-1の言語コードの2文字を同時または順番に押す<\/strong>。<br \/><br \/>例:<br \/><strong>⇧ Shift&nbsp;+&nbsp;P&nbsp;+&nbsp;L<\/strong> → ポーランド語に切替 (pl)<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;E&nbsp;+&nbsp;N<\/strong> → 英語に切替 (en)<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;D&nbsp;+&nbsp;E<\/strong> → ドイツ語に切替 (de)<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;F&nbsp;+&nbsp;R<\/strong> → フランス語に切替 (fr)<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;E&nbsp;+&nbsp;S<\/strong> → スペイン語に切替 (es)<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;I&nbsp;+&nbsp;T<\/strong> → イタリア語に切替 (it)<br \/>...<\/span>",
     "polyglotLanguageSwitcher_data-title": "言語セレクター",
@@ -97,5 +166,16 @@
     "signin_anon_data-title": "ログイン",
     "signin_anon_data-content": "<strong>ログイン<\/strong> ボタンをクリックするとインターネット接続が開始されます。",
     "logoff_data-title": "ログアウト",
-    "logoff_data-content": "<strong>ログアウト<\/strong> ボタンをクリックするとインターネット接続が終了します。"
+    "logoff_data-content": "<strong>ログアウト<\/strong> ボタンをクリックするとインターネット接続が終了します。",
+    "menuTrigger_data-title": "オフキャンバスメニュー",
+    "menuTrigger_data-content": "クリックして <strong>&#9776; オフキャンバスハンバーガー<\/strong>、またはキーボードで同時に <strong>%s<\/strong> を押すと、コンテキストメニューが開きます。",
+    "about_title": "GuardianSuit",
+    "about_subtitle": "OPNsense向けの高度なキャプティブポータルテンプレート",
+    "about_content": "<p><b>GuardianSuit<\/b> は最新のレスポンシブでアニメーション対応の OPNsense キャプティブポータルテンプレートです。ユーザーに魅力的なログイン体験を提供し、管理者にはウェルカムページの外観と機能性を完全にコントロールできる機能を提供します。<\/p><p><b>主な機能:<\/b><\/p><ul><li>レスポンシブ対応とアニメーション。<\/li><li>多言語対応。<\/li><li>外観とカラーの簡単なカスタマイズ。<\/li><li>直感的なUXとWCAG準拠。<\/li><li>OPNsenseとの簡単な統合。<\/li><\/ul><p><b>用途:<\/b><br \/>企業ネットワーク、ホテル、カフェなど、視覚的に魅力的なキャプティブポータルウェルカムページが必要な場所に最適です。<\/p><p><b>作者:<\/b> Mirosław Majka &lt;mix@proask.pl&gt; | &copy; 2025 GuardianSuit<\/p>",
+    "cookies_title": "クッキー",
+    "cookies_subtitle": "クッキーの使用方法について",
+    "cookies_content": "<h5>クッキーとは何ですか？<\/h5><p>クッキー（いわゆるクッキー）は、ウェブブラウザが自動的に作成する小さなテキストファイルで、ウェブサイトを訪問する際に生成されます。各クッキーに含まれる情報は、そのクッキーを発行したサイトのみが読み取ることができます。そのため、他のファイルにアクセスすることはできません。<\/p><p>クッキーに含まれる情報により、ウェブサイトはあなたがどのように利用しているかを把握し、表示内容を適切に調整したり、サポートを提供したりできます。<\/p><h5>クッキーは何のために使われますか？<\/h5><p>当サイトでは、正しく機能させるために技術的なクッキーを使用しています。また、訪問者がよく使用するデバイスやブラウザに応じてサイトを最適化するために使用されます。これにより、パソコン、タブレット、またはスマートフォンでサイトを正しく読みやすく表示し、特定のコンテンツの表示に同意したかどうかを記憶できます。<\/p><p>ユーザーは技術的なクッキーを拒否することはできません。<\/p><h5>クッキーはどのくらいの期間使用されますか？<\/h5><p>当サイトでは、一定期間デバイスに保存される「永続的クッキー」を使用しています。手動で削除するまで保持されます。<\/p><h5>クッキーを通じてどのような情報を収集しますか？<\/h5><p>クッキー技術を使用して、当サイトの利便性向上のために匿名の技術データのみを収集します。<\/p><p>個人を特定できる情報は収集しません。ユーザーを特定できない唯一の情報は、接続元のIPアドレスです。</p>",
+    "privacy_title": "プライバシーポリシー",
+    "privacy_subtitle": "個人情報の取り扱い",
+    "privacy_content": "<p>この文書は、当社のプライバシーポリシーについてご案内するために作成されました。ここでは、当社が誰であるか、どのように個人情報を収集、利用、開示、提供するか、そして当社が収集するデータに関して個人がどのように権利を行使できるかをご説明します。枠組みは <b>< ISP名 ><\/b>、所在地：[住所、都市、郵便番号] です。<\/p><p>< ISP名 > は、本プライバシーポリシーに従い個人情報の管理責任を負います。<\/p><h5>当社について<\/h5><p>管理者（サービス利用に関連して個人情報を処理する事業体）は < ISP名 >、[住所、都市、郵便番号]、NIP 1234567890、Regon 123456789 です。<\/p><h5>お問い合わせ<\/h5><ul><li>電子メール: adres@email.pl<\/li><li>郵送: < ISP名 >、[住所、都市、郵便番号]<\/li><\/ul><h5>本ポリシーの原則<\/h5><p>当社は、個人情報の処理が、EU一般データ保護規則（GDPR, 2016/679）及び国内法、特別法に従って行われることを保証します。本ポリシーはこれらに準拠して作成されています。どのようにデータを収集し、何の目的で利用するかを明確に説明します。<\/p><p>< ISP名 > は、顧客・潜在顧客や取引先から提供された個人情報および企業情報、インターネットアクセスサービス利用中に取得したデータを収集します。<\/p><h5>個人データの収集<\/h5><p>ユーザーから提供される個人データは以下の場合に収集されます:<\/p><ul><li>オファーの提出、協力条件の設定、およびサービスやその他活動に関する情報の提供、<\/li><li>契約の締結・履行、顧客／取引先との連絡維持、<\/li><li>法令に基づく義務の履行、<\/li><li>問い合わせ対応、苦情処理、アフターサービス、<\/li><li>ダイレクトマーケティング（ニュースレターを除く）、<\/li><li>アーカイブ目的（証拠）、請求権の確定、請求、または防御目的。<\/li><\/ul><h5>データの保管と削除<\/h5><p>提供されたデータの安全性を確保するため、当社は内部手順およびガイドラインを策定し、権限のないアクセスを防止しています。技術的、契約的、管理的、物理的手段を用いてデータを保護し、適用法令への準拠を継続的に確認しています。<\/p><p>個人データは、取得目的を達成するために必要な期間のみ保管されます。<\/p><h5>データの提供と開示<\/h5><p>ユーザーの同意なしに、第三者に個人情報を販売または提供することはありません。ユーザーデータはプロファイリングされません。<\/p><p>ユーザーとの契約や業務内容に応じ、法律に基づき、または法的義務の履行、権利・財産・安全の保護のために必要な場合、ユーザーデータを提供することがあります。<\/p><h5>データ処理の原則<\/h5><p>当社は、個人情報を以下の原則に従って処理します:<\/p><ul><li>法令に従い、公正かつ透明に処理すること、<\/li><li>明確かつ正当な目的で収集し、目的外で使用しないこと、<\/li><li>目的達成に必要な範囲に限定すること、<\/li><li>正確で必要に応じて更新すること、不正確な場合は速やかに修正または削除すること、<\/li><li>識別可能な形式で必要以上に保管しないこと、<\/li><li>不正または違法な処理、偶発的な喪失や破壊からデータを保護すること。<\/li><\/ul><p>通常、データは同意に基づき処理されます。同意はいつでも撤回可能です。契約履行や契約前の要求、法的義務、または正当な利益のために必要な場合も処理されます。<\/p><h5>ユーザーの権利<\/h5><p>ユーザーには以下の権利があります:<\/p><ul><li>個人データへのアクセスおよびデータカテゴリー、処理目的、コピー取得、<\/li><li>不正確なデータの修正、欠損データの補完、削除（正当な理由なしに処理されている場合）、<\/li><li>同意に基づく処理の撤回（GDPR第6条1項aまたは第9条2項aに基づく場合）。<\/li><\/ul><h5>クッキー<\/h5><p>< ISP名 > はサービス利用を容易にするためにクッキーを使用しています。サービスを利用することで、クッキーの使用に同意したものとみなされます。ブロックしない場合、デバイスに保存されます。<\/p><h5>個人データ保護方針の変更<\/h5><p>< ISP名 > は、技術や法律の変更に応じて個人データ保護方針を更新する権利を有します。変更がある場合は明確に通知します。<\/p><p>ご質問は電子メールで: adres@email.pl までお問い合わせください。</p>"
 }

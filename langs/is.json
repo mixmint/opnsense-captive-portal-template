@@ -7,6 +7,75 @@
     "attr_isp_info": {
         "aria-label": "Upplýsingar um internets þjónustuaðila"
     },
+    "menu": {
+        "title": "GuardianSuit Valmynd",
+        "item1": {
+            "title": "Internet",
+            "icon": "I",
+            "href": "https://yourdomain.com/#",
+            "target": "_blank"
+        },
+        "item2": {
+            "title": "Sjónvarp",
+            "icon": "V",
+            "href": "https://yourdomain.com/#",
+            "target": "_blank"
+        },
+        "item3": {
+            "title": "Sími",
+            "icon": "S",
+            "href": "https://yourdomain.com/#",
+            "target": "_blank"
+        },
+        "item4": {
+            "title": "Viðbótarþjónusta",
+            "icon": "Þ",
+            "href": "https://yourdomain.com/#",
+            "target": "_blank"
+        },
+        "item5": {
+            "title": "Hafðu samband",
+            "icon": "K",
+            "href": "https://yourdomain.com/#",
+            "target": "_blank"
+        },
+        "item6": {
+            "title": "Persónuverndarstefna",
+            "icon": "&#167;",
+            "href": {"type": "modal", "title": "privacy_title", "subtitle": "privacy_subtitle", "content": "privacy_content", "iconText": "&#167;"},
+            "target": "_self"
+        },
+        "item7": {
+            "title": "Fótkökur",
+            "icon": "&#9865;",
+            "href": {"type": "modal", "title": "cookies_title", "subtitle": "cookies_subtitle", "content": "cookies_content", "iconText": "&#9865;"},
+            "target": "_self"
+        },
+        "item8": {
+            "title": "Skjöl",
+            "icon": "&#9783;",
+            "href": "https://github.com/mixmint/opnsense-captive-portal-template/blob/main/README.md",
+            "target": "_blank"
+        },
+        "item9": {
+            "title": "Um forritið",
+            "icon": "&#9873;",
+            "href": {"type": "modal", "title": "about_title", "subtitle": "about_subtitle", "content": "about_content", "iconText": "&#9873;"},
+            "target": "_self"
+        },
+        "group1": {
+            "title": "Tilboð",
+            "items": ["item1", "item2", "item3", "item4", "item5"]
+        },
+        "group2": {
+            "title": "Upplýsingar",
+            "items": ["item6", "item7"]
+        },
+        "group3": {
+            "title": "Aðstoð",
+            "items": ["item8", "item9"]
+        }
+    },
     "footer_isp_info": {},
     "pagetitle": "Notendakerfi innskráningar | <ISP Nafn>",
     "username": "Notandanafn (Innskráning)",
@@ -77,7 +146,7 @@
     "a11y_helper_prev": "Til baka",
     "a11y_helper_done": "Ljúka",
     "a11y-keys_data-title": "Flýtilyklar",
-    "a11y-keys_data-content": "<span style=\"font-size: 14px\">Lyklasamsetning <br \/><strong>⇧ Shift (vinstri) <br \/>+&nbsp;⌥ Alt (vinstri) <br \/>+&nbsp;stafur<\/strong><br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;U<\/strong><br \/>fókus á notandanafn reit<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;P<\/strong><br \/>fókus á lykilorðsreit<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;A<\/strong><br \/>hakka / afhakka reitinn „Ég samþykki reglugerðina“<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;R<\/strong><br \/>opnar reglugerðarglugga<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;I<\/strong><br \/>skráir notanda inn<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;O<\/strong><br \/>skráir notanda út<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;L<\/strong><br \/>kveikir á tungumálaskiptara<\/span>",
+    "a11y-keys_data-content": "<span style=\"font-size: 14px\">Lyklasamsetning <br \/><strong>⇧ Shift (vinstri) <br \/>+&nbsp;⌥ Alt (vinstri) <br \/>+&nbsp;stafur<\/strong><br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;U<\/strong><br \/>fókus á notandanafn reit<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;P<\/strong><br \/>fókus á lykilorðsreit<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;A<\/strong><br \/>hakka / afhakka reitinn „Ég samþykki reglugerðina“<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;R<\/strong><br \/>opnar reglugerðarglugga<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;I<\/strong><br \/>skráir notanda inn<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;O<\/strong><br \/>skráir notanda út<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;L<\/strong><br \/>kveikir á tungumálaskiptara<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;M<\/strong><br \/>opnar offcanvas valmynd (ef hún er virk)<\/span>",
     "a11y-lang-keys_data-title": "Tungumálaflýtilyklar",
     "a11y-lang-keys_data-content": "<span style=\"font-size: 14px\">Haltu <strong>⇧ Shift (vinstri) og ýttu á tvær tungumálstákn<\/strong> (ISO 639-1) samtímis eða eitt af öðru.<br \/><br \/>Dæmi:<br \/><strong>⇧ Shift&nbsp;+&nbsp;P&nbsp;+&nbsp;L<\/strong> → skiptir yfir í pólsku (pl)<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;E&nbsp;+&nbsp;N<\/strong> → skiptir yfir í ensku (en)<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;D&nbsp;+&nbsp;E<\/strong> → skiptir yfir í þýsku (de)<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;F&nbsp;+&nbsp;R<\/strong> → skiptir yfir í frönsku (fr)<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;E&nbsp;+&nbsp;S<\/strong> → skiptir yfir í spænsku (es)<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;I&nbsp;+&nbsp;T<\/strong> → skiptir yfir í ítölsku (it)<br \/>...<\/span>",
     "polyglotLanguageSwitcher_data-title": "Tungumálaval",
@@ -97,5 +166,16 @@
     "signin_anon_data-title": "Innskráning",
     "signin_anon_data-content": "Smelltu á <strong>Innskráning<\/strong> til að tengjast internetinu.",
     "logoff_data-title": "Útskráning",
-    "logoff_data-content": "Smelltu á <strong>Útskráning<\/strong> til að aftengja internetið."
+    "logoff_data-content": "Smelltu á <strong>Útskráning<\/strong> til að aftengja internetið.",
+    "menuTrigger_data-title": "Offcanvas Valmynd",
+    "menuTrigger_data-content": "Smelltu á <strong>&#9776; offcanvas hamborgari<\/strong> eða ýttu samtímis á <strong>%s<\/strong> á lyklaborðinu til að opna samhengi valmynd.",
+    "about_title": "GuardianSuit",
+    "about_subtitle": "Háþróaður Captive Portal sniðmát fyrir OPNsense",
+    "about_content": "<p><b>GuardianSuit<\/b> er nútímalegt, móttækilegt og hreyfanlegt Captive Portal sniðmát fyrir OPNsense. Það veitir notendum aðlaðandi innskráningarupplifun og stjórnendum fulla stjórn á útliti og virkni móttökusíðu.<\/p><p><b>Lykilatriði:<\/b><\/p><ul><li>Móttækni og hreyfimyndir.<\/li><li>Fjöltyngi.<\/li><li>Auðveld sérsnið útlits og lita.<\/li><li>Notendavænt UX og WCAG samræmi.<\/li><li>Einföld samþætting við OPNsense.<\/li><\/ul><p><b>Notkun:<\/b><br \/>Fullkomið fyrir fyrirtækjanet, hótel, kaffihús og önnur svæði sem krefjast sjónrænt aðlaðandi móttökusíðu Captive Portal.<\/p><p><b>Höfundur:<\/b> Mirosław Majka &lt;mix@proask.pl&gt; | &copy; 2025 GuardianSuit<\/p>",
+    "cookies_title": "Vefkökur",
+    "cookies_subtitle": "Hvernig við notum vefkökur.",
+    "cookies_content": "<h5>Hvað er vefkaka?<\/h5><p>Vefkökur (einnig kallaðar smákökur) eru litlar textaskrár sem vafrar búa sjálfkrafa til þegar heimsótt er vefsíður. Upplýsingar sem eru í hverri vefköku má aðeins lesa af vefsíðunni sem bjó hana til. Þannig getur vefsíðan ekki nálgast aðrar skrár á tölvu notandans.<\/p><p>Með upplýsingum úr vefkökum \"veit\" vefsíðan hvernig þú notar hana og getur því aðlagað efnið sem þú sérð eða boðið þér aðstoð.<\/p><h5>Hvers vegna notum við vefkökur?<\/h5><p>Á síðunni notum við tæknilegar vefkökur sem eru nauðsynlegar fyrir rétta virkni síðunnar. Við notum þær til að hámarka vefsíðuna fyrir tæki og vafra sem notendur nota oftast – þannig mun tölvan, spjaldtölvan eða síminn þinn birta síðuna rétt og lesanlega, og muna hvort þú samþykktir sýningu á völdu efni á vefsíðunni.<\/p><p>Notandi getur ekki hafnað tæknilegum vefkökum.<\/p><h5>Hversu lengi geymum við vefkökur?<\/h5><p>Við notum svokallaðar varanlegar vefkökur sem verða á tækinu þínu í ákveðinn tíma eða þar til þú fjarlægir þær handvirkt.<\/p><h5>Hvaða gögn söfnum við með vefkökum?<\/h5><p>Með notkun vefkaka tækni safnum við aðeins nafnlausum tæknilegum gögnum til að bæta þægindi við notkun vefsíðunnar.<\/p><p>Við söfnum ekki gögnum sem gera kleift að bera kennsl á þig. Eini upplýsingin um notandann sem við höfum, en sem án tengingar við önnur gögn gerir ekki kleift að bera kennsl á hann, er IP-tala notandans.<\/p>",
+    "privacy_title": "Persónuverndarstefna",
+    "privacy_subtitle": "Vinnsla persónuupplýsinga",
+    "privacy_content": "<p>Við búum til þetta skjal til að upplýsa þig um Persónuverndarstefnu okkar. Hér muntu læra hver við erum, hvernig við söfnum, notum, birtum og deilum persónuupplýsingum innan ramma <b><&nbsp;Nafn ISP&nbsp;><\/b>, með höfuðstöðvar í [Gata 10, borg og póstnúmer], í hvaða tilgangi við gerum þetta og hvernig einstaklingar sem gagna þeirra er unnið geta krafist réttinda sinna til persónuverndar.<\/p><p><&nbsp;Nafn ISP&nbsp;> ber ábyrgð á vinnslu persónuupplýsinga samkvæmt þessari Persónuverndarstefnu.<\/p><h5>UM OKKUR<\/h5><p>Stjórnandi, sem vinnur persónuupplýsingar í tengslum við notkun þína á þessari þjónustu, er <&nbsp;Nafn ISP&nbsp;>, [Gata 10, borg og póstnúmer]; VSK 1234567890, Regon 123456789,<\/p><h5>SAMSKIPTI VIÐ OKKUR<\/h5><ul><li>Rafrænt á netfang: netfang@dæmi.is,<\/li><li>Með bréfi á heimilisfang: Nafn ISP, [Gata 10, borg og póstnúmer]<\/li><\/ul><h5>REGLUR SEM GILDA Í ÞESSARI PERSÓNUVERNDARSTEFNU<\/h5><p>Við tryggjum að vinnsla upplýsinga þinna fari fram í samræmi við reglur Evrópuþingsins og ráðsins (ESB) nr. 2016/679 frá 27. apríl 2016 um vernd einstaklinga varðandi vinnslu persónuupplýsinga og frjálsa flutning þeirra og um að fella niður tilskipun 95/46/EB (almenn persónuverndarreglugerð) (RODO), lög um vernd persónuupplýsinga og sérreglur. Þessi Persónuverndarstefna hefur verið samin í samræmi við þessar reglur. Við útskýrum skýrt hvernig við söfnum persónuupplýsingum og í hvaða tilgangi þær eru notaðar.<\/p><p>Við vekjum athygli á að <&nbsp;Nafn ISP&nbsp;> safnar persónuupplýsingum og fyrirtækjagögnum sem viðskiptavinir eða hugsanlegir viðskiptavinir og samstarfsaðilar veita, sem og upplýsingum sem fást við notkun á internetþjónustu.<\/p><h5>SÖFNUN PERSÓNUUPPLÝSINGA<\/h5><p>Við söfnum persónuupplýsingum sem notendur veita í eftirfarandi tilfellum:<\/p><ul><li>tilboðsgjöf, samningsákvæði og/eða upplýsingagjöf um þjónustu og aðra starfsemi <&nbsp;Nafn ISP&nbsp;>,<\/li><li>gerð og framkvæmd samninga og viðhald samskipta við viðskiptavini/samstarfsaðila,<\/li><li>efndir á lagalegum skyldum samkvæmt almennum lögum,<\/li><li>svar við spurningum, meðferð kvarta og eftirfylgni þjónustu eftir sölu,<\/li><li>beinni markaðssetningu (að undanskildum fréttabréfum),<\/li><li>til skjalfestingar, sönnunar eða hugsanlegrar ákæru eða varnar fyrir kröfum.<\/li><\/ul><h5>GÆÐI OG EYÐING GAGNA<\/h5><p>Til að tryggja öryggi gagna höfum við þróað innri verklagsreglur og ráðleggingar sem koma í veg fyrir að óviðkomandi aðilar hafi aðgang. Við notum tæknileg, samningsbundin, stjórnunar- og líkamleg öryggisráðstafanir til að vernda gögn fyrir óheimilum aðgangi. Við fylgjum reglulega eftir og athugum hvort þær séu í samræmi við lög.<\/p><p>Við geymum persónuupplýsingar notanda aðeins í það tímabil sem nauðsynlegt er til að uppfylla tilgang þeirra sem þær voru safnaðar fyrir.<\/p><h5>DEILING OG BIRTING GAGNA<\/h5><p>Við seljum eða deilum ekki persónuupplýsingum notenda með þriðja aðila án samþykkis þeirra. Gögn notenda eru ekki notuð til prófílsíunar.<\/p><p>Háð tegund og umfangi samstarfs milli notanda og <&nbsp;Nafn ISP&nbsp;> getur verið nauðsynlegt að deila gögnum notanda ef lög krefjast þess, eða ef það er nauðsynlegt vegna samræmis við lagalega skyldu, til að svara kröfum, eða til að vernda réttindi, eign eða öryggi.<\/p><h5>REGLUR UM VINNSLU GAGNA<\/h5><p>Við leggjum mikla áherslu á að vernda hagsmuni þeirra sem persónuupplýsingar þeirra eru unnar, og sérstaklega að tryggja að gögn séu:<\/p><ul><li>unnið samkvæmt lögum, áreiðanlega og á gagnsæjan hátt fyrir einstaklinginn sem upplýsingarnar varða,<\/li><li>söfnun á skýran, löglega réttlætanlegan hátt og ekki áfram unnið á ósamræmi við þennan tilgang,<\/li><li>viðeigandi, nauðsynleg og takmörkuð við það sem krafist er til að uppfylla tilgang,<\/li><li>rétt og uppfærð eftir þörfum. Við tökum skref til að leiðrétta eða eyða röngum gögnum,<\/li><li>geymd þannig að auðvelt sé að bera kennsl á einstaklinginn í ekki lengri tíma en nauðsynlegt er,<\/li><li>unnið með viðeigandi öryggi til að koma í veg fyrir óheimila eða ólöglega vinnslu, eða slyslegt tap eða eyðingu.<\/li><\/ul><p>Persónuupplýsingar þínar eru yfirleitt unnar á grundvelli samþykkis sem þú getur afturkallað hvenær sem er. Önnur tilfelli eru þegar vinnsla er nauðsynleg til að uppfylla samning milli þín og okkar eða til að framkvæma aðgerðir að beiðni þinni áður en samningur er gerður. Í sumum tilfellum er vinnsla nauðsynleg til að uppfylla lögbundna skyldu okkar sem gagnavinnandi, t.d. samkvæmt vinnurétti eða bókhaldslögum. Vinnsla getur einnig verið nauðsynleg vegna lögmætis hagsmuna okkar, eins og innheimtu krafna í tengslum við viðskipta starfsemi okkar.<\/p><h5>RÉTTINDI ÞÍN<\/h5><p>Þú hefur eftirfarandi réttindi:<\/p><ul><li>Aðgang að persónuupplýsingum þínum og upplýsingum um tegundir gagna, tilgang og að fá afrit,<\/li><li>Rétt til að leiðrétta rangar upplýsingar og bæta við vantar upplýsingar, sem og rétt til að gleymast, þ.e. að láta eyða ólögmætar eða óþarfar upplýsingar,<\\/li><li>Afturkalla samþykki við vinnslu gagna hvenær sem er án þess að hafa áhrif á lögmæta vinnslu sem fram fór fyrir afturköllun (ef vinnsla er á grundvelli 6. gr. 1. mgr. a. eða 9. gr. 2. mgr. RODO).<\/li><\/ul><h5>VEFKÖKUR<\/h5><p><&nbsp;Nafn ISP&nbsp;> notar vefkökur til að auðvelda notkun þjónustunnar. Með notkun samþykkir þú notkun vefkaka og geymslu á tækinu þínu.<\/p><h5>Breytingar á persónuverndarstefnu<\/h5><p><&nbsp;Nafn ISP&nbsp;> áskilur sér rétt til að breyta persónuverndarstefnu vegna þróunar í internet tækni, breytinga á lögum um persónuvernd og þróunar á þjónustu. Við munum upplýsa um allar breytingar á skýran og greinargóðan hátt.<\/p><p>Fyrir allar spurningar varðandi persónuverndarstefnu vinsamlegast hafðu samband á netfang: netfang@dæmi.is<\/p>"
 }

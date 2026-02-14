@@ -7,6 +7,75 @@
     "attr_isp_info": {
         "aria-label": "互联网服务提供商信息"
     },
+    "menu": {
+        "title": "GuardianSuit 菜单",
+        "item1": {
+            "title": "互联网",
+            "icon": "网",
+            "href": "https://yourdomain.com/#",
+            "target": "_blank"
+        },
+        "item2": {
+            "title": "电视",
+            "icon": "视",
+            "href": "https://yourdomain.com/#",
+            "target": "_blank"
+        },
+        "item3": {
+            "title": "电话",
+            "icon": "电",
+            "href": "https://yourdomain.com/#",
+            "target": "_blank"
+        },
+        "item4": {
+            "title": "附加服务",
+            "icon": "附",
+            "href": "https://yourdomain.com/#",
+            "target": "_blank"
+        },
+        "item5": {
+            "title": "联系",
+            "icon": "联",
+            "href": "https://yourdomain.com/#",
+            "target": "_blank"
+        },
+        "item6": {
+            "title": "隐私政策",
+            "icon": "&#167;",
+            "href": {"type": "modal", "title": "privacy_title", "subtitle": "privacy_subtitle", "content": "privacy_content", "iconText": "&#167;"},
+            "target": "_self"
+        },
+        "item7": {
+            "title": "Cookies 文件",
+            "icon": "&#9865;",
+            "href": {"type": "modal", "title": "cookies_title", "subtitle": "cookies_subtitle", "content": "cookies_content", "iconText": "&#9865;"},
+            "target": "_self"
+        },
+        "item8": {
+            "title": "文档",
+            "icon": "&#9783;",
+            "href": "https://github.com/mixmint/opnsense-captive-portal-template/blob/main/README.md",
+            "target": "_blank"
+        },
+        "item9": {
+            "title": "关于程序",
+            "icon": "&#9873;",
+            "href": {"type": "modal", "title": "about_title", "subtitle": "about_subtitle", "content": "about_content", "iconText": "&#9873;"},
+            "target": "_self"
+        },
+        "group1": {
+            "title": "产品与服务",
+            "items": ["item1", "item2", "item3", "item4", "item5"]
+        },
+        "group2": {
+            "title": "信息",
+            "items": ["item6", "item7"]
+        },
+        "group3": {
+            "title": "帮助",
+            "items": ["item8", "item9"]
+        }
+    },
     "footer_isp_info": {},
     "pagetitle": "用户登录系统 | <ISP名称>",
     "username": "用户名 (登录名)",
@@ -77,7 +146,7 @@
     "a11y_helper_prev": "上一步",
     "a11y_helper_done": "完成",
     "a11y-keys_data-title": "键盘快捷键",
-    "a11y-keys_data-content": "<span style=\"font-size: 14px\">按键组合 <br \/><strong>⇧ Shift（左） <br \/>+&nbsp;⌥ Alt（左） <br \/>+&nbsp;字母<\/strong><br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;U<\/strong><br \/>聚焦用户名字段<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;P<\/strong><br \/>聚焦密码字段<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;A<\/strong><br \/>选中/取消选中 \"接受条款\" 复选框<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;R<\/strong><br \/>打开条款模态窗口<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;I<\/strong><br \/>用户登录<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;O<\/strong><br \/>用户登出<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;L<\/strong><br \/>启动语言切换器<\/span>",
+    "a11y-keys_data-content": "<span style=\"font-size: 14px\">按键组合 <br \/><strong>⇧ Shift（左） <br \/>+&nbsp;⌥ Alt（左） <br \/>+&nbsp;字母<\/strong><br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;U<\/strong><br \/>聚焦用户名字段<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;P<\/strong><br \/>聚焦密码字段<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;A<\/strong><br \/>选中/取消选中 \"接受条款\" 复选框<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;R<\/strong><br \/>打开条款模态窗口<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;I<\/strong><br \/>用户登录<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;O<\/strong><br \/>用户登出<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;L<\/strong><br \/>启动语言切换器<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;M<\/strong><br \/>打开侧边菜单（如果已启用）<\/span>",
     "a11y-lang-keys_data-title": "语言切换快捷键",
     "a11y-lang-keys_data-content": "<span style=\"font-size: 14px\">按住 <strong>⇧ Shift（左）并同时或依次按两位语言代码<\/strong>（ISO 639-1）。<br \/><br \/>示例:<br \/><strong>⇧ Shift&nbsp;+&nbsp;P&nbsp;+&nbsp;L<\/strong> → 切换到波兰语 (pl)<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;E&nbsp;+&nbsp;N<\/strong> → 切换到英语 (en)<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;D&nbsp;+&nbsp;E<\/strong> → 切换到德语 (de)<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;F&nbsp;+&nbsp;R<\/strong> → 切换到法语 (fr)<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;E&nbsp;+&nbsp;S<\/strong> → 切换到西班牙语 (es)<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;I&nbsp;+&nbsp;T<\/strong> → 切换到意大利语 (it)<br \/>...<\/span>",
     "polyglotLanguageSwitcher_data-title": "语言选择器",
@@ -97,5 +166,16 @@
     "signin_anon_data-title": "登录",
     "signin_anon_data-content": "点击 <strong>登录<\/strong> 按钮启动互联网连接。",
     "logoff_data-title": "登出",
-    "logoff_data-content": "点击 <strong>登出<\/strong> 按钮结束互联网连接。"
+    "logoff_data-content": "点击 <strong>登出<\/strong> 按钮结束互联网连接。",
+    "menuTrigger_data-title": "侧边菜单",
+    "menuTrigger_data-content": "点击 <strong>&#9776; 侧边汉堡菜单<\/strong> 或同时在键盘上按下 <strong>%s<\/strong> 打开上下文菜单。",
+    "about_title": "GuardianSuit",
+    "about_subtitle": "适用于 OPNsense 的高级 Captive Portal 模板",
+    "about_content": "<p><b>GuardianSuit<\/b> 是一个现代化、响应式且带动画效果的 OPNsense Captive Portal 模板。它为用户提供了吸引人的登录体验，同时让管理员可以完全控制欢迎页的外观和功能。<\/p><p><b>主要功能:<\/b><\/p><ul><li>响应式设计和动画效果。<\/li><li>多语言支持。<\/li><li>外观和配色的轻松定制。<\/li><li>直观的用户体验 (UX) 和符合 WCAG 标准。<\/li><li>与 OPNsense 的简单集成。<\/li><\/ul><p><b>适用场景:<\/b><br \/>适用于企业网络、酒店、咖啡馆以及其他需要视觉吸引力的 Captive Portal 欢迎页的场所。<\/p><p><b>作者:<\/b> Mirosław Majka &lt;mix@proask.pl&gt; | &copy; 2025 GuardianSuit<\/p>",
+    "cookies_title": "Cookie 文件",
+    "cookies_subtitle": "Cookie 文件的使用方式。",
+    "cookies_content": "<h5>什么是 cookie 文件？<\/h5><p>Cookie 文件（即小型文本文件）是由浏览器在访问网页时自动创建的小型文本文件。特定 cookie 文件中的信息只能由该文件来源的网页读取。因此，其他网页无法访问存储在用户计算机上的文件。<\/p><p>通过 cookie 文件中的信息，网页“知道”您如何使用它，并可以相应地调整显示内容或提供帮助。<\/p><h5>我们如何使用 cookie 文件？<\/h5><p>本网站使用技术性 cookie 文件，这些文件对网站的正常运行是必不可少的。我们使用它们来优化网站在访问者常用设备和浏览器上的显示，从而确保您的电脑、平板或手机能正确、清晰地显示网站内容，并记住您是否同意在网站上显示特定内容。<\/p><p>用户无法拒绝技术性 cookie 文件。<\/p><h5>我们使用 cookie 文件的时间有多久？<\/h5><p>我们使用所谓的持久性 cookie 文件，它们会在您的设备上保留一定时间，或者直到您手动删除它们。<\/p><h5>通过 cookie 文件我们收集哪些数据？<\/h5><p>通过 cookie 技术，我们仅收集关于您的匿名技术数据，用于改善您使用我们网站的便利性。<\/p><p>我们不收集任何能够识别您身份的数据。唯一可能涉及用户的、但在不结合其他数据的情况下无法识别其身份的信息，是用户所连接的 IP 地址。<\/p>",
+    "privacy_title": "隐私政策",
+    "privacy_subtitle": "个人数据处理",
+    "privacy_content": "<p>我们创建此文档以告知您我们的隐私政策。在此您将了解到我们是谁、我们如何收集、使用、披露和共享个人数据，以及我们收集这些数据的目的，以及数据主体如何行使其隐私权利，范围内由 <&nbsp;ISP名称&nbsp;> 提供服务，地址为 [ 街道名称10号, 城市及邮政编码等 ]。</p><p><&nbsp;ISP名称&nbsp;> 负责根据本隐私政策处理个人数据。</p><h5>关于我们</h5><p>作为管理员，即处理您使用本服务相关个人数据的实体，是 <&nbsp;ISP名称&nbsp;>，地址为 [ 街道名称10号, 城市及邮政编码等 ]; 税号 NIP 1234567890，注册号 Regon 123456789，</p><h5>联系我们</h5><ul><li>通过电子邮件: adres@email.pl,</li><li>书面信件: <&nbsp;ISP名称&nbsp;>, [ 街道名称10号, 城市及邮政编码等 ]</li></ul><h5>本隐私政策中包含的原则</h5><p>我们确保您的数据处理符合欧洲议会和理事会条例 (EU) 2016/679，即《通用数据保护条例》(RODO)、个人数据保护法及相关特殊法规。本隐私政策是根据这些法规制定的。我们清楚说明了我们如何收集和使用个人数据。</p><p>请注意，<&nbsp;ISP名称&nbsp;> 收集由其潜在客户和合作伙伴提供的个人数据和公司信息，以及通过互联网服务使用过程中获得的数据。</p><h5>收集个人数据</h5><p>我们在以下情况下收集用户提供的个人数据：</p><ul><li>提交报价、协商合作条件和/或提供关于 <&nbsp;ISP名称&nbsp;> 的服务和其他活动信息，</li><li>签订和履行合同，并与客户/合作伙伴保持联系，</li><li>履行法律义务，</li><li>回应问题、处理投诉及其他售后服务，</li><li>直接营销（不包括新闻通讯），</li><li>出于存档（证据）、可能的索赔调查或防御目的。</li></ul><h5>数据存储与删除</h5><p>为了保护所提供的数据，我们制定了内部程序和建议，防止未经授权访问。我们采取技术、合同、管理和物理措施保护数据安全。我们监督这些措施的执行，并定期检查其合法性。</p><p>我们仅在实现数据收集目的所必需的期间内保存用户个人数据。</p><h5>数据共享与披露</h5><p>未经用户同意，我们不向第三方出售或披露用户个人数据。用户数据不用于画像分析。</p><p>根据用户与 <&nbsp;ISP名称&nbsp;> 的合作类型和范围，为遵守法律或合同义务、应对索赔或保护权利、财产或安全的目的，我们可能会共享用户数据。</p><h5>数据处理原则</h5><p>我们尽最大努力保护数据主体的利益，确保数据：</p><ul><li>依法、诚信并以透明方式处理，</li><li>为特定、明确且合法的目的收集，不作超出目的的处理，</li><li>适当、相关且限于实现目的所必需的数据，</li><li>准确并在必要时更新；如数据不准确，及时删除或更正，</li><li>以可识别个人的形式存储的时间不超过实现目的所必需的期间，</li><li>以安全方式处理，包括防止非法或不当处理及意外丢失或破坏。</li></ul><p>我们通常基于用户同意处理个人数据，用户可随时撤销。另一情况是，为履行与用户签订的合同或用户提出请求（在合同签订前）所需的数据处理。在某些情况下，为履行法律义务（如劳动法、会计法）或我们的合法利益（如索赔追索）也需要处理数据。</p><h5>您的权利</h5><p>您享有以下权利：</p><ul><li>访问您的个人数据内容及获取信息，包括数据类别、处理目的及数据副本，</li><li>更正不准确或补充缺失数据，以及被遗忘权，即删除不当或无合法依据处理的数据（例如，数据不再为收集目的所必需），</li><li>随时撤回同意，不影响撤回前基于同意的合法处理（如果处理基于 RODO 第6条第1款a项或第9条第2款a项）。</li></ul><h5>Cookies</h5><p><&nbsp;ISP名称&nbsp;> 使用 Cookie 文件以便于服务使用。使用本服务即表示您同意使用 Cookie。如未阻止 Cookie，表示您同意其在设备中保存。</p><h5>隐私政策变更</h5><p><&nbsp;ISP名称&nbsp;> 保留更改隐私政策的权利，可能受互联网技术发展、相关法律变更及管理员提供服务变化影响。我们将以清晰易懂方式通知所有更改。</p><p>如有关于隐私政策的问题，请发送邮件至: adres@email.pl</p>"
 }

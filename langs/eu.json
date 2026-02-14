@@ -7,6 +7,75 @@
     "attr_isp_info": {
         "aria-label": "Internet hornitzaileari buruzko informazioa"
     },
+    "menu": {
+        "title": "GuardianSuit Menu",
+        "item1": {
+            "title": "Internet",
+            "icon": "I",
+            "href": "https://yourdomain.com/#",
+            "target": "_blank"
+        },
+        "item2": {
+            "title": "Telebista",
+            "icon": "T",
+            "href": "https://yourdomain.com/#",
+            "target": "_blank"
+        },
+        "item3": {
+            "title": "Telefonoa",
+            "icon": "O",
+            "href": "https://yourdomain.com/#",
+            "target": "_blank"
+        },
+        "item4": {
+            "title": "Zerbitzu osagarriak",
+            "icon": "Z",
+            "href": "https://yourdomain.com/#",
+            "target": "_blank"
+        },
+        "item5": {
+            "title": "Kontaktua",
+            "icon": "K",
+            "href": "https://yourdomain.com/#",
+            "target": "_blank"
+        },
+        "item6": {
+            "title": "Pribatutasun politika",
+            "icon": "&#167;",
+            "href": {"type": "modal", "title": "privacy_title", "subtitle": "privacy_subtitle", "content": "privacy_content", "iconText": "&#167;"},
+            "target": "_self"
+        },
+        "item7": {
+            "title": "Cookies fitxategiak",
+            "icon": "&#9865;",
+            "href": {"type": "modal", "title": "cookies_title", "subtitle": "cookies_subtitle", "content": "cookies_content", "iconText": "&#9865;"},
+            "target": "_self"
+        },
+        "item8": {
+            "title": "Dokumentazioa",
+            "icon": "&#9783;",
+            "href": "https://github.com/mixmint/opnsense-captive-portal-template/blob/main/README.md",
+            "target": "_blank"
+        },
+        "item9": {
+            "title": "Programari buruz",
+            "icon": "&#9873;",
+            "href": {"type": "modal", "title": "about_title", "subtitle": "about_subtitle", "content": "about_content", "iconText": "&#9873;"},
+            "target": "_self"
+        },
+        "group1": {
+            "title": "Eskaintza",
+            "items": ["item1", "item2", "item3", "item4", "item5"]
+        },
+        "group2": {
+            "title": "Informazioa",
+            "items": ["item6", "item7"]
+        },
+        "group3": {
+            "title": "Laguntza",
+            "items": ["item8", "item9"]
+        }
+    },
     "footer_isp_info": {},
     "pagetitle": "Erabiltzaileen saioa hasteko sistema | < ISP Izena >",
     "username": "Erabiltzaile izena (Login)",
@@ -77,7 +146,7 @@
     "a11y_helper_prev": "Aurrekoa",
     "a11y_helper_done": "Amaitu",
     "a11y-keys_data-title": "Tekla lasterbideak",
-    "a11y-keys_data-content": "<span style=\"font-size: 14px\">Tekla konbinazioa <br \/><strong>⇧ Shift (ezkerrekoa) <br \/>+&nbsp;⌥ Alt (ezkerrekoa) <br \/>+&nbsp;letra<\/strong><br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;U<\/strong><br \/>Fokua Erabiltzaile izena eremuan<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;P<\/strong><br \/>Fokua Pasahitza eremuan<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;A<\/strong><br \/>\"Arauen onartzen dut\" hautaketa kutxa markatu/deskonektatu<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;R<\/strong><br \/>Arauen leiho modalaren irekiera<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;I<\/strong><br \/>Erabiltzailea sartzen du<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;O<\/strong><br \/>Erabiltzailea irteten du<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;L<\/strong><br \/>Hizkuntza aldaketa abiarazten du<\/span>",
+    "a11y-keys_data-content": "<span style=\"font-size: 14px\">Tekla konbinazioa <br \/><strong>⇧ Shift (ezkerrekoa) <br \/>+&nbsp;⌥ Alt (ezkerrekoa) <br \/>+&nbsp;letra<\/strong><br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;U<\/strong><br \/>Fokua Erabiltzaile izena eremuan<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;P<\/strong><br \/>Fokua Pasahitza eremuan<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;A<\/strong><br \/>\"Arauen onartzen dut\" hautaketa kutxa markatu/deskonektatu<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;R<\/strong><br \/>Arauen leiho modalaren irekiera<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;I<\/strong><br \/>Erabiltzailea sartzen du<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;O<\/strong><br \/>Erabiltzailea irteten du<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;L<\/strong><br \/>Hizkuntza aldaketa abiarazten du<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;M<\/strong><br \/>offcanvas-menua irekitzen du (gaituta badago)<\/span>",
     "a11y-lang-keys_data-title": "Hizkuntzen lasterbideak",
     "a11y-lang-keys_data-content": "<span style=\"font-size: 14px\">Eutsi <strong>⇧ Shift (ezkerrekoa) eta sakatu hizkuntza kodeko bi letra<\/strong> (ISO 639-1) aldi berean edo bat bestearen ondoren.<br \/><br \/>Adibideak:<br \/><strong>⇧ Shift&nbsp;+&nbsp;P&nbsp;+&nbsp;L<\/strong> → Aldatu Poloniara (pl)<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;E&nbsp;+&nbsp;N<\/strong> → Aldatu ingelesera (en)<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;D&nbsp;+&nbsp;E<\/strong> → Aldatu alemanez (de)<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;F&nbsp;+&nbsp;R<\/strong> → Aldatu frantsesera (fr)<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;E&nbsp;+&nbsp;S<\/strong> → Aldatu gaztelaniara (es)<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;I&nbsp;+&nbsp;T<\/strong> → Aldatu italierara (it)<br \/>...<\/span>",
     "polyglotLanguageSwitcher_data-title": "Hizkuntza hautatzailea",
@@ -97,5 +166,16 @@
     "signin_anon_data-title": "Sartu",
     "signin_anon_data-content": "Klik eginez <strong>Sartu<\/strong> botoian, Interneteko konexioa hasiko duzu.",
     "logoff_data-title": "Irten",
-    "logoff_data-content": "Klik eginez <strong>Irten<\/strong> botoian, Interneteko konexioa amaituko duzu."
+    "logoff_data-content": "Klik eginez <strong>Irten<\/strong> botoian, Interneteko konexioa amaituko duzu.",
+    "menuTrigger_data-title": "Offcanvas Menua",
+    "menuTrigger_data-content": "Klikatuz <strong>&#9776; offcanvas hamburger<\/strong> edo teklatuan aldi berean <strong>%s<\/strong> sakatuz, testuinguru-menua irekiko duzu.",
+    "about_title": "GuardianSuit",
+    "about_subtitle": "OPNsense-rako Captive Portal-en aurreratua den txantiloia",
+    "about_content": "<p><b>GuardianSuit<\/b> OPNsense-rako moderno, erantzunkorra eta animatua den Captive Portal txantiloia da. Erabiltzaileek saio-atze esperientzia erakargarria izatea bermatzen du, eta administratzaileek harrera-orriaren itxura eta funtzionalitatearen kontrol osoa izatea.<\/p><p><b>Funtzio gakoak:<\/b><\/p><ul><li>Erantzunkortasuna eta animazioak.<\/li><li>Aniztasun linguistikoa.<\/li><li>Itxura eta koloretza erraz pertsonalizatzeko aukera.<\/li><li>UX intuitiboa eta WCAG-ri jarraikortasuna.<\/li><li>OPNsense-rekin integrazio erraza.<\/li><\/ul><p><b>Erabilera:<\/b><br \/>Sare korporatiboentzat, hoteletarako, kafetegietarako eta Captive Portal harrera-orri erakargarriak behar dituzten beste lekuentzat egokia.<\/p><p><b>Egilea:<\/b> Mirosław Majka &lt;mix@proask.pl&gt; | &copy; 2025 GuardianSuit<\/p>",
+    "cookies_title": "Cookie Fitxategiak",
+    "cookies_subtitle": "Nola erabiltzen dira cookie fitxategiak.",
+    "cookies_content": "<h5>Zer da cookie fitxategia?<\/h5><p>Cookie fitxategiak (hau da, \"cookies\") testu fitxategi txikiak dira, arakatzaileak automatikoki sortuak, web orriak bisitatzean. Cookie fitxategi jakin batean dauden informazioak soilik jatorrizko webguneak irakur ditzake. Beraz, webguneak ezin du beste fitxategietara sarbidea izan erabiltzailearen ordenagailuan.<\/p><p>Cookie fitxategietan dauden informazioari esker, webguneak \"jakiten\" du nola erabiltzen duzun eta zuretzat egokiak diren edukiak erakutsi edo laguntza eskaini dezake.<\/p><h5>Zer helbururekin erabiltzen ditugu cookie fitxategiak?<\/h5><p>Gunean cookie teknikoak erabiltzen ditugu, gunea behar bezala funtzionatzeko ezinbestekoak direnak. Horiek erabiltzen ditugu gure webgunea gailu eta arakatzaile nagusien arabera optimizatzeko – horrela zure ordenagailuak, tabletak edo telefonoak webgunea zuzena eta irakurgarria erakutsiko du eta zure baimena onartu baduzu, aukeratutako edukien bistaratzea gogoratuko du.<\/p><p>Erabiltzaileak ezin du cookie teknikoetatik uko egin.<\/p><h5>Zenbat denbora erabiltzen ditugu cookie fitxategiak?<\/h5><p>Cookie iraunkorrak erabiltzen ditugu, zure gailuan denbora jakin bat egoten direnak edo eskuz ezabatu arte.<\/p><h5>Zer datu biltzen ditugu cookie fitxategien bidez?<\/h5><p>Cookie teknologia bidez, zure inguruko datu tekniko anonimoak bakarrik biltzen ditugu, gure gunean nabigazioa hobetzeko.<\/p><p>Ez dugu zure identifikaziorako daturik biltzen. Erabiltzaileari buruzko informazio bakarra, beste datuekin konbinatu gabe, identifikaziorako baliagarria ez dena, erabiltzaileak konektatzen den IP helbidea da.<\/p>",
+    "privacy_title": "Pribatutasun Politika",
+    "privacy_subtitle": "Datu pertsonalen prozesamendua",
+    "privacy_content": "<p>Dokumentu hau sortzen dugu gure Pribatutasun Politikaren berri emateko. Hemen jakin ahal izango duzu nor garen, nola biltzen, erabiltzen, argitzen eta partekatzen ditugun datu pertsonalak <b><&nbsp;ISP Izena&nbsp;></b> barruan, egoitza duen [ Kalea 10, hiria eta posta kodea ], zein helbururekin egiten dugun eta nola egin dezaketen datuak prozesatzen ditugun pertsonek beren pribatutasun eskubideak erabili.<\/p><p><&nbsp;ISP Izena&nbsp;> arduratzen da datu pertsonalen prozesamenduaz Pribatutasun Politika honen arabera.<\/p><h5>GURI BURUZ<\/h5><p>Administratzailea, hau da, zure zerbitzu honen erabilerarekin lotutako datuak prozesatzen dituena, <&nbsp;ISP Izena&nbsp;>, [ Kalea 10, hiria eta posta kodea ]; NIF 1234567890, Erregon 123456789,<\/p><h5>HARREMANA GUREKIN<\/h5><ul><li>Elektronikoki helbide honetara: email@helbidea.com,<\/li><li>Idatziz helbidera: ISP Izena, [ Kalea 10, hiria eta posta kodea ]<\/li><\/ul><h5>POLITIKAN SARTUTA DAUDEN PRINTZIPIOAK<\/h5><p>Zaintzen dugu zure datuen prozesamendua Europar Batasuneko Parlamentuaren eta Kontseiluaren Erregelamendu (UE) 2016/679aren arabera egiten dela, pertsona fisikoen babesari buruz eta datuen libreko fluxuari buruz, baita 95/46/WE zuzentaraua indargabetzearekin (datuen babes orokorra) (RODO), datu pertsonalen babesa arautzen duen legea eta bestelako arau bereziekin. Pribatutasun Politika hau arau horiekin bat etorriz prestatu da. Argiki adierazten dugu nola biltzen ditugun datu pertsonalak eta zein helbururekin erabiltzen diren.<\/p><p>Aipatzen dugu <&nbsp;ISP Izena&nbsp;>, datu pertsonalak eta enpresa informazioa biltzen dituela bezero (edo bezero potentzial) eta kontratistentzat, baita Interneteko sarbide zerbitzuan erabiltzean lortutako datuak ere.<\/p><h5>Datu Pertsonalen BILKETA<\/h5><p>Ondorengo kasuetan jasotzen ditugu erabiltzaileek emandako datu pertsonalak:<\/p><ul><li>Eskaintzak aurkeztea, lankidetza baldintzak ezartzea eta <&nbsp;ISP Izena&nbsp;> zerbitzu eta beste jardueren informazioa ematea,<\/li><li>Itunak sinatzea eta betetzea, eta bezero/kontratistearekin kontaktua mantentzea,<\/li><li>Lege betebeharrak betetzea,<\/li><li>Galderak erantzutea, erreklamazioak eta post-salmentako bestelako zerbitzuak kudeatzea,<\/li><li>Zuzenean marketina (newsletter-etik aparte),<\/li><li>Artxibo eta frogako helburuetarako, behar izanez gero erreklamazioak ezartzea, ikertzea edo defentsa egitea.<\/li><\/ul><h5>Datuen BILKETA ETA EZABAPENA<\/h5><p>Datuak seguru mantentzeko barne prozedura eta gomendioak garatu ditugu, baimenik gabeko pertsonak sar ez daitezen. Neurri teknologiko, kontratu, administratibo eta fisikoak erabiltzen ditugu datuen babeserako. Haien betetzeaz eta lege egokitasunaz etengabe zaintzen dugu.<\/p><p>Erabiltzailearen datuak beharrezko den denbora baino ez ditugu gordetzen, hartzeko helburuak betetzeko.<\/p><h5>Datuen PARTEKATZEA ETA ARGITZEA<\/h5><p>Ez dugu erabiltzaileen datu pertsonalak hirugarrenei saltzen edo partekatzen baimenik gabe. Ez dira erabiltzaileen datuak profilatuak.<\/p><p>Erabiltzailearen eta <&nbsp;ISP Izena&nbsp;> arteko lankidetza motaren arabera, legeak eskatzen badu edo jarduera juridikoen betetzean beharrezkoa bada, erabiltzailearen datuak eman ditzakegu, eskubideak, ondarea edo segurtasuna babesteko.<\/p><h5>NOLA PROZESATZEN DITUGU ZURE DATUAK<\/h5><p>Gure ahalegina egiten dugu datuak prozesatzen diren pertsonen interesak babesteko, eta bereziki, datu hauek izan daitezen:<\/p><ul><li>Legearen arabera prozesatuak, zuzenak eta gardentasunez pertsonarentzat,<\/li><li>Helburu zehatz, argi eta legez justifikatuekin biltzen direnak, eta ez helburu horiekin bat ez datozen moduan prozesatuak,<\/li><li>Helbururako beharrezkoak diren neurrian egokiak eta murriztuta,<\/li><li>Zuzenduak eta behar izanez gero eguneratuak. Datu okerrak berehala ezabatzea edo zuzentzea,<\/li><li>Identifikatzeko moduan gordeta, beharrezko den denbora baino ez,<\/li><li>Datuak segurtasunez prozesatuta, baimenik gabeko edo legearen kontrako erabilera edo galtzea saihestuz.<\/li><\/ul><p>Zure datuak normalean baimenaren arabera prozesatzen dira, edozein unetan atzera bota daitekeena. Bestela, zure eta gure arteko kontratu baten betetzea edo zure eskaera aurretik ekintza bat egiteko beharrezkoa bada. Kasu batzuetan, lege betebehar bat betetzea beharrezkoa da. Halaber, gure interes legez justifikatuekin lotutako helburuetarako, adibidez eskubideen defentsa.<\/p><h5>ZURE ESKUBIDEAK<\/h5><p>Hurrengo eskubideak dituzu:<\/p><ul><li>Zure datuak eta kopiak lortzeko, kategoriak eta prozesatzeko helburuak jakiteko,<\/li><li>Datu okerrak zuzendu edo falta direnak osatu, eta ahaztu izateko eskubidea, hau da, datuak behar gabe edo lege kontrakoak ezabatzeko eskubidea,<\/li><li>Baimena atzera botatzea edozein unetan, aurretik emandako baimenaren arabera prozesatu bada ere.<\/li><\/ul><h5>COOKIES<\/h5><p><&nbsp;ISP Izena&nbsp;> cookie fitxategiak erabiltzen ditu zerbitzua errazteko. Zerbitzua erabiliz, cookieak erabiltzeko baimena ematen duzu. Ez badituzu blokeatzen, ados zaude horien erabilera eta gailuan gordetzearekin.<\/p><h5>Datuen Babeserako Politika Aldaketak<\/h5><p><&nbsp;ISP Izena&nbsp;> eskubidea du datu babeserako politikak aldatzeko, teknologia edo lege aldaketek eragindakoak. Aldaketak argi eta garbi jakinaraziko dira.<\/p><p>Politikarekin lotutako galderak: email@helbidea.com<\/p>"
 }

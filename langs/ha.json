@@ -7,6 +7,75 @@
     "attr_isp_info": {
         "aria-label": "Bayanai game da mai bayar da intanet"
     },
+    "menu": {
+        "title": "Menu GuardianSuit",
+        "item1": {
+            "title": "Intanet",
+            "icon": "I",
+            "href": "https://yourdomain.com/#",
+            "target": "_blank"
+        },
+        "item2": {
+            "title": "Talabijin",
+            "icon": "T",
+            "href": "https://yourdomain.com/#",
+            "target": "_blank"
+        },
+        "item3": {
+            "title": "Wayar Tarho",
+            "icon": "W",
+            "href": "https://yourdomain.com/#",
+            "target": "_blank"
+        },
+        "item4": {
+            "title": "Sauran Ayyuka",
+            "icon": "S",
+            "href": "https://yourdomain.com/#",
+            "target": "_blank"
+        },
+        "item5": {
+            "title": "Tuntuɓi",
+            "icon": "N",
+            "href": "https://yourdomain.com/#",
+            "target": "_blank"
+        },
+        "item6": {
+            "title": "Manufofin Sirri",
+            "icon": "&#167;",
+            "href": {"type": "modal", "title": "privacy_title", "subtitle": "privacy_subtitle", "content": "privacy_content", "iconText": "&#167;"},
+            "target": "_self"
+        },
+        "item7": {
+            "title": "Fayilolin Kukis",
+            "icon": "&#9865;",
+            "href": {"type": "modal", "title": "cookies_title", "subtitle": "cookies_subtitle", "content": "cookies_content", "iconText": "&#9865;"},
+            "target": "_self"
+        },
+        "item8": {
+            "title": "Takardun Bayani",
+            "icon": "&#9783;",
+            "href": "https://github.com/mixmint/opnsense-captive-portal-template/blob/main/README.md",
+            "target": "_blank"
+        },
+        "item9": {
+            "title": "Game da Shirin",
+            "icon": "&#9873;",
+            "href": {"type": "modal", "title": "about_title", "subtitle": "about_subtitle", "content": "about_content", "iconText": "&#9873;"},
+            "target": "_self"
+        },
+        "group1": {
+            "title": "Tayinmu",
+            "items": ["item1", "item2", "item3", "item4", "item5"]
+        },
+        "group2": {
+            "title": "Bayanan",
+            "items": ["item6", "item7"]
+        },
+        "group3": {
+            "title": "Taimako",
+            "items": ["item8", "item9"]
+        }
+    },
     "footer_isp_info": {},
     "pagetitle": "Tsarin shiga na masu amfani | < Sunan ISP >",
     "username": "Sunan mai amfani (Login)",
@@ -78,7 +147,7 @@
     "a11y_helper_prev": "Baya",
     "a11y_helper_done": "Ƙare",
     "a11y-keys_data-title": "Gajerun hanyoyin maballin",
-    "a11y-keys_data-content": "<span style=\"font-size: 14px\">Haɗin maballin <br \/><strong>⇧ Shift (hagu) <br \/>+&nbsp;⌥ Alt (hagu) <br \/>+&nbsp;harafi<\/strong><br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;U<\/strong><br \/>mayar da hankali zuwa filin Sunan mai amfani<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;P<\/strong><br \/>mayar da hankali zuwa filin Kalmar sirri<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;A<\/strong><br \/>zaɓa/ɓata alamar \"Na yarda da Ka’idoji\"<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;R<\/strong><br \/>bude taga modal na Ka’idoji<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;I<\/strong><br \/>shiga mai amfani<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;O<\/strong><br \/>fita mai amfani<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;L<\/strong><br \/>kaddamar da zaɓin harshe<\/span>",
+    "a11y-keys_data-content": "<span style=\"font-size: 14px\">Haɗin maballin <br \/><strong>⇧ Shift (hagu) <br \/>+&nbsp;⌥ Alt (hagu) <br \/>+&nbsp;harafi<\/strong><br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;U<\/strong><br \/>mayar da hankali zuwa filin Sunan mai amfani<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;P<\/strong><br \/>mayar da hankali zuwa filin Kalmar sirri<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;A<\/strong><br \/>zaɓa/ɓata alamar \"Na yarda da Ka’idoji\"<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;R<\/strong><br \/>bude taga modal na Ka’idoji<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;I<\/strong><br \/>shiga mai amfani<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;O<\/strong><br \/>fita mai amfani<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;L<\/strong><br \/>kaddamar da zaɓin harshe<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;M<\/strong><br \/>yana buɗe menu na offcanvas (idan an kunna)<\/span>",
     "a11y-lang-keys_data-title": "Gajerun hanyoyin maballin fassarar harsuna",
     "a11y-lang-keys_data-content": "<span style=\"font-size: 14px\">Riƙe <strong>⇧ Shift (hagu) kuma danna haruffan ISO 639-1 na harshe biyu<\/strong> lokaci guda ko ɗaya bayan ɗaya.<br \/><br \/>Misalai:<br \/><strong>⇧ Shift&nbsp;+&nbsp;P&nbsp;+&nbsp;L<\/strong> → sauya zuwa Hausa (ha)<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;E&nbsp;+&nbsp;N<\/strong> → sauya zuwa Turanci (en)<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;D&nbsp;+&nbsp;E<\/strong> → sauya zuwa Jamusanci (de)<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;F&nbsp;+&nbsp;R<\/strong> → sauya zuwa Faransanci (fr)<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;E&nbsp;+&nbsp;S<\/strong> → sauya zuwa Sifaniyanci (es)<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;I&nbsp;+&nbsp;T<\/strong> → sauya zuwa Italiyanci (it)<br \/>...<\/span>",
     "polyglotLanguageSwitcher_data-title": "Zaɓin Fassarar Harsuna",
@@ -98,5 +167,16 @@
     "signin_anon_data-title": "Shiga",
     "signin_anon_data-content": "Danna maɓallin <strong>Shiga<\/strong> don haɗawa da intanet.",
     "logoff_data-title": "Fita",
-    "logoff_data-content": "Danna maɓallin <strong>Fita<\/strong> don katse haɗin intanet."
+    "logoff_data-content": "Danna maɓallin <strong>Fita<\/strong> don katse haɗin intanet.",
+    "menuTrigger_data-title": "Menu na offcanvas",
+    "menuTrigger_data-content": "Danna <strong>&#9776; offcanvas hamburger<\/strong> ko latsa a lokaci guda a kan madannin <strong>%s<\/strong> don buɗe menu na mahallin.",
+    "about_title": "GuardianSuit",
+    "about_subtitle": "Ci gaban samfurin Captive Portal don OPNsense",
+    "about_content": "<p><b>GuardianSuit<\/b> wani zamani ne, mai mayar da martani kuma mai rai samfurin Captive Portal don OPNsense. Yana ba masu amfani da shi ƙwarewar shiga mai kayatarwa, kuma yana ba masu gudanarwa cikakken iko akan bayyanar da ayyukan shafin maraba.<\/p><p><b>Muhimman fasaloli:<\/b><\/p><ul><li>Mai mayar da martani da animations.<\/li><li>Yare da yawa.<\/li><li>Sauƙin gyara bayyanar da launuka.<\/li><li>UX mai fahimta da bin ka'idojin WCAG.<\/li><li>Sauƙin haɗawa da OPNsense.<\/li><\/ul><p><b>Amfani:<\/b><br \/>Mafi dacewa ga cibiyoyin kamfanoni, otal-otal, kafe-kafe da sauran wurare da ke buƙatar shafin maraba mai kayatarwa na Captive Portal.<\/p><p><b>Marubuci:<\/b> Mirosław Majka &lt;mix@proask.pl&gt; | &copy; 2025 GuardianSuit<\/p>",
+    "cookies_title": "Fayilolin Kukis",
+    "cookies_subtitle": "Yadda ake amfani da fayilolin kukis.",
+    "cookies_content": "<h5>Menene fayil ɗin kuki?<\/h5><p>Fayilolin kukis (wanda ake kira ƙanana fayilolin rubutu) ƙananan fayilolin rubutu ne da burauzar yanar gizo ke ƙirƙira ta atomatik yayin ziyartar shafukan yanar gizo. Bayanan da ke cikin kuki ɗaya za a iya karantawa kawai daga shafin da ya samar da wannan fayil ɗin. Wannan yana nufin cewa shafin yanar gizon ba zai iya samun damar sauran fayiloli a kwamfutarka ba.<\/p><p>Tare da bayanan da ke cikin kukis, shafin yana "sanin" yadda kake amfani da shi kuma zai iya daidaita abubuwan da aka nuna maka ko ba da taimako yadda ya kamata.<\/p><h5>Me yasa muke amfani da fayilolin kukis?<\/h5><p>Shafin yana amfani da kukis na fasaha waɗanda suke da muhimmanci don aikin shafin yadda ya kamata. Muna amfani da su don inganta shafin mu ga na'urori da burauzar da masu ziyarta ke amfani da su – hakan yana tabbatar da cewa kwamfutarka, kwamfutar hannu ko wayarka ta nuna shafin daidai kuma a bayyane, tare da tunawa ko ka ba da izinin nuna wasu abubuwan da aka zaɓa a shafin yanar gizo.<\/p><p>Ba za a iya kawar da kukis na fasaha ba.<\/p><h5>Har yaushe muke amfani da fayilolin kukis?<\/h5><p>Muna amfani da fayilolin kukis na dindindin, waɗanda suke kasancewa a na'urarka na wani lokaci ko har sai ka goge su da hannu.<\/p><h5>Wadanne bayanai muke tattarawa ta hanyar fayilolin kukis?<\/h5><p>Ta amfani da fasahar kuki, muna tattarawa kawai bayanan fasaha marasa suna game da kai, waɗanda ke taimakawa wajen inganta amfani da shafin mu.<\/p><p>Ba ma tattara wani bayani da zai iya bayyana ainihinka. Bayanin da ya wanzu game da mai amfani, wanda ba tare da haɗawa da wasu bayanai ba, ba zai iya bayyana ainihinka ba, shi ne adireshin IP ɗin da mai amfani ke haɗawa da shi.<\/p>",
+    "privacy_title": "Manufofin Sirri",
+    "privacy_subtitle": "Sarrafa Bayanan Mutane",
+    "privacy_content": "<p>Muna ƙirƙirar wannan takaddar ne don sanar da kai game da Manufofin Sirri ɗinmu. Za ka koyi a nan wanda muke, yadda muke tattara, amfani, bayyana da raba bayanan mutum a karkashin <b>< Sunan ISP ><\/b>, < Adireshin ISP >, dalilin yin haka da yadda waɗanda muke sarrafa bayanansu za su iya aiwatar da haƙƙinsu na sirri.<\/p><p>< Sunan ISP > yana da alhakin sarrafa bayanan mutum bisa wannan Manufofin Sirri.<\/p><h5>GAME DA MU<\/h5><p>Mai gudanarwa, wato wanda ke sarrafa bayanan mutum dangane da amfani da wannan sabis, shi ne < Sunan ISP >, < Adireshin ISP >; NIP 1234567890, Regon 123456789,<\/p><h5>TUNTUBE MU<\/h5><ul><li>Ta imel: adres@email.pl,<\/li><li>Ta rubutu zuwa: < Sunan ISP >, < Adireshin ISP ><\/li><\/ul><h5>KA'IDOJIN DA KE CIKIN WANNAN MANUFOFIN SIRRI<\/h5><p>Muna tabbatar da cewa sarrafa bayananka yana gudana bisa dokokin Majalisar Turai da Hukumar (EU) 2016/679 da sauran dokoki masu dacewa. Wannan Manufofin Sirri an shirya shi bisa waɗannan dokoki. Muna bayyana a fili yadda muke tattara bayanai da dalilin amfani da su.<\/p><p>Lura cewa < Sunan ISP > yana tattara bayanan mutum da bayanan kamfani da abokan (da ake iya yiwuwa) suka bayar, da kuma bayanan da aka samu yayin amfani da sabis na intanet.<\/p><h5>TATTARA BAYANAN MUTANE<\/h5><p>Muna tattara bayanan mutum daga masu amfani a waɗannan yanayi:<\/p><ul><li>Bayar da tayin, tsara sharuddan haɗin gwiwa da/ko bayar da bayani game da ayyuka da sauran ayyuka na < Sunan ISP >,<\/li><li>Kulla da aiwatar da kwangila da kula da alaƙa da abokin ciniki/abokin haɗin gwiwa,<\/li><li>Cika wajibai na doka,<\/li><li>Amsa tambayoyi, magance ƙorafe-ƙorafe da sauran sabis bayan sayarwa,<\/li><li>Tallan kai tsaye (banda wasiƙun labarai),<\/li><li>Dalilan ajiya (shaida, bincike ko kariya daga da'awa).<\/li><\/ul><h5>AJIYA DA GOGE BAYANAI<\/h5><p>Don kiyaye tsaron bayanan da aka ba mu, mun samar da tsarin ciki da shawarwari don hana ba da izini ga waɗanda ba su dace ba. Muna amfani da matakan fasaha, kwangila, gudanarwa da na jiki don kare bayanan daga shiga ba bisa ƙa'ida ba. Muna kula da aiwatarwa da duba daidaito da dokoki akai-akai.<\/p><p>Muna ajiye bayanan mutum na mai amfani kawai na lokacin da ake buƙata don cimma dalilan tattara su.<\/p><h5>RABA DA BAYYANA BAYANAI<\/h5><p>Ba ma sayarwa ko bayar da bayanan mutum ga wasu ba tare da izinin su ba. Bayanan masu amfani ba sa ƙarƙashin tsarin ƙirƙirar bayanai na sirri.<\/p><p>Dangane da nau'i da iyaka na haɗin gwiwa tsakanin mai amfani da < Sunan ISP >, za mu iya raba bayanan mai amfani idan dokokin doka sun buƙata, ko don bin dokokin kwangila, amsa da'awa, ko kare haƙƙi, dukiya ko tsaro.<\/p><h5>KA'IDOJIN SARRAFAR BAYANANKA<\/h5><p>Muna tabbatar da cewa bayanai da muke sarrafawa:<\/p><ul><li>An sarrafa su bisa doka, gaskiya kuma a fili ga wanda bayanan suke shafa,<\/li><li>An tattara su don dalilai takamaimai da doka ta amince da su kuma ba a ci gaba da sarrafa su ba tare da dalili ba,<\/li><li>Dace, masu amfani da su da iyakance ga abin da ake bukata kawai,<\/li><li>Sahihi kuma idan ya cancanta a sabunta. Muna daukar mataki don gyara ko goge bayanai marasa dacewa,<\/li><li>Ajiye su a tsarin da zai iya gano mutum, na lokacin da ya dace kawai,<\/li><li>An sarrafa su cikin tsaro mai kyau, karewa daga shiga ba bisa doka ba ko lalacewa.<\/li><\/ul><p>Muna sarrafa bayananka yawanci bisa izinin ka, wanda za ka iya janye a kowane lokaci. Wasu lokuta, sarrafa bayananka yana da muhimmanci don cika kwangila ko wajibi na doka ko hakkin mu na doka.<\/p><h5>HAKKIN KA<\/h5><p>Kana da waɗannan haƙƙoƙi:<\/p><ul><li>Sami damar ganin bayananka da kwafi, da kuma sanin nau'in bayanai da dalilin sarrafa su,<\/li><li>Gyara kurakurai da cike gibin bayanai, da kuma a manta da kai, wato share bayanan da aka sarrafa ba bisa ka'ida ba,<\/li><li>Janye izinin sarrafa bayanai a kowane lokaci ba tare da tasiri kan doka ba (idan sarrafa ya kasance bisa sashe na doka).<\/li><\/ul><h5>KUKIS<\/h5><p>< Sunan ISP > yana amfani da fayilolin kukis don sauƙaƙe amfani da sabis. Ta amfani da sabis, kana amincewa da amfani da kukis. Idan ba ka toshe su ba, ka amince da amfani da su kuma ajiye su a na'urarka.<\/p><h5>CANJE-CANJEN MANUFOFIN SIRRI<\/h5><p>< Sunan ISP > yana da haƙƙi ya canza manufofin sirri bisa ci gaban fasahar intanet, canjin doka, da sabis da mai gudanarwa ke bayarwa. Za mu sanar da duk canje-canje a fili.<\/p><p>Don tambayoyi game da manufofin sirri, a turo imel zuwa: adres@email.pl<\/p>"
 }

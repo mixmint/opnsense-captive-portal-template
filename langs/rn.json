@@ -7,6 +7,75 @@
     "attr_isp_info": {
         "aria-label": "Amakuru ku muhezangurisha w'Internet"
     },
+    "menu": {
+        "title": "Ibikubiyemo GuardianSuit",
+        "item1": {
+            "title": "Internet",
+            "icon": "I",
+            "href": "https://yourdomain.com/#",
+            "target": "_blank"
+        },
+        "item2": {
+            "title": "Televiziyo",
+            "icon": "V",
+            "href": "https://yourdomain.com/#",
+            "target": "_blank"
+        },
+        "item3": {
+            "title": "Telefoni",
+            "icon": "T",
+            "href": "https://yourdomain.com/#",
+            "target": "_blank"
+        },
+        "item4": {
+            "title": "Serivisi z’inyongera",
+            "icon": "S",
+            "href": "https://yourdomain.com/#",
+            "target": "_blank"
+        },
+        "item5": {
+            "title": "Kubaza",
+            "icon": "K",
+            "href": "https://yourdomain.com/#",
+            "target": "_blank"
+        },
+        "item6": {
+            "title": "Politiki y’ibanga",
+            "icon": "&#167;",
+            "href": {"type": "modal", "title": "privacy_title", "subtitle": "privacy_subtitle", "content": "privacy_content", "iconText": "&#167;"},
+            "target": "_self"
+        },
+        "item7": {
+            "title": "Amakuki",
+            "icon": "&#9865;",
+            "href": {"type": "modal", "title": "cookies_title", "subtitle": "cookies_subtitle", "content": "cookies_content", "iconText": "&#9865;"},
+            "target": "_self"
+        },
+        "item8": {
+            "title": "Inyandiko z’inyigisho",
+            "icon": "&#9783;",
+            "href": "https://github.com/mixmint/opnsense-captive-portal-template/blob/main/README.md",
+            "target": "_blank"
+        },
+        "item9": {
+            "title": "Ivyerekeye porogarama",
+            "icon": "&#9873;",
+            "href": {"type": "modal", "title": "about_title", "subtitle": "about_subtitle", "content": "about_content", "iconText": "&#9873;"},
+            "target": "_self"
+        },
+        "group1": {
+            "title": "Ivyatanzwe",
+            "items": ["item1", "item2", "item3", "item4", "item5"]
+        },
+        "group2": {
+            "title": "Amakuru",
+            "items": ["item6", "item7"]
+        },
+        "group3": {
+            "title": "Ubufasha",
+            "items": ["item8", "item9"]
+        }
+    },
     "footer_isp_info": {},
     "pagetitle": "Sisitemu yo kwinjira ku mukozi | < Izina rya ISP >",
     "username": "Izina ry'umukoresha (Login)",
@@ -77,7 +146,7 @@
     "a11y_helper_prev": "Hagaruka",
     "a11y_helper_done": "Birangiye",
     "a11y-keys_data-title": "Amakuru y'ibikanda vya clavier",
-    "a11y-keys_data-content": "<span style=\"font-size: 14px\">Kuvanga ibikanda <br \/><strong>⇧ Shift (ibumoso) <br \/>+&nbsp;⌥ Alt (ibumoso) <br \/>+&nbsp;inyuguti<\/strong><br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;U<\/strong><br \/>fokus ku kibanza Izina ry'umukoresha<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;P<\/strong><br \/>fokus ku kibanza Ijambo ry'ibanga<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;A<\/strong><br \/>hitamwo/canzura akabuto \"Nemeye amategeko\"<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;R<\/strong><br \/>ifungura akadirisha k'Amategeko<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;I<\/strong><br \/>injiye umukoresha<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;O<\/strong><br \/>asohora umukoresha<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;L<\/strong><br \/>tangura guhindura ururimi<\/span>",
+    "a11y-keys_data-content": "<span style=\"font-size: 14px\">Kuvanga ibikanda <br \/><strong>⇧ Shift (ibumoso) <br \/>+&nbsp;⌥ Alt (ibumoso) <br \/>+&nbsp;inyuguti<\/strong><br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;U<\/strong><br \/>fokus ku kibanza Izina ry'umukoresha<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;P<\/strong><br \/>fokus ku kibanza Ijambo ry'ibanga<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;A<\/strong><br \/>hitamwo/canzura akabuto \"Nemeye amategeko\"<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;R<\/strong><br \/>ifungura akadirisha k'Amategeko<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;I<\/strong><br \/>injiye umukoresha<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;O<\/strong><br \/>asohora umukoresha<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;L<\/strong><br \/>tangura guhindura ururimi<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;M<\/strong><br \/>irugurura menu offcanvas (niba ikoreshwa)<\/span>",
     "a11y-lang-keys_data-title": "Amakiyi y'inkino yo guhindura indimi",
     "a11y-lang-keys_data-content": "<span style=\"font-size: 14px\">Kanda hamwe <strong>⇧ Shift (ibumoso) hanyuma ukande inyuguti z'ikode y'ururimi</strong> (ISO 639-1) rimwe canke rimwe inyuma y'irindi.<br/><br/>Urugero:<br/><strong>⇧ Shift&nbsp;+&nbsp;P&nbsp;+&nbsp;L</strong> → guhindura ururimi ku Kirundi (pl)<br/><br/><strong>⇧ Shift&nbsp;+&nbsp;E&nbsp;+&nbsp;N</strong> → guhindura ururimi ku Icyongereza (en)<br/><br/><strong>⇧ Shift&nbsp;+&nbsp;D&nbsp;+&nbsp;E</strong> → guhindura ururimi ku Kidage (de)<br/><br/><strong>⇧ Shift&nbsp;+&nbsp;F&nbsp;+&nbsp;R</strong> → guhindura ururimi ku Gifaransa (fr)<br/><br/><strong>⇧ Shift&nbsp;+&nbsp;E&nbsp;+&nbsp;S</strong> → guhindura ururimi ku Ispanyoli (es)<br/><br/><strong>⇧ Shift&nbsp;+&nbsp;I&nbsp;+&nbsp;T</strong> → guhindura ururimi ku Kiitaliyani (it)<br/>...</span>",
     "polyglotLanguageSwitcher_data-title": "Guhitamo ururimi",
@@ -97,5 +166,16 @@
     "signin_anon_data-title": "Kwinjira",
     "signin_anon_data-content": "Kanda ku buto <strong>Kwinjira</strong> kugira utangure gukoresha Internet.",
     "logoff_data-title": "Gusohoka",
-    "logoff_data-content": "Kanda ku buto <strong>Gusohoka</strong> kugira urangize guhuza n'Internet."
+    "logoff_data-content": "Kanda ku buto <strong>Gusohoka</strong> kugira urangize guhuza n'Internet.",
+    "menuTrigger_data-title": "Menu offcanvas",
+    "menuTrigger_data-content": "Ukanze kuri <strong>&#9776; offcanvas hamburger<\/strong> canke ukande ku klavye icarimwe <strong>%s<\/strong> uzofungura menu y’inyongera.",
+    "about_title": "GuardianSuit",
+    "about_subtitle": "Inyandikorugero igezweho ya Captive Portal ya OPNsense",
+    "about_content": "<p><b>GuardianSuit<\/b> ni inyandikorugero ya Captive Portal ya OPNsense igezweho, yisubiramo kandi ifise animasiyo. Iha abakoresha uburambe bwiza bwo kwinjira, naho abayobozi igaha ubugenzuzi bwose ku miterere n’imikorere y’urupapuro rwo kwakira.<\/p><p><b>Ibiranga nyamukuru:<\/b><\/p><ul><li>Kwiyubara ku bikoresho bitandukanye n’animasiyo.<\/li><li>Indimi nyinshi.<\/li><li>Kworohereza guhindura ishusho n’amabara.<\/li><li>UX yumvikana neza n’ukwubahiriza WCAG.<\/li><li>Kwinjizanya vyoroshe na OPNsense.<\/li><\/ul><p><b>Ivyo ikoreshwamwo:<\/b><br \/>Ibereye imihora y’amashirahamwe, amahoteri, amakafe n’ahandi hantu bisaba urupapuro rwa Captive Portal rufise ishusho ikurura amaso.<\/p><p><b>Umwanditsi:<\/b> Mirosław Majka &lt;mix@proask.pl&gt; | &copy; 2025 GuardianSuit<\/p>",
+    "cookies_title": "Amadosiye ya Cookies",
+    "cookies_subtitle": "Uko amadosiye ya cookies akoreshwa.",
+    "cookies_content": "<h5>Dosiyé ya cookie ni iki?<\/h5><p>Amadosiye ya cookies (bita kandi ibisuguti) ni amadosiye matoya y’inyandiko, ahita aremwa n’umubrowser w’urubuga igihe usuye imbuga za WWW. Amakuru ari muri dosiyé ya cookie ashobora gusomwa gusa n’urubuga rwayiremye. Kubw’ivyo nyene, urubuga ntirushobora gushika ku yandi madosiye ari kuri mudasobwa y’uwukoresha.<\/p><p>Biciye ku makuru ari muri amadosiye ya cookies, urubuga “ruzi” uko urukoresha kandi rushobora guhindura neza ibirimwo rukwereka canke kugufasha mu buryo bukwiriye.<\/p><h5>Amadosiye ya cookies tuyakoresha iki?<\/h5><p>Kuri uru rubuga dukoresha amadosiye ya cookies y’ubuhinga, akenewe cane kugira urubuga rukore neza. Tuyakoresha kugira duhindure neza urubuga rwacu dukurikije ibikoresho n’imibrowser abakoresha benshi bakoresha – bigatuma mudasobwa yawe, tableti canke telefone yawe vyerekana neza urubuga kandi bikibuka nimba wemeye kwerekwa ibirimwo vyihariye kuri uru rubuga.<\/p><p>Uwukoresha ntashobora kwiyambura amadosiye ya cookies y’ubuhinga.<\/p><h5>Tumara igihe kingana iki dukoresha amadosiye ya cookies?<\/h5><p>Dukoresha amadosiye ya cookies ahoraho, aguma ku gikoresho cawe mu kiringo kinaka canke gushika uyakuyeho n’ukuboko.<\/p><h5>Ni ayahe makuru dukusanya biciye ku madosiye ya cookies?<\/h5><p>Dukoresheje ubuhinga bwa cookie, dukusanya gusa amakuru ya tekiniki atamenyekanisha umuntu, afasha gutuma gukoresha urubuga rwacu vyoroha.<\/p><p>Nta makuru na rimwe dukusanya agushoboza kumenyekana. Amakuru yonyene yerekeye uwukoresha, ariko atamumenyekanisha atayajanishijwe n’ayandi, ni aderesi ya IP akoresha yinjira ku rubuga.<\/p>",
+    "privacy_title": "Politiki y’ubwiherero",
+    "privacy_subtitle": "Gutunganya amakuru y’umuntu ku giti ciwe",
+    "privacy_content": "<p>Turandika iyi nyandiko kugira tubamenyeshe Politiki yacu y’Ubwiherero. Aha uzomenya abo turi bo, ukuntu dukusanya, dukoresha, dutangaza no dusangira amakuru y’umuntu ku giti ciwe mu rwego rwa <b><&nbsp;Izina rya ISP&nbsp;><\/b>, ifise icicaro i [ Nazwa ulicy 10, miasto i kod pocztowy ], intumbero tubigamwo hamwe n’uburyo abantu dufata amakuru yabo bashobora gukoresha uburenganzira bwabo ku bwiteganyirize bw’amakuru.<\/p><p><&nbsp;Izina rya ISP&nbsp;> ni yo ishinzwe gutunganya amakuru y’umuntu ku giti ciwe hakurikijwe iyi Politiki y’Ubwiherero.<\/p><h5>IVYEREKEYE TWE<\/h5><p>Umuyobozi w’amakuru, ni ukuvuga ikigo gitunganya amakuru y’umuntu ku giti ciwe mu bijanye n’ikoreshwa rya iyi serivisi, ni <&nbsp;Izina rya ISP&nbsp;>, [ Nazwa ulicy 10, miasto i kod pocztowy ]; NIP 1234567890, Regon 123456789,<\/p><h5>KUTWANDIKIRA<\/h5><ul><li>hakoreshejwe imeyili ku aderesi: adres@email.pl,<\/li><li>mu nyandiko yanditse ku aderesi: Izina rya ISP, [ Nazwa ulicy 10, miasto i kod pocztowy ]<\/li><\/ul><h5>AMATEGEKO AKUBIYE MURI IYI POLITIKI Y’UBWIHERERO<\/h5><p>Twitwararika ko gutunganya amakuru yawe bikorwa hisunzwe amategeko ya Règlement y’Inteko y’Ubumwe bw’Uburaya n’Inama (UE) nº 2016/679 yo ku wa 27 Ndamukiza 2016 yerekeye ugukingira abantu ku giti ciwe mu bijanye no gutunganya amakuru y’umuntu no ukwidegemvya kw’uguhana ayo makuru hamwe no gukuraho directive 95/46/WE (itegeko rusangi ry’ugukingira amakuru) (aha bita: “RODO”), itegeko ryo gukingira amakuru y’umuntu ku giti ciwe n’ayandi mategeko yihariye. Iyi Politiki y’Ubwiherero yateguwe hakurikijwe ayo mategeko. Tubamenyesha neza uko dukusanya amakuru y’umuntu n’intumbero akoreshwamwo.<\/p><p>Turagaragaza ko <&nbsp;Izina rya ISP&nbsp;> ikusanya amakuru y’abantu ku giti ciwe n’amakuru y’ikigo atanzwe n’abakiriya bayo (bashobora kuba) n’abafatanyabikorwa, hamwe n’amakuru abonetse mu gihe hakoreshwa serivisi yo kwinjira kuri interneti.<\/p><h5>GUKUSANYA AMAKURU Y’UMUNTU KU GITI CIWE<\/h5><p>Dukusanya amakuru y’umuntu atangwa n’Abakoresha mu bihe bikurikira:<\/p><ul><li>gutanga ivyifuzo, gushinga amasezerano y’ubufatanye na\/canecane gutanga amakuru ku bijanye na serivisi n’ibindi bikorwa vya <&nbsp;Izina rya ISP&nbsp;>,<\/li><li>gushinga no gushitsa amasezerano no kugumana umubano n’umukiriya\/umufatanyabikorwa,<\/li><li>gushitsa inshingano ziteganywa n’amategeko akurikizwa muri rusangi,<\/li><li>kwishura ibibazo, gutorera umuti amatanga no gutanga izindi serivisi z’inyuma yo kugurisha,<\/li><li>ugucuruza mu buryo butaziguye (atari newsletter),<\/li><li>mu ntumbero zo kubika mu nyandiko (nk’ivyemezo), mu gihe co gushinga, gusaba canke kwikingira ibisabwa mu mategeko.<\/li><\/ul><h5>KUBIKA NO GUKURAHO AMAKURU<\/h5><p>Kubera umutekano w’amakuru twahawe, twateguye inzira n’amabwirizwa yo mu kigo agamije gukingira amakuru ngo ntashikirizwe abantu batabifitiye uburenganzira. Dukoresha ingingo z’ubuhinga, amasezerano, ubuyobozi n’iz’umubiri mu gukingira amakuru ku kwinjirwa ata burenganzira. Turakurikirana uko bishirwa mu ngiro kandi tugahora tugenzura ko bihuye n’amategeko abigenga.<\/p><p>Amakuru y’umukoresha tuyabika gusa mu kiringo gikenewe kugira dushitse intumbero zakusanyirijwe.<\/p><h5>GUSANGIZA NO GUTANGAZA AMAKURU<\/h5><p>Ntidugurisha kandi ntidusangiza abantu ba gatatu amakuru y’abantu ku giti ciwe ata kwemera kwabo. Amakuru y’Abakoresha ntashyirwa mu gikorwa co kuyapima canke kuyasesengura (profilowanie).<\/p><p>Bivanye n’ubwoko n’urugero rw’ubufatanye hagati y’Umukoresha na <&nbsp;Izina rya ISP&nbsp;>, mu bijanye n’ibikorwa bikorwa, dushobora gutanga amakuru y’Umukoresha iyo bisabwe n’amategeko akurikizwa, canke iyo bikenewe kugira hubahirizwe ingingo z’amategeko canke gushitsa amasezerano, kwishura ibisabwa, canke mu ntumbero yo gukingira uburenganzira, itunga canke umutekano.<\/p><h5>AMATEGEKO TUKURIKIZA MU GUTUNGANYA AMAKURU YAWE<\/h5><p>Turakora n’ubwitonzi bwinshi mu gukingira inyungu z’abantu dufata amakuru yabo, na canecane mu kwemeza ko ayo makuru:<\/p><ul><li>atunganywa hakurikijwe amategeko, mu kuri kandi mu buryo busobanutse ku muntu ayo makuru amwerekeye,<\/li><li>akusanywa ku ntumbero zisobanutse, zisobanuwe neza kandi zemewe n’amategeko kandi ntatunganywe mu bundi buryo butajyanye n’izo ntumbero,<\/li><li>ari akwiriye, akenewe kandi agarukira ku bikenewe gusa mu gushitsa intumbero zitunganyirizwamwo,<\/li><li>ari ay’ukuri kandi avugururwa igihe bikenewe. Dufata ingingo zo gukuraho vuba canke gukosora amakuru y’umuntu atari yo mu bijanye n’intumbero atunganyirizwamwo,<\/li><li>abikwa mu buryo butuma umuntu ayerekeye ashobora kumenyekana mu kiringo kitarenze ico bikenewe mu gushitsa intumbero zo kuyatunganya,<\/li><li>atunganywa mu buryo butanga umutekano ukwiye w’amakuru y’umuntu, harimwo ugukingira gutunganywa kubujijwe canke kutemewe n’amategeko hamwe n’ugutakara canke kwononekara ku buryo butateganijwe.<\/li><\/ul><p>Amakuru yawe y’umuntu tuyatunganya akenshi dushingiye ku kwemera kwawe, ushobora gukuraho igihe cose. Ikindi gihe ni igihe gutunganya amakuru yawe bikenewe kugira dushitse amasezerano wagiranye natwe canke gutegura ingingo wasavye ku bwawe ubwawe, mbere y’uko amasezerano ashingwa. Mu bihe bimwebimwe, gutunganya amakuru birakenewe kugira dushitse inshingano z’amategeko zidushirwako nk’abayobozi b’amakuru y’umuntu. Izo nshingano ziva nko mu mategeko agenga akazi canke itegeko ry’ibaruramari. Gutunganya amakuru bishobora kandi kuba ngombwa ku ntumbero z’inyungu zacu zemewe n’amategeko, nko gusaba ibisabwa biva mu bikorwa vyacu vy’ubudandaji.<\/p><h5>UBURENGANZIRA BWAWE<\/h5><p>Ufise ubu burenganzira bukurikira:<\/p><ul><li>Kuronka amakuru yawe y’umuntu no kuronka ibisobanuro birimwo, harimwo n’amoko y’amakuru, intumbero atunganyirizwamwo, hamwe no kuronka kopi yayo,<\/li><li>Gukosora amakuru atari yo no kuzuza abuze, hamwe n’uburenganzira bwo kwibagirana, bisigura ko ufise uburenganzira bwo gusaba gukurwaho amakuru atunganywa ata shingiro canke mu buryo bunyuranye n’amategeko (nk’igihe atagikenewe ku ntumbero yakusanyirijwe),<\/li><li>Gukuraho kwemera kwawe ku gutunganya amakuru igihe cose ata ngaruka ku kuba ivyakozwe mbere vyari vyemewe n’amategeko (iyo gutunganya gushingiye ku ngingo ya art. 6 ust. 1 lit. a. canke art. 9 ust. 2 lit. a RODO).<\/li><\/ul><h5>COOKIES<\/h5><p><&nbsp;Izina rya ISP&nbsp;> ikoresha amadosiye ya cookie kugira yorohereze ikoreshwa rya serivisi. Ukoresheje serivisi wemera ko dukoresha amadosiye ya cookie. Iyo utayabujije, uba wemeye kuyakoresha no kuyabika mu bubiko bw’igikoresho cawe<\/p><h5>IMPINDUKA MURI POLITIKI YO GUKINGIRA AMAKURU Y’UMUNTU<\/h5><p><&nbsp;Izina rya ISP&nbsp;> irifitiye uburenganzira bwo guhindura politiki yo gukingira amakuru y’umuntu, bishobora guterwa n’iterambere ry’ubuhinga bwa interneti, impinduka z’amategeko ajanye no gukingira amakuru y’umuntu, canke iterambere rya serivisi yo kwinjira ku rubuga itangwa n’umuyobozi. Ku mpinduka zose tuzobamenyesha mu buryo busobanutse kandi bwumvikana.<\/p><p>Ibibazo vyose bijanye na politiki yo gukingira amakuru y’umuntu tubisaba kubitumenyesha biciye kuri imeyili: adres@email.pl<\/p>"
 }

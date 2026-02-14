@@ -7,6 +7,75 @@
     "attr_isp_info": {
         "aria-label": "Macluumaadka bixiyaha internetka"
     },
+    "menu": {
+        "title": "GuardianSuit Menu",
+        "item1": {
+            "title": "Internet",
+            "icon": "I",
+            "href": "https://yourdomain.com/#",
+            "target": "_blank"
+        },
+        "item2": {
+            "title": "Televisiyo",
+            "icon": "V",
+            "href": "https://yourdomain.com/#",
+            "target": "_blank"
+        },
+        "item3": {
+            "title": "Telefoon",
+            "icon": "T",
+            "href": "https://yourdomain.com/#",
+            "target": "_blank"
+        },
+        "item4": {
+            "title": "Adeegyo Dheeraad ah",
+            "icon": "A",
+            "href": "https://yourdomain.com/#",
+            "target": "_blank"
+        },
+        "item5": {
+            "title": "Xiriir",
+            "icon": "X",
+            "href": "https://yourdomain.com/#",
+            "target": "_blank"
+        },
+        "item6": {
+            "title": "Xeerka Asturnaanta",
+            "icon": "&#167;",
+            "href": {"type": "modal", "title": "privacy_title", "subtitle": "privacy_subtitle", "content": "privacy_content", "iconText": "&#167;"},
+            "target": "_self"
+        },
+        "item7": {
+            "title": "Faylasha Cookies",
+            "icon": "&#9865;",
+            "href": {"type": "modal", "title": "cookies_title", "subtitle": "cookies_subtitle", "content": "cookies_content", "iconText": "&#9865;"},
+            "target": "_self"
+        },
+        "item8": {
+            "title": "Dukumeentiyo",
+            "icon": "&#9783;",
+            "href": "https://github.com/mixmint/opnsense-captive-portal-template/blob/main/README.md",
+            "target": "_blank"
+        },
+        "item9": {
+            "title": "Nagu Saabsan Barnaamijka",
+            "icon": "&#9873;",
+            "href": {"type": "modal", "title": "about_title", "subtitle": "about_subtitle", "content": "about_content", "iconText": "&#9873;"},
+            "target": "_self"
+        },
+        "group1": {
+            "title": "Bixinta",
+            "items": ["item1", "item2", "item3", "item4", "item5"]
+        },
+        "group2": {
+            "title": "Macluumaad",
+            "items": ["item6", "item7"]
+        },
+        "group3": {
+            "title": "Caawinaad",
+            "items": ["item8", "item9"]
+        }
+    },
     "footer_isp_info": {},
     "pagetitle": "Nidaamka galitaanka isticmaalaha | < ISP Name >",
     "username": "Magaca isticmaalaha (Login)",
@@ -32,7 +101,7 @@
     "noscript": "Digniin: Si sax ah loogu galo nidaamka, JavaScript waa in laga shaqeeyaa browser-kaaga.",
     "cp_portal_head_title": "Nidaamka galitaanka isticmaalaha",
     "cp_portal_tooltip_title": "Ma haysaa kood?",
-    "cp_portal_info": "Helitaanka Internetka ee shabakadda <ISP Name> wuxuu u baahan yahay gelinta login iyo furaha sirta. Waa in la xasuusnaadaa in login-ka iyo furaha sirta ay tahay in isticmaaluhu ilaaliyo.",
+    "cp_portal_info": "Helitaanka Internetka ee shabakadda < ISP Name > wuxuu u baahan yahay gelinta login iyo furaha sirta. Waa in la xasuusnaadaa in login-ka iyo furaha sirta ay tahay in isticmaaluhu ilaaliyo.",
     "cp_portal_cookies_note": "Nidaamka galitaanka isticmaalaha wuxuu isticmaalaa cookies si loo kaydiyo macluumaadka kombiyuutarkaaga. Cookies waxaa loo adeegsadaa bixinta adeegyada heer sare ah, oo ay ku jirto qaabka loo habeeyey baahida isticmaalaha. Isticmaalka portal-ka galitaanka adigoon bedelin cookies waxay ka dhigan tahay in la gelin doono qalabkaaga.",
     "cp_portal_ifconfig_event_normal": "Dejinta interface-ka shabakadda",
     "cp_portal_ifconfig_event_none": "Dejinta interface-ka shabakadda",
@@ -77,7 +146,7 @@
     "a11y_helper_prev": "Kahor",
     "a11y_helper_done": "Dhammaad",
     "a11y-keys_data-title": "Furayaasha gaaban",
-    "a11y-keys_data-content": "<span style=\"font-size: 14px\">Isku-darka furayaasha <br \/><strong>⇧ Shift (bidix) <br \/>+&nbsp;⌥ Alt (bidix) <br \/>+&nbsp;xuruufta<\/strong><br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;U<\/strong><br \/>Fokus ku saar meesha Magaca isticmaalaha<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;P<\/strong><br \/>Fokus ku saar meesha Furaha sirta<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;A<\/strong><br \/>Xulo/deselect garee sanduuqa \"Waxaan aqbalayaa shuruucda\"<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;R<\/strong><br \/>Fur daaqada modal-ka shuruucda<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;I<\/strong><br \/>Gali isticmaalaha<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;O<\/strong><br \/>Ka bax isticmaalaha<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;L<\/strong><br \/>Bilaab beddelaha luqadda<\/span>",
+    "a11y-keys_data-content": "<span style=\"font-size: 14px\">Isku-darka furayaasha <br \/><strong>⇧ Shift (bidix) <br \/>+&nbsp;⌥ Alt (bidix) <br \/>+&nbsp;xuruufta<\/strong><br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;U<\/strong><br \/>Fokus ku saar meesha Magaca isticmaalaha<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;P<\/strong><br \/>Fokus ku saar meesha Furaha sirta<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;A<\/strong><br \/>Xulo/deselect garee sanduuqa \"Waxaan aqbalayaa shuruucda\"<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;R<\/strong><br \/>Fur daaqada modal-ka shuruucda<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;I<\/strong><br \/>Gali isticmaalaha<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;O<\/strong><br \/>Ka bax isticmaalaha<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;L<\/strong><br \/>Bilaab beddelaha luqadda<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;M<\/strong><br \/>waxay furaysaa liiska offcanvas (haddii uu shidan yahay)<\/span>",
     "a11y-lang-keys_data-title": "Furayaasha gaaban ee turjumaada luqadaha",
     "a11y-lang-keys_data-content": "<span style=\"font-size: 14px\">Qabo <strong>⇧ Shift (bidix) iyo taabo laba xaraf oo koodhka luqadda ah<\/strong> (ISO 639-1) isku mar ama mid mid.<br \/><br \/>Tusaalooyin:<br \/><strong>⇧ Shift&nbsp;+&nbsp;P&nbsp;+&nbsp;L<\/strong> → beddel luqadda af Polish (pl)<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;E&nbsp;+&nbsp;N<\/strong> → beddel luqadda Ingiriisi (en)<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;D&nbsp;+&nbsp;E<\/strong> → beddel luqadda Jarmal (de)<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;F&nbsp;+&nbsp;R<\/strong> → beddel luqadda Faransiis (fr)<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;E&nbsp;+&nbsp;S<\/strong> → beddel luqadda Isbaanish (es)<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;I&nbsp;+&nbsp;T<\/strong> → beddel luqadda Talyaani (it)<br \/>...<\/span>",
     "polyglotLanguageSwitcher_data-title": "Doorashada turjumaada luqadaha",
@@ -97,5 +166,16 @@
     "signin_anon_data-title": "Galitaan",
     "signin_anon_data-content": "Guji batoonka <strong>Logowanie<\/strong> si aad u bilowdo xiriirka internetka.",
     "logoff_data-title": "Ka bixitaan",
-    "logoff_data-content": "Guji batoonka <strong>Wylogowanie<\/strong> si aad u joojiso xiriirka internetka."
+    "logoff_data-content": "Guji batoonka <strong>Wylogowanie<\/strong> si aad u joojiso xiriirka internetka.",
+    "menuTrigger_data-title": "Liiska offcanvas",
+    "menuTrigger_data-content": "Markaad gujiso <strong>&#9776; offcanvas hamburger<\/strong> ama adigoo isla markiiba riixaya kumbuyuutarka <strong>%s<\/strong> waxaad furi doontaa liiska macnaha guud.",
+    "about_title": "GuardianSuit",
+    "about_subtitle": "Qaab-dhismeed horumarsan oo Captive Portal ah oo loogu talagalay OPNsense",
+    "about_content": "<p><b>GuardianSuit<\/b> waa qaab-dhismeed casri ah, ka jawaabaya oo leh animation loogu talagalay Captive Portal ee OPNsense. Waxay siinaysaa isticmaale khibrad soo jiidasho leh oo galitaan ah, halka maamulka uu heli karo xakame buuxda oo ku saabsan muuqaalka iyo shaqeynta bogga soo dhawaynta.<\/p><p><b>Astaamaha Muhiimka ah:<\/b><\/p><ul><li>Ka jawaabid iyo animation.<\/li><li>Luqado badan oo la taageero.<\/li><li>Habeyn fudud oo muuqaalka iyo midabka.<\/li><li>UX fudud oo waafaqsan WCAG.<\/li><li>Isku-darka fudud ee OPNsense.<\/li><\/ul><p><b>Isticmaalka:<\/b><br \/>Ku habboon shabakadaha shirkadaha, hoteelada, kafateeriyada iyo meelo kale oo u baahan bog soo dhawayn muuqaal ahaan soo jiidasho leh oo Captive Portal ah.<\/p><p><b>Qoraa:<\/b> Mirosław Majka &lt;mix@proask.pl&gt; | &copy; 2025 GuardianSuit<\/p>",
+    "cookies_title": "Faylasha Cookies",
+    "cookies_subtitle": "Sida faylasha cookies loo isticmaalo",
+    "cookies_content": "<h5>Waa maxay cookie?<\/h5><p>Faylasha cookies (loo yaqaan cookies) waa faylal yar-yar oo qoraal ah, oo si toos ah ay u sameysay browser-ka marka la booqanayo bogagga internetka. Macluumaadka ku jira fayl cookie gaar ah waxaa kaliya akhriyi kara bogga uu ka yimid. Sidaas darteed, bogga internetka ma geli karo faylal kale oo ku jira kombuyuutarka isticmaale.<\/p><p>Macluumaadka ku jira cookies-ka ayaa ka caawinaya bogga inuu ogaado sida aad u isticmaasho oo uu u habeeyo waxyaabaha laguu soo bandhigo ama uu ku siiyo caawimaad.<\/p><h5>Maxaan cookies u isticmaalnaa?<\/h5><p>Bogga waxaan u isticmaalnaa cookies farsamo oo lagama maarmaan u ah shaqada saxda ah ee bogga. Waxaan u isticmaalnaa si loo hagaajiyo bogga iyadoo loo eegayo qalabka iyo browser-yada inta badan la isticmaalo – sidaas darteed kombuyuutarka, tablet-ka ama taleefankaaga wuxuu soo bandhigi doonaa si sax ah oo la akhrin karo, isagoo xusuusan in aad ogolaatay isticmaalka qaar ka mid ah waxyaabaha bogga.<\/p><p>Isticmaaluhu ma joojin karo cookies-ka farsamo.<\/p><h5>Intee in le'eg ayaan cookies u isticmaalnaa?<\/h5><p>Waxaan isticmaalnaa cookies joogto ah, kuwaas oo ku sii jira qalabkaaga muddo go'an ama ilaa aad gacanta uga tirtirto.<\/p><h5>Maxaa xog ah ayaa laga ururiyaa cookies?<\/h5><p>Farsamada cookie waxay naga caawisaa inaan uruurino xog farsamo oo aan aqoonsaneyn qof ahaaneed, si loo hagaajiyo khibrada isticmaalka bogga.<\/p><p>Ma uruurino xog qof ahaaneed oo lagu aqoonsan karo. Macluumaadka isticmaale ee aan la xiriirin karin xog kale waa IP address-ka uu isticmaale ku xirmo.<\/p>",
+    "privacy_title": "Xeerka Asturnaanta",
+    "privacy_subtitle": "Habka loo farsameeyo xogta shaqsiga",
+    "privacy_content": "<p>Waxaan dukumentigan u sameynay si aan kaaga warranno Xeerka Asturnaanta. Halkan waxaad ka baran doontaa cidda aan nahay, sida aan u ururinno, u isticmaalno, u shaacinno, uguna bixino xogta shaqsiga ah ee <b>&lt;&nbsp;Magaca ISP&nbsp;&gt;<\/b>, oo fadhigeedu yahay [Cinwaanka Wadada 10, Magaalada iyo Lambarka boostada], sababta aan u sameyno iyo sida dadka xogtooda loo farsameeyo ay u xaqiijin karaan xuquuqdooda asturnaanta.<\/p><p><&nbsp;Magaca ISP&nbsp;> ayaa mas'uul ka ah farsamaynta xogta shaqsiga ah sida ku cad Xeerkan Asturnaanta.<\/p><h5>NAGA<\/h5><p>Maamulaha, oo ah hay'adda farsameysa xogta isticmaalaha ee adeegsigaaga, waa <&nbsp;Magaca ISP&nbsp;>, [Cinwaanka Wadada 10, Magaalada iyo Lambarka boostada]; NIP 1234567890, Regon 123456789.<\/p><h5>LA XIRIIR ANAGA<\/h5><ul><li>Email ahaan: adres@email.pl,<\/li><li>Qoraal ahaan: Magaca ISP, [Cinwaanka Wadada 10, Magaalada iyo Lambarka boostada]<\/li><\/ul><h5>Xeerarka ku jira Xeerkan Asturnaanta<\/h5><p>Waxaan hubineynaa in farsamaynta xogtaada ay waafaqsan tahay sharciyada EU (RODO) iyo shuruucda gaarka ah. Dukumentigan waxa loo diyaariyey si waafaqsan shuruucdaas, iyadoo la siiyo macluumaad cad oo ku saabsan sida xogta loo ururiyo iyo sababta loo isticmaalo.<\/p><h5>URURINTA XOGTA SHAQSIGA<\/h5><p>Waxaan ururinaynaa xogta isticmaalaha marka ay dhacaan xaaladaha soo socda:<\/p><ul><li>soo gudbinta dalabyada iyo bixinta macluumaadka adeegyada <&nbsp;Magaca ISP&nbsp;>,<\/li><li>sameynta iyo fulinta heshiisyada iyo la xiriirka macaamiisha,<\/li><li>fulinta waajibaadka sharciga ah,<\/li><li>ka jawaabida su'aalaha iyo cabashooyinka,<\/li><li>suuqgeynta tooska ah,<\/li><li>kaydinta ujeedooyinka sharci iyo caddeyn.<\/li><\/ul><h5>KA HORTAGA IYO TIRTIRIDA XOGTA<\/h5><p>Si loo ilaaliyo xogta, waxaan dejinay nidaamyo gudaha ah oo ka hortaga bixinta xogta dadka aan la oggolayn. Waxaan isticmaalnaa tignoolaji, heshiisyo, iyo tallaabooyin maamul iyo jireed si loo ilaaliyo xogta.<\/p><p>Waxaan kaydinaa xogta ilaa inta loo baahan yahay ujeedada lagu ururiyey.<\/p><h5>WADAAGIDDA IYO SHAACBIXINTA XOGTA<\/h5><p>Ma iibino ama ma siino qof saddexaad xogta isticmaalaha adoon ogolaan. Xogta isticmaalaha lama falanqeyn karo. Haddii sharcigu u baahdo ama si waafaqsan heshiiska, waxaa lagu siin karaa xogta.<\/p><h5>XUQUUQDAADA<\/h5><p>Waxaad leedahay xuquuqaha soo socda:<\/p><ul><li>Helitaanka xogtaada iyo nuqul ka mid ah,<\/li><li>Saxidda xog khaldan iyo tirtirida xog aan loo baahnayn,<\/li><li>Joojinta ogolaanshaha mar kasta oo la rabo,<\/li><\/ul><h5>COOKIES<\/h5><p><&nbsp;Magaca ISP&nbsp;> waxay isticmaashaa cookies si ay u fududeyso adeegsiga. Adeegsiga adeeggan waxay ka dhigan tahay ogolaanshaha cookies.<\/p><h5>ISBEDDELKA XEERKA ASTURANAANTA<\/h5><p><&nbsp;Magaca ISP&nbsp;> waxay xaq u leedahay inay wax ka beddesho xeerka asturnaanta iyadoo la raacayo horumarinta tiknoolajiyada, shuruucda cusub iyo adeegsiga adeegga. Wax walba waxaa lagu wargelin doonaa si cad.<\/p><p>Su’aalaha ku saabsan xeerkan fadlan u dir email: adres@email.pl<\/p>"
 }

@@ -16,6 +16,17 @@ OPNsense’s unique template manager makes setting up your own login page an eas
 
 To read more about the captive portal, I suggest you have a look here: [OPNsense Captive Portal](https://docs.opnsense.org/manual/captiveportal.html?highlight=captive%20portal)
 
+## 🛡️ GuardianSuit – Project Name (since v2.6.0)
+
+Starting from version 2.6.0, the Captive Portal Template is identified under the name
+GuardianSuit.
+
+The name is used for project identification, documentation, and further development.
+Earlier versions remain fully compatible, and the change does not affect configuration or usage.
+
+The repository itself will not be replaced or migrated — only its name will change at a later stage.
+All history, issues, releases, and existing links will remain preserved by GitHub.
+
 ## Demo OPNsense Captive Portal Page
 - [Globe animation](https://opnsense.myhome.cool:8001)
 - [Globe animation WCAG](https://opnsense.myhome.cool:8002)
@@ -169,17 +180,115 @@ Of course, this is not a perfect protection against an attempt to force credenti
 
 ## Layout Configuration Group `"layout"`
 
-Enables or disables the required consent to the provisions contained in the ISP provider's Regulations.  
-Redirection url address. If the value is not set or the set value is not a valid url address, the redirection functionality to the specified address will not be implemented.
+#### 📋 Offcanvas Menu (since v2.6.0)
+
+Version 2.6.0 introduces a fully configurable Offcanvas Menu, allowing administrators to extend the Captive Portal with additional navigation elements such as documentation, offers, privacy information, or custom links.
+
+#### 🔧 Layout Configuration
+
+The menu can be enabled and positioned directly from the layout configuration group in settings.json:
 
 ```
 "layout": {
-    "enable_rules": true,
+    "enable_rules": true|false,
+    "enable_menu": true|false,
+    "menu_position": "left|right",
     "redirect_url": ""
 },
 ```
 
-The appearance of the language selector can be changed by setting values in the layout section.
+- `enable_rules` – Enables or disables the required consent to the provisions contained in the ISP provider's Regulations.  
+- `enable_menu` – Enables or disables the Offcanvas Menu
+- `menu_position` – Defines the menu position (left or right)
+- `redirect_url` – Redirection url address. If the value is not set or the set value is not a valid url address, the redirection functionality to the specified address will not be implemented.
+
+Menu position automatically adapts to LTR / RTL layouts
+
+On small screens, the menu width adjusts automatically for optimal usability
+
+#### 🌐 Menu Definition in Language Files
+
+All menu elements are defined inside language JSON files (e.g. en.json, pl.json).
+This allows full multilingual support and easy customization without touching JavaScript code.
+
+#### 📦 Menu Structure
+
+```
+"menu": {
+    "title": "GuardianSuit Menu",
+    ...
+}
+```
+
+#### Menu Elements (itemX)
+
+Each menu item is defined as an object with the following properties:
+
+```
+"item1": {
+    "title": "Internet",
+    "icon": "I",
+    "href": "https://yourdomain.com/#",
+    "target": "_blank"
+}
+```
+
+- `title` – Text displayed in the menu
+- `icon` –
+  - single character&nbsp;→ rendered as a colored icon badge
+  - HTML entity&nbsp;→ rendered as-is (e.g. &#167;)
+- `href` –
+  - `string`&nbsp;→ standard link
+  - `object`&nbsp;→ modal definition
+- `target` – `_blank` or `_self` (in the modal definition the target parameter is not taken into account)
+
+#### Modal-Based Menu Items
+
+Menu items can open modal windows instead of links:
+
+```
+"item6": {
+    "title": "Privacy Policy",
+    "icon": "&#167;",
+    "href": {
+        "type": "modal",
+        "title": "privacy_title",
+        "subtitle": "privacy_subtitle",
+        "content": "privacy_content",
+        "iconText": "&#167;"
+    },
+    "target": "_self"
+}
+```
+
+Modal content keys (title, subtitle, content) are resolved from the same language file, ensuring full translation support.
+
+#### 🧩 Menu Groups
+
+Menu items are organized using groups, which control visual grouping and order:
+
+```
+"group1": {
+    "title": "Offer",
+    "items": ["item1", "item2", "item3"]
+}
+```
+
+Groups define logical sections inside the menu
+The items array references previously defined menu items
+Order in the array determines display order
+
+#### 🎨 Icon Rendering Rules
+
+Single-character icons automatically receive:
+- unique background colors (non-repeating per render)
+- automatic text color contrast (dark/light)
+
+HTML entity icons are rendered without background styling
+
+This ensures visual consistency and accessibility without manual styling
+
+#### The appearance of the language selector can be changed by setting values in the layout section.
 
 ```
 "layout": {
@@ -188,19 +297,19 @@ The appearance of the language selector can be changed by setting values in the 
 },
 ```
 
-Available modes `lang_layout`:
+#### Available modes `lang_layout`:
 
 - `flags-select` – a drop-down selector with language names and flags  
 - `flags-only-select` – a drop-down selector with flags only (no text)  
 - `flags-list` – a list of flags displayed side by side (no text)  
 - `select` – a classic drop-down selector with language names (no flags)  
 
-Flag directory `lang_flags_dir`:
+#### Flag directory `lang_flags_dir`:
 
 - `4x3` – a 4:3 flag aspect ratio (standard rectangular)  
 - `1x1` – a square flag aspect ratio  
 
-Automatic locale and flag mapping `force_locales_data`:
+#### Automatic locale and flag mapping `force_locales_data`:
 
 ```
 "layout": {
@@ -212,7 +321,7 @@ Automatic locale and flag mapping `force_locales_data`:
 - Only modifies entries if a region is present (e.g., `en-CA`, `pt-BR`).  
 - Leaves two-letter languages (e.g., `en`, `fr`, `es`, `pt`) unchanged.
 
-Accessibility options:
+#### Accessibility options:
 
 ```
 "layout": {
@@ -222,9 +331,9 @@ Accessibility options:
     "a11y_highlight": true|false,
     "a11y_mono": true|false,
     "a11y_helper": true|false,
-	"a11y_helper_breakpoint": 1200,
+    "a11y_helper_breakpoint": 1200,
     "a11y_factor": 0.5,
-    "a11y_treshhold": 0.5,
+    "a11y_threshold": 0.5,
 },
 ```
 
@@ -243,12 +352,12 @@ Accessibility options:
   Hold ⇧ Shift and press two letters of the language code (ISO 639-1) at once or one after the other
 
   Examples:  
-  - ⇧ Shift + P + L → switches to Polish (pl)  
-  - ⇧ Shift + E + N → switches to English (en)  
-  - ⇧ Shift + D + E → switches to Deutsch (de)  
-  - ⇧ Shift + F + R → switches to Français (fr)  
-  - ⇧ Shift + E + S → switches to Español (es)  
-  - ⇧ Shift + I + T → switches to Italiano (it)  
+  - ⇧ Shift + P + L&nbsp;→ switches to Polish (pl)  
+  - ⇧ Shift + E + N&nbsp;→ switches to English (en)  
+  - ⇧ Shift + D + E&nbsp;→ switches to Deutsch (de)  
+  - ⇧ Shift + F + R&nbsp;→ switches to Français (fr)  
+  - ⇧ Shift + E + S&nbsp;→ switches to Español (es)  
+  - ⇧ Shift + I + T&nbsp;→ switches to Italiano (it)  
 
 - `a11y_highlight` – highlights the currently focused element (e.g., input, button) to facilitate keyboard navigation  
 - `a11y_mono` – monochrome mode reduces the colors in the interface to visually simplify the UI (optional)  
@@ -260,7 +369,7 @@ Accessibility options:
   - Adds visual focus indicators to help users see which element is currently highlighted
 - `a11y_helper_breakpoint` - specifies the minimum viewport width (in pixels) at which the Accessibility Tour Guide trigger is displayed. On smaller screens (e.g., smartphones), the trigger is automatically hidden to avoid UI clutter  
 - `a11y_factor` – contrast adjustment factor for `a11y_contrast` - higher values = greater contrast increase  
-- `a11y_treshhold` – contrast threshold – specifies the minimum contrast required between the background and text colors. If the current contrast is below this value, it is automatically adjusted.
+- `a11y_threshold` – contrast threshold – specifies the minimum contrast required between the background and text colors. If the current contrast is below this value, it is automatically adjusted.
 
 ## CSS Configuration Group `"css_params"`
 <p><img src="images/diagram.webp" alt="" /></p>
@@ -270,278 +379,386 @@ Accessibility options:
 		<tbody>
 			<tr>
 				<td>"bg_section": "#252828"</td>
-				<td>← 1 →</td>
+				<td>←&nbsp;1&nbsp;→</td>
 				<td>Global background color of the entire login section</td>
 			</tr>
 			<tr>
 				<td>"bg_image": ""</td>
-				<td>← 2 →</td>
+				<td>←&nbsp;2&nbsp;→</td>
 				<td>Optional background image displayed over <strong>bg_section</strong></td>
 			</tr>
 			<tr>
 				<td>"bg_repeat": "no-repeat"</td>
-				<td>← 3 →</td>
+				<td>←&nbsp;3&nbsp;→</td>
 				<td>Defines background image repeat behavior</td>
 			</tr>
 			<tr>
 				<td>"bg_position": "center center"</td>
-				<td>← 4 →</td>
+				<td>←&nbsp;4&nbsp;→</td>
 				<td>Position of the global background image</td>
 			</tr>
 			<tr>
 				<td>"bg_size": "cover"</td>
-				<td>← 5 →</td>
+				<td>←&nbsp;5&nbsp;→</td>
 				<td>Scaling method of the global background image</td>
 			</tr>
 			<tr>
 				<td>"bg_attachment": ""</td>
-				<td>← 6 →</td>
+				<td>←&nbsp;6&nbsp;→</td>
 				<td>Controls background image scroll behavior (fixed / scroll)</td>
 			</tr>
 			<tr>
 				<td>"bg_color_left_side": ""</td>
-				<td>← 7 →</td>
+				<td>←&nbsp;7&nbsp;→</td>
 				<td>Background color of the <strong>left panel</strong></td>
 			</tr>
 			<tr>
 				<td>"bg_img_left_side": "url('/images/bg_left_side.png')"</td>
-				<td>← 8 →</td>
+				<td>←&nbsp;8&nbsp;→</td>
 				<td>Background image of the <strong>left panel</strong></td>
 			</tr>
 			<tr>
 				<td>"bg_img_left_side_repeat": "no-repeat"</td>
-				<td>← 9 →</td>
+				<td>←&nbsp;9&nbsp;→</td>
 				<td>Repeat behavior of the left panel background image</td>
 			</tr>
 			<tr>
 				<td>"bg_img_left_side_position": "top left"</td>
-				<td>← 10 →</td>
+				<td>←&nbsp;10&nbsp;→</td>
 				<td>Position of the left panel background image</td>
 			</tr>
 			<tr>
 				<td>"bg_img_left_side_size": "cover"</td>
-				<td>← 11 →</td>
+				<td>←&nbsp;11&nbsp;→</td>
 				<td>Scaling method of the left panel background image</td>
 			</tr>
 			<tr>
 				<td>"bg_img_left_side_attachment": ""</td>
-				<td>← 12 →</td>
+				<td>←&nbsp;12&nbsp;→</td>
 				<td>Scroll behavior of the left panel background image</td>
 			</tr>
 			<tr>
 				<td>"bg_left_side_blend": "linear-gradient(0deg, #005f6b4d 0%, #005f6bbf 83.85%)"</td>
-				<td>← 13 →</td>
+				<td>←&nbsp;13&nbsp;→</td>
 				<td>Gradient overlay blended with the left panel background image</td>
 			</tr>
 			<tr>
 				<td>"logo_bg_color": "rgba(249, 253, 255, 1)"</td>
-				<td>← 14 →</td>
+				<td>←&nbsp;14&nbsp;→</td>
 				<td>Background color of the logo container</td>
 			</tr>
 			<tr>
 				<td>"logo_bg_border_radius": "6px 6px 6px 6px"</td>
-				<td>← 15 →</td>
+				<td>←&nbsp;15&nbsp;→</td>
 				<td>Border radius of the logo container</td>
 			</tr>
 			<tr>
 				<td>"bg_color_right_side": "rgba(249, 253, 255, 1)"</td>
-				<td>← 16 →</td>
+				<td>←&nbsp;16&nbsp;→</td>
 				<td>Background color of the <strong>right panel</strong></td>
 			</tr>
 			<tr>
 				<td>"bg_img_right_side": ""</td>
-				<td>← 17 →</td>
+				<td>←&nbsp;17&nbsp;→</td>
 				<td>Background image of the right panel</td>
 			</tr>
 			<tr>
 				<td>"bg_img_right_side_repeat": "no-repeat"</td>
-				<td>← 18 →</td>
+				<td>←&nbsp;18&nbsp;→</td>
 				<td>Repeat behavior of the right panel background image</td>
 			</tr>
 			<tr>
 				<td>"bg_img_right_side_position": "top left"</td>
-				<td>← 19 →</td>
+				<td>←&nbsp;19&nbsp;→</td>
 				<td>Position of the right panel background image</td>
 			</tr>
 			<tr>
 				<td>"bg_img_right_side_size": "cover"</td>
-				<td>← 20 →</td>
+				<td>←&nbsp;20&nbsp;→</td>
 				<td>Scaling method of the right panel background image</td>
 			</tr>
 			<tr>
 				<td>"bg_img_right_side_attachment": ""</td>
-				<td>← 21 →</td>
+				<td>←&nbsp;21&nbsp;→</td>
 				<td>Scroll behavior of the right panel background image</td>
 			</tr>
 			<tr>
 				<td>"bg_right_side_blend": ""</td>
-				<td>← 22 →</td>
+				<td>←&nbsp;22&nbsp;→</td>
 				<td>Optional gradient overlay for the right panel background</td>
 			</tr>
 			<tr>
 				<td>"left_side_shadow": "0 0 40px 0 rgba(0, 0, 0, .35)"</td>
-				<td>← 23 →</td>
+				<td>←&nbsp;23&nbsp;→</td>
 				<td>Shadow cast by the left panel</td>
 			</tr>
 			<tr>
 				<td>"right_side_shadow": "0 0 40px 0 rgba(0, 0, 0, .35)"</td>
-				<td>← 24 →</td>
+				<td>←&nbsp;24&nbsp;→</td>
 				<td>Shadow cast by the right panel</td>
 			</tr>
 			<tr>
 				<td>"bg_alternate": "#818a91"</td>
-				<td>← 25 →</td>
+				<td>←&nbsp;25&nbsp;→</td>
 				<td>Alternate background color used for UI accents and borders</td>
 			</tr>
 			<tr>
 				<td>"color_primary": "#7a7a7a"</td>
-				<td>← 26 →</td>
+				<td>←&nbsp;26&nbsp;→</td>
 				<td>Main text color</td>
 			</tr>
 			<tr>
 				<td>"color_secondary": "#ffffff"</td>
-				<td>← 27 →</td>
+				<td>←&nbsp;27&nbsp;→</td>
 				<td>Secondary text color</td>
 			</tr>
 			<tr>
 				<td>"color_alternate": "#373a3c"</td>
-				<td>← 28 →</td>
+				<td>←&nbsp;28&nbsp;→</td>
 				<td>Alternate text color (labels, placeholders)</td>
 			</tr>
 			<tr>
 				<td>"link_color": "#348893"</td>
-				<td>← 29 →</td>
+				<td>←&nbsp;29&nbsp;→</td>
 				<td>Default link color</td>
 			</tr>
 			<tr>
 				<td>"link_hover_color": "#f12184"</td>
-				<td>← 30 →</td>
+				<td>←&nbsp;30&nbsp;→</td>
 				<td>Link hover color</td>
 			</tr>
 			<tr>
 				<td>"input_field_color": "#e8e8e8"</td>
-				<td>← 31 →</td>
+				<td>←&nbsp;31&nbsp;→</td>
 				<td>Text color inside input fields</td>
 			</tr>
 			<tr>
 				<td>"input_field_label_color": "#373a3c"</td>
-				<td>← 32 →</td>
+				<td>←&nbsp;32&nbsp;→</td>
 				<td>Label color for input fields</td>
 			</tr>
 			<tr>
 				<td>"input_field_bg_color": "#ffffff"</td>
-				<td>← 33 →</td>
+				<td>←&nbsp;33&nbsp;→</td>
 				<td>Background color of input fields</td>
 			</tr>
 			<tr>
 				<td>"input_field_border_color": "rgba(145, 156, 167, .27)"</td>
-				<td>← 34 →</td>
+				<td>←&nbsp;34&nbsp;→</td>
 				<td>Border color of input fields</td>
 			</tr>
 			<tr>
 				<td>"input_field_border_radius": "5px 0px 0px 5px"</td>
-				<td>← 35 →</td>
+				<td>←&nbsp;35&nbsp;→</td>
 				<td>Border radius of input fields</td>
 			</tr>
 			<tr>
 				<td>"input_field_before_bg_color": "#00b5cb"</td>
-				<td>← 36 →</td>
+				<td>←&nbsp;36&nbsp;→</td>
 				<td>Background color of input prefix element</td>
 			</tr>
 			<tr>
 				<td>"input_field_after_bg_color": "#00b5cb"</td>
-				<td>← 37 →</td>
+				<td>←&nbsp;37&nbsp;→</td>
 				<td>Background color of input suffix element</td>
 			</tr>
 			<tr>
 				<td>"input_field_placeholder_color": "#373a3c"</td>
-				<td>← 38 →</td>
+				<td>←&nbsp;38&nbsp;→</td>
 				<td>Placeholder text color</td>
 			</tr>
 			<tr>
 				<td>"button_bg_color": "#00b5cb"</td>
-				<td>← 39 →</td>
+				<td>←&nbsp;39&nbsp;→</td>
 				<td>Primary button background color</td>
 			</tr>
 			<tr>
 				<td>"button_hover_bg_color": "#f12184"</td>
-				<td>← 40 →</td>
+				<td>←&nbsp;40&nbsp;→</td>
 				<td>Primary button hover background color</td>
 			</tr>
 			<tr>
 				<td>"button_color": "#ffffff"</td>
-				<td>← 41 →</td>
+				<td>←&nbsp;41&nbsp;→</td>
 				<td>Primary button text color</td>
 			</tr>
 			<tr>
 				<td>"button_hover_color": "#ffffff"</td>
-				<td>← 42 →</td>
+				<td>←&nbsp;42&nbsp;→</td>
 				<td>Primary button hover text color</td>
 			</tr>
 			<tr>
 				<td>"lang_switcher": "#00b5cb"</td>
-				<td>← 43 →</td>
+				<td>←&nbsp;43&nbsp;→</td>
 				<td>Language switcher main background</td>
 			</tr>
 			<tr>
 				<td>"lang_switcher_trigger": "#009db1"</td>
-				<td>← 44 →</td>
+				<td>←&nbsp;44&nbsp;→</td>
 				<td>Language switcher trigger background</td>
 			</tr>
 			<tr>
 				<td>"lang_switcher_link": "#5aecff"</td>
-				<td>← 45 →</td>
+				<td>←&nbsp;45&nbsp;→</td>
 				<td>Language option link color</td>
 			</tr>
 			<tr>
 				<td>"lang_switcher_hover": "#f12184"</td>
-				<td>← 46 →</td>
+				<td>←&nbsp;46&nbsp;→</td>
 				<td>Language option hover background</td>
 			</tr>
 			<tr>
 				<td>"lang_switcher_dropdown": "#216f7a"</td>
-				<td>← 47 →</td>
+				<td>←&nbsp;47&nbsp;→</td>
 				<td>Language dropdown background</td>
 			</tr>
 			<tr>
 				<td>"lang_switcher_dropdown_hover": "#f12184"</td>
-				<td>← 48 →</td>
+				<td>←&nbsp;48&nbsp;→</td>
 				<td>Language dropdown hover background</td>
 			</tr>
 			<tr>
 				<td>"fadein": "0.5s"</td>
-				<td>← 49 →</td>
+				<td>←&nbsp;49&nbsp;→</td>
 				<td>Fade-in animation duration after page load</td>
 			</tr>
 			<tr>
 				<td>"block_padding": "50px"</td>
-				<td>← 50 →</td>
+				<td>←&nbsp;50&nbsp;→</td>
 				<td>Inner padding of left and right panels</td>
 			</tr>
 			<tr>
 				<td>"left_side_block_radius": "15px 15px 15px 15px"</td>
-				<td>← 51 →</td>
+				<td>←&nbsp;51&nbsp;→</td>
 				<td>Border radius of left panel content wrapper</td>
 			</tr>
 			<tr>
 				<td>"right_side_block_radius": "15px 15px 15px 15px"</td>
-				<td>← 52 →</td>
+				<td>←&nbsp;52&nbsp;→</td>
 				<td>Border radius of right panel content wrapper</td>
 			</tr>
 			<tr>
 				<td>"helper_bg_color": "#00b5cb"</td>
-				<td>← 53 →</td>
+				<td>←&nbsp;53&nbsp;→</td>
 				<td>Background color of the TourGuide helper button</td>
 			</tr>
 			<tr>
 				<td>"helper_color": "#ffffff"</td>
-				<td>← 54 →</td>
+				<td>←&nbsp;54&nbsp;→</td>
 				<td>Text/icon color of the TourGuide helper button</td>
 			</tr>
 			<tr>
 				<td>"helper_size": "78px"</td>
-				<td>← 55 →</td>
+				<td>←&nbsp;55&nbsp;→</td>
 				<td>Width and height of the TourGuide helper button</td>
+			</tr>
+			<tr>
+			<td>"offcanvas_margin": "15px"</td>
+				<td>←&nbsp;56&nbsp;→</td>
+				<td>Margin around the offcanvas menu</td>
+			</tr>
+			<tr>
+				<td>"offcanvas_trigger_border_radius": "8px 8px 8px 8px"</td>
+				<td>←&nbsp;57&nbsp;→</td>
+				<td>Border radius of the offcanvas trigger button</td>
+			</tr>
+			<tr>
+				<td>"offcanvas_trigger_bg_color": "#00b5cb"</td>
+				<td>←&nbsp;58&nbsp;→</td>
+				<td>Background color of the offcanvas trigger button</td>
+			</tr>
+			<tr>
+				<td>"offcanvas_trigger_bg_hover_color": "#f12184"</td>
+				<td>←&nbsp;59&nbsp;→</td>
+				<td>Background color of the offcanvas trigger button on hover</td>
+			</tr>
+			<tr>
+				<td>"offcanvas_trigger_color": "#ffffff"</td>
+				<td>←&nbsp;60&nbsp;→</td>
+				<td>Text/icon color of the offcanvas trigger button</td>
+			</tr>
+			<tr>
+				<td>"offcanvas_trigger_hover_color": "#ffffff"</td>
+				<td>←&nbsp;61&nbsp;→</td>
+				<td>Text/icon color of the offcanvas trigger button on hover</td>
+			</tr>
+			<tr>
+				<td>"offcanvas_bg_color": "#ffffff"</td>
+				<td>←&nbsp;62&nbsp;→</td>
+				<td>Background color of the offcanvas menu panel</td>
+			</tr>
+			<tr>
+				<td>"offcanvas_border_radius": "8px 8px 8px 8px"</td>
+				<td>←&nbsp;63&nbsp;→</td>
+				<td>Border radius of the offcanvas menu panel</td>
+			</tr>
+			<tr>
+				<td>"offcanvas_text_color": "#373a3c"</td>
+				<td>←&nbsp;64&nbsp;→</td>
+				<td>Main text color inside the offcanvas menu</td>
+			</tr>
+			<tr>
+				<td>"offcanvas_link_bg_color": "transparent"</td>
+				<td>←&nbsp;65&nbsp;→</td>
+				<td>Background color of offcanvas menu links</td>
+			</tr>
+			<tr>
+				<td>"offcanvas_link_bg_hover_color": "#00b5cb1a"</td>
+				<td>←&nbsp;66&nbsp;→</td>
+				<td>Background color of offcanvas menu links on hover</td>
+			</tr>
+			<tr>
+				<td>"offcanvas_link_color": "#348893"</td>
+				<td>←&nbsp;67&nbsp;→</td>
+				<td>Text color of offcanvas menu links</td>
+			</tr>
+			<tr>
+				<td>"offcanvas_link_hover_color": "#f12184"</td>
+				<td>←&nbsp;68&nbsp;→</td>
+				<td>Text color of offcanvas menu links on hover</td>
+			</tr>
+		</tbody>
+	</table>
+	<p>};</p>
+</blockquote>
+
+## Modal Configuration Group `"modal"`
+
+<blockquote>
+	<p>"modal": {</p>
+	<table style="width: 100%;">
+		<tbody>
+			<tr>
+				<td>"auth_failed_header_color": "#f12184"</td>
+				<td>Color of the header for the authentication failed modal</td>
+			</tr>
+			<tr>
+				<td>"conn_failed_header_color": "#f12184"</td>
+				<td>Color of the header for the connection failed modal</td>
+			</tr>
+			<tr>
+				<td>"show_rules_header_color": "#4ca1af"</td>
+				<td>Color of the header when showing ISP rules or regulations modal</td>
+			</tr>
+			<tr>
+				<td>"bg_color": "#ffffff"</td>
+				<td>Background color of the modal content area</td>
+			</tr>
+			<tr>
+				<td>"icon_color": "rgba(255, 255, 255, .5)"</td>
+				<td>Default color of icons inside the modal</td>
+			</tr>
+			<tr>
+				<td>"overlay_color": "rgba(0,0,0,.3)"</td>
+				<td>Background overlay color covering the page when modal is visible</td>
+			</tr>
+			<tr>
+				<td>"timeout": 5000</td>
+				<td>Time in milliseconds after which the modal automatically closes (0 = no auto-close)</td>
+			</tr>
+			<tr>
+				<td>"zindex": 1050</td>
+				<td>Z-index used for the modal to ensure it appears above other content</td>
 			</tr>
 		</tbody>
 	</table>
@@ -630,3 +847,4 @@ The following effects are available: **birds**, **cells**, **fog**, **globe**, *
 - Expanded digital accessibility support (**WCAG**).
 - Introduced a new interactive Accessibility Tour Guide (TourGuide) compliant with WCAG 2.1 AA.
 - Automatic locale and flag mapping has been added, updating flags and locales based on the browser's language while keeping two-letter language codes unchanged.
+- Added a new **Offcanvas Menu** with configurable position and items.

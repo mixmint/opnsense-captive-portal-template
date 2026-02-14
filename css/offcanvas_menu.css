@@ -1,0 +1,189 @@
+.menu-wrapper {
+    position: absolute;
+    top: 0;
+    #menu {
+        margin-top: var(--offcanvas_margin, 15px);
+        margin-bottom: var(--offcanvas_margin, 15px);
+        border-radius: var(--offcanvas_border_radius, none);
+        height: min-content;
+        .menu-trigger {
+            transition-duration: 0.5s;
+            transition-timing-function: swing;
+            position: absolute;
+            top: 0;
+            display: block;
+            width: 50px;
+            height: 50px;
+            background-color: var(--offcanvas_trigger_bg_color, initial);;
+            border-radius: var(--offcanvas_trigger_border_radius, none);
+            z-index: calc(var(--bs-offcanvas-zindex) + 1);
+            visibility: visible;
+            caret-color: transparent;
+            &:hover{
+                cursor: pointer;
+                background-color: var(--offcanvas_trigger_bg_hover_color, initial);;
+            }
+            .icon {
+                transition-duration: 0.2s;
+                position: absolute;
+                width: 30px;
+                height: 2px;
+                background-color: var(--offcanvas_trigger_color, initial);;
+                top: 24px;
+                left: 10px;
+                caret-color: transparent;
+                &:before,
+                &:after {
+                    transition-duration: 0.5s;
+                    background-color: var(--offcanvas_trigger_color, initial);;
+                    position: absolute;
+                    content: "";
+                    width: 30px;
+                    height: 2px;
+                    left: 0px;
+                }
+                &:before {
+                    top: -7px;
+                }
+                &:after {
+                    top: 7px;
+                }
+            }
+
+            &.active {
+                .icon {
+                    background-color: transparent;
+                    &:before,
+                    &:after {
+                        top: 0;
+                    }
+
+                    &:before {
+                        transform: rotate(-45deg);
+                        -webkit-transform: rotate(-45deg);
+                    }
+
+                    &:after {
+                        transform: rotate(45deg);
+                        -webkit-transform: rotate(45deg);
+                    }
+                }
+            }
+        }
+        &.offcanvas-start {
+            margin-right: unset;
+            margin-left: var(--offcanvas_margin, 15px);
+            .menu-trigger {
+                left: 0;
+                transform: translateX(var(--bs-offcanvas-width));
+                -webkit-transform: translateX(var(--bs-offcanvas-width));
+                &.active {
+                    margin-left: var(--offcanvas_margin, 15px);
+                }
+            }
+        }
+        &.offcanvas-end {
+            margin-right: var(--offcanvas_margin, 15px);
+            margin-left: unset;
+            .menu-trigger {
+                left: -50px;
+                transform: translateX(- var(--bs-offcanvas-width));
+                -webkit-transform: translateX(- var(--bs-offcanvas-width));
+                &.active {
+                    margin-left: calc(-1 * var(--offcanvas_margin, 15px));
+                }
+            }
+        }
+        #menuTitle {
+            font-size: 138%;
+            caret-color: transparent;
+        }
+        .nav {
+            .menu-group {
+                position: relative;
+                &:not(:last-of-type) {
+                    margin-bottom: 30px;
+                }
+            }
+            .menu-group-title {
+                caret-color: transparent;
+                font-size: 90%;
+                font-weight: 400;
+                text-transform: uppercase;
+                color: var(--color_primary);
+            }
+            .nav-item {
+                border-radius: 5px;
+                background-color: var(--offcanvas_link_bg_color);
+                .nav-link {
+                    color: var(--offcanvas_link_color, inherit);
+                    caret-color: transparent;
+                    &:hover {
+                        color: var(--offcanvas_link_hover_color, inherit);
+                    }
+                    .link-icon {
+                        width: 21px;
+                        height: 21px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        font-size: 21px;
+                        font-weight: 700;
+                        margin-right: 5px;
+                        &.char-icon {
+                            display: inline-flex;
+                            justify-content: center;
+                            align-items: center;
+                            width: 21px;
+                            height: 21px;
+                            border-radius: 4px;
+                            font-size: 17px;
+                            font-weight: 800;
+                            text-align: center;
+                            margin-right: 8px;
+                            flex-shrink: 0;
+                        }
+                    }
+                }
+                &:hover {
+                    background-color: var(--offcanvas_link_bg_hover_color);
+                }
+            }
+        }
+        #menuPortalEvent {
+            &.interface-config {
+                .if-title {
+                    color: var(--offcanvas_link_color, inherit);
+                }
+                .config-address {
+                    color: var(--offcanvas_link_hover_color, inherit);
+                }
+            }
+        }
+    }
+
+    &.menu-end {
+        &~ #a11y-keys-wrapper {
+            #a11y-keys,
+            #a11y-lang-keys {
+                right: calc(50px + (var(--offcanvas_margin, 15px) / 2));
+            }
+        }
+    }
+}
+
+@media (min-width: 564px) {
+    #menu {
+        &.offcanvas {
+            --bs-offcanvas-width: 300px;
+        }
+    }
+}
+
+@media (max-width: 564px) {
+    #menu {
+        &.offcanvas {
+            --bs-offcanvas-width: calc(100vw - 50px - (3 * var(--offcanvas_margin, 15px)));
+        }
+    }
+}

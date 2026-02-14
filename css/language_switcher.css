@@ -504,8 +504,8 @@
     &.a11y-keyboard {
         .kbd-focus,
         :focus {
-            outline: 2px solid var(--color_secondary, red);
-            outline-offset: 2px;
+            /*outline: 2px solid var(--color_secondary, red);
+            outline-offset: 2px;*/
         }
     }
 

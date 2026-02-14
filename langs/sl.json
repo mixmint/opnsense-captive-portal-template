@@ -7,6 +7,75 @@
     "attr_isp_info": {
         "aria-label": "Informacije o ponudniku interneta"
     },
+    "menu": {
+        "title": "GuardianSuit Menu",
+        "item1": {
+            "title": "Internet",
+            "icon": "I",
+            "href": "https://yourdomain.com/#",
+            "target": "_blank"
+        },
+        "item2": {
+            "title": "Televizija",
+            "icon": "T",
+            "href": "https://yourdomain.com/#",
+            "target": "_blank"
+        },
+        "item3": {
+            "title": "Telefon",
+            "icon": "F",
+            "href": "https://yourdomain.com/#",
+            "target": "_blank"
+        },
+        "item4": {
+            "title": "Dodatne storitve",
+            "icon": "D",
+            "href": "https://yourdomain.com/#",
+            "target": "_blank"
+        },
+        "item5": {
+            "title": "Kontakt",
+            "icon": "K",
+            "href": "https://yourdomain.com/#",
+            "target": "_blank"
+        },
+        "item6": {
+            "title": "Politika zasebnosti",
+            "icon": "&#167;",
+            "href": {"type": "modal", "title": "privacy_title", "subtitle": "privacy_subtitle", "content": "privacy_content", "iconText": "&#167;"},
+            "target": "_self"
+        },
+        "item7": {
+            "title": "Datoteke piškotkov",
+            "icon": "&#9865;",
+            "href": {"type": "modal", "title": "cookies_title", "subtitle": "cookies_subtitle", "content": "cookies_content", "iconText": "&#9865;"},
+            "target": "_self"
+        },
+        "item8": {
+            "title": "Dokumentacija",
+            "icon": "&#9783;",
+            "href": "https://github.com/mixmint/opnsense-captive-portal-template/blob/main/README.md",
+            "target": "_blank"
+        },
+        "item9": {
+            "title": "O programu",
+            "icon": "&#9873;",
+            "href": {"type": "modal", "title": "about_title", "subtitle": "about_subtitle", "content": "about_content", "iconText": "&#9873;"},
+            "target": "_self"
+        },
+        "group1": {
+            "title": "Ponudba",
+            "items": ["item1", "item2", "item3", "item4", "item5"]
+        },
+        "group2": {
+            "title": "Informacije",
+            "items": ["item6", "item7"]
+        },
+        "group3": {
+            "title": "Pomoč",
+            "items": ["item8", "item9"]
+        }
+    },
     "footer_isp_info": {},
     "pagetitle": "Sistem prijave uporabnikov | <Ime ISP>",
     "username": "Uporabniško ime (Login)",
@@ -77,7 +146,7 @@
     "a11y_helper_prev": "Nazaj",
     "a11y_helper_done": "Konec",
     "a11y-keys_data-title": "Tipkovni bližnjici",
-    "a11y-keys_data-content": "<span style=\"font-size: 14px\">Kombinacija tipk <br \/><strong>⇧ Shift (levo) <br \/>+&nbsp;⌥ Alt (levo) <br \/>+&nbsp;črka<\/strong><br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;U<\/strong><br \/>osredotoči se na polje Uporabniško ime<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;P<\/strong><br \/>osredotoči se na polje Geslo<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;A<\/strong><br \/>označi/odznači polje “Sprejemam pogoje”<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;R<\/strong><br \/>odpre modalno okno s pogoji<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;I<\/strong><br \/>prijavi uporabnika<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;O<\/strong><br \/>odjavi uporabnika<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;L<\/strong><br \/>zažene preklopnik jezika<\/span>",
+    "a11y-keys_data-content": "<span style=\"font-size: 14px\">Kombinacija tipk <br \/><strong>⇧ Shift (levo) <br \/>+&nbsp;⌥ Alt (levo) <br \/>+&nbsp;črka<\/strong><br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;U<\/strong><br \/>osredotoči se na polje Uporabniško ime<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;P<\/strong><br \/>osredotoči se na polje Geslo<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;A<\/strong><br \/>označi/odznači polje “Sprejemam pogoje”<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;R<\/strong><br \/>odpre modalno okno s pogoji<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;I<\/strong><br \/>prijavi uporabnika<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;O<\/strong><br \/>odjavi uporabnika<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;L<\/strong><br \/>zažene preklopnik jezika<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;M<\/strong><br \/>odpre odpre offcanvas meni (če je omogočeno)<\/span>",
     "a11y-lang-keys_data-title": "Tipkovni bližnjici za jezike",
     "a11y-lang-keys_data-content": "<span style=\"font-size: 14px\">Pritisnite <strong>⇧ Shift (levo) in dve črki kode jezika<\/strong> (ISO 639-1) hkrati ali eno za drugo.<br \/><br \/>Primeri:<br \/><strong>⇧ Shift&nbsp;+&nbsp;P&nbsp;+&nbsp;L<\/strong> → preklopi na poljski (pl)<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;E&nbsp;+&nbsp;N<\/strong> → preklopi na angleški (en)<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;D&nbsp;+&nbsp;E<\/strong> → preklopi na nemški (de)<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;F&nbsp;+&nbsp;R<\/strong> → preklopi na francoski (fr)<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;E&nbsp;+&nbsp;S<\/strong> → preklopi na španski (es)<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;I&nbsp;+&nbsp;T<\/strong> → preklopi na italijanski (it)<br \/>...<\/span>",
     "polyglotLanguageSwitcher_data-title": "Izbirnik jezika",
@@ -97,5 +166,16 @@
     "signin_anon_data-title": "Prijava",
     "signin_anon_data-content": "Ko kliknete gumb <strong>Prijava<\/strong>, se vzpostavi povezava z internetom.",
     "logoff_data-title": "Odjava",
-    "logoff_data-content": "Ko kliknete gumb <strong>Odjava<\/strong>, se povezava z internetom zaključi."
+    "logoff_data-content": "Ko kliknete gumb <strong>Odjava<\/strong>, se povezava z internetom zaključi.",
+    "menuTrigger_data-title": "Offcanvas meni",
+    "menuTrigger_data-content": "S klikom na <strong>&#9776; offcanvas hamburger<\/strong> ali s hkratnim pritiskom <strong>%s<\/strong> na tipkovnici odprete kontekstni meni.",
+    "about_title": "GuardianSuit",
+    "about_subtitle": "Napredna predloga Captive Portal za OPNsense",
+    "about_content": "<p><b>GuardianSuit<\/b> je moderna, odzivna in animirana predloga Captive Portal za OPNsense. Uporabnikom zagotavlja privlačno prijavno izkušnjo, administratorjem pa popoln nadzor nad videzom in funkcionalnostjo uvodne strani.<\/p><p><b>Ključne funkcije:<\/b><\/p><ul><li>Odzivnost in animacije.<\/li><li>Večjezičnost.<\/li><li>Enostavna prilagoditev videza in barvne sheme.<\/li><li>Intuitivna uporabniška izkušnja (UX) in skladnost z WCAG.<\/li><li>Enostavna integracija z OPNsense.<\/li><\/ul><p><b>Uporaba:<\/b><br \/>Idealno za podjetniška omrežja, hotele, kavarne in druga mesta, ki zahtevajo vizualno privlačno uvodno stran Captive Portal.<\/p><p><b>Avtor:<\/b> Mirosław Majka &lt;mix@proask.pl&gt; | &copy; 2025 GuardianSuit<\/p>",
+    "cookies_title": "Datoteke piškotkov",
+    "cookies_subtitle": "Kako se uporabljajo datoteke piškotkov.",
+    "cookies_content": "<h5>Kaj je datoteka piškotkov?<\/h5><p>Datoteke piškotkov (t.i. piškotki) so majhne besedilne datoteke, ki jih brskalnik samodejno ustvari med obiskom spletnih strani. Informacije v določeni datoteki piškotkov lahko prebere samo spletna stran, s katere izhaja. Spletna stran tako nima dostopa do drugih datotek na računalniku uporabnika.<\/p><p>Zaradi informacij v piškotkih stran „ve“, kako jo uporabljate, in lahko ustrezno prilagodi prikazano vsebino ali vam ponudi pomoč.<\/p><h5>Za kaj uporabljamo piškotke?<\/h5><p>Na strani uporabljamo tehnične piškotke, ki so nujni za pravilno delovanje strani. Uporabljamo jih za optimizacijo spletne strani glede na naprave in brskalnike, ki jih obiskovalci najpogosteje uporabljajo – tako bo vaš računalnik, tablica ali telefon stran prikazal pravilno in pregledno ter si zapomnil, ali ste dovolili prikaz izbrane vsebine.<\/p><p>Uporabnik se ne more odpovedati tehničnim piškotkom.<\/p><h5>Kako dolgo uporabljamo piškotke?<\/h5><p>Uporabljamo t.i. trajne piškotke, ki ostanejo na vaši napravi določen čas ali do trenutka njihove ročne odstranitve.<\/p><h5>Katera podatke zbiramo preko piškotkov?<\/h5><p>S tehnologijo piškotkov zbiramo le anonimne tehnične podatke o vas, ki služijo za izboljšanje uporabniške izkušnje na naši strani.<\/p><p>Ne zbiramo nobenih podatkov, ki bi omogočali vašo identifikacijo. Edina informacija o uporabniku, ki sama po sebi ne omogoča identifikacije, je IP naslov, s katerega se uporabnik povezuje.<\/p>",
+    "privacy_title": "Politika zasebnosti",
+    "privacy_subtitle": "Obdelava osebnih podatkov",
+    "privacy_content": "<p>Ta dokument smo pripravili, da vas obvestimo o naši Politiki zasebnosti. Tukaj boste izvedeli, kdo smo, kako zbiramo, uporabljamo, razkrivamo in posredujemo osebne podatke v okviru <b><&nbsp;Naziv ISP&nbsp;><\/b>, s sedežem na [ Naziv ulice 10, mesto in poštna številka ], za kakšen namen to počnemo in kako lahko osebe, katerih podatke obdelujemo, uveljavljajo svoje pravice do zasebnosti.<\/p><p><&nbsp;Naziv ISP&nbsp;> je odgovoren za obdelavo osebnih podatkov v skladu s to Politiko zasebnosti.<\/p><h5>O NAS<\/h5><p>Upravitelj, torej subjekt, ki obdeluje osebne podatke v povezavi z uporabo te storitve, je <&nbsp;Naziv ISP&nbsp;>, [ Naziv ulice 10, mesto in poštna številka ]; ID 1234567890, REGON 123456789,<\/p><h5>KONTAKT Z NAMI<\/h5><ul><li>elektronsko na e-naslov: adres@email.pl,<\/li><li>pisno na naslov: Naziv ISP, [ Naziv ulice 10, mesto in poštna številka ]<\/li><\/ul><h5>PRAVILA, VKLJUČENA V TE POLITIKE ZASEBNOSTI<\/h5><p>Zagotavljamo, da obdelava vaših podatkov poteka v skladu z Uredbo Evropskega parlamenta in Sveta (EU) št. 2016/679 z dne 27. aprila 2016 o varstvu posameznikov pri obdelavi osebnih podatkov in o prostem pretoku takih podatkov ter razveljavitvi Direktive 95/46/ES (splošna uredba o varstvu podatkov – GDPR), Zakonom o varstvu osebnih podatkov in drugimi posebnih predpisi. Ta Politika zasebnosti je pripravljena v skladu s temi predpisi. Jasno informiramo, kako zbiramo osebne podatke in za kakšen namen se uporabljajo.<\/p><p>Opozoriti želimo, da <&nbsp;Naziv ISP&nbsp;> zbira osebne podatke in poslovne informacije, ki jih posredujejo njegovi (potencialni) stranke in partnerji, pa tudi podatke, pridobljene med uporabo storitve dostopa do interneta.<\/p><h5>ZBIRANJE OSEBNIH PODATKOV<\/h5><p>Zbiramo osebne podatke, ki jih uporabniki posredujejo v naslednjih primerih:<\/p><ul><li>oddaja ponudb, določanje pogojev sodelovanja in/ali posredovanje informacij o storitvah in drugih dejavnostih <&nbsp;Naziv ISP&nbsp;>,<\/li><li>sklenitev in izvajanje pogodb ter vzdrževanje stikov s stranko/partnerjem,<\/li><li>izpolnjevanje obveznosti, ki izhajajo iz veljavnih zakonov,<\/li><li>odgovarjanje na vprašanja, reševanje pritožb in druge poprodajne storitve,<\/li><li>direktni marketing (razen e-novic),<\/li><li>arhivski nameni (dokazni), morebitna določitev, uveljavljanje ali obramba pred zahtevki.<\/li><\/ul><h5>HRAMBA IN BRISANJE PODATKOV<\/h5><p>V skrbi za varnost posredovanih podatkov smo razvili notranje postopke in priporočila, ki preprečujejo posredovanje podatkov nepooblaščenim osebam. Uporabljamo tehnološke, pogodbeno-pravne, administrativne in fizične ukrepe za zaščito podatkov pred nepooblaščenim dostopom. Nadzorujemo izvajanje teh ukrepov in stalno preverjamo skladnost z ustreznimi pravnimi predpisi.<\/p><p>Osebne podatke uporabnika hranimo le toliko časa, kolikor je potrebno za izpolnitev namenov, za katere so bili pridobljeni.<\/p><h5>DELJENJE IN RAZKRIVANJE PODATKOV<\/h5><p>Osebnih podatkov uporabnikov brez njihovega soglasja ne prodajamo niti ne posredujemo tretjim osebam. Podatki uporabnikov niso predmet profiliranja.<\/p><p>Glede na vrsto in obseg sodelovanja med uporabnikom in <&nbsp;Naziv ISP&nbsp;>, v okviru poslovanja, lahko posredujemo uporabniške podatke, če to zahtevajo veljavni predpisi ali če je to potrebno za skladnost z zakonitimi postopki, izpolnitev pogodbenih obveznosti, odgovor na zahtevke ali zaščito pravic, premoženja ali varnosti.<\/p><h5>PRAVILA OBDELAVE VAŠIH PODATKOV<\/h5><p>Zagotavljamo največjo skrb za zaščito interesov oseb, katerih podatki se obdelujejo, predvsem pa, da so podatki:<\/p><ul><li>obdelani v skladu z zakonodajo, pošteno in transparentno za osebo, na katero se podatki nanašajo,<\/li><li>zbrani za konkretne, jasne in zakonito utemeljene namene ter neobdelani naprej na način, ki ni skladen s temi nameni,<\/li><li>ustrezni, primerni in omejeni na nujno potrebni obseg za izvedbo namena obdelave,<\/li><li>pravilni in po potrebi posodobljeni. Ukrepamo, da se osebni podatki, ki so nepravilni v skladu z namenom njihove obdelave, takoj izbrišejo ali popravijo,<\/li><li>shranjeni v obliki, ki omogoča identifikacijo osebe, na katero se podatki nanašajo, le toliko časa, kolikor je potrebno za namen obdelave,<\/li><li>obdelani na način, ki zagotavlja ustrezno varnost osebnih podatkov, vključno z zaščito pred nepooblaščeno ali nezakonito obdelavo ter nenamerno izgubo ali uničenjem.<\/li><\/ul><p>Vaše osebne podatke običajno obdelujemo na podlagi soglasja, ki ga lahko kadarkoli umaknete. Drug primer je, ko je obdelava vaših podatkov nujna za izvršitev pogodbe med vami in nami ali za izvedbo ukrepov po vaši zahtevi pred sklenitvijo pogodbe. V nekaterih primerih je obdelava nujna za izpolnitev pravne obveznosti, ki je naložena na nas kot upravljavca osebnih podatkov. Take obveznosti izhajajo npr. iz delovne zakonodaje ali zakona o računovodstvu. Obdelava je lahko tudi nujna za uresničitev naših zakonitih interesov, kot je npr. uveljavljanje zahtevkov v okviru naše gospodarske dejavnosti.<\/p><h5>VAŠE PRAVICE<\/h5><p>Imate naslednje pravice:<\/p><ul><li>Dostop do vsebine vaših osebnih podatkov in pridobitev informacij, npr. o kategorijah podatkov, namenih njihove obdelave, kot tudi pridobitev njihove kopije,<\/li><li>Popravek nepravilnih in dopolnitev manjkajočih podatkov ter pravico do pozabe, kar pomeni, da imate pravico do izbrisa podatkov, obdelanih brez utemeljitve ali nezakonito (npr. podatki niso več potrebni za namen, za katerega so bili zbrani),<\/li><li>Umik soglasja za obdelavo podatkov kadarkoli brez vpliva na zakonitost obdelave, opravljene na podlagi soglasja pred njegovim umikom (če obdelava poteka po čl. 6 odst. 1 točka a ali čl. 9 odst. 2 točka a GDPR).<\/li><\/ul><h5>COOKIES<\/h5><p><&nbsp;Naziv ISP&nbsp;> uporablja piškotke, da olajša uporabo storitve. Z uporabo storitve soglašate z uporabo piškotkov. Če teh datotek ne blokirate, se strinjate z njihovo uporabo in shranitvijo na vaši napravi.<\/p><h5>SPREMEMBE POLITIKE VARSTVA OSEBNIH PODATKOV<\/h5><p><&nbsp;Naziv ISP&nbsp;> si pridržuje pravico do spremembe politike varstva osebnih podatkov, na kar lahko vpliva razvoj internetnih tehnologij, morebitne spremembe zakonodaje o varstvu osebnih podatkov ter razvoj dostopne storitve, ki jo zagotavlja upravljavec. O vseh spremembah vas bomo obvestili jasno in pregledno.<\/p><p>Vsa vprašanja v zvezi s politiko varstva osebnih podatkov pošljite na e-naslov: adres@email.pl<\/p>"
 }

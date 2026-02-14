@@ -7,6 +7,75 @@
     "attr_isp_info": {
         "aria-label": "Impormasyon tungkol sa tagapagbigay ng internet"
     },
+    "menu": {
+        "title": "Menu GuardianSuit",
+        "item1": {
+            "title": "Internet",
+            "icon": "I",
+            "href": "https://yourdomain.com/#",
+            "target": "_blank"
+        },
+        "item2": {
+            "title": "Telebisyon",
+            "icon": "B",
+            "href": "https://yourdomain.com/#",
+            "target": "_blank"
+        },
+        "item3": {
+            "title": "Telepono",
+            "icon": "P",
+            "href": "https://yourdomain.com/#",
+            "target": "_blank"
+        },
+        "item4": {
+            "title": "Karagdagang Serbisyo",
+            "icon": "S",
+            "href": "https://yourdomain.com/#",
+            "target": "_blank"
+        },
+        "item5": {
+            "title": "Makipag-ugnayan",
+            "icon": "M",
+            "href": "https://yourdomain.com/#",
+            "target": "_blank"
+        },
+        "item6": {
+            "title": "Patakaran sa Pagkapribado",
+            "icon": "&#167;",
+            "href": {"type": "modal", "title": "privacy_title", "subtitle": "privacy_subtitle", "content": "privacy_content", "iconText": "&#167;"},
+            "target": "_self"
+        },
+        "item7": {
+            "title": "Mga Cookie",
+            "icon": "&#9865;",
+            "href": {"type": "modal", "title": "cookies_title", "subtitle": "cookies_subtitle", "content": "cookies_content", "iconText": "&#9865;"},
+            "target": "_self"
+        },
+        "item8": {
+            "title": "Dokumentasyon",
+            "icon": "&#9783;",
+            "href": "https://github.com/mixmint/opnsense-captive-portal-template/blob/main/README.md",
+            "target": "_blank"
+        },
+        "item9": {
+            "title": "Tungkol sa Programa",
+            "icon": "&#9873;",
+            "href": {"type": "modal", "title": "about_title", "subtitle": "about_subtitle", "content": "about_content", "iconText": "&#9873;"},
+            "target": "_self"
+        },
+        "group1": {
+            "title": "Alok",
+            "items": ["item1", "item2", "item3", "item4", "item5"]
+        },
+        "group2": {
+            "title": "Impormasyon",
+            "items": ["item6", "item7"]
+        },
+        "group3": {
+            "title": "Tulong",
+            "items": ["item8", "item9"]
+        }
+    },
     "footer_isp_info": {},
     "pagetitle": "Sistema ng pag-login ng gumagamit | < Pangalan ng ISP >",
     "username": "Pangalan ng gumagamit (Login)",
@@ -77,7 +146,7 @@
     "a11y_helper_prev": "Bumalik",
     "a11y_helper_done": "Tapos na",
     "a11y-keys_data-title": "Mga Shortcut ng Keyboard",
-    "a11y-keys_data-content": "<span style=\"font-size: 14px\">Kombinasyon ng mga key <br \/><strong>⇧ Shift (kaliwa) <br \/>+&nbsp;⌥ Alt (kaliwa) <br \/>+&nbsp;letra<\/strong><br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;U<\/strong><br \/>mag-focus sa field na Pangalan ng Gumagamit<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;P<\/strong><br \/>mag-focus sa field na Password<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;A<\/strong><br \/>i-check/uncheck ang checkbox na \"Sang-ayon ako sa patakaran\"<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;R<\/strong><br \/>buksan ang modal window ng patakaran<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;I<\/strong><br \/>mag-login ang user<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;O<\/strong><br \/>mag-logout ang user<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;L<\/strong><br \/>i-activate ang language switcher<\/span>",
+    "a11y-keys_data-content": "<span style=\"font-size: 14px\">Kombinasyon ng mga key<br \/><strong>⇧ Shift (kaliwa)<br \/>+&nbsp;⌥ Alt (kaliwa)<br \/>+&nbsp;titik<\/strong><br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;U<\/strong><br \/>ilagay ang focus sa field na Pangalan ng Gumagamit<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;P<\/strong><br \/>ilagay ang focus sa field na Password<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;A<\/strong><br \/>i-check o i-uncheck ang checkbox na \"Sumasang-ayon ako sa patakaran\"<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;R<\/strong><br \/>buksan ang modal window ng patakaran<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;I<\/strong><br \/>mag-log in ang gumagamit<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;O<\/strong><br \/>mag-log out ang gumagamit<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;L<\/strong><br \/>i-activate ang tagapili ng wika<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;M<\/strong><br \/>binubuksan ang offcanvas menu (kung ito ay naka-enable)<\/span>",
     "a11y-lang-keys_data-title": "Mga Shortcut para sa Pagpapalit ng Wika",
     "a11y-lang-keys_data-content": "<span style=\"font-size: 14px\">Pindutin at hawakan ang <strong>⇧ Shift (kaliwa) at pindutin ang dalawang letra ng language code<\/strong> (ISO 639-1) nang sabay o isa-isa.<br \/><br \/>Mga halimbawa:<br \/><strong>⇧ Shift&nbsp;+&nbsp;P&nbsp;+&nbsp;L<\/strong> → magpalit sa wikang Polako (pl)<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;E&nbsp;+&nbsp;N<\/strong> → magpalit sa wikang Ingles (en)<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;D&nbsp;+&nbsp;E<\/strong> → magpalit sa wikang Aleman (de)<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;F&nbsp;+&nbsp;R<\/strong> → magpalit sa wikang Pranses (fr)<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;E&nbsp;+&nbsp;S<\/strong> → magpalit sa wikang Espanyol (es)<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;I&nbsp;+&nbsp;T<\/strong> → magpalit sa wikang Italyano (it)<br \/>...<\/span>",
     "polyglotLanguageSwitcher_data-title": "Tagapili ng Wika",
@@ -97,5 +166,16 @@
     "signin_anon_data-title": "Mag-login",
     "signin_anon_data-content": "Pindutin ang <strong>Mag-login<\/strong> upang simulan ang koneksyon sa internet.",
     "logoff_data-title": "Mag-logoff",
-    "logoff_data-content": "Pindutin ang <strong>Mag-logoff<\/strong> upang tapusin ang koneksyon sa internet."
+    "logoff_data-content": "Pindutin ang <strong>Mag-logoff<\/strong> upang tapusin ang koneksyon sa internet.",
+    "menuTrigger_data-title": "Menu offcanvas",
+    "menuTrigger_data-content": "Pag-click sa <strong>&#9776; offcanvas hamburger<\/strong> o sabay na pagpindot sa keyboard ng <strong>%s<\/strong> ay bubuksan ang kontekstuwal na menu.",
+    "about_title": "GuardianSuit",
+    "about_subtitle": "Advanced na template ng Captive Portal para sa OPNsense",
+    "about_content": "<p><b>GuardianSuit<\/b> ay isang modernong, responsive, at animated na template ng Captive Portal para sa OPNsense. Nagbibigay ito sa mga gumagamit ng kaakit-akit na karanasan sa pag-login, at sa mga administrador ng kumpletong kontrol sa hitsura at functionality ng welcome page.<\/p><p><b>Mga Pangunahing Tampok:<\/b><\/p><ul><li>Responsiveness at animations.<\/li><li>Maraming wika.<\/li><li>Madaling pag-personalize ng hitsura at kulay.<\/li><li>Intuitive na UX at pagsunod sa WCAG.<\/li><li>Madaling integrasyon sa OPNsense.<\/li><\/ul><p><b>Paggamit:<\/b><br \/>Perpekto para sa corporate networks, hotels, cafes at iba pang lugar na nangangailangan ng visually appealing na welcome page ng Captive Portal.<\/p><p><b>May-akda:<\/b> Mirosław Majka &lt;mix@proask.pl&gt; | &copy; 2025 GuardianSuit<\/p>",
+    "cookies_title": "Mga Cookie",
+    "cookies_subtitle": "Paano ginagamit ang mga cookie.",
+    "cookies_content": "<h5>Ano ang cookie?<\/h5><p>Ang mga cookie (tinatawag ding 'cookies') ay maliliit na text file na awtomatikong nililikha ng browser habang bumibisita sa mga website. Ang impormasyon sa isang cookie ay maaaring mabasa lamang ng website kung saan ito nagmula. Kaya, ang website ay walang access sa ibang file sa iyong computer.<\/p><p>Sa pamamagitan ng impormasyon sa mga cookie, \"alam\" ng website kung paano mo ito ginagamit at maaari nitong ayusin ang ipinapakitang content para sa iyo o magbigay ng tulong.<\/p><h5>Para saan namin ginagamit ang mga cookie?<\/h5><p>Sa website, ginagamit namin ang mga teknikal na cookie na kinakailangan para sa tamang paggana ng site. Ginagamit namin ito upang i-optimize ang website para sa mga device at browser na karaniwang ginagamit ng mga bisita — sa ganitong paraan, maipapakita ng tama at malinaw ang website sa iyong computer, tablet, o telepono, at matandaan kung pumayag ka sa pagpapakita ng piling content sa website.<\/p><p>Hindi maaaring i-off ng gumagamit ang mga teknikal na cookie.<\/p><h5>Gaano katagal namin ginagamit ang mga cookie?<\/h5><p>Gumagamit kami ng tinatawag na permanenteng cookie na nananatili sa iyong device sa isang takdang panahon o hanggang sa manu-manong pagtanggal nito.<\/p><h5>Anong datos ang kinokolekta namin gamit ang mga cookie?<\/h5><p>Gamit ang teknolohiya ng cookie, kinokolekta lamang namin ang anonymong teknikal na datos tungkol sa iyo upang mapabuti ang karanasan sa aming site.<\/p><p>Hindi kami nangongolekta ng anumang impormasyon na makakakilala sa iyo. Ang tanging impormasyon tungkol sa gumagamit, na hindi nakakapag-identify nang mag-isa, ay ang IP address na ginagamit ng gumagamit.<\/p>",
+    "privacy_title": "Patakaran sa Pagkapribado",
+    "privacy_subtitle": "Pagproseso ng Personal na Datos",
+    "privacy_content": "<p>Gumawa kami ng dokumentong ito upang ipaalam sa iyo ang aming Patakaran sa Pagkapribado. Dito malalaman mo kung sino kami, paano namin kinokolekta, ginagamit, ibinubunyag, at ibinabahagi ang personal na datos sa loob ng <b><&nbsp;Pangalan ng ISP&nbsp;><\/b>, na may punong-tanggapan sa [ Kalye 10, lungsod at postal code ], para sa anong layunin namin ito ginagawa, at kung paano maaaring ipatupad ng mga taong ang datos ay pinoproseso ang kanilang karapatan sa pagkapribado.<\/p><p><&nbsp;Pangalan ng ISP&nbsp;> ang responsable sa pagproseso ng personal na datos alinsunod sa Patakaran sa Pagkapribado na ito.<\/p><h5>TUNGKOL SA AMIN<\/h5><p>Ang administrator, o ang entidad na nagpoproseso ng personal na datos kaugnay sa paggamit mo ng serbisyong ito, ay ang <&nbsp;Pangalan ng ISP&nbsp;>, [ Kalye 10, lungsod at postal code ]; NIP 1234567890, Regon 123456789,<\/p><h5>KONTAK SA AMIN<\/h5><ul><li>sa pamamagitan ng e-mail: adres@email.pl,<\/li><li>sa pamamagitan ng sulat: <&nbsp;Pangalan ng ISP&nbsp;>, [ Kalye 10, lungsod at postal code ]<\/li><\/ul><h5>MGA BATAS NA NASA PATANGKAL NG PATKARAN NA ITO<\/h5><p>Tinitiyak namin na ang pagproseso ng iyong datos ay naaayon sa European Parliament at Council Regulation (EU) No. 2016/679 ng Abril 27, 2016 sa proteksyon ng mga indibidwal kaugnay ng pagproseso ng personal na datos at sa malayang daloy ng naturang datos (GDPR), pati na rin sa pambansang batas sa proteksyon ng personal na datos at iba pang espesyal na regulasyon. Ang Patakaran sa Pagkapribado na ito ay inihanda alinsunod dito, malinaw na ipinapaliwanag kung paano namin kinokolekta at ginagamit ang personal na datos.<\/p><p>Pinaaalalahanan namin na <&nbsp;Pangalan ng ISP&nbsp;> ay nagko-kolekta ng personal na datos at impormasyon ng kumpanya mula sa kanilang (potensyal) na kliyente at kontratista, pati na rin ang datos na nakuha habang ginagamit ang serbisyo sa Internet.<\/p><h5>PAGKOLEKTA NG PERSONAL NA DATOS<\/h5><p>Nakokolekta namin ang personal na datos na ibinibigay ng mga gumagamit sa mga sumusunod na pagkakataon:<\/p><ul><li>pagbibigay ng alok, pagtukoy ng mga kondisyon ng pakikipagtulungan at/o pagbibigay ng impormasyon tungkol sa mga serbisyo at iba pang aktibidad ng <&nbsp;Pangalan ng ISP&nbsp;>,<\/li><li>pagbuo at pagpapatupad ng mga kontrata at pagpapanatili ng komunikasyon sa kliyente/kontratista,<\/li><li>pagtupad sa mga obligasyon ayon sa umiiral na batas,<\/li><li>pagsagot sa mga tanong, pagsusuri ng reklamo at iba pang post-sale na serbisyo,<\/li><li>direktang marketing (maliban sa newsletter),<\/li><li>para sa archival (evidential) na layunin, o para sa pagtatakda, pagsisiyasat o pagtatanggol laban sa mga claim.<\/li><\/ul><h5>PAG-IIMBAK AT PAGTANGGAL NG DATOS<\/h5><p>Upang matiyak ang seguridad ng datos na ipinagkatiwala, gumawa kami ng internal na mga pamamaraan at rekomendasyon upang maiwasan ang pagbibigay ng datos sa hindi awtorisadong tao. Gumagamit kami ng teknolohikal, kontraktwal, administratibo at pisikal na mga hakbang upang protektahan ang datos laban sa hindi awtorisadong access. Minomonitor namin ang pagpapatupad at patuloy na sinusuri ang pagsunod sa naaangkop na batas.<\/p><p>Iniimbak namin ang personal na datos ng gumagamit lamang sa loob ng kinakailangang panahon upang matupad ang layunin kung bakit ito nakolekta.<\/p><h5>IBINABAHAGI AT IBINUBUNYAG NA DATOS<\/h5><p>Hindi namin ibinebenta o ibinabahagi sa ikatlong partido ang personal na datos ng mga gumagamit nang walang kanilang pahintulot. Ang datos ng gumagamit ay hindi na-profile.<\/p><p>Depende sa uri at lawak ng pakikipagtulungan sa pagitan ng gumagamit at <&nbsp;Pangalan ng ISP&nbsp;>, kaugnay ng operasyon, maaari naming ibigay ang datos ng gumagamit kung kinakailangan ng umiiral na batas, o kung kinakailangan para sa pagsunod sa legal na obligasyon, pagtugon sa claim, o para sa proteksyon ng mga karapatan, ari-arian o seguridad.<\/p><h5>MGA BATAS SA PAGPROSESO NG IYONG DATOS<\/h5><p>Pinapangalagaan namin ang interes ng mga taong ang personal na datos ay pinoproseso, lalo na upang matiyak na ang datos ay:<\/p><ul><li>napoproseso ayon sa batas, tapat at transparent sa taong kinabibilangan ng datos,<\/li><li>nakolekta para sa malinaw, tiyak at legal na layunin at hindi ginagamit sa ibang paraan na hindi naaayon sa layunin,<\/li><li>angkop, sapat at limitado lamang sa kinakailangan para sa layunin ng pagproseso,<\/li><li>tama at kung kinakailangan ay na-update. Gumagawa kami ng aksyon upang ang maling personal na datos ay agad na maitama o matanggal,<\/li><li>iniimbak sa paraan na nagpapahintulot sa pagkilala sa taong kinabibilangan ng datos, lamang sa loob ng kinakailangang panahon para sa layunin ng pagproseso,<\/li><li>napoproseso sa paraang nagbibigay ng sapat na seguridad laban sa hindi awtorisadong o labag sa batas na pagproseso, pati na rin sa aksidenteng pagkawala o pagkasira.<\/li><\/ul><p>Kadalasan, pinoproseso namin ang iyong personal na datos base sa pahintulot, na maaaring bawiin anumang oras. Isa pang sitwasyon ay kung ang pagproseso ay kinakailangan upang matupad ang kontrata sa pagitan mo at namin o upang gawin ang hakbang sa iyong kahilingan bago pa man ang kontrata. Sa ibang sitwasyon, ang pagproseso ay kinakailangan upang matupad ang legal na obligasyon bilang administrator ng datos. Ang mga obligasyong ito ay galing sa batas sa trabaho, accounting, at iba pa. Ang pagproseso ay maaari ring kinakailangan para sa lehitimong interes ng aming kumpanya, gaya ng pagtugon sa mga claim sa aming negosyo.<\/p><h5>ANG IYONG MGA KARAPATAN<\/h5><p>Mayroon kang sumusunod na karapatan:<\/p><ul><li>Access sa iyong personal na datos at impormasyon tulad ng mga kategorya ng datos, layunin ng pagproseso, at kopya ng mga ito,<\/li><li>Pagtutuwid ng maling datos at pagdagdag ng kulang na impormasyon, at karapatang makalimot, ibig sabihin ay may karapatan kang alisin ang datos na pinoproseso nang walang legal na basehan o labag sa batas (hal. hindi na kailangan para sa layunin kung saan nakolekta),<\/li><li>Pagbawi ng pahintulot sa pagproseso ng datos anumang oras nang hindi naaapektuhan ang legalidad ng pagproseso na ginawa bago pa man bawiin ang pahintulot (kung ang pagproseso ay batay sa art. 6 sec.1 lit. a o art. 9 sec.2 lit. a GDPR).<\/li><\/ul><h5>COOKIES<\/h5><p><&nbsp;Pangalan ng ISP&nbsp;>, gumagamit ng cookies upang mapadali ang paggamit ng serbisyo. Sa paggamit ng serbisyo, sumasang-ayon ka sa paggamit at pag-save ng cookies sa iyong device<\/p><h5>PAAGOS NG PAGBABAGO NG PATKARAN SA DATOS<\/h5><p><&nbsp;Pangalan ng ISP&nbsp;> ay may karapatang baguhin ang patakaran sa proteksyon ng personal na datos, dahil sa pagbabago ng teknolohiya, posibleng pagbabago sa batas sa proteksyon ng datos, at pag-unlad ng serbisyong ibinibigay ng administrator. Ang anumang pagbabago ay ipapaalam sa malinaw at maayos na paraan.<\/p><p>Ang anumang katanungan tungkol sa patakaran sa proteksyon ng personal na datos ay maaaring ipadala sa e-mail: adres@email.pl<\/p>"
 }

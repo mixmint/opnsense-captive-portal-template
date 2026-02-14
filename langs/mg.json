@@ -7,6 +7,75 @@
     "attr_isp_info": {
         "aria-label": "Fampahalalana momba ny mpamatsy internet"
     },
+    "menu": {
+        "title": "GuardianSuit Menu",
+        "item1": {
+            "title": "Aterineto",
+            "icon": "A",
+            "href": "https://yourdomain.com/#",
+            "target": "_blank"
+        },
+        "item2": {
+            "title": "Televiziona",
+            "icon": "T",
+            "href": "https://yourdomain.com/#",
+            "target": "_blank"
+        },
+        "item3": {
+            "title": "Telefona",
+            "icon": "F",
+            "href": "https://yourdomain.com/#",
+            "target": "_blank"
+        },
+        "item4": {
+            "title": "Serivisy fanampiny",
+            "icon": "S",
+            "href": "https://yourdomain.com/#",
+            "target": "_blank"
+        },
+        "item5": {
+            "title": "Mifandraisa",
+            "icon": "M",
+            "href": "https://yourdomain.com/#",
+            "target": "_blank"
+        },
+        "item6": {
+            "title": "Politikan'ny fiainana manokana",
+            "icon": "&#167;",
+            "href": {"type": "modal", "title": "privacy_title", "subtitle": "privacy_subtitle", "content": "privacy_content", "iconText": "&#167;"},
+            "target": "_self"
+        },
+        "item7": {
+            "title": "Rakitra Cookies",
+            "icon": "&#9865;",
+            "href": {"type": "modal", "title": "cookies_title", "subtitle": "cookies_subtitle", "content": "cookies_content", "iconText": "&#9865;"},
+            "target": "_self"
+        },
+        "item8": {
+            "title": "Antontan-taratasy",
+            "icon": "&#9783;",
+            "href": "https://github.com/mixmint/opnsense-captive-portal-template/blob/main/README.md",
+            "target": "_blank"
+        },
+        "item9": {
+            "title": "Momba ny programa",
+            "icon": "&#9873;",
+            "href": {"type": "modal", "title": "about_title", "subtitle": "about_subtitle", "content": "about_content", "iconText": "&#9873;"},
+            "target": "_self"
+        },
+        "group1": {
+            "title": "Tolotra",
+            "items": ["item1", "item2", "item3", "item4", "item5"]
+        },
+        "group2": {
+            "title": "Fampahalalana",
+            "items": ["item6", "item7"]
+        },
+        "group3": {
+            "title": "Fanampiana",
+            "items": ["item8", "item9"]
+        }
+    },
     "footer_isp_info": {},
     "pagetitle": "Rafitra fidirana ho an'ny mpampiasa | < Anaran'ny ISP >",
     "username": "Anaran'ny mpampiasa (Login)",
@@ -62,7 +131,7 @@
     "cp_error_info_title": "Mety tsy afaka hiditra ianao satria",
     "cp_error_info": "<ul class=\"numeric\"><li>Ny login na teny miafina dia tsy mety<\/li><li>Tsindriana ny&nbsp;<strong>Caps Lock<\/strong> eo amin'ny klavier-nao<\/li><li>Misy solosaina hafa miditra amin'ny kaontinao<\/li><li>Ny kaontinao dia nosakanana noho ny tsy fetezan'ny fitaovanao<\/li><li>Lany daty na voafafa ny kaontinao noho ny tsy fandoavana ny saram-piantohana<\/li><\/ul>",
     "cp_error_solution_title": "<div class=\"solution-title\">Andramo vahaolana amin'ny dingana manaraka:<\/div>",
-    "cp_error_solution": "<ul><li>Hamarino tsara fa manoratra login sy teny miafina araka ny tokony ho izy (litera lehibe sy kely)</li><li>Hamarino fa voaloa ny kaontinao<\/li><li class=\"tel\">Raha tsy mety ny olana dia&nbsp;<a href=\"tel:+48123456789\">mifandraisa amin'ny serivisy tambajotra<\/a><\/li><\/ul>",
+    "cp_error_solution": "<ul><li>Hamarino tsara fa manoratra login sy teny miafina araka ny tokony ho izy (litera lehibe sy kely)<\/li><li>Hamarino fa voaloa ny kaontinao<\/li><li class=\"tel\">Raha tsy mety ny olana dia&nbsp;<a href=\"tel:+48123456789\">mifandraisa amin'ny serivisy tambajotra<\/a><\/li><\/ul>",
     "cp_rules_title": "Fitsipika",
     "cp_rules_info_title": "fanomezana serivisy internet",
     "cp_rules_content": "<div class=\"rules\"><p>1. Fitsipika voarakitra amin'ny html tsotra<\/p>\r\n<ul class=\"none-style\">\r\n<li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin nibh augue, suscipit a, scelerisque sed, lacinia in, mi. Cras vel lorem. Etiam pellentesque aliquet tellus. Phasellus pharetra nulla ac diam. Quisque semper justo at risus. Donec venenatis, turpis vel hendrerit interdum, dui ligula ultricies purus, sed posuere libero dui id orci. Nam congue, pede vitae dapibus aliquet, elit magna vulputate arcu, vel tempus metus leo non est. Etiam sit amet lectus quis est congue mollis. Phasellus congue lacus eget neque. Phasellus ornare, ante vitae consectetuer consequat, purus sapien ultricies dolor, et mollis pede metus eget nisi. Praesent sodales velit quis augue. Cras suscipit, urna at aliquam rhoncus, urna quam viverra nisi, in interdum massa nibh nec erat.<\/li>\r\n<\/ul><\/div>",
@@ -77,15 +146,15 @@
     "a11y_helper_prev": "Miverina",
     "a11y_helper_done": "Vita",
     "a11y-keys_data-title": "Sokajy fanalahidy",
-    "a11y-keys_data-content": "<span style=\"font-size: 14px\">Fifangaroan'ny fanalahidy <br \/><strong>⇧ Shift (left) <br \/>+&nbsp;⌥ Alt (left) <br \/>+&nbsp;litera<\/strong><br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;U<\/strong><br \/>miendrika amin'ny saha Anaran'ny mpampiasa<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;P<\/strong><br \/>miendrika amin'ny saha Teny miafina<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;A<\/strong><br \/>misafidy / tsy misafidy ny \"Manaiky fitsipika\"<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;R<\/strong><br \/>misokatra ny varavarankely fitsipika<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;I<\/strong><br \/>miditra ny mpampiasa<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;O<\/strong><br \/>mivoaka ny mpampiasa<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;L<\/strong><br \/>manomboka ny mpanova fiteny<\/span>",
+    "a11y-keys_data-content": "<span style=\"font-size: 14px\">Fifangaroan'ny fanalahidy <br \/><strong>⇧ Shift (left) <br \/>+&nbsp;⌥ Alt (left) <br \/>+&nbsp;litera<\/strong><br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;U<\/strong><br \/>miendrika amin'ny saha Anaran'ny mpampiasa<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;P<\/strong><br \/>miendrika amin'ny saha Teny miafina<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;A<\/strong><br \/>misafidy / tsy misafidy ny \"Manaiky fitsipika\"<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;R<\/strong><br \/>misokatra ny varavarankely fitsipika<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;I<\/strong><br \/>miditra ny mpampiasa<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;O<\/strong><br \/>mivoaka ny mpampiasa<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;L<\/strong><br \/>manomboka ny mpanova fiteny<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;M<\/strong><br \/>manokatra ny menu offcanvas (raha ampiasaina)<\/span>",
     "a11y-lang-keys_data-title": "Sokajy fanalahidy ho an'ny fiteny",
-    "a11y-lang-keys_data-content": "<span style=\"font-size: 14px\">Tazomy ny <strong>⇧ Shift (left) ary tsindrio ny taratasy roa amin'ny kaody fiteny</strong> (ISO 639-1) miaraka na tsirairay.<br \/><br \/>Ohatra:<br /><strong>⇧ Shift + P + L</strong> → miova ho fiteny Poloney (pl)<br /><br /><strong>⇧ Shift + E + N</strong> → miova ho fiteny Anglisy (en)<br /><br /><strong>⇧ Shift + D + E</strong> → miova ho fiteny Alemà (de)<br /><br /><strong>⇧ Shift + F + R</strong> → miova ho fiteny Frantsay (fr)<br /><br /><strong>⇧ Shift + E + S</strong> → miova ho fiteny Espaniola (es)<br /><br /><strong>⇧ Shift + I + T</strong> → miova ho fiteny Italiana (it)<br />...</span>",
+    "a11y-lang-keys_data-content": "<span style=\"font-size: 14px\">Tazomy ny <strong>⇧ Shift (left) ary tsindrio ny taratasy roa amin'ny kaody fiteny<\/strong> (ISO 639-1) miaraka na tsirairay.<br \/><br \/>Ohatra:<br \/><strong>⇧ Shift + P + L<\/strong> → miova ho fiteny Poloney (pl)<br \/><br \/><strong>⇧ Shift + E + N<\/strong> → miova ho fiteny Anglisy (en)<br \/><br \/><strong>⇧ Shift + D + E<\/strong> → miova ho fiteny Alemà (de)<br \/><br \/><strong>⇧ Shift + F + R<\/strong> → miova ho fiteny Frantsay (fr)<br \/><br \/><strong>⇧ Shift + E + S<\/strong> → miova ho fiteny Espaniola (es)<br \/><br \/><strong>⇧ Shift + I + T<\/strong> → miova ho fiteny Italiana (it)<br \/>...<\/span>",
     "polyglotLanguageSwitcher_data-title": "Mpifidy fiteny",
-    "polyglotLanguageSwitcher_data-content": "Eto ianao afaka manova ny dikan-teny amin'ny portal. Amin'ny fanindriana ny fanalahidy <strong>%s</strong>, dia hiseho ny saha <strong>%s</strong> na <strong>Shift</strong> sy taratasy roa amin'ny kaody fiteny miaraka na tsirairay, ohatra: <strong>Shift + P + L</strong> hanovana ny fiteny.",
+    "polyglotLanguageSwitcher_data-content": "Eto ianao afaka manova ny dikan-teny amin'ny portal. Amin'ny fanindriana ny fanalahidy <strong>%s<\/strong>, dia hiseho ny saha <strong>%s<\/strong> na <strong>Shift<\/strong> sy taratasy roa amin'ny kaody fiteny miaraka na tsirairay, ohatra: <strong>Shift + P + L<\/strong> hanovana ny fiteny.",
     "fieldUsername_data-title": "Fanalahidy fohy",
-    "fieldUsername_data-content": "Ity saha ity dia misy lakilen'ny fidirana. Amin'ny fanindriana miaraka ny <strong>%s</strong>, hofidinao ny saha <strong>%s</strong>.",
+    "fieldUsername_data-content": "Ity saha ity dia misy lakilen'ny fidirana. Amin'ny fanindriana miaraka ny <strong>%s<\/strong>, hofidinao ny saha <strong>%s<\/strong>.",
     "fieldPassword_data-title": "Fanalahidy fohy",
-    "fieldPassword_data-content": "Ity saha ity dia misy lakilen'ny fidirana. Amin'ny fanindriana miaraka ny <strong>%s</strong>, hofidinao ny saha <strong>%s</strong>.",
+    "fieldPassword_data-content": "Ity saha ity dia misy lakilen'ny fidirana. Amin'ny fanindriana miaraka ny <strong>%s<\/strong>, hofidinao ny saha <strong>%s<\/strong>.",
     "login-rules_data-title": "Fankatoavana ny Fitsipika",
     "login-rules_data-content": "Eto ianao hanamarina ny fankatoavana ny fepetra momba ny fanomezana serivisy internet voalaza ao amin'ny Fitsipika.",
     "rules_data-title": "Atin'ny Fitsipika",
@@ -93,9 +162,20 @@
     "cp_portal_event_undefined_data-title": "Fampahalalana momba ny fivoriana",
     "cp_portal_event_undefined_data-content": "Eto ianao hahita ny fampahalalana momba ny fifandraisana amin'ny fitaovanao.",
     "signin_data-title": "Hiditra",
-    "signin_data-content": "Amin'ny fanindriana ny bokotra <strong>Hiditra</strong> dia hanomboka ny fifandraisana amin'ny Internet ianao.",
+    "signin_data-content": "Amin'ny fanindriana ny bokotra <strong>Hiditra<\/strong> dia hanomboka ny fifandraisana amin'ny Internet ianao.",
     "signin_anon_data-title": "Hiditra",
-    "signin_anon_data-content": "Amin'ny fanindriana ny bokotra <strong>Hiditra</strong> dia hanomboka ny fifandraisana amin'ny Internet ianao.",
+    "signin_anon_data-content": "Amin'ny fanindriana ny bokotra <strong>Hiditra<\/strong> dia hanomboka ny fifandraisana amin'ny Internet ianao.",
     "logoff_data-title": "Hivoaka",
-    "logoff_data-content": "Amin'ny fanindriana ny bokotra <strong>Hivoaka</strong> dia hikatona ny fifandraisana amin'ny Internet."
+    "logoff_data-content": "Amin'ny fanindriana ny bokotra <strong>Hivoaka<\/strong> dia hikatona ny fifandraisana amin'ny Internet.",
+    "menuTrigger_data-title": "Menu offcanvas",
+    "menuTrigger_data-content": "Amin'ny fanindriana ny <strong>&#9776; offcanvas hamburger<\/strong> na amin'ny fanindriana miaraka amin'ny klavier <strong>%s<\/strong> dia hosokafana ny menu contextuel.",
+    "about_title": "GuardianSuit",
+    "about_subtitle": "Template Captive Portal mandroso ho an'ny OPNsense",
+    "about_content": "<p><b>GuardianSuit<\/b> dia template Captive Portal maoderina, responsive ary misy animation ho an'ny OPNsense. Manome traikefa login mahafinaritra ho an'ny mpampiasa ary fanaraha-maso feno ho an'ny mpitantana momba ny endrika sy ny fiasa amin'ny pejy fandraisana.<\/p><p><b>Asa fototra:<\/b><\/p><ul><li>Responsive sy animation.<\/li><li>Fiteny maro.<\/li><li>Fampifanarahana mora amin'ny endrika sy loko.<\/li><li>UX intuitive sy mifanaraka amin'ny WCAG.<\/li><li>Fampidirana mora amin'ny OPNsense.<\/li><\/ul><p><b>Fampiasana:<\/b><br \/>Tena mety ho an'ny tambajotra orinasa, hotely, café ary toerana hafa mitaky pejy fandraisana mahafinaritra amin'ny Captive Portal.<\/p><p><b>Mpamorona:<\/b> Mirosław Majka &lt;mix@proask.pl&gt; | &copy; 2025 GuardianSuit<\/p>",
+    "cookies_title": "Cookies",
+    "cookies_subtitle": "Ahoana no fampiasana ny cookies.",
+    "cookies_content": "<h5>Inona ny cookie?<\/h5><p>Ny cookies (antsoina koa hoe 'kôkisy') dia rakitra kely amin'ny endrika lahatsoratra, noforonin'ny navigateur mandeha ho azy rehefa mitsidika tranonkala ianao. Ny fampahalalana ao anatin'ny cookie iray dia azo vakiana ihany amin'ny pejy niavian'io cookie io. Midika izany fa ny tranonkala iray dia tsy afaka mahazo miditra amin'ny rakitra hafa eo amin'ny solosainao.<\/p><p>Miaraka amin'ny fampahalalana ao anatin'ny cookies, ny pejy dia 'mahafantatra' ny fomba fampiasanao azy ary afaka manitsy ny votoaty aseho aminao na manome fanampiana.<\/p><h5>Nahoana no ampiasaintsika ny cookies?<\/h5><p>Amin'ny tranonkala, mampiasa cookies teknika izahay izay ilaina mba hampandeha tsara ny tranonkala. Ampiasainay izy ireo mba hanatsarana ny tranonkala ho an'ny fitaovana sy navigateur matetika ampiasain'ny mpitsidika – noho izany ny solosainao, tablette na findainao dia haneho azy tsara sy mazava, ary hahatsiaro raha nanaiky ny fampisehoana votoaty voafantina amin'ny tranonkala ianao.<\/p><p>Tsy afaka mandà ny cookies teknika ny mpampiasa.<\/p><h5>Mandritra hafiriana no mampiasa cookies izahay?<\/h5><p>Mampiasa ny antsoina hoe cookies maharitra izahay, izay mijanona eo amin'ny fitaovanao mandritra ny fotoana voafaritra na mandra-pahafahanao mamafa azy ireo tanana.<\/li><\/ul><h5>Inona ny fampahalalana angonay avy amin'ny cookies?<\/h5><p>Amin'ny fampiasana ny teknolojia cookie, angonay aminao ihany ny angon-drakitra teknika tsy misy mombamomba manokana, izay manatsara ny fampiasana ny tranonkala.<\/p><p>Tsy angonay ny fampahalalana ahafahanao mamaritra anao manokana. Ny fampahalalana iray momba ny mpampiasa, izay tsy mamela ny fampahafantarana azy raha tsy misy fampifandraisana amin'ny angon-drakitra hafa, dia ny adiresy IP izay mampifandray ny mpampiasa.<\/p>",
+    "privacy_title": "Politikan'ny tsiambaratelo",
+    "privacy_subtitle": "Fikarakarana ny angon-drakitra manokana",
+    "privacy_content": "<p>Manomana ity antontan-taratasy ity izahay mba hampahafantatra anao momba ny Politikanay momba ny tsiambaratelo. Hahafantatra ianao hoe iza izahay, ny fomba anangonana, fampiasana, fampisehoana ary fampahafantarana ny angon-drakitra manokana ao anatin'ny <b><&nbsp;Anaran'ny ISP&nbsp;><\/b>, misy ao amin'ny [ Anaran'ny lalana 10, tanàna sy kaody paositra ], ny tanjon'ny fampiasana izany ary ny fomba ahafahan'ny olona voakasika manatanteraka ny zon'izy ireo momba ny tsiambaratelo.<\/p><p><&nbsp;Anaran'ny ISP&nbsp;> no tompon'andraikitra amin'ny fikarakarana ny angon-drakitra manokana araka ity Politikan'ny tsiambaratelo ity.<\/p><h5>MOMBA ANAY<\/h5><p>Ny mpitantana, izany hoe ny antoko mikarakara ny angon-drakitra manokana mifandraika amin'ny fampiasanao ity serivisy ity, dia <&nbsp;Anaran'ny ISP&nbsp;>, [ Anaran'ny lalana 10, tanàna sy kaody paositra ]; NIP 1234567890, Regon 123456789,<\/p><h5>MIFANDRAISA AMINAY<\/h5><ul><li>Amin'ny alalan'ny mailaka: adresy@email.pl,<\/li><li>Amin'ny alalan'ny taratasy: Anaran'ny ISP, [ Anaran'ny lalana 10, tanàna sy kaody paositra ]<\/li><\/ul><h5>NY FOTO-KEVITRA AO AMIN'ITY POLITIKAN'NY TSIAMBARATELO ITY<\/h5><p>Miantoka izahay fa ny fikarakarana ny angon-drakitrao dia atao araka ny lalàna mifehy, anisan'izany ny didy aman-dalànan'ny Parlemanta Eoropeana sy ny Filankevitra (UE) 2016/679 tamin'ny 27 aprily 2016 momba ny fiarovana ny olona voakasika amin'ny fikarakarana ny angon-drakitra manokana sy ny fifindra-monina malalaka amin'ireo angon-drakitra ireo ary fanesorana ny torolàlana 95/46/WE (General Data Protection Regulation, RODO), ary koa ny lalàna hafa mifehy ny angon-drakitra manokana. Ity Politikan'ny tsiambaratelo ity dia noforonina araka izany. Mazava ny fampahafantarana ny fomba anangonana ny angon-drakitra manokana sy ny tanjona fampiasana azy.<\/p><p>Tsaroanay fa <&nbsp;Anaran'ny ISP&nbsp;> dia manangona angon-drakitra manokana sy fampahalalana momba ny orinasa avy amin'ny mpanjifa sy mpiara-miasa (mety ho ho avy) ary koa avy amin'ny fampiasana ny serivisy Internet.<\/p><h5>FANANGONANA NY ANGON-DRAKITRA MANOKANA<\/h5><p>Manangona angon-drakitra manokana avy amin'ny mpampiasa izahay amin'ireto tranga manaraka ireto:<\/p><ul><li>fampitana tolotra, famaritana ny fepetra fiaraha-miasa sy/na fampahalalana momba ny tolotra sy hetsika hafa ataon'ny <&nbsp;Anaran'ny ISP&nbsp;>,<\/li><li>fifanarahana sy fampiharana ny fifanekena ary fampifandraisana amin'ny mpanjifa/mpiara-miasa,<\/li><li>fanatanterahana ny adidy miorina amin'ny lalàna miasa,<\/li><li>famalian-teny amin'ny fanontaniana, fanaraha-maso ny fitarainana sy serivisy hafa aorian'ny varotra,<\/li><li>varotra mivantana (afa-tsy ny taratasy fampahafantarana),<\/li><li>ho an'ny tanjona fitahirizana (porofon'ny raharaha), fanamarinana, fanenjehana na fiarovana amin'ny fitoriana.<\/li><\/ul><h5>FITAHIRIZANA SY FANAFOANA ANGON-DRAKITRA<\/h5><p>Mba hiarovana ny angon-drakitra natoky anay, namolavola fomba fanao anatiny izahay izay misoroka ny fidiran'ny olona tsy nahazo alalana. Mampihatra fampiharana ara-teknika, ara-pifanarahana, ara-pitantanana ary ara-batana izahay mba hiarovana ny angon-drakitra tsy hiditra tsy nahazo alalana. Manara-maso ny fampiharana azy ary manamarina ny fanarahan-dalàna foana izahay.<\/p><p>Mitahiry ny angon-drakitra manokana ny mpampiasa izahay mandritra ny fotoana ilaina mba hahatanteraka ny tanjona nampiasana azy.<\/p><h5>FAMPISEHOANA SY FAMOHA ANGON-DRARITRA<\/h5><p>Tsy mivarotra na mampiseho ny angon-drakitra manokana amin'ny antoko fahatelo izahay raha tsy misy ny fahazoan-dàlana. Tsy voakasiky ny profilin'ny mpampiasa ny angon-drakitra.<\/p><p>Miankina amin'ny karazana sy ny fepetra fiaraha-miasa eo amin'ny mpampiasa sy <&nbsp;Anaran'ny ISP&nbsp;>, noho ny asa atao, afaka manome ny angon-drakitrao izahay raha takian'ny lalàna, na raha ilaina mba hahazoana manaraka ny fepetra ara-dalàna na fanatanterahana ny adidy ara-pifanarahana, famaliana fitoriana, na fiarovana ny zon'ny mpampiasa, ny fananan-tany na ny fiarovana.<\/p><h5>NY FOTO-KEVITRA MIKASIKA NY FIKARAKARANA NY ANGON-DRARITRAO<\/h5><p>Manao ny tsara indrindra izahay mba hiarovana ny tombontsoan'ny olona voakasika ny angon-drakitra manokana, ary indrindra mba hahazoana antoka fa ireo angon-drakitra ireo dia:<\/p><ul><li>fikarakarana araka ny lalàna, marina ary mazava ho an'ilay olona voakasika,<\/li><li>angonina ho an'ny tanjona mazava sy ara-dalàna ary tsy ampiasaina ho tanjona hafa tsy mifanaraka amin'izany,<\/li><li>mifanentana, mety ary voafetra amin'ny ilaina ho tanterahana ny tanjona,<\/li><li>marina ary havaozina raha ilaina. Mandray fepetra izahay mba hanitsiana na hamafana ny angon-drakitra tsy marina,<\/li><li>voatahiry amin'ny fomba ahafahana mamantatra ny olona voakasika mandritra ny fotoana tsy mihoatra ny ilaina amin'ny tanjona,<\/li><li>fikarakara azo antoka mba hiarovana ny angon-drakitra manokana, anisan'izany ny fiarovana amin'ny fidirana tsy nahazo alalana, fanodikodinam-bola na fahaverezan'ny angon-drakitra tsy nahy.<\/li><\/ul><p>Matetika izahay manao ny fikarakarana ny angon-drakitrao araka ny fanomezan-dàlana, izay azo esorina amin'ny fotoana rehetra. Tranga hafa dia rehefa ilaina ny fikarakarana ny angon-drakitrao mba hanatanterahana ny fifanarahana eo aminao sy anay na mba hanaovana hetsika araka ny fangatahanao alohan'ny fifanarahana. Amin'ny toe-javatra sasany, ilaina ny fikarakarana mba hanatanterahana ny adidy ara-dalàna eo amintsika ho mpitantana ny angon-drakitra manokana. Ireo adidy ireo dia azo avy amin'ny lalàna momba ny asa, na lalàna momba ny kaonty. Ilaina ihany koa ny fikarakarana ho an'ny tombontsoa ara-dalàna misy antsika, toy ny fanenjehana fitoriana amin'ny asa atao.<\/p><h5>NY ZONAO<\/h5><p>Manan-jo ianao amin'ireto manaraka ireto:<\/p><ul><li>Fidirana amin'ny angon-drakitrao sy fampahalalana momba ny sokajy, ny tanjona fampiasana, ary ny kopian'ny angon-drakitrao,<\/li><li>Fanitsiana ny angon-drakitra tsy marina sy fampenoana ny tsy fahampiana, ary ny zo ho hadino, izay midika fa manana zo hamafa angon-drakitra voakarakara tsy ara-dalàna ianao,<\/li><li>Fanesorana ny fanomezan-dàlana amin'ny fikarakarana angon-drakitra amin'ny fotoana rehetra tsy misy fiantraikany amin'ny maha-ara-dalàna ny fikarakarana efa natao tamin'ny alalan'ny fanomezan-dàlana (raha atao araka ny andininy 6 fizarana 1 litera a na andininy 9 fizarana 2 litera a RODO).<\/li><\/ul><h5>COOKIES<\/h5><p><&nbsp;Anaran'ny ISP&nbsp;>, mampiasa cookies mba hanamora ny fampiasana ny serivisy. Amin'ny fampiasana ny serivisy, manaiky ianao ny fampiasana cookies. Raha tsy manakana izany ianao dia manaiky ny fampiasana azy sy ny fitahirizana azy eo amin'ny fitaovanao.<\/p><h5>FIOVANA NY POLITIKAN'NY FIKARAKARANA ANGON-DRARITRA MANOKANA<\/h5><p><&nbsp;Anaran'ny ISP&nbsp;> dia manamafy ny zo hanova ny politikan'ny angon-drakitra manokana, izay mety hitarika amin'ny fampandrosoana ny teknolojia Internet, fanovana lalàna momba ny angon-drakitra manokana, ary fampivoarana ny serivisy omen'ny mpitantana. Hampahafantarina amin'ny fomba mazava sy tsotra ny fanovana rehetra.<\/p><p>Raha manana fanontaniana momba ny politikan'ny angon-drakitra manokana ianao dia azafady mandefasa mailaka: adresy@email.pl<\/p>"
 }

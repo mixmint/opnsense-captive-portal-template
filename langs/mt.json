@@ -7,6 +7,75 @@
     "attr_isp_info": {
         "aria-label": "Informazzjoni dwar il-fornitur tal-internet"
     },
+    "menu": {
+        "title": "Menu GuardianSuit",
+        "item1": {
+            "title": "Internet",
+            "icon": "I",
+            "href": "https://yourdomain.com/#",
+            "target": "_blank"
+        },
+        "item2": {
+            "title": "Televiżjoni",
+            "icon": "T",
+            "href": "https://yourdomain.com/#",
+            "target": "_blank"
+        },
+        "item3": {
+            "title": "Telefon",
+            "icon": "F",
+            "href": "https://yourdomain.com/#",
+            "target": "_blank"
+        },
+        "item4": {
+            "title": "Servizzi Addizzjonali",
+            "icon": "S",
+            "href": "https://yourdomain.com/#",
+            "target": "_blank"
+        },
+        "item5": {
+            "title": "Kuntatt",
+            "icon": "K",
+            "href": "https://yourdomain.com/#",
+            "target": "_blank"
+        },
+        "item6": {
+            "title": "Politika tal-Privattività",
+            "icon": "&#167;",
+            "href": {"type": "modal", "title": "privacy_title", "subtitle": "privacy_subtitle", "content": "privacy_content", "iconText": "&#167;"},
+            "target": "_self"
+        },
+        "item7": {
+            "title": "Fajls Cookies",
+            "icon": "&#9865;",
+            "href": {"type": "modal", "title": "cookies_title", "subtitle": "cookies_subtitle", "content": "cookies_content", "iconText": "&#9865;"},
+            "target": "_self"
+        },
+        "item8": {
+            "title": "Dokumentazzjoni",
+            "icon": "&#9783;",
+            "href": "https://github.com/mixmint/opnsense-captive-portal-template/blob/main/README.md",
+            "target": "_blank"
+        },
+        "item9": {
+            "title": "Dwar il-Programm",
+            "icon": "&#9873;",
+            "href": {"type": "modal", "title": "about_title", "subtitle": "about_subtitle", "content": "about_content", "iconText": "&#9873;"},
+            "target": "_self"
+        },
+        "group1": {
+            "title": "Offerta",
+            "items": ["item1", "item2", "item3", "item4", "item5"]
+        },
+        "group2": {
+            "title": "Informazzjoni",
+            "items": ["item6", "item7"]
+        },
+        "group3": {
+            "title": "Għajnuna",
+            "items": ["item8", "item9"]
+        }
+    },
     "footer_isp_info": {},
     "pagetitle": "Sistema ta' login għall-utenti | <Isem ISP>",
     "username": "Isem tal-utent (Login)",
@@ -77,7 +146,7 @@
     "a11y_helper_prev": "Waraj",
     "a11y_helper_done": "Il-finished",
     "a11y-keys_data-title": "Shortcuts tat-tastiera",
-    "a11y-keys_data-content": "<span style=\"font-size: 14px\">Kombinazzjoni ta' ċwievet <br \/><strong>⇧ Shift (tax-xellug) <br \/>+&nbsp;⌥ Alt (tax-xellug) <br \/>+&nbsp;ittra<\/strong><br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;U<\/strong><br \/>fokus fuq il-qasam Isem tal-Utent<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;P<\/strong><br \/>fokus fuq il-qasam Password<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;A<\/strong><br \/>jimmarka/jneħħi l-għażla fil-kaxxa “Naċċettaw ir-Regolamenti”<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;R<\/strong><br \/>jiftaħ tieqa modal mal-Regolamenti<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;I<\/strong><br \/>jilloggja l-utent<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;O<\/strong><br \/>jilloggja barra l-utent<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;L<\/strong><br \/>ibda l-għażla tal-lingwa<\/span>",
+    "a11y-keys_data-content": "<span style=\"font-size: 14px\">Kombinazzjoni ta' ċwievet <br \/><strong>⇧ Shift (tax-xellug) <br \/>+&nbsp;⌥ Alt (tax-xellug) <br \/>+&nbsp;ittra<\/strong><br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;U<\/strong><br \/>fokus fuq il-qasam Isem tal-Utent<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;P<\/strong><br \/>fokus fuq il-qasam Password<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;A<\/strong><br \/>jimmarka/jneħħi l-għażla fil-kaxxa “Naċċettaw ir-Regolamenti”<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;R<\/strong><br \/>jiftaħ tieqa modal mal-Regolamenti<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;I<\/strong><br \/>jilloggja l-utent<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;O<\/strong><br \/>jilloggja barra l-utent<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;L<\/strong><br \/>ibda l-għażla tal-lingwa<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;M<\/strong><br \/>jiftaħ il-menu offcanvas (jekk huwa attivat)<\/span>",
     "a11y-lang-keys_data-title": "Shortcuts tat-tastiera għall-lingwi",
     "a11y-lang-keys_data-content": "<span style=\"font-size: 14px\">Żomm <strong>⇧ Shift (tax-xellug) u agħfas iż-żewġ ittri tal-kodiċi tal-lingwa<\/strong> (ISO 639-1) fl-istess ħin jew waħda wara l-oħra.<br \/><br \/>Eżempji:<br \/><strong>⇧ Shift&nbsp;+&nbsp;P&nbsp;+&nbsp;L<\/strong> → jibdlu għal Pollakk (pl)<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;E&nbsp;+&nbsp;N<\/strong> → jibdlu għal Ingliż (en)<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;D&nbsp;+&nbsp;E<\/strong> → jibdlu għal Ġermaniż (de)<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;F&nbsp;+&nbsp;R<\/strong> → jibdlu għal Franċiż (fr)<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;E&nbsp;+&nbsp;S<\/strong> → jibdlu għal Spanjol (es)<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;I&nbsp;+&nbsp;T<\/strong> → jibdlu għal Taljan (it)<br \/>...<\/span>",
     "polyglotLanguageSwitcher_data-title": "Selettur tal-lingwa",
@@ -97,5 +166,16 @@
     "signin_anon_data-title": "Idħol",
     "signin_anon_data-content": "Meta tikklikkja l-buttuna <strong>Idħol<\/strong> tibda konnessjoni mal-Internet.",
     "logoff_data-title": "Oħroġ",
-    "logoff_data-content": "Meta tikklikkja l-buttuna <strong>Oħroġ<\/strong> tispiċċa l-konnessjoni mal-Internet."
+    "logoff_data-content": "Meta tikklikkja l-buttuna <strong>Oħroġ<\/strong> tispiċċa l-konnessjoni mal-Internet.",
+    "menuTrigger_data-title": "Menu offcanvas",
+    "menuTrigger_data-content": "Billi tikklikkja fuq <strong>&#9776; offcanvas hamburger<\/strong> jew billi tiskopri fl-istess ħin fuq il-klavier <strong>%s<\/strong> tiftaħ il-menu kontestwali.",
+    "about_title": "GuardianSuit",
+    "about_subtitle": "Template Avvanzat tal-Captive Portal għal OPNsense",
+    "about_content": "<p><b>GuardianSuit<\/b> huwa template modern, reattiv u animat tal-Captive Portal għal OPNsense. Joffri lill-utenti esperjenza ta' login attraenti u lill-amministraturi kontroll sħiħ fuq il-wiċċ u funzjonalità tal-paġna tal-bini.<\/p><p><b>Karatteristiċi ewlenin:<\/b><\/p><ul><li>Reattività u animazzjonijiet.<\/li><li>Multilingwiżmu.<\/li><li>Personalizzazzjoni faċli tal-wiċċ u tal-kuluri.<\/li><li>UX intuwittiv u konformità ma' WCAG.<\/li><li>Integrazzjoni sempliċi ma' OPNsense.<\/li><\/ul><p><b>Użu:<\/b><br \/>Ideali għal netwerks ta' kumpaniji, lukandi, kafetteriji u postijiet oħra li jeħtieġu paġna tal-bini tal-Captive Portal attraenti viżwalment.<\/p><p><b>Awtur:<\/b> Mirosław Majka &lt;mix@proask.pl&gt; | &copy; 2025 GuardianSuit<\/p>",
+    "cookies_title": "Fajls tal-Cookies",
+    "cookies_subtitle": "Kif jintużaw il-fajls cookie.",
+    "cookies_content": "<h5>X’inhu fajl cookie?<\/h5><p>Il-fajls cookie (magħrufa wkoll bħala cookies) huma fajls test żgħar li jinħolqu awtomatikament mill-browser waqt li żżur siti web. L-informazzjoni f’fajl cookie partikolari tista’ titqiegħed biss mill-paġna minn fejn ġiet maħluqa. Dan ifisser li l-paġna web ma tistax taċċessa fajls oħra fuq il-kompjuter tal-utent.<\/p><p>Bl-informazzjoni li tinsab fil-fajls cookie, il-paġna “tkun taf” kif tuża l-paġna u tista’ tadatta t-trejd li turi lilek jew toffrilek għajnuna.<\/p><h5:Għal xiex nużaw il-fajls cookie?<\/h5><p>Fis-sit nużaw fajls cookie tekniċi li huma essenzjali għall-funzjonament korrett tas-sit. Nużawhom biex no ottimizzaw is-sit web tagħna għall-apparati u browsers li l-utenti jintużaw l-aktar – hekk il-kompjuter, tablet jew telefon tiegħek juri s-sit b’mod korrett u ċar, filwaqt li jiftakar jekk għamiltx kuntentizzazzjoni għall-wiri ta’ kontenut partikolari fuq is-sit.<\/p><p>L-utent ma jistax jiddeċiedi li jħassar il-fajls cookie tekniċi.<\/p><h5>Sa kemm nużaw il-fajls cookie?<\/h5><p>Nużaw fajls cookie permanenti li jibqgħu fuq it-tagħmir tiegħek għal perjodu speċifiku jew sakemm jitħassru manwalment.<\/li><\/ul><h5>X’data niġbru permezz tal-fajls cookie?<\/h5><p>Permezz tat-teknoloġija cookie, niġbru biss data teknika anonima biex intejbu l-komodità tal-użu tas-sit tagħna.<\/p><p>Ma niġbrux data li tista’ tidentifikak personalment. L-informazzjoni unika dwar l-utent, li mingħajr ma tgħaqqad ma’ data oħra ma tħallix biex tkun identifikata, hija l-indirizz IP minn fejn l-utent qed jikkonnettja.<\/p>",
+    "privacy_title": "Politika tal-Privatezza",
+    "privacy_subtitle": "Ġestjoni tad-Data Personali",
+    "privacy_content": "<p>Nħejju dan id-dokument biex ninfurmak dwar il-Politika tal-Privatezza tagħna. Hawnhekk se titgħallem min aħna, kif niġbru, nużaw, nħallu u naqsmu data personali fi <b><&nbsp;Isem ISP&nbsp;><\/b>, b’sede f’[ Indirizz 10, belt u kodiċi postali ], għal liema skop nagħmlu dan u kif in-nies li data tagħhom tiġi pproċessata jistgħu jeżerċitaw id-drittijiet tagħhom għall-privatezza.<\/p><p><&nbsp;Isem ISP&nbsp;> hija responsabbli għall-ipproċessar tad-data personali skont din il-Politika tal-Privatezza.<\/p><h5>DARNA<\/h5><p>Amministratur, jiġifieri l-entità li tħaddem id-data personali f’konnessjoni mal-użu tiegħek tal-servizz, huwa <&nbsp;Isem ISP&nbsp;>, [ Indirizz 10, belt u kodiċi postali ]; NIP 1234567890, Regon 123456789,<\/p><h5>KONTAĊT MAGĦNA<\/h5><ul><li>bl-elettronika fuq indirizz e-mail: adres@email.pl,<\/li><li>b’mod bil-miktub fuq: Isem ISP, [ Indirizz 10, belt u kodiċi postali ]<\/li><\/ul><h5>PRINĊIPJI FIR-RIGWARD TAL-POLITIKA TAL-PRIVATEŻŻA<\/h5><p>Ninsistu li l-ipproċessar tad-data tiegħek isir skont ir-regolamenti tat-Trattat tal-Parlament Ewropew u tal-Kunsill (UE) 2016/679 tas-27 ta’ April 2016 dwar il-protezzjoni tal-individwi f’konnessjoni mal-ipproċessar tad-data personali u l-fluss liberu tagħhom u l-abrogazzjoni tad-direttiva 95/46/WE (RODO), kif ukoll skont liġijiet speċifiċi. Din il-Politika tal-Privatezza ġiet ippreparata skont dawn. Nispjegaw b’mod ċar kif niġbru d-data personali u għal liema skop tintuża.<\/p><p>Jidher li <&nbsp;Isem ISP&nbsp;> tiġbor data personali u informazzjoni dwar in-negozju mogħtija mill-klijenti u kuntratturi potenzjali, kif ukoll data miksuba waqt li tuża s-servizz tal-internet.<\/p><h5>ĠBIR TAL-DATA PERSONALI<\/h5><p>Niġbru data personali mogħtija mill-Utenti f’ċerti każijiet bħal:<\/p><ul><li>jipprovdu offerti, jistabbilixxu kundizzjonijiet ta’ kooperazzjoni u/jew jipprovdu informazzjoni dwar is-servizzi u attivitajiet oħra ta’ <&nbsp;Isem ISP&nbsp;>,<\/li><li>iffirma u jimplimenta kuntratti u jinżamm kuntatt mal-klijent/kuntrattur,<\/li><li>iwettaq obbligi skont il-liġi,<\/li><li>jirrispondi għal mistoqsijiet, jikkunsidra reklami u servizz post-bejgħ ieħor,<\/li><li>marketing dirett (ħlief newsletter),<\/li><li>għall-iskopijiet arkivistiċi jew legali, inkluż biex jistabbilixxu, jistħarrġu jew jiddefendu kontra talbiet.<\/li><\/ul><h5>ĦADRAN U ĦASSAR TAL-DATA<\/h5><p>Biex niżguraw is-sigurtà tad-data mogħtija, stabbilixxejna proċeduri u rakkomandazzjonijiet interni biex nevitaw aċċess mhux awtorizzat. Nużaw miżuri teknoloġiċi, kuntrattwali, amministrattivi u fiżċi biex nipproteġu d-data. Nikkontrollaw l-implimentazzjoni tagħhom u nittestjaw il-konformità mal-liġijiet rilevanti.<\/p><p>Naħżnu d-data personali tal-Utent biss għal żmien meħtieġ biex jintlaħqu l-iskopijiet għaliex ġiet miġbura.<\/p><h5>QSIM U PUBBLIKAZZJONI TAL-DATA<\/h5><p>Ma nbiegħux jew naqsmu l-data personali tal-Utenti ma’ terzi mingħajr il-kunsens tagħhom. Id-Data tal-Utent ma tiġi profilata.<\/p><p>Skont it-tip u l-qasam ta’ kooperazzjoni bejn l-Utent u <&nbsp;Isem ISP&nbsp;>, nistgħu naqsmu d-data tal-Utent jekk meħtieġ mill-liġi, jew jekk meħtieġ biex niżguraw konformità legali, twettqiet ta’ obbligi kuntrattwali, tweġibiet għal talbiet, jew biex nipproteġu d-drittijiet, il-proprjetà jew is-sigurtà.<\/p><h5>PRINĊIPJI TAL-IPPROĊESSAR TAL-DATA TIEGĦEK<\/h5><p>Ninsistu fuq l-aħjar prattiċi biex nipproteġu l-interess tan-nies li data tagħhom tiġi pproċessata, inkluż li d-data tkun:<\/p><ul><li>ipproċessata skont il-liġi, b’mod onest u trasparenti għall-persuna rilevanti,<\/li><li>miġbura għal skopijiet konkreti, ċari u leġittimi u ma tiġix ipproċessata għal skopijiet mhux konformi,<\/li><li>adekwati, rilevanti u limitati għal dak meħtieġ,<\/li><li>korretti u aġġornati meta meħtieġ. Niġu biex nħassru jew nikkoreġu d-data mhux korretta skont l-iskop,<\/li><li>maħżuna b’mod li tippermetti l-identifikazzjoni tal-persuna għal żmien mhux aktar minn dak meħtieġ,<\/li><li>ipproċessata b’mod sigur inkluż protezzjoni kontra aċċess mhux awtorizzat jew li ma jikkonformax mal-liġi, jew telf jew ħsara każwali.<\/li><\/ul><p>Normalment nipproċessaw id-data personali tiegħek fuq bażi ta’ kunsens li tista’ tiġi ritirata fi kwalunkwe ħin. Xi drabi, il-proċessar huwa meħtieġ biex twettaq kuntratt bejn inti u aħna jew biex tieħu azzjoni fuq talba tiegħek qabel il-firma tal-kuntratt. F’ċerti każijiet, il-proċessar huwa meħtieġ biex iwettaq obbligu legali fuq l-amministratur. Dan jinkludi eż. liġijiet tax-xogħol u leġiżlazzjoni dwar kontabilità. Il-proċessar jista’ jkun meħtieġ ukoll għall-interessi legittimi tagħna, bħal tfittxija ta’ talbiet relatati mal-attivitajiet ekonomici tagħna.<\/p><h5>ID-DRITTI TIEGĦEK<\/h5><p>Għandek id-drittijiet li ġejjin:<\/p><ul><li>Aċċess għall-kontenut tad-data personali tiegħek u għall-informazzjoni dwar kategoriji ta’ data, skopijiet tal-ipproċessar, u biex tikseb kopji,<\/li><li>Korezzjoni ta’ data mhux korretta u kompletazzjoni ta’ data nieqsa, inkluż id-dritt li titħassar, jiġifieri tħassar data li kienet ipproċessata b’mod mhux legittimu jew bla bżonn,<\/li><li>Ritirata tal-kunsens għall-ipproċessar tad-data fi kwalunkwe ħin mingħajr impatt fuq il-legittimità tal-ipproċessar preċedenti (jekk isir fuq bażi ta’ art. 6(1)(a) jew art. 9(2)(a) RODO).<\/li><\/ul><h5>COOKIES<\/h5><p><&nbsp;Isem ISP&nbsp;> juża fajls cookie biex jagħmel l-użu tas-servizz aktar faċli. Meta tuża s-servizz, inti tikkunsenti għall-użu tal-fajls cookie. Jekk ma tħallix il-fajls, inti tikkunsenti għall-użu tagħhom u l-ħażna fuq it-tagħmir tiegħek.<\/p><h5>IBDIL FIL-POLITIKA TAL-DATA<\/h5><p><&nbsp;Isem ISP&nbsp;> iżomm id-dritt li jibdel il-politika tal-protezzjoni tad-data personali, influwenzat minn żvilupp teknoloġiku, bidliet fil-liġi dwar data personali, u żvilupp tas-servizz tal-amministratur. Kull bidla se tkun infurmata b’mod ċar u trasparenti.<\/p><p>Għal mistoqsijiet dwar il-politika tal-protezzjoni tad-data personali, jekk jogħġbok ikkuntattja lil: adres@email.pl<\/p>"
 }

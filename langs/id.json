@@ -7,6 +7,93 @@
     "attr_isp_info": {
         "aria-label": "Informasi tentang penyedia internet"
     },
+    "menu": {
+        "title": "Menu GuardianSuit",
+        "item1": {
+            "title": "Internet",
+            "icon": "I",
+            "href": "https://yourdomain.com/#",
+            "target": "_blank"
+        },
+        "item2": {
+            "title": "Televisi",
+            "icon": "V",
+            "href": "https://yourdomain.com/#",
+            "target": "_blank"
+        },
+        "item3": {
+            "title": "Telepon",
+            "icon": "T",
+            "href": "https://yourdomain.com/#",
+            "target": "_blank"
+        },
+        "item4": {
+            "title": "Layanan Tambahan",
+            "icon": "U",
+            "href": "https://yourdomain.com/#",
+            "target": "_blank"
+        },
+        "item5": {
+            "title": "Kontak",
+            "icon": "K",
+            "href": "https://yourdomain.com/#",
+            "target": "_blank"
+        },
+        "item6": {
+            "title": "Kebijakan Privasi",
+            "icon": "&#167;",
+            "href": {
+                "type": "modal",
+                "title": "privacy_title",
+                "subtitle": "privacy_subtitle",
+                "content": "privacy_content",
+                "iconText": "&#167;"
+            },
+            "target": "_self"
+        },
+        "item7": {
+            "title": "Cookie",
+            "icon": "&#9865;",
+            "href": {
+                "type": "modal",
+                "title": "cookies_title",
+                "subtitle": "cookies_subtitle",
+                "content": "cookies_content",
+                "iconText": "&#9865;"
+            },
+            "target": "_self"
+        },
+        "item8": {
+            "title": "Dokumentasi",
+            "icon": "&#9783;",
+            "href": "https://github.com/mixmint/opnsense-captive-portal-template/blob/main/README.md",
+            "target": "_blank"
+        },
+        "item9": {
+            "title": "Tentang Aplikasi",
+            "icon": "&#9873;",
+            "href": {
+                "type": "modal",
+                "title": "about_title",
+                "subtitle": "about_subtitle",
+                "content": "about_content",
+                "iconText": "&#9873;"
+            },
+            "target": "_self"
+        },
+        "group1": {
+            "title": "Penawaran",
+            "items": ["item1", "item2", "item3", "item4", "item5"]
+        },
+        "group2": {
+            "title": "Informasi",
+            "items": ["item6", "item7"]
+        },
+        "group3": {
+            "title": "Bantuan",
+            "items": ["item8", "item9"]
+        }
+    },
     "footer_isp_info": {},
     "pagetitle": "Sistem login pengguna | < Nama ISP >",
     "username": "Nama pengguna (Login)",
@@ -77,7 +164,7 @@
     "a11y_helper_prev": "Kembali",
     "a11y_helper_done": "Selesai",
     "a11y-keys_data-title": "Kombinasi Tombol",
-    "a11y-keys_data-content": "<span style=\"font-size: 14px\">Kombinasi tombol <br \/><strong>⇧ Shift (kiri) <br \/>+&nbsp;⌥ Alt (kiri) <br \/>+&nbsp;huruf<\/strong><br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;U<\/strong><br \/>fokus pada kolom Nama Pengguna<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;P<\/strong><br \/>fokus pada kolom Kata Sandi<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;A<\/strong><br \/>menandai/membatalkan centang kotak \"Saya menyetujui peraturan\"<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;R<\/strong><br \/>membuka jendela peraturan<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;I<\/strong><br \/>masuk sebagai pengguna<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;O<\/strong><br \/>keluar dari akun<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;L<\/strong><br \/>mengaktifkan pemilih bahasa<\/span>",
+    "a11y-keys_data-content": "<span style=\"font-size: 14px\">Kombinasi tombol <br \/><strong>⇧ Shift (kiri) <br \/>+&nbsp;⌥ Alt (kiri) <br \/>+&nbsp;huruf<\/strong><br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;U<\/strong><br \/>fokus pada kolom Nama Pengguna<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;P<\/strong><br \/>fokus pada kolom Kata Sandi<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;A<\/strong><br \/>menandai/membatalkan centang kotak \"Saya menyetujui peraturan\"<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;R<\/strong><br \/>membuka jendela peraturan<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;I<\/strong><br \/>masuk sebagai pengguna<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;O<\/strong><br \/>keluar dari akun<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;L<\/strong><br \/>mengaktifkan pemilih bahasa<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;M<\/strong><br \/>membuka menu offcanvas (jika diaktifkan)<\/span>",
     "a11y-lang-keys_data-title": "Kombinasi Bahasa",
     "a11y-lang-keys_data-content": "<span style=\"font-size: 14px\">Tahan <strong>⇧ Shift (kiri) dan tekan dua huruf kode bahasa<\/strong> (ISO 639-1) secara bersamaan atau satu per satu.<br \/><br \/>Contoh:<br \/><strong>⇧ Shift&nbsp;+&nbsp;P&nbsp;+&nbsp;L<\/strong> → beralih ke bahasa Polandia (pl)<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;E&nbsp;+&nbsp;N<\/strong> → beralih ke bahasa Inggris (en)<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;D&nbsp;+&nbsp;E<\/strong> → beralih ke bahasa Jerman (de)<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;F&nbsp;+&nbsp;R<\/strong> → beralih ke bahasa Prancis (fr)<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;E&nbsp;+&nbsp;S<\/strong> → beralih ke bahasa Spanyol (es)<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;I&nbsp;+&nbsp;T<\/strong> → beralih ke bahasa Italia (it)<br \/>...<\/span>",
     "polyglotLanguageSwitcher_data-title": "Pemilih Bahasa",
@@ -97,5 +184,16 @@
     "signin_anon_data-title": "Masuk",
     "signin_anon_data-content": "Tekan tombol <strong>Masuk<\/strong> untuk memulai koneksi internet.",
     "logoff_data-title": "Keluar",
-    "logoff_data-content": "Tekan tombol <strong>Keluar<\/strong> untuk mengakhiri koneksi internet."
+    "logoff_data-content": "Tekan tombol <strong>Keluar<\/strong> untuk mengakhiri koneksi internet.",
+    "menuTrigger_data-title": "Menu offcanvas",
+    "menuTrigger_data-content": "Dengan mengklik <strong>&#9776; hamburger offcanvas<\/strong> atau menekan secara bersamaan pada keyboard <strong>%s<\/strong>, Anda akan membuka menu kontekstual.",
+    "about_title": "GuardianSuit",
+    "about_subtitle": "Template Captive Portal lanjutan untuk OPNsense",
+    "about_content": "<p><b>GuardianSuit<\/b> adalah template Captive Portal modern, responsif, dan beranimasi untuk OPNsense. Template ini memberikan pengalaman login yang menarik bagi pengguna serta kontrol penuh bagi administrator atas tampilan dan fungsionalitas halaman sambutan.<\/p><p><b>Fitur utama:<\/b><\/p><ul><li>Responsif dan animasi.<\/li><li>Dukungan multibahasa.<\/li><li>Kustomisasi tampilan dan skema warna yang mudah.<\/li><li>UX yang intuitif dan sesuai dengan WCAG.<\/li><li>Integrasi sederhana dengan OPNsense.<\/li><\/ul><p><b>Penerapan:<\/b><br \/>Ideal untuk jaringan perusahaan, hotel, kafe, dan tempat lain yang memerlukan halaman sambutan Captive Portal yang menarik secara visual.<\/p><p><b>Penulis:<\/b> Mirosław Majka &lt;mix@proask.pl&gt; | &copy; 2025 GuardianSuit<\/p>",
+    "cookies_title": "Cookie",
+    "cookies_subtitle": "Bagaimana cookie digunakan.",
+    "cookies_content": "<h5>Apa itu cookie?<\/h5><p>Cookie adalah file teks kecil yang dibuat secara otomatis oleh peramban web saat mengunjungi situs WWW. Informasi yang tersimpan dalam cookie hanya dapat dibaca oleh situs web asal cookie tersebut. Dengan demikian, situs web tidak memiliki akses ke file lain yang tersimpan di komputer pengguna.<\/p><p>Berkat informasi yang tersimpan dalam cookie, situs web \"mengetahui\" bagaimana Anda menggunakannya dan dapat menyesuaikan konten yang ditampilkan untuk Anda atau menawarkan bantuan yang sesuai.<\/p><h5>Untuk apa kami menggunakan cookie?<\/h5><p>Di situs ini kami menggunakan cookie teknis yang diperlukan untuk memastikan fungsi situs berjalan dengan benar. Cookie ini digunakan untuk mengoptimalkan situs web kami agar sesuai dengan perangkat dan peramban yang paling sering digunakan oleh pengunjung — sehingga komputer, tablet, atau ponsel Anda dapat menampilkan situs dengan benar dan jelas, serta mengingat apakah Anda telah memberikan persetujuan untuk menampilkan konten tertentu.<\/p><p>Pengguna tidak dapat menonaktifkan cookie teknis.<\/p><h5>Berapa lama kami menggunakan cookie?<\/h5><p>Kami menggunakan cookie permanen, yaitu cookie yang tetap tersimpan di perangkat Anda selama jangka waktu tertentu atau hingga dihapus secara manual.<\/p><h5>Data apa yang kami kumpulkan melalui cookie?<\/h5><p>Melalui teknologi cookie, kami hanya mengumpulkan data teknis anonim yang digunakan untuk meningkatkan kenyamanan penggunaan situs kami.<\/p><p>Kami tidak mengumpulkan data apa pun yang memungkinkan identifikasi pribadi Anda. Satu-satunya informasi tentang pengguna yang dikumpulkan adalah alamat IP yang digunakan untuk terhubung, yang tanpa dikombinasikan dengan data lain tidak memungkinkan identifikasi pengguna.<\/p>",
+    "privacy_title": "Kebijakan Privasi",
+    "privacy_subtitle": "Pemrosesan data pribadi",
+    "privacy_content": "<p>Kami membuat dokumen ini untuk memberi tahu Anda tentang Kebijakan Privasi kami. Di sini Anda akan mengetahui siapa kami, bagaimana kami mengumpulkan, menggunakan, mengungkapkan, dan membagikan data pribadi dalam lingkup <b>< Nama ISP ><\/b>, yang beralamat di [ Nama Jalan 10, kota dan kode pos ], untuk tujuan apa hal ini dilakukan dan bagaimana individu yang datanya kami proses dapat menegakkan hak privasi mereka.<\/p><p>< Nama ISP > bertanggung jawab atas pemrosesan data pribadi sesuai dengan Kebijakan Privasi ini.<\/p><h5>TENTANG KAMI<\/h5><p>Administrator, yaitu entitas yang memproses data pribadi sehubungan dengan penggunaan layanan ini oleh Anda, adalah < Nama ISP >, [ Nama Jalan 10, kota dan kode pos ]; NIP 1234567890, Regon 123456789.<\/p><h5>KONTAK KAMI<\/h5><ul><li>secara elektronik melalui alamat e-mail: adres@email.pl,<\/li><li>secara tertulis ke alamat: < Nama ISP >, [ Nama Jalan 10, kota dan kode pos ]<\/li><\/ul><h5>PRINSIP-PRINSIP DALAM KEBIJAKAN PRIVASI INI<\/h5><p>Kami memastikan bahwa pemrosesan data Anda dilakukan sesuai dengan Peraturan Parlemen Eropa dan Dewan (UE) No. 2016/679 tanggal 27 April 2016 tentang perlindungan individu sehubungan dengan pemrosesan data pribadi dan tentang pergerakan bebas data tersebut serta pencabutan Direktif 95/46/EC (Peraturan Perlindungan Data Umum – GDPR), Undang-Undang Perlindungan Data Pribadi, serta peraturan khusus lainnya. Kebijakan Privasi ini disusun sesuai dengan ketentuan tersebut. Kami menjelaskan secara jelas bagaimana data pribadi dikumpulkan dan untuk tujuan apa data tersebut digunakan.<\/p><p>Perlu dicatat bahwa < Nama ISP > mengumpulkan data pribadi dan informasi perusahaan yang diberikan oleh pelanggan dan mitra (potensial), serta data yang diperoleh selama penggunaan layanan akses internet.<\/p><h5>PENGUMPULAN DATA PRIBADI<\/h5><p>Kami mengumpulkan data pribadi yang diberikan oleh Pengguna dalam kasus berikut:<\/p><ul><li>pengajuan penawaran, penentuan syarat kerja sama, dan/atau penyampaian informasi tentang layanan dan aktivitas lainnya dari < Nama ISP >,<\/li><li>penyusunan dan pelaksanaan kontrak serta menjaga hubungan dengan pelanggan/mitra,<\/li><li>pelaksanaan kewajiban berdasarkan peraturan hukum yang berlaku,<\/li><li>menjawab pertanyaan, menangani keluhan, dan layanan purna jual lainnya,<\/li><li>pemasaran langsung (selain newsletter),<\/li><li>untuk tujuan arsip (bukti), atau untuk penentuan, penyelidikan, atau pembelaan klaim.<\/li><\/ul><h5>PENYIMPANAN DAN PENGHAPUSAN DATA<\/h5><p>Untuk menjaga keamanan data yang diberikan, kami telah mengembangkan prosedur internal dan pedoman untuk mencegah akses data oleh pihak yang tidak berwenang. Kami menerapkan langkah-langkah teknologi, kontraktual, administratif, dan fisik untuk melindungi data dari akses yang tidak sah. Kami mengontrol pelaksanaannya dan secara berkala memeriksa kesesuaian dengan peraturan hukum yang berlaku.<\/p><p>Kami menyimpan data pribadi Pengguna hanya selama periode yang diperlukan untuk tujuan pengumpulan data tersebut.<\/p><h5>PENGUNGKAPAN DAN PEMBAGIAN DATA<\/h5><p>Kami tidak menjual atau membagikan data pribadi Pengguna kepada pihak ketiga tanpa persetujuan mereka. Data Pengguna tidak dipakai untuk profiling.<\/p><p>Bergantung pada jenis dan lingkup kerja sama antara Pengguna dan < Nama ISP >, sehubungan dengan kegiatan bisnis yang dijalankan, kami dapat membagikan data Pengguna apabila diwajibkan oleh hukum yang berlaku atau bila diperlukan untuk mematuhi tindakan hukum, memenuhi kewajiban kontraktual, menanggapi klaim, atau untuk melindungi hak, properti, atau keamanan.<\/p><h5>PRINSIP PEMROSesan DATA ANDA<\/h5><p>Kami mengambil langkah-langkah tertinggi untuk melindungi kepentingan individu yang datanya kami proses, terutama memastikan bahwa data tersebut:<\/p><ul><li>diproses sesuai dengan hukum, secara jujur, dan transparan bagi individu terkait,<\/li><li>dikumpulkan untuk tujuan yang spesifik, jelas, dan sah, serta tidak diproses lebih lanjut secara tidak sesuai dengan tujuan tersebut,<\/li><li>relevan, tepat, dan terbatas pada yang diperlukan untuk tujuan pemrosesan,<\/li><li>akurat dan diperbarui bila diperlukan. Kami memastikan data yang tidak akurat segera diperbaiki atau dihapus,<\/li><li>disimpan dalam bentuk yang memungkinkan identifikasi individu selama periode yang tidak lebih lama dari yang diperlukan untuk tujuan pemrosesan,<\/li><li>diproses dengan keamanan yang sesuai, termasuk perlindungan terhadap pemrosesan yang tidak sah atau ilegal serta kehilangan atau kerusakan data secara tidak sengaja.<\/li><\/ul><p>Kami biasanya memproses data pribadi Anda berdasarkan persetujuan, yang dapat ditarik kapan saja. Pemrosesan juga dapat dilakukan untuk memenuhi kontrak antara Anda dan kami atau atas permintaan Anda sebelum kontrak tersebut dibuat. Dalam beberapa kasus, pemrosesan diperlukan untuk memenuhi kewajiban hukum yang berlaku bagi kami sebagai pengelola data. Pemrosesan juga dapat dilakukan untuk tujuan kepentingan sah kami, misalnya penegakan klaim terkait kegiatan bisnis kami.<\/p><h5>HAK ANDA<\/h5><p>Anda memiliki hak berikut:<\/p><ul><li>Akses ke data pribadi Anda dan informasi tentang kategori data, tujuan pemrosesan, serta memperoleh salinannya,<\/li><li>Memperbaiki data yang salah dan melengkapi data yang hilang, serta hak untuk dilupakan, yaitu menghapus data yang diproses secara tidak sah atau tidak perlu,<\/li><li>Menarik persetujuan atas pemrosesan data kapan saja tanpa mempengaruhi keabsahan pemrosesan yang dilakukan berdasarkan persetujuan sebelum penarikan, jika pemrosesan berdasarkan Pasal 6 ayat 1 huruf a atau Pasal 9 ayat 2 huruf a GDPR.<\/li><\/ul><h5>COOKIES<\/h5><p>< Nama ISP > menggunakan cookie untuk mempermudah penggunaan layanan. Dengan menggunakan layanan, Anda menyetujui penggunaan cookie oleh kami. Jika Anda tidak memblokir cookie ini, Anda setuju pada penggunaan dan penyimpanannya di perangkat Anda.<\/p><h5>PERUBAHAN KEBIJAKAN PRIVASI<\/h5><p>< Nama ISP > berhak mengubah kebijakan perlindungan data pribadi seiring perkembangan teknologi internet, perubahan hukum terkait perlindungan data, atau pengembangan layanan yang diberikan oleh administrator. Setiap perubahan akan diinformasikan secara jelas dan mudah dimengerti.<\/p><p>Untuk pertanyaan mengenai kebijakan perlindungan data pribadi, silakan hubungi alamat email: adres@email.pl<\/p>"
 }

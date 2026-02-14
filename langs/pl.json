@@ -7,6 +7,75 @@
     "attr_isp_info": {
         "aria-label": "Informacje o dostawcy internetu"
     },
+    "menu": {
+        "title": "GuardianSuit Menu",
+        "item1": {
+            "title": "Internet",
+            "icon": "I",
+            "href": "https://yourdomain.com/#",
+            "target": "_blank"
+        },
+        "item2": {
+            "title": "Telewizja",
+            "icon": "V",
+            "href": "https://yourdomain.com/#",
+            "target": "_blank"
+        },
+        "item3": {
+            "title": "Telefon",
+            "icon": "T",
+            "href": "https://yourdomain.com/#",
+            "target": "_blank"
+        },
+        "item4": {
+            "title": "Usługi dodatkowe",
+            "icon": "U",
+            "href": "https://yourdomain.com/#",
+            "target": "_blank"
+        },
+        "item5": {
+            "title": "Kontakt",
+            "icon": "K",
+            "href": "https://yourdomain.com/#",
+            "target": "_blank"
+        },
+        "item6": {
+            "title": "Polityka prywatności",
+            "icon": "&#167;",
+            "href": {"type": "modal", "title": "privacy_title", "subtitle": "privacy_subtitle", "content": "privacy_content", "iconText": "&#167;"},
+            "target": "_self"
+        },
+        "item7": {
+            "title": "Pliki Cookies",
+            "icon": "&#9865;",
+            "href": {"type": "modal", "title": "cookies_title", "subtitle": "cookies_subtitle", "content": "cookies_content", "iconText": "&#9865;"},
+            "target": "_self"
+        },
+        "item8": {
+            "title": "Dokumentacja",
+            "icon": "&#9783;",
+            "href": "https://github.com/mixmint/opnsense-captive-portal-template/blob/main/README.md",
+            "target": "_blank"
+        },
+        "item9": {
+            "title": "O programie",
+            "icon": "&#9873;",
+            "href": {"type": "modal", "title": "about_title", "subtitle": "about_subtitle", "content": "about_content", "iconText": "&#9873;"},
+            "target": "_self"
+        },
+        "group1": {
+            "title": "Oferta",
+            "items": ["item1", "item2", "item3", "item4", "item5"]
+        },
+        "group2": {
+            "title": "Informacje",
+            "items": ["item6", "item7"]
+        },
+        "group3": {
+            "title": "Pomoc",
+            "items": ["item8", "item9"]
+        }
+    },
     "footer_isp_info": {},
     "pagetitle": "System logowania użytkowników | < Nazwa ISP >",
     "username": "Nazwa użytkownika (Login)",
@@ -32,7 +101,7 @@
     "noscript": "Ostrzeżenie: Aby poprawnie zalogować się do systemu, obsługa JavaScript w przeglądarce musi być włączona.",
     "cp_portal_head_title": "System logowania użytkownikow",
     "cp_portal_tooltip_title": "Nie posiadasz kodu?",
-    "cp_portal_info": "Dostęp do Internetu w sieci <Nazwa ISP> wymaga podania loginu oraz hasła. Należy pamiętać, że hasło i login powinny być chronione przez użytkownika przed zagubieniem lub dostępem osób trzecich.",
+    "cp_portal_info": "Dostęp do Internetu w sieci < Nazwa ISP > wymaga podania loginu oraz hasła. Należy pamiętać, że hasło i login powinny być chronione przez użytkownika przed zagubieniem lub dostępem osób trzecich.",
     "cp_portal_cookies_note": "System logowania użytkownikow wykorzystuje pliki cookies do przechowywania informacji na Twoim komputerze. Pliki cookies stosujemy w celu świadczenia usług na najwyższym poziomie, w tym w sposób dostosowany do indywidualnych potrzeb użytkownika. Korzystanie z portalu logowania bez zmiany ustawień dotyczących cookies oznacza, że będą one zamieszczane w Twoim urządzeniu końcowym.",
     "cp_portal_ifconfig_event_normal": "Konfiguracja interfejsu sieciowego",
     "cp_portal_ifconfig_event_none": "Konfiguracja interfejsu sieciowego",
@@ -77,7 +146,7 @@
     "a11y_helper_prev": "Wstecz",
     "a11y_helper_done": "Koniec",
     "a11y-keys_data-title": "Skróty klawiszowe",
-    "a11y-keys_data-content": "<span style=\"font-size: 14px\">Kombinacja klawiszy <br \/><strong>⇧ Shift (lewy) <br \/>+&nbsp;⌥ Alt (lewy) <br \/>+&nbsp;litera<\/strong><br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;U<\/strong><br \/>fokus na polu Nazwa użytkownika<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;P<\/strong><br \/>fokus na polu Hasło<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;A<\/strong><br \/>zaznacza/odznacza pole wyboru \"Akceptuję regulamin\"<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;R<\/strong><br \/>otwiera okno modalne z regulaminem<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;I<\/strong><br \/>loguje użytkownika<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;O<\/strong><br \/>wylogowuje użytkownika<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;L<\/strong><br \/>uruchamia przełącznik języka<\/span>",
+    "a11y-keys_data-content": "<span style=\"font-size: 14px\">Kombinacja klawiszy <br \/><strong>⇧ Shift (lewy) <br \/>+&nbsp;⌥ Alt (lewy) <br \/>+&nbsp;litera<\/strong><br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;U<\/strong><br \/>fokus na polu Nazwa użytkownika<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;P<\/strong><br \/>fokus na polu Hasło<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;A<\/strong><br \/>zaznacza/odznacza pole wyboru \"Akceptuję regulamin\"<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;R<\/strong><br \/>otwiera okno modalne z regulaminem<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;I<\/strong><br \/>loguje użytkownika<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;O<\/strong><br \/>wylogowuje użytkownika<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;L<\/strong><br \/>uruchamia przełącznik języka<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;M<\/strong><br \/>otwiera menu offcanvas (jeżeli jest włączone)<\/span>",
     "a11y-lang-keys_data-title": "Skróty klawiszowe tłumaczeń językowych",
     "a11y-lang-keys_data-content": "<span style=\"font-size: 14px\">Przytrzymaj <strong>⇧ Shift (lewy) i naciśnij dwie litery kodu języka<\/strong> (ISO 639-1) jednocześnie lub jedna po drugiej.<br \/><br \/>Przykłady:<br \/><strong>⇧ Shift&nbsp;+&nbsp;P&nbsp;+&nbsp;L<\/strong> → przełącza na język polski (pl)<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;E&nbsp;+&nbsp;N<\/strong> → przełącza na język angielski (en)<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;D&nbsp;+&nbsp;E<\/strong> → przełącza na język niemiecki (de)<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;F&nbsp;+&nbsp;R<\/strong> → przełącza na język francuski (fr)<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;E&nbsp;+&nbsp;S<\/strong> → przełącza na język hiszpański (es)<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;I&nbsp;+&nbsp;T<\/strong> → przełącza na język włoski (it)<br \/>...<\/span>",
     "polyglotLanguageSwitcher_data-title": "Selektor tłumaczeń językowych",
@@ -97,5 +166,16 @@
     "signin_anon_data-title": "Logowanie",
     "signin_anon_data-content": "Klikając przycisk <strong>Logowanie<\/strong> uruchomisz połączenie z Internetem.",
     "logoff_data-title": "Wylogowanie",
-    "logoff_data-content": "Klikając przycisk <strong>Wylogowanie<\/strong> zakończysz połączenie z Internetem."
+    "logoff_data-content": "Klikając przycisk <strong>Wylogowanie<\/strong> zakończysz połączenie z Internetem.",
+    "menuTrigger_data-title": "Menu offcanvas",
+    "menuTrigger_data-content": "Klikając w <strong>&#9776; offcanvas hamburger<\/strong> lub naciskając na klawiaturze jednocześnie <strong>%s<\/strong> otworzysz menu kontekstowe.",
+    "about_title": "GuardianSuit",
+    "about_subtitle": "Zaawansowany szablon Captive Portal dla OPNsense",
+    "about_content": "<p><b>GuardianSuit<\/b> to nowoczesny, responsywny i animowany szablon Captive Portal dla OPNsense. Zapewnia użytkownikom atrakcyjne doświadczenie logowania, a administratorom pełną kontrolę nad wyglądem i funkcjonalnością strony powitalnej.<\/p><p><b>Kluczowe funkcje:<\/b><\/p><ul><li>Responsywność i animacje.<\/li><li>Wielojęzyczność.<\/li><li>Łatwa personalizacja wyglądu i kolorystyki.<\/li><li>Intuicyjny UX i zgodność z WCAG.<\/li><li>Prosta integracja z OPNsense.<\/li><\/ul><p><b>Zastosowanie:<\/b><br \/>Idealny dla sieci firmowych, hoteli, kawiarni i innych miejsc wymagających atrakcyjnej wizualnie strony powitalnej Captive Portal.<\/p><p><b>Autor:<\/b> Mirosław Majka &lt;mix@proask.pl&gt; | &copy; 2025 GuardianSuit<\/p>",
+    "cookies_title": "Pliki Cookies",
+    "cookies_subtitle": "Jak wykorzystuje się pliki cookies.",
+    "cookies_content": "<h5>Czym jest plik cookie?<\/h5><p>Pliki cookies (tzw. ciasteczka) to małe pliki tekstowe, tworzone automatycznie przez przeglądarkę internetową, podczas odwiedzania stron WWW. Informacje zawarte w danym pliku cookie mogą być odczytane wyłącznie przez stronę, z której ten plik pochodzi. Tym samym strona internetowa nie może mieć dostępu do innych plików znajdujących się na komputerze użytkownika.<\/p><p>Dzięki informacjom zawartym w plikach cookies strona \"wie\", w jaki sposób z niej korzystasz i może odpowiednio dostosować wyświetlane dla Ciebie treści lub zaoferować Ci pomoc.<\/p><h5>Do czego wykorzystujemy pliki cookies?<\/h5><p>Na stronie wykorzystujemy pliki cookies techniczne, które są niezbędne dla prawidłowego działania strony. Wykorzystujemy je, aby zoptymalizować naszą stronę internetową pod kątem urządzeń i przeglądarek, jakie najczęściej wykorzystują osoby ją odwiedzające – dzięki temu Twój komputer, tablet czy telefon wyświetli ją poprawnie i czytelnie zapamiętując, czy wyraziłeś zgodę na wyświetlanie na stronie internetowej wybranych treści.<\/p><p>Użytkownik nie może zrezygnować z technicznych plików cookies.<\/p><h5>Jak długo korzystamy z plików cookies?<\/h5><p>Wykorzystujemy tzw. stałe pliki cookie, które pozostają na Twoim urządzeniu przez określony czas albo do momentu ich ręcznego usunięcia.<\/li><\/ul><h5>Jakie dane zbieramy za pośrednictwem plików cookies?<\/h5><p>Za pomocą technologii cookie zbieramy o Tobie jedynie anonimowe dane techniczne, służące do poprawy wygody korzystania z naszej strony.<\/p><p>Nie zbieramy żadnych danych pozwalających na Twoją identyfikację. Jedyną informacją o użytkowniku, która jednak bez połączenia z innymi danymi, nie pozwala na jego identyfikację, jest adres IP, z którego łączy się użytkownik.<\/p>",
+    "privacy_title": "Polityka prywatności",
+    "privacy_subtitle": "Przetwarzanie danych osobowych",
+    "privacy_content": "<p>Tworzymy ten dokument, aby poinformować Cię o naszej Polityce Prywatności. Dowiesz się tutaj kim jesteśmy, w jaki sposób zbieramy, wykorzystujemy, ujawniamy i udostępniamy dane osobowe w ramach <b><&nbsp;Nazwa ISP&nbsp;><\/b>, z siedzibą w [ Nazwa ulicy 10, miasto i kod pocztowy ], w jakim celu to robimy oraz w jaki sposób osoby, których dane przetwarzamy mogą egzekwować swoje prawa do prywatności.<\/p><p><&nbsp;Nazwa ISP&nbsp;> jest odpowiedzialna za przetwarzanie danych osobowych zgodnie z niniejszą Polityką Prywatności.<\/p><h5>O NAS<\/h5><p>Administratorem, czyli podmiotem przetwarzającym dane osobowe w związku z korzystaniem przez Ciebie z niniejszej usługi, jest <&nbsp;Nazwa ISP&nbsp;>, [ Nazwa ulicy 10, miasto i kod pocztowy ]; NIP 1234567890, Regon 123456789,<\/p><h5>KONTAKT Z NAMI<\/h5><ul><li>elektronicznie na adres e-mail: adres@email.pl,<\/li><li>pisemnie na adres: Nazwa ISP, [ Nazwa ulicy 10, miasto i kod pocztowy ]<\/li><\/ul><h5>ZASADY ZAWARTE W NINIEJSZEJ POLITYCE PRYWATNOŚCI<\/h5><p>Dbamy o to, by przetwarzanie Twoich danych odbywało się zgodnie z przepisami Rozporządzenia Parlamentu Europejskiego i Rady (UE) nr 2016/679 z dnia 27 kwietnia 2016 r. w sprawie ochrony osób fizycznych w związku z przetwarzaniem danych osobowych i w sprawie swobodnego przepływu takich danych oraz uchylenia dyrektywy 95/46/WE (ogólne rozporządzenie o ochronie danych) (dalej: „RODO”), ustawy o ochronie danych osobowych, a także przepisami szczególnymi. Niniejsza Polityka Prywatności została przygotowana zgodnie z nimi. Jasno informujemy, w jaki sposób zbieramy dane osobowe i w jakim celu są one wykorzystywane.<\/p><p>Zwracamy uwagę, że <&nbsp;Nazwa ISP&nbsp;>, gromadzi dane osobowe i informacje firmowe dostarczone przez swoich (potencjalnych) klientów i kontrahentów, a także dane uzyskane podczas korzystania z usługi dostępu do internetu.<\/p><h5>ZBIERANIE DANYCH OSOBOWYCH<\/h5><p>Gromadzimy dane osobowe przekazywane przez Użytkowników w następujących przypadkach:<\/p><ul><li>składanie ofert, ustalanie warunków współpracy i/lub dostarczanie informacji o usługach i innych działaniach <&nbsp;Nazwa ISP&nbsp;>,<\/li><li>zawieranie i realizacja umów oraz utrzymywanie kontaktu z klientem/kontrahentem,<\/li><li>wykonywanie obowiązków wynikających z przepisów prawa powszechnie obowiązującego,<\/li><li>odpowiadanie na pytania, rozpatrywanie reklamacji i innej obsługi posprzedażowej,<\/li><li>marketing bezpośredni (inny niż newsletter),<\/li><li>w celach archiwalnych (dowodowych), ewentualnego ustalenia, dochodzenia lub obrony przed roszczeniami.<\/li><\/ul><h5>PRZECHOWYWANIE I USUWANIE DANYCH<\/h5><p>W trosce o bezpieczeństwo powierzonych danych opracowaliśmy wewnętrzne procedury i zalecenia, które mają zapobiec udostępnieniu danych osobom nieupoważnionym. Stosujemy środki technologiczne, umowne, administracyjne i fizyczne w celu ochrony danych przed nieuprawnionym dostępem. Kontrolujemy ich wykonywanie i stale sprawdzamy ich zgodność z odpowiednimi aktami prawnymi.<\/p><p>Przechowujemy dane osobowe Użytkownika wyłącznie przez okres niezbędny do wypełnienia celów dla których zostały one pobrane.<\/p><h5>UDOSTĘPNIANIE I UJAWNIANIE DANYCH<\/h5><p>Nie sprzedajemy ani nie udostępniamy osobom trzecim danych osobowych Użytkowników bez ich zgody. Dane Użytkowników nie podlegają profilowaniu.<\/p><p>W zależności od rodzaju i zakresu współpracy pomiędzy Użytkownikiem a <&nbsp;Nazwa ISP&nbsp;>, w związku z prowadzoną działalnością, możemy przekazać dane Użytkownika jeżeli wymagają tego przepisy obowiązującego prawa, lub jeśli jest to konieczne ze względu na zachowanie zgodności z czynnościami prawnymi lub wypełnienia zobowiązań umownych, odpowiedź na roszczenia, lub celem ochrony praw, majątku lub bezpieczeństwa.<\/p><h5>ZASADY NA JAKICH PRZETWARZAMY TWOJE DANE<\/h5><p>Dokładamy najwyższej staranności w celu ochrony interesu osób, których dane osobowe przetwarza, a w szczególności w celu zapewnienia, by dane te były:<\/p><ul><li>przetwarzane zgodnie z przepisami prawa, rzetelnie i w sposób przejrzysty dla osoby, której dane dotyczą,<\/li><li>zbierane w konkretnych, wyraźnych i prawnie uzasadnionych celach i nie przetwarzane dalej w sposób niezgodny z tymi celami,<\/li><li>adekwatne, stosowne oraz ograniczone do tego, co niezbędne dla realizacji celów, w których są przetwarzane,<\/li><li>prawidłowe i w razie potrzeby uaktualniane. Podejmujemy działania, aby dane osobowe, które są nieprawidłowe w świetle celów ich przetwarzania, zostały niezwłocznie usunięte lub sprostowane,<\/li><li>przechowywane w formie umożliwiającej identyfikację osoby, której dane dotyczą, przez okres nie dłuższy, niż jest to niezbędne do realizacji celów przetwarzania,<\/li><li>przetwarzane w sposób zapewniający odpowiednie bezpieczeństwo danych osobowych, w tym ochronę przed niedozwolonym lub niezgodnym z prawem przetwarzaniem oraz przypadkową utratą lub zniszczeniem.<\/li><\/ul><p>Twoje dane osobowe przetwarzamy zwykle na podstawie zgody, która może zostać wycofana w każdym momencie. Innym przypadkiem jest sytuacja, w której przetwarzanie Twoich danych jest niezbędne do wykonania zawartej pomiędzy Tobą a nami umowy lub do podjęcia działań na Twoje własne żądanie, jeszcze przed jej zawarciem. W niektórych sytuacjach przetwarzanie jest niezbędne do wypełnienia obowiązku prawnego ciążącego na nas jako administratorze danych osobowych. Takie obowiązki wynikają np. z przepisów prawa pracy, czy ustawy o rachunkowości. Przetwarzanie może być także niezbędne do celów wynikających z naszych prawnie uzasadnionych interesów, czego przykładem jest dochodzenie roszczeń z prowadzonej przez nas działalności gospodarczej.<\/p><h5>TWOJE PRAWA<\/h5><p>Przysługują Ci następujące prawa:<\/p><ul><li>Dostępu do treści Twoich danych osobowych oraz do uzyskania informacji m.in. o kategoriach danych, celach ich przetwarzania, a także do uzyskania ich kopii,<\/li><li>Sprostowania nieprawidłowych i uzupełnienia brakujących danych, a także do bycia zapomnianym, co oznacza, że masz prawo do usunięcia danych przetwarzanych bezpodstawnie i bezprawnie (np. dane nie są już niezbędne do celów, w których zostały zebrane),<\/li><li>Cofnięcia zgody na przetwarzanie danych w dowolnym momencie bez wpływu na zgodność z prawem przetwarzania, którego dokonano na podstawie zgody przed jej cofnięciem (jeżeli przetwarzanie odbywa się na podstawie art. 6 ust. 1 lit. a. lub art. 9 ust. 2 lit. a RODO).<\/li><\/ul><h5>COOKIES<\/h5><p><&nbsp;Nazwa ISP&nbsp;>, używa plików cookie aby ułatwić korzystanie z usługi. Korzystając z usługi wyrażasz zgodę na wykorzystywanie przez nas plików cookie. Jeżeli nie blokujesz tych plików to zgadzasz się na ich użycie i zapisanie w pamięci urządzenia<\/p><h5>ZMIANY POLITYKI OCHRONY DANYCH OSOBOWYCH<\/h5><p><&nbsp;Nazwa ISP&nbsp;> zastrzega sobie prawo do zmiany w polityce ochrony danych osobowych, na które może wpłynąć rozwój technologii internetowej, ewentualne zmiany prawa w zakresie ochrony danych osobowych oraz rozwój usługi dostępowej świadczonej przez administratora. O wszelkich zmianach będziemy informować w sposób jasny i czytelny.<\/p><p>Wszelkie pytania odnośnie polityki ochrony danych osobowych prosimy kierować na adres mailowy: adres@email.pl<\/p>"
 }

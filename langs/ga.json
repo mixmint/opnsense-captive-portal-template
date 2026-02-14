@@ -7,6 +7,75 @@
     "attr_isp_info": {
         "aria-label": "Eolas faoi sholáthraí idirlín"
     },
+    "menu": {
+        "title": "Roghchlár GuardianSuit",
+        "item1": {
+            "title": "Idirlíon",
+            "icon": "I",
+            "href": "https://yourdomain.com/#",
+            "target": "_blank"
+        },
+        "item2": {
+            "title": "Teilifís",
+            "icon": "T",
+            "href": "https://yourdomain.com/#",
+            "target": "_blank"
+        },
+        "item3": {
+            "title": "Fón",
+            "icon": "F",
+            "href": "https://yourdomain.com/#",
+            "target": "_blank"
+        },
+        "item4": {
+            "title": "Seirbhísí breise",
+            "icon": "S",
+            "href": "https://yourdomain.com/#",
+            "target": "_blank"
+        },
+        "item5": {
+            "title": "Teagmháil",
+            "icon": "M",
+            "href": "https://yourdomain.com/#",
+            "target": "_blank"
+        },
+        "item6": {
+            "title": "Polasaí Príobháideachta",
+            "icon": "&#167;",
+            "href": {"type": "modal", "title": "privacy_title", "subtitle": "privacy_subtitle", "content": "privacy_content", "iconText": "&#167;"},
+            "target": "_self"
+        },
+        "item7": {
+            "title": "Fianáin",
+            "icon": "&#9865;",
+            "href": {"type": "modal", "title": "cookies_title", "subtitle": "cookies_subtitle", "content": "cookies_content", "iconText": "&#9865;"},
+            "target": "_self"
+        },
+        "item8": {
+            "title": "Doiciméadú",
+            "icon": "&#9783;",
+            "href": "https://github.com/mixmint/opnsense-captive-portal-template/blob/main/README.md",
+            "target": "_blank"
+        },
+        "item9": {
+            "title": "Maidir leis an gClár",
+            "icon": "&#9873;",
+            "href": {"type": "modal", "title": "about_title", "subtitle": "about_subtitle", "content": "about_content", "iconText": "&#9873;"},
+            "target": "_self"
+        },
+        "group1": {
+            "title": "Tairiscint",
+            "items": ["item1", "item2", "item3", "item4", "item5"]
+        },
+        "group2": {
+            "title": "Eolas",
+            "items": ["item6", "item7"]
+        },
+        "group3": {
+            "title": "Cabhair",
+            "items": ["item8", "item9"]
+        }
+    },
     "footer_isp_info": {},
     "pagetitle": "Córas logála isteach úsáideoirí | <Ainm ISP>",
     "username": "Ainm úsáideora (Login)",
@@ -77,7 +146,7 @@
     "a11y_helper_prev": "Ar ais",
     "a11y_helper_done": "Críoch",
     "a11y-keys_data-title": "Lannchléireacha méarchláir",
-    "a11y-keys_data-content": "<span style=\"font-size: 14px\">Comhcheangal eochracha <br \/><strong>⇧ Shift (clé) <br \/>+&nbsp;⌥ Alt (clé) <br \/>+&nbsp;litir<\/strong><br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;U<\/strong><br \/>déan fócas ar an réimse Ainm Úsáideora<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;P<\/strong><br \/>déan fócas ar an réimse Pasfhocal<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;A<\/strong><br \/>seiceáil/díseiceáil an bosca rogha \"Glacaim leis an Rialachán\"<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;R<\/strong><br \/>oscail an fhuinneog mhodúil le Rialachán<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;I<\/strong><br \/>logáil isteach an t-úsáideoir<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;O<\/strong><br \/>logáil amach an t-úsáideoir<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;L<\/strong><br \/>seol an roghnóir teanga<\/span>",
+    "a11y-keys_data-content": "<span style=\"font-size: 14px\">Comhcheangal eochracha <br \/><strong>⇧ Shift (clé) <br \/>+&nbsp;⌥ Alt (clé) <br \/>+&nbsp;litir<\/strong><br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;U<\/strong><br \/>déan fócas ar an réimse Ainm Úsáideora<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;P<\/strong><br \/>déan fócas ar an réimse Pasfhocal<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;A<\/strong><br \/>seiceáil/díseiceáil an bosca rogha \"Glacaim leis an Rialachán\"<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;R<\/strong><br \/>oscail an fhuinneog mhodúil le Rialachán<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;I<\/strong><br \/>logáil isteach an t-úsáideoir<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;O<\/strong><br \/>logáil amach an t-úsáideoir<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;L<\/strong><br \/>seol an roghnóir teanga<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;M<\/strong><br \/>oscailt roghchlár offcanvas (má tá sé cumasaithe)<\/span>",
     "a11y-lang-keys_data-title": "Lannchléireacha teangacha",
     "a11y-lang-keys_data-content": "<span style=\"font-size: 14px\">Coinnigh <strong>⇧ Shift (clé) agus brúigh dhá litir cód teanga<\/strong> (ISO 639-1) ag an am céanna nó ceann amháin i ndiaidh a chéile.<br \/><br \/>Samplaí:<br \/><strong>⇧ Shift&nbsp;+&nbsp;P&nbsp;+&nbsp;L<\/strong> → athraíonn sé go polainnis (pl)<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;E&nbsp;+&nbsp;N<\/strong> → athraíonn sé go Béarla (en)<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;D&nbsp;+&nbsp;E<\/strong> → athraíonn sé go Gearmáinis (de)<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;F&nbsp;+&nbsp;R<\/strong> → athraíonn sé go Fraincis (fr)<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;E&nbsp;+&nbsp;S<\/strong> → athraíonn sé go Spáinnis (es)<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;I&nbsp;+&nbsp;T<\/strong> → athraíonn sé go Iodáilis (it)<br \/>...<\/span>",
     "polyglotLanguageSwitcher_data-title": "Roghnaí teanga",
@@ -97,5 +166,16 @@
     "signin_anon_data-title": "Logáil isteach",
     "signin_anon_data-content": "Trí chliceáil ar an gcnaipe <strong>Logáil isteach<\/strong> seolfaidh tú nasc leis an Idirlíon.",
     "logoff_data-title": "Logáil amach",
-    "logoff_data-content": "Trí chliceáil ar an gcnaipe <strong>Logáil amach<\/strong> críochnóidh tú an nasc leis an Idirlíon."
+    "logoff_data-content": "Trí chliceáil ar an gcnaipe <strong>Logáil amach<\/strong> críochnóidh tú an nasc leis an Idirlíon.",
+    "menuTrigger_data-title": "Roghchlár offcanvas",
+    "menuTrigger_data-content": "Trí chliceáil ar <strong>&#9776; hamburger offcanvas<\/strong> nó trí na heochracha a bhrú ag an am céanna <strong>%s<\/strong> ar an méarchlár, osclóidh tú an roghchlár comhthéacsach.",
+    "about_title": "GuardianSuit",
+    "about_subtitle": "Teimpléad Captive Portal Forbartha do OPNsense",
+    "about_content": "<p><b>GuardianSuit<\/b> is teimpléad nua-aimseartha, freagrach agus beochantach do Captive Portal do OPNsense. Soláthraíonn sé taithí logála tarraingteach do na húsáideoirí agus smacht iomlán do na riarthóirí ar chuma agus ar fheidhmiúlacht an leathanaigh fáiltiú.<\/p><p><b>Gnéithe Eochair:<\/b><\/p><ul><li>Freagrach agus beochantach.<\/li><li>Ilteangach.<\/li><li>Éasca le saincheapadh dathanna agus cuma.<\/li><li>UX intuigthe agus comhlíonadh WCAG.<\/li><li>Comhtháthú simplí le OPNsense.<\/li><\/ul><p><b>Aidhm:<\/b><br \/>Foirfe do líonraí corparáideacha, óstáin, caiféanna agus áiteanna eile a bhfuil leathanach fáiltiú tarraingteach amhairc riachtanach acu.<\/p><p><b>Údar:<\/b> Mirosław Majka &lt;mix@proask.pl&gt; | &copy; 2025 GuardianSuit<\/p>",
+    "cookies_title": "Fianáin",
+    "cookies_subtitle": "Conas a úsáidtear fianáin.",
+    "cookies_content": "<h5>Cad is fianán ann?<\/h5><p>Is comhaid téacs bheaga iad fianáin (cookies) a chruthaíonn an brabhsálaí go huathoibríoch agus tú ag cuairt ar shuíomhanna gréasáin. Is féidir na faisnéis a chuirtear i bhfianán a léamh ach amháin ag an suíomh a chruthaigh an fianán sin. Mar sin, ní féidir le suíomh eile rochtain a fháil ar chomhaid eile ar do ríomhaire.<\/p><p>Leis na faisnéis a bhailítear sna fianáin, tá an suíomh in ann a thuiscint conas a úsáideann tú é agus is féidir leis ábhar a chur in oiriúint duit nó cabhair a thairiscint.<\/p><h5>Cén fáth a úsáidimid fianáin?<\/h5><p>Úsáidimid fianáin theicniúla ar an suíomh a bhfuil riachtanach chun go n-oibreodh sé i gceart. Déanaimid iad a úsáid chun ár suíomh a bharrfheabhsú do na gairis agus na brabhsálaithe is coitianta a úsáideann cuairteoirí – mar sin taispeánfaidh do ríomhaire, do tháibléad nó do fhón an suíomh i gceart agus go soiléir agus beidh sé i gcuimhne an raibh do thoiliú agat chun ábhar áirithe a thaispeáint ar an suíomh.<\/p><p>Ní féidir leis an úsáideoir fianáin theicniúla a dhiúltú.<\/p><h5>Cé chomh fada a choinnímid fianáin?<\/h5><p>Úsáidimid fianáin buana (persistent cookies) a mhaireann ar do ghléas ar feadh tréimhse shonraithe nó go dtí go ndéanann tú iad a scriosadh de láimh.<\/li><\/ul><h5>Cén fhaisnéis a bhailímid trí fhianáin?<\/h5><p>Trí theicneolaíocht fianáin, bailímid sonraí teicniúla anaithnid fút amháin a chuidíonn le húsáid an tsuímh a fheabhsú.<\/p><p>Ní bhailímid aon sonraí a d’fhéadfadh tú a aithint. An t-aon fhaisnéis faoi úsáideoir, nach ligfidh d’aithint dóibh gan comhcheangal le sonraí eile, ná an seoladh IP ónar nascann an t-úsáideoir.<\/p>",
+    "privacy_title": "Polasaí Príobháideachta",
+    "privacy_subtitle": "Próiseáil Sonraí Pearsanta",
+    "privacy_content": "<p>Cruthaímid an doiciméad seo chun tú a chur ar an eolas faoi ár bPolasaí Príobháideachta. Foghlaimeoidh tú anseo cé muid féin, conas a bhailímid, a úsáidimid, a nochtann agus a roinnimid sonraí pearsanta laistigh de <b><&nbsp;Ainm ISP&nbsp;></b>, lonnaithe ag [ Ainm Sráide 10, cathair agus cód poist ], cén fáth a dhéanaimid é seo agus conas is féidir le daoine a ndéantar a gcuid sonraí a phróiseáil a gcearta príobháideachta a fhorfheidhmiú.</p><p><&nbsp;Ainm ISP&nbsp;> tá freagrach as próiseáil sonraí pearsanta de réir an Pholasaí Príobháideachta seo.</p><h5>FÚINN</h5><p>Is é an riarthóir, is é sin an comhpháirtí a phróiseálann sonraí pearsanta i gcomhthéacs do úsáid den tseirbhís seo, ná <&nbsp;Ainm ISP&nbsp;>, [ Ainm Sráide 10, cathair agus cód poist ]; Uimhir CBL 1234567890, Uimhir REGO 123456789,</p><h5>TEAGMHÁIL LINN</h5><ul><li>trí ríomhphost: seoladh@email.com,</li><li>trí litir chuig: Ainm ISP, [ Ainm Sráide 10, cathair agus cód poist ]</li></ul><h5>PRIONSABAIL AN PHOLASAÍ PRÍOBHÁIDEACHTA SEO</h5><p>Déanann muid cinnte go ndéantar próiseáil do chuid sonraí de réir na rialachán maidir le Cosaint Sonraí, Rialachán (AE) 2016/679 den Pharlaimint Eorpach agus den Chomhairle ar chosaint daoine aonair maidir le próiseáil sonraí pearsanta agus ar shruthú saor den sórt sin, agus ar dhíchur Treoir 95/46/CE (an Rialachán Ginearálta Cosanta Sonraí - GDPR), chomh maith le dlíthe áirithe. Tá an Polasaí Príobháideachta seo ullmhaithe de réir na rialachán sin. Tugaimid soiléire faoi conas a bhailímid sonraí pearsanta agus cén chúis a n-úsáidtear iad.</p><p>Tugaimid faoi deara go bhailíonn <&nbsp;Ainm ISP&nbsp;> sonraí pearsanta agus faisnéis chorparáideach a sholáthraítear ag a (fhéidearthachtaí) cliaint agus conraitheoirí, chomh maith le sonraí a fhaightear le linn úsáid seirbhís rochtana idirlín.</p><h5>BAILiú SONRAÍ PEARSANTA</h5><p>Bailímid sonraí pearsanta a chuirtear ar fáil ag Úsáideoirí sna cásanna seo a leanas:</p><ul><li>cuireadh chun tairiscintí a dhéanamh, coinníollacha comhoibrithe a shocrú agus/nó faisnéis faoi sheirbhísí agus gníomhaíochtaí eile <&nbsp;Ainm ISP&nbsp;>,</li><li>comhaontuithe a dhéanamh agus a chur i bhfeidhm agus teagmháil le cliant/conraitheoir a choinneáil,</li><li>dleachtanna dlíthiúla a chomhlíonadh,</li><li>freagra a thabhairt ar cheisteanna, gearáin a láimhseáil agus seirbhís iar-díolacháin eile a sholáthar,</li><li>margaíocht dhíreach (seachas nuachtlitir),</li><li>le haghaidh chartlainne (cruthaithe dlíthiúil), agus chun sonraí a aithint, a éileamh nó a chosaint.</li></ul><h5>COINNEÁIL AGUS SCRIOS SONRAÍ</h5><p>Chun sábháilteacht na sonraí a tugadh a chinntiú, chruthaíomar nósanna imeachta inmheánacha agus moltaí chun cosc a chur ar rochtain neamhúdaraithe. Úsáidimid bearta teicneolaíochta, conartha, riaracháin agus fisiciúla chun sonraí a chosaint ó rochtain neamhúdaraithe. Déanaimid monatóireacht agus iniúchadh leanúnach ar chomhlíonadh agus ar chomhréir le dlíthe ábhartha.</p><p>Coinnímid sonraí pearsanta an Úsáideora ach amháin ar feadh an ama is gá chun na cuspóirí a bhailítear iad a bhaint amach.</p><h5>ROINN AGUS NOCHT SONRAÍ</h5><p>Ní dhíolaimid nó ní roinnimid sonraí pearsanta Úsáideoirí le tríú páirtithe gan a dtoiliú. Ní dhéantar próifílú ar shonraí Úsáideoirí.</p><p>Braitheann sé ar chineál agus raon an chomhoibrithe idir an tÚsáideoir agus <&nbsp;Ainm ISP&nbsp;>, is féidir linn sonraí an Úsáideora a chur ar fáil más gá de réir dlí, nó más gá chun comhlíonadh dlíthiúil, freagra ar éilimh, nó chun cearta, maoine nó sábháilteacht a chosaint.</p><h5>PRIONSABAIL PRÓISEÁLA SONRAÍ</h5><p>Déanann muid gach iarracht chun leas na ndaoine a bhaintear sonraí pearsanta astu a chosaint, agus go háirithe chun a chinntiú go bhfuil na sonraí seo:</p><ul><li>próiseáilte de réir dlí, go macánta agus go trédhearcach don duine a mbaineann siad leis,</li><li>bailithe le haghaidh cuspóirí soiléire, infhíorúla agus dleathacha agus ní próiseáilte ar bhealach neamhleithleach,</li><li>oiriúnach, ábhartha agus teoranta don méid atá riachtanach don chuspóir,</li><li>cóir agus cothromaithe, agus cothrom le dáta más gá; déanaimid gníomhartha chun sonraí míchearta a cheartú nó a scriosadh láithreach,</li><li>coinneáilte ar bhealach a ligeann d’aitheantas a dhéanamh ar an duine a mbaineann siad leis ach amháin chomh fada agus is gá don chuspóir próiseála,</li><li>próiseáilte le bearta slándála cuí, lena n-áirítear cosaint ó phróiseáil neamhúdaraithe nó mídhleathach, agus caillteanas nó scriosadh eachtraigh.</li></ul><p>De ghnáth, déanaimid próiseáil ar do chuid sonraí pearsanta ar bhonn do thoil, ar féidir í a chealú am ar bith. I gcásanna eile, tá próiseáil riachtanach chun comhaontú idir tú agus muid a chur i bhfeidhm nó gníomhartha a thosú ar do éileamh féin roimh é a shíniú. Uaireanta is gá próiseáil chun comhlíonadh dlíthiúil a bhaint amach, mar shampla dlí saothair nó reachtaíocht cuntasaíochta. Féadfaidh próiseáil freisin a bheith riachtanach chun leasanna dlíthiúla réasúnta a bhaint amach, mar shampla éilimh a éileamh i ngníomhaíocht ghnó atá á rith againn.</p><h5>DO CHEARTA</h5><p>Tá na cearta seo agat:</p><ul><li>Rochtain ar do chuid sonraí pearsanta agus faisnéis faoi chatagóirí sonraí, cuspóirí próiseála, agus cóipeanna a fháil,</li><li>Ceart a bheith ceartaithe ar shonraí míchearta nó easnaimh agus bheith dearmadta, rud a chiallaíonn gur féidir leat sonraí próiseáilte go neamhbhailí a scriosadh,</li><li>Do thoil maidir le próiseáil a tharraingt siar am ar bith gan tionchar ar dlíthiúlacht próiseála roimhe seo.</li></ul><h5>COOKIES</h5><p>Úsáideann <&nbsp;Ainm ISP&nbsp;> fianáin chun úsáid na seirbhíse a éascú. Trí úsáid a bhaint as an tseirbhís, tugann tú cead dúinn fianáin a úsáid agus a stóráil ar do ghléas.</p><h5>ATHRÚCHÁN POLASAÍ COSANTA SONRAÍ</h5><p>Tá <&nbsp;Ainm ISP&nbsp;> i dteideal an Polasaí Cosanta Sonraí a athrú de réir forbairt teicneolaíochta, athruithe dlíthiúla nó forbairt na seirbhíse a sholáthraíonn an riarthóir. Cuirfimid tú ar an eolas faoi aon athruithe go soiléir agus go furasta.</p><p>Más gá, seol ceisteanna faoi Pholasaí Cosanta Sonraí chuig: seoladh@email.com</p>"
 }

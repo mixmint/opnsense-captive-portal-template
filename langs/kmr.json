@@ -7,6 +7,75 @@
     "attr_isp_info": {
         "aria-label": "Agahdariyên li ser pêşkêşkerê Internetê"
     },
+    "menu": {
+        "title": "Menu GuardianSuit",
+        "item1": {
+            "title": "Internêt",
+            "icon": "I",
+            "href": "https://yourdomain.com/#",
+            "target": "_blank"
+        },
+        "item2": {
+            "title": "Televîzyon",
+            "icon": "T",
+            "href": "https://yourdomain.com/#",
+            "target": "_blank"
+        },
+        "item3": {
+            "title": "Telefon",
+            "icon": "F",
+            "href": "https://yourdomain.com/#",
+            "target": "_blank"
+        },
+        "item4": {
+            "title": "Xizmetên zêde",
+            "icon": "X",
+            "href": "https://yourdomain.com/#",
+            "target": "_blank"
+        },
+        "item5": {
+            "title": "Têkiliyê",
+            "icon": "T",
+            "href": "https://yourdomain.com/#",
+            "target": "_blank"
+        },
+        "item6": {
+            "title": "Siyaseta Taybetî",
+            "icon": "&#167;",
+            "href": {"type": "modal", "title": "privacy_title", "subtitle": "privacy_subtitle", "content": "privacy_content", "iconText": "&#167;"},
+            "target": "_self"
+        },
+        "item7": {
+            "title": "Pelên Cookies",
+            "icon": "&#9865;",
+            "href": {"type": "modal", "title": "cookies_title", "subtitle": "cookies_subtitle", "content": "cookies_content", "iconText": "&#9865;"},
+            "target": "_self"
+        },
+        "item8": {
+            "title": "Belgekirin",
+            "icon": "&#9783;",
+            "href": "https://github.com/mixmint/opnsense-captive-portal-template/blob/main/README.md",
+            "target": "_blank"
+        },
+        "item9": {
+            "title": "Derbarê bernameyê",
+            "icon": "&#9873;",
+            "href": {"type": "modal", "title": "about_title", "subtitle": "about_subtitle", "content": "about_content", "iconText": "&#9873;"},
+            "target": "_self"
+        },
+        "group1": {
+            "title": "Pêşkêşkirin",
+            "items": ["item1", "item2", "item3", "item4", "item5"]
+        },
+        "group2": {
+            "title": "Agahdariyên",
+            "items": ["item6", "item7"]
+        },
+        "group3": {
+            "title": "Alîkarî",
+            "items": ["item8", "item9"]
+        }
+    },
     "footer_isp_info": {},
     "pagetitle": "Sîstema têketina bikarhêneran | < Navê ISP >",
     "username": "Navê bikarhêner (Login)",
@@ -77,7 +146,7 @@
     "a11y_helper_prev": "Paşve",
     "a11y_helper_done": "Qet",
     "a11y-keys_data-title": "Kombînasyona tîpan",
-    "a11y-keys_data-content": "<span style=\"font-size: 14px\">Tevgerên klavyeyê:<br \/><strong>⇧ Shift (çep)<br \/>&nbsp;+ ⌥ Alt (çep)<br \/>&nbsp;+ tîp<\/strong><br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;U<\/strong><br \/>fokus li qada Navê Bikarhêner<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;P<\/strong><br \/>fokus li qada Şîfre<br \/><br/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;A<\/strong><br \/>tomarkirin/anîna tomara qada \"Ez Rehênameyê pejirandim\"<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;R<\/strong><br \/>vêdigerê dîmeneya modalê ya rehênameyê<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;I<\/strong><br \/>têkevin bikarhênerê<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;O<\/strong><br \/>derxistin bikarhênerê<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;L<\/strong><br \/>bikarhênerê zimanê guherandinê çalak dike<\/span>",
+    "a11y-keys_data-content": "<span style=\"font-size: 14px\">Tevgerên klavyeyê:<br \/><strong>⇧ Shift (çep)<br \/>&nbsp;+ ⌥ Alt (çep)<br \/>&nbsp;+ tîp<\/strong><br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;U<\/strong><br \/>fokus li qada Navê Bikarhêner<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;P<\/strong><br \/>fokus li qada Şîfre<br \/><br/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;A<\/strong><br \/>tomarkirin/anîna tomara qada \"Ez Rehênameyê pejirandim\"<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;R<\/strong><br \/>vêdigerê dîmeneya modalê ya rehênameyê<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;I<\/strong><br \/>têkevin bikarhênerê<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;O<\/strong><br \/>derxistin bikarhênerê<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;L<\/strong><br \/>bikarhênerê zimanê guherandinê çalak dike<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;M<\/strong><br \/>vê menuya offcanvasê vekirî dike (eger çalak be)<\/span>",
     "a11y-lang-keys_data-title": "Kombînasyonên klavyeyê yên bo guherandina zimanê",
     "a11y-lang-keys_data-content": "<span style=\"font-size: 14px\">Bi dawî, <strong>⇧ Shift (çep) û du tîpên koda zimanê<\/strong> (ISO 639-1) bi hev re an yek-ê paş yek bikirtînin.<br \/><br \/>Mînak:<br \/><strong>⇧ Shift&nbsp;+&nbsp;P&nbsp;+&nbsp;L<\/strong> → guherandina zimanê bo Kurdî (pl)<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;E&nbsp;+&nbsp;N<\/strong> → guherandina zimanê bo Inglîzî (en)<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;D&nbsp;+&nbsp;E<\/strong> → guherandina zimanê bo Almancî (de)<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;F&nbsp;+&nbsp;R<\/strong> → guherandina zimanê bo Frensî (fr)<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;E&nbsp;+&nbsp;S<\/strong> → guherandina zimanê bo Spanî (es)<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;I&nbsp;+&nbsp;T<\/strong> → guherandina zimanê bo Îtalî (it)<br \/>...<\/span>",
     "polyglotLanguageSwitcher_data-title": "Hilbijartina wergerên zimanê",
@@ -97,5 +166,16 @@
     "signin_anon_data-title": "Têketin",
     "signin_anon_data-content": "Bi klikkirina bişkojka <strong>Têketin</strong> tu peywendî bi Internetê dest pê dike.",
     "logoff_data-title": "Derketin",
-    "logoff_data-content": "Bi klikkirina bişkojka <strong>Derketin</strong> tu peywendî bi Internetê qediya."
+    "logoff_data-content": "Bi klikkirina bişkojka <strong>Derketin</strong> tu peywendî bi Internetê qediya.",
+    "menuTrigger_data-title": "Menu ya offcanvas",
+    "menuTrigger_data-content": "Bi klik kirin li <strong>&#9776; hamburgerê offcanvas<\/strong> an jî bi heman demê li ser klavyeyê <strong>%s<\/strong> tê de, hûn dikarin menuya kontekstê vekin.",
+    "about_title": "GuardianSuit",
+    "about_subtitle": "Şablonê pêşketî ya Captive Portal ji bo OPNsense",
+    "about_content": "<p><b>GuardianSuit<\/b> şablonek nû, responsive û animated ya Captive Portal ji bo OPNsense ye. Ew pêşkêşî bikarhêneran têcrûbeya xweş a têketinê dike û ji bo adminstratoran kontrola tevahî li ser görünûş û fonsiyonalîteya rûpela xweşhatinê pêşkêş dike.<\/p><p><b>Karîgeriyên sereke:<\/b><\/p><ul><li>Responsive û animasyon.<\/li><li>Çend-zimanî.<\/li><li>Personalîzasyona hêsan a görünûş û reng.</li><li>UX-ya hêsan û hevahengî bi WCAG.<\/li><li>Integrasyona hêsan bi OPNsense.<\/li><\/ul><p><b>Bikaranîn:<\/b><br \/>Herî baş ji bo torên şîrketan, hotelan, qehwexaneyan û cîhanên din ku dixwazin rûpela xweşhatinê ya visually attractive ya Captive Portalê hebe.<\/p><p><b>Nivîskar:<\/b> Mirosław Majka &lt;mix@proask.pl&gt; | &copy; 2025 GuardianSuit<\/p>",
+    "cookies_title": "Pelên Cookies",
+    "cookies_subtitle": "Çawa pelên cookies têne bikar anîn.",
+    "cookies_content": "<h5>Pelê cookie çi ye?<\/h5><p>Pelên cookies (ku bi navê cookies tê zanîn) pelên piçûk ên nivîstokî ne, ku browserê te bi otomatikî çêdike dema ku tu li ser malperan digerî. Agahiyên ku di pelê cookie de hene, tenê dikarin ji hêla malpera ku ew ji wê derketiye were xwendin. Bi vî awayî, malpera wêneyê nikare gihîştinê bi pelên din ên li ser kompîturê bikarhênerê xwe bikire.<\/p><p>Bi agahiyên ku di pelên cookies de hene, malper “dizane” ka tu çawa tê bikar anîn û dikare naverokên ji bo te nîşandan rast bikin an jî alîkarî te bidin.<\/p><h5>Em pelên cookies ji bo çi têne bikar anîn?<\/h5><p>Li ser malper em pelên cookies yên teknîkî têne bikar anîn, ku ji bo karê rast a malperê pêwîst in. Em wan têne bikar anîn da ku malperê xwe li gorî amûr û browserên ku bikarhêneran herî zêde têne bikar anîn optimize bikin – bi vî awayî, kompîtura te, tablet an telefonê te wê rast û hêsan nîşan bide û bîra xwe rûnişte bike ka tu destûr da ku naverokên taybet ên li ser malperê were nîşandan.<\/p><p>Bikarhêner nikare ji pelên cookies yên teknîkî revîne.<\/p><h5>Em pelên cookies ji bo çend demê têne bikar anîn?<\/h5><p>Em pelên cookies yên herdem têne bikar anîn, ku li ser amûra te di dema taybet de bimînin an heta ku tu wan bi dest xwe jêbirî.<\/p><h5>Em çi dane ji hêla pelên cookies ve têne berhev kirin?<\/h5><p>Bi teknolocyayê cookie em tenê daneyên anonim ên teknîkî li ser te berhev dikin, ku ji bo hêsanîya bikarhênerî ya malperê xwe têne bikar anîn.<\/p><p>Em tu dane ku dikare te nas bikin neberhev nakin. Tenê agahiyê ku li ser bikarhêner tê, lê bê girêdan bi daneyên din, nikare ew bikarhêner nas bike, navnîşana IP ye ku bikarhêner ji wê ve tê girêdan.<\/p>",
+    "privacy_title": "Siyaseta Taybetî",
+    "privacy_subtitle": "Processingê Daneyên Kesane",
+    "privacy_content": "<p>Em ev belge çêkirin da ku te agahdar bikin li ser Siyaseta Taybetiya me. Li vir hûn fêm dikin ka em kî ne, ka em çawa daneyên kesane berhev dikin, têne bikar anîn, vekirin û parve kirin di çarçoveya <b>< Navê ISP ></b>, ku li [ Navnîşana rûpela 10, bajar û koda posta ] ye, û çima em ev dikin û ka merivên ku dane wan têne processingê çawa dikarin mafên xwe yên taybetî biparêzin.<\/p><p>< Navê ISP > mesûl e ji bo processingê daneyên kesane li gorî vê Siyaseta Taybetî.<\/p><h5>DERBARÊ ME<\/h5><p>Administrator, ya nîşanî ku dane kesane têne processingê têkiliyê te bi karanîna vê xizmetê, < Navê ISP > e, [ Navnîşana rûpela 10, bajar û koda posta ]; NIP 1234567890, Regon 123456789,<\/p><h5>PEYAMÊ BI EM RE</h5><ul><li>Bi e-nameyê li ser e-mail: adres@email.pl,<\/li><li>Bi nameyê li ser: < Navê ISP >, [ Navnîşana rûpela 10, bajar û koda posta ]<\/li><\/ul><h5>PRINSIPÊN LI VÊ SÎYASETÊ DE</h5><p>Em hêvîdar in ku processingê daneyên te li gorî pergalên Rêxistina Parlamanterî û Yekîtiya Ewropî (UE) 2016/679 yê 27 Nîsan 2016 de di derbarê parastina kesan de û di derbarê tevgerên azad yên daneyên wî de û jêbirina Direktîfa 95/46/WE (Regulasyona Giştî ya Daneyên Kesane) (piştî vê: “RODO”), qanûna parastina daneyên kesane û pergalên taybet ên din were kirin. Ev Siyaseta Taybetî li gorî wan çêkirin. Em bi rûniştinê rast agahî dikin ka dane kesane çawa têne berhevkirin û ka bo çi armanc têne bikar anîn.<\/p><p>Em diyar dikin ku < Navê ISP > dane kesane û agahiyên şîrketî yên ji hêla (potansiyel) müşterî û kontraktoran ve hatine peyda kirin, û hertişte ji bo bikaranîna xizmeta têketina internetê.<\/p><h5>BERHEVKIRINA DANEYÊN KESANE<\/h5><p>Em dane kesane têne berhevkirin di dema ku bikarhêneran wan diparêzin di rewşa jêrîn de:<\/p><ul><li>Pêşkêşkirina peyman, ragihandina şertên hevkariyê û\/an agahiyên xizmet û çalakiyên din yên < Navê ISP >,<\/li><li>Vekirin û bicihanîna peymanan û parastina têkiliyê bi müşterî\/kontraktor,<\/li><li>Çalakiyên ku ji qanûnên fermî derbas dikin,<\/li><li>Berî pirsan bersiv dan, şikâyet û xizmeta piştî firotinê,<\/li><li>Marketingê rastî (ne wek newsletter),<\/li><li>Bo armancên arxivî (belgeyên proofî), dema ku pêwîst be nas kirin, lêkolîn an parastina li dijî daîwanan.<\/li><\/ul><h5>PARASTIN Û JÊBIRINA DANEYÊN KESANE<\/h5><p>Ji bo ewlehiya daneyên şandin, em prosedur û peywendiyên hundirîn çêkirin ku hilweşîne daneyê ji destê kesên ne destûrê re. Em tedbîrên teknolojî, peymanî, idareyî û fizîkî têne bikar anîn ji bo parastina daneyê ji gihîştina ne destûrê. Em kontrol dikin xebatên wan û her dem di bin pergalên qanûnî de kontrol dikin.<\/p><p>Em dane kesane tenê ji bo demê ku pêwîst e bo amacên ku ji bo wan têne berhevkirin hilanîn.<\/p><h5>PARVEKIRIN Û VEKIRINA DANEYÊN KESANE<\/h5><p>Em dane kesane ya bikarhêneran ne firotin an ne parve kirin ji aliyê kesên sêyem re bêyî destûra wan. Dane bikarhêneran ne têne profîl kirin.<\/p><p>Li gorî cure û girêdana hevkariyê di navbera bikarhêner û < Navê ISP > de, em dikarin dane bikarhêneran parve bikin heke qanûn tê xwestin, an heke pêwîst be bo parastina rayedana qanûnî, bicihanîna peymanan, bersiva daîwanan, an bo parastina maf, mal û ewlehiya.<\/p><h5>PRINSIPÊN PROCESSINGÊ DANEYÊN TE<\/h5><p>Em bi balafirî hêvîdar in ku daneyên kesane li gorî qanûn têne processingê û bi taybetî da ku daneyên ku:<\/p><ul><li>Li gorî qanûn têne processingê, rast û zelal bo kesê ku dane têne processingê,<\/li><li>Di armancên taybet, zelal û qanûnî de têne berhevkirin û ne têne processingê ji armancên din re nelegel,<\/li><li>Bi rêya weşan, xwerû û tenê ji bo amacên ku pêwîst in, têne processingê,<\/li><li>Rast û heke pêwîst be, nûkirin. Em tedbîrên xwe têne kirin da ku dane kesane ku ne rast in, were jêbirin an rast kirin,<\/li><li>Di formekî ku kes tê zanîn têne parastin, bo demekî ku pêwîst e,<\/li><li>Li gorî ewlehiya daneyê têne processingê, tevî parastina ji processingê neqanûnî an bê qanûn, û jêbirina xetere an winda kirinê.<\/li><\/ul><p>Daneyên te bi gelemperî li ser destûr têne processingê, ku her dem dikare were vegerandin. Heke processingê pêwîst be ji bo bicihanîna peymanek ku di navbera te û me de heye an bo çalakiyên li ser daxwaza te berî peymanê, ev jî têne processingê. Heke processingê pêwîst be ji bo bicihanîna qanûna fermî ku ser me ye wek adminstratorê dane kesane. Ev pêwîstiyên têne ji qanûnên kar û qanûnê hesabê. Processing jî dikare bo armancên mafê me yên qanûnî têne kirin, wek nimûne, daîwana daînên ji karên me yên bazirganî.<\/p><h5>MAFÊN TE<\/h5><p>Te maf hene yên jêrîn:<\/p><ul><li>Gihîştinî naveroka daneyên te û agahî li ser kategoriyên daneyê, armancên processingê, û jî kopiyên wan,<\/li><li>Rastkirin û temamkirina dane yên qebûlkirî û jî ji bîrkirin, ku wateya ku tu mafê jêbirina daneyên ku bêdestûr têne processingê hene,<\/li><li>Vegerrina destûra processingê her dem bêyî karînî li ser qanûnîtiya processingê ku berî vegerandinê hate kirin (heke processing li ser art. 6 para 1 lit. a an art. 9 para 2 lit. a RODO têne kirin).<\/li><\/ul><h5>COOKIES<\/h5><p>< Navê ISP > pelên cookie têne bikar anîn da ku bikaranîna xizmetê hêsan bike. Bi karanîna xizmetê tu destûr didî ku em pelên cookie têne bikar anîn. Heke tu wan neblock dikî, tu qebûl dikî ku ew têne bikar anîn û li bîra amûrê te têne tomar kirin.<\/p><h5>GUHERÎNÊN SÎYASETA PARASTINA DANEYÊN KESANE<\/h5><p>< Navê ISP > mafê xwe tê xilas kirin bo guhertinê li siyaseta parastina dane kesane, ku dikare tesîrê li ser pêşketina teknolojiyê ya internetê, guhertinên qanûnî di derbarê parastina dane kesane de û pêşketina xizmeta dostê ve. Em dê li hemû guhertinê agahdar bikin bi awayekî zelal û hêsan.<\/p><p>Her pirsên li ser siyaseta parastina dane kesane ji bo e-mailê şandin: adres@email.pl<\/p>"
 }

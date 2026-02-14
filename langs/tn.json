@@ -7,6 +7,75 @@
     "attr_isp_info": {
         "aria-label": "Tshedimosetso ka mofani wa inthanete"
     },
+    "menu": {
+        "title": "GuardianSuit Menu",
+        "item1": {
+            "title": "Inthanete",
+            "icon": "I",
+            "href": "https://yourdomain.com/#",
+            "target": "_blank"
+        },
+        "item2": {
+            "title": "Telebese",
+            "icon": "T",
+            "href": "https://yourdomain.com/#",
+            "target": "_blank"
+        },
+        "item3": {
+            "title": "Terafouno",
+            "icon": "R",
+            "href": "https://yourdomain.com/#",
+            "target": "_blank"
+        },
+        "item4": {
+            "title": "Ditirelo tse di oketsegileng",
+            "icon": "D",
+            "href": "https://yourdomain.com/#",
+            "target": "_blank"
+        },
+        "item5": {
+            "title": "Ikopanye le rona",
+            "icon": "K",
+            "href": "https://yourdomain.com/#",
+            "target": "_blank"
+        },
+        "item6": {
+            "title": "Leano la lekunutu",
+            "icon": "&#167;",
+            "href": {"type": "modal", "title": "privacy_title", "subtitle": "privacy_subtitle", "content": "privacy_content", "iconText": "&#167;"},
+            "target": "_self"
+        },
+        "item7": {
+            "title": "Dikuki",
+            "icon": "&#9865;",
+            "href": {"type": "modal", "title": "cookies_title", "subtitle": "cookies_subtitle", "content": "cookies_content", "iconText": "&#9865;"},
+            "target": "_self"
+        },
+        "item8": {
+            "title": "Ditokomane",
+            "icon": "&#9783;",
+            "href": "https://github.com/mixmint/opnsense-captive-portal-template/blob/main/README.md",
+            "target": "_blank"
+        },
+        "item9": {
+            "title": "Ka ga lenaneo",
+            "icon": "&#9873;",
+            "href": {"type": "modal", "title": "about_title", "subtitle": "about_subtitle", "content": "about_content", "iconText": "&#9873;"},
+            "target": "_self"
+        },
+        "group1": {
+            "title": "Phekolo",
+            "items": ["item1", "item2", "item3", "item4", "item5"]
+        },
+        "group2": {
+            "title": "Tshedimosetso",
+            "items": ["item6", "item7"]
+        },
+        "group3": {
+            "title": "Thuso",
+            "items": ["item8", "item9"]
+        }
+    },
     "footer_isp_info": {},
     "pagetitle": "Tshedimosetso ya go tsena mo tsamaisong | < Lebitso la ISP >",
     "username": "Leina la modirisi (Login)",
@@ -77,7 +146,7 @@
     "a11y_helper_prev": "Morago",
     "a11y_helper_done": "Feditse",
     "a11y-keys_data-title": "Dikhutlwana tsa dinotshi",
-    "a11y-keys_data-content": "<span style=\"font-size: 14px\">Kopanyo ya dinotshi <br \/><strong>⇧ Shift (molema) <br \/>+&nbsp;⌥ Alt (molema) <br \/>+&nbsp;lefoko<\/strong><br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;U<\/strong><br \/>fokasega kwa lebakeng la Leina la modirisi<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;P<\/strong><br \/>fokasega kwa lebakeng la Password<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;A<\/strong><br \/>tshwaya/kgaotsa lebokoso la go tlhopha \"Ke amogela melao\"<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;R<\/strong><br \/>bula fensetere ya molaetsa wa melao<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;I<\/strong><br \/>kena modirisi<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;O<\/strong><br \/>etsa go tswa (logout)<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;L<\/strong><br \/>tsenya sepharologanyi sa puo<\/span>",
+    "a11y-keys_data-content": "<span style=\"font-size: 14px\">Kopanyo ya dinotshi <br \/><strong>⇧ Shift (molema) <br \/>+&nbsp;⌥ Alt (molema) <br \/>+&nbsp;lefoko<\/strong><br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;U<\/strong><br \/>fokasega kwa lebakeng la Leina la modirisi<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;P<\/strong><br \/>fokasega kwa lebakeng la Password<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;A<\/strong><br \/>tshwaya/kgaotsa lebokoso la go tlhopha \"Ke amogela melao\"<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;R<\/strong><br \/>bula fensetere ya molaetsa wa melao<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;I<\/strong><br \/>kena modirisi<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;O<\/strong><br \/>etsa go tswa (logout)<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;L<\/strong><br \/>tsenya sepharologanyi sa puo<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;M<\/strong><br \/>e bula menu ya offcanvas (fa e tsentse mo tirong)<\/span>",
     "a11y-lang-keys_data-title": "Dikgobokedi tša diboutone tša diphetolelo tša maleme",
     "a11y-lang-keys_data-content": "<span style=\"font-size: 14px\">Tshwara <strong>⇧ Shift (molema)<\/strong> mme o tobetse **ditlhaka tse pedi tša khoutu ya lelapa** (ISO 639-1) ka nako e le nngwe kgotsa nngwe morago ga nngwe.<br \/><br \/>Mehlala:<br \/><strong>⇧ Shift&nbsp;+&nbsp;P&nbsp;+&nbsp;L<\/strong> → fetola mo puong ya Sekopolote (pl)<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;E&nbsp;+&nbsp;N<\/strong> → fetola mo puong ya Sekgowa (en)<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;D&nbsp;+&nbsp;E<\/strong> → fetola mo puong ya Sejeremane (de)<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;F&nbsp;+&nbsp;R<\/strong> → fetola mo puong ya Sefora (fr)<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;E&nbsp;+&nbsp;S<\/strong> → fetola mo puong ya Seespain (es)<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;I&nbsp;+&nbsp;T<\/strong> → fetola mo puong ya Setaliana (it)<br \/>...<\/span>",
     "polyglotLanguageSwitcher_data-title": "Kgetho ya diphetolelo tsa maleme",
@@ -97,5 +166,16 @@
     "signin_anon_data-title": "Go tsena",
     "signin_anon_data-content": "Fa o tobetsa konopo <strong>Logowanie<\/strong> o tla simolola kgokagano ya Inthanete.",
     "logoff_data-title": "Go tswa",
-    "logoff_data-content": "Fa o tobetsa konopo <strong>Tswa<\/strong> o tla fetsa kgokagano ya Inthanete."
+    "logoff_data-content": "Fa o tobetsa konopo <strong>Tswa<\/strong> o tla fetsa kgokagano ya Inthanete.",
+    "menuTrigger_data-title": "Menu ya offcanvas",
+    "menuTrigger_data-content": "Ka go tobetsa <strong>&#9776; offcanvas hamburger<\/strong> kgotsa ka go tobetsa konopo tse pedi ka nako e le nngwe <strong>%s<\/strong> o tla bula menu ya maemo a fa godimo.",
+    "about_title": "GuardianSuit",
+    "about_subtitle": "Setlhopha se se tlhamaletseng sa Captive Portal sa OPNsense",
+    "about_content": "<p><b>GuardianSuit<\/b> ke setlhopha se se secha, se se itekanetseng le se se nang le diketsahalo tsa animasione sa Captive Portal sa OPNsense. Se fa basebedisi phihlelo e e kgatlhang ya go tsena mo akhaonteng, mme ba batsamaisi ba na le taolo e e feletseng mo ponong le mo tirong ya letlhakore la ntlha.<\/p><p><b>Dikgokagano tsa motheo:<\/b><\/p><ul><li>Go itekanela le animasione.<\/li><li>Puo e le nngwe le e nngwe e e tsenang.<\/li><li>Go bonolo go iketla ka ponalo le mebala.<\/li><li>UX e e tlhaloganyang sentle le go ikamahanya le WCAG.<\/li><li>Kopanetso e e bonolo le OPNsense.<\/li><\/ul><p><b>Tiriso:<\/b><br \/>E siametse marang-rang a dikgwebo, dimotellano, dikafe le mafelo a mangwe a a tlhokang leleme le le kgatlhang la Captive Portal.<\/p><p><b>Motshameki:<\/b> Mirosław Majka &lt;mix@proask.pl&gt; | &copy; 2025 GuardianSuit<\/p>",
+    "cookies_title": "Dikuki",
+    "cookies_subtitle": "Kamogelo ya dikuki e dirisiwa jang.",
+    "cookies_content": "<h5>Cookie ke eng?<\/h5><p>Dikuki (ditlhopha tse di nnye tsa data tse di bidiwang cookie) ke difaele tse nnye tsa mongolo, tse di tlhomiwang ka boiketsetso ke sebatli sa inthanete fa o etela masela a weposaete. Tshedimosetso e e mo faeleng ya cookie e ka balwa fela ke weposaete e e neng e e tlhomiwe mo go yone. Ka jalo, weposaete ga e kgone go bona difaele tse dingwe tse di mo khomphuteng ya mosebedisi.<\/p><p>Ka tshedimosetso e e mo dikuking, weposaete \"e itse\" gore o di dirisa jang mme e ka iketla go fetola dikahare tse di bonwang mo go wena kgotsa go go thusa.<\/p><h5>Re dirisa dikuki go eng?<\/h5><p>Mo weposaeteng re dirisa dikuki tsa thekenoloji tse di botlhokwa go netefatsa tiriso e e siameng ya weposaete. Re di dirisa go tokafatsa weposaete ya rona go ya ka didiriswa le dibatli tse di tlwaelegileng tse batho ba di dirisang fa ba etela weposaete – ka jalo khomphutha ya gago, letlapa kgotsa founo e tla e bontsha ka tsela e e siameng le e e tlhaloganyesegang mme e gopola fa o dumetse go bontshwa ga dikahare tse di kgethegileng.<\/p><p>Mosebedisi ga a kgone go gana dikuki tsa thekenoloji.<\/p><h5>Re di dirisa nako e ntsi jang?<\/h5><p>Re dirisa dikuki tse di tsitsitseng, tse di nnang mo sesebediswa sa gago ka nako e e rileng kgotsa go fitlha fa o di tlosa ka seatla.<\/p><h5>Ke tshedimosetso efe e re e kgobokanyang ka dikuki?<\/h5><p>Ka thekenoloji ya cookie re kgobokanya fela tshedimosetso e e sa itsiweng ka ga gago, e e thusang go tokafatsa phihlelo ya gago mo go diriseng weposaete ya rona.<\/p><p>Ga re kgobokanye tshedimosetso epe e e ka go tlisang mo boitshwanong. Tshedimosetso e le nngwe fela e e ka tlholego e ka itsiwe ka ga mosebedisi, e e seng e amanang le tshedimosetso e nngwe, ke aterese ya IP e mosebedisi a e dirisang go kgotsofatsa kgokagano.<\/p>",
+    "privacy_title": "Leano la Botlhokomelo jwa Boipheto",
+    "privacy_subtitle": "Tshekatsheko ya Tshedimosetso ya Botho",
+    "privacy_content": "<p>Re tlhoma tokomane e go go itsise ka ga Leano la rona la Botlhokomelo jwa Boipheto. Fa o tla ithuta gore ke bomang, re kgobokanya, re dirisa jang, re senola le go abelana ka tshedimosetso ya botho mo <b><&nbsp;Lebitso la ISP&nbsp;><\/b>, e e nang le ofisi kwa [ Nomoro ya motswedi 10, toropo le khoutu ya poso ], ka ntlha yang le fa batho ba re batlisetsang tshedimosetso ka bona ba ka tshegetsa ditshwanelo tsa bona tsa botlhokomelo jwa boipheto.<\/p><p><&nbsp;Lebitso la ISP&nbsp;> e na le maikarabelo a go tsamaisa tshedimosetso ya botho ka fa go rileng Leano la Botlhokomelo jwa Boipheto.<\/p><h5>RE BOMANG<\/h5><p>Mokgatlho o o laolang, o o tsamaisang tshedimosetso ya botho e e amanang le tiriso ya gago ya tshebeletso e, ke <&nbsp;Lebitso la ISP&nbsp;>, [ Nomoro ya motswedi 10, toropo le khoutu ya poso ]; NIP 1234567890, Regon 123456789,<\/p><h5>IKOPANE LE RONA<\/h5><ul><li>ka elektroniki mo atereseng ya imeile: aterese@email.pl,<\/li><li>ka go kwala mo atereseng: Lebitso la ISP, [ Nomoro ya motswedi 10, toropo le khoutu ya poso ]<\/li><\/ul><h5>MELAWANA MO LEANONG LA BOTLHOKOMELO<\/h5><p>Re netefatsa gore tshekatsheko ya tshedimosetso ya gago e dirwa ka fa melaong ya European Union (EU) Regulation 2016/679 le melao e e kgethegileng. Leano leno la Botlhokomelo jwa Boipheto le tlhomiwa ka fa melaong eno, re itsise ka fa re kgobokang tshedimosetso ya botho le ka ntlha yang e dirisiwa.<\/p><p>Re lemoga gore <&nbsp;Lebitso la ISP&nbsp;> e kgobokanya tshedimosetso ya botho le tshedimosetso ya kgwebo e e newang ke bareki le badiri ba bone (ba ka bang) le tshedimosetso e e fitlhelelwang fa o dirisa tshebeletso ya inthanete.<\/p><h5>KGOBOKANYO YA TShedimosetso YA BOTHO<\/h5><p>Re kgobokanya tshedimosetso ya botho e e newang ke Basebedisi mo mabakeng a a latelang:<\/p><ul><li>go dira dikopo, go tlhoma maano a tirisano le\/kgotsa go abelana ka tshedimosetso ka ga ditirelo le ditiro tse dingwe tsa <&nbsp;Lebitso la ISP&nbsp;>,<\/li><li>go tlama le go phethagatsha dikonteraka le go boloka kgokagano le moreki\/mokgatlho,<\/li><li>go dirisa maikarabelo a a tlhomilweng ke molao,<\/li><li>go araba dipotso, go sekaseka dikopo le ditirelo tse dingwe tsa morago ga thekiso,<\/li><li>papatso ya tlhamoselelo (e e seng newsletter),<\/li><li>ka maikaelelo a go boloka ditlaleletso, go tlhoma, go sekaseka kgotsa go iphemela kgatlhanong le ditlhotlheletso.<\/li><\/ul><h5>GO BOLOKA LE GO TLOSA TShedimosetso<\/h5><p>Go sireletsa tshedimosetso e e abetsweng, re tlhoma mekgwa le ditaelo tse di thibelang tshedimosetso go bonwa ke batho ba ba sa dumelwang. Re dirisa ditlhare tsa thekenoloji, ditumello, tsamaiso le ditlhabololo go sireletsa tshedimosetso. Re lekola tshebetso ya yone mme re netefatsa gore e tshegetswe ke melao e e maleba.<\/p><p>Re boloka tshedimosetso ya botho ya Basebedisi fela mo nako e e tlhokegang go phethagatsha maikaelelo a e neng e kgobokantswe.<\/p><h5>GO ABELA LE GO SENOLA TShedimosetso<\/h5><p>Ga re rekise kgotsa go abela batho ba ba kwa ntle tshedimosetso ya botho ya Basebedisi ntle le tumello ya bone. Tshedimosetso ga e abelwe go profiling.<\/p><p>Go ya ka mofuta le seelo sa tirisano magareng ga Basebedisi le <&nbsp;Lebitso la ISP&nbsp;>, re ka abela tshedimosetso ya Basebedisi fa melao e e tlhomilweng e e kopa, kgotsa fa go tlhokega go netefatsa tshwanelo, ditshwanelo kgotsa tshireletso.<\/p><h5>MELAWANA YA TSHEBETSO YA TShedimosetso YA GAGO<\/h5><p>Re dirisa matsapa a mantle go sireletsa ditshwanelo tsa batho ba tshedimosetso ya bone e e kgobokilweng, mme segolobogolo go netefatsa gore tshedimosetso e:<\/p><ul><li>e tsamaisiwa ka fa melaong ya molao, ka bopelonomi le ka ponalo e e utlwalang go motho yo tshedimosetso ya gagwe e amang,<\/li><li>e kgobokilwe ka maikaelelo a a itseng, a a utlwalang le a a dumalanang le molao mme e se ka e dirisiwa ka tsela e e sa dumalaneng le maikaelelo ao,<\/li><li>e lekaneng, e maleba mme e lekanyeditswe go fela ka se se tlhokegang mo maikaelelong a yone,<\/li><li>e nepahetse mme fa go tlhokega e a ntlafadiwa. Re tsaya dikgato go netefatsa gore tshedimosetso e e sa nepagetseng e tlositswe kgotsa e fetswe ka bonako,<\/li><li>e bolokwa ka tsela e e kgonang go tlhalosa motho yo tshedimosetso ya gagwe e amang, mo nako e e sa feteng e e tlhokegang go phethagatsha maikaelelo a tshekatsheko,<\/li><li>e tsamaisiwa ka tsela e e sireletsang tshedimosetso, go akaretsa tshireletso kgatlhanong le tshekatsheko e e sa dumalaneng le molao, kotsi ya go lahlega kgotsa tshenyo.<\/li><\/ul><p>Re kgobokanya tshedimosetso ya gago ka tumello, e e ka kgonego go kgoreledwa nako nngwe le nngwe. Mo maemong a mangwe, tshekatsheko e tlhokega go phethagatsha konteraka magareng ga gago le rona kgotsa go tsaya dikgato ka kopo ya gago pele ga konteraka. Mo maemo a mangwe, tshekatsheko e tlhokega go phethagatsha ditlhokego tsa molao tse di amang rona jaaka batsamaisi ba tshedimosetso. Tshekatsheko e ka tlhokega gape go maikaelelo a ditshwanelo tsa rona tse di siameng ka molao, jaaka go batlisisa ditshwanelo tsa kgwebo ya rona.<\/p><h5>DITSHWANELO TSA GAGO<\/h5><p>O na le ditshwanelo tse di latelang:<\/p><ul><li>Go bona tshedimosetso ya gago ya botho le go bona tshedimosetso e e akaretsang mefuta, maikaelelo a tshekatsheko, le go bona dikopi tsa yone,<\/li><li>Go kgotsofala tshedimosetso e e sa nepagetseng le go tlatsa e e tlhokegang, le go kgobisa, e e rayang gore o na le tokelo ya go tloswa tshedimosetso e e kgobokilweng ka ntle le motheo kgotsa ka molao,<\/li><li>Go kgoreletsa tumello ya tshekatsheko ya tshedimosetso nako nngwe le nngwe ntle le go ama molao o o dirisitsweng pele ga kgoreletso (fa tshekatsheko e tsamaisiwa mo motheong wa molao a.6 kar.1 let. a kgotsa a.9 kar.2 let. a RODO).<\/li><\/ul><h5>DIKUKI<\/h5><p><&nbsp;Lebitso la ISP&nbsp;>, e dirisa dikuki go nolofatsa tiriso ya tshebeletso. Fa o dirisa tshebeletso, o dumela go dirisiwa le go bolokwa ga dikuki mo sesebedisong sa gago.<\/p><h5>POLOKO YA LEANO LA TSHEBETSO YA TSHEBETSO YA TSHEBELETSO<\/h5><p><&nbsp;Lebitso la ISP&nbsp;> e iphitlhela tshwanelo ya go fetola leano la botlhokomelo jwa tshedimosetso ka ntlha ya ditlhabololo tsa thekenoloji, diphetogo tsa molao kgotsa tlhabololo ya tshebeletso e e newang ke batsamaisi. Re tla itsise ka diphetogo ka tsela e e tlhaloganyesegang le e e bonalang.<\/p><p>Dipotso tsotlhe mabapi le leano la tshedimosetso ya botho di ka romelwa mo atereseng ya imeile: aterese@email.pl<\/p>"
 }

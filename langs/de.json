@@ -7,6 +7,75 @@
     "attr_isp_info": {
         "aria-label": "Informationen über Ihren Internet-Provider"
     },
+    "menu": {
+        "title": "GuardianSuit Menü",
+        "item1": {
+            "title": "Internet",
+            "icon": "I",
+            "href": "https://yourdomain.com/#",
+            "target": "_blank"
+        },
+        "item2": {
+            "title": "Fernsehen",
+            "icon": "F",
+            "href": "https://yourdomain.com/#",
+            "target": "_blank"
+        },
+        "item3": {
+            "title": "Telefon",
+            "icon": "T",
+            "href": "https://yourdomain.com/#",
+            "target": "_blank"
+        },
+        "item4": {
+            "title": "Zusatzdienste",
+            "icon": "Z",
+            "href": "https://yourdomain.com/#",
+            "target": "_blank"
+        },
+        "item5": {
+            "title": "Kontakt",
+            "icon": "K",
+            "href": "https://yourdomain.com/#",
+            "target": "_blank"
+        },
+        "item6": {
+            "title": "Datenschutzrichtlinie",
+            "icon": "&#167;",
+            "href": {"type": "modal", "title": "privacy_title", "subtitle": "privacy_subtitle", "content": "privacy_content", "iconText": "&#167;"},
+            "target": "_self"
+        },
+        "item7": {
+            "title": "Cookies",
+            "icon": "&#9865;",
+            "href": {"type": "modal", "title": "cookies_title", "subtitle": "cookies_subtitle", "content": "cookies_content", "iconText": "&#9865;"},
+            "target": "_self"
+        },
+        "item8": {
+            "title": "Dokumentation",
+            "icon": "&#9783;",
+            "href": "https://github.com/mixmint/opnsense-captive-portal-template/blob/main/README.md",
+            "target": "_blank"
+        },
+        "item9": {
+            "title": "Über das Programm",
+            "icon": "&#9873;",
+            "href": {"type": "modal", "title": "about_title", "subtitle": "about_subtitle", "content": "about_content", "iconText": "&#9873;"},
+            "target": "_self"
+        },
+        "group1": {
+            "title": "Angebot",
+            "items": ["item1", "item2", "item3", "item4", "item5"]
+        },
+        "group2": {
+            "title": "Informationen",
+            "items": ["item6", "item7"]
+        },
+        "group3": {
+            "title": "Hilfe",
+            "items": ["item8", "item9"]
+        }
+    },
     "footer_isp_info": {},
     "pagetitle": "Benutzer-Login-System | <Name ISP>",
     "username": "Benutzername (Login)",
@@ -77,7 +146,7 @@
     "a11y_helper_prev": "Zurück",
     "a11y_helper_done": "Fertig",
     "a11y-keys_data-title": "Tastenkombinationen",
-    "a11y-keys_data-content": "<span style=\"font-size: 14px\">Tastenkombination <br \/><strong>⇧ Shift (links) <br \/>+&nbsp;⌥ Alt (links) <br \/>+&nbsp;Buchstabe<\/strong><br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;U<\/strong><br \/>Fokus auf Benutzername-Feld<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;P<\/strong><br \/>Fokus auf Passwort-Feld<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;A<\/strong><br \/>Kontrollkästchen 'Ich akzeptiere die Nutzungsbedingungen' aktivieren/deaktivieren<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;R<\/strong><br \/>öffnet das Regelwerk-Modal<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;I<\/strong><br \/>Benutzer anmelden<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;O<\/strong><br \/>Benutzer abmelden<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;L<\/strong><br \/>Sprachumschalter aktivieren<\/span>",
+    "a11y-keys_data-content": "<span style=\"font-size: 14px\">Tastenkombination <br \/><strong>⇧ Shift (links) <br \/>+&nbsp;⌥ Alt (links) <br \/>+&nbsp;Buchstabe<\/strong><br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;U<\/strong><br \/>Fokus auf Benutzername-Feld<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;P<\/strong><br \/>Fokus auf Passwort-Feld<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;A<\/strong><br \/>Kontrollkästchen 'Ich akzeptiere die Nutzungsbedingungen' aktivieren/deaktivieren<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;R<\/strong><br \/>öffnet das Regelwerk-Modal<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;I<\/strong><br \/>Benutzer anmelden<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;O<\/strong><br \/>Benutzer abmelden<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;L<\/strong><br \/>Sprachumschalter aktivieren<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;M<\/strong><br \/>öffnet das Offcanvas-Menü (wenn aktiviert)<\/span>",
     "a11y-lang-keys_data-title": "Sprachkürzel",
     "a11y-lang-keys_data-content": "<span style=\"font-size: 14px\">Halten Sie <strong>⇧ Shift (links) und drücken Sie den zweibuchstabigen Sprachcode<\/strong> (ISO 639-1) gleichzeitig oder nacheinander.<br \/><br \/>Beispiele:<br \/><strong>⇧ Shift&nbsp;+&nbsp;P&nbsp;+&nbsp;L<\/strong> → wechselt zu Polnisch (pl)<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;E&nbsp;+&nbsp;N<\/strong> → wechselt zu Englisch (en)<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;D&nbsp;+&nbsp;E<\/strong> → wechselt zu Deutsch (de)<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;F&nbsp;+&nbsp;R<\/strong> → wechselt zu Französisch (fr)<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;E&nbsp;+&nbsp;S<\/strong> → wechselt zu Spanisch (es)<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;I&nbsp;+&nbsp;T<\/strong> → wechselt zu Italienisch (it)<br \/>...<\/span>",
     "polyglotLanguageSwitcher_data-title": "Sprachauswahl",
@@ -97,5 +166,16 @@
     "signin_anon_data-title": "Anmeldung",
     "signin_anon_data-content": "Durch Klicken auf <strong>Anmelden<\/strong> wird die Internetverbindung gestartet.",
     "logoff_data-title": "Abmeldung",
-    "logoff_data-content": "Durch Klicken auf <strong>Abmelden<\/strong> wird die Internetverbindung beendet."
+    "logoff_data-content": "Durch Klicken auf <strong>Abmelden<\/strong> wird die Internetverbindung beendet.",
+    "menuTrigger_data-title": "Offcanvas-Menü",
+    "menuTrigger_data-content": "Durch Klicken auf <strong>&#9776; Offcanvas-Hamburger<\/strong> oder durch gleichzeitiges Drücken auf der Tastatur von <strong>%s<\/strong> öffnest du das Kontextmenü.",
+    "about_title": "GuardianSuit",
+    "about_subtitle": "Fortgeschrittenes Captive-Portal-Template für OPNsense",
+    "about_content": "<p><b>GuardianSuit<\/b> ist ein modernes, responsives und animiertes Captive-Portal-Template für OPNsense. Es bietet den Benutzern ein attraktives Login-Erlebnis und den Administratoren vollständige Kontrolle über das Aussehen und die Funktionalität der Willkommensseite.<\/p><p><b>Hauptfunktionen:<\/b><\/p><ul><li>Responsives Design und Animationen.<\/li><li>Mehrsprachigkeit.<\/li><li>Einfache Anpassung von Layout und Farben.<\/li><li>Intuitives UX und WCAG-Konformität.<\/li><li>Einfache Integration mit OPNsense.<\/li><\/ul><p><b>Anwendungsbereich:<\/b><br \/>Ideal für Firmennetze, Hotels, Cafés und andere Orte, die eine optisch ansprechende Willkommensseite für das Captive Portal benötigen.<\/p><p><b>Autor:<\/b> Mirosław Majka &lt;mix@proask.pl&gt; | &copy; 2025 GuardianSuit<\/p>",
+    "cookies_title": "Cookies",
+    "cookies_subtitle": "Wie Cookies verwendet werden",
+    "cookies_content": "<h5>Was ist ein Cookie?<\/h5><p>Cookies sind kleine Textdateien, die automatisch vom Webbrowser erstellt werden, während du Webseiten besuchst. Informationen in einer bestimmten Cookie-Datei können nur von der Seite gelesen werden, von der diese Datei stammt. Die Webseite hat somit keinen Zugriff auf andere Dateien auf dem Computer des Benutzers.<\/p><p>Dank der in Cookies enthaltenen Informationen „weiß“ die Seite, wie du sie nutzt, und kann die angezeigten Inhalte entsprechend anpassen oder dir Hilfe anbieten.<\/p><h5>Wozu verwenden wir Cookies?<\/h5><p>Auf der Webseite verwenden wir technische Cookies, die für die ordnungsgemäße Funktion der Seite erforderlich sind. Wir nutzen sie, um unsere Webseite für Geräte und Browser zu optimieren, die von den Besuchern am häufigsten verwendet werden – dadurch wird dein Computer, Tablet oder Telefon die Seite korrekt und lesbar anzeigen und sich merken, ob du der Anzeige bestimmter Inhalte auf der Webseite zugestimmt hast.<\/p><p>Der Benutzer kann auf technische Cookies nicht verzichten.<\/p><h5>Wie lange verwenden wir Cookies?<\/h5><p>Wir verwenden sogenannte persistente Cookies, die auf deinem Gerät für eine bestimmte Zeit verbleiben oder bis sie manuell gelöscht werden.<\/p><h5>Welche Daten erheben wir über Cookies?<\/h5><p>Mittels der Cookie-Technologie erheben wir nur anonyme technische Daten über dich, die dazu dienen, die Benutzerfreundlichkeit unserer Webseite zu verbessern.<\/p><p>Wir sammeln keine Daten, die eine persönliche Identifizierung ermöglichen. Die einzige Information über den Benutzer, die jedoch ohne Verbindung mit anderen Daten keine Identifizierung erlaubt, ist die IP-Adresse, von der aus der Benutzer zugreift.<\/p>",
+    "privacy_title": "Datenschutzrichtlinie",
+    "privacy_subtitle": "Verarbeitung personenbezogener Daten",
+    "privacy_content": "<p>Dieses Dokument wurde erstellt, um dich über unsere Datenschutzrichtlinie zu informieren. Hier erfährst du, wer wir sind, wie wir personenbezogene Daten im Rahmen von <b><&nbsp;Name des ISP&nbsp;><\/b>, mit Sitz in [Straße 10, Stadt und Postleitzahl], erheben, verwenden, offenlegen und weitergeben, zu welchem Zweck wir dies tun und wie die Personen, deren Daten wir verarbeiten, ihre Datenschutzrechte geltend machen können.<\/p><p><&nbsp;Name des ISP&nbsp;> ist für die Verarbeitung personenbezogener Daten gemäß dieser Datenschutzrichtlinie verantwortlich.<\/p><h5>ÜBER UNS<\/h5><p>Der Administrator, also die für die Verarbeitung personenbezogener Daten im Zusammenhang mit der Nutzung dieses Dienstes verantwortliche Stelle, ist <&nbsp;Name des ISP&nbsp;>, [Straße 10, Stadt und Postleitzahl]; USt-IdNr. 1234567890, Registernummer 123456789.<\/p><h5>KONTAKT<\/h5><ul><li>elektronisch per E-Mail: adresse@email.de,<\/li><li>schriftlich an: Name des ISP, [Straße 10, Stadt und Postleitzahl]<\/li><\/ul><h5>GRUNDPRINZIPIEN DIESER DATENSCHUTZRICHTLINIE<\/h5><p>Wir stellen sicher, dass die Verarbeitung deiner Daten in Übereinstimmung mit der Verordnung (EU) 2016/679 des Europäischen Parlaments und des Rates vom 27. April 2016 über den Schutz natürlicher Personen bei der Verarbeitung personenbezogener Daten und über den freien Datenverkehr sowie zur Aufhebung der Richtlinie 95/46/EG (DSGVO), dem Bundesdatenschutzgesetz und weiteren speziellen Vorschriften erfolgt. Diese Datenschutzrichtlinie wurde entsprechend erstellt. Wir informieren klar, welche personenbezogenen Daten wir erheben und zu welchem Zweck sie verwendet werden.<\/p><p><&nbsp;Name des ISP&nbsp;> erhebt personenbezogene und firmenspezifische Daten, die von (potenziellen) Kunden und Geschäftspartnern bereitgestellt werden, sowie Daten, die während der Nutzung des Internetdienstes erfasst werden.<\/p><h5>ERHEBUNG PERSONENBEZOGENER DATEN<\/h5><p>Wir erheben personenbezogene Daten der Nutzer in folgenden Fällen:<\/p><ul><li>Abgabe von Angeboten, Festlegung von Kooperationsbedingungen und/oder Bereitstellung von Informationen über Dienstleistungen und andere Aktivitäten von <&nbsp;Name des ISP&nbsp;>,<\/li><li>Abschluss und Durchführung von Verträgen sowie Pflege des Kontakts mit Kunden/Geschäftspartnern,<\/li><li>Erfüllung gesetzlicher Verpflichtungen,<\/li><li>Beantwortung von Fragen, Bearbeitung von Reklamationen und sonstiger Kundenbetreuung,<\/li><li>Direktmarketing (außer Newsletter),<\/li><li>Zu Archivierungszwecken, ggf. zur Feststellung, Durchsetzung oder Verteidigung von Ansprüchen.<\/li><\/ul><h5>SPEICHERUNG UND LÖSCHUNG VON DATEN<\/h5><p>Um die Sicherheit der bereitgestellten Daten zu gewährleisten, haben wir interne Verfahren und Richtlinien entwickelt, die die unbefugte Weitergabe von Daten verhindern sollen. Wir setzen technische, vertragliche, administrative und physische Maßnahmen zum Schutz der Daten ein. Ihre Einhaltung wird kontinuierlich überwacht.<\/p><p>Personenbezogene Daten des Nutzers werden nur so lange gespeichert, wie es für die Erfüllung der Zwecke, für die sie erhoben wurden, erforderlich ist.<\/p><h5>WEITERGABE UND OFFENLEGUNG VON DATEN<\/h5><p>Wir verkaufen oder geben personenbezogene Daten der Nutzer ohne deren Zustimmung nicht an Dritte weiter. Nutzerinformationen werden nicht profiliert.<\/p><p>Je nach Art und Umfang der Zusammenarbeit zwischen dem Nutzer und <&nbsp;Name des ISP&nbsp;> können wir Daten des Nutzers weitergeben, wenn dies gesetzlich vorgeschrieben ist oder zur Einhaltung rechtlicher Verpflichtungen, zur Beantwortung von Ansprüchen oder zum Schutz von Rechten, Eigentum oder Sicherheit erforderlich ist.<\/p><h5>GRUNDSÄTZE DER DATENVERARBEITUNG<\/h5><p>Wir legen größten Wert auf den Schutz der Interessen der Personen, deren Daten wir verarbeiten, insbesondere um sicherzustellen, dass diese Daten:<\/p><ul><li>rechtmäßig, fair und transparent verarbeitet werden,<\/li><li>für konkrete, eindeutige und rechtmäßig gerechtfertigte Zwecke erhoben und nicht darüber hinaus verarbeitet werden,<\/li><li>angemessen, relevant und auf das für die Zwecke notwendige Maß beschränkt sind,<\/li><li>korrekt und bei Bedarf aktualisiert werden; wir ergreifen Maßnahmen, um falsche Daten unverzüglich zu löschen oder zu berichtigen,<\/li><li>in einer Form gespeichert werden, die die Identifizierung der betroffenen Person nur so lange ermöglicht, wie es für die Zwecke der Verarbeitung erforderlich ist,<\/li><li>unter Gewährleistung angemessener Sicherheit verarbeitet werden, einschließlich Schutz vor unbefugter oder rechtswidriger Verarbeitung und zufälligem Verlust oder Zerstörung.<\/li><\/ul><p>Die Verarbeitung deiner personenbezogenen Daten erfolgt in der Regel auf Grundlage deiner Einwilligung, die jederzeit widerrufen werden kann. Eine andere Grundlage ist, wenn die Verarbeitung zur Erfüllung eines zwischen dir und uns geschlossenen Vertrags oder zur Durchführung vorvertraglicher Maßnahmen erforderlich ist. In bestimmten Situationen ist die Verarbeitung zur Erfüllung gesetzlicher Pflichten erforderlich oder zur Wahrung unserer berechtigten Interessen, wie z. B. zur Durchsetzung von Ansprüchen aus unserer Geschäftstätigkeit.<\/p><h5>DEINE RECHTE<\/h5><p>Dir stehen folgende Rechte zu:<\/p><ul><li>Zugriff auf deine personenbezogenen Daten und Erhalt von Informationen, z. B. zu Datenkategorien, Verarbeitungszwecken und Kopien deiner Daten,<\/li><li>Berichtigung unrichtiger oder Vervollständigung fehlender Daten sowie das Recht auf Löschung („Recht auf Vergessenwerden“), wenn Daten unrechtmäßig oder nicht mehr erforderlich verarbeitet werden,<\/li><li>Widerruf der Einwilligung zur Datenverarbeitung jederzeit, ohne die Rechtmäßigkeit der Verarbeitung, die auf der Einwilligung vor dem Widerruf beruhte, zu beeinträchtigen.<\/li><\/ul><h5>COOKIES<\/h5><p><&nbsp;Name des ISP&nbsp;> verwendet Cookies, um die Nutzung des Dienstes zu erleichtern. Mit der Nutzung des Dienstes erklärst du dich mit der Verwendung von Cookies einverstanden. Wenn du diese nicht blockierst, stimmst du der Nutzung und Speicherung auf deinem Gerät zu.<\/p><h5>ÄNDERUNGEN DER DATENSCHUTZRICHTLINIE<\/h5><p><&nbsp;Name des ISP&nbsp;> behält sich das Recht vor, Änderungen in der Datenschutzrichtlinie vorzunehmen, die durch die Weiterentwicklung der Internettechnologie, Änderungen der Datenschutzgesetze oder die Weiterentwicklung des Dienstes erforderlich werden. Über alle Änderungen werden wir klar und verständlich informieren.<\/p><p>Bei Fragen zur Datenschutzrichtlinie wende dich bitte an die E-Mail-Adresse: adresse@email.de<\/p>"
 }

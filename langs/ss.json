@@ -1,11 +1,80 @@
 {
     "isp_info": {
-        "isp_name": "<Lebitso le ISP> - umhlinzeki wemisebenti ye-inthanethi",
+        "isp_name": "< Lebitso le ISP > - umhlinzeki wemisebenti ye-inthanethi",
         "isp_address": "Ligama leligwa le-10, lidolobha kanye nekhowudi yeposi njll.",
         "isp_id": "Eminye imininingwane."
     },
     "attr_isp_info": {
         "aria-label": "Imininingwane ngemhlinzeki we-inthanethi"
+    },
+    "menu": {
+        "title": "Imenyu ye-GuardianSuit",
+        "item1": {
+            "title": "Inthanethi",
+            "icon": "I",
+            "href": "https://yourdomain.com/#",
+            "target": "_blank"
+        },
+        "item2": {
+            "title": "Televishini",
+            "icon": "T",
+            "href": "https://yourdomain.com/#",
+            "target": "_blank"
+        },
+        "item3": {
+            "title": "Lucingo",
+            "icon": "L",
+            "href": "https://yourdomain.com/#",
+            "target": "_blank"
+        },
+        "item4": {
+            "title": "Emasevisi langengeta",
+            "icon": "E",
+            "href": "https://yourdomain.com/#",
+            "target": "_blank"
+        },
+        "item5": {
+            "title": "Xhumana",
+            "icon": "X",
+            "href": "https://yourdomain.com/#",
+            "target": "_blank"
+        },
+        "item6": {
+            "title": "Inqubomgomo yebumfihlo",
+            "icon": "&#167;",
+            "href": {"type": "modal", "title": "privacy_title", "subtitle": "privacy_subtitle", "content": "privacy_content", "iconText": "&#167;"},
+            "target": "_self"
+        },
+        "item7": {
+            "title": "Emakhukhi",
+            "icon": "&#9865;",
+            "href": {"type": "modal", "title": "cookies_title", "subtitle": "cookies_subtitle", "content": "cookies_content", "iconText": "&#9865;"},
+            "target": "_self"
+        },
+        "item8": {
+            "title": "Idokhumenti",
+            "icon": "&#9783;",
+            "href": "https://github.com/mixmint/opnsense-captive-portal-template/blob/main/README.md",
+            "target": "_blank"
+        },
+        "item9": {
+            "title": "Mayelana neluhlelo",
+            "icon": "&#9873;",
+            "href": {"type": "modal", "title": "about_title", "subtitle": "about_subtitle", "content": "about_content", "iconText": "&#9873;"},
+            "target": "_self"
+        },
+        "group1": {
+            "title": "Sincomo",
+            "items": ["item1", "item2", "item3", "item4", "item5"]
+        },
+        "group2": {
+            "title": "Lwati",
+            "items": ["item6", "item7"]
+        },
+        "group3": {
+            "title": "Sita",
+            "items": ["item8", "item9"]
+        }
     },
     "footer_isp_info": {},
     "pagetitle": "Luhlelo lokuNgena kwababasebenti | <Lebitso le ISP>",
@@ -77,9 +146,9 @@
     "a11y_helper_prev": "Emuva",
     "a11y_helper_done": "Kuphelile",
     "a11y-keys_data-title": "Tishortcut temakhibhodi",
-    "a11y-keys_data-content": "<span style=\"font-size: 14px\">Kuhlanganiswa kwemakhibhodi <br \/><strong>⇧ Shift (left) <br \/>+&nbsp;⌥ Alt (left) <br \/>+&nbsp;litera<\/strong><br \/><br \/><strong>⇧ Shift + ⌥ Alt + U<\/strong><br \/>gxila kunkambu yeLigama lomsebenzisi<br \/><br \/><strong>⇧ Shift + ⌥ Alt + P<\/strong><br \/>gxfila kunkambu yePhasiwedi<br \/><br \/><strong>⇧ Shift + ⌥ Alt + A<\/strong><br \/>khetha/kukhipha \"Ngiyemukela imigomo\"<br \/><br \/><strong>⇧ Shift + ⌥ Alt + R<\/strong><br \/>vula iwindi lemigomo<br \/><br \/><strong>⇧ Shift + ⌥ Alt + I<\/strong><br \/>ngena umsebenzisi<br \/><br \/><strong>⇧ Shift + ⌥ Alt + O<\/strong><br \/>phuma umsebenzisi<br \/><br \/><strong>⇧ Shift + ⌥ Alt + L<\/strong><br \/>tawula kukhweza lolulimi<\/span>",
+    "a11y-keys_data-content": "<span style=\"font-size: 14px\">Kuhlanganiswa kwemakhibhodi <br \/><strong>⇧ Shift (left) <br \/>+&nbsp;⌥ Alt (left) <br \/>+&nbsp;litera<\/strong><br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;U<\/strong><br \/>gxila kunkambu yeLigama lomsebenzisi<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;P<\/strong><br \/>gxfila kunkambu yePhasiwedi<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;A<\/strong><br \/>khetha/kukhipha \"Ngiyemukela imigomo\"<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;R<\/strong><br \/>vula iwindi lemigomo<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;I<\/strong><br \/>ngena umsebenzisi<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;O<\/strong><br \/>phuma umsebenzisi<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;L<\/strong><br \/>tawula kukhweza lolulimi<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;M<\/strong><br \/>kuvula imenyu ye-offcanvas (uma inikwe amandla)<\/span>",
     "a11y-lang-keys_data-title": "Tishortcut temakhibhodi tekutfutfukisa lulwimi",
-    "a11y-lang-keys_data-content": "<span style=\"font-size: 14px\">Bamba <strong>⇧ Shift (left) bese ucindezela titsatfu temalitere ekhukhi yekhodi lolulimi<\/strong> (ISO 639-1) ngasikhatsi noma kuphindze kube yinye ngemuva kwesinye.<br \/><br \/>Emibonelo:<br \/><strong>⇧ Shift + P + L<\/strong> → guqula lulwimi lwesiPolishi (pl)<br \/><br \/><strong>⇧ Shift + E + N<\/strong> → guqula lulwimi lwesiNgisi (en)<br \/><br \/><strong>⇧ Shift + D + E<\/strong> → guqula lulwimi lwesiJalimane (de)<br \/><br \/><strong>⇧ Shift + F + R<\/strong> → guqula lulwimi lwesiFulentshi (fr)<br \/><br \/><strong>⇧ Shift + E + S<\/strong> → guqula lulwimi lwesiSpanishi (es)<br \/><br \/><strong>⇧ Shift + I + T<\/strong> → guqula lulwimi lwesiTaliyane (it)<br \/>...<\/span>",
+    "a11y-lang-keys_data-content": "<span style=\"font-size: 14px\">Bamba <strong>⇧ Shift (left) bese ucindezela titsatfu temalitere ekhukhi yekhodi lolulimi<\/strong> (ISO 639-1) ngasikhatsi noma kuphindze kube yinye ngemuva kwesinye.<br \/><br \/>Emibonelo:<br \/><strong>⇧ Shift&nbsp;+&nbsp;P&nbsp;+&nbsp;L<\/strong> → guqula lulwimi lwesiPolishi (pl)<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;E&nbsp;+&nbsp;N<\/strong> → guqula lulwimi lwesiNgisi (en)<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;D&nbsp;+&nbsp;E<\/strong> → guqula lulwimi lwesiJalimane (de)<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;F&nbsp;+&nbsp;R<\/strong> → guqula lulwimi lwesiFulentshi (fr)<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;E&nbsp;+&nbsp;S<\/strong> → guqula lulwimi lwesiSpanishi (es)<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;I&nbsp;+&nbsp;T<\/strong> → guqula lulwimi lwesiTaliyane (it)<br \/>...<\/span>",
     "polyglotLanguageSwitcher_data-title": "Sikhethi selulwimi",
     "polyglotLanguageSwitcher_data-content": "Lapha utawushintja inguqulo lolulwimi lwe-portal. Ngokucindezela <strong>%s<\/strong> kukhibhodi, utawuvula sikhala <strong>%s<\/strong> noma <strong>Shift<\/strong> bese ucindezela titsatfu temalitere yekhodi lolulimi ngasikhatsi noma ngemuva kwesinye, isibonelo: <strong>Shift + P + L<\/strong> utawuguqula lulwimi.",
     "fieldUsername_data-title": "Tishortcut tekhibhodi",
@@ -97,5 +166,16 @@
     "signin_anon_data-title": "Ngena",
     "signin_anon_data-content": "Ngokuchofoza inkinobho <strong>Ngena<\/strong>, utawuvula uxhumano ku-Inthanethi.",
     "logoff_data-title": "Phuma",
-    "logoff_data-content": "Ngokuchofoza inkinobho <strong>Phuma<\/strong>, utawuphelisa uxhumano ku-Inthanethi."
+    "logoff_data-content": "Ngokuchofoza inkinobho <strong>Phuma<\/strong>, utawuphelisa uxhumano ku-Inthanethi.",
+    "menuTrigger_data-title": "Imenyu ye-offcanvas",
+    "menuTrigger_data-content": "Ngekuchafata <strong>&#9776; i-hamburger ye-offcanvas<\/strong> noma ngekucindzetela kukhibhodi ngasikhatsi sinye <strong>%s<\/strong> utawuvula imenyu yeluhlobo.",
+    "about_title": "GuardianSuit",
+    "about_subtitle": "Ithempulethi lephucukile le-Captive Portal ye-OPNsense",
+    "about_content": "<p><b>GuardianSuit<\/b> yithempulethi yesimanje, lephendvulayo futsi lene-animathini ye-Captive Portal ye-OPNsense. Inika basebentisi lwati lolukhangako lwekungenisa, futsi balawuli ibanika kulawula lokugcwele ekubukekeni nasekusebenteni kwelipheji lekumukela.<\/p><p><b>Imisebenti lebalulekile:<\/b><\/p><ul><li>Kuphendvula nemaanimathini.<\/li><li>Kusekela tilwimi letinyenti.<\/li><li>Kulungisa lula kubukeka nemibala.<\/li><li>UX lecacile kanye nekuhambisana ne-WCAG.<\/li><li>Kuhlanganiswa kalula ne-OPNsense.<\/li><\/ul><p><b>Kusetjentiswa:<\/b><br \/>Kuhle kakhulu emanethiwekhi etinkampani, emahhotela, emakhefi kanye netinye tindzawo letidzinga lipheji lekumukela le-Captive Portal lelikhangako ngeliso.<\/p><p><b>Umbhali:<\/b> Mirosław Majka &lt;mix@proask.pl&gt; | &copy; 2025 GuardianSuit<\/p>",
+    "cookies_title": "Emakhukhi",
+    "cookies_subtitle": "Kusetjentiswa kwemakhukhi.",
+    "cookies_content": "<h5>Yini ikhukhi?<\/h5><p>Emakhukhi (lokubitwa ngekutsi \"cookies\") ngamafayela lamancane embhalo, lakhiwa ngokuzenzakalela siphequluli se-inthanethi, ngesikhatsi uvakashela emakhasi e-WWW. Lwati lolukuwo lukhukhi lunganconwa kuphela ngelikhasi lapho lelikhukhi livela khona. Ngako-ke, likhasi le-inthanethi alikwati kufinyelela kulamanye emafayela laku-kompyutha yomsebentisi.<\/p><p>Ngenxa yelwati loluku-emakhukhi, likhasi \"liyati\" kutsi ulisebentisa kanjani futsi lingalungisa kahle lokuboniswa kuwe noma likunike lusito.<\/p><h5>Siyawasebentisa ngani emakhukhi?<\/h5><p>Esikhatsini selikhasi sisebentisa emakhukhi ethekhinikhali, labalulekile ekusebenteni kahle kwelikhasi. Siwasebentisa kuze silungise kahle likhasi letfu le-inthanethi kuya ngetinsiza netiphequluli letivame kusebentiswa bantfu labalivakashelako – ngaleyo ndlela ikhompyutha yakho, ithebhulethi noma ifoni yakho itawulibonisa kahle futsi kucace, ikhumbula kutsi uyemukele yini kuboniswa kwalokunye lokuqukethwe kulikhasi le-inthanethi.<\/p><p>Umsebentisi angeke akhone kuyekela emakhukhi ethekhinikhali.<\/p><h5>Sisebentisa sikhatsi lesingakanani emakhukhi?<\/h5><p>Sisebentisa lokubitwa ngekutsi emakhukhi lamile (persistent cookies), lahlala kudivayisi yakho sikhatsi lesitsite noma kuze kube ngesikhatsi ususwa ngesandla.<\/p><\/li><\/ul><h5>Nguluphi lwati lolubutswa ngemakhukhi?<\/h5><p>Ngethekhinoloji yemakhukhi sibutsa kuphela lwati lwekusebenta lolungatiwa, lolusetjentiselwa kwenta kube lula kusebentisa likhasi letfu.<\/p><p>Asibutsi nobe nguluphi lwati lolungakukhomba. Lwati lunye kuphela ngomsebentisi, lolungakakhoni kumkhomba ngaphandle kwekuhlanganiswa nalolunye lwati, yikheli ye-IP lapho umsebentisi axhumana khona.<\/p>",
+    "privacy_title": "Inqubomgomo yebumfihlo",
+    "privacy_subtitle": "Kucubungula idatha yemuntfu",
+    "privacy_content": "<p>Senta lomculu wekubhala kuze sikwatise ngeNqubomgomo Yetfu Yebumfihlo. Lapha utawutfola lwati kutsi singubani, sibutsa njani, sisebentisa njani, sikhombisa njani futsi sabelana kanjani ngedatha yemuntfu ngaphansi kwe <b><&nbsp;Lebitso le ISP&nbsp;><\/b>, lenesikhungo e-[ Nazwa ulicy 10, miasto i kod pocztowy ], kutsi sikwenta ngani futsi kutsi bantfu labadatha yabo icubungulwa bangawasebentisa njani emalungelo abo ebuntfwaneni.<\/p><p><&nbsp;Lebitso le ISP&nbsp;> inomtfwalo wekucubungula idatha yemuntfu ngekuhambisana nalena Nqubomgomo Yebumfihlo.<\/p><h5>MAYELANA NATHI<\/h5><p>Umphatsi, lokungumuntfu locubungula idatha yemuntfu lehlobene nekusebentisa kwakho lenkonzo, ngu <&nbsp;Lebitso le ISP&nbsp;>, [ Nazwa ulicy 10, miasto i kod pocztowy ]; NIP 1234567890, Regon 123456789,<\/p><h5>XHUMANA NATHI<\/h5><ul><li>nge-elekthroniki kule-imeyili: adres@email.pl,<\/li><li>ngalokubhaliwe kulekheli: Lebitso le ISP, [ Nazwa ulicy 10, miasto i kod pocztowy ]<\/li><\/ul><h5>IMIGOMO LEKULE NQUBOOMGOMO YEBUMFIHLO<\/h5><p>Siyacinisekisa kutsi kucubungulwa kwedatha yakho kwenteka ngekuhambisana nemigomo yeSimemezelo sePhalamende Yurophu neMkhandlu (EU) namba 2016/679 yanga 27 Mabasa 2016 mayelana nekuvikelwa kwebantfu uma kucubungulwa idatha yemuntfu kanye nekugucuka kwamahhala kwaleyo datha futsi kucishwa kweDirikhithiva 95/46/EC (RODO), umtsetfo wekuvikelwa kwedatha yemuntfu kanye nemigomo leyehlukile. Lena Nqubomgomo Yebumfihlo ilungiswe ngekuhambisana naleyo migomo. Sichaza kahle kutsi sibutsa njani idatha yemuntfu nekutsi isetjentiselwa ini.<\/p><p>Siyacaphela kutsi <&nbsp;Lebitso le ISP&nbsp;> ibutsa idatha yemuntfu kanye nelwati lwenkampani loluniketwa ngemakhasimende ayo (langaba khona) kanye nebahlanganyeli, kanye nedatha letfolwa ngesikhatsi kusetjentiswa insita yekungena ku-inthanethi.<\/p><h5>KUBUTSWA KWEDATHA YEMUNTFU<\/h5><p>Sibutsa idatha yemuntfu leniketwa basebentisi kulemitfombo lelandzelako:<\/p><ul><li>kuniketa tincomo, kumisa imigomo yekubambisana noma/nekutiniketa lwati mayelana netinsita kanye neminye imisebenti ye <&nbsp;Lebitso le ISP&nbsp;>,<\/li><li>kungenela nekugcwalisa tinkontileka kanye nekugcina kuchumana nekhasimende/umlingani,<\/li><li>kugcwalisa imisebenti lephuma emitsetfweni leyisebentako,<\/li><li>kuphawula imibuto, kubuka tikhalo kanye nelunye lusito lwangemuva kwekuthengiswa,<\/li><li>imakethe lecondzile (ngaphandle kwe-newsletter),<\/li><li>ngemitfombo yekugcina (bufakazi), noma kuze kumiswe, kufunwe noma kuvikelwe etimangalweni.<\/li><\/ul><h5>KUGCINWA KANYE NEKUSUSWA KWEDATHA<\/h5><p>Ngenhloso yekuvikela idatha leyetfulwe, silungise imitsetfo yangekhatsi neteluleko letivimbela kudluliselwa kwedatha kubantfu labangenalo lilungelo. Sisebentisa tindlela tethekhinoloji, tetivumelwano, tekuphatsa kanye netemzimba kuvikela idatha ekufinyeleleni lokungagunyatiwe. Silawula kusebenta kwato futsi sihlale sihlola kuhambisana kwato nemitsetfo lefanele.<\/p><p>Siyigcina idatha yemuntfu yomsebentisi kuphela sikhatsi lesidzinga kuze kugcwaliswe tinhloso letabutswa ngato.<\/p><h5>KUDLULISWA KANYE NEKUVULELWA KWEDATHA<\/h5><p>Asidayisi futsi asiyidlulisi kubantfu besitsatfu idatha yemuntfu yebasebentisi ngaphandle kwemvume yabo. Idatha yebasebentisi ayiprofayilwa.<\/p><p>Kuncika eluhlobeni nasebubanzini bekubambisana emkhatsini womsebentisi ne <&nbsp;Lebitso le ISP&nbsp;>, singadlulisa idatha uma kudzingeka ngemigomo yemtsetfo, noma uma kudzingeka kuze kugcinwe kuhambisana nemisebenti yetemtsetfo, kugcwaliswe tibopho tetivumelwano, kuphendvulwe etimangalweni noma kuvikela emalungelo, impahla noma kuphepha.<\/p><h5>IMIGOMO YEKUCUBUNGULA IDATHA YAKHO<\/h5><p>Senta konkhe ngekucophelela lokukhulu kuvikela intfo yabantfu labadatha yabo icubungulwa, ikakhulu kuze sicinisekise kutsi idatha:<\/p><ul><li>icubungulwa ngekuhambisana nemtsetfo, ngekwetsembeka futsi ngendlela lecacile kumuntfu lotsintfwa yiyo,<\/li><li>ibutswa ngenhloso lecondzile, lecacile nalengokomtfwalo futsi ingacubungulwa kabusha ngendlela lengahambisani naleyo nhloso,<\/li><li>iyalingana, ifanele futsi ilinganiselwe kulokudzingekako kuze kugcwaliswe tinhloso,<\/li><li>ilungile futsi ibuyeketwa uma kudzingeka; sitsatsa tinyatselo kuze idatha lengalungile isuswe noma ilungiswe masinyane,<\/li><li>igcinwe ngendlela levumela kukhomba umuntfu kuphela sikhatsi lesidzinga,<\/li><li>icubungulwa ngendlela lecinisekisa kuphepha lokwanele, kufaka ekhatsi kuvikela ekucubungulweni lokungagunyatiwe noma lokungekho emtsetfweni kanye nekulahleka noma kuchithwa ngephutsa.<\/li><\/ul><p>Sivamise kucubungula idatha yakho ngemvume, lengahoxiswa nobe ngunini. Kwezinye timo, kucubungula kudzingekile kuze kugcwaliswe sivumelwano emkhatsini wetfu nawe noma ngekucela kwakho, nangakabi khona sivumelwano. Kukhona netimo lapho kucubungula kudzingeka kugcwaliswe umtfwalo wemthetho losiphocele njengemphatsi wedatha. Lemitfwalo ivela, sibonelo, emitsetfweni yemsebenti noma yomthetho webhuku. Kucubungula kungabuye kudzingeke ngenhloso yetintshisekelo tetfu letisemtsetfweni, njengesibonelo kufuna timangalelo letivela emisebentini yetfu yebhizinisi.<\/p><h5>EMALUNGELO AKHO<\/h5><p>Unelilungelo lelilandzelako:<\/p><ul><li>Kufinyelela kudatha yakho yemuntfu kanye nekutfola lwati mayelana netigaba tedatha, tinhloso tekucubungula kanye nekutfola ikhophi yayo,<\/li><li>Kulungisa idatha lengalungile, kugcwalisa lekushodayo kanye nelilungelo lekukhohlwa, lokusho kutsi unelilungelo lekucela kususwa kwedatha lecubungulwa ngaphandle kwesizathu noma lokungekho emtsetfweni,<\/li><li>Kuhoxisa imvume yekucubungula nobe ngunini ngaphandle kwekuphazamisa kusemthethweni kwekucubungula lokwenteka ngaphambi kwekuhoxiswa (uma kucubungula kusekelwe ku-athikhili 6 sigaba 1 lit. a noma athikhili 9 sigaba 2 lit. a RODO).<\/li><\/ul><h5>COOKIES<\/h5><p><&nbsp;Lebitso le ISP&nbsp;> isebentisa emakhukhi kuze yente kube lula kusebentisa insita. Ngekusebentisa insita uyavuma kusebentiswa kwemakhukhi ngitsi. Uma ungawavimbi, uyavuma kusebentiswa kwawo kanye nekugcinwa kwawo kudivayisi yakho.<\/p><h5>INGUCOLO YENQUBOMGOMO YEKUVIKELWA KWEDATHA<\/h5><p><&nbsp;Lebitso le ISP&nbsp;> igcina lilungelo lekutfutsa tingucuko kunqubomgomo yekuvikelwa kwedatha yemuntfu, lokungatsintfwa kutfutfuka kwetekhinoloji ye-inthanethi, tingucuko temtsetfo noma kutfutfuka kwensita. Ngetingucuko tonkhe sitawukwatisa ngendlela lecacile nelula kuyivisisa.<\/p><p>Yonke imibuto mayelana nenqubomgomo yekuvikelwa kwedatha sicela uyitfumele kule-imeyili: adres@email.pl<\/p>"
 }

@@ -7,6 +7,75 @@
     "attr_isp_info": {
         "aria-label": "Tietoa internet-palveluntarjoajasta"
     },
+    "menu": {
+        "title": "GuardianSuit-valikko",
+        "item1": {
+            "title": "Internet",
+            "icon": "I",
+            "href": "https://yourdomain.com/#",
+            "target": "_blank"
+        },
+        "item2": {
+            "title": "Televisio",
+            "icon": "T",
+            "href": "https://yourdomain.com/#",
+            "target": "_blank"
+        },
+        "item3": {
+            "title": "Puhelin",
+            "icon": "P",
+            "href": "https://yourdomain.com/#",
+            "target": "_blank"
+        },
+        "item4": {
+            "title": "Lisäpalvelut",
+            "icon": "L",
+            "href": "https://yourdomain.com/#",
+            "target": "_blank"
+        },
+        "item5": {
+            "title": "Yhteystiedot",
+            "icon": "Y",
+            "href": "https://yourdomain.com/#",
+            "target": "_blank"
+        },
+        "item6": {
+            "title": "Tietosuojakäytäntö",
+            "icon": "&#167;",
+            "href": {"type": "modal", "title": "privacy_title", "subtitle": "privacy_subtitle", "content": "privacy_content", "iconText": "&#167;"},
+            "target": "_self"
+        },
+        "item7": {
+            "title": "Evästeet",
+            "icon": "&#9865;",
+            "href": {"type": "modal", "title": "cookies_title", "subtitle": "cookies_subtitle", "content": "cookies_content", "iconText": "&#9865;"},
+            "target": "_self"
+        },
+        "item8": {
+            "title": "Dokumentaatio",
+            "icon": "&#9783;",
+            "href": "https://github.com/mixmint/opnsense-captive-portal-template/blob/main/README.md",
+            "target": "_blank"
+        },
+        "item9": {
+            "title": "Tietoja ohjelmasta",
+            "icon": "&#9873;",
+            "href": {"type": "modal", "title": "about_title", "subtitle": "about_subtitle", "content": "about_content", "iconText": "&#9873;"},
+            "target": "_self"
+        },
+        "group1": {
+            "title": "Tarjonta",
+            "items": ["item1", "item2", "item3", "item4", "item5"]
+        },
+        "group2": {
+            "title": "Tiedot",
+            "items": ["item6", "item7"]
+        },
+        "group3": {
+            "title": "Apua",
+            "items": ["item8", "item9"]
+        }
+    },
     "footer_isp_info": {},
     "pagetitle": "Internetin käyttöportaali | <ISP Nimi>",
     "username": "Käyttäjätunnus (Login)",
@@ -77,7 +146,7 @@
     "a11y_helper_prev": "Takaisin",
     "a11y_helper_done": "Valmis",
     "a11y-keys_data-title": "Pikanäppäimet",
-    "a11y-keys_data-content": "<span style=\"font-size: 14px\">Näppäinyhdistelmä <br \/><strong>⇧ Shift (vasen) <br \/>+&nbsp;⌥ Alt (vasen) <br \/>+&nbsp;kirjain<\/strong><br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;U<\/strong><br \/>siirtyy käyttäjätunnuskenttään<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;P<\/strong><br \/>siirtyy salasanakenttään<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;A<\/strong><br \/>valitsee/poistaa valinnan ruudusta \"Hyväksyn käyttöehdot\"<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;R<\/strong><br \/>avaa käyttöehtojen modaalin<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;I<\/strong><br \/>kirjaa käyttäjän sisään<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;O<\/strong><br \/>kirjaa käyttäjän ulos<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;L<\/strong><br \/>aktivoi kielivalitsimen<\/span>",
+    "a11y-keys_data-content": "<span style=\"font-size: 14px\">Näppäinyhdistelmä <br \/><strong>⇧ Shift (vasen) <br \/>+&nbsp;⌥ Alt (vasen) <br \/>+&nbsp;kirjain<\/strong><br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;U<\/strong><br \/>siirtyy käyttäjätunnuskenttään<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;P<\/strong><br \/>siirtyy salasanakenttään<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;A<\/strong><br \/>valitsee/poistaa valinnan ruudusta \"Hyväksyn käyttöehdot\"<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;R<\/strong><br \/>avaa käyttöehtojen modaalin<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;I<\/strong><br \/>kirjaa käyttäjän sisään<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;O<\/strong><br \/>kirjaa käyttäjän ulos<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;L<\/strong><br \/>aktivoi kielivalitsimen<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;M<\/strong><br \/>avaa offcanvas-valikon (jos se on käytössä)<\/span>",
     "a11y-lang-keys_data-title": "Kielikäännösten pikanäppäimet",
     "a11y-lang-keys_data-content": "<span style=\"font-size: 14px\">Pidä <strong>⇧ Shift (vasen) ja paina kahta kielen kirjainkoodia<\/strong> (ISO 639-1) samanaikaisesti tai yksi kerrallaan.<br \/><br \/>Esimerkkejä:<br \/><strong>⇧ Shift&nbsp;+&nbsp;P&nbsp;+&nbsp;L<\/strong> → vaihtaa suomeksi (fi)<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;E&nbsp;+&nbsp;N<\/strong> → vaihtaa englanniksi (en)<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;D&nbsp;+&nbsp;E<\/strong> → vaihtaa saksaksi (de)<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;F&nbsp;+&nbsp;R<\/strong> → vaihtaa ranskaksi (fr)<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;E&nbsp;+&nbsp;S<\/strong> → vaihtaa espanjaksi (es)<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;I&nbsp;+&nbsp;T<\/strong> → vaihtaa italiaksi (it)<br \/>...<\/span>",
     "polyglotLanguageSwitcher_data-title": "Kielivalitsin",
@@ -97,5 +166,16 @@
     "signin_anon_data-title": "Kirjaudu sisään",
     "signin_anon_data-content": "Klikkaa <strong>Kirjaudu sisään<\/strong>-painiketta käynnistääksesi internetyhteyden.",
     "logoff_data-title": "Kirjaudu ulos",
-    "logoff_data-content": "Klikkaa <strong>Kirjaudu ulos<\/strong>-painiketta lopettaaksesi internetyhteyden."
+    "logoff_data-content": "Klikkaa <strong>Kirjaudu ulos<\/strong>-painiketta lopettaaksesi internetyhteyden.",
+    "menuTrigger_data-title": "Offcanvas-valikko",
+    "menuTrigger_data-content": "Klikkaamalla <strong>&#9776; offcanvas-hampurilainen<\/strong> tai painamalla näppäimistöltä samanaikaisesti <strong>%s<\/strong> avaat kontekstivalikon.",
+    "about_title": "GuardianSuit",
+    "about_subtitle": "Edistynyt Captive Portal -malli OPNsenseä varten",
+    "about_content": "<p><b>GuardianSuit<\/b> on moderni, responsiivinen ja animoitu Captive Portal -malli OPNsenseä varten. Se tarjoaa käyttäjille houkuttelevan kirjautumiskokemuksen ja antaa ylläpitäjille täyden hallinnan tervetulosivun ulkoasusta ja toiminnoista.<\/p><p><b>Tärkeimmät ominaisuudet:<\/b><\/p><ul><li>Responsiivisuus ja animaatiot.<\/li><li>Monikielisyys.<\/li><li>Helppo ulkoasun ja värien muokkaus.<\/li><li>Intuitiivinen UX ja WCAG-yhteensopivuus.<\/li><li>Helppo integrointi OPNsenseen.<\/li><\/ul><p><b>Käyttötarkoitus:<\/b><br \/>Sopii erinomaisesti yritysverkkoihin, hotelleihin, kahviloihin ja muihin paikkoihin, joissa tarvitaan visuaalisesti houkuttelevaa Captive Portal -tervetulosivua.<\/p><p><b>Tekijä:<\/b> Mirosław Majka &lt;mix@proask.pl&gt; | &copy; 2025 GuardianSuit<\/p>",
+    "cookies_title": "Evästeet",
+    "cookies_subtitle": "Kuinka evästeitä käytetään.",
+    "cookies_content": "<h5>Mitä eväste on?<\/h5><p>Evästeet ovat pieniä tekstitiedostoja, jotka selain luo automaattisesti, kun vierailet verkkosivuilla. Tiedot kyseisestä evästeestä voidaan lukea vain sivustolta, jolta eväste on peräisin. Näin ollen verkkosivusto ei voi päästä käsiksi muihin käyttäjän tietokoneella oleviin tiedostoihin.<\/p><p>Evästeiden avulla sivusto \"tietää\", miten käytät sitä, ja voi mukauttaa sinulle näytettäviä sisältöjä tai tarjota apua tarpeen mukaan.<\/p><h5>Mihin käytämme evästeitä?<\/h5><p>Käytämme teknisiä evästeitä, jotka ovat välttämättömiä sivuston toiminnan kannalta. Käytämme niitä optimoidaksemme verkkosivumme toimimaan oikein laitteilla ja selaimilla, joita käyttäjät useimmiten käyttävät – näin tietokoneesi, tablettisi tai puhelimesi näyttää sivun oikein ja selkeästi, muistaen myös, oletko antanut suostumuksesi tiettyjen sisältöjen näyttämiseen.<\/p><p>Käyttäjä ei voi kieltäytyä teknisistä evästeistä.<\/p><h5>Kuinka kauan käytämme evästeitä?<\/h5><p>Käytämme ns. pysyviä evästeitä, jotka säilyvät laitteellasi määräajan tai kunnes poistat ne manuaalisesti.<\/p><h5>Millaisia tietoja keräämme evästeiden avulla?<\/h5><p>Evästeteknologian avulla keräämme sinusta vain anonyymejä teknisiä tietoja, jotka auttavat parantamaan sivuston käyttömukavuutta.<\/p><p>Emme kerää mitään tunnistettavia tietoja. Ainoa käyttäjästä saatu tieto, joka ei yksinään mahdollista tunnistamista, on IP-osoite, josta käyttäjä yhdistää sivustolle.<\/p>",
+    "privacy_title": "Tietosuojakäytäntö",
+    "privacy_subtitle": "Henkilötietojen käsittely",
+    "privacy_content": "<p>Laadimme tämän asiakirjan tiedottaaksemme sinua tietosuojakäytännöstämme. Täältä saat tietoa siitä, keitä olemme, miten keräämme, käytämme, paljastamme ja jaamme henkilötietoja <b><&nbsp;ISP:n Nimi&nbsp;><\/b>, jonka kotipaikka on [ Katuosoite 10, kaupunki ja postinumero ], puitteissa, mihin tarkoitukseen teemme sen ja miten rekisteröidyt voivat käyttää oikeuksiaan tietosuojaan liittyen.<\/p><p><&nbsp;ISP:n Nimi&nbsp;> vastaa henkilötietojen käsittelystä tämän tietosuojakäytännön mukaisesti.<\/p><h5>MEISTÄ<\/h5><p>Rekisterinpitäjä, eli taho, joka käsittelee henkilötietoja käyttäessäsi tätä palvelua, on <&nbsp;ISP:n Nimi&nbsp;>, [ Katuosoite 10, kaupunki ja postinumero ]; Y-tunnus 1234567890, Regon 123456789,<\/p><h5>OTA YHTEYTTÄ<\/h5><ul><li>sähköpostitse: osoite@email.fi,<\/li><li>kirjallisesti osoitteeseen: ISP:n Nimi, [ Katuosoite 10, kaupunki ja postinumero ]<\/li><\/ul><h5>TÄMÄN TIETOSUOJAKÄYTÄNNÖN PERIAATTEET<\/h5><p>Huolehdimme siitä, että henkilötietojesi käsittely tapahtuu Euroopan parlamentin ja neuvoston asetuksen (EU) 2016/679 mukaisesti henkilötietojen käsittelystä ja tietojen vapaasta liikkuvuudesta sekä direktiivin 95/46/EY kumoamisesta (\"GDPR\"), henkilötietolain sekä muiden soveltuvien lakien mukaisesti. Tämä tietosuojakäytäntö on laadittu niiden mukaisesti. Ilmoitamme selkeästi, miten keräämme henkilötietoja ja mihin tarkoitukseen niitä käytetään.<\/p><p>Huomioithan, että <&nbsp;ISP:n Nimi&nbsp;> kerää henkilötietoja ja yritystietoja asiakkailtaan ja potentiaalisilta asiakkailta sekä tietoja internetin käyttöpalvelun käytön aikana.<\/p><h5>HENKILÖTIETOJEN KERÄÄMINEN<\/h5><p>Keräämme käyttäjiltä seuraavia henkilötietoja:<\/p><ul><li>tarjousten tekeminen, yhteistyön ehtojen sopiminen ja\/tai palvelu- ja muun tiedon tarjoaminen <&nbsp;ISP:n Nimi&nbsp;>,<\/li><li>sopimusten tekeminen ja toteuttaminen sekä yhteydenpito asiakkaisiin\/kumppaneihin,<\/li><li>lakisääteisten velvoitteiden täyttäminen,<\/li><li>kysymyksiin vastaaminen, reklamaatioiden käsittely ja muu jälkimarkkinointi,<\/li><li>suora markkinointi (muut kuin uutiskirje),<\/li><li>arkistointi (todistusaineisto), mahdollisten vaateiden selvittäminen, tutkiminen tai puolustaminen.<\/li><\/ul><h5>TIETOJEN SÄILYTTÄMINEN JA POISTAMINEN<\/h5><p>Turvallisuuden takaamiseksi olemme laatineet sisäisiä menettelyjä ja suosituksia, jotka estävät tietojen pääsyn luvattomille henkilöille. Käytämme teknisiä, sopimuksellisia, hallinnollisia ja fyysisiä keinoja tietojen suojaamiseksi. Valvomme näiden toteuttamista ja tarkistamme jatkuvasti niiden lainmukaisuuden.<\/p><p>Säilytämme käyttäjän henkilötietoja vain niin kauan kuin on tarpeen niiden käyttötarkoituksen toteuttamiseksi.<\/p><h5>TIETOJEN JAKAMINEN JA PALJASTAMINEN<\/h5><p>Emme myy emmekä jaa käyttäjien henkilötietoja kolmansille osapuolille ilman heidän suostumustaan. Käyttäjätietoja ei käytetä profilointiin.<\/p><p>Riippuen yhteistyön luonteesta ja laajuudesta käyttäjän ja <&nbsp;ISP:n Nimi&nbsp;> välillä, voimme luovuttaa käyttäjätietoja, mikäli se on lain edellyttämää tai tarpeen oikeudellisten vaatimusten noudattamiseksi, sopimusvelvoitteiden täyttämiseksi, vaateisiin vastaamiseksi tai oikeuksien, omaisuuden ja turvallisuuden suojaamiseksi.<\/p><h5>PERIAATTEET HENKILÖTIETOJEN KÄSITTELYSÄ<\/h5><p>Pyrimme suojaamaan rekisteröityjen edut ja varmistamaan, että tiedot ovat:<\/p><ul><li>lainmukaisesti käsiteltyjä, luotettavia ja läpinäkyviä rekisteröityä kohtaan,<\/li><li>kerättyjä nimenomaisiin, laillisiin ja perusteltuihin tarkoituksiin eivätkä käsiteltäviä muuhun kuin niihin tarkoituksiin,<\/li><li>asianmukaisia, tarkoitukseen sopivia ja vain tarpeellisia,<\/li><li>oikeellisia ja tarvittaessa päivitettyjä. Huolehdimme, että virheelliset tiedot poistetaan tai korjataan viipymättä,<\/li><li>säilytettyjä tunnistettavassa muodossa vain niin kauan kuin on tarpeen,<\/li><li>käsiteltyjä turvallisesti, suojaten luvattomalta käsittelyltä, laittomalta käytöltä, katoamiselta tai tuhoutumiselta.<\/li><\/ul><p>Käsittelemme henkilötietoja yleensä suostumuksesi perusteella, jonka voit peruuttaa milloin tahansa. Lisäksi käsittely voi olla tarpeen sopimuksen toteuttamiseksi tai ennen sopimusta omasta pyynnöstäsi. Joissain tapauksissa käsittely on tarpeen lain mukaisen velvoitteen täyttämiseksi, kuten työoikeuden tai kirjanpitolain mukaiset velvoitteet. Käsittely voi myös olla tarpeen rekisterinpitäjän oikeutettujen etujen toteuttamiseksi, esimerkiksi vaateiden perimiseksi liiketoiminnasta.<\/p><h5>OIKEUTESI<\/h5><p>Sinulla on seuraavat oikeudet:<\/p><ul><li>Pääsy henkilötietoihisi ja tieto kerätyistä tietoluokista, käsittelyn tarkoituksista ja kopioiden saaminen,<\/li><li>Virheellisten tietojen korjaaminen ja puuttuvien tietojen täydentäminen sekä \"oikeus tulla unohdetuksi\" eli tietojen poistaminen ilman laillista perustetta,<\/li><li>Suostumuksen peruuttaminen milloin tahansa ilman vaikutusta käsittelyn laillisuuteen ennen peruuttamista (jos käsittely perustuu GDPR art. 6.1.a tai 9.2.a).<\/li><\/ul><h5>EVÄSTEET<\/h5><p><&nbsp;ISP:n Nimi&nbsp;> käyttää evästeitä helpottaakseen palvelun käyttöä. Käyttämällä palvelua hyväksyt evästeiden käytön. Jos et estä evästeitä, hyväksyt niiden tallentamisen laitteellesi.<\/p><h5>Tietosuojakäytännön muutokset<\/h5><p><&nbsp;ISP:n Nimi&nbsp;> pidättää oikeuden muuttaa tietosuojakäytäntöä, esimerkiksi verkkoteknologian kehityksen, lainsäädännön muutosten tai palvelun kehityksen vuoksi. Kaikki muutokset tiedotetaan selkeästi ja ymmärrettävästi.<\/p><p>Kaikki kysymykset tietosuojakäytännöstä voi lähettää sähköpostitse osoitteeseen: osoite@email.fi<\/p>"
 }
