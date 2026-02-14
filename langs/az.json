@@ -7,6 +7,75 @@
     "attr_isp_info": {
         "aria-label": "İnternet provayderi haqqında məlumat"
     },
+    "menu": {
+        "title": "GuardianSuit Menyu",
+        "item1": {
+            "title": "İnternet",
+            "icon": "İ",
+            "href": "https://yourdomain.com/#",
+            "target": "_blank"
+        },
+        "item2": {
+            "title": "Televiziya",
+            "icon": "V",
+            "href": "https://yourdomain.com/#",
+            "target": "_blank"
+        },
+        "item3": {
+            "title": "Telefon",
+            "icon": "T",
+            "href": "https://yourdomain.com/#",
+            "target": "_blank"
+        },
+        "item4": {
+            "title": "Əlavə xidmətlər",
+            "icon": "Ə",
+            "href": "https://yourdomain.com/#",
+            "target": "_blank"
+        },
+        "item5": {
+            "title": "Əlaqə",
+            "icon": "Ə",
+            "href": "https://yourdomain.com/#",
+            "target": "_blank"
+        },
+        "item6": {
+            "title": "Məxfilik siyasəti",
+            "icon": "M",
+            "href": {"type": "modal", "title": "privacy_title", "subtitle": "privacy_subtitle", "content": "privacy_content", "iconText": "M"},
+            "target": "_self"
+        },
+        "item7": {
+            "title": "Cookie faylları",
+            "icon": "C",
+            "href": {"type": "modal", "title": "cookies_title", "subtitle": "cookies_subtitle", "content": "cookies_content", "iconText": "C"},
+            "target": "_self"
+        },
+        "item8": {
+            "title": "Sənədləşmə",
+            "icon": "S",
+            "href": "hhttps://github.com/mixmint/opnsense-captive-portal-template/blob/main/README.md",
+            "target": "_blank"
+        },
+        "item9": {
+            "title": "Proqram haqqında",
+            "icon": "P",
+            "href": {"type": "modal", "title": "about_title", "subtitle": "about_subtitle", "content": "about_content", "iconText": "P"},
+            "target": "_self"
+        },
+        "group1": {
+            "title": "Təklif",
+            "items": ["item1", "item2", "item3", "item4", "item5"]
+        },
+        "group2": {
+            "title": "Məlumat",
+            "items": ["item6", "item7"]
+        },
+        "group3": {
+            "title": "Kömək",
+            "items": ["item8", "item9"]
+        }
+    },
     "footer_isp_info": {},
     "pagetitle": "İstifadəçi giriş sistemi | < İSP Adı >",
     "username": "İstifadəçi adı (Login)",
@@ -77,7 +146,7 @@
     "a11y_helper_prev": "Geri",
     "a11y_helper_done": "Bitdi",
     "a11y-keys_data-title": "Klaviatura qısayolları",
-    "a11y-keys_data-content": "<span style=\"font-size: 14px\">Düymə kombinasiyası <br \/><strong>⇧ Shift (sol) <br \/>+&nbsp;⌥ Alt (sol) <br \/>+&nbsp;hərf<\/strong><br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;U<\/strong><br \/>İstifadəçi adı sahəsinə fokus<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;P<\/strong><br \/>Şifrə sahəsinə fokus<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;A<\/strong><br \/>\"Qaydaları qəbul edirəm\" seçimini işarələyir/çıxarır<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;R<\/strong><br \/>Qaydalar pəncərəsini açır<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;I<\/strong><br \/>İstifadəçi daxil olur<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;O<\/strong><br \/>İstifadəçi çıxır<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;L<\/strong><br \/>Dil dəyişdiricini işə salır<\/span>",
+    "a11y-keys_data-content": "<span style=\"font-size: 14px\">Düymə kombinasiyası <br \/><strong>⇧ Shift (sol) <br \/>+&nbsp;⌥ Alt (sol) <br \/>+&nbsp;hərf<\/strong><br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;U<\/strong><br \/>İstifadəçi adı sahəsinə fokus<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;P<\/strong><br \/>Şifrə sahəsinə fokus<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;A<\/strong><br \/>\"Qaydaları qəbul edirəm\" seçimini işarələyir/çıxarır<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;R<\/strong><br \/>Qaydalar pəncərəsini açır<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;I<\/strong><br \/>İstifadəçi daxil olur<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;O<\/strong><br \/>İstifadəçi çıxır<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;L<\/strong><br \/>Dil dəyişdiricini işə salır<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;M<\/strong><br \/>offcanvas menyusunu açır (əgər aktivdirsə)<\/span>",
     "a11y-lang-keys_data-title": "Dil qısayol düymələri",
     "a11y-lang-keys_data-content": "<span style=\"font-size: 14px\">Saxlayın <strong>⇧ Shift (sol) və dil kodunun iki hərfini<\/strong> eyni anda və ya ardıcıl olaraq basın (ISO 639-1).<br \/><br \/>Nümunələr:<br \/><strong>⇧ Shift&nbsp;+&nbsp;P&nbsp;+&nbsp;L<\/strong> → Polşa dilinə keçid (pl)<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;E&nbsp;+&nbsp;N<\/strong> → İngilis dilinə keçid (en)<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;D&nbsp;+&nbsp;E<\/strong> → Alman dilinə keçid (de)<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;F&nbsp;+&nbsp;R<\/strong> → Fransız dilinə keçid (fr)<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;E&nbsp;+&nbsp;S<\/strong> → İspan dilinə keçid (es)<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;I&nbsp;+&nbsp;T<\/strong> → İtalyan dilinə keçid (it)<br \/>...<\/span>",
     "polyglotLanguageSwitcher_data-title": "Dil seçici",
@@ -97,5 +166,16 @@
     "signin_anon_data-title": "Daxil ol",
     "signin_anon_data-content": "<strong>Daxil ol<\/strong> düyməsini basaraq İnternetə bağlantını işə salacaqsınız.",
     "logoff_data-title": "Çıxış",
-    "logoff_data-content": "<strong>Çıxış<\/strong> düyməsini basaraq İnternetə bağlantını kəsəcəksiniz."
+    "logoff_data-content": "<strong>Çıxış<\/strong> düyməsini basaraq İnternetə bağlantını kəsəcəksiniz.",
+    "menuTrigger_data-title": "Offcanvas menyu",
+    "menuTrigger_data-content": "Klikləyərək <strong>&#9776; offcanvas hamburger<\/strong> və ya klaviaturada eyni vaxtda <strong>%s<\/strong> basaraq kontekst menyusunu açacaqsınız.",
+    "about_title": "GuardianSuit",
+    "about_subtitle": "OPNsense üçün qabaqcıl Captive Portal şablonu",
+    "about_content": "<p><b>GuardianSuit<\/b> OPNsense üçün müasir, cavabdeh və animasiyalı Captive Portal şablonudur. İstifadəçilərə cəlbedici giriş təcrübəsi təqdim edir və administratorlara qarşılama səhifəsinin görünüşü və funksionallığı üzərində tam nəzarət verir.<\/p><p><b>Əsas funksiyalar:<\/b><\/p><ul><li>Cavabdehlik və animasiyalar.<\/li><li>Çoxdillilik.<\/li><li>Görünüş və rəng sxeminin asan fərdiləşdirilməsi.<\/li><li>İntuisiv UX və WCAG uyğunluğu.<\/li><li>OPNsense ilə asan inteqrasiya.<\/li><\/ul><p><b>Tətbiq sahəsi:<\/b><br \/>Müəssisə şəbəkələri, otellər, kafelər və digər vizual cəlbedici Captive Portal qarşılama səhifəsi tələb edən yerlər üçün ideal.<\/p><p><b>Müəllif:<\/b> Mirosław Majka &lt;mix@proask.pl&gt; | &copy; 2025 GuardianSuit<\/p>",
+    "cookies_title": "Cookie Faylları",
+    "cookies_subtitle": "Cookie fayllarının necə istifadə olunduğu",
+    "cookies_content": "<h5>Cookie nədir?<\/h5><p>Cookie faylları (sözün əsl mənasında \"peçenyelər\") veb brauzer tərəfindən avtomatik yaradılan kiçik mətn fayllarıdır və veb saytları ziyarət edərkən istifadə olunur. Hər bir cookie faylındakı məlumat yalnız həmin faylın gəldiyi sayt tərəfindən oxuna bilər. Bu səbəbdən, veb sayt istifadəçinin kompüterindəki digər fayllara daxil ola bilməz.<\/p><p>Cookie fayllarındakı məlumatlar sayəsində sayt sizin necə istifadə etdiyinizi \"bilir\" və göstərilən məzmunu sizin üçün uyğunlaşdırmaq və ya yardım təklif etmək imkanına malik olur.<\/p><h5>Cookie fayllarını nə üçün istifadə edirik?<\/h5><p>Saytda texniki cookie fayllarından istifadə olunur ki, bu da saytın düzgün işləməsi üçün vacibdir. Biz bunları saytı ziyarət edənlərin ən çox istifadə etdiyi cihazlar və brauzerlər üçün optimallaşdırmaq məqsədilə istifadə edirik – bunun sayəsində kompüteriniz, planşetiniz və ya telefonunuz saytı düzgün və oxunaqlı şəkildə göstərir və seçilmiş məzmunun göstərilməsinə razılığınızı yadda saxlayır.<\/p><p>İstifadəçi texniki cookie-lardan imtina edə bilməz.<\/p><h5>Cookie fayllarından nə qədər müddət istifadə olunur?<\/h5><p>Biz daimi cookie fayllarından istifadə edirik ki, bunlar cihazınızda müəyyən müddət qalır və ya əl ilə silinənə qədər saxlanılır.<\/p><h5>Cookie vasitəsilə hansı məlumatları toplayırıq?<\/h5><p>Cookie texnologiyası vasitəsilə yalnız anonim texniki məlumatlar toplayırıq ki, saytımızın istifadəsini daha rahat edək.<\/p><p>İdentifikasiya üçün istifadə olunan heç bir məlumat toplanmır. İstifadəçinin tək məlumatı, digər məlumatlarla birləşdirilmədikdə identifikasiyasına imkan verməyən IP ünvanıdır.<\/p>",
+    "privacy_title": "Məxfilik Siyasəti",
+    "privacy_subtitle": "Şəxsi məlumatların emalı",
+    "privacy_content": "<p>Bu sənədi sizinlə paylaşırıq ki, Məxfilik Siyasətimiz barədə məlumat verək. Buradan biz kim olduğumuzu, şəxsi məlumatları necə topladığımızı, istifadə etdiyimizi, açıqladığımızı və paylaşdığımızı öyrənəcəksiniz <b><&nbsp;ISP Adı&nbsp;></b>, [ Küçə 10, şəhər və poçt kodu ] ünvanında yerləşir, hansı məqsədlə və necə istifadə etdiyimizi, və məlumatların emal olunduğu şəxslərin məxfilik hüquqlarını necə həyata keçirə biləcəyini.<\/p><p><&nbsp;ISP Adı&nbsp;> Məxfilik Siyasətinə uyğun olaraq şəxsi məlumatların emalına cavabdehdir.<\/p><h5>BİZİM HAQQIMIZDA<\/h5><p>Xidmətimizdən istifadə zamanı şəxsi məlumatları emal edən administrator <&nbsp;ISP Adı&nbsp;>, [ Küçə 10, şəhər və poçt kodu ]; VÖEN 1234567890, Reyon 123456789-dur.<\/p><h5>ƏLAQƏ<\/h5><ul><li>Elektron poçt vasitəsilə: adres@email.pl,<\/li><li>Yazılı şəkildə: ISP Adı, [ Küçə 10, şəhər və poçt kodu ]<\/li><\/ul><h5>MƏXFLİK SİYASƏTİNİN QAYDALARI<\/h5><p>Məlumatlarınızın emalı Avropa Parlamentinin və Şurasının 27 aprel 2016-cı il tarixli 2016/679 (RODO) saylı Qanunvericiliyinə, şəxsi məlumatların qorunması haqqında qanuna və digər xüsusi qaydalara uyğun həyata keçirilir. Məxfilik Siyasəti bu qanunlara uyğun hazırlanmışdır. Məlumatların necə toplandığını və hansı məqsədlər üçün istifadə edildiyini aydın şəkildə bildiririk.<\/p><p><&nbsp;ISP Adı&nbsp;>, potensial və mövcud müştərilərdən və tərəfdaşlardan əldə olunan şəxsi və şirkət məlumatlarını, həmçinin internet xidmətindən istifadə zamanı toplanan məlumatları saxlayır.<\/p><h5>ŞƏXSI MƏLUMATLARIN TOPLANMASI<\/h5><p>İstifadəçilərdən aşağıdakı hallarda şəxsi məlumatlar toplanır:<\/p><ul><li>Təkliflərin verilməsi, əməkdaşlıq şərtlərinin müəyyən edilməsi və ISP Adı-nın xidmətləri barədə məlumatların çatdırılması,<\/li><li>Müqavilələrin bağlanması və icrası, müştəri/tərəfdaşla əlaqənin saxlanması,<\/li><li>Ümumi hüquqi öhdəliklərin yerinə yetirilməsi,<\/li><li>Sorğulara cavab verilməsi, reklamasiya və satış sonrası xidmətlərin təmin edilməsi,<\/li><li>Birbaşa marketinq (newsletter xaric),<\/li><li>Arxiv məqsədləri, hüquqi iddiaların müəyyənləşdirilməsi, araşdırılması və müdafiəsi.<\/li><\/ul><h5>MƏLUMATLARIN SAXLANMASI VƏ SILINMƏSİ<\/h5><p>Verilən məlumatların təhlükəsizliyi üçün daxili prosedurlar və tövsiyələr hazırlanmışdır. Texniki, müqavilə, inzibati və fiziki vasitələrlə məlumatların icazəsiz əldə edilməsinin qarşısı alınır. Onların icrası yoxlanılır və qanunvericiliyə uyğunluğu davamlı nəzarət olunur.<\/p><p>İstifadəçinin şəxsi məlumatları yalnız toplama məqsədinə uyğun müddət ərzində saxlanılır.<\/p><h5>MƏLUMATLARIN PAYLAŞILMASI<\/h5><p>İstifadəçi razılığı olmadan şəxsi məlumatlar üçüncü şəxslərə satılmır və paylaşılmır. İstifadəçilərin məlumatları profilinq edilmir.<\/p><p>İstifadəçi ilə ISP Adı arasında əməkdaşlıq növünə və həcminə əsasən, qanuni tələblərə cavab olaraq və ya hüquqi öhdəlikləri yerinə yetirmək üçün istifadəçi məlumatları üçüncü şəxslərə verilə bilər, iddialara cavab vermək, hüquq, əmlak və təhlükəsizliyi qorumaq məqsədilə.<\/p><h5>MƏLUMATLARIN EMALI QAYDALARI<\/h5><p>Şəxsi məlumatları emal edərkən ən yüksək diqqət göstərilir və məlumatların aşağıdakı xüsusiyyətlərə malik olmasını təmin edirik:<\/p><ul><li>Qanuna uyğun, dürüst və şəffaf şəkildə emal edilir,<\/li><li>Müəyyən, aydın və qanuni əsaslı məqsədlər üçün toplanır və bu məqsədlərlə uyğun olmayan şəkildə emal edilmir,<\/li><li>Ədəkvat, məqsədlərə uyğun və lazım olanla məhdudlaşdırılır,<\/li><li>Düzgün və lazım olduqda yenilənir; səhv məlumatlar dərhal silinir və ya düzəldilir,<\/li><li>İdentifikasiyaya imkan verən formada saxlanır, yalnız lazım olan müddət üçün,<\/li><li>Təhlükəsiz şəkildə emal edilir, qanunsuz və icazəsiz emalın qarşısı alınır, təsadüfi itki və ya məhv edilmədən qorunur.<\/li><\/ul><p>Şəxsi məlumatlarınız adətən razılıq əsasında emal edilir və istənilən vaxt geri götürülə bilər. Digər hallarda məlumatların emalı sizinlə müqavilənin icrası və ya əvvəlcədən sizin istəkləriniz əsasında həyata keçirilir. Bəzi hallarda qanuni öhdəliklərə uyğun olaraq emal tələb olunur, məsələn əmək qanunları və ya mühasibatlıq qanunu çərçivəsində. Həmçinin, qanuni maraqlarımız əsasında emal edilə bilər, məsələn, mülkiyyət və ya iddiaların qorunması.<\/p><h5>SİZİN HÜQUQLARINIZ<\/h5><p>Sizə aşağıdakı hüquqlar verilmişdir:<\/p><ul><li>Şəxsi məlumatlarınıza giriş və kateqoriyalar, məqsədlər və nüsxələr barədə məlumat almaq,<\/li><li>Səhv məlumatları düzəltmək və çatışmayanları tamamlamaq, unudulmaq hüququ, yəni qanunsuz və əsassız emal edilən məlumatların silinməsi,<\/li><li>Razılığı istənilən vaxt geri götürmək, əvvəlki emal qanuniliyinə təsir etmədən (Əgər emal RODO-nun 6-cı maddə 1-ci bənd a) və ya 9-cu maddə 2-ci bənd a) əsasında həyata keçirilirsə).<\/li><\/ul><h5>COOKIE<\/h5><p><&nbsp;ISP Adı&nbsp;> xidmətin istifadəsini asanlaşdırmaq üçün cookie fayllarından istifadə edir. Xidmətdən istifadə etməklə siz cookie fayllarının istifadə olunmasına razılıq verirsiniz. Faylları blok etmirsinizsə, onların istifadəsinə və cihaz yaddaşında saxlanmasına razı olursunuz.<\/p><h5>MƏXFILİK SİYASƏTİNİN DƏYİŞİKLİKLƏRİ<\/h5><p><&nbsp;ISP Adı&nbsp;> internet texnologiyasının inkişafı, şəxsi məlumatların qorunması qanunvericiliyində dəyişikliklər və administrator xidmətinin inkişafı səbəbindən məxfilik siyasətini dəyişdirmək hüququnu saxlayır. Hər hansı dəyişikliklər barədə açıq və aydın məlumat veriləcək.<\/p><p>Məxfilik siyasəti ilə bağlı bütün suallar üçün elektron poçt ünvanına müraciət edin: adres@email.pl<\/p>"
 }

@@ -7,6 +7,75 @@
     "attr_isp_info": {
         "aria-label": "Informatie over de internetprovider"
     },
+    "menu": {
+        "title": "GuardianSuit Menu",
+        "item1": {
+            "title": "Internet",
+            "icon": "I",
+            "href": "https://yourdomain.com/#",
+            "target": "_blank"
+        },
+        "item2": {
+            "title": "Televisie",
+            "icon": "T",
+            "href": "https://yourdomain.com/#",
+            "target": "_blank"
+        },
+        "item3": {
+            "title": "Telefoon",
+            "icon": "F",
+            "href": "https://yourdomain.com/#",
+            "target": "_blank"
+        },
+        "item4": {
+            "title": "Extra diensten",
+            "icon": "E",
+            "href": "https://yourdomain.com/#",
+            "target": "_blank"
+        },
+        "item5": {
+            "title": "Contact",
+            "icon": "C",
+            "href": "https://yourdomain.com/#",
+            "target": "_blank"
+        },
+        "item6": {
+            "title": "Privacybeleid",
+            "icon": "&#167;",
+            "href": {"type": "modal", "title": "privacy_title", "subtitle": "privacy_subtitle", "content": "privacy_content", "iconText": "&#167;"},
+            "target": "_self"
+        },
+        "item7": {
+            "title": "Cookies",
+            "icon": "&#9865;",
+            "href": {"type": "modal", "title": "cookies_title", "subtitle": "cookies_subtitle", "content": "cookies_content", "iconText": "&#9865;"},
+            "target": "_self"
+        },
+        "item8": {
+            "title": "Documentatie",
+            "icon": "&#9783;",
+            "href": "https://github.com/mixmint/opnsense-captive-portal-template/blob/main/README.md",
+            "target": "_blank"
+        },
+        "item9": {
+            "title": "Over het programma",
+            "icon": "&#9873;",
+            "href": {"type": "modal", "title": "about_title", "subtitle": "about_subtitle", "content": "about_content", "iconText": "&#9873;"},
+            "target": "_self"
+        },
+        "group1": {
+            "title": "Aanbod",
+            "items": ["item1", "item2", "item3", "item4", "item5"]
+        },
+        "group2": {
+            "title": "Informatie",
+            "items": ["item6", "item7"]
+        },
+        "group3": {
+            "title": "Hulp",
+            "items": ["item8", "item9"]
+        }
+    },
     "footer_isp_info": {},
     "pagetitle": "Inlogsysteem | <ISP Naam>",
     "username": "Gebruikersnaam (Login)",
@@ -77,7 +146,7 @@
     "a11y_helper_prev": "Vorige",
     "a11y_helper_done": "Klaar",
     "a11y-keys_data-title": "Toetsenbord snelkoppelingen",
-    "a11y-keys_data-content": "<span style=\"font-size: 14px\">Toetscombinatie <br \/><strong>⇧ Shift (links) <br \/>+&nbsp;⌥ Alt (links) <br \/>+&nbsp;letter<\/strong><br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;U<\/strong><br \/>Focus op het veld Gebruikersnaam<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;P<\/strong><br \/>Focus op het veld Wachtwoord<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;A<\/strong><br \/>Vink het vakje \"Ik accepteer het reglement\" aan/uit<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;R<\/strong><br \/>Opent het modale venster met het reglement<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;I<\/strong><br \/>Logt de gebruiker in<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;O<\/strong><br \/>Logt de gebruiker uit<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;L<\/strong><br \/>Activeert de taalkeuzeschakelaar<\/span>",
+    "a11y-keys_data-content": "<span style=\"font-size: 14px\">Toetscombinatie <br \/><strong>⇧ Shift (links) <br \/>+&nbsp;⌥ Alt (links) <br \/>+&nbsp;letter<\/strong><br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;U<\/strong><br \/>Focus op het veld Gebruikersnaam<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;P<\/strong><br \/>Focus op het veld Wachtwoord<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;A<\/strong><br \/>Vink het vakje \"Ik accepteer het reglement\" aan/uit<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;R<\/strong><br \/>Opent het modale venster met het reglement<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;I<\/strong><br \/>Logt de gebruiker in<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;O<\/strong><br \/>Logt de gebruiker uit<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;L<\/strong><br \/>Activeert de taalkeuzeschakelaar<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;M<\/strong><br \/>opent het offcanvas-menu (indien ingeschakeld)<\/span>",
     "a11y-lang-keys_data-title": "Taal snelkoppelingen",
     "a11y-lang-keys_data-content": "<span style=\"font-size: 14px\">Houd <strong>⇧ Shift (links) ingedrukt en druk tegelijkertijd of één voor één op de twee letters van de taalcode<\/strong> (ISO 639-1).<br \/><br \/>Voorbeelden:<br \/><strong>⇧ Shift&nbsp;+&nbsp;P&nbsp;+&nbsp;L<\/strong> → schakelt naar Pools (pl)<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;E&nbsp;+&nbsp;N<\/strong> → schakelt naar Engels (en)<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;D&nbsp;+&nbsp;E<\/strong> → schakelt naar Duits (de)<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;F&nbsp;+&nbsp;R<\/strong> → schakelt naar Frans (fr)<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;E&nbsp;+&nbsp;S<\/strong> → schakelt naar Spaans (es)<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;I&nbsp;+&nbsp;T<\/strong> → schakelt naar Italiaans (it)<br \/>...<\/span>",
     "polyglotLanguageSwitcher_data-title": "Taalkeuzeschakelaar",
@@ -97,5 +166,16 @@
     "signin_anon_data-title": "Inloggen",
     "signin_anon_data-content": "Door op de knop <strong>Inloggen<\/strong> te klikken, maak je verbinding met internet.",
     "logoff_data-title": "Uitloggen",
-    "logoff_data-content": "Door op de knop <strong>Uitloggen<\/strong> te klikken, beëindig je de internetverbinding."
+    "logoff_data-content": "Door op de knop <strong>Uitloggen<\/strong> te klikken, beëindig je de internetverbinding.",
+    "menuTrigger_data-title": "Offcanvas-menu",
+    "menuTrigger_data-content": "Door te klikken op <strong>&#9776; offcanvas hamburger<\/strong> of tegelijkertijd op het toetsenbord <strong>%s<\/strong> in te drukken, opent u het contextmenu.",
+    "about_title": "GuardianSuit",
+    "about_subtitle": "Geavanceerd Captive Portal-sjabloon voor OPNsense",
+    "about_content": "<p><b>GuardianSuit<\/b> is een modern, responsief en geanimeerd Captive Portal-sjabloon voor OPNsense. Het biedt gebruikers een aantrekkelijke inlogervaring en beheerders volledige controle over het uiterlijk en de functionaliteit van de welkomstpagina.<\/p><p><b>Belangrijkste functies:<\/b><\/p><ul><li>Responsief en geanimeerd.<\/li><li>Meertaligheid.<\/li><li>Eenvoudige aanpassing van uiterlijk en kleurenschema.<\/li><li>Intuïtieve UX en WCAG-conformiteit.<\/li><li>Eenvoudige integratie met OPNsense.<\/li><\/ul><p><b>Toepassing:<\/b><br \/>Ideaal voor bedrijfsnetwerken, hotels, cafés en andere locaties die een visueel aantrekkelijke Captive Portal-welkomstpagina vereisen.<\/p><p><b>Auteur:<\/b> Mirosław Majka &lt;mix@proask.pl&gt; | &copy; 2025 GuardianSuit<\/p>",
+    "cookies_title": "Cookies",
+    "cookies_subtitle": "Hoe cookies worden gebruikt.",
+    "cookies_content": "<h5>Wat is een cookie?<\/h5><p>Cookies (zogenoemde kleine tekstbestanden) zijn kleine tekstbestanden die automatisch door de webbrowser worden aangemaakt tijdens het bezoeken van websites. De informatie die in een cookie is opgeslagen, kan uitsluitend worden gelezen door de website die deze cookie heeft geplaatst. Hierdoor heeft een website geen toegang tot andere bestanden die zich op de computer van de gebruiker bevinden.<\/p><p>Dankzij de informatie in cookies \"weet\" de website hoe u deze gebruikt en kan zij de weergegeven inhoud daarop afstemmen of u passende ondersteuning bieden.<\/p><h5>Waarvoor gebruiken wij cookies?<\/h5><p>Op de website gebruiken wij technische cookies die noodzakelijk zijn voor de correcte werking van de site. Wij gebruiken deze om onze website te optimaliseren voor de apparaten en browsers die bezoekers het meest gebruiken – zodat uw computer, tablet of telefoon correct en leesbaar wordt weergegeven, en om te onthouden of u toestemming heeft gegeven voor het weergeven van bepaalde inhoud op de website.<\/p><p>De gebruiker kan zich niet afmelden voor technische cookies.<\/p><h5>Hoe lang gebruiken wij cookies?<\/h5><p>Wij gebruiken zogenoemde permanente cookies die op uw apparaat blijven staan voor een bepaalde periode of totdat ze handmatig worden verwijderd.<\/p><\/li><\/ul><h5>Welke gegevens verzamelen wij via cookies?<\/h5><p>Via cookietechnologie verzamelen wij uitsluitend anonieme technische gegevens die dienen om het gebruiksgemak van onze website te verbeteren.<\/p><p>Wij verzamelen geen gegevens die het mogelijk maken u te identificeren. De enige gebruikersinformatie die, zonder combinatie met andere gegevens, geen identificatie mogelijk maakt, is het IP-adres waarmee de gebruiker verbinding maakt.<\/p>",
+    "privacy_title": "Privacybeleid",
+    "privacy_subtitle": "Verwerking van persoonsgegevens",
+    "privacy_content": "<p>Wij hebben dit document opgesteld om u te informeren over ons Privacybeleid. U leest hier wie wij zijn, op welke wijze wij persoonsgegevens verzamelen, gebruiken, openbaar maken en delen binnen <b><&nbsp;ISP Naam&nbsp;><\/b>, gevestigd te [ Straatnaam 10, plaats en postcode ], met welk doel wij dit doen en op welke wijze de personen van wie wij gegevens verwerken hun privacyrechten kunnen uitoefenen.<\/p><p><&nbsp;ISP Naam&nbsp;> is verantwoordelijk voor de verwerking van persoonsgegevens overeenkomstig dit Privacybeleid.<\/p><h5>OVER ONS<\/h5><p>De verwerkingsverantwoordelijke, zijnde de entiteit die persoonsgegevens verwerkt in verband met uw gebruik van deze dienst, is <&nbsp;ISP Naam&nbsp;>, [ Straatnaam 10, plaats en postcode ]; btw-nummer 1234567890, KvK-nummer 123456789,<\/p><h5>CONTACT MET ONS<\/h5><ul><li>elektronisch via e-mail: adres@email.pl,<\/li><li>schriftelijk per post: ISP Naam, [ Straatnaam 10, plaats en postcode ]<\/li><\/ul><h5>BEGINSELEN VAN DIT PRIVACYBELEID<\/h5><p>Wij zorgen ervoor dat de verwerking van uw gegevens plaatsvindt in overeenstemming met Verordening (EU) 2016/679 van het Europees Parlement en de Raad van 27 april 2016 betreffende de bescherming van natuurlijke personen in verband met de verwerking van persoonsgegevens en betreffende het vrije verkeer van die gegevens en tot intrekking van Richtlijn 95/46/EG (Algemene Verordening Gegevensbescherming, hierna: \"AVG\"), de wetgeving inzake gegevensbescherming en andere toepasselijke bijzondere bepalingen. Dit Privacybeleid is overeenkomstig deze regelgeving opgesteld. Wij informeren duidelijk op welke wijze wij persoonsgegevens verzamelen en voor welk doel deze worden gebruikt.<\/p><p>Wij wijzen erop dat <&nbsp;ISP Naam&nbsp;> persoonsgegevens en bedrijfsinformatie verzamelt die worden verstrekt door haar (potentiële) klanten en contractpartners, evenals gegevens die worden verkregen tijdens het gebruik van de internettoegangsdienst.<\/p><h5>VERZAMELING VAN PERSOONSGEGEVENS<\/h5><p>Wij verzamelen persoonsgegevens die door Gebruikers worden verstrekt in de volgende gevallen:<\/p><ul><li>het indienen van offertes, het vaststellen van samenwerkingsvoorwaarden en\/of het verstrekken van informatie over diensten en andere activiteiten van <&nbsp;ISP Naam&nbsp;>,<\/li><li>het sluiten en uitvoeren van overeenkomsten en het onderhouden van contact met de klant\/contractpartner,<\/li><li>het nakomen van verplichtingen die voortvloeien uit algemeen geldende wettelijke bepalingen,<\/li><li>het beantwoorden van vragen, het afhandelen van klachten en andere aftersales-ondersteuning,<\/li><li>direct marketing (anders dan nieuwsbrieven),<\/li><li>archiveringsdoeleinden (bewijslast), en het eventueel vaststellen, uitoefenen of verdedigen van rechtsvorderingen.<\/li><\/ul><h5>OPSLAAN EN VERWIJDEREN VAN GEGEVENS<\/h5><p>Met het oog op de beveiliging van toevertrouwde gegevens hebben wij interne procedures en richtlijnen ontwikkeld om ongeoorloofde toegang tot gegevens te voorkomen. Wij passen technologische, contractuele, administratieve en fysieke maatregelen toe om gegevens te beschermen tegen onbevoegde toegang. Wij controleren de uitvoering hiervan en toetsen deze voortdurend aan de geldende wettelijke voorschriften.<\/p><p>Wij bewaren persoonsgegevens van de Gebruiker uitsluitend gedurende de periode die noodzakelijk is om de doeleinden te verwezenlijken waarvoor zij zijn verzameld.<\/p><h5>VERSTREKKING EN OPENBAARMAKING VAN GEGEVENS<\/h5><p>Wij verkopen of verstrekken geen persoonsgegevens van Gebruikers aan derden zonder hun toestemming. Gebruikersgegevens worden niet geprofileerd.<\/p><p>Afhankelijk van de aard en omvang van de samenwerking tussen de Gebruiker en <&nbsp;ISP Naam&nbsp;>, in het kader van de uitgevoerde activiteiten, kunnen wij gebruikersgegevens verstrekken indien dit wordt vereist door toepasselijke wetgeving, of indien dit noodzakelijk is om te voldoen aan wettelijke handelingen of contractuele verplichtingen, om te reageren op claims, of ter bescherming van rechten, eigendommen of veiligheid.<\/p><h5>BEGINSELEN VOOR DE VERWERKING VAN UW GEGEVENS<\/h5><p>Wij betrachten de grootst mogelijke zorg om de belangen te beschermen van personen van wie wij persoonsgegevens verwerken, en in het bijzonder om ervoor te zorgen dat deze gegevens:<\/p><ul><li>rechtmatig, behoorlijk en transparant worden verwerkt voor de betrokkene,<\/li><li>worden verzameld voor welbepaalde, uitdrukkelijk omschreven en gerechtvaardigde doeleinden en niet verder worden verwerkt op een wijze die onverenigbaar is met die doeleinden,<\/li><li>toereikend, ter zake dienend en beperkt zijn tot wat noodzakelijk is voor de doeleinden waarvoor zij worden verwerkt,<\/li><li>juist zijn en indien nodig worden geactualiseerd; wij nemen maatregelen om persoonsgegevens die onjuist zijn met betrekking tot de doeleinden waarvoor zij worden verwerkt, onverwijld te wissen of te rectificeren,<\/li><li>worden bewaard in een vorm die identificatie van de betrokkene mogelijk maakt gedurende een periode die niet langer is dan noodzakelijk voor de doeleinden van de verwerking,<\/li><li>worden verwerkt op een wijze die passende beveiliging van persoonsgegevens waarborgt, met inbegrip van bescherming tegen ongeoorloofde of onrechtmatige verwerking en tegen onopzettelijk verlies, vernietiging of beschadiging.<\/li><\/ul><p>Wij verwerken uw persoonsgegevens doorgaans op basis van uw toestemming, die te allen tijde kan worden ingetrokken. In andere gevallen is de verwerking noodzakelijk voor de uitvoering van een overeenkomst waarbij u partij bent, of om op uw verzoek vóór het sluiten van een overeenkomst maatregelen te nemen. In bepaalde situaties is de verwerking noodzakelijk om te voldoen aan een wettelijke verplichting die op ons rust als verwerkingsverantwoordelijke. Dergelijke verplichtingen vloeien bijvoorbeeld voort uit arbeidsrechtelijke bepalingen of de boekhoudwetgeving. De verwerking kan ook noodzakelijk zijn voor doeleinden die voortvloeien uit onze gerechtvaardigde belangen, zoals het instellen of afdwingen van rechtsvorderingen in het kader van onze bedrijfsactiviteiten.<\/p><h5>UW RECHTEN<\/h5><p>U heeft de volgende rechten:<\/p><ul><li>het recht op toegang tot de inhoud van uw persoonsgegevens en het verkrijgen van informatie, onder meer over de categorieën van gegevens en de doeleinden van de verwerking, evenals het verkrijgen van een kopie daarvan,<\/li><li>het recht op rectificatie van onjuiste gegevens en aanvulling van onvolledige gegevens, alsmede het recht om te worden vergeten, hetgeen betekent dat u het recht heeft om gegevens te laten wissen die onrechtmatig of zonder geldige grond zijn verwerkt (bijvoorbeeld wanneer de gegevens niet langer noodzakelijk zijn voor de doeleinden waarvoor zij zijn verzameld),<\/li><li>het recht om uw toestemming voor gegevensverwerking te allen tijde in te trekken, zonder afbreuk te doen aan de rechtmatigheid van de verwerking die vóór de intrekking op basis van toestemming heeft plaatsgevonden (indien de verwerking plaatsvindt op grond van artikel 6, lid 1, onder a, of artikel 9, lid 2, onder a AVG).<\/li><\/ul><h5>COOKIES<\/h5><p><&nbsp;ISP Naam&nbsp;> maakt gebruik van cookies om het gebruik van de dienst te vergemakkelijken. Door gebruik te maken van de dienst stemt u in met het gebruik van cookies door ons. Indien u deze bestanden niet blokkeert, gaat u akkoord met het gebruik ervan en de opslag ervan in het geheugen van uw apparaat.<\/p><h5>WIJZIGINGEN IN HET PRIVACYBELEID<\/h5><p><&nbsp;ISP Naam&nbsp;> behoudt zich het recht voor om wijzigingen aan te brengen in het privacybeleid, die kunnen worden beïnvloed door de ontwikkeling van internettechnologie, wijzigingen in de wetgeving inzake gegevensbescherming en de ontwikkeling van de toegangsservice die door de beheerder wordt geleverd. Over eventuele wijzigingen zullen wij u op duidelijke en begrijpelijke wijze informeren.<\/p><p>Alle vragen met betrekking tot het privacybeleid kunt u richten aan het e-mailadres: adres@email.pl<\/p>"
 }

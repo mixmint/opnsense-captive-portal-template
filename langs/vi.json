@@ -7,6 +7,75 @@
     "attr_isp_info": {
         "aria-label": "Thông tin nhà cung cấp Internet"
     },
+    "menu": {
+        "title": "Menu GuardianSuit",
+        "item1": {
+            "title": "Internet",
+            "icon": "I",
+            "href": "https://yourdomain.com/#",
+            "target": "_blank"
+        },
+        "item2": {
+            "title": "Truyền hình",
+            "icon": "T",
+            "href": "https://yourdomain.com/#",
+            "target": "_blank"
+        },
+        "item3": {
+            "title": "Điện thoại",
+            "icon": "Đ",
+            "href": "https://yourdomain.com/#",
+            "target": "_blank"
+        },
+        "item4": {
+            "title": "Dịch vụ bổ sung",
+            "icon": "D",
+            "href": "https://yourdomain.com/#",
+            "target": "_blank"
+        },
+        "item5": {
+            "title": "Liên hệ",
+            "icon": "L",
+            "href": "https://yourdomain.com/#",
+            "target": "_blank"
+        },
+        "item6": {
+            "title": "Chính sách bảo mật",
+            "icon": "&#167;",
+            "href": {"type": "modal", "title": "privacy_title", "subtitle": "privacy_subtitle", "content": "privacy_content", "iconText": "&#167;"},
+            "target": "_self"
+        },
+        "item7": {
+            "title": "Tệp Cookies",
+            "icon": "&#9865;",
+            "href": {"type": "modal", "title": "cookies_title", "subtitle": "cookies_subtitle", "content": "cookies_content", "iconText": "&#9865;"},
+            "target": "_self"
+        },
+        "item8": {
+            "title": "Tài liệu",
+            "icon": "&#9783;",
+            "href": "https://github.com/mixmint/opnsense-captive-portal-template/blob/main/README.md",
+            "target": "_blank"
+        },
+        "item9": {
+            "title": "Về chương trình",
+            "icon": "&#9873;",
+            "href": {"type": "modal", "title": "about_title", "subtitle": "about_subtitle", "content": "about_content", "iconText": "&#9873;"},
+            "target": "_self"
+        },
+        "group1": {
+            "title": "Ưu đãi",
+            "items": ["item1", "item2", "item3", "item4", "item5"]
+        },
+        "group2": {
+            "title": "Thông tin",
+            "items": ["item6", "item7"]
+        },
+        "group3": {
+            "title": "Trợ giúp",
+            "items": ["item8", "item9"]
+        }
+    },
     "footer_isp_info": {},
     "pagetitle": "Hệ thống đăng nhập người dùng | < Tên ISP >",
     "username": "Tên người dùng (Login)",
@@ -77,7 +146,7 @@
     "a11y_helper_prev": "Quay lại",
     "a11y_helper_done": "Kết thúc",
     "a11y-keys_data-title": "Phím tắt",
-    "a11y-keys_data-content": "<span style=\"font-size: 14px\">Tổ hợp phím <br \/><strong>⇧ Shift (trái) <br \/>+&nbsp;⌥ Alt (trái) <br \/>+&nbsp;chữ cái<\/strong><br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;U<\/strong><br \/>chuyển con trỏ đến ô Tên người dùng<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;P<\/strong><br \/>chuyển con trỏ đến ô Mật khẩu<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;A<\/strong><br \/>chọn/bỏ chọn ô \"Tôi chấp nhận Điều khoản\"<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;R<\/strong><br \/>mở cửa sổ điều khoản<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;I<\/strong><br \/>đăng nhập người dùng<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;O<\/strong><br \/>đăng xuất người dùng<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;L<\/strong><br \/>kích hoạt chuyển đổi ngôn ngữ<\/span>",
+    "a11y-keys_data-content": "<span style=\"font-size: 14px\">Tổ hợp phím <br \/><strong>⇧ Shift (trái) <br \/>+&nbsp;⌥ Alt (trái) <br \/>+&nbsp;chữ cái<\/strong><br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;U<\/strong><br \/>chuyển con trỏ đến ô Tên người dùng<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;P<\/strong><br \/>chuyển con trỏ đến ô Mật khẩu<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;A<\/strong><br \/>chọn/bỏ chọn ô \"Tôi chấp nhận Điều khoản\"<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;R<\/strong><br \/>mở cửa sổ điều khoản<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;I<\/strong><br \/>đăng nhập người dùng<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;O<\/strong><br \/>đăng xuất người dùng<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;L<\/strong><br \/>kích hoạt chuyển đổi ngôn ngữ<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;M<\/strong><br \/>mở menu offcanvas (nếu được bật)<\/span>",
     "a11y-lang-keys_data-title": "Phím tắt ngôn ngữ",
     "a11y-lang-keys_data-content": "<span style=\"font-size: 14px\">Giữ <strong>⇧ Shift (trái) và nhấn hai chữ cái mã ngôn ngữ<\/strong> (ISO 639-1) cùng lúc hoặc lần lượt.<br \/><br \/>Ví dụ:<br \/><strong>⇧ Shift&nbsp;+&nbsp;P&nbsp;+&nbsp;L<\/strong> → chuyển sang tiếng Ba Lan (pl)<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;E&nbsp;+&nbsp;N<\/strong> → chuyển sang tiếng Anh (en)<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;D&nbsp;+&nbsp;E<\/strong> → chuyển sang tiếng Đức (de)<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;F&nbsp;+&nbsp;R<\/strong> → chuyển sang tiếng Pháp (fr)<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;E&nbsp;+&nbsp;S<\/strong> → chuyển sang tiếng Tây Ban Nha (es)<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;I&nbsp;+&nbsp;T<\/strong> → chuyển sang tiếng Ý (it)<br \/>...<\/span>",
     "polyglotLanguageSwitcher_data-title": "Bộ chọn ngôn ngữ",
@@ -97,5 +166,16 @@
     "signin_anon_data-title": "Đăng nhập",
     "signin_anon_data-content": "Nhấn nút <strong>Đăng nhập<\/strong> để kết nối Internet.",
     "logoff_data-title": "Đăng xuất",
-    "logoff_data-content": "Nhấn nút <strong>Đăng xuất<\/strong> để kết thúc kết nối Internet."
+    "logoff_data-content": "Nhấn nút <strong>Đăng xuất<\/strong> để kết thúc kết nối Internet.",
+    "menuTrigger_data-title": "Menu offcanvas",
+    "menuTrigger_data-content": "Nhấp vào <strong>&#9776; offcanvas hamburger<\/strong> hoặc nhấn đồng thời trên bàn phím <strong>%s<\/strong> để mở menu ngữ cảnh.",
+    "about_title": "GuardianSuit",
+    "about_subtitle": "Mẫu Captive Portal nâng cao cho OPNsense",
+    "about_content": "<p><b>GuardianSuit<\/b> là một mẫu Captive Portal hiện đại, phản hồi nhanh và có hiệu ứng hoạt hình dành cho OPNsense. Nó mang lại trải nghiệm đăng nhập hấp dẫn cho người dùng và quyền kiểm soát đầy đủ về giao diện cũng như chức năng của trang chào mừng cho quản trị viên.<\/p><p><b>Các tính năng chính:<\/b><\/p><ul><li>Phản hồi nhanh và hiệu ứng hoạt hình.<\/li><li>Hỗ trợ đa ngôn ngữ.<\/li><li>Dễ dàng tùy chỉnh giao diện và màu sắc.<\/li><li>Trải nghiệm người dùng trực quan và tuân thủ WCAG.<\/li><li>Dễ dàng tích hợp với OPNsense.<\/li><\/ul><p><b>Ứng dụng:<\/b><br \/>Lý tưởng cho mạng doanh nghiệp, khách sạn, quán cà phê và các địa điểm khác cần trang chào mừng Captive Portal hấp dẫn về mặt hình ảnh.<\/p><p><b>Tác giả:<\/b> Mirosław Majka &lt;mix@proask.pl&gt; | &copy; 2025 GuardianSuit<\/p>",
+    "cookies_title": "Tệp Cookies",
+    "cookies_subtitle": "Cách sử dụng tệp cookies.",
+    "cookies_content": "<h5>Tệp cookie là gì?<\/h5><p>Tệp cookies (gọi là cookie) là các tệp văn bản nhỏ, được trình duyệt web tạo tự động khi bạn truy cập các trang web. Thông tin trong một tệp cookie chỉ có thể được đọc bởi trang web đã tạo ra nó. Do đó, trang web không thể truy cập vào các tệp khác trên máy tính của bạn.<\/p><p>Nhờ thông tin trong các tệp cookies, trang web \"biết\" cách bạn sử dụng và có thể điều chỉnh nội dung hiển thị hoặc cung cấp hỗ trợ phù hợp.<\/p><h5>Chúng tôi sử dụng cookies để làm gì?<\/h5><p>Trên trang web, chúng tôi sử dụng cookies kỹ thuật, cần thiết để trang hoạt động đúng cách. Chúng tôi dùng chúng để tối ưu hóa trang web cho các thiết bị và trình duyệt mà người dùng thường dùng – nhờ đó máy tính, máy tính bảng hoặc điện thoại của bạn sẽ hiển thị trang chính xác và rõ ràng, đồng thời ghi nhớ việc bạn đã đồng ý hiển thị các nội dung nhất định trên trang web.<\/p><p>Người dùng không thể từ chối cookies kỹ thuật.<\/p><h5>Chúng tôi sử dụng cookies trong bao lâu?<\/h5><p>Chúng tôi sử dụng các tệp cookie cố định, tồn tại trên thiết bị của bạn trong một khoảng thời gian xác định hoặc cho đến khi bạn xóa chúng thủ công.<\/p><h5>Chúng tôi thu thập dữ liệu gì thông qua cookies?<\/h5><p>Thông qua công nghệ cookie, chúng tôi chỉ thu thập dữ liệu kỹ thuật ẩn danh về bạn, nhằm cải thiện trải nghiệm sử dụng trang web.<\/p><p>Chúng tôi không thu thập bất kỳ dữ liệu nào cho phép nhận dạng bạn. Thông tin duy nhất về người dùng, nhưng không thể nhận dạng nếu không kết hợp với dữ liệu khác, là địa chỉ IP mà người dùng kết nối.<\/p>",
+    "privacy_title": "Chính sách quyền riêng tư",
+    "privacy_subtitle": "Xử lý dữ liệu cá nhân",
+    "privacy_content": "<p>Chúng tôi tạo tài liệu này để thông báo cho bạn về Chính sách Quyền riêng tư của chúng tôi. Bạn sẽ biết chúng tôi là ai, cách chúng tôi thu thập, sử dụng, tiết lộ và chia sẻ dữ liệu cá nhân trong <b><&nbsp;Tên ISP&nbsp;><\/b>, có trụ sở tại [ Tên đường 10, thành phố và mã bưu điện ], mục đích sử dụng và cách các cá nhân mà dữ liệu của họ được xử lý có thể thực thi quyền riêng tư của mình.<\/p><p><&nbsp;Tên ISP&nbsp;> chịu trách nhiệm xử lý dữ liệu cá nhân theo Chính sách Quyền riêng tư này.<\/p><h5>VỀ CHÚNG TÔI<\/h5><p>Người quản lý, tức là thực thể xử lý dữ liệu cá nhân liên quan đến việc bạn sử dụng dịch vụ này, là <&nbsp;Tên ISP&nbsp;>, [ Tên đường 10, thành phố và mã bưu điện ]; Mã số thuế 1234567890, Regon 123456789,<\/p><h5>LIÊN HỆ VỚI CHÚNG TÔI<\/h5><ul><li>Qua email: adres@email.pl,<\/li><li>Bằng văn bản tại địa chỉ: Tên ISP, [ Tên đường 10, thành phố và mã bưu điện ]<\/li><\/ul><h5>NGUYÊN TẮC TRONG CHÍNH SÁCH QUYỀN RIÊNG TƯ NÀY<\/h5><p>Chúng tôi đảm bảo việc xử lý dữ liệu của bạn tuân thủ Quy định (EU) 2016/679 của Nghị viện và Hội đồng Châu Âu ngày 27 tháng 4 năm 2016 về bảo vệ các cá nhân liên quan đến xử lý dữ liệu cá nhân và tự do luân chuyển dữ liệu đó, cũng như bãi bỏ Chỉ thị 95/46/WE (GDPR), luật bảo vệ dữ liệu cá nhân và các quy định đặc biệt khác. Chính sách Quyền riêng tư này được xây dựng theo các quy định trên. Chúng tôi cung cấp thông tin rõ ràng về cách chúng tôi thu thập dữ liệu cá nhân và mục đích sử dụng.<\/p><p>Lưu ý rằng <&nbsp;Tên ISP&nbsp;> thu thập dữ liệu cá nhân và thông tin doanh nghiệp từ khách hàng và đối tác (tiềm năng), cũng như dữ liệu thu thập khi sử dụng dịch vụ truy cập Internet.<\/p><h5>THU THẬP DỮ LIỆU CÁ NHÂN<\/h5><p>Chúng tôi thu thập dữ liệu cá nhân được người dùng cung cấp trong các trường hợp sau:<\/p><ul><li>Đưa ra đề xuất, thiết lập điều kiện hợp tác và/hoặc cung cấp thông tin về dịch vụ và các hoạt động khác của <&nbsp;Tên ISP&nbsp;>,<\/li><li>Ký kết và thực hiện hợp đồng, duy trì liên hệ với khách hàng/đối tác,<\/li><li>Thực hiện nghĩa vụ theo pháp luật hiện hành,<\/li><li>Trả lời câu hỏi, xử lý khiếu nại và các dịch vụ hậu mãi khác,<\/li><li>Tiếp thị trực tiếp (khác với bản tin email),<\/li><li>Mục đích lưu trữ (bằng chứng), xác minh, giải quyết hoặc bảo vệ quyền lợi.<\/li><\/ul><h5>LƯU TRỮ VÀ XÓA DỮ LIỆU<\/h5><p>Để bảo vệ dữ liệu được giao, chúng tôi đã thiết lập các quy trình nội bộ và hướng dẫn nhằm ngăn chặn việc truy cập trái phép. Chúng tôi áp dụng các biện pháp công nghệ, hợp đồng, hành chính và vật lý để bảo vệ dữ liệu khỏi truy cập trái phép. Chúng tôi kiểm tra việc thực hiện và đánh giá thường xuyên sự tuân thủ các quy định pháp luật.<\/p><p>Chúng tôi chỉ lưu trữ dữ liệu cá nhân của người dùng trong thời gian cần thiết để thực hiện mục đích thu thập.<\/p><h5>CHIA SẺ VÀ TIẾT LỘ DỮ LIỆU<\/h5><p>Chúng tôi không bán hoặc chia sẻ dữ liệu cá nhân của người dùng cho bên thứ ba mà không có sự đồng ý của họ. Dữ liệu người dùng không bị phân tích hồ sơ (profiling).<\/p><p>Tùy thuộc vào loại hình và phạm vi hợp tác giữa người dùng và <&nbsp;Tên ISP&nbsp;>, trong hoạt động kinh doanh, chúng tôi có thể cung cấp dữ liệu nếu luật hiện hành yêu cầu hoặc cần thiết để tuân thủ nghĩa vụ hợp pháp, thực hiện hợp đồng, phản hồi khiếu nại, hoặc bảo vệ quyền, tài sản hoặc an ninh.<\/p><h5>NGUYÊN TẮC XỬ LÝ DỮ LIỆU CỦA BẠN<\/h5><p>Chúng tôi đảm bảo dữ liệu cá nhân được xử lý cẩn thận, đặc biệt để đảm bảo dữ liệu:<\/p><ul><li>Được xử lý hợp pháp, minh bạch và rõ ràng đối với cá nhân liên quan,<\/li><li>Thu thập cho mục đích cụ thể, rõ ràng và hợp pháp, không xử lý cho mục đích khác trái phép,<\/li><li>Phù hợp, đầy đủ và giới hạn trong phạm vi cần thiết,<\/li><li>Đúng và được cập nhật khi cần thiết. Chúng tôi sửa hoặc xóa dữ liệu không chính xác kịp thời,<\/li><li>Lưu trữ ở dạng cho phép nhận dạng người liên quan trong thời gian cần thiết,<\/li><li>Được xử lý đảm bảo an toàn, tránh xử lý trái phép, không hợp pháp hoặc mất mát, hư hỏng tình cờ.<\/li><\/ul><p>Dữ liệu cá nhân của bạn thường được xử lý dựa trên sự đồng ý, có thể rút lại bất cứ lúc nào. Trường hợp khác là khi việc xử lý cần thiết để thực hiện hợp đồng giữa bạn và chúng tôi, hoặc thực hiện theo yêu cầu của bạn trước khi ký hợp đồng. Trong một số tình huống, việc xử lý cần thiết để thực hiện nghĩa vụ pháp lý đối với chúng tôi như quản lý dữ liệu cá nhân. Việc xử lý cũng có thể cần thiết cho lợi ích hợp pháp của chúng tôi, ví dụ như giải quyết khiếu nại trong hoạt động kinh doanh.<\/p><h5>QUYỀN CỦA BẠN<\/h5><p>Bạn có các quyền sau:<\/p><ul><li>Truy cập dữ liệu cá nhân của bạn và nhận thông tin về loại dữ liệu, mục đích xử lý, cũng như nhận bản sao,<\/li><li>Sửa dữ liệu không chính xác hoặc bổ sung dữ liệu còn thiếu, cũng như quyền bị quên (xóa dữ liệu được xử lý trái phép hoặc không còn cần thiết),<\/li><li>Rút lại đồng ý xử lý dữ liệu bất cứ lúc nào mà không ảnh hưởng đến tính hợp pháp của xử lý dựa trên sự đồng ý trước đó (nếu xử lý theo Điều 6 khoản 1 lit. a hoặc Điều 9 khoản 2 lit. a GDPR).<\/li><\/ul><h5>COOKIES<\/h5><p><&nbsp;Tên ISP&nbsp;> sử dụng cookies để cải thiện trải nghiệm dịch vụ. Bằng cách sử dụng dịch vụ, bạn đồng ý cho phép chúng tôi sử dụng cookies. Nếu bạn không chặn cookies, bạn đồng ý cho phép chúng được lưu trên thiết bị của bạn.<\/p><h5>THAY ĐỔI CHÍNH SÁCH QUYỀN RIÊNG TƯ<\/h5><p><&nbsp;Tên ISP&nbsp;> có quyền thay đổi chính sách quyền riêng tư, dựa trên sự phát triển công nghệ internet, thay đổi luật bảo vệ dữ liệu cá nhân hoặc phát triển dịch vụ truy cập do quản trị viên cung cấp. Mọi thay đổi sẽ được thông báo rõ ràng và minh bạch.<\/p><p>Mọi câu hỏi liên quan đến chính sách quyền riêng tư xin gửi về địa chỉ email: adres@email.pl<\/p>"
 }

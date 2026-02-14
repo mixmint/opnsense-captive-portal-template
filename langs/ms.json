@@ -7,6 +7,75 @@
     "attr_isp_info": {
         "aria-label": "Maklumat tentang pembekal internet"
     },
+    "menu": {
+        "title": "Menu GuardianSuit",
+        "item1": {
+            "title": "Internet",
+            "icon": "I",
+            "href": "https://yourdomain.com/#",
+            "target": "_blank"
+        },
+        "item2": {
+            "title": "Televisyen",
+            "icon": "T",
+            "href": "https://yourdomain.com/#",
+            "target": "_blank"
+        },
+        "item3": {
+            "title": "Telefon",
+            "icon": "F",
+            "href": "https://yourdomain.com/#",
+            "target": "_blank"
+        },
+        "item4": {
+            "title": "Perkhidmatan tambahan",
+            "icon": "P",
+            "href": "https://yourdomain.com/#",
+            "target": "_blank"
+        },
+        "item5": {
+            "title": "Kontak",
+            "icon": "K",
+            "href": "https://yourdomain.com/#",
+            "target": "_blank"
+        },
+        "item6": {
+            "title": "Polisi Privasi",
+            "icon": "&#167;",
+            "href": {"type": "modal", "title": "privacy_title", "subtitle": "privacy_subtitle", "content": "privacy_content", "iconText": "&#167;"},
+            "target": "_self"
+        },
+        "item7": {
+            "title": "Fail Cookies",
+            "icon": "&#9865;",
+            "href": {"type": "modal", "title": "cookies_title", "subtitle": "cookies_subtitle", "content": "cookies_content", "iconText": "&#9865;"},
+            "target": "_self"
+        },
+        "item8": {
+            "title": "Dokumentasi",
+            "icon": "&#9783;",
+            "href": "https://github.com/mixmint/opnsense-captive-portal-template/blob/main/README.md",
+            "target": "_blank"
+        },
+        "item9": {
+            "title": "Mengenai Program",
+            "icon": "&#9873;",
+            "href": {"type": "modal", "title": "about_title", "subtitle": "about_subtitle", "content": "about_content", "iconText": "&#9873;"},
+            "target": "_self"
+        },
+        "group1": {
+            "title": "Tawaran",
+            "items": ["item1", "item2", "item3", "item4", "item5"]
+        },
+        "group2": {
+            "title": "Maklumat",
+            "items": ["item6", "item7"]
+        },
+        "group3": {
+            "title": "Bantuan",
+            "items": ["item8", "item9"]
+        }
+    },
     "footer_isp_info": {},
     "pagetitle": "Sistem log masuk pengguna | < Nama ISP >",
     "username": "Nama pengguna (Login)",
@@ -77,7 +146,7 @@
     "a11y_helper_prev": "Kembali",
     "a11y_helper_done": "Selesai",
     "a11y-keys_data-title": "Pintas papan kekunci",
-    "a11y-keys_data-content": "<span style=\"font-size: 14px\">Gabungan kekunci <br \/><strong>⇧ Shift (kiri) <br \/>+&nbsp;⌥ Alt (kiri) <br \/>+&nbsp;huruf<\/strong><br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;U<\/strong><br \/>fokus pada medan Nama Pengguna<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;P<\/strong><br \/>fokus pada medan Kata Laluan<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;A<\/strong><br \/>menanda/membuang tanda pada kotak pilihan \"Saya menerima peraturan\"<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;R<\/strong><br \/>membuka tetingkap modal dengan peraturan<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;I<\/strong><br \/>log masuk pengguna<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;O<\/strong><br \/>log keluar pengguna<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;L<\/strong><br \/>mengaktifkan penukar bahasa<\/span>",
+    "a11y-keys_data-content": "<span style=\"font-size: 14px\">Gabungan kekunci <br \/><strong>⇧ Shift (kiri) <br \/>+&nbsp;⌥ Alt (kiri) <br \/>+&nbsp;huruf<\/strong><br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;U<\/strong><br \/>fokus pada medan Nama Pengguna<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;P<\/strong><br \/>fokus pada medan Kata Laluan<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;A<\/strong><br \/>menanda/membuang tanda pada kotak pilihan \"Saya menerima peraturan\"<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;R<\/strong><br \/>membuka tetingkap modal dengan peraturan<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;I<\/strong><br \/>log masuk pengguna<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;O<\/strong><br \/>log keluar pengguna<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;L<\/strong><br \/>mengaktifkan penukar bahasa<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;M<\/strong><br \/>membuka menu offcanvas (jika diaktifkan)<\/span>",
     "a11y-lang-keys_data-title": "Pintas papan kekunci untuk terjemahan bahasa",
     "a11y-lang-keys_data-content": "<span style=\"font-size: 14px\">Tahan <strong>⇧ Shift (kiri) dan tekan dua huruf kod bahasa<\/strong> (ISO 639-1) secara serentak atau satu demi satu.<br \/><br \/>Contoh:<br \/><strong>⇧ Shift&nbsp;+&nbsp;P&nbsp;+&nbsp;L<\/strong> → bertukar ke bahasa Melayu (ms)<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;E&nbsp;+&nbsp;N<\/strong> → bertukar ke bahasa Inggeris (en)<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;D&nbsp;+&nbsp;E<\/strong> → bertukar ke bahasa Jerman (de)<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;F&nbsp;+&nbsp;R<\/strong> → bertukar ke bahasa Perancis (fr)<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;E&nbsp;+&nbsp;S<\/strong> → bertukar ke bahasa Sepanyol (es)<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;I&nbsp;+&nbsp;T<\/strong> → bertukar ke bahasa Itali (it)<br \/>...<\/span>",
     "polyglotLanguageSwitcher_data-title": "Penukar bahasa portal",
@@ -97,5 +166,16 @@
     "signin_anon_data-title": "Log Masuk",
     "signin_anon_data-content": "Klik pada butang <strong>Log Masuk<\/strong> untuk memulakan sambungan Internet.",
     "logoff_data-title": "Log Keluar",
-    "logoff_data-content": "Klik pada butang <strong>Log Keluar<\/strong> untuk menamatkan sambungan Internet."
+    "logoff_data-content": "Klik pada butang <strong>Log Keluar<\/strong> untuk menamatkan sambungan Internet.",
+    "menuTrigger_data-title": "Menu offcanvas",
+    "menuTrigger_data-content": "Dengan mengklik <strong>&#9776; hamburger offcanvas<\/strong> atau menekan pada papan kekunci secara serentak <strong>%s<\/strong>, anda akan membuka menu konteks.",
+    "about_title": "GuardianSuit",
+    "about_subtitle": "Templat Captive Portal Lanjutan untuk OPNsense",
+    "about_content": "<p><b>GuardianSuit<\/b> adalah templat Captive Portal moden, responsif dan animasi untuk OPNsense. Ia menyediakan pengalaman log masuk yang menarik untuk pengguna, serta kawalan penuh kepada pentadbir terhadap penampilan dan fungsi halaman sambutan.<\/p><p><b>Ciri-ciri utama:<\/b><\/p><ul><li>Responsif dan animasi.<\/li><li>Berbilang bahasa.<\/li><li>Penyesuaian mudah pada rupa dan warna.<\/li><li>UX intuitif dan mematuhi WCAG.<\/li><li>Integrasi mudah dengan OPNsense.<\/li><\/ul><p><b>Penggunaan:<\/b><br \/>Sesuai untuk rangkaian syarikat, hotel, kafe dan tempat lain yang memerlukan halaman sambutan Captive Portal yang menarik secara visual.<\/p><p><b>Pengarang:<\/b> Mirosław Majka &lt;mix@proask.pl&gt; | &copy; 2025 GuardianSuit<\/p>",
+    "cookies_title": "Fail Cookies",
+    "cookies_subtitle": "Bagaimana fail cookies digunakan.",
+    "cookies_content": "<h5>Apakah itu fail cookie?<\/h5><p>Fail cookies (juga dipanggil biskut) adalah fail teks kecil yang dicipta secara automatik oleh pelayar internet semasa melawat laman web. Maklumat dalam fail cookie tertentu hanya boleh dibaca oleh laman web yang menciptanya. Oleh itu, laman web tidak boleh mengakses fail lain pada komputer pengguna.<\/p><p>Dengan maklumat dalam fail cookies, laman web 'mengetahui' bagaimana anda menggunakannya dan boleh menyesuaikan kandungan yang dipaparkan untuk anda atau menawarkan bantuan.<\/p><h5>Untuk apa kami menggunakan fail cookies?<\/h5><p>Kami menggunakan cookies teknikal yang diperlukan untuk fungsi laman web yang betul. Ia membantu mengoptimumkan laman web untuk peranti dan pelayar yang paling kerap digunakan oleh pengunjung — memastikan komputer, tablet atau telefon anda memaparkan laman dengan betul dan jelas, sambil menyimpan sama ada anda bersetuju dengan paparan kandungan tertentu.<\/p><p>Pengguna tidak boleh menolak cookies teknikal.<\/p><h5>Berapa lama kami menggunakan cookies?<\/h5><p>Kami menggunakan fail cookie kekal, yang tinggal pada peranti anda untuk tempoh tertentu atau sehingga ia dihapus secara manual.<\/li><\/ul><h5>Apakah data yang kami kumpul melalui cookies?<\/h5><p>Dengan teknologi cookie, kami hanya mengumpul data teknikal tanpa nama mengenai anda untuk meningkatkan keselesaan penggunaan laman web kami.<\/p><p>Kami tidak mengumpul sebarang data yang membolehkan pengenalpastian anda. Satu-satunya maklumat mengenai pengguna, yang tanpa digabungkan dengan data lain, tidak membolehkan pengenalpastian, ialah alamat IP yang digunakan pengguna.<\/p>",
+    "privacy_title": "Dasar Privasi",
+    "privacy_subtitle": "Pemprosesan Data Peribadi",
+    "privacy_content": "<p>Kami menyusun dokumen ini untuk memaklumkan anda mengenai Dasar Privasi kami. Di sini anda akan mengetahui siapa kami, bagaimana kami mengumpul, menggunakan, mendedahkan dan berkongsi data peribadi dalam rangka <b><&nbsp;Nama ISP&nbsp;><\/b>, beralamat di [ Nama jalan 10, bandar dan poskod ], tujuan pengumpulan data, serta bagaimana individu yang datanya diproses boleh menegakkan hak privasi mereka.<\/p><p><&nbsp;Nama ISP&nbsp;> bertanggungjawab atas pemprosesan data peribadi selaras dengan Dasar Privasi ini.<\/p><h5>TENTANG KAMI<\/h5><p>Administrator, iaitu pihak yang memproses data peribadi berkaitan penggunaan perkhidmatan ini oleh anda, ialah <&nbsp;Nama ISP&nbsp;>, [ Nama jalan 10, bandar dan poskod ]; NIP 1234567890, Regon 123456789,<\/p><h5>HUBUNGI KAMI<\/h5><ul><li>Secara elektronik melalui e-mel: alamat@email.pl,<\/li><li>Secara bertulis ke alamat: Nama ISP, [ Nama jalan 10, bandar dan poskod ]<\/li><\/ul><h5>PRINSIP DALAM DASAR PRIVASI INI<\/h5><p>Kami memastikan pemprosesan data anda dilakukan selaras dengan Peraturan Parlimen Eropah dan Majlis (EU) No. 2016/679 bertarikh 27 April 2016 mengenai perlindungan individu berkaitan pemprosesan data peribadi dan peredaran bebas data sedemikian serta pemansuhan Arahan 95/46/EC (General Data Protection Regulation, “GDPR”), undang-undang perlindungan data peribadi dan peraturan khusus lain. Dasar Privasi ini disediakan selaras dengan peraturan tersebut. Kami jelas memaklumkan bagaimana data peribadi dikumpul dan untuk tujuan apa ia digunakan.<\/p><p>Harus diperhatikan bahawa <&nbsp;Nama ISP&nbsp;> mengumpul data peribadi dan maklumat syarikat yang diberikan oleh pelanggan dan kontraktor (potensi) serta data yang diperoleh semasa menggunakan perkhidmatan akses internet.<\/p><h5>PENGUMPULAN DATA PERIBADI<\/h5><p>Kami mengumpul data peribadi yang diberikan oleh Pengguna dalam situasi berikut:<\/p><ul><li>pengajuan tawaran, menetapkan syarat kerjasama dan/atau menyediakan maklumat mengenai perkhidmatan dan aktiviti lain <&nbsp;Nama ISP&nbsp;>,<\/li><li>pembentukan dan pelaksanaan kontrak serta mengekalkan hubungan dengan pelanggan/kontraktor,<\/li><li>melaksanakan kewajipan berdasarkan undang-undang yang berkuat kuasa,<\/li><li>menjawab pertanyaan, menangani aduan dan perkhidmatan selepas jualan,<\/li><li>pemasaran langsung (selain newsletter),<\/li><li>untuk tujuan arkib (bukti), penentuan, penyiasatan atau pertahanan terhadap tuntutan.<\/li><\/ul><h5>PENYIMPANAN DAN PENGHAPUSAN DATA<\/h5><p>Untuk keselamatan data yang diserahkan, kami membangunkan prosedur dalaman dan garis panduan bagi mengelakkan pendedahan data kepada pihak yang tidak dibenarkan. Kami menggunakan langkah teknologi, kontrak, pentadbiran dan fizikal untuk melindungi data daripada akses yang tidak sah. Kami memantau pelaksanaannya dan sentiasa menyemak pematuhan dengan peraturan yang berkenaan.<\/p><p>Kami menyimpan data peribadi Pengguna hanya untuk tempoh yang diperlukan bagi mencapai tujuan pengumpulan data.<\/p><h5>PENGKONGSIAN DAN PENDEDAHAN DATA<\/h5><p>Kami tidak menjual atau mendedahkan data peribadi Pengguna kepada pihak ketiga tanpa persetujuan mereka. Data Pengguna tidak diprofilkan.<\/p><p>Bergantung pada jenis dan skop kerjasama antara Pengguna dan <&nbsp;Nama ISP&nbsp;>, kami boleh mendedahkan data Pengguna jika diperlukan oleh undang-undang yang berkuat kuasa atau jika perlu untuk mematuhi tindakan undang-undang, memenuhi kewajipan kontrak, menjawab tuntutan, atau melindungi hak, harta atau keselamatan.<\/p><h5>PRINSIP PEMPROSESAN DATA ANDA<\/h5><p>Kami menekankan perhatian tertinggi untuk melindungi kepentingan individu yang datanya diproses, khususnya untuk memastikan data tersebut:<\/p><ul><li>diproses mengikut undang-undang, dengan betul dan telus bagi individu yang terlibat,<\/li><li>dikumpul untuk tujuan yang jelas, sah dan tidak diproses secara berlawanan dengan tujuan tersebut,<\/li><li>relevan, sesuai dan terhad kepada apa yang diperlukan untuk tujuan pemprosesan,<\/li><li>tepat dan dikemas kini bila perlu. Kami mengambil tindakan untuk memastikan data yang tidak tepat bagi tujuan pemprosesan segera dibetulkan atau dipadam,<\/li><li>disimpan dalam bentuk yang membolehkan pengenalpastian individu hanya untuk tempoh yang diperlukan,<\/li><li>diproses dengan cara yang memastikan keselamatan data, termasuk perlindungan daripada pemprosesan yang tidak sah atau menyalahi undang-undang, serta kehilangan atau kerosakan secara tidak sengaja.<\/li><\/ul><p>Kami biasanya memproses data anda berdasarkan persetujuan, yang boleh ditarik balik pada bila-bila masa. Dalam kes lain, pemprosesan data diperlukan untuk melaksanakan kontrak antara anda dan kami atau untuk mengambil tindakan atas permintaan anda sebelum kontrak dibuat. Dalam beberapa situasi, pemprosesan diperlukan untuk memenuhi kewajipan undang-undang ke atas kami sebagai pentadbir data, seperti undang-undang pekerjaan atau perakaunan. Pemprosesan juga boleh diperlukan untuk tujuan kepentingan sah kami, seperti menuntut hak dari aktiviti perniagaan kami.<\/p><h5>HAK ANDA<\/h5><p>Anda mempunyai hak-hak berikut:<\/p><ul><li>Akses kandungan data peribadi anda dan maklumat mengenai kategori data, tujuan pemprosesan, serta mendapatkan salinan data,<\/li><li>Memperbetulkan data yang salah atau melengkapkan data yang hilang serta hak untuk dilupakan, iaitu memadam data yang diproses secara tidak wajar atau tanpa asas (contoh: data tidak lagi diperlukan untuk tujuan asal),<\/li><li>Menarik balik persetujuan pemprosesan data pada bila-bila masa tanpa menjejaskan kesahihan pemprosesan berdasarkan persetujuan sebelum ditarik balik (jika pemprosesan berdasarkan art. 6(1)(a) atau art. 9(2)(a) GDPR).<\/li><\/ul><h5>COOKIES<\/h5><p><&nbsp;Nama ISP&nbsp;> menggunakan cookies untuk memudahkan penggunaan perkhidmatan. Dengan menggunakan perkhidmatan, anda bersetuju dengan penggunaan cookies dan penyimpanannya pada peranti anda.</p><h5>PERUBAHAN DASAR PRIVASI<\/h5><p><&nbsp;Nama ISP&nbsp;> berhak mengubah dasar perlindungan data peribadi mengikut perkembangan teknologi internet, perubahan undang-undang perlindungan data, dan perkembangan perkhidmatan yang disediakan. Segala perubahan akan dimaklumkan dengan jelas dan telus.<\/p><p>Segala pertanyaan mengenai dasar perlindungan data peribadi boleh dihantar melalui e-mel: alamat@email.pl<\/p>"
 }

@@ -7,6 +7,75 @@
     "attr_isp_info": {
         "aria-label": "Informácie o vašom poskytovateľovi internetových služieb"
     },
+    "menu": {
+        "title": "GuardianSuit Menu",
+        "item1": {
+            "title": "Internet",
+            "icon": "I",
+            "href": "https://yourdomain.com/#",
+            "target": "_blank"
+        },
+        "item2": {
+            "title": "Televízia",
+            "icon": "V",
+            "href": "https://yourdomain.com/#",
+            "target": "_blank"
+        },
+        "item3": {
+            "title": "Telefón",
+            "icon": "T",
+            "href": "https://yourdomain.com/#",
+            "target": "_blank"
+        },
+        "item4": {
+            "title": "Doplnkové služby",
+            "icon": "D",
+            "href": "https://yourdomain.com/#",
+            "target": "_blank"
+        },
+        "item5": {
+            "title": "Kontakt",
+            "icon": "K",
+            "href": "https://yourdomain.com/#",
+            "target": "_blank"
+        },
+        "item6": {
+            "title": "Zásady ochrany osobných údajov",
+            "icon": "&#167;",
+            "href": {"type": "modal", "title": "privacy_title", "subtitle": "privacy_subtitle", "content": "privacy_content", "iconText": "&#167;"},
+            "target": "_self"
+        },
+        "item7": {
+            "title": "Súbory cookies",
+            "icon": "&#9865;",
+            "href": {"type": "modal", "title": "cookies_title", "subtitle": "cookies_subtitle", "content": "cookies_content", "iconText": "&#9865;"},
+            "target": "_self"
+        },
+        "item8": {
+            "title": "Dokumentácia",
+            "icon": "&#9783;",
+            "href": "https://github.com/mixmint/opnsense-captive-portal-template/blob/main/README.md",
+            "target": "_blank"
+        },
+        "item9": {
+            "title": "O programe",
+            "icon": "&#9873;",
+            "href": {"type": "modal", "title": "about_title", "subtitle": "about_subtitle", "content": "about_content", "iconText": "&#9873;"},
+            "target": "_self"
+        },
+        "group1": {
+            "title": "Ponuka",
+            "items": ["item1", "item2", "item3", "item4", "item5"]
+        },
+        "group2": {
+            "title": "Informácie",
+            "items": ["item6", "item7"]
+        },
+        "group3": {
+            "title": "Pomoc",
+            "items": ["item8", "item9"]
+        }
+    },
     "footer_isp_info": {},
     "pagetitle": "Prihlasovací systém používateľa | < Názov ISP >",
     "username": "Používateľské meno (Login)",
@@ -77,7 +146,7 @@
     "a11y_helper_prev": "Späť",
     "a11y_helper_done": "Koniec",
     "a11y-keys_data-title": "Klávesové skratky",
-    "a11y-keys_data-content": "<span style=\"font-size: 14px\">Kombinácia kláves <br \/><strong>⇧ Shift (ľavý) <br \/>+&nbsp;⌥ Alt (ľavý) <br \/>+&nbsp;písmeno<\/strong><br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;U<\/strong><br \/>fokus na poli Užívateľské meno<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;P<\/strong><br \/>fokus na poli Heslo<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;A<\/strong><br \/>začiarkne/odznačí pole \"Súhlasím s pravidlami\"<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;R<\/strong><br \/>otvorí modálne okno s pravidlami<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;I<\/strong><br \/>prihlási užívateľa<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;O<\/strong><br \/>odhlási užívateľa<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;L<\/strong><br \/>aktivuje prepínač jazyka<\/span>",
+    "a11y-keys_data-content": "<span style=\"font-size: 14px\">Kombinácia kláves <br \/><strong>⇧ Shift (ľavý) <br \/>+&nbsp;⌥ Alt (ľavý) <br \/>+&nbsp;písmeno<\/strong><br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;U<\/strong><br \/>fokus na poli Užívateľské meno<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;P<\/strong><br \/>fokus na poli Heslo<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;A<\/strong><br \/>začiarkne/odznačí pole \"Súhlasím s pravidlami\"<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;R<\/strong><br \/>otvorí modálne okno s pravidlami<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;I<\/strong><br \/>prihlási užívateľa<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;O<\/strong><br \/>odhlási užívateľa<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;L<\/strong><br \/>aktivuje prepínač jazyka<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;M<\/strong><br \/>otvára offcanvas menu (ak je povolené)<\/span>",
     "a11y-lang-keys_data-title": "Klávesové skratky pre zmenu jazyka",
     "a11y-lang-keys_data-content": "<span style=\"font-size: 14px\">Podržte <strong>⇧ Shift (ľavý) a stlačte dve písmená kódu jazyka<\/strong> (ISO 639-1) súčasne alebo jedno po druhom.<br \/><br \/>Príklady:<br \/><strong>⇧ Shift&nbsp;+&nbsp;P&nbsp;+&nbsp;L<\/strong> → prepne do poľského jazyka (pl)<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;E&nbsp;+&nbsp;N<\/strong> → prepne do anglického jazyka (en)<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;D&nbsp;+&nbsp;E<\/strong> → prepne do nemeckého jazyka (de)<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;F&nbsp;+&nbsp;R<\/strong> → prepne do francúzskeho jazyka (fr)<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;E&nbsp;+&nbsp;S<\/strong> → prepne do španielskeho jazyka (es)<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;I&nbsp;+&nbsp;T<\/strong> → prepne do talianskeho jazyka (it)<br \/>...<\/span>",
     "polyglotLanguageSwitcher_data-title": "Prepínač jazyka",
@@ -97,5 +166,16 @@
     "signin_anon_data-title": "Prihlásenie",
     "signin_anon_data-content": "Kliknutím na tlačidlo <strong>Prihlásenie<\/strong> sa nadviaže pripojenie k internetu.",
     "logoff_data-title": "Odhlásenie",
-    "logoff_data-content": "Kliknutím na tlačidlo <strong>Odhlásenie<\/strong> ukončíte pripojenie k internetu."
+    "logoff_data-content": "Kliknutím na tlačidlo <strong>Odhlásenie<\/strong> ukončíte pripojenie k internetu.",
+    "menuTrigger_data-title": "Offcanvas menu",
+    "menuTrigger_data-content": "Kliknutím na <strong>&#9776; offcanvas hamburger<\/strong> alebo súčasným stlačením <strong>%s<\/strong> na klávesnici otvoríte kontextové menu.",
+    "about_title": "GuardianSuit",
+    "about_subtitle": "Pokročilá šablóna Captive Portal pre OPNsense",
+    "about_content": "<p><b>GuardianSuit<\/b> je moderná, responzívna a animovaná šablóna Captive Portal pre OPNsense. Poskytuje používateľom atraktívny zážitok pri prihlasovaní a administrátorom plnú kontrolu nad vzhľadom a funkčnosťou uvítacej stránky.<\/p><p><b>Kľúčové funkcie:<\/b><\/p><ul><li>Responzívnosť a animácie.<\/li><li>Viacjazyčnosť.<\/li><li>Jednoduchá personalizácia vzhľadu a farebnosti.<\/li><li>Intuitívne UX a súlad s WCAG.<\/li><li>Jednoduchá integrácia s OPNsense.<\/li><\/ul><p><b>Použitie:<\/b><br \/>Ideálne pre firemné siete, hotely, kaviarne a iné miesta vyžadujúce vizuálne atraktívnu uvítaciu stránku Captive Portal.<\/p><p><b>Autor:<\/b> Mirosław Majka &lt;mix@proask.pl&gt; | &copy; 2025 GuardianSuit<\/p>",
+    "cookies_title": "Súbory cookies",
+    "cookies_subtitle": "Ako sa používajú súbory cookies.",
+    "cookies_content": "<h5>Čo je súbor cookie?<\/h5><p>Súbory cookies (tzv. cookies) sú malé textové súbory, ktoré automaticky vytvára webový prehliadač pri návšteve webových stránok. Informácie obsiahnuté v danom súbore cookie môže prečítať iba stránka, z ktorej tento súbor pochádza. Webová stránka teda nemá prístup k iným súborom uloženým na počítači používateľa.<\/p><p>Vďaka informáciám obsiahnutým v súboroch cookies stránka „vie“, ako ju používate, a môže podľa toho prispôsobiť zobrazovaný obsah alebo ponúknuť pomoc.<\/p><h5>Na čo používame súbory cookies?<\/h5><p>Na stránke používame technické súbory cookies, ktoré sú nevyhnutné pre správne fungovanie stránky. Používame ich na optimalizáciu webu pre zariadenia a prehliadače, ktoré najčastejšie používajú návštevníci – vďaka tomu sa stránka na vašom počítači, tablete či telefóne zobrazí správne a čitateľne a zapamätá si, či ste súhlasili so zobrazovaním vybraného obsahu.<\/p><p>Používateľ sa nemôže vzdať technických súborov cookies.<\/p><h5>Ako dlho používame súbory cookies?<\/h5><p>Používame tzv. trvalé súbory cookie, ktoré zostávajú vo vašom zariadení určitú dobu alebo až do ich manuálneho vymazania.<\/p><h5>Aké údaje zbierame prostredníctvom súborov cookies?<\/h5><p>Pomocou technológie cookie zbierame o vás iba anonymné technické údaje, ktoré slúžia na zlepšenie komfortu používania našej stránky.<\/p><p>Nezbierame žiadne údaje umožňujúce vašu identifikáciu. Jedinou informáciou o používateľovi, ktorá sama o sebe neumožňuje jeho identifikáciu, je IP adresa, z ktorej sa používateľ pripája.<\/p>",
+    "privacy_title": "Zásady ochrany osobných údajov",
+    "privacy_subtitle": "Spracovanie osobných údajov",
+    "privacy_content": "<p>Tento dokument sme vytvorili, aby sme vás informovali o našich Zásadách ochrany osobných údajov. Dozviete sa tu, kto sme, ako zhromažďujeme, používame, zverejňujeme a sprístupňujeme osobné údaje v rámci <b><&nbsp;Názov ISP&nbsp;><\/b>, so sídlom na [ Názov ulice 10, mesto a PSČ ], za akým účelom to robíme a ako môžu osoby, ktorých údaje spracovávame, uplatniť svoje práva na ochranu súkromia.<\/p><p><&nbsp;Názov ISP&nbsp;> je zodpovedný za spracovanie osobných údajov v súlade s týmito Zásadami ochrany osobných údajov.<\/p><h5>O NÁS<\/h5><p>Správcom, teda subjektom spracúvajúcim osobné údaje v súvislosti s používaním tejto služby, je <&nbsp;Názov ISP&nbsp;>, [ Názov ulice 10, mesto a PSČ ]; IČO 1234567890, DIČ 123456789,<\/p><h5>KONTAKT S NAMI<\/h5><ul><li>elektronicky na e-mail: adres@email.pl,<\/li><li>písomne na adresu: Názov ISP, [ Názov ulice 10, mesto a PSČ ]<\/li><\/ul><h5>ZÁSADY OBSAŽENÉ V TÝCHTO ZÁSADÁCH OCHRANY OSOBNÝCH ÚDAJOV<\/h5><p>Dbáme na to, aby spracovanie vašich údajov prebiehalo v súlade s nariadením Európskeho parlamentu a Rady (EÚ) č. 2016/679 zo 27. apríla 2016 o ochrane fyzických osôb pri spracovaní osobných údajov a o voľnom pohybe takýchto údajov a o zrušení smernice 95/46/ES (ďalej len „GDPR“), zákonom o ochrane osobných údajov a osobitnými predpismi. Tieto Zásady ochrany osobných údajov boli pripravené v súlade s nimi. Jasne informujeme, ako zhromažďujeme osobné údaje a na aký účel sú využívané.<\/p><p>Upozorňujeme, že <&nbsp;Názov ISP&nbsp;> zhromažďuje osobné údaje a firemné informácie poskytované svojimi (potenciálnymi) zákazníkmi a kontrahentmi, ako aj údaje získané počas používania služby prístupu na internet.<\/p><h5>ZHROMAŽĎOVANIE OSOBNÝCH ÚDAJOV<\/h5><p>Zhromažďujeme osobné údaje poskytované používateľmi v nasledujúcich prípadoch:<\/p><ul><li>podávanie ponúk, dojednávanie podmienok spolupráce a/alebo poskytovanie informácií o službách a iných aktivitách <&nbsp;Názov ISP&nbsp;>,<\/li><li>uzatváranie a plnenie zmlúv a udržiavanie kontaktu so zákazníkom/kontrahentom,<\/li><li>plnenie povinností vyplývajúcich z platných právnych predpisov,<\/li><li>odpovedanie na otázky, riešenie reklamácií a inej popredajnej starostlivosti,<\/li><li>priama marketingová komunikácia (okrem newslettera),<\/li><li>archivačné účely (dôkazné), prípadné zisťovanie, presadzovanie alebo obrana voči nárokom.<\/li><\/ul><h5>UCHOVÁVANIE A MAZANIE ÚDAJOV<\/h5><p>V záujme bezpečnosti poskytnutých údajov sme vypracovali interné postupy a odporúčania, ktoré majú zabrániť sprístupneniu údajov neoprávneným osobám. Používame technologické, zmluvné, administratívne a fyzické opatrenia na ochranu údajov pred neoprávneným prístupom. Kontrolujeme ich dodržiavanie a neustále overujeme súlad s príslušnými právnymi predpismi.<\/p><p>Osobné údaje používateľa uchovávame iba po dobu nevyhnutnú na splnenie účelov, na ktoré boli získané.<\/p><h5>ZDIEĽANIE A ZVEREJNENIE ÚDAJOV<\/h5><p>Osobné údaje používateľov bez ich súhlasu nepredávame ani neposkytujeme tretím stranám. Údaje používateľov sa nepodrobujú profilovaniu.<\/p><p>V závislosti od druhu a rozsahu spolupráce medzi používateľom a <&nbsp;Názov ISP&nbsp;>, v súvislosti s podnikateľskou činnosťou, môžeme poskytnúť údaje používateľa, ak to vyžadujú platné právne predpisy alebo ak je to potrebné na zabezpečenie súladu s právnymi úkonmi, plnenie zmluvných povinností, odpoveď na nároky alebo ochranu práv, majetku či bezpečnosti.<\/p><h5>ZÁSADY SPRACOVANIA VAŠICH ÚDAJOV<\/h5><p>Dbáme na najvyššiu starostlivosť, aby boli záujmy osôb, ktorých údaje spracúvame, chránené, a najmä aby boli údaje:<\/p><ul><li>spracúvané v súlade s právnymi predpismi, spoľahlivo a transparentne pre osobu, ktorej sa údaje týkajú,<\/li><li>zhromažďované na konkrétne, jasné a zákonne odôvodnené účely a nespracúvané ďalej spôsobom nezlučiteľným s týmito účelmi,<\/li><li>primerané, vhodné a obmedzené na nevyhnutný rozsah pre účely, na ktoré sú spracúvané,<\/li><li>správne a podľa potreby aktualizované. Podnikáme kroky, aby boli osobné údaje, ktoré sú nesprávne vzhľadom na účely ich spracovania, neprodleně odstránené alebo opravené,<\/li><li>uchovávané v podobe umožňujúcej identifikáciu osoby, ktorej sa údaje týkajú, po dobu nepresahujúcu nevyhnutnú dobu na dosiahnutie účelov spracovania,<\/li><li>spracúvané spôsobom zabezpečujúcim primeranú ochranu osobných údajov, vrátane ochrany pred neoprávneným alebo nezákonným spracovaním a pred náhodnou stratou či zničením.<\/li><\/ul><p>Vaše osobné údaje spracúvame zvyčajne na základe súhlasu, ktorý môže byť kedykoľvek odvolaný. Ďalším prípadom je situácia, keď je spracovanie vašich údajov nevyhnutné na vykonanie zmluvy medzi vami a nami alebo na vykonanie opatrení na váš vlastný požiadanie pred uzavretím zmluvy. V niektorých situáciách je spracovanie nevyhnutné na splnenie právnej povinnosti, ktorá spočíva na nás ako správcovi údajov. Takéto povinnosti vyplývajú napr. zo zákonov o pracovnoprávnej oblasti či účtovníctve. Spracovanie môže byť taktiež nevyhnutné na účely oprávnených záujmov, napr. presadzovanie nárokov z našej podnikateľskej činnosti.<\/p><h5>VAŠE PRÁVA<\/h5><p>Máte nasledovné práva:<\/p><ul><li>Prístup k obsahu vašich osobných údajov a získanie informácií, napr. o kategóriách údajov, účeloch ich spracovania, ako aj získanie ich kópie,<\/li><li>Oprava nesprávnych a doplnenie chýbajúcich údajov, ako aj právo byť zabudnutý, čo znamená, že máte právo na odstránenie údajov spracovaných neoprávnene (napr. údaje už nie sú nevyhnutné na účely, na ktoré boli zhromaždené),<\/li><li>Odvolanie súhlasu so spracovaním údajov kedykoľvek bez vplyvu na zákonnosť spracovania uskutočneného na základe súhlasu pred jeho odvolaním (ak spracovanie prebieha podľa čl. 6 ods. 1 písm. a alebo čl. 9 ods. 2 písm. a GDPR).<\/li><\/ul><h5>COOKIES<\/h5><p><&nbsp;Názov ISP&nbsp;> používa súbory cookie, aby uľahčil používanie služby. Používaním služby vyjadrujete súhlas s používaním súborov cookie. Ak tieto súbory neblokujete, súhlasíte s ich použitím a uložením vo vašom zariadení.<\/p><h5>ZMENY ZÁSAD OCHRANY OSOBNÝCH ÚDAJOV<\/h5><p><&nbsp;Názov ISP&nbsp;> si vyhradzuje právo meniť zásady ochrany osobných údajov, čo môže byť ovplyvnené vývojom internetových technológií, prípadnými zmenami zákonov v oblasti ochrany osobných údajov a vývojom poskytovanej služby. O všetkých zmenách vás budeme informovať jasne a zrozumiteľne.<\/p><p>Všetky otázky týkajúce sa zásad ochrany osobných údajov zasielajte na e-mail: adres@email.pl<\/p>"
 }

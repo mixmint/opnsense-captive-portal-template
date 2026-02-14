@@ -7,6 +7,75 @@
     "attr_isp_info": {
         "aria-label": "Tlhahisoleseling ka mofani oa Inthanete"
     },
+    "menu": {
+        "title": "Menu ea GuardianSuit",
+        "item1": {
+            "title": "Inthanete",
+            "icon": "I",
+            "href": "https://yourdomain.com/#",
+            "target": "_blank"
+        },
+        "item2": {
+            "title": "Thelevishene",
+            "icon": "T",
+            "href": "https://yourdomain.com/#",
+            "target": "_blank"
+        },
+        "item3": {
+            "title": "Mohala",
+            "icon": "M",
+            "href": "https://yourdomain.com/#",
+            "target": "_blank"
+        },
+        "item4": {
+            "title": "Litšebeletso tse ling",
+            "icon": "L",
+            "href": "https://yourdomain.com/#",
+            "target": "_blank"
+        },
+        "item5": {
+            "title": "Ikopanye",
+            "icon": "K",
+            "href": "https://yourdomain.com/#",
+            "target": "_blank"
+        },
+        "item6": {
+            "title": "Leano la Bohlale ba Boitsebiso",
+            "icon": "&#167;",
+            "href": {"type": "modal", "title": "privacy_title", "subtitle": "privacy_subtitle", "content": "privacy_content", "iconText": "&#167;"},
+            "target": "_self"
+        },
+        "item7": {
+            "title": "Lifayele tsa Cookies",
+            "icon": "&#9865;",
+            "href": {"type": "modal", "title": "cookies_title", "subtitle": "cookies_subtitle", "content": "cookies_content", "iconText": "&#9865;"},
+            "target": "_self"
+        },
+        "item8": {
+            "title": "Litokomane",
+            "icon": "&#9783;",
+            "href": "https://github.com/mixmint/opnsense-captive-portal-template/blob/main/README.md",
+            "target": "_blank"
+        },
+        "item9": {
+            "title": "Ka Lenaneo",
+            "icon": "&#9873;",
+            "href": {"type": "modal", "title": "about_title", "subtitle": "about_subtitle", "content": "about_content", "iconText": "&#9873;"},
+            "target": "_self"
+        },
+        "group1": {
+            "title": "Tlhahiso",
+            "items": ["item1", "item2", "item3", "item4", "item5"]
+        },
+        "group2": {
+            "title": "Lintlha",
+            "items": ["item6", "item7"]
+        },
+        "group3": {
+            "title": "Thuso",
+            "items": ["item8", "item9"]
+        }
+    },
     "footer_isp_info": {},
     "pagetitle": "Sisteme sa ho kena | < Lebitso la ISP >",
     "username": "Lebitso la mosebedisi (Login)",
@@ -77,7 +146,7 @@
     "a11y_helper_prev": "Khutlela",
     "a11y_helper_done": "Qetile",
     "a11y-keys_data-title": "Seketso sa konopo",
-    "a11y-keys_data-content": "<span style=\"font-size: 14px\">Kopano ea likonopo <br \/><strong>⇧ Shift (le letsoho le letšehali) <br \/>+&nbsp;⌥ Alt (le letsoho le letšehali) <br \/>+&nbsp;tlhaku<\/strong><br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;U<\/strong><br \/>tšoara lebokose la Lebitso la mosebedisi<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;P<\/strong><br \/>tšoara lebokose la Phasewete<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;A<\/strong><br \/>hlahloba/ha hlahlobe lebokose la \"Ke amohela molao-motheo\"<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;R<\/strong><br \/>bula fensetere ea molao-motheo<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;I<\/strong><br \/>kena mosebedisi<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;O<\/strong><br \/>tlohela ho kena mosebedisi<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;L<\/strong><br \/>qalo ea phetoho ea puo<\/span>",
+    "a11y-keys_data-content": "<span style=\"font-size: 14px\">Kopano ea likonopo <br \/><strong>⇧ Shift (le letsoho le letšehali) <br \/>+&nbsp;⌥ Alt (le letsoho le letšehali) <br \/>+&nbsp;tlhaku<\/strong><br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;U<\/strong><br \/>tšoara lebokose la Lebitso la mosebedisi<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;P<\/strong><br \/>tšoara lebokose la Phasewete<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;A<\/strong><br \/>hlahloba/ha hlahlobe lebokose la \"Ke amohela molao-motheo\"<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;R<\/strong><br \/>bula fensetere ea molao-motheo<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;I<\/strong><br \/>kena mosebedisi<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;O<\/strong><br \/>tlohela ho kena mosebedisi<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;L<\/strong><br \/>qalo ea phetoho ea puo<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;M<\/strong><br \/>e bula menu ea offcanvas (ha e ntse e tlamiloe)<\/span>",
     "a11y-lang-keys_data-title": "Likhetho tsa konopo tsa lipuo",
     "a11y-lang-keys_data-content": "<span style=\"font-size: 14px\">Tobetsa 'me u tšoare <strong>⇧ Shift (letsoho le letšehali) 'me u tobetse litlhaku tse peli tsa khoutu ea puo<\/strong> (ISO 639-1) ka nako e le 'ngoe kapa ka tatellano.<br \/><br \/>Mehlala:<br \/><strong>⇧ Shift&nbsp;+&nbsp;P&nbsp;+&nbsp;L<\/strong> → fetola ho Sepolishe (pl)<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;E&nbsp;+&nbsp;N<\/strong> → fetola ho Se-english (en)<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;D&nbsp;+&nbsp;E<\/strong> → fetola ho Sejeremane (de)<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;F&nbsp;+&nbsp;R<\/strong> → fetola ho Sefora (fr)<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;E&nbsp;+&nbsp;S<\/strong> → fetola ho Sepanish (es)<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;I&nbsp;+&nbsp;T<\/strong> → fetola ho Seitaliane (it)<br \/>...<\/span>",
     "polyglotLanguageSwitcher_data-title": "Khethang phetolelo ea puo",
@@ -97,5 +166,16 @@
     "signin_anon_data-title": "Ho kena",
     "signin_anon_data-content": "Ka ho tobetsa konopo ea <strong>Logowanie<\/strong> u tla qala khokahano le Inthanete.",
     "logoff_data-title": "Ho tsoa",
-    "logoff_data-content": "Ka ho tobetsa konopo ea <strong>Wylogowanie<\/strong> u tla qeta khokahano le Inthanete."
+    "logoff_data-content": "Ka ho tobetsa konopo ea <strong>Wylogowanie<\/strong> u tla qeta khokahano le Inthanete.",
+    "menuTrigger_data-title": "Menu ea offcanvas",
+    "menuTrigger_data-content": "Ka ho tobetsa <strong>&#9776; offcanvas hamburger<\/strong> kapa ka ho tobetsa ka konopo e le 'ngoe ka nako e le 'ngoe <strong>%s<\/strong> u tla bula menu ea moelelo.",
+    "about_title": "GuardianSuit",
+    "about_subtitle": "Template e tsoetseng pele ea Captive Portal bakeng sa OPNsense",
+    "about_content": "<p><b>GuardianSuit<\/b> ke template e sejoale-joale, e arabelang ebile e na le animatio bakeng sa Captive Portal ea OPNsense. E fana ka basebelisi boiphihlelo bo khahlisang ba ho kena, 'me batsamaisi ba na le taolo e felletseng holim'a ponahalo le ts'ebetso ea leqephe la ho amohela.<\/p><p><b>Mesebetsi e meholo:<\/b><\/p><ul><li>Karabelo le animatio.<\/li><li>Ts'ehetso ea lipuo tse ngata.<\/li><li>Ho iketsetsa habonolo ponahalo le mebala.<\/li><li>UX e utloahalang le ho lumellana le WCAG.<\/li><li>Ho kopanya habonolo le OPNsense.<\/li><\/ul><p><b>Tšebeliso:<\/b><br \/>E loketse marang-rang a lik'hamphani, lihotele, likofi le libaka tse ling tse hlokang leqephe le khahlehang la Captive Portal.<\/p><p><b>Mongoli:<\/b> Mirosław Majka &lt;mix@proask.pl&gt; | &copy; 2025 GuardianSuit<\/p>",
+    "cookies_title": "Lifayele tsa Cookies",
+    "cookies_subtitle": "Kamoo lifayele tsa cookies li sebelisoang kateng.",
+    "cookies_content": "<h5>Cookie ke eng?<\/h5><p>Lifayele tsa cookies (e tsejoang e le \"cookies\") ke lifayele tse nyane tsa mongolo, tse iketsang li entsoe ke sebatli sa inthanete ha u etela maqephe a WWW. Lintlha tse ka hare ho cookie e itseng li ka baloa feela ke leqephe le e entseng. Ka hona, leqephe la inthanete ha le na phihlello ea lifayele tse ling tse khomphuteng ea mosebelisi.<\/p><p>Ka tlhahisoleseding e ka hare ho lifayele tsa cookies, leqephe le \"le tseba\" hore na u le sebelisa joang mme le ka lokisa litaba tse bonts'itsoeng bakeng sa hau kapa le u fa thuso.<\/p><h5>Re sebelisa lifayele tsa cookies bakeng sa eng?<\/h5><p>Re sebelisa lifayele tsa cookies tsa thekniki, tse hlokahalang hore leqephe le sebetse hantle. Re li sebelisa ho ntlafatsa leqephe la rona la inthanete bakeng sa lisebelisoa le sebatli seo hangata se sebedisoang ke baeti – ka hona khomphutha ea hau, tablet kapa mohala li tla le bontša hantle le ka ho hlaka, li hopola hore na u ile ua lumella ho bonts'a litaba tse itseng.<\/p><p>Mosebelisi ha a khelohe ho sebelisa lifayele tsa cookies tsa thekniki.<\/p><h5>Re li sebelisa nako e kae lifayele tsa cookies?<\/h5><p>Re sebelisa lifayele tsa cookies tse maemong a tloaelehileng, tse lulang sesebelisoa sa hau nako e itseng kapa ho fihlela li hlakotsoe ka letsoho.<\/p><\/li><\/ul><h5>Re bokella tlhaiso-leseling efe ka lifayele tsa cookies?<\/h5><p>Ka theknoloji ea cookie, re bokella feela lintlha tsa thekniki tse sa tsejoeng ka hau, tse thusang ho ntlafatsa boiketlo ba ho sebelisa leqephe la rona.<\/p><p>Ha re bokelle lintlha tse ka u khethollang. Tlhahisoleseling e le 'ngoe feela ka mosebelisi, e sa hokahaneng le lintlha tse ling, e sa lumelle hore a khethollwe, ke aterese ea IP eo mosebelisi a hokelang ho eona.<\/p>",
+    "privacy_title": "Leano la Bohlale ba Boitsebiso",
+    "privacy_subtitle": "Ts'ebetso ea Lintlha tsa Botho",
+    "privacy_content": "<p>Re thehile tokomane ena ho u tsebisa ka Leano la Rona la Bohlale ba Boitsebiso. Mona u tla fumana hore re bomang, re bokella joang, re sebelisa joang, re senola le ho arolelana lintlha tsa botho ka har'a <b><&nbsp;Lebitso la ISP&nbsp;><\/b>, e nang le hq ho [ Nazwa ulicy 10, toropo le khoutu ea poso ], ka lebaka le etsang sena le hore batho ba litlhahiso tsa bona ba ka etsa joang hore litokelo tsa bona tsa boinotši li sireletsoe.<\/p><p><&nbsp;Lebitso la ISP&nbsp;> e ikarabella bakeng sa ts'ebetso ea lintlha tsa botho ho latela Leano lena la Bohlale ba Boitsebiso.<\/p><h5>MABAPI LE RONA<\/h5><p>Motsamaisi, ke motho ea sebetsang ka lintlha tsa botho mabapi le tšebeliso ea hau ea ts'ebeletso ena, ke <&nbsp;Lebitso la ISP&nbsp;>, [ Nazwa ulicy 10, toropo le khoutu ea poso ]; NIP 1234567890, Regon 123456789,<\/p><h5>Ithute le RONA<\/h5><ul><li>Ka elektroniki ho aterese ea imeile: adres@email.pl,<\/li><li>Ka mangolo ho aterese: Lebitso la ISP, [ Nazwa ulicy 10, toropo le khoutu ea poso ]<\/li><\/ul><h5>MAELE A KA HAR'A LEANO LENA LA BOHLALE BA BOITSEBISO<\/h5><p>Re etsa bonnete ba hore ts'ebetso ea lintlha tsa hau e latela melao ea European Parliament le Council (EU) No. 2016/679 ea la 27 April 2016 mabapi le tšireletso ea batho ba fapaneng mabapi le ts'ebetso ea lintlha tsa botho le phallo e sa lefelloeng ea data eo, le ho hlakola Directive 95/46/EC (GDPR), molao oa tšireletso ea lintlha tsa botho, le melao e meng. Leano lena la Bohlale ba Boitsebiso le entsoe ho latela tsena. Re hlalosa ka ho hlaka hore na re bokella lintlha tsa botho joang le hore na li sebelisoa bakeng sa eng.<\/p><p>Re hlokomela hore <&nbsp;Lebitso la ISP&nbsp;> e bokella lintlha tsa botho le tlhaiso-leseling ea k'hamphani e fanoeng ke bareki ba eona (ba ka bang teng) le balekane, le lintlha tse fumanoang ha ba sebelisa ts'ebeletso ea ho fumana inthanete.<\/p><h5>HO BOKELLA LINTLHA TSA BOTHO<\/h5><p>Re bokella lintlha tsa botho tse fanoeng ke Basebelisi maemong a latelang:<\/p><ul><li>Ho fana ka litlhahiso, ho hlalosa maemo a tšebelisano le/ kapa ho fana ka tlhaiso-leseling ka lits'ebeletso le mesebetsi e meng ea <&nbsp;Lebitso la ISP&nbsp;>,<\/li><li>Ho etsa le ho phethahatsa likonteraka le ho boloka puisano le moreki/ molekane,<\/li><li>Ho phethahatsa litlhoko tse tsoang molao o sebetsang,<\/li><li>Ho araba lipotso, ho rarolla likhalabo le lits'ebeletso tse ling tsa kamora thekiso,<\/li><li>Papatso e tobileng (e seng newsletter),<\/li><li>Ka merero ea polokelo (bopaki), ho hlalosa, ho hlahisa kapa ho itšireletsa litlhoko.<\/li><\/ul><h5>HO BOLOKA LE HO TLOSA LINTLHA<\/h5><p>Ho sireletsa lintlha tse fanoeng, re thehile lits'ebetso tsa kahare le litaelo tse thibelang ho fanoa ka lintlha ho batho ba sa lumelloang. Re sebelisa mekhoa ea thekenoloji, ea molao, ea tsamaiso le ea 'mele ho sireletsa lintlha ho phihlello e sa lumelloang. Re lekola ts'ebetso ea tsona le ho netefatsa ho lumellana ha tsona le melao e loketseng.<\/p><p>Re boloka lintlha tsa botho tsa Basebelisi feela ka nako e hlokahalang ho finyella merero eo li bokelletsoeng ka eona.<\/p><h5>HO AROLELANA LE HO SENOLLA LINTLHA<\/h5><p>Ha re rekise kapa ho arolelana lintlha tsa Basebelisi ho batho ba boraro ntle le tumello ea bona. Lintlha tsa Basebelisi ha li khethollehe ka mokhoa oa ho itlhahloba.<\/p><p>Ho ipapisitse le mofuta le tekanyo ea tšebelisano pakeng tsa Mosebelisi le <&nbsp;Lebitso la ISP&nbsp;>, ka lebaka la mesebetsi e etsoang, re ka fetisa lintlha tsa Mosebelisi haeba melao e hlokang, kapa haeba ho hlokahala ho boloka ho lumellana le mesebetsi ea molao kapa ho phethahatsa litumello tsa konteraka, ho araba litlhoko, kapa ho sireletsa litokelo, thepa kapa polokeho.<\/p><h5>MAELE AO RE SEBELISANG LINTLHA TSA HAO KA OONA<\/h5><p>Re ela hloko haholo ho sireletsa thahasello ea batho bao lintlha tsa bona li sebetsitsoeng ho bona, haholo ho etsa bonnete ba hore lintlha li:<\/p><ul><li>li sebetsisoa ho latela melao, ka botshepehi le ka mokhoa o hlakileng ho motho ea amehang,<\/li><li>li bokelloa ka merero e hlakileng, e khethehileng le e molao, 'me li se ke tsa sebelisoa ka tsela e sa lumellaneng le merero ena,<\/li><li>li lekane, li loketse ebile li lekanyelitsoe ho seo se hlokahalang feela ho finyella merero eo li sebetsitsoeng ka eona,<\/li><li>li nepile 'me li ntlafatsoe ha ho hlokahala; re nka mehato ho etsa bonnete ba hore lintlha tse sa nepahalang li hlakoloa kapa li lokisoa hang-hang,<\/li><li>li bolokiloe ka mokhoa o lumellang ho khetholla motho ea amehang ka nako e lekanyelitsoeng feela,<\/li><li>li sebetsisoa ka mokhoa o sireletsang lintlha tsa botho ka nepo, ho kenyelletsa ts'ireletso khahlanong le ts'ebetso e sa lumelloang kapa e seng ea molao le tahlehelo kapa tšenyo ka phoso.<\/li><\/ul><p>Re tloaetse ho sebetsa lintlha tsa hau ka tumello, e ka hlakoloa neng kapa neng. Maemong a mang, ts'ebetso ea lintlha tsa hau e hlokahala ho phethahatsa konteraka e entsoeng pakeng tsa hau le rona kapa ho nka mehato ka kopo ea hau pele ho konteraka. Maemong a mang, ts'ebetso e hlokahala ho finyella boikarabelo ba molao bo ntseng bo re tobane le bona e le motsamaisi oa lintlha tsa botho. Boikarabelo bona bo hlaha ka melao ea mosebetsi kapa molao oa litlaleho. Ts'ebetso e ka bo e hlokahala hape bakeng sa merero ea thahasello ea molao ea rona, joalo ka ho batla litlhoko tse tsoang mesebetsing ea rona ea khoebo.<\/p><h5>DITOKELO TSA HAO<\/h5><p>U na le ditokelo tse latelang:<\/p><ul><li>Ho fumana litaba tsa lintlha tsa hau tsa botho le ho fumana tlhahisoleseling ka mefuta ea data, merero ea eona, le ho fumana likopi tsa eona,<\/li><li>Ho lokisa lintlha tse fosahetseng, ho tlatsa tse hlokang, le ho hlakola, e leng hore u na le tokelo ea ho tlosa lintlha tse sebetsitsoeng ka tsela e sa hlokahaleng kapa e seng molao (mohlala, lintlha ha li sa hlokahala bakeng sa merero eo li bokelletsoeng ka eona),<\/li><li>Ho hlakola tumello ea ts'ebetso ea lintlha neng kapa neng ntle le ho ama molao oa ts'ebetso eo e entsoeng ka tumello pele ho ho hlakoloa (haeba ts'ebetso e thehiloe ho Article 6(1)(a) kapa Article 9(2)(a) GDPR).<\/li><\/ul><h5>COOKIES<\/h5><p><&nbsp;Lebitso la ISP&nbsp;>, e sebelisa lifayele tsa cookie ho nolofalletsa ts'ebeliso ea ts'ebeletso. Ka ho sebelisa ts'ebeletso, u lumela tšebeliso ea lifayele tsa rona tsa cookie. Haeba u sa li thibele, u lumela tšebeliso ea tsona le ho bolokoa sesebelisoa sa hau.<\/p><h5>PHETOHO EA LEANO LA BOHLALENG BA BOTHO<\/h5><p><&nbsp;Lebitso la ISP&nbsp;> e boloka tokelo ea ho fetola leano la ts'ireletso ea lintlha tsa botho, ho kenyeletsa nts'etsopele ea theknoloji ea inthanete, liphetoho tse ka bang teng tsa molao mabapi le ts'ireletso ea lintlha tsa botho le nts'etsopele ea ts'ebeletso e fanoang ke motsamaisi. Re tla tsebisa ka ho hlaka le ka tsela e utloahalang ka liphetoho tsohle.<\/p><p>Lintlha tsohle mabapi le leano la ts'ireletso ea lintlha tsa botho, ka kopo li romelle ho aterese ea imeile: adres@email.pl<\/p>"
 }

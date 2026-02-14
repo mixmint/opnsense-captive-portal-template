@@ -145,7 +145,6 @@
             left: 20px;
         }
     }
-
     .cpModal {
         & ul {
             padding-left: unset;
@@ -157,6 +156,25 @@
                     &::before {
                         margin-right: -24px;
                         margin-left: 15px;
+                    }
+                }
+            }
+        }
+    }
+    .menu-wrapper {
+        #menu {
+            .nav {
+                padding-right: unset;
+                .nav-item {
+                    .nav-link {
+                        .link-icon {
+                            margin-right: unset;
+                            margin-left: 5px;
+                            &.char-icon {
+                                margin-right: unset;
+                                margin-left: 8px;
+                            }
+                        }
                     }
                 }
             }

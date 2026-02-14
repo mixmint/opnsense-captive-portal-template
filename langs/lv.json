@@ -7,6 +7,75 @@
     "attr_isp_info": {
         "aria-label": "Informācija par interneta pakalpojumu sniedzēju"
     },
+    "menu": {
+        "title": "GuardianSuit Izvēlne",
+        "item1": {
+            "title": "Internets",
+            "icon": "I",
+            "href": "https://yourdomain.com/#",
+            "target": "_blank"
+        },
+        "item2": {
+            "title": "Televīzija",
+            "icon": "V",
+            "href": "https://yourdomain.com/#",
+            "target": "_blank"
+        },
+        "item3": {
+            "title": "Telefons",
+            "icon": "T",
+            "href": "https://yourdomain.com/#",
+            "target": "_blank"
+        },
+        "item4": {
+            "title": "Papildu pakalpojumi",
+            "icon": "P",
+            "href": "https://yourdomain.com/#",
+            "target": "_blank"
+        },
+        "item5": {
+            "title": "Kontakti",
+            "icon": "K",
+            "href": "https://yourdomain.com/#",
+            "target": "_blank"
+        },
+        "item6": {
+            "title": "Privātuma politika",
+            "icon": "&#167;",
+            "href": {"type": "modal", "title": "privacy_title", "subtitle": "privacy_subtitle", "content": "privacy_content", "iconText": "&#167;"},
+            "target": "_self"
+        },
+        "item7": {
+            "title": "Sīkfaili",
+            "icon": "&#9865;",
+            "href": {"type": "modal", "title": "cookies_title", "subtitle": "cookies_subtitle", "content": "cookies_content", "iconText": "&#9865;"},
+            "target": "_self"
+        },
+        "item8": {
+            "title": "Dokumentācija",
+            "icon": "&#9783;",
+            "href": "https://github.com/mixmint/opnsense-captive-portal-template/blob/main/README.md",
+            "target": "_blank"
+        },
+        "item9": {
+            "title": "Par programmu",
+            "icon": "&#9873;",
+            "href": {"type": "modal", "title": "about_title", "subtitle": "about_subtitle", "content": "about_content", "iconText": "&#9873;"},
+            "target": "_self"
+        },
+        "group1": {
+            "title": "Piedāvājums",
+            "items": ["item1", "item2", "item3", "item4", "item5"]
+        },
+        "group2": {
+            "title": "Informācija",
+            "items": ["item6", "item7"]
+        },
+        "group3": {
+            "title": "Palīdzība",
+            "items": ["item8", "item9"]
+        }
+    },
     "footer_isp_info": {},
     "pagetitle": "Lietotāja pierakstīšanās sistēma | <ISP nosaukums>",
     "username": "Lietotājvārds (Login)",
@@ -77,7 +146,7 @@
     "a11y_helper_prev": "Atpakaļ",
     "a11y_helper_done": "Gatavs",
     "a11y-keys_data-title": "Taustiņu saīsinājumi",
-    "a11y-keys_data-content": "<span style=\"font-size: 14px\">Taustiņu kombinācija <br \/><strong>⇧ Shift (kreisais) <br \/>+&nbsp;⌥ Alt (kreisais) <br \/>+&nbsp;burts<\/strong><br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;U<\/strong><br \/>fokuss uz Lietotājvārdu<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;P<\/strong><br \/>fokuss uz Paroli<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;A<\/strong><br \/>atzīmē/novāc atzīmi \"Piekrītu noteikumiem\"<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;R<\/strong><br \/>atver noteikumu modālo logu<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;I<\/strong><br \/>pieteikšanās lietotājam<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;O<\/strong><br \/>izrakstīšanās no lietotāja<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;L<\/strong><br \/>aktivizē valodas pārslēgšanas rīku<\/span>",
+    "a11y-keys_data-content": "<span style=\"font-size: 14px\">Taustiņu kombinācija <br \/><strong>⇧ Shift (kreisais) <br \/>+&nbsp;⌥ Alt (kreisais) <br \/>+&nbsp;burts<\/strong><br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;U<\/strong><br \/>fokuss uz Lietotājvārdu<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;P<\/strong><br \/>fokuss uz Paroli<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;A<\/strong><br \/>atzīmē/novāc atzīmi \"Piekrītu noteikumiem\"<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;R<\/strong><br \/>atver noteikumu modālo logu<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;I<\/strong><br \/>pieteikšanās lietotājam<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;O<\/strong><br \/>izrakstīšanās no lietotāja<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;L<\/strong><br \/>aktivizē valodas pārslēgšanas rīku<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;M<\/strong><br \/>atver offcanvas izvēlni (ja tā ir ieslēgta)<\/span>",
     "a11y-lang-keys_data-title": "Valodu taustiņu kombinācijas",
     "a11y-lang-keys_data-content": "<span style=\"font-size: 14px\">Turiet <strong>⇧ Shift (kreisais) un nospiediet divas valodas koda burtus<\/strong> (ISO 639-1) vienlaikus vai pa vienam.<br \/><br \/>Piemēri:<br \/><strong>⇧ Shift&nbsp;+&nbsp;P&nbsp;+&nbsp;L<\/strong> → pārslēdz uz poļu valodu (pl)<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;E&nbsp;+&nbsp;N<\/strong> → pārslēdz uz angļu valodu (en)<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;D&nbsp;+&nbsp;E<\/strong> → pārslēdz uz vācu valodu (de)<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;F&nbsp;+&nbsp;R<\/strong> → pārslēdz uz franču valodu (fr)<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;E&nbsp;+&nbsp;S<\/strong> → pārslēdz uz spāņu valodu (es)<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;I&nbsp;+&nbsp;T<\/strong> → pārslēdz uz itāļu valodu (it)<br \/>...<\/span>",
     "polyglotLanguageSwitcher_data-title": "Valodas izvēle",
@@ -97,5 +166,16 @@
     "signin_anon_data-title": "Pieslēgties",
     "signin_anon_data-content": "Noklikšķinot uz pogas <strong>Pieslēgties<\/strong>, jūs izveidosiet interneta savienojumu.",
     "logoff_data-title": "Atteikties",
-    "logoff_data-content": "Noklikšķinot uz pogas <strong>Atteikties<\/strong>, jūs pārtrauksiet interneta savienojumu."
+    "logoff_data-content": "Noklikšķinot uz pogas <strong>Atteikties<\/strong>, jūs pārtrauksiet interneta savienojumu.",
+    "menuTrigger_data-title": "Offcanvas izvēlne",
+    "menuTrigger_data-content": "Noklikšķinot uz <strong>&#9776; offcanvas hamburger<\/strong> vai vienlaikus uz tastatūras nospiežot <strong>%s<\/strong>, tiks atvērta konteksta izvēlne.",
+    "about_title": "GuardianSuit",
+    "about_subtitle": "Uzlabota Captive Portal veidne OPNsense",
+    "about_content": "<p><b>GuardianSuit<\/b> ir moderna, responsīva un animēta Captive Portal veidne OPNsense. Tā nodrošina lietotājiem pievilcīgu pieteikšanās pieredzi, bet administratoriem – pilnīgu kontroli pār sākumlapas izskatu un funkcionalitāti.<\/p><p><b>Galvenās funkcijas:<\/b><\/p><ul><li>Responsīvs dizains un animācijas.<\/li><li>Daudzvalodība.<\/li><li>Vienkārša izskata un krāsu pielāgošana.<\/li><li>Intuitīvs UX un atbilstība WCAG prasībām.<\/li><li>Vienkārša integrācija ar OPNsense.<\/li><\/ul><p><b>Pielietojums:<\/b><br \/>Ideāli piemērots uzņēmumu tīkliem, viesnīcām, kafejnīcām un citām vietām, kur nepieciešama vizuāli pievilcīga Captive Portal sākumlapa.<\/p><p><b>Autors:<\/b> Mirosław Majka &lt;mix@proask.pl&gt; | &copy; 2025 GuardianSuit<\/p>",
+    "cookies_title": "Sīkfaili",
+    "cookies_subtitle": "Kā tiek izmantoti sīkfaili.",
+    "cookies_content": "<h5>Kas ir sīkfails?<\/h5><p>Sīkfaili (angļu val. cookies) ir mazi teksta faili, ko pārlūkprogramma automātiski izveido, apmeklējot tīmekļa vietnes. Informāciju, kas atrodas konkrētajā sīkfailā, var nolasīt tikai vietne, no kuras tas nāk. Tādējādi tīmekļa vietne nevar piekļūt citiem failiem, kas atrodas lietotāja datorā.<\/p><p>Pateicoties informācijai sīkfailos, vietne „zina”, kā jūs to izmantojat, un var atbilstoši pielāgot jums rādīto saturu vai piedāvāt palīdzību.<\/p><h5>Kāpēc mēs izmantojam sīkfailus?<\/h5><p>Mēs izmantojam tehniskos sīkfailus, kas ir nepieciešami vietnes pareizai darbībai. Tos izmantojam, lai optimizētu vietni atbilstoši ierīcēm un pārlūkprogrammām, ko visbiežāk izmanto apmeklētāji – tādējādi jūsu dators, planšetdators vai telefons to parādīs pareizi un skaidri, saglabājot informāciju par to, vai esat piekritis konkrētā satura rādīšanai vietnē.<\/p><p>Lietotājs nevar atteikties no tehniskajiem sīkfailiem.<\/p><h5>Cik ilgi izmantojam sīkfailus?<\/h5><p>Mēs izmantojam tā sauktos pastāvīgos sīkfailus, kas paliek jūsu ierīcē noteiktu laiku vai līdz to manuālai dzēšanai.<\/li><\/ul><h5>Kādus datus mēs vācām, izmantojot sīkfailus?<\/h5><p>Izmantojot sīkfailu tehnoloģiju, mēs vācam tikai anonīmus tehniskos datus, lai uzlabotu vietnes lietošanas ērtumu.<\/p><p>Mēs nevācam nekādu informāciju, kas ļautu jūs identificēt. Vienīgā informācija par lietotāju, kas pati par sevi, nesasaucoties ar citiem datiem, neļauj to identificēt, ir IP adrese, no kuras lietotājs pieslēdzas.<\/p>",
+    "privacy_title": "Privātuma politika",
+    "privacy_subtitle": "Personas datu apstrāde",
+    "privacy_content": "<p>Mēs izveidojam šo dokumentu, lai informētu jūs par mūsu Privātuma politiku. Šeit uzzināsiet, kas mēs esam, kā mēs vācam, izmantojam, atklājam un kopīgojam personas datus <b><&nbsp;ISP nosaukums&nbsp;><\/b>, ar juridisko adresi [ Ielas nosaukums 10, pilsēta un pasta indekss ], kādam nolūkam to darām un kā personas, kuru dati tiek apstrādāti, var īstenot savas tiesības uz privātumu.<\/p><p><&nbsp;ISP nosaukums&nbsp;> ir atbildīgs par personas datu apstrādi saskaņā ar šo Privātuma politiku.<\/p><h5>PAR MUMS<\/h5><p>Datu pārzinis, proti, persona, kas apstrādā personas datus saistībā ar jūsu pakalpojuma lietošanu, ir <&nbsp;ISP nosaukums&nbsp;>, [ Ielas nosaukums 10, pilsēta un pasta indekss ]; NIP 1234567890, Reģ. 123456789,<\/p><h5>SAZINĀŠANĀS AR MUMS<\/h5><ul><li>elektroniski uz e-pasta adresi: adres@email.pl,<\/li><li>rakstiski uz adresi: ISP nosaukums, [ Ielas nosaukums 10, pilsēta un pasta indekss ]<\/li><\/ul><h5>NOTEIKUMI, KAS IETVERTI ŠAJĀ PRIVĀTUMA POLITIKĀ<\/h5><p>Mēs rūpējamies, lai jūsu datu apstrāde notiktu saskaņā ar Eiropas Parlamenta un Padomes Regulu (ES) Nr. 2016/679 (27. aprīlis 2016) par fizisku personu datu aizsardzību saistībā ar personas datu apstrādi un šādu datu brīvu apriti un Direktīvas 95/46/EK atcelšanu (turpmāk: “GDPR”), personas datu aizsardzības likumu un citiem speciāliem noteikumiem. Šī Privātuma politika ir sagatavota saskaņā ar tiem. Skaidri informējam, kā mēs vācam personas datus un kādam nolūkam tie tiek izmantoti.<\/p><p>Jāņem vērā, ka <&nbsp;ISP nosaukums&nbsp;> vāc personas datus un uzņēmuma informāciju, ko sniedz savi (potenciālie) klienti un partneri, kā arī datus, kas iegūti, lietojot interneta piekļuves pakalpojumu.<\/p><h5>PERSONAS DATU VĀCĪŠANA<\/h5><p>Mēs vācam personas datus, ko Lietotāji sniedz šādos gadījumos:<\/p><ul><li>piedāvājumu iesniegšana, sadarbības nosacījumu noteikšana un/vai informācijas sniegšana par pakalpojumiem un citiem <&nbsp;ISP nosaukums&nbsp;> pasākumiem,<\/li><li>līgumu slēgšana un izpilde, kā arī kontaktu uzturēšana ar klientu/partneri,<\/li><li>likumdošanas prasību izpilde,<\/li><li>atbildes uz jautājumiem, sūdzību izskatīšana un pēc-pārdošanas apkalpošana,<\/li><li>tiešais mārketings (izņemot jaunumu vēstules),<\/li><li>arhivēšanas (pierādījumu) nolūkos, iespējamu prasību noteikšanai, izmeklēšanai vai aizstāvībai pret tām.<\/li><\/ul><h5>Datu glabāšana un dzēšana<\/h5><p>Drošības nolūkos mēs esam izstrādājuši iekšējās procedūras un rekomendācijas, lai novērstu datu pieejamību neatļautām personām. Mēs izmantojam tehnoloģiskos, līgumiskos, administratīvos un fiziskos pasākumus, lai aizsargātu datus no neatļautas piekļuves. Mēs kontrolējam šo pasākumu īstenošanu un regulāri pārbaudām atbilstību attiecīgajiem likumiem.<\/p><p>Mēs glabājam Lietotāja personas datus tikai tik ilgi, cik nepieciešams šo datu mērķu sasniegšanai.<\/p><h5>Datu koplietošana un atklāšana<\/h5><p>Mēs nepārdodam un nekopīgojam Lietotāju personas datus trešajām personām bez viņu piekrišanas. Lietotāju dati netiek profilēti.<\/p><p>Atkarībā no sadarbības veida un apjoma starp Lietotāju un <&nbsp;ISP nosaukums&nbsp;>, saistībā ar saimniecisko darbību, mēs varam nodot Lietotāja datus, ja to prasa spēkā esošie likumi vai ja tas nepieciešams likumīgu darbību veikšanai, līguma saistību izpildei, prasību risināšanai vai tiesību, īpašuma un drošības aizsardzībai.<\/p><h5>PRINCIPI, KURIEM MĒS SEKOJAM, APSTRĀDĀJOT JŪSU DATUS<\/h5><p>Mēs darām visu iespējamo, lai aizsargātu personu, kuru dati tiek apstrādāti, intereses, īpaši nodrošinot, ka dati tiek:<\/p><ul><li>apstrādāti likumīgi, godīgi un caurspīdīgi attiecīgajai personai,<\/li><li>vācīti konkrētiem, skaidriem un likumīgi pamatotiem nolūkiem un netiek apstrādāti tālāk nesaskaņoti ar šiem nolūkiem,<\/li><li>atbilstoši, piemēroti un ierobežoti līdz nepieciešamajam apjomam mērķu sasniegšanai,<\/li><li>pareizi un, ja nepieciešams, atjaunināti. Mēs nodrošinām, lai nepilnīgi vai nepareizi dati tiktu nekavējoties laboti vai dzēsti,<\/li><li>glabāti formātā, kas ļauj identificēt personas tikai tik ilgi, cik nepieciešams šo datu apstrādes mērķiem,<\/li><li>apstrādāti tā, lai nodrošinātu datu drošību, ieskaitot aizsardzību pret neatļautu vai nelikumīgu apstrādi, kā arī nejaušu zudumu vai iznīcināšanu.<\/li><\/ul><p>Mēs parasti apstrādājam jūsu personas datus uz piekrišanas pamata, ko var atsaukt jebkurā laikā. Citi gadījumi ir, ja datu apstrāde ir nepieciešama līguma izpildei starp jums un mums vai darbību veikšanai jūsu pieprasījuma gadījumā pirms līguma noslēgšanas. Dažos gadījumos datu apstrāde ir nepieciešama, lai izpildītu mums uzliktos likumīgos pienākumus. Šādi pienākumi izriet, piemēram, no darba likuma vai grāmatvedības likuma. Datu apstrāde var būt nepieciešama arī mūsu leģitīmo interešu nodrošināšanai, piemēram, prasību izskatīšanai saistībā ar mūsu saimniecisko darbību.<\/p><h5>JŪSU TIESĪBAS<\/h5><p>Jums ir šādas tiesības:<\/p><ul><li>Piekļūt saviem personas datiem un saņemt informāciju, piemēram, par datu kategorijām, apstrādes mērķiem, kā arī saņemt datu kopijas,<\/li><li>Labot nepareizus vai aizpildīt trūkstošos datus un tiesības tikt aizmirstam, tas nozīmē, ka jums ir tiesības dzēst nepamatoti apstrādātus datus (piemēram, ja dati vairs nav nepieciešami mērķim, kuram tie tika vākti),<\/li><li>Atsaukt piekrišanu datu apstrādei jebkurā laikā, neietekmējot likumīgu apstrādi, kas veikta uz piekrišanas pamata pirms tās atsaukšanas (ja apstrāde notiek saskaņā ar GDPR 6. panta 1. daļas a) punktu vai 9. panta 2. daļas a) punktu).<\/li><\/ul><h5>SĪKFAILI<\/h5><p><&nbsp;ISP nosaukums&nbsp;> izmanto sīkfailus, lai atvieglotu pakalpojuma lietošanu. Lietojot pakalpojumu, jūs piekrītat mūsu sīkfailu izmantošanai. Ja jūs tos nebloķējat, jūs piekrītat to izmantošanai un saglabāšanai ierīces atmiņā.<\/p><h5>PRIVĀTUMA POLITIKAS IZMAIŅAS<\/h5><p><&nbsp;ISP nosaukums&nbsp;> patur tiesības veikt izmaiņas privātuma politikā, ko var ietekmēt interneta tehnoloģiju attīstība, iespējamās izmaiņas datu aizsardzības tiesību aktos un pakalpojuma attīstība, ko nodrošina pārzinis. Par visām izmaiņām mēs informēsim skaidri un pārskatāmi.<\/p><p>Visus jautājumus par privātuma politiku lūdzam sūtīt uz e-pasta adresi: adres@email.pl<\/p>"
 }

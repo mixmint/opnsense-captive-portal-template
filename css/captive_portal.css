@@ -566,6 +566,11 @@ html {
                 padding: 75px;
             }
         }
+        &:has(.menu-wrapper) {
+            .left-side {
+                padding-top: calc(75px + var(--offcanvas_margin, 15px));
+            }
+        }
     }
 }
 

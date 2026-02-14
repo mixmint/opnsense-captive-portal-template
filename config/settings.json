@@ -97,6 +97,8 @@
     },
     "layout": {
         "enable_rules": true,
+        "enable_menu": true,
+        "menu_position": "right",
         "redirect_url": "",
         "lang_layout": "flags-select",
         "lang_flags_dir": "4x3",
@@ -171,7 +173,20 @@
         "flags_outline_active_color": "#41aab9",
         "helper_bg_color": "#00b5cb",
         "helper_color": "#ffffff",
-        "helper_size": "78px"
+        "helper_size": "78px",
+        "offcanvas_margin": "15px",
+        "offcanvas_trigger_border_radius": "8px 8px 8px 8px",
+        "offcanvas_trigger_bg_color": "#00b5cb",
+        "offcanvas_trigger_bg_hover_color": "#f12184",
+        "offcanvas_trigger_color": "#ffffff",
+        "offcanvas_trigger_hover_color": "#ffffff",
+        "offcanvas_bg_color": "#ffffff",
+        "offcanvas_border_radius": "8px 8px 8px 8px",
+        "offcanvas_text_color": "#373a3c",
+        "offcanvas_link_bg_color": "transparent",
+        "offcanvas_link_bg_hover_color": "#00b5cb1a",
+        "offcanvas_link_color": "#348893",
+        "offcanvas_link_hover_color": "#f12184"
     },
     "modal": {
         "auth_failed_header_color": "#f12184",
@@ -180,7 +195,8 @@
         "bg_color": "#ffffff",
         "icon_color": "rgba(255, 255, 255, .5)",
         "overlay_color": "rgba(0,0,0,.3)",
-        "timeout": 5000
+        "timeout": 5000,
+        "zindex": 1050
     },
     "animate": {
         "effect": "globe",

@@ -7,6 +7,75 @@
     "attr_isp_info": {
         "aria-label": "Gwybodaeth am ddarparwr rhyngrwyd"
     },
+    "menu": {
+        "title": "Dewislen GuardianSuit",
+        "item1": {
+            "title": "Rhyngrwyd",
+            "icon": "R",
+            "href": "https://yourdomain.com/#",
+            "target": "_blank"
+        },
+        "item2": {
+            "title": "Teledu",
+            "icon": "T",
+            "href": "https://yourdomain.com/#",
+            "target": "_blank"
+        },
+        "item3": {
+            "title": "Ffôn",
+            "icon": "F",
+            "href": "https://yourdomain.com/#",
+            "target": "_blank"
+        },
+        "item4": {
+            "title": "Gwasanaethau ychwanegol",
+            "icon": "G",
+            "href": "https://yourdomain.com/#",
+            "target": "_blank"
+        },
+        "item5": {
+            "title": "Cyswllt",
+            "icon": "C",
+            "href": "https://yourdomain.com/#",
+            "target": "_blank"
+        },
+        "item6": {
+            "title": "Polisi preifatrwydd",
+            "icon": "&#167;",
+            "href": { "type": "modal", "title": "privacy_title", "subtitle": "privacy_subtitle", "content": "privacy_content", "iconText": "&#167;" },
+            "target": "_self"
+        },
+        "item7": {
+            "title": "Briwsion",
+            "icon": "&#9865;",
+            "href": { "type": "modal", "title": "cookies_title", "subtitle": "cookies_subtitle", "content": "cookies_content", "iconText": "&#9865;" },
+            "target": "_self"
+        },
+        "item8": {
+            "title": "Dogfennaeth",
+            "icon": "&#9783;",
+            "href": "https://github.com/mixmint/opnsense-captive-portal-template/blob/main/README.md",
+            "target": "_blank"
+        },
+        "item9": {
+            "title": "Ynghylch y rhaglen",
+            "icon": "&#9873;",
+            "href": { "type": "modal", "title": "about_title", "subtitle": "about_subtitle", "content": "about_content", "iconText": "&#9873;" },
+            "target": "_self"
+        },
+        "group1": {
+            "title": "Cynnig",
+            "items": ["item1", "item2", "item3", "item4", "item5"]
+        },
+        "group2": {
+            "title": "Gwybodaeth",
+            "items": ["item6", "item7"]
+        },
+        "group3": {
+            "title": "Cymorth",
+            "items": ["item8", "item9"]
+        }
+    },
     "footer_isp_info": {},
     "pagetitle": "System mewngofnodi defnyddwyr | < Enw ISP >",
     "username": "Enw defnyddiwr (Mewngofnodi)",
@@ -77,7 +146,7 @@
     "a11y_helper_prev": "Yn ôl",
     "a11y_helper_done": "Gorffen",
     "a11y-keys_data-title": "Byrddau bysell",
-    "a11y-keys_data-content": "<span style=\"font-size: 14px\">Cymysgedd o fysellau <br \/><strong>⇧ Shift (chwith) <br \/>+&nbsp;⌥ Alt (chwith) <br \/>+&nbsp;llythyren<\/strong><br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;U<\/strong><br \/>ffocws ar y maes Enw Defnyddiwr<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;P<\/strong><br \/>ffocws ar y maes Cyfrinair<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;A<\/strong><br \/>marciau/dadmarciau'r blwch dewis \"Rwy’n derbyn y rheolau\"<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;R<\/strong><br \/>agor ffenestr modal y rheolau<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;I<\/strong><br \/>mewngofnodi defnyddiwr<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;O<\/strong><br \/>allgofnodi defnyddiwr<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;L<\/strong><br \/>cychwyn newidydd iaith<\/span>",
+    "a11y-keys_data-content": "<span style=\"font-size: 14px\">Cymysgedd o fysellau <br \/><strong>⇧ Shift (chwith) <br \/>+&nbsp;⌥ Alt (chwith) <br \/>+&nbsp;llythyren<\/strong><br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;U<\/strong><br \/>ffocws ar y maes Enw Defnyddiwr<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;P<\/strong><br \/>ffocws ar y maes Cyfrinair<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;A<\/strong><br \/>marciau/dadmarciau'r blwch dewis \"Rwy’n derbyn y rheolau\"<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;R<\/strong><br \/>agor ffenestr modal y rheolau<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;I<\/strong><br \/>mewngofnodi defnyddiwr<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;O<\/strong><br \/>allgofnodi defnyddiwr<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;L<\/strong><br \/>cychwyn newidydd iaith<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;M<\/strong><br \/>agorwyd y ddewislen offcanvas (os yw wedi'i alluogi)<\/span>",
     "a11y-lang-keys_data-title": "Byrddau bysell iaith",
     "a11y-lang-keys_data-content": "<span style=\"font-size: 14px\">Dal <strong>⇧ Shift (chwith) a gwasgwch ddwy lythyren cod iaith<\/strong> (ISO 639-1) ar yr un pryd neu un ar ôl y llall.<br \/><br \/>Enghreifftiau:<br \/><strong>⇧ Shift&nbsp;+&nbsp;P&nbsp;+&nbsp;L<\/strong> → newid i ieithoedd Pwyleg (pl)<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;E&nbsp;+&nbsp;N<\/strong> → newid i Saesneg (en)<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;D&nbsp;+&nbsp;E<\/strong> → newid i Almaeneg (de)<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;F&nbsp;+&nbsp;R<\/strong> → newid i Ffrangeg (fr)<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;E&nbsp;+&nbsp;S<\/strong> → newid i Sbaeneg (es)<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;I&nbsp;+&nbsp;T<\/strong> → newid i Eidaleg (it)<br \/>...<\/span>",
     "polyglotLanguageSwitcher_data-title": "Dewiswr iaith",
@@ -97,5 +166,16 @@
     "signin_anon_data-title": "Mewngofnodi",
     "signin_anon_data-content": "Trwy glicio ar y botwm <strong>Mewngofnodi<\/strong> byddwch yn dechrau cysylltu â'r Rhyngrwyd.",
     "logoff_data-title": "Allgofnodi",
-    "logoff_data-content": "Trwy glicio ar y botwm <strong>Allgofnodi<\/strong> byddwch yn dod â'ch cysylltiad Rhyngrwyd i ben."
+    "logoff_data-content": "Trwy glicio ar y botwm <strong>Allgofnodi<\/strong> byddwch yn dod â'ch cysylltiad Rhyngrwyd i ben.",
+    "menuTrigger_data-title": "Dewislen offcanvas",
+    "menuTrigger_data-content": "Trwy glicio ar <strong>&#9776; hamburger offcanvas<\/strong> neu wasgu ar y bysellfwrdd ar yr un pryd <strong>%s<\/strong> byddwch yn agor y ddewislen cyd-destunol.",
+    "about_title": "GuardianSuit",
+    "about_subtitle": "Templed uwch Captive Portal ar gyfer OPNsense",
+    "about_content": "<p><b>GuardianSuit<\/b> yw templed modern, ymatebol ac animeiddiedig ar gyfer Captive Portal OPNsense. Mae'n darparu profiad meithrinloga deniadol i ddefnyddwyr ac yn rhoi rheolaeth lawn i'r gweinyddwr dros ymddangosiad a swyddogaethau'r dudalen groeso.<\/p><p><b>Prif nodweddion:<\/b><\/p><ul><li>Ymatebolrwydd ac animeiddiadau.<\/li><li>Amlieithrwydd.<\/li><li>Personoli hawdd o'r ymddangosiad a'r lliwiau.<\/li><li>UX intuitif a chydymffurfiaeth â WCAG.<\/li><li>Integreiddio syml gyda OPNsense.<\/li><\/ul><p><b>Defnydd:<\/b><br \/>Yn berffaith ar gyfer rhwydweithiau busnes, gwestai, caffis a lleoedd eraill sy'n gofyn am dudalen groeso Captive Portal sy'n deniadol yn weledol.<\/p><p><b>Awdur:<\/b> Mirosław Majka &lt;mix@proask.pl&gt; | &copy; 2025 GuardianSuit<\/p>",
+    "cookies_title": "Ffeiliau Cookie",
+    "cookies_subtitle": "Sut rydym yn defnyddio ffeiliau cookie.",
+    "cookies_content": "<h5>Beth yw ffeil cookie?<\/h5><p>Mae ffeiliau cookie (neu 'cookies') yn ffeiliau testun bach, a grëir yn awtomatig gan y porwr wrth ymweld â gwefannau. Gellir darllen gwybodaeth sydd wedi'i chynnwys mewn ffeil cookie gan y wefan sydd wedi'i greu yn unig. Felly, ni all gwefan gael mynediad at ffeiliau eraill ar gyfrifiadur y defnyddiwr.<\/p><p>Diolch i'r wybodaeth sydd wedi'i chynnwys mewn ffeiliau cookie, mae'r wefan yn gwybod sut rydych chi'n ei defnyddio ac yn gallu addasu'r cynnwys a ddangosir i chi neu gynnig cymorth priodol.<\/p><h5>Sut rydym yn defnyddio ffeiliau cookie?<\/h5><p>Ar y wefan rydym yn defnyddio ffeiliau cookie technegol sydd angenrheidiol ar gyfer gweithredu'r wefan yn gywir. Rydym yn eu defnyddio i optimeiddio ein gwefan ar gyfer dyfeisiau a phorwyr a ddefnyddir yn aml gan bobl sy'n ymweld â'r wefan – felly bydd eich cyfrifiadur, tabled neu ffôn yn dangos y dudalen yn iawn ac yn glir, gan gofio os ydych wedi rhoi eich cytundeb i ddangos cynnwys penodol ar y wefan.<\/p><p>Nid yw'r defnyddiwr yn gallu dewis peidio â defnyddio ffeiliau cookie technegol.<\/p><h5>Am ba hyd rydym yn defnyddio ffeiliau cookie?<\/h5><p>Rydym yn defnyddio'r hyn a elwir yn ffeiliau cookie parhaol, sy'n aros ar eich dyfais am gyfnod penodol neu hyd at eu dileu'n llaw.<\/p><h5>Pa ddata rydym yn ei gasglu trwy ffeiliau cookie?<\/h5><p>Trwy dechnoleg cookie, rydym yn casglu dim ond data technegol anffurfiol amdanoch chi, sy'n helpu i wella cyfleustra defnydd o'n gwefan.<\/p><p>Nid ydym yn casglu unrhyw ddata sy'n gallu eich adnabod chi. Y wybodaeth unigol am y defnyddiwr, nad yw'n gallu ei adnabod heb gysylltu â data arall, yw'r cyfeiriad IP y mae'r defnyddiwr yn cysylltu ohono.<\/p>",
+    "privacy_title": "Polisi Preifatrwydd",
+    "privacy_subtitle": "Prosesu Data Personol",
+    "privacy_content": "<p rydym yn creu'r ddogfen hon i roi gwybod i chi am ein Polisi Preifatrwydd. Byddwch yn dysgu pwy ydym, sut rydym yn casglu, defnyddio, datgelu a rhannu data personol yn fframwaith <b><&nbsp;Enw ISP&nbsp;><\/b>, a lleoliad yn [ Enw stryd 10, tref a chod post ], pam rydym yn ei wneud, a sut y gall pobl y mae eu data yn cael ei brosesu hawlio eu hawliau preifatrwydd.<\/p><p><&nbsp;Enw ISP&nbsp;> yw'r cyfrifol am brosesu data personol yn unol â'r Polisi Preifatrwydd hwn.<\/p><h5 AM DANON NI<\/h5><p>Yr aelod sy'n gyfrifol am brosesu data personol ynghylch defnyddio'r gwasanaeth hwn yw <&nbsp;Enw ISP&nbsp;>, [ Enw stryd 10, tref a chod post ]; NIF 1234567890, Regon 123456789,<\/p><h5>CYSWLLTU Â NI<\/h5><ul><li>trwy e-bost ar: adres@email.pl,<\/li><li>trwy bapur at: Enw ISP, [ Enw stryd 10, tref a chod post ]<\/li><\/ul><h5>EGWYDDIADAU YN Y POLISI HYN<\/h5><p>Rydym yn sicrhau bod prosesu eich data yn cydymffurfio â Rheoliad Senedd Ewropeaidd a'r Cyngor (UE) 2016/679 o 27 Ebrill 2016 ar ddiogelu pobl naturiol mewn cysylltiad â phrosesu data personol a rhydd lifo o'r data hwn (y RODO), Deddf Diogelu Data Personol, a deddfwriaeth benodol. Mae'r Polisi Preifatrwydd hwn wedi'i baratoi yn unol â hynny, gan egluro sut rydym yn casglu data personol a'u defnydd.<\/p><p>Rydym yn tynnu sylw at y ffaith bod <&nbsp;Enw ISP&nbsp;> yn casglu data personol a gwybodaeth fusnes a ddarparwyd gan gwsmeriaid a chontractwyr (posibl), yn ogystal â data a gasglwyd wrth ddefnyddio gwasanaeth mynediad i'r rhyngrwyd.<\/p><h5>CASGLU DATA PERSONOL<\/h5><p>Rydym yn casglu data personol a ddarperir gan ddefnyddwyr mewn achosion canlynol:<\/p><ul><li>cyflwyno cynigion, sefydlu telerau cydweithredu a/neu ddarparu gwybodaeth am wasanaethau a gweithgareddau <&nbsp;Enw ISP&nbsp;>,<\/li><li>cyflwyno a gweithredu contractau, cadw cysylltiad â chwsmer/contractwr,<\/li><li>cydymffurfio â rhwymedigaethau deddfwriaethol,<\/li><li>ateb cwestiynau, prosesu cwynion a gwasanaeth ôl-werthu arall,<\/li><li>marchnata uniongyrchol (heblaw'r cylchlythyr),<\/li><li>ar gyfer archif (tystiolaeth), pennu, dilyn neu amddiffyn hawliau.<\/li><\/ul><h5>CADW A DILEU DATA<\/h5><p>Mewn gofal am ddiogelwch y data a roddir rydym wedi datblygu gweithdrefnau mewnol a chanllawiau i atal rhoi data i bersonau heb awdurdod. Rydym yn defnyddio mesurau technegol, contractol, gweinyddol a chorfforol i ddiogelu data rhag mynediad heb awdurdod. Rydym yn monitro ac yn gwirio cydymffurfiaeth gyda'r deddfau perthnasol.<\/p><p>Rydym yn cadw data personol y defnyddiwr yn unig am yr amser angenrheidiol i gyflawni'r dibenion y cafwyd y data ar eu cyfer.<\/p><h5>RHANU A DATGELU DATA<\/h5><p>Nid ydym yn gwerthu na rhannu data personol defnyddwyr i drydydd partïon heb eu caniatâd. Nid yw data defnyddwyr yn cael ei brosesu ar gyfer proffilio.<\/p><p>Yn dibynnu ar natur a chynnwys cydweithrediad rhwng y defnyddiwr a <&nbsp;Enw ISP&nbsp;>, gallwn ddarparu data'r defnyddiwr os oes angen hynny gan y gyfraith, neu i sicrhau cydymffurfiaeth gyda gweithgareddau cyfreithiol neu ddyletswyddau contractol, ateb hawliadau, neu amddiffyn hawliau, eiddo neu ddiogelwch.<\/p><h5>EGWYDDIADAU PROSESU DATA<\/h5><p>Rydym yn gwneud pob ymdrech i ddiogelu buddiannau'r rhai y mae eu data personol yn cael ei brosesu, yn enwedig sicrhau bod y data:<\/p><ul><li>wedi'u prosesu yn unol â'r gyfraith, yn deg ac yn dryloyw i'r unigolyn,<\/li><li>wedi'u casglu ar gyfer dibenion penodol, clir a chyfreithlon, ac heb eu prosesu'n anghyfreithlon,<\/li><li>yn gymesur, priodol ac yn gyfyngedig i'r angen am y diben,<\/li><li>yn gywir ac wedi'u diweddaru os angen, gyda gweithredu i gywiro neu ddileu data anghywir,<\/li><li>wedi'u cadw mewn modd sy'n caniatáu adnabod y person dim ond cyhyd â'r angen,<\/li><li>wedi'u prosesu gyda diogelwch priodol, gan atal prosesu anghyfreithlon neu damweiniol neu golli neu ddifrodi data.<\/li><\/ul><p>Rydym yn prosesu eich data personol fel arfer ar sail eich cydsyniad, a gellir ei dynnu'n ôl ar unrhyw adeg. Weithiau, mae prosesu'n angenrheidiol i gyflawni contract rhwng chi a ni neu i weithredu ar eich cais cyn cyflwyno contract. Mewn achosion eraill, mae prosesu'n angenrheidiol i gyflawni dyletswydd gyfreithiol arnom fel gweinyddwr data. Gall hefyd fod angenrheidiol ar gyfer buddiannau cyfreithlon, megis codi hawliadau o fusnes gweithredol.<\/p><h5>EICH HAWLION<\/h5><p>Mae gennych yr hawliau canlynol:<\/p><ul><li>Mynediad at eich data personol a gwybodaeth am gategorïau data, dibenion prosesu, a chael copi,<\/li><li>Sylw a chywiro data anghywir a chyflwyno data coll, a hawl i gael eich anghofio, sef dileu data a broseswyd yn anghyfreithlon neu'n ddiangen,<\/li><li>Dynnu'ch cydsyniad ar unrhyw adeg heb effeithio ar gyfreithlondeb prosesu a wnaed cyn ei dynnu (os yw'n seiliedig ar art. 6(1)(a) neu art. 9(2)(a) RODO).<\/li><\/ul><h5>COOKIES<\/h5><p><&nbsp;Enw ISP&nbsp;>, yn defnyddio ffeiliau cookie i hwyluso'r defnydd o'r gwasanaeth. Trwy ddefnyddio'r gwasanaeth rydych yn rhoi eich cydsyniad i ddefnyddio a storio ffeiliau cookie ar eich dyfais.<\/p><h5>NEWIDIADAU I'R POLISI<\/h5><p><&nbsp;Enw ISP&nbsp;> yn cadw'r hawl i newid y polisi diogelu data, oherwydd datblygiadau technoleg, newid deddfwriaeth neu ddatblygiad y gwasanaeth. Byddwn yn rhoi gwybod am unrhyw newidiadau yn glir a chlir.<\/p><p>Am unrhyw gwestiynau am y polisi diogelu data, cysylltwch trwy e-bost: adres@email.pl<\/p>"
 }

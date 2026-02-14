@@ -7,6 +7,75 @@
     "attr_isp_info": {
         "aria-label": "Taarifa kuhusu mtoa huduma wa intaneti"
     },
+    "menu": {
+        "title": "Menyu ya GuardianSuit",
+        "item1": {
+            "title": "Intaneti",
+            "icon": "I",
+            "href": "https://yourdomain.com/#",
+            "target": "_blank"
+        },
+        "item2": {
+            "title": "Televisheni",
+            "icon": "T",
+            "href": "https://yourdomain.com/#",
+            "target": "_blank"
+        },
+        "item3": {
+            "title": "Simu",
+            "icon": "S",
+            "href": "https://yourdomain.com/#",
+            "target": "_blank"
+        },
+        "item4": {
+            "title": "Huduma za ziada",
+            "icon": "H",
+            "href": "https://yourdomain.com/#",
+            "target": "_blank"
+        },
+        "item5": {
+            "title": "Wasiliana",
+            "icon": "W",
+            "href": "https://yourdomain.com/#",
+            "target": "_blank"
+        },
+        "item6": {
+            "title": "Sera ya faragha",
+            "icon": "&#167;",
+            "href": {"type": "modal", "title": "privacy_title", "subtitle": "privacy_subtitle", "content": "privacy_content", "iconText": "&#167;"},
+            "target": "_self"
+        },
+        "item7": {
+            "title": "Fichua vidakuzi",
+            "icon": "&#9865;",
+            "href": {"type": "modal", "title": "cookies_title", "subtitle": "cookies_subtitle", "content": "cookies_content", "iconText": "&#9865;"},
+            "target": "_self"
+        },
+        "item8": {
+            "title": "Hati",
+            "icon": "&#9783;",
+            "href": "https://github.com/mixmint/opnsense-captive-portal-template/blob/main/README.md",
+            "target": "_blank"
+        },
+        "item9": {
+            "title": "Kuhusu programu",
+            "icon": "&#9873;",
+            "href": {"type": "modal", "title": "about_title", "subtitle": "about_subtitle", "content": "about_content", "iconText": "&#9873;"},
+            "target": "_self"
+        },
+        "group1": {
+            "title": "Ofa",
+            "items": ["item1", "item2", "item3", "item4", "item5"]
+        },
+        "group2": {
+            "title": "Taarifa",
+            "items": ["item6", "item7"]
+        },
+        "group3": {
+            "title": "Msaada",
+            "items": ["item8", "item9"]
+        }
+    },
     "footer_isp_info": {},
     "pagetitle": "Mfumo wa kuingia watumiaji | < Jina la ISP >",
     "username": "Jina la mtumiaji (Login)",
@@ -77,7 +146,7 @@
     "a11y_helper_prev": "Nyuma",
     "a11y_helper_done": "Kamilisha",
     "a11y-keys_data-title": "Mifupi ya kibodi",
-    "a11y-keys_data-content": "<span style=\"font-size: 14px\">Mchanganyiko wa vitufe <br \/><strong>⇧ Shift (kushoto) <br \/>+&nbsp;⌥ Alt (kushoto) <br \/>+&nbsp;herufi<\/strong><br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;U<\/strong><br \/>zingatia kwenye eneo la Jina la Mtumiaji<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;P<\/strong><br \/>zingatia kwenye eneo la Nenosiri<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;A<\/strong><br \/>chagua/kutoa alama kwenye kisanduku cha \"Nakubali Sheria\"<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;R<\/strong><br \/>fungua dirisha la modal la Sheria<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;I<\/strong><br \/>ingia mtumiaji<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;O<\/strong><br \/>toka mtumiaji<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;L<\/strong><br \/>anzisha kipita lugha<\/span>",
+    "a11y-keys_data-content": "<span style=\"font-size: 14px\">Mchanganyiko wa vitufe <br \/><strong>⇧ Shift (kushoto) <br \/>+&nbsp;⌥ Alt (kushoto) <br \/>+&nbsp;herufi<\/strong><br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;U<\/strong><br \/>zingatia kwenye eneo la Jina la Mtumiaji<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;P<\/strong><br \/>zingatia kwenye eneo la Nenosiri<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;A<\/strong><br \/>chagua/kutoa alama kwenye kisanduku cha \"Nakubali Sheria\"<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;R<\/strong><br \/>fungua dirisha la modal la Sheria<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;I<\/strong><br \/>ingia mtumiaji<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;O<\/strong><br \/>toka mtumiaji<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;L<\/strong><br \/>anzisha kipita lugha<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;M<\/strong><br \/>inafungua menyu ya offcanvas (ikiwa imewezeshwa)<\/span>",
     "a11y-lang-keys_data-title": "Mifupi ya lugha",
     "a11y-lang-keys_data-content": "<span style=\"font-size: 14px\">Shikilia <strong>⇧ Shift (kushoto) na bonyeza herufi mbili za lugha<\/strong> (ISO 639-1) pamoja au mfululizo.<br \/><br \/>Mfano:<br \/><strong>⇧ Shift&nbsp;+&nbsp;P&nbsp;+&nbsp;L<\/strong> → badilisha kuwa Kiplanisi (pl)<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;E&nbsp;+&nbsp;N<\/strong> → badilisha kuwa Kiingereza (en)<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;D&nbsp;+&nbsp;E<\/strong> → badilisha kuwa Kijerumani (de)<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;F&nbsp;+&nbsp;R<\/strong> → badilisha kuwa Kifaransa (fr)<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;E&nbsp;+&nbsp;S<\/strong> → badilisha kuwa Kihispania (es)<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;I&nbsp;+&nbsp;T<\/strong> → badilisha kuwa Kiitaliano (it)<br \/>...<\/span>",
     "polyglotLanguageSwitcher_data-title": "Chaguo la lugha",
@@ -97,5 +166,16 @@
     "signin_anon_data-title": "Ingia",
     "signin_anon_data-content": "Bofya kitufe cha <strong>Ingia<\/strong> kuanzisha muunganisho wa intaneti.",
     "logoff_data-title": "Toka",
-    "logoff_data-content": "Bofya kitufe cha <strong>Toka<\/strong> kumaliza muunganisho wa intaneti."
+    "logoff_data-content": "Bofya kitufe cha <strong>Toka<\/strong> kumaliza muunganisho wa intaneti.",
+    "menuTrigger_data-title": "Menyu ya offcanvas",
+    "menuTrigger_data-content": "Kwa kubofya <strong>&#9776; hamburger ya offcanvas<\/strong> au kwa kubonyeza pamoja kwenye kibodi <strong>%s<\/strong> utafungua menyu ya muktadha.",
+    "about_title": "GuardianSuit",
+    "about_subtitle": "Kiolezo cha hali ya juu cha Captive Portal kwa OPNsense",
+    "about_content": "<p><b>GuardianSuit<\/b> ni kiolezo cha kisasa, kinachojibika na chenye michoro cha Captive Portal kwa OPNsense. Kinatoa watumiaji uzoefu wa kuvutia wa kuingia, na wamiliki udhibiti kamili juu ya muonekano na utendaji wa ukurasa wa kuukaribisha.<\/p><p><b>Vipengele muhimu:<\/b><\/p><ul><li>Ubunifu unaojibika na michoro ya kuhuisha.<\/li><li>Uwezo wa lugha nyingi.<\/li><li>Urahisi wa kubinafsisha muonekano na rangi.<\/li><li>UX rahisi na kuendana na WCAG.<\/li><li>Urahisi wa kuunganisha na OPNsense.<\/li><\/ul><p><b>Matumizi:<\/b><br \/>Inafaa kwa mitandao ya kampuni, hoteli, kahawa na maeneo mengine yanayohitaji ukurasa wa kuvutia wa kuukaribisha Captive Portal.<\/p><p><b>Mwandishi:<\/b> Mirosław Majka &lt;mix@proask.pl&gt; | &copy; 2025 GuardianSuit<\/p>",
+    "cookies_title": "Faili za Cookie",
+    "cookies_subtitle": "Jinsi faili za cookie zinavyotumika.",
+    "cookies_content": "<h5>Faili ya cookie ni nini?<\/h5><p>Faili za cookie (zinazoitwa cookies) ni faili ndogo za maandishi, zinazoundwa kiotomatiki na kivinjari cha wavuti wakati wa kutembelea tovuti za WWW. Taarifa zilizomo katika faili ya cookie inaweza kusomwa tu na tovuti iliyoiunda. Kwa hivyo, tovuti ya mtandao haiwezi kupata faili zingine zilizoko kwenye kompyuta ya mtumiaji.<\/p><p>Kutoka kwa taarifa zilizoko kwenye faili za cookie, tovuti \"inajua\" jinsi unavyotumia na inaweza kubadilisha maudhui yanayoonyeshwa kwa ajili yako au kutoa msaada unaofaa.<\/p><h5>Tunazitumiaje faili za cookie?<\/h5><p>Kwenye tovuti tunatumia faili za cookie za kiufundi ambazo ni muhimu kwa utendaji sahihi wa tovuti. Tunazitumia ili kuboresha tovuti yetu kwa vifaa na vivinjari vinavyotumika zaidi na watembeleaji – hivyo kompyuta yako, kibao au simu itaionyesha vizuri na kwa usahihi, ikikumbuka ikiwa umekubali kuonyesha maudhui fulani kwenye tovuti.<\/p><p>Mtumiaji hawezi kuachana na faili za cookie za kiufundi.<\/p><h5>Tunazitumia kwa muda gani faili za cookie?<\/h5><p>Tunatumia faili za cookie zisizo za muda mfupi, ambazo zinabaki kwenye kifaa chako kwa kipindi fulani au hadi wakati utakapoziondoa kwa mkono.<\/li><\/ul><h5>Tunakusanya data gani kupitia faili za cookie?<\/h5><p>Kwa kutumia teknolojia ya cookie, tunakusanya tu data za kiufundi zisizo na utambulisho zinazosaidia kuboresha urahisi wa kutumia tovuti yetu.<\/p><p>Hatujikusanyi data yoyote inayoweza kukutambulisha. Taarifa pekee kuhusu mtumiaji, ambayo bila kuunganishwa na data nyingine haiwezi kumtambulisha, ni anwani ya IP kutoka ambapo mtumiaji anaunganishwa.<\/p>",
+    "privacy_title": "Sera ya Faragha",
+    "privacy_subtitle": "Usindikaji wa data binafsi",
+    "privacy_content": "<p>Tumeunda hati hii ili kukujulisha kuhusu Sera Yetu ya Faragha. Hapa utajifunza ni sisi nani, jinsi tunavyokusanya, kutumia, kufichua na kushiriki data binafsi ndani ya <b><&nbsp;Jina la ISP&nbsp;><\/b>, yenye makao yake katika [ Jina la Mtaa 10, jiji na kodi ya posta ], kwa madhumuni gani tunafanya hivyo na jinsi watu ambao data zao zinashindika wanaweza kudai haki zao za faragha.<\/p><p><&nbsp;Jina la ISP&nbsp;> inawajibika kwa usindikaji wa data binafsi kulingana na Sera hii ya Faragha.<\/p><h5>KUHUSU SISI<\/h5><p>Msimamizi, yaani chombo kinachosindika data binafsi kutokana na matumizi yako ya huduma hii, ni <&nbsp;Jina la ISP&nbsp;>, [ Jina la Mtaa 10, jiji na kodi ya posta ]; NIP 1234567890, Regon 123456789,<\/p><h5>WASILIANO NA SISI<\/h5><ul><li>kwa njia ya barua pepe: adres@email.pl,<\/li><li>kwa njia ya barua: Jina la ISP, [ Jina la Mtaa 10, jiji na kodi ya posta ]<\/li><\/ul><h5>MALENGO YA SERA HII YA FARAGHA<\/h5><p>Tunahakikisha usindikaji wa data zako unafanyika kwa mujibu wa Kanuni ya Umoja wa Ulaya (UE) namba 2016/679 ya tarehe 27 Aprili 2016 kuhusu ulinzi wa watu binafsi katika usindikaji wa data binafsi na uhuru wa kuhamisha data hizo, pamoja na kufutwa kwa Directiva 95/46/WE (General Data Protection Regulation, GDPR), Sheria ya Ulinzi wa Data Binafsi, na sheria nyingine husika. Sera hii ya Faragha imeandaliwa kwa mujibu wa sheria hizi. Tunaeleza kwa uwazi jinsi tunavyokusanya data binafsi na kwa madhumuni gani zinatumika.<\/p><p>Tunatambua kwamba <&nbsp;Jina la ISP&nbsp;> inakusanya data binafsi na taarifa za kibiashara zinazotolewa na wateja wake (wakiwa wateja wa sasa au wa baadaye), pamoja na data zinazopatikana wakati wa kutumia huduma ya mtandao.<\/p><h5>UKUSANYAJI WA DATA BINAfsi<\/h5><p>Tunakusanya data binafsi zinazotolewa na Watumiaji katika hali zifuatazo:<\/p><ul><li>Kutoa ofa, kupanga masharti ya ushirikiano na\/au kutoa taarifa kuhusu huduma na shughuli nyingine za <&nbsp;Jina la ISP&nbsp;>,<\/li><li>Kufanya na kutekeleza mikataba, na kudumisha mawasiliano na mteja\/mshirika,<\/li><li>Kutekeleza majukumu yanayotokana na sheria zinazoitwa za kawaida,<\/li><li>Kujibu maswali, kushughulikia malalamiko na huduma nyingine baada ya mauzo,<\/li><li>Masoko ya moja kwa moja (hasa jarida),<\/li><li>Kwa madhumuni ya hifadhi (uthibitisho), kutathmini, kufuatilia au kujitetea kutokana na madai.<\/li><\/ul><h5>UHIFADHI NA UONDOAJI WA DATA<\/h5><p>Kwa kujali usalama wa data zilizotolewa, tumeunda taratibu na mapendekezo ya ndani yanayolenga kuzuia kufikiwa kwa data na watu wasioidhinishwa. Tunatumia njia za kiteknolojia, makubaliano, utawala na ulinzi wa kimwili kulinda data dhidi ya ufikiaji usioidhinishwa. Tunadhibiti utekelezaji wake na kuangalia mara kwa mara uwiano wake na sheria zinazohusika.<\/p><p>Tunahifadhi data binafsi za Mtumiaji kwa kipindi cha lazima tu kufanikisha madhumuni ambayo data hizo zilikusudiwa.<\/p><h5>USHIRIKISHO NA UFUNGAJI WA DATA<\/h5><p>Hatuuza wala kushiriki data binafsi za Watumiaji kwa tatu bila idhini yao. Data za Watumiaji hazifanyiki profiling.<\/p><p>Kulingana na aina na wigo wa ushirikiano kati ya Mtumiaji na <&nbsp;Jina la ISP&nbsp;>, kutokana na shughuli zinazofanywa, tunaweza kushiriki data za Mtumiaji ikiwa sheria inavyotaka, au ikiwa ni lazima ili kuhakikisha ulinganifu na shughuli za kisheria, kutimiza masharti ya mkataba, kujibu madai, au kwa ajili ya ulinzi wa haki, mali au usalama.<\/p><h5>MASHARITI YA USINDIKAJI WA DATA ZAKO<\/h5><p>Tunahakikisha kwa uangalifu sana kulinda maslahi ya watu ambao data zao binafsi zinashindika, hasa kuhakikisha data hizo zinakuwa:<\/p><ul><li>zikashughulikiwa kwa mujibu wa sheria, kwa uaminifu na kwa uwazi kwa mtu anayehusika,<\/li><li>zikikusanywa kwa madhumuni maalum, wazi na ya kisheria, na hazitumiwi kwa madhumuni mengine yasiyo ya halali,<\/li><li>zikilingana na kutosha kwa ajili ya madhumuni yaliyokusudiwa,<\/li><li>zikisasishwa na kusahihishwa pale inapohitajika,<\/li><li>zikihifadhiwa kwa namna inayowezesha utambulisho wa mtu anayehusika kwa kipindi kisichozidi kinachohitajika,<\/li><li>zikashughulikiwa kwa usalama unaofaa, ikiwemo ulinzi dhidi ya usindikaji usiohalali au usioidhinishwa, au kupotea au uharibifu wa bahati mbaya.<\/li><\/ul><p>Data zako binafsi kawaida tunazisindika kwa msingi wa idhini, ambayo inaweza kuondolewa wakati wowote. Kwa hali nyingine, usindikaji wa data zako ni muhimu kutimiza mkataba kati yako na sisi, au kuchukua hatua kwa ombi lako kabla ya mkataba. Katika baadhi ya hali, usindikaji ni lazima ili kutimiza wajibu wa kisheria unaotushikilia kama msimamizi wa data. Hali hizi zinatokana na sheria ya ajira, au Sheria ya Ukadiriaji wa Fedha. Usindikaji unaweza pia kuwa muhimu kwa madhumuni ya maslahi yetu yanayothibitishwa kisheria, mfano ikiwa ni kutafuta fidia kutokana na shughuli za biashara tunazofanya.<\/p><h5>HAKI ZAKO<\/h5><p>Una haki zifuatazo:<\/p><ul><li>Kupata maudhui ya data zako binafsi na taarifa kuhusu makundi ya data, madhumuni ya usindikaji, na nakala zake,<\/li><li>Kurekebisha data zisizo sahihi na kuongeza data zilizokosekana, na pia haki ya kusahau, ikimaanisha unaweza kuondoa data zilizosindikwa bila msingi au kinyume cha sheria (mfano data hazihitajiki tena kwa madhumuni yaliyokusudiwa),<\/li><li>Kuondoa idhini ya usindikaji wa data wakati wowote bila kuathiri uhalali wa usindikaji uliofanywa kwa msingi wa idhini kabla ya kuiondoa (ikiwa usindikaji unafanywa kwa msingi wa kifungu cha 6(1)(a) au 9(2)(a) GDPR).<\/li><\/ul><h5>COOKIES<\/h5><p><&nbsp;Jina la ISP&nbsp;>, inatumia faili za cookie ili kurahisisha matumizi ya huduma. Kwa kutumia huduma, unakubali matumizi ya faili za cookie. Ikiwa huzizuizi, unakubali matumizi na kuhifadhi kwenye kifaa chako.<\/p><h5>MBADILIKO YA SERA YA DATA BINAFSI<\/h5><p><&nbsp;Jina la ISP&nbsp;> inahifadhi haki ya kubadilisha sera ya ulinzi wa data binafsi kutokana na maendeleo ya teknolojia ya mtandao, mabadiliko ya sheria ya ulinzi wa data binafsi, na maendeleo ya huduma zinazotolewa na msimamizi. Tutakujulisha kuhusu mabadiliko yote kwa uwazi na kwa njia rahisi kuelewa.<\/p><p>Maswali yoyote kuhusu sera ya ulinzi wa data binafsi tafadhali tuma barua pepe kwa: adres@email.pl<\/p>"
 }

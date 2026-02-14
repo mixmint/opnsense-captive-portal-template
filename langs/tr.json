@@ -7,6 +7,75 @@
     "attr_isp_info": {
         "aria-label": "İnternet sağlayıcı bilgileri"
     },
+    "menu": {
+        "title": "GuardianSuit Menü",
+        "item1": {
+            "title": "İnternet",
+            "icon": "İ",
+            "href": "https://yourdomain.com/#",
+            "target": "_blank"
+        },
+        "item2": {
+            "title": "Televizyon",
+            "icon": "T",
+            "href": "https://yourdomain.com/#",
+            "target": "_blank"
+        },
+        "item3": {
+            "title": "Telefon",
+            "icon": "F",
+            "href": "https://yourdomain.com/#",
+            "target": "_blank"
+        },
+        "item4": {
+            "title": "Ek Hizmetler",
+            "icon": "E",
+            "href": "https://yourdomain.com/#",
+            "target": "_blank"
+        },
+        "item5": {
+            "title": "İletişim",
+            "icon": "L",
+            "href": "https://yourdomain.com/#",
+            "target": "_blank"
+        },
+        "item6": {
+            "title": "Gizlilik Politikası",
+            "icon": "&#167;",
+            "href": {"type": "modal", "title": "privacy_title", "subtitle": "privacy_subtitle", "content": "privacy_content", "iconText": "&#167;"},
+            "target": "_self"
+        },
+        "item7": {
+            "title": "Çerezler",
+            "icon": "&#9865;",
+            "href": {"type": "modal", "title": "cookies_title", "subtitle": "cookies_subtitle", "content": "cookies_content", "iconText": "&#9865;"},
+            "target": "_self"
+        },
+        "item8": {
+            "title": "Dokümantasyon",
+            "icon": "&#9783;",
+            "href": "https://github.com/mixmint/opnsense-captive-portal-template/blob/main/README.md",
+            "target": "_blank"
+        },
+        "item9": {
+            "title": "Program Hakkında",
+            "icon": "&#9873;",
+            "href": {"type": "modal", "title": "about_title", "subtitle": "about_subtitle", "content": "about_content", "iconText": "&#9873;"},
+            "target": "_self"
+        },
+        "group1": {
+            "title": "Teklif",
+            "items": ["item1", "item2", "item3", "item4", "item5"]
+        },
+        "group2": {
+            "title": "Bilgiler",
+            "items": ["item6", "item7"]
+        },
+        "group3": {
+            "title": "Yardım",
+            "items": ["item8", "item9"]
+        }
+    },
     "footer_isp_info": {},
     "pagetitle": "Kullanıcı Giriş Sistemi | <ISS Sağlayıcı Adı>",
     "username": "Kullanıcı Adı (Login)",
@@ -77,7 +146,7 @@
     "a11y_helper_prev": "Geri",
     "a11y_helper_done": "Tamam",
     "a11y-keys_data-title": "Klavye Kısayolları",
-    "a11y-keys_data-content": "<span style=\"font-size: 14px\">Klavye kombinasyonu <br \/><strong>⇧ Shift (sol) <br \/>+&nbsp;⌥ Alt (sol) <br \/>+&nbsp;harf<\/strong><br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;U<\/strong><br \/>Kullanıcı adı alanına odaklanır<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;P<\/strong><br \/>Parola alanına odaklanır<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;A<\/strong><br \/>\"Kullanım Koşullarını kabul ediyorum\" kutusunu işaretler/kaldırır<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;R<\/strong><br \/>Koşullar modal penceresini açar<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;I<\/strong><br \/>Kullanıcıyı giriş yapar<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;O<\/strong><br \/>Kullanıcıyı çıkış yapar<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;L<\/strong><br \/>Dil seçiciyi açar<\/span>",
+    "a11y-keys_data-content": "<span style=\"font-size: 14px\">Klavye kombinasyonu <br \/><strong>⇧ Shift (sol) <br \/>+&nbsp;⌥ Alt (sol) <br \/>+&nbsp;harf<\/strong><br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;U<\/strong><br \/>Kullanıcı adı alanına odaklanır<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;P<\/strong><br \/>Parola alanına odaklanır<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;A<\/strong><br \/>\"Kullanım Koşullarını kabul ediyorum\" kutusunu işaretler/kaldırır<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;R<\/strong><br \/>Koşullar modal penceresini açar<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;I<\/strong><br \/>Kullanıcıyı giriş yapar<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;O<\/strong><br \/>Kullanıcıyı çıkış yapar<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;L<\/strong><br \/>Dil seçiciyi açar<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;M<\/strong><br \/>offcanvas menüsünü açar (etkinse)<\/span>",
     "a11y-lang-keys_data-title": "Dil Kısayolları",
     "a11y-lang-keys_data-content": "<span style=\"font-size: 14px\"><strong>⇧ Shift (sol) tuşunu basılı tutun ve ISO 639-1 dil kodunun iki harfini<\/strong> aynı anda veya sırayla basın.<br \/><br \/>Örnekler:<br \/><strong>⇧ Shift&nbsp;+&nbsp;P&nbsp;+&nbsp;L<\/strong> → Polonya dili (pl)<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;E&nbsp;+&nbsp;N<\/strong> → İngilizce (en)<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;D&nbsp;+&nbsp;E<\/strong> → Almanca (de)<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;F&nbsp;+&nbsp;R<\/strong> → Fransızca (fr)<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;E&nbsp;+&nbsp;S<\/strong> → İspanyolca (es)<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;I&nbsp;+&nbsp;T<\/strong> → İtalyanca (it)<br \/>...<\/span>",
     "polyglotLanguageSwitcher_data-title": "Dil Seçici",
@@ -97,5 +166,17 @@
     "signin_anon_data-title": "Giriş",
     "signin_anon_data-content": "<strong>Giriş<\/strong> düğmesine tıklayarak internet bağlantısını başlatabilirsiniz.",
     "logoff_data-title": "Çıkış",
-    "logoff_data-content": "<strong>Çıkış<\/strong> düğmesine tıklayarak internet bağlantısını sonlandırabilirsiniz."
+    "logoff_data-content": "<strong>Çıkış<\/strong> düğmesine tıklayarak internet bağlantısını sonlandırabilirsiniz.",
+    "menuTrigger_data-title": "Offcanvas Menüsü",
+    "menuTrigger_data-content": "Klavyede <strong>&#9776; offcanvas hamburger<\/strong> simgesine tıklayarak veya aynı anda <strong>%s<\/strong> tuşlarına basarak bağlamsal menüyü açabilirsiniz.",
+    "about_title": "GuardianSuit",
+    "about_subtitle": "OPNsense için gelişmiş Captive Portal şablonu",
+    "about_content": "<p><b>GuardianSuit<\/b>, OPNsense için modern, duyarlı ve animasyonlu bir Captive Portal şablonudur. Kullanıcılara çekici bir giriş deneyimi sunar ve yöneticilere karşılama sayfasının görünümü ve işlevselliği üzerinde tam kontrol sağlar.<\/p><p><b>Ana Özellikler:<\/b><\/p><ul><li>Duyarlılık ve animasyonlar.<\/li><li>Çok dilli destek.<\/li><li>Kolay görünüm ve renk özelleştirmesi.<\/li><li>Sezgisel UX ve WCAG uyumu.<\/li><li>OPNsense ile kolay entegrasyon.<\/li><\/ul><p><b>Kullanım Alanı:<\/b><br \/>Şirket ağları, oteller, kafeler ve görsel olarak çekici bir Captive Portal karşılama sayfası gerektiren diğer mekanlar için idealdir.<\/p><p><b>Yazar:<\/b> Mirosław Majka &lt;mix@proask.pl&gt; | &copy; 2025 GuardianSuit<\/p>",
+    "cookies_title": "Çerezler",
+    "cookies_subtitle": "Çerezlerin nasıl kullanıldığı.",
+    "cookies_content": "<h5>Çerez nedir?<\/h5><p>Çerezler (cookies olarak da bilinir), web tarayıcısı tarafından otomatik olarak oluşturulan küçük metin dosyalarıdır ve web sitelerini ziyaret ederken kullanılır. Belirli bir çerezdeki bilgiler yalnızca o çerezin geldiği site tarafından okunabilir. Böylece web sitesi, kullanıcının bilgisayarındaki diğer dosyalara erişemez.<\/p><p>Çerezlerdeki bilgiler sayesinde site, sizin siteyi nasıl kullandığınızı \"bilir\" ve görüntülenen içerikleri size uygun şekilde ayarlayabilir veya yardım sunabilir.<\/p><h5>Çerezleri ne için kullanıyoruz?<\/h5><p>Web sitemizde, sitenin doğru çalışması için gerekli olan teknik çerezler kullanıyoruz. Bu çerezleri, web sitemizi ziyaret eden kullanıcıların en sık kullandığı cihazlar ve tarayıcılar için optimize etmek amacıyla kullanıyoruz – böylece bilgisayarınız, tabletiniz veya telefonunuz sayfayı doğru ve okunabilir şekilde görüntüler ve web sitesinde belirli içeriklerin gösterilmesine izin verip vermediğinizi hatırlar.<\/p><p>Kullanıcı, teknik çerezleri devre dışı bırakamaz.<\/p><h5>Çerezleri ne kadar süre kullanıyoruz?<\/h5><p>Sabit çerezler kullanıyoruz; bu çerezler cihazınızda belirli bir süre boyunca veya manuel olarak silinene kadar kalır.<\/li><\/ul><h5>Çerezler aracılığıyla hangi verileri topluyoruz?<\/h5><p>Çerez teknolojisi ile sizden yalnızca anonim teknik veriler topluyoruz; bu veriler, web sitemizin kullanımını iyileştirmek için kullanılır.<\/p><p>Kimliğinizi tespit etmeye yarayan hiçbir veri toplamayız. Kullanıcının kimliğini tek başına belirlemeyen tek bilgi, kullanıcı tarafından bağlanılan IP adresidir.<\/p>",
+    "privacy_title": "Gizlilik Politikası",
+    "privacy_subtitle": "Kişisel Verilerin İşlenmesi",
+    "privacy_content": "<p>Bu belgeyi, Gizlilik Politikamız hakkında sizi bilgilendirmek amacıyla hazırlıyoruz. Burada, kim olduğumuzu, kişisel verileri <b><&nbsp;ISS Sağlayıcı Adı&nbsp;><\/b> kapsamında nasıl topladığımızı, kullandığımızı, açıkladığımızı ve paylaştığımızı, bunu hangi amaçlarla yaptığımızı ve verileri işlediğimiz kişilerin gizlilik haklarını nasıl kullanabileceğini öğreneceksiniz, [Adres 10, şehir ve posta kodu] adresinde yer almaktayız.<\/p><p><&nbsp;ISS Sağlayıcı Adı&nbsp;> kişisel verilerin işlenmesinden bu Gizlilik Politikası çerçevesinde sorumludur.<\/p><h5>HAKKIMIZDA<\/h5><p>Bu hizmeti kullanmanız ile ilgili kişisel verileri işleyen veri sorumlusu <&nbsp;ISS Sağlayıcı Adı&nbsp;>, [Adres 10, şehir ve posta kodu]; Vergi No: 1234567890, Ticaret Sicil No: 123456789'dur.<\/p><h5>BİZİMLE İLETİŞİM<\/h5><ul><li>E-posta yoluyla: adres@email.pl,<\/li><li>Yazılı olarak: ISS Sağlayıcı Adı, [Adres 10, şehir ve posta kodu]<\/li><\/ul><h5>BU POLİTİKADA BELİRTİLEN İLKELER<\/h5><p>Verilerinizin işlenmesinin, 27 Nisan 2016 tarihli ve 2016/679 sayılı Avrupa Parlamentosu ve Konsey Tüzüğü (Genel Veri Koruma Yönetmeliği – GDPR) ile kişisel verilerin korunmasına ilişkin yasalara ve özel düzenlemelere uygun olarak yapılmasını sağlıyoruz. Bu Gizlilik Politikası bu ilkelere uygun olarak hazırlanmıştır. Kişisel verileri nasıl topladığımızı ve hangi amaçlarla kullandığımızı açıkça bildiriyoruz.<\/p><p><&nbsp;ISS Sağlayıcı Adı&nbsp;>, müşterilerinden ve potansiyel iş ortaklarından sağlanan kişisel ve kurumsal verileri, ayrıca internet erişim hizmeti kullanımından elde edilen verileri topladığını belirtir.<\/p><h5>KİŞİSEL VERİ TOPLAMA<\/h5><p>Kullanıcılardan kişisel verileri aşağıdaki durumlarda toplarız:<\/p><ul><li>Tekliflerin sunulması, işbirliği koşullarının belirlenmesi ve <&nbsp;ISS Sağlayıcı Adı&nbsp;> hizmetleri ve diğer faaliyetlerle ilgili bilgilerin sağlanması,<\/li><li>Sözleşmelerin yapılması ve uygulanması ile müşteri/iş ortağıyla iletişim kurulması,<\/li><li>Geçerli yasal düzenlemelerden doğan yükümlülüklerin yerine getirilmesi,<\/li><li>Soruların yanıtlanması, şikayetlerin ve satış sonrası hizmetlerin ele alınması,<\/li><li>Doğrudan pazarlama (bülten dışı),<\/li><li>Arşivleme amaçlı (kanıt niteliğinde), olası taleplerin tespiti, takibi veya savunması.<\/li><\/ul><h5>VERİLERİN SAKLANMASI VE SİLİNMESİ<\/h5><p>Verilen verilerin güvenliği için yetkisiz kişilerin erişimini önleyecek iç prosedürler ve yönergeler geliştirdik. Verileri yetkisiz erişime karşı korumak amacıyla teknolojik, sözleşmeye dayalı, idari ve fiziksel önlemler uygularız. Bunların uygulanmasını kontrol eder ve yasal düzenlemelere uygunluğunu sürekli denetleriz.<\/p><p>Kullanıcının kişisel verilerini, yalnızca toplama amaçlarının gerçekleştirilmesi için gerekli süre boyunca saklarız.<\/p><h5>VERİLERİN PAYLAŞIMI VE AÇIKLANMASI<\/h5><p>Kullanıcıların kişisel verilerini, izinleri olmadan üçüncü şahıslara satmaz veya paylaşmayız. Kullanıcı verileri profillendirmeye tabi değildir.<\/p><p>Kullanıcı ile <&nbsp;ISS Sağlayıcı Adı&nbsp;> arasındaki işbirliği türüne ve kapsamına bağlı olarak, yürürlükteki kanunların gerektirmesi veya yasal işlemlere uyum, sözleşme yükümlülüklerinin yerine getirilmesi, taleplerin yanıtlanması veya hak, mülkiyet ve güvenliğin korunması amacıyla kullanıcı verilerini aktarabiliriz.<\/p><h5>VERİLERİNİZİ İŞLEME İLKELERİ<\/h5><p>Kişisel verileri işlediğimiz kişilerin menfaatlerini korumak için en yüksek özeni gösteririz, özellikle verilerin aşağıdaki kriterlere uygun olmasını sağlar:<\/p><ul><li>Yasa ve düzenlemelere uygun, doğru ve ilgili kişi için şeffaf şekilde işlenmiş,<\/li><li>Belirli, açık ve yasal amaçlar için toplanmış ve bu amaçlara aykırı şekilde işlenmemiş,<\/li><li>Amaçların gerektirdiği ölçüde uygun ve sınırlı,<\/li><li>Doğru ve gerektiğinde güncellenmiş; yanlış veriler derhal düzeltilir veya silinir,<\/li><li>Kişiyi tanımlayacak şekilde, işleme amaçları için gerekli olan süre boyunca saklanmış,<\/li><li>Kişisel verilerin yetkisiz veya yasa dışı işlenmesine, kazara kaybolmasına veya tahrip edilmesine karşı uygun güvenlik sağlanmış.<\/li><\/ul><p>Kişisel verilerinizi genellikle verdiğiniz rıza temelinde işleriz; rızanızı istediğiniz zaman geri çekebilirsiniz. Ayrıca, verilerin işlenmesi sizinle aramızda yapılan sözleşmenin yerine getirilmesi veya sözleşme öncesi talep ettiğiniz işlemler için gerekli olabilir. Bazı durumlarda, işleme yasal yükümlülüklerin yerine getirilmesi için zorunludur (örn. iş hukuku veya muhasebe kanunu). İşleme, meşru menfaatlerimiz doğrultusunda da yapılabilir; örneğin ticari faaliyetlerden kaynaklanan taleplerin takibi.<\/p><h5>HAKKINIZDAKİ HAKLAR<\/h5><p>Aşağıdaki haklara sahipsiniz:<\/p><ul><li>Kişisel verilerinizin içeriğine erişim ve veri kategorileri, işleme amaçları ve bunların kopyalarını alma,<\/li><li>Yanlış verilerin düzeltilmesini ve eksik verilerin tamamlanmasını talep etme, unutulma hakkı (yani artık gerekli olmayan veya hukuka aykırı işlenen verilerin silinmesini isteme),<\/li><li>Her zaman veri işleme rızasını geri çekme hakkı; geri çekme, önceden verilen rıza ile yapılan işlemlerin hukuka uygunluğunu etkilemez (GDPR Madde 6/1a ve 9/2a uyarınca).<\/li><\/ul><h5>ÇEREZLER<\/h5><p><&nbsp;ISS Sağlayıcı Adı&nbsp;>, hizmeti kolaylaştırmak için çerezler kullanır. Hizmeti kullanarak çerezlerin kullanılmasına izin vermiş olursunuz. Bu çerezleri engellemezseniz, cihazınıza kaydedilmesine ve kullanılmasına onay vermiş olursunuz.<\/p><h5>KİŞİSEL VERİ POLİTİKASI DEĞİŞİKLİKLERİ<\/h5><p><&nbsp;ISS Sağlayıcı Adı&nbsp;>, internet teknolojisi, veri koruma mevzuatındaki değişiklikler veya yönetici tarafından sunulan erişim hizmetindeki gelişmeler doğrultusunda kişisel veri politikası üzerinde değişiklik yapma hakkını saklı tutar. Her türlü değişiklik açık ve anlaşılır şekilde bildirilecektir.<\/p><p>Kişisel veri politikası ile ilgili sorularınızı lütfen e-posta adresine gönderin: adres@email.pl<\/p>"
+
 }

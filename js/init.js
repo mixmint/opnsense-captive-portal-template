@@ -1,6 +1,6 @@
 /**
- * @version 2.5.5
- * @package Multilanguage Captive Portal Template for OPNsense
+ * @version 2.6.0
+ * @package GuardianSuit - Multilanguage Captive Portal Template for OPNsense
  * @author Mirosław Majka (mix@proask.pl)
  * @copyright (C) 2025 Mirosław Majka <mix@proask.pl>
  * @license GNU/GPL license: http://www.gnu.org/copyleft/gpl.html
@@ -8,66 +8,86 @@
 
 $(document).ready(() => {
     $.when($.loadSettings()).done(() => {
-        setupLocalesData();
-        applyCssSettings();
-        setupLanguage();
-        initializeVantaEffect();
-        useWCAG();
-        updateLogo();
-        setupRulesSection();
-        configureInputFocusBehavior();
-        setupAuthHandlers();
-        setupRulesLink();
-        checkConnectionStatus();
+        initResources().then(() => {
+            setupLanguage();
+            initializeVantaEffect();
+            useWCAG();
+            updateLogo();
+            setupRulesSection();
+            configureInputFocusBehavior();
+            setupAuthHandlers();
+            setupRulesLink();
+            checkConnectionStatus();
+        });
     });
 });
 
-const setupLocalesData = () => {
-    if (!settings.layout.force_locales_data) {
-        return;
-    }
-
-    forceLocalesData();
-};
-
-const applyCssSettings = () => {
+const initResources = () => {
     if (settings.css_params) {
         Object.entries(settings.css_params).forEach(([key, value]) => {
             if (settings.layout.a11y && settings.layout.a11y_contrast) {
-                value = $.adjustContrast(
-                    value,
-                    {
-                        factor: settings.layout.a11y_factor,
-                        threshold: settings.layout.a11y_threshold
-                    }
-                );
+                value = $.adjustContrast(value, {
+                    factor: settings.layout.a11y_factor,
+                    threshold: settings.layout.a11y_threshold
+                });
             }
-
             _root.style.setProperty(`--${key}`, value);
         });
     }
 
-    const flagsDir = settings.layout.lang_flags_dir || '4x3';
+    if (settings.layout?.force_locales_data) {
+        forceLocalesData();
+    }
+
+    const flagsDir   = settings.layout.lang_flags_dir || '4x3';
     const langLayout = settings.layout.lang_layout;
 
     if (langLayout === 'flags-only-select' || langLayout === 'flags-select') {
         let styleEl = document.getElementById('flags');
 
         if (!styleEl) {
-            styleEl = document.createElement('style');
+            styleEl    = document.createElement('style');
             styleEl.id = 'flags';
+
             document.head.appendChild(styleEl);
         }
 
-        styleEl.innerHTML = '';
-
-        Object.keys(settings.langs).forEach(lang => {
+        styleEl.innerHTML = Object.keys(settings.langs)
+        .map(lang => {
             const flag = langsFlags[lang] || lang;
             const url  = `/images/flags/${flagsDir}/${flag}.svg`;
-
-            styleEl.innerHTML += `#${lang}::before {background-image: url("${url}");}`;
-        });
+            return `#${lang}::before {background-image: url("${url}");}`;
+        })
+        .join('');
     }
+
+    const cssResources = [];
+    const jsResources  = [
+        'bootstrap533.min.js',
+        'sprintf.min.js',
+        'css_browser_selector.js',
+        'cpModal.min.js',
+        'jquery.polyglot.language.switcher.js'
+    ];
+
+    if (settings.layout.enable_menu) {
+        cssResources.push('offcanvas_menu.css');
+    }
+
+    return $.getMultiResources(cssResources).then(() => {
+        return $.getMultiResources(jsResources);
+    }).then(() => {
+        const portal = document.querySelector('.captiveportal');
+        if (portal) {
+            portal.style.transition = 'opacity 0.3s ease';
+            portal.style.opacity = '1';
+
+            portal.addEventListener('transitionend', function handler() {
+                portal.removeAttribute('style');
+                portal.removeEventListener('transitionend', handler);
+            });
+        }
+    });
 };
 
 const useWCAG = () => {
@@ -306,6 +326,10 @@ const authenticateUser = (credentials) => {
     .done((data) => {
         $.clientInfo(data);
         $.connectionLogon(data);
+/*
+        if (settings.layout.enable_menu && preparedMenu) {
+            $.clientInfo(data, '#menuPortalEvent');
+        }*/
     })
     .fail($.connectionFailed);
 };
@@ -327,6 +351,10 @@ const checkConnectionStatus = () => {
     .done((data) => {
         $.clientInfo(data);
         $.connectionStatus(data);
+/*
+        if (settings.layout.enable_menu && preparedMenu) {
+            $.clientInfo(data, '#menuPortalEvent');
+        }*/
     })
     .fail(() => setTimeout($.connectionFailed, 1000));
 };

@@ -7,6 +7,75 @@
     "attr_isp_info": {
         "aria-label": "Internetszolgáltató információi"
     },
+    "menu": {
+        "title": "GuardianSuit Menü",
+        "item1": {
+            "title": "Internet",
+            "icon": "I",
+            "href": "https://yourdomain.com/#",
+            "target": "_blank"
+        },
+        "item2": {
+            "title": "Televízió",
+            "icon": "T",
+            "href": "https://yourdomain.com/#",
+            "target": "_blank"
+        },
+        "item3": {
+            "title": "Telefon",
+            "icon": "P",
+            "href": "https://yourdomain.com/#",
+            "target": "_blank"
+        },
+        "item4": {
+            "title": "Kiegészítő szolgáltatások",
+            "icon": "K",
+            "href": "https://yourdomain.com/#",
+            "target": "_blank"
+        },
+        "item5": {
+            "title": "Kapcsolat",
+            "icon": "C",
+            "href": "https://yourdomain.com/#",
+            "target": "_blank"
+        },
+        "item6": {
+            "title": "Adatvédelmi irányelvek",
+            "icon": "&#167;",
+            "href": {"type": "modal", "title": "privacy_title", "subtitle": "privacy_subtitle", "content": "privacy_content", "iconText": "&#167;"},
+            "target": "_self"
+        },
+        "item7": {
+            "title": "Sütik",
+            "icon": "&#9865;",
+            "href": {"type": "modal", "title": "cookies_title", "subtitle": "cookies_subtitle", "content": "cookies_content", "iconText": "&#9865;"},
+            "target": "_self"
+        },
+        "item8": {
+            "title": "Dokumentáció",
+            "icon": "&#9783;",
+            "href": "https://github.com/mixmint/opnsense-captive-portal-template/blob/main/README.md",
+            "target": "_blank"
+        },
+        "item9": {
+            "title": "A programról",
+            "icon": "&#9873;",
+            "href": {"type": "modal", "title": "about_title", "subtitle": "about_subtitle", "content": "about_content", "iconText": "&#9873;"},
+            "target": "_self"
+        },
+        "group1": {
+            "title": "Ajánlat",
+            "items": ["item1", "item2", "item3", "item4", "item5"]
+        },
+        "group2": {
+            "title": "Információk",
+            "items": ["item6", "item7"]
+        },
+        "group3": {
+            "title": "Segítség",
+            "items": ["item8", "item9"]
+        }
+    },
     "footer_isp_info": {},
     "pagetitle": "Felhasználói bejelentkezési rendszer | <ISP Név>",
     "username": "Felhasználónév (Login)",
@@ -77,7 +146,7 @@
     "a11y_helper_prev": "Vissza",
     "a11y_helper_done": "Kész",
     "a11y-keys_data-title": "Billentyűparancsok",
-    "a11y-keys_data-content": "<span style=\"font-size: 14px\">Billentyűkombináció <br \/><strong>⇧ Shift (bal) <br \/>+&nbsp;⌥ Alt (bal) <br \/>+&nbsp;betű<\/strong><br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;U<\/strong><br \/>fókusz a Felhasználónév mezőre<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;P<\/strong><br \/>fókusz a Jelszó mezőre<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;A<\/strong><br \/>a “Elfogadom a szabályzatot” jelölőnégyzet be-/kikapcsolása<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;R<\/strong><br \/>megnyitja a szabályzat modális ablakát<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;I<\/strong><br \/>bejelentkezik a felhasználó<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;O<\/strong><br \/>kijelentkezik a felhasználó<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;L<\/strong><br \/>elindítja a nyelvváltót<\/span>",
+    "a11y-keys_data-content": "<span style=\"font-size: 14px\">Billentyűkombináció <br \/><strong>⇧ Shift (bal) <br \/>+&nbsp;⌥ Alt (bal) <br \/>+&nbsp;betű<\/strong><br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;U<\/strong><br \/>fókusz a Felhasználónév mezőre<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;P<\/strong><br \/>fókusz a Jelszó mezőre<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;A<\/strong><br \/>a “Elfogadom a szabályzatot” jelölőnégyzet be-/kikapcsolása<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;R<\/strong><br \/>megnyitja a szabályzat modális ablakát<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;I<\/strong><br \/>bejelentkezik a felhasználó<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;O<\/strong><br \/>kijelentkezik a felhasználó<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;L<\/strong><br \/>elindítja a nyelvváltót<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;M<\/strong><br \/>megnyitja az offcanvas menüt (ha engedélyezve van)<\/span>",
     "a11y-lang-keys_data-title": "Nyelvi billentyűparancsok",
     "a11y-lang-keys_data-content": "<span style=\"font-size: 14px\">Tartsd lenyomva a <strong>⇧ Shift (bal) és nyomj meg két betűt a nyelvkódhoz<\/strong> (ISO 639-1) egyszerre vagy egymás után.<br \/><br \/>Példák:<br \/><strong>⇧ Shift&nbsp;+&nbsp;P&nbsp;+&nbsp;L<\/strong> → váltás lengyelre (pl)<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;E&nbsp;+&nbsp;N<\/strong> → váltás angolra (en)<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;D&nbsp;+&nbsp;E<\/strong> → váltás németre (de)<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;F&nbsp;+&nbsp;R<\/strong> → váltás franciára (fr)<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;E&nbsp;+&nbsp;S<\/strong> → váltás spanyolra (es)<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;I&nbsp;+&nbsp;T<\/strong> → váltás olaszra (it)<br \/>...<\/span>",
     "polyglotLanguageSwitcher_data-title": "Nyelvválasztó",
@@ -97,5 +166,16 @@
     "signin_anon_data-title": "Bejelentkezés",
     "signin_anon_data-content": "A <strong>Bejelentkezés<\/strong> gombra kattintva csatlakozhatsz az internethez.",
     "logoff_data-title": "Kijelentkezés",
-    "logoff_data-content": "A <strong>Kijelentkezés<\/strong> gombra kattintva megszakítod az internetkapcsolatot."
+    "logoff_data-content": "A <strong>Kijelentkezés<\/strong> gombra kattintva megszakítod az internetkapcsolatot.",
+    "menuTrigger_data-title": "Offcanvas menü",
+    "menuTrigger_data-content": "Kattintva a <strong>&#9776; offcanvas hamburger<\/strong> ikonra, vagy egyszerre lenyomva a billentyűzeten <strong>%s<\/strong>, megnyithatod a kontextus menüt.",
+    "about_title": "GuardianSuit",
+    "about_subtitle": "Fejlett Captive Portal sablon OPNsense-hez",
+    "about_content": "<p><b>GuardianSuit<\/b> egy modern, reszponzív és animált Captive Portal sablon OPNsense-hez. Vonzó bejelentkezési élményt nyújt a felhasználóknak, és teljes kontrollt biztosít az adminisztrátoroknak az üdvözlő oldal kinézete és funkcionalitása felett.<\/p><p><b>Főbb jellemzők:<\/b><\/p><ul><li>Reszponzivitás és animációk.<\/li><li>Többnyelvű támogatás.<\/li><li>Könnyű testreszabás és színezés.<\/li><li>Intuitív UX és WCAG kompatibilitás.<\/li><li>Egyszerű integráció OPNsense-szel.<\/li><\/ul><p><b>Alkalmazás:<\/b><br \/>Ideális vállalati hálózatokhoz, hotelekhez, kávézókhoz és más helyekhez, ahol vizuálisan vonzó Captive Portal üdvözlő oldal szükséges.<\/p><p><b>Szerző:<\/b> Mirosław Majka &lt;mix@proask.pl&gt; | &copy; 2025 GuardianSuit<\/p>",
+    "cookies_title": "Sütik",
+    "cookies_subtitle": "Hogyan használjuk a sütiket.",
+    "cookies_content": "<h5>Mi az a süti?<\/h5><p>A sütik (más néven cookie-k) kis szöveges fájlok, amelyeket a böngésző automatikusan hoz létre a weboldalak látogatása során. Egy adott süti tartalmát kizárólag az a weboldal olvashatja, ahonnan származik. Ezért a weboldal nem férhet hozzá más fájlokhoz, amelyek a felhasználó számítógépén találhatók.<\/p><p>A sütikben tárolt információk segítségével az oldal „tudja”, hogyan használod azt, és ennek megfelelően tudja személyre szabni a megjelenített tartalmakat vagy segítséget nyújtani.<\/p><h5>Miért használunk sütiket?<\/h5><p>Oldalunkon technikai sütiket használunk, amelyek elengedhetetlenek az oldal megfelelő működéséhez. Ezeket arra használjuk, hogy optimalizáljuk weboldalunk megjelenését az eszközök és böngészők szerint, amelyeket a látogatók leggyakrabban használnak – így a számítógéped, tablet-ed vagy telefonod helyesen és olvashatóan jeleníti meg az oldalt, miközben megjegyzi, hogy engedélyezted-e bizonyos tartalmak megjelenítését az oldalon.<\/p><p>A felhasználó nem tud lemondani a technikai sütikről.<\/p><h5>Mennyi ideig használjuk a sütiket?<\/h5><p>Állandó sütiket használunk, amelyek egy meghatározott ideig maradnak az eszközödön, vagy amíg kézzel nem törlöd őket.<\/li><\/ul><h5>Milyen adatokat gyűjtünk a sütik segítségével?<\/h5><p>A cookie-technológia segítségével kizárólag anonim technikai adatokat gyűjtünk rólad, amelyek a weboldalunk használhatóságának javítását szolgálják.<\/p><p>Nem gyűjtünk semmilyen adatot, amely lehetővé tenné az azonosításodat. Az egyetlen információ a felhasználóról, amely más adatokkal való összekapcsolás nélkül nem teszi lehetővé az azonosítást, az a felhasználó IP-címe.<\/p>",
+    "privacy_title": "Adatvédelmi irányelvek",
+    "privacy_subtitle": "Személyes adatok kezelése",
+    "privacy_content": "<p>Ez a dokumentum tájékoztatást nyújt adatvédelmi irányelveinkről. Megtudhatod, kik vagyunk, hogyan gyűjtjük, használjuk, nyilvánosságra hozzuk és osztjuk meg a személyes adatokat a <b>< ISP Név ><\/b> keretében, székhely: [ Utca neve 10, város, irányítószám ], milyen célból tesszük ezt, valamint hogyan érvényesíthetik az érintettek az adatvédelmi jogaikat.<\/p><p>< ISP Név > felelős a személyes adatok kezeléséért az adatvédelmi irányelveknek megfelelően.<\/p><h5>RÓLUNK<\/h5><p>Az adatkezelő, vagyis a személyes adatok kezeléséért felelős szervezet, amely az Ön által igénybe vett szolgáltatás kapcsán végzi a feldolgozást: < ISP Név >, [ Utca neve 10, város, irányítószám ]; Adószám 1234567890, Cégjegyzékszám 123456789,<\/p><h5>ELÉRHETŐSÉGEK<\/h5><ul><li>elektronikus úton az e-mail címen: adres@email.hu,<\/li><li>írásban a következő címen: < ISP Név >, [ Utca neve 10, város, irányítószám ]<\/li><\/ul><h5>AZ ADATVÉDELMI IRÁNYELV ALAPELVEI<\/h5><p>Biztosítjuk, hogy az Ön adatait az Európai Parlament és Tanács (EU) 2016/679 rendelete alapján, a személyes adatok védelméről szóló törvényeknek és egyéb vonatkozó jogszabályoknak megfelelően kezeljük. Ezen adatvédelmi irányelv készítése ezen szabályok szerint történt. Egyértelműen tájékoztatjuk, hogyan gyűjtjük a személyes adatokat és milyen célokra használjuk fel azokat.<\/p><p>Felhívjuk a figyelmet, hogy < ISP Név > gyűjti a személyes adatokat és a céges információkat az ügyfelektől és potenciális partnerektől, valamint az internethozzáférés során keletkező adatokat.<\/p><h5>SZEMÉLYES ADATOK GYŰJTÉSE<\/h5><p>Az alábbi esetekben gyűjtünk személyes adatokat a felhasználóktól:<\/p><ul><li>ajánlatok benyújtása, együttműködési feltételek meghatározása és/vagy információszolgáltatás a < ISP Név > szolgáltatásairól,<\/li><li>szerződések megkötése és teljesítése, valamint a kapcsolat fenntartása az ügyfelekkel/partnerekkel,<\/li><li>jogszabályokból eredő kötelezettségek teljesítése,<\/li><li>kérdések megválaszolása, panaszok kezelése és egyéb értékesítés utáni szolgáltatások,<\/li><li>közvetlen marketing (hírlevélen kívül),<\/li><li>archiválási célok (bizonyíték), esetleges igények, jogviták érvényesítése vagy védelme.<\/li><\/ul><h5>ADATOK TÁROLÁSA ÉS TÖRLÉSE<\/h5><p>Az adatok biztonsága érdekében belső eljárásokat és ajánlásokat dolgoztunk ki, hogy megakadályozzuk az illetéktelen hozzáférést. Technológiai, szerződéses, adminisztratív és fizikai intézkedéseket alkalmazunk az adatok védelmére. Ellenőrizzük azok végrehajtását és folyamatosan vizsgáljuk jogszabályoknak való megfelelésüket.<\/p><p>A személyes adatokat csak a célok teljesítéséhez szükséges ideig tároljuk.<\/p><h5>ADATMEGOSZTÁS ÉS NYILVÁNOSSÁGRA HOZATAL<\/h5><p>Nem adjuk el és nem tesszük hozzáférhetővé a felhasználók személyes adatait harmadik fél számára az engedélyük nélkül. A felhasználók adatai nem kerülnek profilozásra.<\/p><p>Az együttműködés típusától és mértékétől függően, a < ISP Név >-vel folytatott tevékenység során, az adatokat átadhatjuk, ha azt jogszabály írja elő, vagy ha szükséges a jogi kötelezettségek teljesítéséhez, követelések érvényesítéséhez vagy a jogok, vagyon és biztonság védelméhez.<\/p><h5>AZ ADATKEZELÉS ALAPELVEI<\/h5><p>Minden tőlünk telhetőt megteszünk annak érdekében, hogy az adatok kezelésével érintett személyek érdekei védelmet kapjanak, különösen annak biztosítása érdekében, hogy az adatok:<\/p><ul><li>jogszabályoknak megfelelően, tisztességesen és átlátható módon legyenek kezelve,<\/li><li>konkrét, egyértelmű és jogszerű célokra gyűjtve, és ne kerüljenek a céloktól eltérő módon felhasználásra,<\/li><li>megfelelőek, relevánsak és korlátozottak legyenek a feldolgozás céljára,<\/li><li>helyesek és szükség esetén frissítettek legyenek. A helytelen adatokat azonnal javítjuk vagy töröljük,<\/li><li>azonosítható formában csak a szükséges ideig tárolódjanak,<\/li><li>megfelelő biztonsági intézkedések mellett legyenek kezelve, beleértve a jogosulatlan vagy jogszerűtlen feldolgozás és véletlen elvesztés elleni védelmet.<\/li><\/ul><p>A személyes adatokat általában hozzájárulás alapján kezeljük, amelyet bármikor visszavonhat. Más esetekben a feldolgozás szükséges a felhasználóval kötött szerződés teljesítéséhez vagy a felhasználó kérésére történő cselekvéshez még a szerződés megkötése előtt. Bizonyos esetekben a feldolgozás szükséges jogi kötelezettség teljesítéséhez, vagy a jogos érdekek érvényesítéséhez.<\/p><h5>AZ ÖN JOGAI<\/h5><p>Az alábbi jogok illetik meg Önt:<\/p><ul><li>Hozzáférés személyes adataihoz, információk beszerzése az adatokról, azok céljáról és másolatok igénylése,<\/li><li>A hibás vagy hiányos adatok helyesbítése, valamint az elfeledtetés joga, azaz a jogtalanul kezelt adatok törlése,<\/li><li>A hozzájárulás visszavonása bármikor, az adatkezelés jogszerűségét nem befolyásolva, ha a feldolgozás a hozzájárulás alapján történt.<\/li><\/ul><h5>SÜTIK<\/h5><p>A < ISP Név > sütiket használ a szolgáltatás kényelmes igénybevétele érdekében. A szolgáltatás használatával hozzájárulsz a sütik használatához. Ha nem blokkolod ezeket a sütiket, elfogadod azok alkalmazását és tárolását az eszközödön.<\/p><h5>ADATVÉDELMI IRÁNYELV VÁLTOZÁSAI<\/h5><p>A < ISP Név > fenntartja a jogot az adatvédelmi irányelvek módosítására, amelyet befolyásolhat az internetes technológia fejlődése, a jogszabályi változások, vagy a hozzáférési szolgáltatás fejlesztése. Minden változásról egyértelmű és olvasható módon tájékoztatjuk.<\/p><p>Adatvédelmi kérdésekkel az alábbi e-mail címen lehet kapcsolatba lépni: adres@email.hu<\/p>"
 }

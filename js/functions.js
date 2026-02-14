@@ -1,6 +1,6 @@
 /**
- * @version 2.5.5
- * @package Multilanguage Captive Portal Template for OPNsense
+ * @version 2.6.0
+ * @package GuardianSuit - Multilanguage Captive Portal Template for OPNsense
  * @author Mirosław Majka (mix@proask.pl)
  * @copyright (C) 2025 Mirosław Majka <mix@proask.pl>
  * @license GNU/GPL license: http://www.gnu.org/copyleft/gpl.html
@@ -14,16 +14,18 @@ let settings = {},
     langsRTL = ['ar','he','fa','ur','dv','sy','ku','ps','yi'],
     _root = document.querySelector(':root'),
     attempt = 0,
+    preparedMenu = '',
+    preparedMenuConfig = {},
     langsFlags = {
         af:"za",am:"et",ar:"sa",az:"az",be:"by",bg:"bg",bn:"bd",bs:"ba",ca:"es-ct",cs:"cz",cy:"gb",
         da:"dk",de:"de",el:"gr",en:"gb",es:"es",et:"ee",eu:"es",fa:"ir",fi:"fi",tl:"ph",fr:"fr",
         ga:"ie",gl:"es",gu:"in",he:"il",hi:"in",hr:"hr",hu:"hu",hy:"am",id:"id",is:"is",it:"it",
-        ja:"jp",ko:"kr",ka:"ge",kk:"kz",km:"kh",kn:"in",ko:"kr",ky:"kg",lt:"lt",lv:"lv",mk:"mk",
-        ml:"in",mn:"mn",mr:"in",ms:"my",mt:"mt",nb:"no",ne:"np",nl:"nl",pa:"in",pl:"pl",ps:"af",
-        pt:"pt",ro:"ro",ru:"ru",si:"lk",sk:"sk",sl:"si",sq:"al",sr:"rs",sv:"se",sw:"ke",ta:"in",
-        te:"in",th:"th",tr:"tr",uk:"ua",ur:"pk",uz:"uz",vi:"vn",zh:"cn",zu:"za",dv:"mv",ha:"ng",
-        ku:"iq",kmr:"tr",sy:"sy",yi:"il",dz:"bt",rw:"rw",so:"so",tg:"tj",mg:"mg",my:"mm",km:"kh",
-        lo:"la",ti:"er",rn:"bi",xh:"za",st:"ls",tn:"bw",ss:"sz",nd:"zw",aa:"er"
+        ja:"jp",ko:"kr",ka:"ge",kk:"kz",km:"kh",kn:"in",ky:"kg",lt:"lt",lv:"lv",mk:"mk",ml:"in",
+        mn:"mn",mr:"in",ms:"my",mt:"mt",nb:"no",ne:"np",nl:"nl",pa:"in",pl:"pl",ps:"af",pt:"pt",
+        ro:"ro",ru:"ru",si:"lk",sk:"sk",sl:"si",sq:"al",sr:"rs",sv:"se",sw:"ke",ta:"in",te:"in",
+        th:"th",tr:"tr",uk:"ua",ur:"pk",uz:"uz",vi:"vn",zh:"cn",zu:"za",dv:"mv",ha:"ng",ku:"iq",
+        kmr:"tr",sy:"sy",yi:"il",dz:"bt",rw:"rw",so:"so",tg:"tj",mg:"mg",my:"mm",km:"kh",lo:"la",
+        ti:"er",rn:"bi",xh:"za",st:"ls",tn:"bw",ss:"sz",nd:"zw",aa:"er"
     },
     langISOMap = {
         en:"en-GB",pl:"pl-PL",sk:"sk-SK",fr:"fr-FR",de:"de-DE",nl:"nl-NL",no:"nb-NO",sv:"sv-SE",
@@ -31,14 +33,13 @@ let settings = {},
         da:"da-DK",af:"af-ZA",am:"am-ET",ar:"ar-SA",az:"az-AZ",be:"be-BY",bg:"bg-BG",bn:"bn-BD",
         bs:"bs-BA",cs:"cs-CZ",cy:"cy-GB",el:"el-GR",et:"et-EE",eu:"eu-ES",fa:"fa-IR",tl:"tl-PH",
         ga:"ga-IE",gl:"gl-ES",gu:"gu-IN",he:"he-IL",hi:"hi-IN",hr:"hr-HR",hu:"hu-HU",hy:"hy-AM",
-        id:"id-ID",is:"is-IS",ka:"ka-GE",kk:"kk-KZ",km:"km-KH",kn:"kn-IN",ko:"ko-KR",ky:"ky-KG",
-        lt:"lt-LT",lv:"lv-LV",mk:"mk-MK",ml:"ml-IN",mn:"mn-MN",mr:"mr-IN",ms:"ms-MY",mt:"mt-MT",
-        nb:"nb-NO",ne:"ne-NP",pa:"pa-IN",ps:"ps-AF",ro:"ro-RO",ru:"ru-RU",si:"si-LK",sl:"sl-SI",
-        sq:"sq-AL",sr:"sr-RS",sw:"sw-KE",ta:"ta-IN",te:"te-IN",th:"th-TH",tr:"tr-TR",uk:"uk-UA",
-        ur:"ur-PK",uz:"uz-UZ",vi:"vi-VN",zu:"zu-ZA",dv:"dv-MV",ha:"ha-NG",ku:"ku-TR",kmr:"ku-TR",
-        sy:"ar-SY",yi:"he-IL",dz:"dz-BT",rw:"rw-RW",so:"so-SO",tg:"tg-TJ",mg:"mg-MG",my:"my-MM",
-        lo:"lo-LA",ti:"ti-ER",rn:"rn-BI",xh:"xh-ZA",st:"st-LS",tn:"tn-BW",ss:"ss-SZ",nd:"nd-ZW",
-        aa:"aa-ER"
+        id:"id-ID",is:"is-IS",ka:"ka-GE",kk:"kk-KZ",km:"km-KH",kn:"kn-IN",ky:"ky-KG",lt:"lt-LT",
+        lv:"lv-LV",mk:"mk-MK",ml:"ml-IN",mn:"mn-MN",mr:"mr-IN",ms:"ms-MY",mt:"mt-MT",nb:"nb-NO",
+        ne:"ne-NP",pa:"pa-IN",ps:"ps-AF",ro:"ro-RO",ru:"ru-RU",si:"si-LK",sl:"sl-SI",sq:"sq-AL",
+        sr:"sr-RS",sw:"sw-KE",ta:"ta-IN",te:"te-IN",th:"th-TH",tr:"tr-TR",uk:"uk-UA",ur:"ur-PK",
+        uz:"uz-UZ",vi:"vi-VN",zu:"zu-ZA",dv:"dv-MV",ha:"ha-NG",ku:"ku-TR",kmr:"ku-TR",sy:"ar-SY",
+        yi:"he-IL",dz:"dz-BT",rw:"rw-RW",so:"so-SO",tg:"tg-TJ",mg:"mg-MG",my:"my-MM",lo:"lo-LA",
+        ti:"ti-ER",rn:"rn-BI",xh:"xh-ZA",st:"st-LS",tn:"tn-BW",ss:"ss-SZ",nd:"nd-ZW",aa:"aa-ER"
     };
 
 const shortcutMap = {
@@ -49,7 +50,8 @@ const shortcutMap = {
     i: "#signin, #signin_anon",
     o: "#logoff",
     l: ".trigger, a.current",
-    h: "#launchTour"
+    h: "#launchTour",
+    m: "#menuTrigger"
 };
 
 const allowedAttrs    = ['aria-label', 'title'];
@@ -91,7 +93,9 @@ const updateUIWithLangText = (texts) => {
                     }
                 });
             }
-        } else if (typeof value === 'object') {
+        } else if (settings.layout.enable_menu && key.includes('menu') && typeof value === 'object') {
+            preparedMenu = buildOffcanvasMenu(value, texts);
+        } else if (typeof value === 'object' && !key.includes('menu')) {
             const content = Object.entries(value)
             .map(([k, v]) => `<div class="${k}">${v}</div>`)
             .join('');
@@ -116,6 +120,7 @@ const isValidUrl = (string) => {
 }
 
 const showModal = ({ title, subtitle, content, iconText = '&#9888;', customStyles = {}, callback, onOpen, onClose }) => {
+    const offcanvas = document.querySelector('.offcanvas');
     const defaultStyles = {
         padding: 20,
         headerColor: settings.modal.show_rules_header_color,
@@ -123,8 +128,12 @@ const showModal = ({ title, subtitle, content, iconText = '&#9888;', customStyle
         background: settings.modal.bg_color,
         overlayColor: settings.modal.overlay_color,
         borderBottom: false,
+        zindex: settings.modal.zindex,
         timeout: false,
         timeoutProgressbar: false,
+        iframe: false,
+        iframeHeight: 800,
+        iframeURL: '',
         pauseOnHover: false,
         closeButton: true,
         closeOnEscape: true,
@@ -154,6 +163,7 @@ const showModal = ({ title, subtitle, content, iconText = '&#9888;', customStyle
         top: styles.top,
         rtl: document.documentElement.dir === 'rtl',
         borderBottom: styles.borderBottom,
+        zindex: styles.zindex,
         timeout: styles.timeout,
         timeoutProgressbar: styles.timeoutProgressbar,
         pauseOnHover: styles.pauseOnHover,
@@ -204,23 +214,145 @@ const forceLocalesData = () => {
     }
 };
 
+const buildOffcanvasMenu = (menuConfig, langText) => {
+    preparedMenuConfig = menuConfig;
+
+    let html = '';
+
+    Object.entries(menuConfig).forEach(([key, group]) => {
+        if (!key.startsWith('group') || !Array.isArray(group.items) || !group.items.length) {
+            return;
+        }
+
+        const itemsHtml = group.items
+            .filter(ref => ref.startsWith('item'))
+            .map(ref => {
+                const item = menuConfig[ref];
+                return item ? createMenuItemHTML(ref, item) : '';
+            })
+            .join('');
+
+        if (!itemsHtml) {
+            return;
+        }
+
+        html += `
+            <div class="menu-group ${key}">
+                <h6 class="menu-group-title">${group.title || ''}</h6>
+                <ul class="nav flex-column">
+                    ${itemsHtml}
+                </ul>
+            </div>
+        `;
+    });
+
+    const looseItems = Object.entries(menuConfig)
+        .filter(([key, item]) => key.startsWith('item') && !item.items && !Object.values(menuConfig).some(g => g.items?.includes(key)))
+        .map(([key, item]) => createMenuItemHTML(key, item))
+        .join('');
+
+    if (looseItems) {
+        html += `<ul class="nav flex-column">${looseItems}</ul>`;
+    }
+
+    return html;
+};
+
+const createMenuItemHTML = (() => {
+    const colors = [
+        '#f44336','#e91e63','#9c27b0','#673ab7','#3f51b5','#2196f3','#03a9f4',
+        '#009688','#4caf50','#ff9800','#ff5722','#795548','#607d8b','#9e9e9e',
+        '#ffeb3b','#ffc107','#00bcd4','#8bc34a','#cddc39','#ff4081','#536dfe',
+        '#00e676','#76ff03','#ff6e40','#d500f9','#651fff','#2979ff','#64ffda'
+    ];
+
+    let availableColors = [];
+
+    return (key, item) => {
+        const hasIcon = item.icon && item.icon.trim() !== '';
+        let icon = '';
+        let link_class = '';
+
+        if (hasIcon) {
+            const isSingleChar = item.icon.length === 1 && !item.icon.startsWith('&#');
+            if (isSingleChar) {
+                if (availableColors.length === 0) availableColors = [...colors];
+
+                const idx = Math.floor(Math.random() * availableColors.length);
+                const bg = availableColors.splice(idx, 1)[0];
+
+                const r = parseInt(bg.slice(1,3),16);
+                const g = parseInt(bg.slice(3,5),16);
+                const b = parseInt(bg.slice(5,7),16);
+                const brightness = 0.299*r + 0.587*g + 0.114*b;
+                const textColor = brightness > 186 ? '#000' : '#fff';
+
+                icon = `<span class="link-icon char-icon" style="background-color:${bg};color:${textColor};">${item.icon}</span>`;
+            } else {
+                icon = `<span class="link-icon">${item.icon}</span>`;
+            }
+            link_class = ' d-flex align-items-center';
+        }
+
+        let dataset = '';
+        let onclick = '';
+
+        if (typeof item.href === 'object' && item.href.type === 'modal') {
+            dataset = `data-modal-key="${key}"`;
+            onclick = `onclick="$.handleMenuModalClick(this); return false;"`;
+        }
+
+        const href   = typeof item.href === 'string' ? item.href : '#';
+        const target = item.target || '_self';
+
+        return `
+            <li class="nav-item ${key}">
+                <a class="nav-link ${key}-link${link_class}" href="${href}" target="${target}" role="menuitem" ${dataset} ${onclick}>
+                    ${icon}<span>${item.title || ''}</span>
+                </a>
+            </li>
+        `;
+    };
+})();
+
+$.handleMenuModalClick = function(el) {
+    const key = el.dataset.modalKey;
+    if (!key || !preparedMenuConfig) {
+        return;
+    }
+
+    const item = preparedMenuConfig[key];
+    if (!item || !item.href || item.href.type !== 'modal') {
+        return;
+    }
+
+    const modalData = {
+        title: langText[item.href.title] || '',
+        subtitle: langText[item.href.subtitle] || '',
+        content: langText[item.href.content] || '',
+        iconText: item.href.iconText || null,
+        customStyles: item.href.customStyles || {}
+    };
+
+    showModal(modalData);
+
+    const offcanvasEl = document.getElementById('menu');
+    bootstrap.Offcanvas.getInstance(offcanvasEl)?.hide();
+};
+
 $.getMultiResources = function(batch, basePath) {
     var executeInOrder = function(source, code, resolve) {
         if (source == batch[0]) {
             batch.shift();
 
-            if (source.endsWith('.js')) {
-                if (!loadedScripts.has(source)) {
-                    Function(`"use strict";${code}`)($);
-                    loadedScripts.add(source);
-                }
-            } else if (source.endsWith('.css')) {
-                if (!loadedStyles.has(source)) {
-                    var style = document.createElement('style');
-                    style.textContent = code;
-                    document.head.appendChild(style);
-                    loadedStyles.add(source);
-                }
+            if (source.endsWith('.js') && !loadedScripts.has(source)) {
+                Function(`"use strict";${code}`)($);
+                loadedScripts.add(source);
+            } else if (source.endsWith('.css') && !loadedStyles.has(source)) {
+                var style = document.createElement('style');
+                style.textContent = code;
+                document.head.appendChild(style);
+                loadedStyles.add(source);
             }
 
             resolve();
@@ -285,6 +417,63 @@ $.loadLangs = async (language = settings.default_lang) => {
         const response = await loadJson('/langs', language);
         Object.assign(langText, response);
         updateUIWithLangText(langText);
+
+        if (settings.layout.enable_menu && preparedMenu) {
+            const isRTL = document.documentElement.dir === 'rtl';
+            const position = (
+                isRTL
+                ? { left: 'end',  right: 'start' }
+                : { left: 'start', right: 'end' }
+            )[settings.layout?.menu_position] || 'start';
+
+            const offcanvasHtml = `
+                <div class="menu-wrapper menu-${position}">
+                    <div id="menu" class="offcanvas offcanvas-${position}" tabindex="-1" aria-labelledby="menuTitle">
+                        <div class="offcanvas-header flex-wrap position-relative">
+                            <h5 class="offcanvas-title" id="menuTitle">${langText.menu.title || ''}</h5>
+                            <div id="menuTrigger" class="menu-trigger" role="button" aria-controls="menu" aria-expanded="false">
+                                <div class="icon"></div>
+                            </div>
+                        </div>
+                        <div class="offcanvas-body">
+                            <ul class="nav flex-column" id="menuContainer">
+                                ${preparedMenu}
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            `;
+
+            $('.menu-wrapper').remove();
+            $('.captiveportal').prepend(offcanvasHtml);
+
+            const menuEl  = document.getElementById('menu');
+            const trigger = document.querySelector('.menu-trigger');
+
+            if (menuEl && trigger) {
+                const offcanvas = bootstrap.Offcanvas.getOrCreateInstance(menuEl);
+
+                trigger.addEventListener('click', () => {
+                    const isOpen = menuEl.classList.contains('show');
+                    isOpen ? offcanvas.hide() : offcanvas.show();
+                });
+
+                menuEl.addEventListener('shown.bs.offcanvas', () => {
+                    trigger.classList.add('active');
+                    trigger.setAttribute('aria-expanded', 'true');
+                });
+
+                menuEl.addEventListener('hidden.bs.offcanvas', () => {
+                    trigger.classList.remove('active');
+                    trigger.setAttribute('aria-expanded', 'false');
+                });
+
+                const menuLinks = menuEl.querySelectorAll('#menuContainer a.nav-link');
+                menuLinks.forEach(link => {
+                    link.addEventListener('click', () => offcanvas.hide());
+                });
+            }
+        }
     } catch {
         showModal({
             title: 'An error occurred',
@@ -402,10 +591,10 @@ $.setLangLayout = (langs, selectedLang, container) => {
     }
 };
 
-$.clientInfo = async (data) => {
+$.clientInfo = async (data, selector = null) => {
     await waitForObject(langText);
 
-    const container = $(`#cp_portal_event_${data.authType}`);
+    const container = selector ? $(selector) : $(`#cp_portal_event_${data.authType}`);
 
     if (!container.length) {
         return;
@@ -887,7 +1076,8 @@ $.initKeyboardAccessibility = () => {
         "#signin_anon",
         "#logoff",
         ".cpModal-button-close",
-        "a.current"
+        "a.current",
+        "#menuTrigger"
     ];
 
     const langSelectors = Object.keys(langsFlags).map(lang => `#${lang}`);
@@ -1072,7 +1262,7 @@ $.initTour = () => {
         return null;
     }
 
-    const breakpoint = settings.a11y_helper_breakpoint || 1200;
+    const breakpoint = settings?.layout?.a11y_helper_breakpoint || 1200;
 
     const allowedAttrs = new Set([
         "data-title",

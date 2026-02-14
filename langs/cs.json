@@ -7,6 +7,75 @@
     "attr_isp_info": {
         "aria-label": "Informace o poskytovateli internetu"
     },
+    "menu": {
+        "title": "GuardianSuit Menu",
+        "item1": {
+            "title": "Internet",
+            "icon": "I",
+            "href": "https://yourdomain.com/#",
+            "target": "_blank"
+        },
+        "item2": {
+            "title": "Televize",
+            "icon": "V",
+            "href": "https://yourdomain.com/#",
+            "target": "_blank"
+        },
+        "item3": {
+            "title": "Telefon",
+            "icon": "T",
+            "href": "https://yourdomain.com/#",
+            "target": "_blank"
+        },
+        "item4": {
+            "title": "Další služby",
+            "icon": "U",
+            "href": "https://yourdomain.com/#",
+            "target": "_blank"
+        },
+        "item5": {
+            "title": "Kontakt",
+            "icon": "K",
+            "href": "https://yourdomain.com/#",
+            "target": "_blank"
+        },
+        "item6": {
+            "title": "Zásady ochrany osobních údajů",
+            "icon": "&#167;",
+            "href": {"type": "modal", "title": "privacy_title", "subtitle": "privacy_subtitle", "content": "privacy_content", "iconText": "&#167;"},
+            "target": "_self"
+        },
+        "item7": {
+            "title": "Soubory Cookies",
+            "icon": "&#9865;",
+            "href": {"type": "modal", "title": "cookies_title", "subtitle": "cookies_subtitle", "content": "cookies_content", "iconText": "&#9865;"},
+            "target": "_self"
+        },
+        "item8": {
+            "title": "Dokumentace",
+            "icon": "&#9783;",
+            "href": "hhttps://github.com/mixmint/opnsense-captive-portal-template/blob/main/README.md",
+            "target": "_blank"
+        },
+        "item9": {
+            "title": "O programu",
+            "icon": "&#9873;",
+            "href": {"type": "modal", "title": "about_title", "subtitle": "about_subtitle", "content": "about_content", "iconText": "&#9873;"},
+            "target": "_self"
+        },
+        "group1": {
+            "title": "Nabídka",
+            "items": ["item1", "item2", "item3", "item4", "item5"]
+        },
+        "group2": {
+            "title": "Informace",
+            "items": ["item6", "item7"]
+        },
+        "group3": {
+            "title": "Nápověda",
+            "items": ["item8", "item9"]
+        }
+    },
     "footer_isp_info": {},
     "pagetitle": "Systém přihlášení uživatele | <Název ISP>",
     "username": "Uživatelské jméno (Login)",
@@ -77,7 +146,7 @@
     "a11y_helper_prev": "Zpět",
     "a11y_helper_done": "Hotovo",
     "a11y-keys_data-title": "Klávesové zkratky",
-    "a11y-keys_data-content": "<span style=\"font-size: 14px\">Kombinace kláves <br \/><strong>⇧ Shift (levý) <br \/>+&nbsp;⌥ Alt (levý) <br \/>+&nbsp;písmeno<\/strong><br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;U<\/strong><br \/>fokus na pole Uživatelské jméno<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;P<\/strong><br \/>fokus na pole Heslo<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;A<\/strong><br \/>zaškrtne/odškrtne pole \"Souhlasím s pravidly\"<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;R<\/strong><br \/>otevře modální okno s pravidly<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;I<\/strong><br \/>přihlásí uživatele<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;O<\/strong><br \/>odhlásí uživatele<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;L<\/strong><br \/>spustí přepínač jazyka<\/span>",
+    "a11y-keys_data-content": "<span style=\"font-size: 14px\">Kombinace kláves <br \/><strong>⇧ Shift (levý) <br \/>+&nbsp;⌥ Alt (levý) <br \/>+&nbsp;písmeno<\/strong><br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;U<\/strong><br \/>fokus na pole Uživatelské jméno<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;P<\/strong><br \/>fokus na pole Heslo<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;A<\/strong><br \/>zaškrtne/odškrtne pole \"Souhlasím s pravidly\"<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;R<\/strong><br \/>otevře modální okno s pravidly<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;I<\/strong><br \/>přihlásí uživatele<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;O<\/strong><br \/>odhlásí uživatele<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;L<\/strong><br \/>spustí přepínač jazyka<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;M<\/strong><br \/>otevře offcanvas menu (pokud je povoleno)<\/span>",
     "a11y-lang-keys_data-title": "Klávesové zkratky pro jazyky",
     "a11y-lang-keys_data-content": "<span style=\"font-size: 14px\">Podržte <strong>⇧ Shift (levý) a stiskněte dva znaky kódu jazyka<\/strong> (ISO 639-1) současně nebo po sobě.<br \/><br \/>Příklady:<br \/><strong>⇧ Shift&nbsp;+&nbsp;P&nbsp;+&nbsp;L<\/strong> → přepne na polštinu (pl)<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;E&nbsp;+&nbsp;N<\/strong> → přepne na angličtinu (en)<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;D&nbsp;+&nbsp;E<\/strong> → přepne na němčinu (de)<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;F&nbsp;+&nbsp;R<\/strong> → přepne na francouzštinu (fr)<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;E&nbsp;+&nbsp;S<\/strong> → přepne na španělštinu (es)<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;I&nbsp;+&nbsp;T<\/strong> → přepne na italštinu (it)<br \/>...<\/span>",
     "polyglotLanguageSwitcher_data-title": "Volba jazyka",
@@ -97,5 +166,16 @@
     "signin_anon_data-title": "Přihlášení",
     "signin_anon_data-content": "Kliknutím na tlačítko <strong>Přihlášení<\/strong> spustíte připojení k internetu.",
     "logoff_data-title": "Odhlášení",
-    "logoff_data-content": "Kliknutím na tlačítko <strong>Odhlášení<\/strong> ukončíte připojení k internetu."
+    "logoff_data-content": "Kliknutím na tlačítko <strong>Odhlášení<\/strong> ukončíte připojení k internetu.",
+    "menuTrigger_data-title": "Menu offcanvas",
+    "menuTrigger_data-content": "Kliknutím na <strong>&#9776; offcanvas hamburger<\/strong> nebo současným stisknutím kláves <strong>%s<\/strong> otevřete kontextové menu.",
+    "about_title": "GuardianSuit",
+    "about_subtitle": "Pokročilý šablon Captive Portal pro OPNsense",
+    "about_content": "<p><b>GuardianSuit<\/b> je moderní, responzivní a animovaný šablon Captive Portal pro OPNsense. Poskytuje uživatelům atraktivní přihlašovací zkušenost a administrátorům plnou kontrolu nad vzhledem a funkcionalitou uvítací stránky.<\/p><p><b>Klíčové funkce:<\/b><\/p><ul><li>Responzivita a animace.<\/li><li>Vícejazyčnost.<\/li><li>Snadná personalizace vzhledu a barevného schématu.<\/li><li>Intuitivní UX a shoda s WCAG.<\/li><li>Jednoduchá integrace s OPNsense.<\/li><\/ul><p><b>Použití:<\/b><br \/>Ideální pro firemní sítě, hotely, kavárny a další místa vyžadující vizuálně atraktivní uvítací stránku Captive Portal.<\/p><p><b>Autor:<\/b> Mirosław Majka &lt;mix@proask.pl&gt; | &copy; 2025 GuardianSuit<\/p>",
+    "cookies_title": "Cookies",
+    "cookies_subtitle": "Jak se používají soubory cookies.",
+    "cookies_content": "<h5>Co je soubor cookie?<\/h5><p>Soubory cookies (také nazývané \"cookies\") jsou malé textové soubory, které automaticky vytváří webový prohlížeč při návštěvě webových stránek. Informace uložené v daném souboru cookie mohou být přečteny pouze stránkou, ze které soubor pochází. Tímto způsobem nemůže webová stránka přistupovat k jiným souborům na počítači uživatele.<\/p><p>Díky informacím uloženým v souborech cookies stránka \"ví\", jak ji používáte, a může podle toho přizpůsobit zobrazený obsah nebo nabídnout pomoc.<\/p><h5>Proč používáme soubory cookies?<\/h5><p>Na stránce používáme technické soubory cookies, které jsou nezbytné pro správné fungování webu. Používáme je k optimalizaci naší stránky pro různá zařízení a prohlížeče, které návštěvníci nejčastěji používají – díky tomu se stránka zobrazí správně a čitelně a zapamatuje si, zda jste dali souhlas s některými zobrazenými prvky.<\/p><p>Uživatel se nemůže vzdát technických souborů cookies.<\/p><h5>Jak dlouho používáme soubory cookies?<\/h5><p>Používáme tzv. trvalé soubory cookies, které zůstávají na vašem zařízení po určitou dobu nebo dokud je ručně nesmažete.<\/p><h5>Jaké údaje shromažďujeme prostřednictvím souborů cookies?<\/h5><p>Pomocí technologie cookies shromažďujeme pouze anonymní technické údaje o vás, které slouží ke zlepšení pohodlí při používání našeho webu.<\/p><p>Ne shromažďujeme žádné údaje, které by umožňovaly vaši identifikaci. Jedinou informací o uživateli, která sama o sobě neumožňuje identifikaci, je IP adresa, ze které se uživatel připojuje.<\/p>",
+    "privacy_title": "Zásady ochrany osobních údajů",
+    "privacy_subtitle": "Zpracování osobních údajů",
+    "privacy_content": "<p>Tento dokument jsme vytvořili, abyste byli informováni o našich Zásadách ochrany osobních údajů. Zjistíte zde, kdo jsme, jak shromažďujeme, používáme, zveřejňujeme a sdílíme osobní údaje v rámci <b><&nbsp;Název ISP&nbsp;><\/b>, se sídlem na [Název ulice 10, město a PSČ], za jakým účelem to děláme a jak mohou osoby, jejichž údaje zpracováváme, uplatňovat svá práva na ochranu soukromí.<\/p><p><&nbsp;Název ISP&nbsp;> je odpovědný za zpracování osobních údajů v souladu s těmito Zásadami ochrany osobních údajů.<\/p><h5>O NÁS<\/h5><p>Správcem, tedy subjektem zpracovávajícím osobní údaje v souvislosti s používáním této služby, je <&nbsp;Název ISP&nbsp;>, [Název ulice 10, město a PSČ]; IČ 1234567890, DIČ 123456789<\/p><h5>KONTAKT S NÁMI<\/h5><ul><li>elektronicky na e-mail: adres@email.cz,<\/li><li>poštou na adresu: Název ISP, [Název ulice 10, město a PSČ]<\/li><\/ul><h5>ZÁSADY OBSAŽENÉ V TĚCHTO ZÁSADÁCH OCHRANY OSOBNÍCH ÚDAJŮ<\/h5><p>Dbáme na to, aby zpracování vašich údajů probíhalo v souladu s nařízeními Evropského parlamentu a Rady (EU) č. 2016/679 ze dne 27. dubna 2016 o ochraně fyzických osob v souvislosti se zpracováním osobních údajů a o volném pohybu těchto údajů (dále jen \"GDPR\"), zákonem o ochraně osobních údajů a dalšími speciálními předpisy. Tyto Zásady ochrany osobních údajů byly připraveny v souladu s těmito předpisy. Jasně informujeme, jak shromažďujeme osobní údaje a za jakým účelem jsou využívány.<\/p><p>Upozorňujeme, že <&nbsp;Název ISP&nbsp;> shromažďuje osobní a firemní údaje od svých (potenciálních) klientů a partnerů, stejně jako údaje získané při používání služby přístupu k internetu.<\/p><h5>SHROMAŽĎOVÁNÍ OSOBNÍCH ÚDAJŮ<\/h5><p>Shromažďujeme osobní údaje poskytované uživateli v následujících případech:<\/p><ul><li>podávání nabídek, sjednávání podmínek spolupráce a/nebo poskytování informací o službách a dalších aktivitách <&nbsp;Název ISP&nbsp;>,<\/li><li>uzavírání a plnění smluv a udržování kontaktu s klientem/partnerem,<\/li><li>plnění povinností vyplývajících z obecně závazných právních předpisů,<\/li><li>odpovídání na dotazy, řešení reklamací a další poprodejní služby,<\/li><li>přímý marketing (mimo newsletter),<\/li><li>archivní účely (důkazní), případné stanovení, vymáhání nebo obrana proti nárokům.<\/li><\/ul><h5>UCHOVÁVÁNÍ A MAZÁNÍ ÚDAJŮ<\/h5><p>Pro zajištění bezpečnosti poskytnutých údajů jsme vypracovali interní postupy a doporučení, která zabraňují zpřístupnění údajů neoprávněným osobám. Používáme technologická, smluvní, administrativní a fyzická opatření k ochraně údajů před neoprávněným přístupem. Kontrolujeme jejich dodržování a průběžně ověřujeme jejich soulad s příslušnými právními předpisy.<\/p><p>Osobní údaje uživatele uchováváme pouze po dobu nezbytnou k naplnění účelů, pro které byly shromážděny.<\/p><h5>SDÍLENÍ A ZVEŘEJŇOVÁNÍ ÚDAJŮ<\/h5><p>Neprodáváme ani neposkytujeme osobní údaje uživatelů třetím stranám bez jejich souhlasu. Údaje uživatelů nejsou profilovány.<\/p><p>V závislosti na druhu a rozsahu spolupráce mezi uživatelem a <&nbsp;Název ISP&nbsp;>, v rámci provozované činnosti, můžeme předat údaje uživatele, pokud to vyžaduje platný právní předpis nebo pokud je to nezbytné k zajištění souladu s právními kroky, plnění smluvních závazků, reakci na nároky nebo ochraně práv, majetku či bezpečnosti.<\/p><h5>ZÁSADY, NA ZÁKLADĚ KTERÝCH ZPRACOVÁVÁME VAŠE ÚDAJE<\/h5><p>Při zpracování osobních údajů klademe nejvyšší důraz na ochranu zájmů osob, jejichž údaje zpracováváme, a zejména zajistit, aby údaje byly:<\/p><ul><li>zpracovávány v souladu s právními předpisy, poctivě a transparentně pro dotčenou osobu,<\/li><li>shromažďovány k jasným, výslovným a zákonným účelům a dále nezpracovávány v rozporu s těmito účely,<\/li><li>adekvátní, vhodné a omezené na to, co je nezbytné pro naplnění účelů, pro které jsou zpracovávány,<\/li><li>správné a v případě potřeby aktualizované. Přijímáme opatření, aby byly nesprávné údaje neprodleně opraveny nebo odstraněny,<\/li><li>uchovávány v podobě umožňující identifikaci dotčené osoby po dobu ne delší, než je nezbytné k naplnění účelů zpracování,<\/li><li>zpracovávány způsobem zajišťujícím odpovídající bezpečnost osobních údajů, včetně ochrany před neoprávněným nebo nezákonným zpracováním a náhodnou ztrátou či zničením.<\/li><\/ul><p>Vaše osobní údaje zpracováváme obvykle na základě souhlasu, který může být kdykoli odvolán. Jiným případem je situace, kdy je zpracování nezbytné k plnění smlouvy mezi Vámi a námi nebo k podniknutí opatření na Vaše vlastní žádost ještě před jejím uzavřením. V některých situacích je zpracování nezbytné k plnění zákonné povinnosti správce. Takové povinnosti vyplývají např. z pracovního práva či zákona o účetnictví. Zpracování může být rovněž nezbytné k účelům vyplývajícím z našich oprávněných zájmů, například k vymáhání pohledávek z naší podnikatelské činnosti.<\/p><h5>VAŠE PRÁVA<\/h5><p>Máte následující práva:<\/p><ul><li>přístup k obsahu Vašich osobních údajů a získání informací např. o kategoriích údajů, účelu jejich zpracování a také k získání jejich kopií,<\/li><li>oprava nesprávných nebo doplnění chybějících údajů a právo být zapomenut, což znamená, že máte právo na odstranění údajů zpracovaných neoprávněně nebo protiprávně (např. údaje již nejsou nezbytné pro účely, pro které byly shromážděny),<\/li><li>odvolání souhlasu se zpracováním údajů kdykoli bez vlivu na zákonnost zpracování provedeného na základě souhlasu před jeho odvoláním (pokud je zpracování prováděno podle čl. 6 odst. 1 písm. a) nebo čl. 9 odst. 2 písm. a) GDPR).<\/li><\/ul><h5>COOKIES<\/h5><p><&nbsp;Název ISP&nbsp;> používá soubory cookie, aby usnadnil používání služby. Používáním služby souhlasíte s používáním souborů cookie. Pokud je nezablokujete, souhlasíte s jejich použitím a uložením do paměti zařízení.<\/p><h5>ZMĚNY ZÁSAD OCHRANY OSOBNÍCH ÚDAJŮ<\/h5><p><&nbsp;Název ISP&nbsp;> si vyhrazuje právo změnit zásady ochrany osobních údajů, což může být ovlivněno rozvojem internetových technologií, případnými změnami zákonů v oblasti ochrany osobních údajů nebo rozvojem přístupové služby poskytované správcem. O všech změnách budeme informovat jasně a srozumitelně.<\/p><p>Veškeré dotazy týkající se zásad ochrany osobních údajů zasílejte na e-mail: adres@email.cz<\/p>"
 }

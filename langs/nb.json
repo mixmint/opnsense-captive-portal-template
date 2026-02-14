@@ -7,6 +7,75 @@
     "attr_isp_info": {
         "aria-label": "Informasjon om internettleverandør"
     },
+    "menu": {
+        "title": "GuardianSuit-meny",
+        "item1": {
+            "title": "Internett",
+            "icon": "I",
+            "href": "https://yourdomain.com/#",
+            "target": "_blank"
+        },
+        "item2": {
+            "title": "TV",
+            "icon": "V",
+            "href": "https://yourdomain.com/#",
+            "target": "_blank"
+        },
+        "item3": {
+            "title": "Telefon",
+            "icon": "T",
+            "href": "https://yourdomain.com/#",
+            "target": "_blank"
+        },
+        "item4": {
+            "title": "Tilleggs­tjenester",
+            "icon": "U",
+            "href": "https://yourdomain.com/#",
+            "target": "_blank"
+        },
+        "item5": {
+            "title": "Kontakt",
+            "icon": "K",
+            "href": "https://yourdomain.com/#",
+            "target": "_blank"
+        },
+        "item6": {
+            "title": "Personvern",
+            "icon": "&#167;",
+            "href": {"type": "modal", "title": "privacy_title", "subtitle": "privacy_subtitle", "content": "privacy_content", "iconText": "&#167;"},
+            "target": "_self"
+        },
+        "item7": {
+            "title": "Informasjonskapsler",
+            "icon": "&#9865;",
+            "href": {"type": "modal", "title": "cookies_title", "subtitle": "cookies_subtitle", "content": "cookies_content", "iconText": "&#9865;"},
+            "target": "_self"
+        },
+        "item8": {
+            "title": "Dokumentasjon",
+            "icon": "&#9783;",
+            "href": "https://github.com/mixmint/opnsense-captive-portal-template/blob/main/README.md",
+            "target": "_blank"
+        },
+        "item9": {
+            "title": "Om programmet",
+            "icon": "&#9873;",
+            "href": {"type": "modal", "title": "about_title", "subtitle": "about_subtitle", "content": "about_content", "iconText": "&#9873;"},
+            "target": "_self"
+        },
+        "group1": {
+            "title": "Tilbud",
+            "items": ["item1", "item2", "item3", "item4", "item5"]
+        },
+        "group2": {
+            "title": "Informasjon",
+            "items": ["item6", "item7"]
+        },
+        "group3": {
+            "title": "Hjelp",
+            "items": ["item8", "item9"]
+        }
+    },
     "footer_isp_info": {},
     "pagetitle": "Innloggingssystem | < ISP-navn >",
     "username": "Brukernavn (Login)",
@@ -77,7 +146,7 @@
     "a11y_helper_prev": "Forrige",
     "a11y_helper_done": "Ferdig",
     "a11y-keys_data-title": "Tastatursnarveier",
-    "a11y-keys_data-content": "<span style=\"font-size: 14px\">Tastkombinasjon <br \/><strong>⇧ Shift (venstre) <br \/>+&nbsp;⌥ Alt (venstre) <br \/>+&nbsp;bokstav<\/strong><br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;U<\/strong><br \/>Fokus på brukernavnfeltet<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;P<\/strong><br \/>Fokus på passordfeltet<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;A<\/strong><br \/>Markerer/avmarkerer boksen \"Jeg godtar vilkårene\"<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;R<\/strong><br \/>Åpner regelmodalen<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;I<\/strong><br \/>Logger inn brukeren<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;O<\/strong><br \/>Logger ut brukeren<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;L<\/strong><br \/>Aktiverer språkvelgeren<\/span>",
+    "a11y-keys_data-content": "<span style=\"font-size: 14px\">Tastkombinasjon <br \/><strong>⇧ Shift (venstre) <br \/>+&nbsp;⌥ Alt (venstre) <br \/>+&nbsp;bokstav<\/strong><br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;U<\/strong><br \/>Fokus på brukernavnfeltet<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;P<\/strong><br \/>Fokus på passordfeltet<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;A<\/strong><br \/>Markerer/avmarkerer boksen \"Jeg godtar vilkårene\"<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;R<\/strong><br \/>Åpner regelmodalen<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;I<\/strong><br \/>Logger inn brukeren<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;O<\/strong><br \/>Logger ut brukeren<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;L<\/strong><br \/>Aktiverer språkvelgeren<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;M<\/strong><br \/>å åpne offcanvas-menyen (hvis den er aktivert)<\/span>",
     "a11y-lang-keys_data-title": "Tastatursnarveier for språk",
     "a11y-lang-keys_data-content": "<span style=\"font-size: 14px\">Hold <strong>⇧ Shift (venstre) og trykk på to bokstaver for språkkode<\/strong> (ISO 639-1) samtidig eller en etter en.<br \/><br \/>Eksempler:<br \/><strong>⇧ Shift&nbsp;+&nbsp;P&nbsp;+&nbsp;L<\/strong> → bytter til polsk (pl)<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;E&nbsp;+&nbsp;N<\/strong> → bytter til engelsk (en)<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;D&nbsp;+&nbsp;E<\/strong> → bytter til tysk (de)<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;F&nbsp;+&nbsp;R<\/strong> → bytter til fransk (fr)<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;E&nbsp;+&nbsp;S<\/strong> → bytter til spansk (es)<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;I&nbsp;+&nbsp;T<\/strong> → bytter til italiensk (it)<br \/>...<\/span>",
     "polyglotLanguageSwitcher_data-title": "Språkvelger",
@@ -97,5 +166,16 @@
     "signin_anon_data-title": "Innlogging",
     "signin_anon_data-content": "Klikk på knappen <strong>Innlogging<\/strong> for å starte Internett-tilkoblingen.",
     "logoff_data-title": "Logg ut",
-    "logoff_data-content": "Klikk på knappen <strong>Logg ut<\/strong> for å avslutte Internett-tilkoblingen."
+    "logoff_data-content": "Klikk på knappen <strong>Logg ut<\/strong> for å avslutte Internett-tilkoblingen.",
+    "menuTrigger_data-title": "Offcanvas-meny",
+    "menuTrigger_data-content": "Ved å klikke på <strong>&#9776; offcanvas-hamburger<\/strong> eller samtidig trykke <strong>%s<\/strong> på tastaturet, åpner du kontekstmenyen.",
+    "about_title": "GuardianSuit",
+    "about_subtitle": "Avansert Captive Portal-mal for OPNsense",
+    "about_content": "<p><b>GuardianSuit<\/b> er en moderne, responsiv og animert Captive Portal-mal for OPNsense. Den gir brukere en attraktiv innloggingsopplevelse, og gir administratorer full kontroll over utseendet og funksjonaliteten på velkomstsiden.<\/p><p><b>Hovedfunksjoner:<\/b><\/p><ul><li>Responsiv design og animasjoner.<\/li><li>Flerspråklighet.<\/li><li>Enkel tilpasning av utseende og farger.<\/li><li>Intuitiv UX og WCAG-kompatibilitet.<\/li><li>Enkel integrasjon med OPNsense.<\/li><\/ul><p><b>Bruksområder:<\/b><br \/>Ideell for bedriftsnettverk, hoteller, kafeer og andre steder som krever en visuelt attraktiv Captive Portal-velkomstside.<\/p><p><b>Forfatter:<\/b> Mirosław Majka &lt;mix@proask.pl&gt; | &copy; 2025 GuardianSuit<\/p>",
+    "cookies_title": "Informasjonskapsler",
+    "cookies_subtitle": "Hvordan informasjonskapsler brukes.",
+    "cookies_content": "<h5>Hva er en informasjonskapsel?<\/h5><p>Informasjonskapsler (cookies) er små tekstfiler som automatisk opprettes av nettleseren når du besøker nettsider. Informasjonen i en informasjonskapsel kan kun leses av siden den kommer fra. Dermed har ikke nettsiden tilgang til andre filer som finnes på brukerens enhet.<\/p><p>Takket være informasjonen i informasjonskapslene «vet» nettsiden hvordan du bruker den, og kan tilpasse innholdet som vises for deg eller tilby deg hjelp.<\/p><h5>Hva bruker vi informasjonskapsler til?<\/h5><p>På nettsiden bruker vi tekniske informasjonskapsler som er nødvendige for at siden fungerer riktig. Vi bruker dem for å optimalisere nettsiden for de enheter og nettlesere som oftest brukes av besøkende – dette sikrer at datamaskinen, nettbrettet eller telefonen din viser siden korrekt og tydelig, samtidig som det husker om du har gitt samtykke til visse innholdselementer på nettsiden.<\/p><p>Brukeren kan ikke avslå tekniske informasjonskapsler.<\/p><h5>Hvor lenge bruker vi informasjonskapsler?<\/h5><p>Vi bruker såkalte permanente informasjonskapsler som forblir på enheten din i en bestemt periode eller til de slettes manuelt.<\/p><h5>Hvilke data samler vi via informasjonskapsler?<\/h5><p>Gjennom informasjonskapsler samler vi kun anonyme tekniske data om deg, som brukes for å forbedre opplevelsen på nettsiden vår.<\/p><p>Vi samler ingen data som kan identifisere deg. Den eneste informasjonen om brukeren som samles, og som alene ikke gjør identifikasjon mulig, er IP-adressen som brukes for å koble til nettsiden.<\/p>",
+    "privacy_title": "Personvernpolicy",
+    "privacy_subtitle": "Behandling av personopplysninger",
+    "privacy_content": "<p>Vi lager dette dokumentet for å informere deg om vår personvernpolicy. Her vil du finne ut hvem vi er, hvordan vi samler inn, bruker, avslører og deler personopplysninger innen <b><&nbsp;ISP-navn&nbsp;><\/b>, med adresse [ Nazwa ulicy 10, by og postnummer ], hvorfor vi gjør det og hvordan personer hvis data behandles kan håndheve sine rettigheter til personvern.<\/p><p><&nbsp;ISP-navn&nbsp;> er ansvarlig for behandlingen av personopplysninger i henhold til denne personvernpolicyen.<\/p><h5>OM OSS<\/h5><p>Den behandlingsansvarlige, dvs. enheten som behandler personopplysninger i forbindelse med din bruk av tjenesten, er <&nbsp;ISP-navn&nbsp;>, [ Nazwa ulicy 10, by og postnummer ]; NIP 1234567890, Regon 123456789,<\/p><h5>KONTAKT OSS<\/h5><ul><li>elektronisk via e-post: adres@email.pl,<\/li><li>skriftlig til adresse: ISP-navn, [ Nazwa ulicy 10, by og postnummer ]<\/li><\/ul><h5>PRINSIPPER I DENNE PERSONVERNPOLICYEN<\/h5><p>Vi sørger for at behandlingen av dine data skjer i samsvar med EU-forordning nr. 2016/679 (GDPR) og andre gjeldende lover om personvern. Denne personvernpolicyen er laget i tråd med disse reglene, og gir tydelig informasjon om hvordan vi samler inn og bruker personopplysninger.<\/p><p>Merk at <&nbsp;ISP-navn&nbsp;> samler inn personopplysninger og bedriftsinformasjon fra sine (potensielle) kunder og forretningspartnere, samt data som oppstår ved bruk av internettjenesten.<\/p><h5>SAMLING AV PERSONOPPLYSNINGER<\/h5><p>Vi samler inn personopplysninger som brukeren gir i følgende situasjoner:<\/p><ul><li>avgi tilbud, fastsette samarbeidsbetingelser og/eller gi informasjon om tjenester og andre aktiviteter fra <&nbsp;ISP-navn&nbsp;>,<\/li><li>inngåelse og gjennomføring av avtaler samt opprettholde kontakt med kunder/forretningspartnere,<\/li><li>oppfyllelse av juridiske forpliktelser,<\/li><li>besvare spørsmål, håndtere klager og annen etter-salgsservice,<\/li><li>direktemarkedsføring (annet enn nyhetsbrev),<\/li><li>arkiveringsformål, dokumentasjon og eventuell rettslig oppfølging.<\/li><\/ul><h5>LAGRING OG SLETTING AV DATA<\/h5><p>For å beskytte dataene har vi utviklet interne prosedyrer og anbefalinger som skal forhindre at uautoriserte personer får tilgang. Vi bruker teknologiske, kontraktsmessige, administrative og fysiske tiltak for å beskytte dataene. Vi kontrollerer og vurderer kontinuerlig samsvar med relevante lover.<\/p><p>Vi oppbevarer personopplysninger kun så lenge det er nødvendig for formålet de ble samlet inn for.<\/p><h5>DELING OG OFFENTLIGGJØRING<\/h5><p>Vi selger eller deler ikke personopplysninger med tredjeparter uten samtykke. Dataene brukes ikke til profilering.<\/p><p>Avhengig av type og omfang av samarbeidet mellom brukeren og <&nbsp;ISP-navn&nbsp;>, kan vi dele opplysninger hvis loven krever det, eller dersom det er nødvendig for juridiske forpliktelser, for å svare på krav eller beskytte rettigheter, eiendom eller sikkerhet.<\/p><h5>PRINSIPPER FOR BEHANDLING<\/h5><p>Vi behandler personopplysninger med høyest mulig aktsomhet og sørger for at de er:<\/p><ul><li>behandlet i samsvar med loven, rettferdig og transparent,<\/li><li>innsamlet for spesifikke, tydelige og lovlige formål, og ikke viderebehandlet på en måte som er uforenlig med disse formålene,<\/li><li>adekvate, relevante og begrenset til det som er nødvendig for formålet,<\/li><li>korrekte og oppdaterte, med tiltak for å rette eller slette uriktige opplysninger,<\/li><li>lagret på en måte som gjør det mulig å identifisere den registrerte kun så lenge det er nødvendig,<\/li><li>behandlet på en måte som sikrer tilstrekkelig sikkerhet mot uautorisert eller ulovlig behandling og utilsiktet tap eller ødeleggelse.<\/li><\/ul><p>Dine personopplysninger behandles vanligvis på grunnlag av samtykke, som kan trekkes tilbake når som helst. Behandling kan også være nødvendig for å oppfylle en avtale med deg, eller for å oppfylle juridiske forpliktelser eller våre legitime interesser, for eksempel ved krav eller forretningsdrift.<\/p><h5>DINE RETTIGHETER<\/h5><p>Du har følgende rettigheter:<\/p><ul><li>tilgang til dine personopplysninger, informasjon om datakategorier og formål, samt kopi av dataene,<\/li><li>rett til retting og utfylling av manglende data, samt retten til å bli glemt, dvs. fjerne data behandlet uten rettslig grunnlag,<\/li><li>tilbaketrekking av samtykke når som helst uten å påvirke lovligheten av tidligere behandling basert på samtykke.<\/li><\/ul><h5>COOKIES<\/h5><p><&nbsp;ISP-navn&nbsp;> bruker informasjonskapsler for å gjøre tjenesten enklere å bruke. Ved å bruke tjenesten godtar du bruk av informasjonskapsler. Hvis du ikke blokkerer dem, samtykker du i at de lagres på enheten din.<\/p><h5-ENDRINGER I PERSONVERNPOLICY<\/h5><p><&nbsp;ISP-navn&nbsp;> forbeholder seg retten til å endre personvernpolicyen i takt med teknologisk utvikling, lovendringer eller endringer i tjenesten. Alle endringer vil bli kommunisert tydelig og forståelig.<\/p><p>Eventuelle spørsmål angående personvern kan sendes til e-post: adres@email.pl<\/p>"
 }

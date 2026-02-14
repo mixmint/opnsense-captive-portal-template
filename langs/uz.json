@@ -7,6 +7,75 @@
     "attr_isp_info": {
         "aria-label": "Internet provayderi haqida ma’lumot"
     },
+    "menu": {
+        "title": "GuardianSuit Menyu",
+        "item1": {
+            "title": "Internet",
+            "icon": "I",
+            "href": "https://yourdomain.com/#",
+            "target": "_blank"
+        },
+        "item2": {
+            "title": "Televiziya",
+            "icon": "T",
+            "href": "https://yourdomain.com/#",
+            "target": "_blank"
+        },
+        "item3": {
+            "title": "Telefon",
+            "icon": "F",
+            "href": "https://yourdomain.com/#",
+            "target": "_blank"
+        },
+        "item4": {
+            "title": "Qo'shimcha xizmatlar",
+            "icon": "Q",
+            "href": "https://yourdomain.com/#",
+            "target": "_blank"
+        },
+        "item5": {
+            "title": "Kontakt",
+            "icon": "K",
+            "href": "https://yourdomain.com/#",
+            "target": "_blank"
+        },
+        "item6": {
+            "title": "Maxfiylik siyosati",
+            "icon": "&#167;",
+            "href": {"type": "modal", "title": "privacy_title", "subtitle": "privacy_subtitle", "content": "privacy_content", "iconText": "&#167;"},
+            "target": "_self"
+        },
+        "item7": {
+            "title": "Cookies fayllari",
+            "icon": "&#9865;",
+            "href": {"type": "modal", "title": "cookies_title", "subtitle": "cookies_subtitle", "content": "cookies_content", "iconText": "&#9865;"},
+            "target": "_self"
+        },
+        "item8": {
+            "title": "Hujjatlar",
+            "icon": "&#9783;",
+            "href": "https://github.com/mixmint/opnsense-captive-portal-template/blob/main/README.md",
+            "target": "_blank"
+        },
+        "item9": {
+            "title": "Dastur haqida",
+            "icon": "&#9873;",
+            "href": {"type": "modal", "title": "about_title", "subtitle": "about_subtitle", "content": "about_content", "iconText": "&#9873;"},
+            "target": "_self"
+        },
+        "group1": {
+            "title": "Takliflar",
+            "items": ["item1", "item2", "item3", "item4", "item5"]
+        },
+        "group2": {
+            "title": "Ma'lumotlar",
+            "items": ["item6", "item7"]
+        },
+        "group3": {
+            "title": "Yordam",
+            "items": ["item8", "item9"]
+        }
+    },
     "footer_isp_info": {},
     "pagetitle": "Foydalanuvchi tizimiga kirish | < ISP nomi >",
     "username": "Foydalanuvchi nomi (Login)",
@@ -77,7 +146,7 @@
     "a11y_helper_prev": "Oldingi",
     "a11y_helper_done": "Tugatildi",
     "a11y-keys_data-title": "Klaviatura qisqacha tugmalari",
-    "a11y-keys_data-content": "<span style=\"font-size: 14px\">Tugmalar kombinatsiyasi <br \/><strong>⇧ Shift (chap) <br \/>+&nbsp;⌥ Alt (chap) <br \/>+&nbsp;harf<\/strong><br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;U<\/strong><br \/>Foydalanuvchi nomi maydoniga fokus<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;P<\/strong><br \/>Parol maydoniga fokus<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;A<\/strong><br \/>\"Men qoidalarni qabul qilaman\" katakchani belgilash/o‘chirish<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;R<\/strong><br \/>Qoidalar oynasini ochish<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;I<\/strong><br \/>Foydalanuvchini tizimga kiritish<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;O<\/strong><br \/>Foydalanuvchini tizimdan chiqarish<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;L<\/strong><br \/>Til almashtirgichni ishga tushirish<\/span>",
+    "a11y-keys_data-content": "<span style=\"font-size: 14px\">Tugmalar kombinatsiyasi <br \/><strong>⇧ Shift (chap) <br \/>+&nbsp;⌥ Alt (chap) <br \/>+&nbsp;harf<\/strong><br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;U<\/strong><br \/>Foydalanuvchi nomi maydoniga fokus<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;P<\/strong><br \/>Parol maydoniga fokus<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;A<\/strong><br \/>\"Men qoidalarni qabul qilaman\" katakchani belgilash/o‘chirish<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;R<\/strong><br \/>Qoidalar oynasini ochish<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;I<\/strong><br \/>Foydalanuvchini tizimga kiritish<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;O<\/strong><br \/>Foydalanuvchini tizimdan chiqarish<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;L<\/strong><br \/>Til almashtirgichni ishga tushirish<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;M<\/strong><br \/>offcanvas menyuni ochadi (agar u yoqilgan bo'lsa)<\/span>",
     "a11y-lang-keys_data-title": "Tarjimalar uchun klaviatura qisqacha tugmalari",
     "a11y-lang-keys_data-content": "<span style=\"font-size: 14px\"><strong>⇧ Shift (chap) ni bosib ushlab turib va ISO 639-1 kodli ikkita harfni<\/strong> bir vaqtda yoki ketma-ket bosing.<br \/><br \/>Misollar:<br \/><strong>⇧ Shift&nbsp;+&nbsp;P&nbsp;+&nbsp;L<\/strong> → polsha tiliga o‘tgazadi (pl)<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;E&nbsp;+&nbsp;N<\/strong> → ingliz tiliga o‘tgazadi (en)<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;D&nbsp;+&nbsp;E<\/strong> → nemis tiliga o‘tgazadi (de)<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;F&nbsp;+&nbsp;R<\/strong> → fransuz tiliga o‘tgazadi (fr)<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;E&nbsp;+&nbsp;S<\/strong> → ispan tiliga o‘tgazadi (es)<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;I&nbsp;+&nbsp;T<\/strong> → italyan tiliga o‘tgazadi (it)<br \/>...<\/span>",
     "polyglotLanguageSwitcher_data-title": "Til tanlovchisi",
@@ -97,5 +166,16 @@
     "signin_anon_data-title": "Tizimga kirish",
     "signin_anon_data-content": "Klik qilib <strong>Tizimga kirish<\/strong> tugmasi orqali internetga ulaning.",
     "logoff_data-title": "Tizimdan chiqish",
-    "logoff_data-content": "Klik qilib <strong>Tizimdan chiqish<\/strong> tugmasi orqali internet ulanishini to‘xtating."
+    "logoff_data-content": "Klik qilib <strong>Tizimdan chiqish<\/strong> tugmasi orqali internet ulanishini to‘xtating.",
+    "menuTrigger_data-title": "Offcanvas menyu",
+    "menuTrigger_data-content": "Bosish orqali <strong>&#9776; offcanvas hamburger<\/strong> yoki klaviaturada bir vaqtda <strong>%s<\/strong> tugmalarini bosib, kontekst menyusini ochasiz.",
+    "about_title": "GuardianSuit",
+    "about_subtitle": "OPNsense uchun ilg‘or Captive Portal shabloni",
+    "about_content": "<p><b>GuardianSuit<\/b> — bu OPNsense uchun zamonaviy, javob beruvchi va animatsiyalangan Captive Portal shabloni. Bu foydalanuvchilarga jozibali kirish tajribasini taqdim etadi va administratorlarga bosh sahifa ko‘rinishi va funksionalligini to‘liq nazorat qilish imkonini beradi.<\/p><p><b>Asosiy xususiyatlar:<\/b><\/p><ul><li>Javob beruvchanlik va animatsiyalar.<\/li><li>Ko‘p tillilik.<\/li><li>Ko‘rinish va rang sxemasini oson sozlash.<\/li><li>Intuitiv UX va WCAG ga muvofiqlik.<\/li><li>OPNsense bilan oson integratsiya.<\/li><\/ul><p><b>Qo‘llash sohasi:<\/b><br \/>Kompaniyalar, mehmonxonalar, kafe va boshqa vizual jihatdan jozibali Captive Portal kirish sahifasini talab qiladigan joylar uchun ideal.<\/p><p><b>Muallif:<\/b> Mirosław Majka &lt;mix@proask.pl&gt; | &copy; 2025 GuardianSuit<\/p>",
+    "cookies_title": "Cookie fayllari",
+    "cookies_subtitle": "Cookie fayllari qanday ishlatiladi.",
+    "cookies_content": "<h5>Cookie fayli nima?</h5><p>Cookie fayllari (shuningdek, \"pechene\" deb ataladi) — bu kichik matn fayllari bo‘lib, brauzer orqali avtomatik yaratiladi va veb-saytlarga tashrif buyurganingizda saqlanadi. Ushbu cookie faylida mavjud ma’lumot faqat shu fayl kelib chiqqan sayt tomonidan o‘qilishi mumkin. Shu bilan birga, veb-sayt foydalanuvchining kompyuteridagi boshqa fayllarga kira olmaydi.<\/p><p>Cookie fayllaridagi ma’lumotlar yordamida sayt sizning qanday foydalanayotganingizni “biladi” va sizga mos mazmunni ko‘rsatishi yoki yordam taklif qilishi mumkin.<\/p><h5>Cookie fayllaridan nima uchun foydalanamiz?</h5><p>Saytda texnik cookie fayllari ishlatiladi, ular saytning to‘g‘ri ishlashi uchun zarur. Ularni saytimizni foydalanuvchi qurilmalari va brauzerlariga moslashtirish uchun ishlatamiz — shuning uchun sizning kompyuteringiz, planshetingiz yoki telefoningiz saytni to‘g‘ri va aniq ko‘rsatadi, shuningdek, siz ma’lum mazmunni ko‘rsatishga rozilik berganmisiz yoki yo‘qligingizni eslab qoladi.<\/p><p>Foydalanuvchi texnik cookie fayllardan voz kecha olmaydi.<\/p><h5>Cookie fayllaridan qancha vaqt foydalanamiz?</h5><p>Biz shunday doimiy cookie fayllardan foydalanamiz, ular sizning qurilmangizda belgilangan vaqt davomida yoki ularni qo‘lda o‘chirishgacha saqlanadi.<\/p><h5>Cookie orqali qanday ma’lumotlarni yig‘amiz?</h5><p>Cookie texnologiyasi yordamida biz siz haqingizda faqat anonim texnik ma’lumotlarni yig‘amiz, ular saytimizdan foydalanish qulayligini yaxshilashga xizmat qiladi.<\/p><p>Biz sizni identifikatsiya qiluvchi hech qanday ma’lumotlarni yig‘maymiz. Foydalanuvchining yagona ma’lumoti, boshqa ma’lumotlar bilan bog‘lanmasa, identifikatsiya qilishga imkon bermaydi — bu foydalanuvchi ulanayotgan IP-manzilidir.<\/p>",
+    "privacy_title": "Maxfiylik siyosati",
+    "privacy_subtitle": "Shaxsiy ma’lumotlarni qayta ishlash",
+    "privacy_content": "<p>Ushbu hujjatni sizni Maxfiylik siyosatimiz bilan tanishtirish maqsadida tayyorlaymiz. Bu yerda siz biz kim ekanligimizni, shaxsiy ma’lumotlarni qanday yig‘ishimiz, foydalanishimiz, oshkor qilishimiz va taqdim etishimizni <b><&nbsp;ISP nomi&nbsp;></b> doirasida, manzilimiz [ Nazwa ulicy 10, shahar va pochta indeksi ] bo‘yicha, nima maqsadda amalga oshirishimizni va ma’lumotlari qayta ishlanadigan shaxslar o‘z maxfiylik huquqlarini qanday amalga oshirishi mumkinligini bilib olasiz.<\/p><p><&nbsp;ISP nomi&nbsp;> ushbu Maxfiylik siyosatiga muvofiq shaxsiy ma’lumotlarni qayta ishlash uchun javobgardir.<\/p><h5>BIZ HAQIMIZDA<\/h5><p>Administrator, ya’ni ushbu xizmatdan foydalanish davomida sizning shaxsiy ma’lumotlaringizni qayta ishlaydigan shaxs <&nbsp;ISP nomi&nbsp;> bo‘lib, manzil: [ Nazwa ulicy 10, shahar va pochta indeksi ]; NIP 1234567890, Regon 123456789,<\/p><h5>BIZ BILAN ALOQA<\/h5><ul><li>Elektron pochta orqali: adres@email.pl,<\/li><li>Yozma tarzda: ISP nomi, [ Nazwa ulicy 10, shahar va pochta indeksi ]<\/li><\/ul><h5>Ushbu siyosatda belgilangan qoidalar<\/h5><p>Biz sizning ma’lumotlaringizni qayta ishlashda Yevropa Parlamenti va Kengashining 2016/679-sonli (EU) qoidalari, shaxsiy ma’lumotlarni qayta ishlash va ularning erkin oqimi hamda 95/46/WE direktivasini bekor qilish bo‘yicha umumiy ma’lumotlarni himoya qilish qonuni va boshqa tegishli qonunlarga muvofiq amalga oshirilishini ta’minlaymiz. Ushbu siyosatda biz shaxsiy ma’lumotlarni qanday yig‘ishimiz va qanday maqsadlarda ishlatishimiz aniq ko‘rsatilgan.<\/p><p>Biz diqqat qilamizki, <&nbsp;ISP nomi&nbsp;> o‘z (potensial) mijozlari va shartnoma taraflari tomonidan taqdim etilgan shaxsiy va kompaniya ma’lumotlarini, shuningdek internet xizmatidan foydalanish davomida olingan ma’lumotlarni yig‘adi.<\/p><h5>Shaxsiy ma’lumotlarni yig‘ish<\/h5><p>Biz foydalanuvchilardan quyidagi holatlarda shaxsiy ma’lumotlarni yig‘amiz:<\/p><ul><li>Takliflar berish, hamkorlik shartlarini belgilash va <&nbsp;ISP nomi&nbsp;> xizmatlari yoki boshqa faoliyatlar haqida ma’lumot berish,<\/li><li>Shartnomalar tuzish va bajarish hamda mijoz/kontragent bilan aloqani saqlash,<\/li><li>Qonuniy majburiyatlarni bajarish,<\/li><li>Savollarga javob berish, shikoyatlarni ko‘rib chiqish va sotuvdan keyingi xizmat ko‘rsatish,<\/li><li>To‘g‘ridan-to‘g‘ri marketing (newsletterdan tashqari),<\/li><li>Arxivlash (dalillar) maqsadlari yoki da’volarni aniqlash, tekshirish yoki himoya qilish uchun.<\/li><\/ul><h5>Ma’lumotlarni saqlash va o‘chirish<\/h5><p>Berilgan ma’lumotlarning xavfsizligini ta’minlash uchun biz ichki tartib va ko‘rsatmalar ishlab chiqdik, ular ma’lumotlarga ruxsatsiz kirishni oldini oladi. Biz texnologik, shartnoma, ma’muriy va jismoniy choralarni qo‘llaymiz. Ularning bajarilishini nazorat qilamiz va doimiy ravishda qonuniy hujjatlarga muvofiqligini tekshirib turamiz.<\/p><p>Foydalanuvchining shaxsiy ma’lumotlarini faqat ular yig‘ilgan maqsadni amalga oshirish uchun zarur bo‘lgan muddat davomida saqlaymiz.<\/p><h5>Ma’lumotlarni ulashish va oshkor qilish<\/h5><p>Foydalanuvchilarning shaxsiy ma’lumotlarini ularning roziligisiz uchinchi tomonlarga sotmaymiz yoki taqdim etmaymiz. Foydalanuvchi ma’lumotlari profilinga kirmaydi.<\/p><p>Foydalanuvchi va <&nbsp;ISP nomi&nbsp;> o‘rtasidagi hamkorlik turiga va doirasiga qarab, foydalanuvchi ma’lumotlarini qonuniy talablar, shartnoma majburiyatlarini bajarish, da’volarga javob berish yoki huquq, mol-mulk yoki xavfsizlikni himoya qilish maqsadida taqdim etishimiz mumkin.<\/p><h5>Ma’lumotlarni qayta ishlash qoidalari<\/h5><p>Biz shaxsiy ma’lumotlarni himoya qilishda yuqori darajada ehtiyotkorlik qilamiz va ayniqsa quyidagilarga e’tibor beramiz:<\/p><ul><li>Qonunga muvofiq, halol va foydalanuvchi uchun oshkor tarzda qayta ishlanishi,<\/li><li>Aniq, oshkora va qonuniy maqsadlarda yig‘ilishi va keyinchalik maqsadga zid tarzda qayta ishlanmasligi,<\/li><li>Maqsadga mos, muvofiq va faqat zarur bo‘lgan ma’lumotlar yig‘ilishi,<\/li><li>To‘g‘ri bo‘lishi va kerak bo‘lsa yangilanishi. Noto‘g‘ri ma’lumotlar darhol tuzatilishi yoki o‘chirilishi,<\/li><li>Foydalanuvchining identifikatsiyasini ta’minlovchi shaklda saqlanishi, faqat zarur muddat davomida,<\/li><li>Xavfsiz tarzda qayta ishlanishi, ruxsatsiz kirish, noto‘g‘ri foydalanish yoki tasodifiy yo‘qotishdan himoyalanishi.<\/li><\/ul><p>Shaxsiy ma’lumotlaringizni odatda rozilik asosida qayta ishlaymiz, uni istalgan vaqtda bekor qilish mumkin. Ba’zi hollarda qayta ishlash shartnomani bajarish yoki sizning so‘rovingizga binoan shartnoma tuzilishidan oldin zarur bo‘lishi mumkin. Ba’zi holatlarda bu qonuniy majburiyatni bajarish uchun zarur bo‘lishi mumkin. Ba’zan bu bizning qonuniy manfaatlarimizni himoya qilish uchun ham zarur, masalan, biznes faoliyatimizdan da’volarni olish.<\/p><h5>Sizning huquqlaringiz<\/h5><p>Sizga quyidagi huquqlar berilgan:<\/p><ul><li>Shaxsiy ma’lumotlaringiz mazmuniga kirish va ma’lumot olish, shu jumladan ma’lumot turlari, qayta ishlash maqsadlari va ularning nusxasini olish,<\/li><li>Noto‘g‘ri yoki yetishmayotgan ma’lumotlarni tuzatish yoki o‘chirish, shuningdek “unutilish” huquqi,<\/li><li>Rozilikni istalgan vaqtda bekor qilish, bu qayta ishlash qonuniyligiga ta’sir qilmaydi, agar rozilik asosida qayta ishlash amalga oshirilgan bo‘lsa.<\/li><\/ul><h5>COOKIE FAYLLARI<\/h5><p><&nbsp;ISP nomi&nbsp;>, xizmatdan foydalanishni osonlashtirish uchun cookie fayllaridan foydalanadi. Xizmatdan foydalanish orqali siz cookie fayllaridan foydalanishga rozilik bildirasiz. Agar ularni bloklamasangiz, siz ularning ishlatilishi va qurilmangizda saqlanishiga rozisiz.<\/p><h5>Shaxsiy ma’lumotlarni himoya siyosatidagi o‘zgarishlar<\/h5><p><&nbsp;ISP nomi&nbsp;> shaxsiy ma’lumotlarni himoya siyosatida o‘zgarishlar kiritish huquqini saqlab qoladi, bu internet texnologiyasi rivoji, qonunchilikdagi o‘zgarishlar yoki administrator tomonidan taqdim etilayotgan xizmatning rivojlanishi bilan bog‘liq bo‘lishi mumkin. Har qanday o‘zgarishlar aniq va oshkora tarzda e’lon qilinadi.<\/p><p>Shaxsiy ma’lumotlarni himoya siyosati bo‘yicha barcha savollarni iltimos elektron pochta orqali yuboring: adres@email.pl<\/p>"
 }

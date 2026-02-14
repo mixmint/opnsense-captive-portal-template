@@ -7,6 +7,75 @@
     "attr_isp_info": {
         "aria-label": "Information om internetleverantör"
     },
+    "menu": {
+        "title": "GuardianSuit Meny",
+        "item1": {
+            "title": "Internet",
+            "icon": "I",
+            "href": "https://yourdomain.com/#",
+            "target": "_blank"
+        },
+        "item2": {
+            "title": "TV",
+            "icon": "V",
+            "href": "https://yourdomain.com/#",
+            "target": "_blank"
+        },
+        "item3": {
+            "title": "Telefon",
+            "icon": "T",
+            "href": "https://yourdomain.com/#",
+            "target": "_blank"
+        },
+        "item4": {
+            "title": "Tilläggstjänster",
+            "icon": "U",
+            "href": "https://yourdomain.com/#",
+            "target": "_blank"
+        },
+        "item5": {
+            "title": "Kontakt",
+            "icon": "K",
+            "href": "https://yourdomain.com/#",
+            "target": "_blank"
+        },
+        "item6": {
+            "title": "Integritetspolicy",
+            "icon": "&#167;",
+            "href": {"type": "modal", "title": "privacy_title", "subtitle": "privacy_subtitle", "content": "privacy_content", "iconText": "&#167;"},
+            "target": "_self"
+        },
+        "item7": {
+            "title": "Cookies",
+            "icon": "&#9865;",
+            "href": {"type": "modal", "title": "cookies_title", "subtitle": "cookies_subtitle", "content": "cookies_content", "iconText": "&#9865;"},
+            "target": "_self"
+        },
+        "item8": {
+            "title": "Dokumentation",
+            "icon": "&#9783;",
+            "href": "https://github.com/mixmint/opnsense-captive-portal-template/blob/main/README.md",
+            "target": "_blank"
+        },
+        "item9": {
+            "title": "Om programmet",
+            "icon": "&#9873;",
+            "href": {"type": "modal", "title": "about_title", "subtitle": "about_subtitle", "content": "about_content", "iconText": "&#9873;"},
+            "target": "_self"
+        },
+        "group1": {
+            "title": "Erbjudanden",
+            "items": ["item1", "item2", "item3", "item4", "item5"]
+        },
+        "group2": {
+            "title": "Information",
+            "items": ["item6", "item7"]
+        },
+        "group3": {
+            "title": "Hjälp",
+            "items": ["item8", "item9"]
+        }
+    },
     "footer_isp_info": {},
     "pagetitle": "Portal för internetåtkomst | <ISP Namn>",
     "username": "Användarnamn (Login)",
@@ -77,7 +146,7 @@
     "a11y_helper_prev": "Tillbaka",
     "a11y_helper_done": "Slutför",
     "a11y-keys_data-title": "Kortkommandon",
-    "a11y-keys_data-content": "<span style=\"font-size: 14px\">Tangentkombination <br \/><strong>⇧ Shift (vänster) <br \/>+&nbsp;⌥ Alt (vänster) <br \/>+&nbsp;bokstav<\/strong><br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;U<\/strong><br \/>fokus på fältet Användarnamn<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;P<\/strong><br \/>fokus på fältet Lösenord<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;A<\/strong><br \/>markerar/avmarkerar rutan \"Jag accepterar villkoren\"<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;R<\/strong><br \/>öppnar regleringsmodalen<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;I<\/strong><br \/>loggar in användaren<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;O<\/strong><br \/>loggar ut användaren<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;L<\/strong><br \/>aktiverar språkväljaren<\/span>",
+    "a11y-keys_data-content": "<span style=\"font-size: 14px\">Tangentkombination <br \/><strong>⇧ Shift (vänster) <br \/>+&nbsp;⌥ Alt (vänster) <br \/>+&nbsp;bokstav<\/strong><br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;U<\/strong><br \/>fokus på fältet Användarnamn<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;P<\/strong><br \/>fokus på fältet Lösenord<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;A<\/strong><br \/>markerar/avmarkerar rutan \"Jag accepterar villkoren\"<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;R<\/strong><br \/>öppnar regleringsmodalen<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;I<\/strong><br \/>loggar in användaren<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;O<\/strong><br \/>loggar ut användaren<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;L<\/strong><br \/>aktiverar språkväljaren<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;M<\/strong><br \/>öppnar offcanvas-menyn (om den är aktiverad)<\/span>",
     "a11y-lang-keys_data-title": "Språkgenvägar",
     "a11y-lang-keys_data-content": "<span style=\"font-size: 14px\">Håll <strong>⇧ Shift (vänster) och tryck två språkbokstäver<\/strong> (ISO 639-1) samtidigt eller en i taget.<br \/><br \/>Exempel:<br \/><strong>⇧ Shift&nbsp;+&nbsp;P&nbsp;+&nbsp;L<\/strong> → byter till svenska (sv)<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;E&nbsp;+&nbsp;N<\/strong> → byter till engelska (en)<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;D&nbsp;+&nbsp;E<\/strong> → byter till tyska (de)<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;F&nbsp;+&nbsp;R<\/strong> → byter till franska (fr)<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;E&nbsp;+&nbsp;S<\/strong> → byter till spanska (es)<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;I&nbsp;+&nbsp;T<\/strong> → byter till italienska (it)<br \/>...<\/span>",
     "polyglotLanguageSwitcher_data-title": "Språkval",
@@ -97,5 +166,16 @@
     "signin_anon_data-title": "Logga in",
     "signin_anon_data-content": "Klicka på knappen <strong>Logga in<\/strong> för att starta internetanslutningen.",
     "logoff_data-title": "Logga ut",
-    "logoff_data-content": "Klicka på knappen <strong>Logga ut<\/strong> för att avsluta internetanslutningen."
+    "logoff_data-content": "Klicka på knappen <strong>Logga ut<\/strong> för att avsluta internetanslutningen.",
+    "menuTrigger_data-title": "Offcanvas-meny",
+    "menuTrigger_data-content": "Genom att klicka på <strong>&#9776; offcanvas-hamburgare<\/strong> eller genom att trycka samtidigt på <strong>%s<\/strong> på tangentbordet öppnar du kontextmenyn.",
+    "about_title": "GuardianSuit",
+    "about_subtitle": "Avancerad Captive Portal-mall för OPNsense",
+    "about_content": "<p><b>GuardianSuit<\/b> är en modern, responsiv och animerad Captive Portal-mall för OPNsense. Den ger användarna en attraktiv inloggningsupplevelse och administratörer full kontroll över utseendet och funktionaliteten på välkomstsidan.<\/p><p><b>Huvudfunktioner:<\/b><\/p><ul><li>Responsivitet och animationer.<\/li><li>Flerspråkighet.<\/li><li>Lätt att anpassa utseende och färgsättning.<\/li><li>Intuitivt UX och WCAG-kompatibilitet.<\/li><li>Enkel integration med OPNsense.<\/li><\/ul><p><b>Användningsområden:<\/b><br \/>Perfekt för företagsnätverk, hotell, kaféer och andra platser som kräver en visuellt attraktiv Captive Portal-välkomstsida.<\/p><p><b>Författare:<\/b> Mirosław Majka &lt;mix@proask.pl&gt; | &copy; 2025 GuardianSuit<\/p>",
+    "cookies_title": "Cookies",
+    "cookies_subtitle": "Hur cookies används.",
+    "cookies_content": "<h5>Vad är en cookie?<\/h5><p>Cookies (så kallade småkakor) är små textfiler som skapas automatiskt av webbläsaren när du besöker webbplatser. Informationen i en viss cookie kan endast läsas av den webbplats som skapade den. Därmed kan inte andra filer på användarens dator nås av webbplatsen.<\/p><p>Tack vare informationen i cookies vet webbplatsen hur du använder den och kan anpassa det innehåll som visas för dig eller erbjuda hjälp.<\/p><h5>Varför använder vi cookies?<\/h5><p>På webbplatsen använder vi tekniska cookies som är nödvändiga för webbplatsens korrekta funktion. Vi använder dem för att optimera webbplatsen för de enheter och webbläsare som besökare oftast använder – detta gör att din dator, surfplatta eller telefon visar sidan korrekt och tydligt, och minns om du har gett samtycke till visst innehåll.<\/p><p>Användaren kan inte avstå från tekniska cookies.<\/p><h5>Hur länge använder vi cookies?<\/h5><p>Vi använder så kallade permanenta cookies som stannar på din enhet under en viss tid eller tills du tar bort dem manuellt.<\/p><h5>Vilka data samlar vi via cookies?<\/h5><p>Med hjälp av cookie-teknologi samlar vi endast in anonym teknisk data om dig, som används för att förbättra användarupplevelsen på vår webbplats.<\/p><p>Vi samlar inte in någon information som kan identifiera dig. Den enda information om användaren som, utan koppling till annan data, inte tillåter identifiering, är IP-adressen som användaren ansluter från.<\/p>",
+    "privacy_title": "Integritetspolicy",
+    "privacy_subtitle": "Behandling av personuppgifter",
+    "privacy_content": "<p>Vi skapar detta dokument för att informera dig om vår integritetspolicy. Här får du veta vilka vi är, hur vi samlar in, använder, avslöjar och delar personuppgifter inom <b><&nbsp;ISP Namn&nbsp;><\/b>, med säte på [ Gatuadress 10, stad och postnummer ], i vilket syfte vi gör detta och hur de personer vars uppgifter vi behandlar kan utöva sina rättigheter till integritet.<\/p><p><&nbsp;ISP Namn&nbsp;> är ansvarig för behandlingen av personuppgifter i enlighet med denna integritetspolicy.<\/p><h5>OM OSS<\/h5><p>Administratören, dvs. den enhet som behandlar personuppgifter i samband med att du använder denna tjänst, är <&nbsp;ISP Namn&nbsp;>, [ Gatuadress 10, stad och postnummer ]; VAT 1234567890, Regon 123456789,<\/p><h5>KONTAKTA OSS<\/h5><ul><li>elektroniskt via e-post: adress@email.pl,<\/li><li>skriftligen på adress: ISP Namn, [ Gatuadress 10, stad och postnummer ]<\/li><\/ul><h5>REGLER I DENNA INTEGRITETSPOLICY<\/h5><p>Vi ser till att behandlingen av dina uppgifter sker i enlighet med Europaparlamentets och rådets förordning (EU) nr 2016/679 av den 27 april 2016 om skydd för fysiska personer i samband med behandling av personuppgifter och om det fria flödet av sådana uppgifter samt upphävande av direktiv 95/46/EG (allmän dataskyddsförordning, GDPR), lagen om skydd av personuppgifter samt andra särskilda bestämmelser. Denna integritetspolicy har utformats i enlighet med dessa. Vi informerar tydligt hur vi samlar in personuppgifter och i vilket syfte de används.<\/p><p>Observera att <&nbsp;ISP Namn&nbsp;> samlar in personuppgifter och företagsinformation som tillhandahålls av sina (potentiella) kunder och kontrahenter, samt uppgifter som erhålls vid användning av internetåtkomsttjänsten.<\/p><h5>INSAMLING AV PERSONUPPGIFTER<\/h5><p>Vi samlar in personuppgifter som lämnas av användare i följande situationer:<\/p><ul><li>lämna erbjudanden, fastställa samarbetsvillkor och/eller tillhandahålla information om tjänster och andra aktiviteter från <&nbsp;ISP Namn&nbsp;>,<\/li><li>ingå och genomföra avtal samt upprätthålla kontakt med kund/kontrahent,<\/li><li>uppfylla skyldigheter enligt gällande lagstiftning,<\/li><li>besvara frågor, behandla reklamationer och annan eftermarknadssupport,<\/li><li>direktmarknadsföring (annat än nyhetsbrev),<\/li><li>i arkiveringssyfte (bevis), eventuell fastställande, utredning eller försvar mot krav.<\/li><\/ul><h5>LAGRING OCH RADERING AV DATA<\/h5><p>För att skydda de överlämnade uppgifterna har vi utvecklat interna rutiner och rekommendationer för att förhindra att uppgifterna delas med obehöriga. Vi använder tekniska, avtalsmässiga, administrativa och fysiska åtgärder för att skydda uppgifterna mot obehörig åtkomst. Vi kontrollerar genomförandet och säkerställer kontinuerligt överensstämmelse med relevanta lagar.<\/p><p>Vi lagrar användarens personuppgifter endast under den tid som är nödvändig för att uppfylla syftet med insamlingen.<\/p><h5>DELNING OCH AVSLÖJANDE AV DATA<\/h5><p>Vi säljer inte och delar inte användaruppgifter med tredje part utan deras samtycke. Användardata profileras inte.<\/p><p>Beroende på typen och omfattningen av samarbetet mellan användaren och <&nbsp;ISP Namn&nbsp;>, i samband med den pågående verksamheten, kan vi överföra användardata om det krävs enligt gällande lag eller om det är nödvändigt för att säkerställa lagliga åtgärder eller uppfylla avtalsförpliktelser, svara på krav eller skydda rättigheter, egendom eller säkerhet.<\/p><h5>PRINCIPER FÖR BEHANDLING AV DINA DATA<\/h5><p>Vi lägger största noggrannhet för att skydda intresset för de personer vars personuppgifter behandlas, särskilt för att säkerställa att dessa uppgifter är:<\/p><ul><li>behandlade enligt lag, på ett korrekt och transparent sätt för den registrerade,<\/li><li>insamlade för specifika, uttryckliga och lagliga ändamål och inte vidarebehandlade på ett sätt som är oförenligt med dessa ändamål,<\/li><li>adekvata, relevanta och begränsade till vad som är nödvändigt för ändamålen,<\/li><li>korrekta och uppdaterade vid behov. Åtgärder vidtas för att felaktiga uppgifter raderas eller korrigeras,<\/li><li>lagrade på ett sätt som möjliggör identifiering av personen endast så länge som är nödvändigt för behandlingsändamålen,<\/li><li>behandlade på ett sätt som säkerställer lämplig datasäkerhet, inklusive skydd mot otillåten eller olaglig behandling samt oavsiktlig förlust eller förstöring.<\/li><\/ul><p>Dina personuppgifter behandlas vanligtvis baserat på samtycke, vilket kan återkallas när som helst. I andra fall är behandling nödvändig för att fullgöra ett avtal mellan dig och oss eller för att vidta åtgärder på din begäran innan avtalet ingås. I vissa situationer är behandling nödvändig för att uppfylla rättsliga skyldigheter som åligger oss som personuppgiftsansvarig. Sådana skyldigheter härrör till exempel från arbetsrätt eller bokföringslag. Behandling kan också vara nödvändig för våra berättigade intressen, t.ex. för att driva anspråk från vår affärsverksamhet.<\/p><h5>DINA RÄTTIGHETER<\/h5><p>Du har följande rättigheter:<\/p><ul><li>Rätt till åtkomst av dina personuppgifter och information om t.ex. datakategorier, behandlingsändamål samt att erhålla kopior,<\/li><li>Korrigering av felaktiga uppgifter och komplettering av bristfälliga uppgifter samt rätten att bli glömd, vilket innebär att du kan begära radering av uppgifter som behandlas utan rättslig grund (t.ex. uppgifter som inte längre är nödvändiga för de syften de samlades in),<\/li><li>Återkallande av samtycke till behandling när som helst utan påverkan på lagligheten av behandlingen som gjordes baserat på samtycke före återkallandet (om behandlingen sker enligt art. 6.1 a eller art. 9.2 a GDPR).<\/li><\/ul><h5>COOKIES<\/h5><p><&nbsp;ISP Namn&nbsp;> använder cookies för att underlätta användningen av tjänsten. Genom att använda tjänsten godkänner du användningen av cookies. Om du inte blockerar dem samtycker du till deras användning och lagring på enheten.<\/p><h5>ÄNDRINGAR AV DATASKYDDSPOLICY<\/h5><p><&nbsp;ISP Namn&nbsp;> förbehåller sig rätten att ändra dataskyddspolicyn, som kan påverkas av utvecklingen av internet-teknologi, eventuella lagändringar inom dataskydd och utvecklingen av tjänsten som tillhandahålls av administratören. Vi informerar om ändringar på ett tydligt och läsbart sätt.<\/p><p>Eventuella frågor om dataskyddspolicyn kan skickas till e-postadress: adress@email.pl<\/p>"
 }

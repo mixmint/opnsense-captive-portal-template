@@ -7,6 +7,75 @@
     "attr_isp_info": {
         "aria-label": "Información sobre el proveedor de Internet"
     },
+    "menu": {
+        "title": "Menú GuardianSuit",
+        "item1": {
+            "title": "Internet",
+            "icon": "I",
+            "href": "https://yourdomain.com/#",
+            "target": "_blank"
+        },
+        "item2": {
+            "title": "Televisión",
+            "icon": "V",
+            "href": "https://yourdomain.com/#",
+            "target": "_blank"
+        },
+        "item3": {
+            "title": "Teléfono",
+            "icon": "T",
+            "href": "https://yourdomain.com/#",
+            "target": "_blank"
+        },
+        "item4": {
+            "title": "Servicios adicionales",
+            "icon": "S",
+            "href": "https://yourdomain.com/#",
+            "target": "_blank"
+        },
+        "item5": {
+            "title": "Contacto",
+            "icon": "C",
+            "href": "https://yourdomain.com/#",
+            "target": "_blank"
+        },
+        "item6": {
+            "title": "Política de privacidad",
+            "icon": "&#167;",
+            "href": {"type": "modal", "title": "privacy_title", "subtitle": "privacy_subtitle", "content": "privacy_content", "iconText": "&#167;"},
+            "target": "_self"
+        },
+        "item7": {
+            "title": "Cookies",
+            "icon": "&#9865;",
+            "href": {"type": "modal", "title": "cookies_title", "subtitle": "cookies_subtitle", "content": "cookies_content", "iconText": "&#9865;"},
+            "target": "_self"
+        },
+        "item8": {
+            "title": "Documentación",
+            "icon": "&#9783;",
+            "href": "https://github.com/mixmint/opnsense-captive-portal-template/blob/main/README.md",
+            "target": "_blank"
+        },
+        "item9": {
+            "title": "Acerca del programa",
+            "icon": "&#9873;",
+            "href": {"type": "modal", "title": "about_title", "subtitle": "about_subtitle", "content": "about_content", "iconText": "&#9873;"},
+            "target": "_self"
+        },
+        "group1": {
+            "title": "Oferta",
+            "items": ["item1", "item2", "item3", "item4", "item5"]
+        },
+        "group2": {
+            "title": "Información",
+            "items": ["item6", "item7"]
+        },
+        "group3": {
+            "title": "Ayuda",
+            "items": ["item8", "item9"]
+        }
+    },
     "footer_isp_info": {},
     "pagetitle": "Sistema de inicio de sesión de usuarios | <Nombre ISP>",
     "username": "Nombre de usuario (Login)",
@@ -77,7 +146,7 @@
     "a11y_helper_prev": "Anterior",
     "a11y_helper_done": "Fin",
     "a11y-keys_data-title": "Atajos de teclado",
-    "a11y-keys_data-content": "<span style=\"font-size: 14px\">Combinación de teclas <br \/><strong>⇧ Shift (izquierda) <br \/>+&nbsp;⌥ Alt (izquierda) <br \/>+&nbsp;letra<\/strong><br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;U<\/strong><br \/>enfoca el campo Nombre de usuario<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;P<\/strong><br \/>enfoca el campo Contraseña<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;A<\/strong><br \/>marca/desmarca la casilla \"Acepto los términos\"<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;R<\/strong><br \/>abre la ventana modal con los términos<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;I<\/strong><br \/>inicia sesión el usuario<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;O<\/strong><br \/>cierra sesión el usuario<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;L<\/strong><br \/>activa el selector de idioma<\/span>",
+    "a11y-keys_data-content": "<span style=\"font-size: 14px\">Combinación de teclas <br \/><strong>⇧ Shift (izquierda) <br \/>+&nbsp;⌥ Alt (izquierda) <br \/>+&nbsp;letra<\/strong><br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;U<\/strong><br \/>enfoca el campo Nombre de usuario<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;P<\/strong><br \/>enfoca el campo Contraseña<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;A<\/strong><br \/>marca/desmarca la casilla \"Acepto los términos\"<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;R<\/strong><br \/>abre la ventana modal con los términos<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;I<\/strong><br \/>inicia sesión el usuario<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;O<\/strong><br \/>cierra sesión el usuario<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;L<\/strong><br \/>activa el selector de idioma<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;M<\/strong><br \/>abre el menú offcanvas (si está habilitado)<\/span>",
     "a11y-lang-keys_data-title": "Atajos de teclado para cambio de idioma",
     "a11y-lang-keys_data-content": "<span style=\"font-size: 14px\">Mantén presionadas <strong>⇧ Shift (izquierda) y presiona dos letras del código de idioma<\/strong> (ISO 639-1) simultáneamente o una tras otra.<br \/><br \/>Ejemplos:<br \/><strong>⇧ Shift&nbsp;+&nbsp;P&nbsp;+&nbsp;L<\/strong> → cambia al idioma polaco (pl)<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;E&nbsp;+&nbsp;N<\/strong> → cambia al idioma inglés (en)<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;D&nbsp;+&nbsp;E<\/strong> → cambia al idioma alemán (de)<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;F&nbsp;+&nbsp;R<\/strong> → cambia al idioma francés (fr)<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;E&nbsp;+&nbsp;S<\/strong> → cambia al idioma español (es)<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;I&nbsp;+&nbsp;T<\/strong> → cambia al idioma italiano (it)<br \/>...<\/span>",
     "polyglotLanguageSwitcher_data-title": "Selector de idioma",
@@ -97,5 +166,16 @@
     "signin_anon_data-title": "Iniciar sesión",
     "signin_anon_data-content": "Haciendo clic en el botón <strong>Iniciar sesión<\/strong> se establecerá la conexión a Internet.",
     "logoff_data-title": "Cerrar sesión",
-    "logoff_data-content": "Haciendo clic en el botón <strong>Cerrar sesión<\/strong> terminarás la conexión a Internet."
+    "logoff_data-content": "Haciendo clic en el botón <strong>Cerrar sesión<\/strong> terminarás la conexión a Internet.",
+    "menuTrigger_data-title": "Menú offcanvas",
+    "menuTrigger_data-content": "Al hacer clic en <strong>&#9776; hamburguesa offcanvas<\/strong> o al presionar simultáneamente en el teclado <strong>%s<\/strong>, abrirás el menú contextual.",
+    "about_title": "GuardianSuit",
+    "about_subtitle": "Plantilla avanzada de Captive Portal para OPNsense",
+    "about_content": "<p><b>GuardianSuit<\/b> es una plantilla moderna, adaptable y animada de Captive Portal para OPNsense. Proporciona a los usuarios una experiencia de inicio de sesión atractiva y a los administradores un control total sobre la apariencia y la funcionalidad de la página de bienvenida.<\/p><p><b>Funciones clave:<\/b><\/p><ul><li>Diseño adaptable y animaciones.<\/li><li>Multilingüe.<\/li><li>Personalización sencilla del diseño y la paleta de colores.<\/li><li>UX intuitivo y cumplimiento de WCAG.<\/li><li>Integración sencilla con OPNsense.<\/li><\/ul><p><b>Aplicación:<\/b><br \/>Ideal para redes corporativas, hoteles, cafeterías y otros lugares que requieren una página de bienvenida visualmente atractiva de Captive Portal.<\/p><p><b>Autor:<\/b> Mirosław Majka &lt;mix@proask.pl&gt; | &copy; 2025 GuardianSuit<\/p>",
+    "cookies_title": "Cookies",
+    "cookies_subtitle": "Cómo se utilizan las cookies.",
+    "cookies_content": "<h5>¿Qué es una cookie?<\/h5><p>Las cookies (las llamadas \"galletas\") son pequeños archivos de texto creados automáticamente por el navegador web al visitar sitios WWW. La información contenida en una cookie determinada solo puede ser leída por el sitio del que procede dicho archivo. De este modo, un sitio web no puede acceder a otros archivos almacenados en el ordenador del usuario.<\/p><p>Gracias a la información contenida en las cookies, el sitio \"sabe\" cómo lo utilizas y puede adaptar adecuadamente el contenido que se te muestra u ofrecerte ayuda.<\/p><h5>¿Para qué utilizamos las cookies?<\/h5><p>En el sitio utilizamos cookies técnicas que son necesarias para el correcto funcionamiento del sitio web. Las utilizamos para optimizar nuestro sitio web en función de los dispositivos y navegadores que utilizan con mayor frecuencia las personas que lo visitan; gracias a ello, tu ordenador, tableta o teléfono lo mostrará de forma correcta y legible, recordando si has dado tu consentimiento para mostrar determinados contenidos en el sitio web.<\/p><p>El usuario no puede renunciar a las cookies técnicas.<\/p><h5>¿Durante cuánto tiempo utilizamos las cookies?<\/h5><p>Utilizamos las llamadas cookies persistentes, que permanecen en tu dispositivo durante un período determinado o hasta que se eliminan manualmente.<\/li><\/ul><h5>¿Qué datos recopilamos mediante cookies?<\/h5><p>Mediante la tecnología de cookies recopilamos únicamente datos técnicos anónimos sobre ti, destinados a mejorar la comodidad de uso de nuestro sitio web.<\/p><p>No recopilamos ningún dato que permita tu identificación. La única información sobre el usuario que, sin combinarse con otros datos, no permite su identificación, es la dirección IP desde la que se conecta el usuario.<\/p>",
+    "privacy_title": "Política de privacidad",
+    "privacy_subtitle": "Tratamiento de datos personales",
+    "privacy_content": "<p>Hemos creado este documento para informarte sobre nuestra Política de Privacidad. Aquí aprenderás quiénes somos, cómo recopilamos, utilizamos, divulgamos y compartimos datos personales dentro de <b><&nbsp;Nombre del ISP&nbsp;><\/b>, con sede en [ Nombre de la calle 10, ciudad y código postal ], con qué propósito lo hacemos y cómo las personas cuyos datos procesamos pueden ejercer sus derechos de privacidad.<\/p><p><&nbsp;Nombre del ISP&nbsp;> es responsable del procesamiento de datos personales de acuerdo con esta Política de Privacidad.<\/p><h5>SOBRE NOSOTROS<\/h5><p>El administrador, es decir, la entidad que procesa los datos personales en relación con tu uso de este servicio, es <&nbsp;Nombre del ISP&nbsp;>, [ Nombre de la calle 10, ciudad y código postal ]; NIF 1234567890, Regon 123456789,<\/p><h5>CONTACTO<\/h5><ul><li>electrónicamente al correo electrónico: direccion@email.pl,<\/li><li>por escrito a la dirección: Nombre del ISP, [ Nombre de la calle 10, ciudad y código postal ]<\/li><\/ul><h5>PRINCIPIOS INCLUIDOS EN ESTA POLÍTICA DE PRIVACIDAD<\/h5><p>Nos aseguramos de que el procesamiento de tus datos se realice de acuerdo con el Reglamento (UE) 2016/679 del Parlamento Europeo y del Consejo de 27 de abril de 2016 sobre la protección de las personas físicas en relación con el tratamiento de datos personales y la libre circulación de dichos datos y por el que se deroga la Directiva 95/46/CE (Reglamento General de Protección de Datos, \"RGPD\"), la ley de protección de datos personales y otras disposiciones específicas. Esta Política de Privacidad se ha elaborado conforme a estas normas. Informamos claramente cómo recopilamos datos personales y con qué fines se utilizan.<\/p><p>Se informa que <&nbsp;Nombre del ISP&nbsp;> recopila datos personales e información empresarial proporcionada por sus clientes y contratistas (potenciales), así como datos obtenidos durante el uso del servicio de acceso a Internet.<\/p><h5>RECOLECCIÓN DE DATOS PERSONALES<\/h5><p>Recopilamos datos personales proporcionados por los usuarios en los siguientes casos:<\/p><ul><li>presentación de ofertas, establecimiento de condiciones de cooperación y/o suministro de información sobre servicios y otras actividades de <&nbsp;Nombre del ISP&nbsp;>,<\/li><li>celebración y ejecución de contratos y mantenimiento de contacto con clientes/contratistas,<\/li><li>cumplimiento de obligaciones derivadas de la legislación aplicable,<\/li><li>responder preguntas, gestionar reclamaciones y otros servicios postventa,<\/li><li>marketing directo (excluyendo boletines),<\/li><li>fines archivísticos (probatorios), eventual determinación, investigación o defensa frente a reclamaciones.<\/li><\/ul><h5>ALMACENAMIENTO Y ELIMINACIÓN DE DATOS<\/h5><p>Para garantizar la seguridad de los datos proporcionados, hemos desarrollado procedimientos internos y recomendaciones que evitan la divulgación de datos a personas no autorizadas. Utilizamos medidas tecnológicas, contractuales, administrativas y físicas para proteger los datos de accesos no autorizados. Supervisamos su cumplimiento y verificamos constantemente su conformidad con la legislación aplicable.<\/p><p>Almacenamos los datos personales del usuario únicamente durante el período necesario para cumplir con los fines para los que fueron recopilados.<\/p><h5>DIVULGACIÓN Y COMPARTICIÓN DE DATOS<\/h5><p>No vendemos ni compartimos los datos personales de los usuarios con terceros sin su consentimiento. Los datos de los usuarios no se perfilan.<\/p><p>Dependiendo del tipo y alcance de la cooperación entre el usuario y <&nbsp;Nombre del ISP&nbsp;>, en el marco de la actividad realizada, podemos transferir los datos del usuario si lo exige la legislación aplicable, o si es necesario para cumplir con obligaciones legales, responder a reclamaciones o proteger derechos, propiedad o seguridad.<\/p><h5>PRINCIPIOS DE TRATAMIENTO DE TUS DATOS<\/h5><p>Tomamos la máxima diligencia para proteger los intereses de las personas cuyos datos personales procesamos, asegurando que los datos sean:<\/p><ul><li>procesados conforme a la ley, de manera justa y transparente para la persona a la que se refieren,<\/li><li>recopilados para fines específicos, explícitos y legítimos y no procesados posteriormente de manera incompatible con dichos fines,<\/li><li>adecuados, pertinentes y limitados a lo necesario para los fines para los que se procesan,<\/li><li>correctos y actualizados cuando sea necesario; tomamos medidas para corregir o eliminar datos inexactos de forma inmediata,<\/li><li>almacenados de manera que permitan la identificación de la persona solo durante el tiempo necesario para los fines del procesamiento,<\/li><li>procesados de manera que se garantice la seguridad adecuada de los datos personales, incluyendo protección contra el procesamiento no autorizado o ilegal, pérdida o destrucción accidental.<\/li><\/ul><p>Normalmente procesamos tus datos personales sobre la base de tu consentimiento, que puede retirarse en cualquier momento. Otro caso es cuando el procesamiento es necesario para la ejecución de un contrato entre tú y nosotros o para tomar medidas a tu solicitud antes de celebrarlo. En algunas situaciones, el procesamiento es necesario para cumplir con obligaciones legales que nos corresponden como administradores de datos personales, como por ejemplo la legislación laboral o contable. El procesamiento también puede ser necesario para fines de intereses legítimos, como reclamar derechos derivados de nuestra actividad económica.<\/p><h5>TUS DERECHOS<\/h5><p>Tienes los siguientes derechos:<\/p><ul><li>Acceder a tus datos personales y obtener información sobre categorías de datos, fines del procesamiento y obtener copias de los mismos,<\/li><li>Rectificar datos incorrectos o completar datos faltantes, y ser olvidado, lo que significa que puedes solicitar la eliminación de datos procesados de forma indebida o ilegal,<\/li><li>Retirar tu consentimiento al procesamiento en cualquier momento sin afectar la legalidad del procesamiento realizado sobre la base del consentimiento antes de su retirada (si el procesamiento se realiza según art. 6, párrafo 1, letra a, o art. 9, párrafo 2, letra a del RGPD).<\/li><\/ul><h5>COOKIES<\/h5><p><&nbsp;Nombre del ISP&nbsp;> utiliza cookies para facilitar el uso del servicio. Al usar el servicio, aceptas el uso de cookies. Si no bloqueas estas cookies, aceptas su uso y almacenamiento en tu dispositivo.<\/p><h5>CAMBIOS EN LA POLÍTICA DE PROTECCIÓN DE DATOS<\/h5><p><&nbsp;Nombre del ISP&nbsp;> se reserva el derecho de modificar la política de protección de datos, influida por el desarrollo de la tecnología web, cambios legales en la protección de datos y evolución del servicio proporcionado por el administrador. Informaremos claramente sobre cualquier cambio.<\/p><p>Para cualquier pregunta sobre la política de protección de datos, por favor contáctanos al correo electrónico: direccion@email.pl<\/p>"
 }

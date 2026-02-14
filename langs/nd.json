@@ -7,6 +7,75 @@
     "attr_isp_info": {
         "aria-label": "Imininingwane ngomhlinzeki we-intanethi"
     },
+    "menu": {
+        "title": "GuardianSuit Menyu",
+        "item1": {
+            "title": "Intaneti",
+            "icon": "I",
+            "href": "https://yourdomain.com/#",
+            "target": "_blank"
+        },
+        "item2": {
+            "title": "Televisheni",
+            "icon": "T",
+            "href": "https://yourdomain.com/#",
+            "target": "_blank"
+        },
+        "item3": {
+            "title": "Telefoni",
+            "icon": "F",
+            "href": "https://yourdomain.com/#",
+            "target": "_blank"
+        },
+        "item4": {
+            "title": "Omakalo goLwene",
+            "icon": "O",
+            "href": "https://yourdomain.com/#",
+            "target": "_blank"
+        },
+        "item5": {
+            "title": "Ohandi",
+            "icon": "H",
+            "href": "https://yourdomain.com/#",
+            "target": "_blank"
+        },
+        "item6": {
+            "title": "Eendjunga yOmupya",
+            "icon": "&#167;",
+            "href": {"type": "modal", "title": "privacy_title", "subtitle": "privacy_subtitle", "content": "privacy_content", "iconText": "&#167;"},
+            "target": "_self"
+        },
+        "item7": {
+            "title": "Phephandanda yeCookies",
+            "icon": "&#9865;",
+            "href": {"type": "modal", "title": "cookies_title", "subtitle": "cookies_subtitle", "content": "cookies_content", "iconText": "&#9865;"},
+            "target": "_self"
+        },
+        "item8": {
+            "title": "Okutundja Okwandje",
+            "icon": "&#9783;",
+            "href": "https://github.com/mixmint/opnsense-captive-portal-template/blob/main/README.md",
+            "target": "_blank"
+        },
+        "item9": {
+            "title": "PaaShike",
+            "icon": "&#9873;",
+            "href": {"type": "modal", "title": "about_title", "subtitle": "about_subtitle", "content": "about_content", "iconText": "&#9873;"},
+            "target": "_self"
+        },
+        "group1": {
+            "title": "Omakalo",
+            "items": ["item1", "item2", "item3", "item4", "item5"]
+        },
+        "group2": {
+            "title": "Eendjunga",
+            "items": ["item6", "item7"]
+        },
+        "group3": {
+            "title": "Okushike",
+            "items": ["item8", "item9"]
+        }
+    },
     "footer_isp_info": {},
     "pagetitle": "Uhlelo lokungena kwababasebenzisi | < Igama le-ISP >",
     "username": "Igama lomsebenzisi (Login)",
@@ -77,7 +146,7 @@
     "a11y_helper_prev": "Emuva",
     "a11y_helper_done": "Kuphelile",
     "a11y-keys_data-title": "Izinqamuleli zekhibhodi",
-    "a11y-keys_data-content": "<span style=\"font-size: 14px\">Inhlanganisela yekhibhodi <br \/><strong>⇧ Shift (kwakwesobunxele) <br \/>+&nbsp;⌥ Alt (kwakwesobunxele) <br \/>+&nbsp;uhlamvu<\/strong><br \/><br \/><strong>⇧ Shift + ⌥ Alt + U<\/strong><br \/>gxila endaweni ye-Igama lomsebenzisi<br \/><br \/><strong>⇧ Shift + ⌥ Alt + P<\/strong><br \/>gxila endaweni ye-Iphasiwedi<br \/><br \/><strong>⇧ Shift + ⌥ Alt + A<\/strong><br \/>khetha/kukhipha ibhokisi elithi \"Ngiyavuma imithetho\"<br \/><br \/><strong>⇧ Shift + ⌥ Alt + R<\/strong><br \/>vula iwindi lemithetho<br \/><br \/><strong>⇧ Shift + ⌥ Alt + I<\/strong><br \/>ngena umsebenzisi<br \/><br \/><strong>⇧ Shift + ⌥ Alt + O<\/strong><br \/>phuma umsebenzisi<br \/><br \/><strong>⇧ Shift + ⌥ Alt + L<\/strong><br \/>qala ukushintsha ulimi<\/span>",
+    "a11y-keys_data-content": "<span style=\"font-size: 14px\">Inhlanganisela yekhibhodi <br \/><strong>⇧ Shift (kwakwesobunxele) <br \/>+&nbsp;⌥ Alt (kwakwesobunxele) <br \/>+&nbsp;uhlamvu<\/strong><br \/><br \/><strong>⇧ Shift + ⌥ Alt + U<\/strong><br \/>gxila endaweni ye-Igama lomsebenzisi<br \/><br \/><strong>⇧ Shift + ⌥ Alt + P<\/strong><br \/>gxila endaweni ye-Iphasiwedi<br \/><br \/><strong>⇧ Shift + ⌥ Alt + A<\/strong><br \/>khetha/kukhipha ibhokisi elithi \"Ngiyavuma imithetho\"<br \/><br \/><strong>⇧ Shift + ⌥ Alt + R<\/strong><br \/>vula iwindi lemithetho<br \/><br \/><strong>⇧ Shift + ⌥ Alt + I<\/strong><br \/>ngena umsebenzisi<br \/><br \/><strong>⇧ Shift + ⌥ Alt + O<\/strong><br \/>phuma umsebenzisi<br \/><br \/><strong>⇧ Shift + ⌥ Alt + L<\/strong><br \/>qala ukushintsha ulimi<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;M<\/strong><br \/>oshika menyu ya offcanvas (tashi i li active)<\/span>",
     "a11y-lang-keys_data-title": "Izinqamuleli zekhibhodi zokushintsha ulimi",
     "a11y-lang-keys_data-content": "<span style=\"font-size: 14px\">Bamba <strong>⇧ Shift (kwakwesobunxele) bese ucindezela izinhlamvu ezimbili zekhowudi yolimi<\/strong> (ISO 639-1) ngasikhathi sinye noma eyodwa ngemuva kwesinye.<br \/><br \/>Izibonelo:<br \/><strong>⇧ Shift + P + L<\/strong> → shintsha kuLimi lwesiPolishi (pl)<br \/><br \/><strong>⇧ Shift + E + N<\/strong> → shintsha kuLimi lwesiNgisi (en)<br \/><br \/><strong>⇧ Shift + D + E<\/strong> → shintsha kuLimi lwesiJalimane (de)<br \/><br \/><strong>⇧ Shift + F + R<\/strong> → shintsha kuLimi lwesiFulentshi (fr)<br \/><br \/><strong>⇧ Shift + E + S<\/strong> → shintsha kuLimi lwesiSpanishi (es)<br \/><br \/><strong>⇧ Shift + I + T<\/strong> → shintsha kuLimi lwesiTaliyane (it)<br \/>...<\/span>",
     "polyglotLanguageSwitcher_data-title": "Isikhethi solimi",
@@ -97,5 +166,16 @@
     "signin_anon_data-title": "Ukungena",
     "signin_anon_data-content": "Ngokuchofoza inkinobho <strong>Ukungena<\/strong>, uqala uxhumano ku-Intanethi.",
     "logoff_data-title": "Ukuphuma",
-    "logoff_data-content": "Ngokuchofoza inkinobho <strong>Ukuphuma<\/strong>, uqeda uxhumano ku-Intanethi."
+    "logoff_data-content": "Ngokuchofoza inkinobho <strong>Ukuphuma<\/strong>, uqeda uxhumano ku-Intanethi.",
+    "menuTrigger_data-title": "Menyu ya offcanvas",
+    "menuTrigger_data-content": "Okashika <strong>&#9776; offcanvas hamburger<\/strong> po okashika okwa keyboard okwa <strong>%s<\/strong>, osha menyu ya konteksti.",
+    "about_title": "GuardianSuit",
+    "about_subtitle": "Omalembo gOmupya gO Captive Portal pa OPNsense",
+    "about_content": "<p><b>GuardianSuit<\/b> i li omalembo gOmupya, gO responsivya no gO animetha gO Captive Portal pa OPNsense. Oenda okulangitha omalembi, okuhepa okushike oku li mo ongunguliwa yokulonga no okushike okukwanithwa kwevi okwa page ya kutyoka.<\/p><p><b>Okwa shikithi kOli:<\/b><\/p><ul><li>Responsivya no animetha.<\/li><li>Oluwena lOmalyu lOndonga.<\/li><li>Okutya oku kalengekitha okwa page no oku color.<\/li><li>UX ohandi no okushikithwa kwe WCAG.<\/li><li>Okutya oku simple oku integratha ne OPNsense.<\/li><\/ul><p><b>Okukolitha:<\/b><br \/>Li li lo network ya company, hotel, kafee no ohandi omalembe gO Captive Portal gO attractive.<\/p><p><b>Omunye:<\/b> Mirosław Majka &lt;mix@proask.pl&gt; | &copy; 2025 GuardianSuit<\/p>",
+    "cookies_title": "Ama-Cookies",
+    "cookies_subtitle": "Indlela ama-cookies asetshenziswa ngayo.",
+    "cookies_content": "<h5>Yini i-cookie?<\/h5><p>Ama-cookies ngamafayili emibhalo amancane, adalwa yisiphanyisi se-web (browser) ngokuzenzakalelayo nxa uvakatshela amakhasi e-WWW. Ulwazi olukulelo fayili ye-cookie lungafundwa kuphela liwebhusayithi efayili leli elivela kuyo. Ngakho-ke, iwebhusayithi ngeke yenelise ukungena kwamanye amafayili akukhompuyutha yomsebenzisi.<\/p><p>Ngenxa yolwazi olusema-cookies, iwebhusayithi \"iyazi\" ukuthi uyisebenzisa kanjani njalo ingenelisa ukulungisa okuqukethwe okukhonjiswa kuwe kumbe ikunikeze usizo.<\/p><h5>Sisebenzisela ni ama-cookies?<\/h5><p>Kuleli khasi sisebenzisa ama-cookies ezobuchwepheshe (technical cookies), adekileyo ukuze ikhasi lisebenze kahle. Sisebenzisa wona ukuze silungise iwebhusayithi yethu kuye ngemishini leziphanyisi ezisetshenziswa kakhulu ngabantu abasivakatshelayo – ngenxa yalokhu, ikhompuyutha yakho, ithebulethi kumbe ucingo lwakho luzayikhombisa kahle njalo ngokucacileyo, lukhumbula ukuthi uvumile yini ukuthi kukhonjiswe okuqukethwe okukhethiweyo kuwebhusayithi.<\/p><p>Umsebenzisi ngeke enelise ukwala ama-cookies ezobuchwepheshe.<\/p><h5>Sisebenzisa ama-cookies isikhathi esingakanani?<\/h5><p>Sisebenzisa lokho okubizwa ngokuthi ngama-cookies ahlalayo (permanent cookies), ahlala kumshini wakho okwesikhathi esibekiweyo kumbe kuze kube yisikhathi lapho owasusa khona ngesandla.<\/li><\/ul><h5>Yiluphi ulwazi esiluqoqayo sisebenzisa ama-cookies?<\/h5><p>Sisebenzisa ithekhibhuloji yama-cookies, siqoqa kuphela ulwazi lwezobuchwepheshe olungelagama (anonymous), olusiza ekwenzeni ngcono ukusetshenziswa kwekhasi lethu.<\/p><p>Asiqoqi nanyana yiluphi ulwazi oluvumela ukuthi ubonakale ungubani. Ulwazi lwedwa mayelana lomsebenzisi, kodwa olungeke lwenelise ukukhomba ukuthi ungubani ngaphandle kokuhlanganiswa lolunye ulwazi, yikheli le-IP lapho umsebenzisi axhumana khona.<\/p>",
+    "privacy_title": "Umthetho Wobumfihlo",
+    "privacy_subtitle": "Ukusetshenziswa kwemininingwane yomuntu",
+    "privacy_content": "<p>Sidala lencwadi ukuze sikwazise ngeNqubomgomo yethu yoBumfihlo. Lapha uzofunda ukuthi singobani, ukuthi siyiqoqa kanjani, siyisebenzisa kanjani, siyidalula kanjani njalo sabelana kanjani ngemininingwane yomuntu ngaphansi kwe-<b><&nbsp;Igama le-ISP&nbsp;><\/b>, elise [ Ibizo lomgwaqo 10, idolobho lekhodi yeposi ], ngenhloso esikwenza ngayo lokhu njalo lokuthi abantu esisebenzisa imininingwane yabo bangawasebenzisa kanjani amalungelo abo obumfihlo.<\/p><p><&nbsp;Igama le-ISP&nbsp;> iyakulungisa ukusetshenziswa kwemininingwane yomuntu kuye ngaleNqubomgomo yoBumfihlo.<\/p><h5>MAYELANA LATHI<\/h5><p>Umlawuli, okunguyena osebenzisa imininingwane yomuntu mayelana lokusebenzisa kwakho lolu sizo, ngu-<&nbsp;Igama le-ISP&nbsp;>, [ Ibizo lomgwaqo 10, idolobho lekhodi yeposi ]; NIP 1234567890, Regon 123456789,<\/p><h5>XHUMANA LATHI<\/h5><ul><li>ngomshini kuleli kheli le-imeyili: adres@email.pl,<\/li><li>ngokubhala kuleli kheli: Igama le-ISP, [ Ibizo lomgwaqo 10, idolobho lekhodi yeposi ]<\/li><\/ul><h5>IMITHETHO EKULE NQUBOMGOMO YOBUMFIHLO<\/h5><p>Siqinisekisa ukuthi ukusetshenziswa kwemininingwane yakho kwenziwa kuye ngokulandela imithetho ye-Regulation of the European Parliament and of the Council (EU) No. 2016/679 ka-27 April 2016 mayelana lokuvikelwa kwabantu mayelana lokusetshenziswa kwemininingwane yomuntu (GDPR), umthetho wokuvikelwa kwemininingwane yomuntu, kanye lemithetho eqondileyo. LeNqubomgomo yoBumfihlo ilungiswe kuye ngokwaleyo mithetho. Siyachaza ngokusobala ukuthi siyiqoqa kanjani imininingwane yomuntu njalo isetshenziselwa ntoni.<\/p><p>Siyakwazisa ukuthi <&nbsp;Igama le-ISP&nbsp;>, iqoqa imininingwane yomuntu lemininingwane yenkampani enikwa ngabathengi bayo (abangaba khona) labosonkontileka, kanye lemininingwane etholakala nxa kusetshenziswa usizo lokungena ku-inthanethi.<\/p><h5>UKUQOQWA KWEMINININGWANE YOMUNTU<\/h5><p>Siqoqa imininingwane yomuntu enikwa ngabasebenzisi kulezi zimo ezilandelayo:<\/p><ul><li>ukwenza izethulo, ukulungisa imithetho yokusebenzisana kanye\/kumbe ukunika ulwazi mayelana losizo leminye imisebenzi ye-<&nbsp;Igama le-ISP&nbsp;>,<\/li><li>ukwenza lokugcwalisa izivumelwano kanye lokugcina ukuxhumana lomthengi\/osonkontileka,<\/li><li>ukwenza imisebenzi evela emithethweni ekhona jikelele,<\/li><li>ukuphendula imibuzo, ukulungisa izikhalazo lezinye izinto zosizo ngemva kokuthenga,<\/li><li>ukukhangisa okuqondileyo (ngaphandle kwe-newsletter),<\/li><li>ngezinjongo zokugcina amaphepha (ubufakazi), ukulungisa, ukulandela kumbe ukuzivikela ezicelweni zasemthethweni.<\/li><\/ul><h5>UKUGCINWA LOKUSUSWA KWEMINININGWANE<\/h5><p>Ngenxa yokuphepha kwemininingwane esiphathiswe yona, silungise izindlela zemisebenzi lezincomo zasendlini ezihloswe ukuvimbela ukudalulwa kwemininingwane kubantu abangavunyelwanga. Sisebenzisa izindlela zobuchwepheshe, ezokuvumelana, ezokuphatha lezomzimba ukuze sivikele imininingwane ekungeneni okungavunyelwanga. Sihlola ukwenziwa kwazo njalo sihlala sihlola ukuhambisana kwazo lemithetho efaneleyo.<\/p><p>Sigcina imininingwane yomuntu yomsebenzisi kuphela esikhathini esidingekayo ukuze kugcwaliseke izinhloso eyathathelwa zona.<\/p><h5>UKWABALANA LOKUDALULWA KWEMINININGWANE<\/h5><p>Asithengisi njalo asabelani ngemininingwane yomuntu yabasebenzisi kwabanye abantu ngaphandle kwemvume yabo. Imininingwane yabasebenzisi ayenziwa profiling.<\/p><p>Kuye ngohlobo lobukhulu bokusebenzisana phakathi komsebenzisi le-<&nbsp;Igama le-ISP&nbsp;>, mayelana lomsebenzi owenziwayo, singadlulisela imininingwane yomsebenzisi nxa imithetho ekhona ikufuna lokho, kumbe nxa kudingeka ngenxa yokuhambisana lemisebenzi yasemthethweni kumbe ukugcwalisa izivumelwano, ukuphendula izicelo, kumbe ngenhloso yokuvikela amalungelo, impahla kumbe ukuphepha.<\/p><h5>IMITHETHO ESISEBENZISA NGAYO IMINININGWANE YAKHO<\/h5><p>Sisebenza ngenkuthalo enkulu ukuze sivikele izifiso zabantu esisebenzisa imininingwane yabo, ikakhulu ukuqinisekisa ukuthi leyo mininingwane:<\/p><ul><li>isetshenziswa kuye ngokomthetho, ngokuthembeka njalo ngendlela ecacileyo kumuntu ophathelweyo,<\/li><li>igoqwa ngezinhloso eziqondileyo, ezisobala njalo ezisemthethweni njalo ayisetshenziswa ngenye indlela engahambelani lalezo zinhloso,<\/li><li>ifanele, ihambelana njalo ilinganiselwe kulokho okudingekayo ukuze kugcwaliseke izinhloso esetshenziselwa zona,<\/li><li>ilungile njalo nxa kudingeka iyavuselelwa. Siyathatha inyathelo ukuze imininingwane yomuntu engalunganga kuye ngezinhloso zokusetshenziswa kwayo isuswe kumbe ilungiswe masinyane,<\/li><li>igcinwa ngendlela evumela ukubonakala komuntu ophathelweyo esikhathini esingekho ngaphezulu kwaleso esidingekayo ukuze kugcwaliseke izinhloso zokusetshenziswa,<\/li><li>isetshenziswa ngendlela eqinisekisa ukuphepha okufaneleyo kwemininingwane yomuntu, kuhlanganise lokuvikelwa ekusetshenzisweni okungavunyelwanga kumbe okungekho emthethweni kanye lokulahleka kumbe ukulimala ngengozi.<\/p><\/ul><p>Imininingwane yakho siyisebenzisa kakhulu ngokusekelwe emvumeni, engahle ihoxiswe nganoma yisiphi isikhathi. Esinye isimo yileso lapho ukusetshenziswa kwemininingwane yakho kudingeka ukuze kugcwaliseke isivumelwano esiphakathi kwakho lathi kumbe ukuthatha izinyathelo ngesicelo sakho, ngaphambi kokwenza isivumelwano. Kwezinye izimo, ukusetshenziswa kudingeka ukuze kugcwaliseke umsebenzi wasemthethweni osicindezelayo thina njengomlawuli wemininingwane yomuntu. Leyo misebenzi ivela, ngokwesibonelo, emithethweni yezabasebenzi kumbe emthethweni wezezimali. Ukusetshenziswa kungahle kudingeke ngezinhloso ezivela ezifisweni zethu ezisemthethweni, isibonelo salokho kulandela izicelo emisebenzini yethu yebhizimusi.<\/p><h5>AMALUNGELO AKHO<\/h5><p>Ulamalungelo alandelayo:<\/p><ul><li>Ukungena kokuqukethwe kwemininingwane yakho yomuntu kanye lokuthola ulwazi phakathi kokunye mayelana lohlobo lwemininingwane, izinhloso zokusetshenziswa kwayo, kanye lokuthola ikhophi yayo,<\/li><li>Ukulungisa engalunganga lokungcwalisa eminye imininingwane elungileyo, kanye lokulityalwa, okutsho ukuthi ulelungelo lokuthi imininingwane esetshenziswa ngaphandle kwesisekelo langesekho emthethweni isuswe (isib. imininingwane ayisadingeki ngezinhloso eyathathelwa zona),<\/li><li>Ukuhoxisa imvume yokusetshenziswa kwemininingwane nganoma yisiphi isikhathi ngaphandle kokuthinta ukuba semthethweni kokusetshenziswa okwenziwe ngokusekelwe emvumeni ngaphambi kokuhoxiswa kwayo (nxa ukusetshenziswa kwenziwa kuye nge-art. 6 ust. 1 lit. a. kumbe art. 9 ust. 2 lit. a RODO).<\/li><\/ul><h5>COOKIES<\/h5><p><&nbsp;Igama le-ISP&nbsp;>, isebenzisa ama-cookie ukuze yenze lula ukusetshenziswa kwaso. Ngokusebenzisa lolu sizo, uyavuma ukuthi sisebenzise ama-cookie. Nxa ungawavimbeli la mafayili, utsho ukuthi uyavuma ukuthi asetshenziswe njalo agcinwe emshini wakho.<\/p><h5>IZINQUBOMGOMO ZOKUVIKELWA KWEMINININGWANE YOMUNTU<\/h5><p><&nbsp;Igama le-ISP&nbsp;> iyalungelo lokuntshintsha inyathelo lokuvikela imininingwane yomuntu, okungahle kuthintwe kuthuthuko lobuchwepheshe be-inthanethi, ukuntshintsha komthetho kwezokuvikela imininingwane yomuntu kanye lokuthuthuka kosizo lokungena olunikwa ngumlawuli. Sizakwazisa nganoma yiluphi ushintsho ngendlela ecacileyo lebonakalayo.<\/p><p>Noma yimiphi imibuzo mayelana lenqubomgomo yokuvikela imininingwane yomuntu sicela uyithumele kuleli kheli le-imeyili: adres@email.pl<\/p>"
 }

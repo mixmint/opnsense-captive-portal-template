@@ -1,14 +1,83 @@
 {
     "isp_info": {
-        "isp_name": "< Numele ISP > - furnizor de servicii Internet",
+        "isp_name": "< Nume ISP > - furnizor de servicii Internet",
         "isp_address": "Strada 10, oraș și cod poștal etc.",
         "isp_id": "Informații suplimentare."
     },
     "attr_isp_info": {
         "aria-label": "Informații despre furnizorul de internet"
     },
+    "menu": {
+        "title": "GuardianSuit Menu",
+        "item1": {
+            "title": "Interneto",
+            "icon": "I",
+            "href": "https://yourdomain.com/#",
+            "target": "_blank"
+        },
+        "item2": {
+            "title": "Televizija",
+            "icon": "T",
+            "href": "https://yourdomain.com/#",
+            "target": "_blank"
+        },
+        "item3": {
+            "title": "Telefon",
+            "icon": "F",
+            "href": "https://yourdomain.com/#",
+            "target": "_blank"
+        },
+        "item4": {
+            "title": "Servicii aditionale",
+            "icon": "S",
+            "href": "https://yourdomain.com/#",
+            "target": "_blank"
+        },
+        "item5": {
+            "title": "Kontakt",
+            "icon": "K",
+            "href": "https://yourdomain.com/#",
+            "target": "_blank"
+        },
+        "item6": {
+            "title": "Politica de confidențialitate",
+            "icon": "&#167;",
+            "href": {"type": "modal", "title": "privacy_title", "subtitle": "privacy_subtitle", "content": "privacy_content", "iconText": "&#167;"},
+            "target": "_self"
+        },
+        "item7": {
+            "title": "Fișiere Cookies",
+            "icon": "&#9865;",
+            "href": {"type": "modal", "title": "cookies_title", "subtitle": "cookies_subtitle", "content": "cookies_content", "iconText": "&#9865;"},
+            "target": "_self"
+        },
+        "item8": {
+            "title": "Documentație",
+            "icon": "&#9783;",
+            "href": "https://github.com/mixmint/opnsense-captive-portal-template/blob/main/README.md",
+            "target": "_blank"
+        },
+        "item9": {
+            "title": "Despre program",
+            "icon": "&#9873;",
+            "href": {"type": "modal", "title": "about_title", "subtitle": "about_subtitle", "content": "about_content", "iconText": "&#9873;"},
+            "target": "_self"
+        },
+        "group1": {
+            "title": "Oferta",
+            "items": ["item1", "item2", "item3", "item4", "item5"]
+        },
+        "group2": {
+            "title": "Informații",
+            "items": ["item6", "item7"]
+        },
+        "group3": {
+            "title": "Ajutor",
+            "items": ["item8", "item9"]
+        }
+    },
     "footer_isp_info": {},
-    "pagetitle": "Sistem de autentificare utilizatori | <Numele ISP>",
+    "pagetitle": "Sistem de autentificare utilizatori | <Nume ISP>",
     "username": "Nume utilizator (Login)",
     "inputUsername_placeholder": "-- la introducerea Login-ului ține cont de majuscule și minuscule --",
     "userpass": "Parolă",
@@ -77,7 +146,7 @@
     "a11y_helper_prev": "Înapoi",
     "a11y_helper_done": "Sfârșit",
     "a11y-keys_data-title": "Scurtături de tastatură",
-    "a11y-keys_data-content": "<span style=\"font-size: 14px\">Combinatii de taste <br \/><strong>⇧ Shift (stânga) <br \/>+&nbsp;⌥ Alt (stânga) <br \/>+&nbsp;literă<\/strong><br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;U<\/strong><br \/>focalizare pe câmpul Nume utilizator<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;P<\/strong><br \/>focalizare pe câmpul Parolă<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;A<\/strong><br \/>bifează/debifează caseta \"Accept termenii și condițiile\"<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;R<\/strong><br \/>deschide fereastra modală cu regulamentul<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;I<\/strong><br \/>loghează utilizatorul<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;O<\/strong><br \/>deconectează utilizatorul<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;L<\/strong><br \/>activează selectorul de limbă<\/span>",
+    "a11y-keys_data-content": "<span style=\"font-size: 14px\">Combinatii de taste <br \/><strong>⇧ Shift (stânga) <br \/>+&nbsp;⌥ Alt (stânga) <br \/>+&nbsp;literă<\/strong><br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;U<\/strong><br \/>focalizare pe câmpul Nume utilizator<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;P<\/strong><br \/>focalizare pe câmpul Parolă<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;A<\/strong><br \/>bifează/debifează caseta \"Accept termenii și condițiile\"<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;R<\/strong><br \/>deschide fereastra modală cu regulamentul<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;I<\/strong><br \/>loghează utilizatorul<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;O<\/strong><br \/>deconectează utilizatorul<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;L<\/strong><br \/>activează selectorul de limbă<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;M<\/strong><br \/>deschide meniul offcanvas (dacă este activat)<\/span>",
     "a11y-lang-keys_data-title": "Scurtături pentru limbile portalului",
     "a11y-lang-keys_data-content": "<span style=\"font-size: 14px\">Țineți apăsat <strong>⇧ Shift (stânga) și apăsați cele două litere ale codului limbii<\/strong> (ISO 639-1) simultan sau una după alta.<br \/><br \/>Exemple:<br \/><strong>⇧ Shift&nbsp;+&nbsp;P&nbsp;+&nbsp;L<\/strong> → schimbă limba în poloneză (pl)<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;E&nbsp;+&nbsp;N<\/strong> → schimbă limba în engleză (en)<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;D&nbsp;+&nbsp;E<\/strong> → schimbă limba în germană (de)<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;F&nbsp;+&nbsp;R<\/strong> → schimbă limba în franceză (fr)<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;E&nbsp;+&nbsp;S<\/strong> → schimbă limba în spaniolă (es)<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;I&nbsp;+&nbsp;T<\/strong> → schimbă limba în italiană (it)<br \/>...<\/span>",
     "polyglotLanguageSwitcher_data-title": "Selector de limbă",
@@ -97,5 +166,16 @@
     "signin_anon_data-title": "Autentificare",
     "signin_anon_data-content": "Clic pe butonul <strong>Autentificare<\/strong> pentru a iniția conexiunea la internet.",
     "logoff_data-title": "Deconectare",
-    "logoff_data-content": "Clic pe butonul <strong>Deconectare<\/strong> pentru a încheia conexiunea la internet."
+    "logoff_data-content": "Clic pe butonul <strong>Deconectare<\/strong> pentru a încheia conexiunea la internet.",
+    "menuTrigger_data-title": "Meniul offcanvas",
+    "menuTrigger_data-content": "Dând click pe <strong>&#9776; hamburger offcanvas<\/strong> sau apăsând simultan pe tastatură <strong>%s<\/strong> vei deschide meniul contextual.",
+    "about_title": "GuardianSuit",
+    "about_subtitle": "Șablon avansat Captive Portal pentru OPNsense",
+    "about_content": "<p><b>GuardianSuit<\/b> este un șablon Captive Portal modern, responsive și animat pentru OPNsense. Oferă utilizatorilor o experiență atractivă de autentificare, iar administratorilor control complet asupra aspectului și funcționalității paginii de întâmpinare.<\/p><p><b>Funcții cheie:<\/b><\/p><ul><li>Responsive și animații.<\/li><li>Multi-lingvistic.<\/li><li>Personalizare ușoară a aspectului și culorilor.<\/li><li>UX intuitiv și conformitate cu WCAG.<\/li><li>Integrare simplă cu OPNsense.<\/li><\/ul><p><b>Utilizare:<\/b><br \/>Ideal pentru rețele de firme, hoteluri, cafenele și alte locații care necesită o pagină de întâmpinare Captive Portal vizual atractivă.<\/p><p><b>Autor:<\/b> Mirosław Majka &lt;mix@proask.pl&gt; | &copy; 2025 GuardianSuit<\/p>",
+    "cookies_title": "Fișiere Cookie",
+    "cookies_subtitle": "Cum sunt folosite fișierele cookie.",
+    "cookies_content": "<h5>Ce este un fișier cookie?<\/h5><p>Fișierele cookie (numite și biscuiți) sunt mici fișiere text create automat de browserul de internet în timpul vizitării site-urilor web. Informațiile conținute într-un fișier cookie pot fi citite doar de site-ul de la care provine fișierul. Astfel, site-ul web nu poate accesa alte fișiere de pe calculatorul utilizatorului.<\/p><p>Datorită informațiilor din fișierele cookie, site-ul „știe” cum îl folosești și poate ajusta corespunzător conținutul afișat sau îți poate oferi ajutor.<\/p><h5>La ce folosim fișierele cookie?<\/h5><p>Pe site folosim fișiere cookie tehnice, care sunt necesare pentru funcționarea corectă a site-ului. Le utilizăm pentru a optimiza site-ul nostru în funcție de dispozitivele și browserele pe care le folosesc cel mai frecvent vizitatorii – astfel, calculatorul, tableta sau telefonul tău îl vor afișa corect și clar, reținând dacă ai acceptat afișarea anumitor conținuturi pe site.<\/p><p>Utilizatorul nu poate renunța la fișierele cookie tehnice.<\/p><h5>Cât timp folosim fișierele cookie?<\/h5><p>Folosim așa-numitele fișiere cookie persistente, care rămân pe dispozitivul tău pentru o perioadă determinată sau până la ștergerea lor manuală.<\/li><\/ul><h5>Ce date colectăm prin fișierele cookie?<\/h5><p>Prin tehnologia cookie colectăm doar date tehnice anonime despre tine, pentru a îmbunătăți experiența de utilizare a site-ului nostru.<\/p><p>Nu colectăm date care să permită identificarea ta. Singura informație despre utilizator, care însă fără legătură cu alte date nu permite identificarea, este adresa IP de pe care se conectează utilizatorul.<\/p>",
+    "privacy_title": "Politica de confidențialitate",
+    "privacy_subtitle": "Prelucrarea datelor cu caracter personal",
+    "privacy_content": "<p>Creăm acest document pentru a vă informa despre Politica noastră de Confidențialitate. Aici veți afla cine suntem, cum colectăm, utilizăm, dezvăluim și punem la dispoziție datele cu caracter personal în cadrul <b><&nbsp;Nume ISP&nbsp;><\/b>, cu sediul la [ Nume stradă 10, oraș și cod poștal ], în ce scop facem acest lucru și cum persoanele ale căror date le prelucrăm își pot exercita drepturile de confidențialitate.<\/p><p><&nbsp;Nume ISP&nbsp;> este responsabil pentru prelucrarea datelor cu caracter personal conform acestei Politici de Confidențialitate.<\/p><h5>DESPRE NOI<\/h5><p>Administratorul, adică entitatea care prelucrează datele cu caracter personal în legătură cu utilizarea de către dvs. a acestui serviciu, este <&nbsp;Nume ISP&nbsp;>, [ Nume stradă 10, oraș și cod poștal ]; NIP 1234567890, Regon 123456789,<\/p><h5>CONTACTAȚI-NE<\/h5><ul><li>prin e-mail: adresă@email.ro,<\/li><li>prin corespondență la adresa: Nume ISP, [ Nume stradă 10, oraș și cod poștal ]<\/li><\/ul><h5>PRINCIPIILE DIN ACEASTĂ POLITICĂ DE CONFIDENȚIALITATE<\/h5><p>Ne asigurăm că prelucrarea datelor dvs. se realizează conform Regulamentului (UE) 2016/679 al Parlamentului European și al Consiliului din 27 aprilie 2016 privind protecția persoanelor fizice în legătură cu prelucrarea datelor cu caracter personal și libera circulație a acestor date și abrogarea Directivei 95/46/CE („GDPR”), legislației naționale privind protecția datelor cu caracter personal și altor reglementări speciale. Această Politică de Confidențialitate a fost redactată conform acestora. Informăm clar cum colectăm datele personale și în ce scop sunt utilizate.<\/p><p>Menționăm că <&nbsp;Nume ISP&nbsp;> colectează date personale și informații de afaceri furnizate de clienții și colaboratorii săi (potențiali), precum și date obținute în timpul utilizării serviciului de acces la internet.<\/p><h5>COLECTAREA DATELOR CU CARACTER PERSONAL<\/h5><p>Colectăm date personale furnizate de utilizatori în următoarele situații:<\/p><ul><li>depunerea ofertelor, stabilirea condițiilor de colaborare și/sau furnizarea de informații despre servicii și alte activități ale <&nbsp;Nume ISP&nbsp;>,<\/li><li>încheierea și executarea contractelor și menținerea contactului cu clientul/partenerul,<\/li><li>îndeplinirea obligațiilor prevăzute de legislația în vigoare,<\/li><li>răspunsul la întrebări, soluționarea reclamațiilor și alte servicii post-vânzare,<\/li><li>marketing direct (altul decât newsletter),<\/li><li>în scopuri de arhivare (dovadă), stabilire, urmărire sau apărare împotriva revendicărilor.<\/li><\/ul><h5>STOCAREA ȘI ȘTERGEREA DATELOR<\/h5><p>Din grijă pentru securitatea datelor încredințate, am dezvoltat proceduri și recomandări interne pentru a preveni accesul neautorizat. Aplicăm măsuri tehnologice, contractuale, administrative și fizice pentru protecția datelor împotriva accesului neautorizat. Monitorizăm respectarea acestora și verificăm în mod constant conformitatea cu actele normative aplicabile.<\/p><p>Păstrăm datele personale ale utilizatorului doar pentru perioada necesară realizării scopurilor pentru care au fost colectate.<\/p><h5>PARTAJAREA ȘI DEZVĂLUIREA DATELOR<\/h5><p>Nu vindem și nu divulgăm datele personale ale utilizatorilor terților fără consimțământul acestora. Datele utilizatorilor nu sunt supuse profilării.<\/p><p>În funcție de tipul și amploarea colaborării dintre utilizator și <&nbsp;Nume ISP&nbsp;>, în contextul activității desfășurate, putem transmite datele utilizatorului dacă este cerut de legea aplicabilă sau dacă este necesar pentru respectarea actelor legale sau a obligațiilor contractuale, răspunsul la revendicări sau protecția drepturilor, bunurilor sau securității.<\/p><h5>PRINCIPIILE PRIVIND PRELUCRAREA DATELOR DVS.<\/h5><p>Depunem toate eforturile pentru protecția intereselor persoanelor ale căror date personale le prelucrăm, asigurându-ne că acestea sunt:<\/p><ul><li>prelucrate conform legii, corect și transparent pentru persoana vizată,<\/li><li>colectate în scopuri specifice, clare și legitime și să nu fie prelucrate ulterior în mod incompatibil cu aceste scopuri,<\/li><li>adecvate, pertinente și limitate la ceea ce este necesar pentru realizarea scopurilor pentru care sunt prelucrate,<\/li><li>corecte și actualizate dacă este necesar. Luăm măsuri pentru ca datele incorecte să fie corectate sau șterse prompt,<\/li><li>păstrate într-o formă care permite identificarea persoanei vizate pentru o perioadă nu mai lungă decât este necesar scopurilor de prelucrare,<\/li><li>prelucrate în mod sigur, protejate împotriva prelucrării neautorizate sau ilegale și împotriva pierderii sau distrugerii accidentale.<\/li><\/ul><p>De obicei, prelucrăm datele dvs. pe baza consimțământului, care poate fi retras în orice moment. În alte situații, prelucrarea este necesară pentru executarea unui contract încheiat între dvs. și noi sau pentru a lua măsuri la solicitarea dvs. înainte de încheierea contractului. În anumite cazuri, prelucrarea este necesară pentru respectarea obligațiilor legale aplicabile asupra noastră ca operator de date. Aceste obligații pot proveni, de exemplu, din legislația muncii sau legea contabilității. Prelucrarea poate fi de asemenea necesară pentru scopurile intereselor noastre legitime, cum ar fi urmărirea revendicărilor din activitatea noastră comercială.<\/p><h5>DREPTURILE DVS.<\/h5><p>Aveți următoarele drepturi:<\/p><ul><li>Acces la conținutul datelor dvs. personale și obținerea de informații, inclusiv despre categoriile de date, scopurile prelucrării și obținerea de copii,<\/li><li>Corectarea datelor incorecte și completarea datelor lipsă, precum și dreptul de a fi uitat, adică dreptul de a șterge datele prelucrate ilegal sau nejustificat,<\/li><li>Retragerea consimțământului pentru prelucrare în orice moment, fără a afecta legalitatea prelucrării efectuate anterior retragerii consimțământului (dacă prelucrarea se bazează pe art. 6 alin. 1 lit. a sau art. 9 alin. 2 lit. a GDPR).<\/li><\/ul><h5>COOKIES<\/h5><p><&nbsp;Nume ISP&nbsp;> utilizează fișiere cookie pentru a facilita folosirea serviciului. Prin utilizarea serviciului, sunteți de acord cu folosirea fișierelor cookie. Dacă nu blocați aceste fișiere, sunteți de acord cu utilizarea și stocarea lor pe dispozitiv.<\/p><h5>MODIFICĂRI ALE POLITICII DE PROTECȚIE A DATELOR<\/h5><p><&nbsp;Nume ISP&nbsp;> își rezervă dreptul de a modifica politica de protecție a datelor, ca urmare a evoluției tehnologiei internetului, eventualelor modificări legislative sau dezvoltării serviciului oferit de administrator. Despre orice modificări vom informa clar și vizibil.<\/p><p>Toate întrebările referitoare la politica de protecție a datelor trebuie adresate prin e-mail la: adresa@email.ro<\/p>"
 }

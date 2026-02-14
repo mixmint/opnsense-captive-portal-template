@@ -7,6 +7,75 @@
     "attr_isp_info": {
         "aria-label": "Information about your internet provider"
     },
+    "menu": {
+        "title": "GuardianSuit Menu",
+        "item1": {
+            "title": "Internet",
+            "icon": "I",
+            "href": "https://yourdomain.com/#",
+            "target": "_blank"
+        },
+        "item2": {
+            "title": "Television",
+            "icon": "T",
+            "href": "https://yourdomain.com/#",
+            "target": "_blank"
+        },
+        "item3": {
+            "title": "Phone",
+            "icon": "P",
+            "href": "https://yourdomain.com/#",
+            "target": "_blank"
+        },
+        "item4": {
+            "title": "Additional Services",
+            "icon": "A",
+            "href": "https://yourdomain.com/#",
+            "target": "_blank"
+        },
+        "item5": {
+            "title": "Contact",
+            "icon": "C",
+            "href": "https://yourdomain.com/#",
+            "target": "_blank"
+        },
+        "item6": {
+            "title": "Privacy Policy",
+            "icon": "&#167;",
+            "href": {"type": "modal", "title": "privacy_title", "subtitle": "privacy_subtitle", "content": "privacy_content", "iconText": "&#167;"},
+            "target": "_self"
+        },
+        "item7": {
+            "title": "Cookies",
+            "icon": "&#9865;",
+            "href": {"type": "modal", "title": "cookies_title", "subtitle": "cookies_subtitle", "content": "cookies_content", "iconText": "&#9865;"},
+            "target": "_self"
+        },
+        "item8": {
+            "title": "Documentation",
+            "icon": "&#9783;",
+            "href": "https://github.com/mixmint/opnsense-captive-portal-template/blob/main/README.md",
+            "target": "_blank"
+        },
+        "item9": {
+            "title": "About",
+            "icon": "&#9873;",
+            "href": {"type": "modal", "title": "about_title", "subtitle": "about_subtitle", "content": "about_content", "iconText": "&#9873;"},
+            "target": "_self"
+        },
+        "group1": {
+            "title": "Offer",
+            "items": ["item1", "item2", "item3", "item4", "item5"]
+        },
+        "group2": {
+            "title": "Information",
+            "items": ["item6", "item7"]
+        },
+        "group3": {
+            "title": "Help",
+            "items": ["item8", "item9"]
+        }
+    },
     "footer_isp_info": {},
     "pagetitle": "User login system | < ISP Name >",
     "username": "Username (Login)",
@@ -77,7 +146,7 @@
     "a11y_helper_prev": "Back",
     "a11y_helper_done": "Done",
     "a11y-keys_data-title": "Keyboard Shortcuts",
-    "a11y-keys_data-content": "<span style=\"font-size: 14px\">Key combination <br \/><strong>⇧ Shift (left) <br \/>+&nbsp;⌥ Alt (left) <br \/>+&nbsp;letter<\/strong><br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;U<\/strong><br \/>focus on the Username field<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;P<\/strong><br \/>focus on the Password field<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;A<\/strong><br \/>check/uncheck 'I accept the terms'<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;R<\/strong><br \/>opens the terms modal<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;I<\/strong><br \/>logs in the user<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;O<\/strong><br \/>logs out the user<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;L<\/strong><br \/>activates the language switcher<\/span>",
+    "a11y-keys_data-content": "<span style=\"font-size: 14px\">Key combination <br \/><strong>⇧ Shift (left) <br \/>+&nbsp;⌥ Alt (left) <br \/>+&nbsp;letter<\/strong><br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;U<\/strong><br \/>focus on the Username field<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;P<\/strong><br \/>focus on the Password field<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;A<\/strong><br \/>check/uncheck 'I accept the terms'<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;R<\/strong><br \/>opens the terms modal<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;I<\/strong><br \/>logs in the user<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;O<\/strong><br \/>logs out the user<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;L<\/strong><br \/>activates the language switcher<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;⌥ Alt&nbsp;+&nbsp;M<\/strong><br \/>opens the offcanvas menu (if enabled)<\/span>",
     "a11y-lang-keys_data-title": "Language Shortcut Keys",
     "a11y-lang-keys_data-content": "<span style=\"font-size: 14px\">Hold <strong>⇧ Shift (left) and press the two-letter language code<\/strong> (ISO 639-1) simultaneously or one after the other.<br \/><br \/>Examples:<br \/><strong>⇧ Shift&nbsp;+&nbsp;P&nbsp;+&nbsp;L<\/strong> → switches to Polish (pl)<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;E&nbsp;+&nbsp;N<\/strong> → switches to English (en)<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;D&nbsp;+&nbsp;E<\/strong> → switches to German (de)<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;F&nbsp;+&nbsp;R<\/strong> → switches to French (fr)<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;E&nbsp;+&nbsp;S<\/strong> → switches to Spanish (es)<br \/><br \/><strong>⇧ Shift&nbsp;+&nbsp;I&nbsp;+&nbsp;T<\/strong> → switches to Italian (it)<br \/>...<\/span>",
     "polyglotLanguageSwitcher_data-title": "Language Selector",
@@ -97,5 +166,16 @@
     "signin_anon_data-title": "Login",
     "signin_anon_data-content": "Clicking the <strong>Login<\/strong> button will initiate an Internet connection.",
     "logoff_data-title": "Logout",
-    "logoff_data-content": "Clicking the <strong>Logout<\/strong> button will terminate the Internet connection."
+    "logoff_data-content": "Clicking the <strong>Logout<\/strong> button will terminate the Internet connection.",
+    "menuTrigger_data-title": "Offcanvas Menu",
+    "menuTrigger_data-content": "Clicking on <strong>&#9776; offcanvas hamburger<\/strong> or pressing simultaneously on the keyboard <strong>%s<\/strong> will open the contextual menu.",
+    "about_title": "GuardianSuit",
+    "about_subtitle": "Advanced Captive Portal Template for OPNsense",
+    "about_content": "<p><b>GuardianSuit<\/b> is a modern, responsive, and animated Captive Portal template for OPNsense. It provides users with an engaging login experience and administrators with full control over the look and functionality of the welcome page.<\/p><p><b>Key features:<\/b><\/p><ul><li>Responsiveness and animations.<\/li><li>Multilingual support.<\/li><li>Easy customization of appearance and colors.<\/li><li>Intuitive UX and WCAG compliance.<\/li><li>Simple integration with OPNsense.<\/li><\/ul><p><b>Usage:<\/b><br \/>Ideal for corporate networks, hotels, cafes, and other places requiring an attractive Captive Portal welcome page.<\/p><p><b>Author:<\/b> Mirosław Majka &lt;mix@proask.pl&gt; | &copy; 2025 GuardianSuit<\/p>",
+    "cookies_title": "Cookies",
+    "cookies_subtitle": "How cookies are used.",
+    "cookies_content": "<h5>What is a cookie?<\/h5><p>Cookies are small text files created automatically by your web browser when visiting websites. Information contained in a cookie can only be read by the website that created it. This means that other files on your computer cannot be accessed by the website.<\/p><p>Using information from cookies, the website \"knows\" how you interact with it and can adjust the content displayed to you or offer assistance accordingly.<\/p><h5>What do we use cookies for?<\/h5><p>On this website, we use technical cookies that are necessary for the proper functioning of the site. We use them to optimize our website for devices and browsers most frequently used by visitors – this ensures that your computer, tablet, or phone displays the site correctly and clearly, remembering whether you consented to certain content being displayed on the website.<\/p><p>Users cannot opt out of technical cookies.<\/p><h5>How long do we use cookies?<\/h5><p>We use so-called persistent cookies that remain on your device for a specified time or until manually deleted.<\/p><h5>What data do we collect via cookies?<\/h5><p>Through cookie technology, we collect only anonymous technical data about you, used to improve your experience on our website.<\/p><p>We do not collect any data that would allow us to identify you. The only information about a user that, on its own, does not allow identification is the IP address from which the user connects.<\/p>",
+    "privacy_title": "Privacy Policy",
+    "privacy_subtitle": "Personal Data Processing",
+    "privacy_content": "<p>We have created this document to inform you about our Privacy Policy. Here you will learn who we are, how we collect, use, disclose, and share personal data within <b><&nbsp;ISP Name&nbsp;><\/b>, headquartered at [ Street Name 10, City, Postal Code ], why we do it, and how the individuals whose data we process can exercise their privacy rights.<\/p><p><&nbsp;ISP Name&nbsp;> is responsible for processing personal data in accordance with this Privacy Policy.<\/p><h5>ABOUT US<\/h5><p>The administrator, i.e., the entity processing personal data in connection with your use of this service, is <&nbsp;ISP Name&nbsp;>, [ Street Name 10, City, Postal Code ]; Tax ID 1234567890, Business ID 123456789,<\/p><h5>CONTACT US<\/h5><ul><li>electronically via e-mail: adres@email.pl,<\/li><li>in writing at: ISP Name, [ Street Name 10, City, Postal Code ]<\/li><\/ul><h5>PRINCIPLES OF THIS PRIVACY POLICY<\/h5><p>We ensure that the processing of your data complies with Regulation (EU) 2016/679 of the European Parliament and of the Council of 27 April 2016 on the protection of natural persons with regard to the processing of personal data and on the free movement of such data (GDPR), the Act on the Protection of Personal Data, and other specific regulations. This Privacy Policy has been prepared accordingly. We clearly inform you how we collect personal data and for what purposes it is used.<\/p><p>Please note that <&nbsp;ISP Name&nbsp;> collects personal and company data provided by its (potential) clients and contractors, as well as data obtained while using the internet access service.<\/p><h5>COLLECTION OF PERSONAL DATA<\/h5><p>We collect personal data provided by users in the following cases:<\/p><ul><li>making offers, establishing terms of cooperation, and\/or providing information about services and other activities of <&nbsp;ISP Name&nbsp;>,<\/li><li>concluding and executing contracts and maintaining contact with clients\/contractors,<\/li><li>fulfilling obligations arising from applicable law,<\/li><li>responding to questions, handling complaints, and other after-sales support,<\/li><li>direct marketing (other than newsletters),<\/li><li>for archival purposes (evidence), determining, pursuing, or defending claims.<\/li><\/ul><h5>DATA STORAGE AND DELETION<\/h5><p>To ensure the security of the data entrusted to us, we have developed internal procedures and recommendations to prevent data from being disclosed to unauthorized persons. We implement technological, contractual, administrative, and physical measures to protect data from unauthorized access. We monitor compliance and regularly verify conformity with applicable legal acts.<\/p><p>We store users' personal data only for the period necessary to achieve the purposes for which it was collected.<\/p><h5>DATA SHARING AND DISCLOSURE<\/h5><p>We do not sell or share personal data with third parties without your consent. Users' data are not subject to profiling.<\/p><p>Depending on the type and scope of cooperation between the user and <&nbsp;ISP Name&nbsp;>, in connection with our operations, we may disclose user data if required by law or necessary for legal compliance, fulfillment of contractual obligations, response to claims, or for the protection of rights, property, or security.<\/p><h5>PRINCIPLES OF DATA PROCESSING<\/h5><p>We take utmost care to protect the interests of individuals whose personal data we process, in particular to ensure that data are:<\/p><ul><li>processed according to the law, fairly, and transparently for the data subject,<\/li><li>collected for specific, explicit, and legitimate purposes and not further processed in a manner incompatible with those purposes,<\/li><li>adequate, relevant, and limited to what is necessary for the purposes for which they are processed,<\/li><li>accurate and, where necessary, kept up to date. We take action to promptly delete or rectify personal data that are inaccurate in relation to the purposes of processing,<\/li><li>kept in a form allowing identification of the data subject for no longer than necessary for the purposes of processing,<\/li><li>processed in a manner ensuring appropriate security of personal data, including protection against unauthorized or unlawful processing and accidental loss or destruction.<\/li><\/ul><p>Your personal data are usually processed based on consent, which can be withdrawn at any time. Another case is when processing is necessary to perform a contract concluded between you and us or to take actions at your request before entering into a contract. In some situations, processing is necessary to fulfill a legal obligation incumbent upon us as a data controller. Such obligations arise, for example, from labor law or accounting law. Processing may also be necessary for purposes arising from our legitimate interests, such as pursuing claims related to our business activities.<\/p><h5>YOUR RIGHTS<\/h5><p>You have the following rights:<\/p><ul><li>Access to your personal data and information, including data categories, purposes of processing, and obtaining copies of your data,<\/li><li>Rectification of inaccurate data and completion of missing data, as well as the right to be forgotten, meaning you can request deletion of unlawfully or unjustifiably processed data (e.g., data no longer necessary for the purposes collected),<\/li><li>Withdrawal of consent for data processing at any time without affecting the lawfulness of processing based on consent before its withdrawal (if processing is based on Art. 6(1)(a) or Art. 9(2)(a) GDPR).<\/li><\/ul><h5>COOKIES<\/h5><p><&nbsp;ISP Name&nbsp;> uses cookies to facilitate service usage. By using the service, you consent to our use of cookies. If you do not block them, you agree to their use and storage on your device.<\/p><h5>CHANGES TO THE PRIVACY POLICY<\/h5><p><&nbsp;ISP Name&nbsp;> reserves the right to modify the privacy policy due to developments in internet technology, legal changes regarding data protection, or the development of the access service provided by the administrator. We will inform you of any changes in a clear and readable manner.<\/p><p>For any questions regarding our privacy policy, please contact us at: adres@email.pl<\/p>"
 }
