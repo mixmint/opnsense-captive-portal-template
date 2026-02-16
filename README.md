@@ -346,7 +346,8 @@ This ensures visual consistency and accessibility without manual styling
   - ⇧ Shift (left) + ⌥ Alt (left) + R - opens a modal window with the terms and conditions  
   - ⇧ Shift (left) + ⌥ Alt (left) + I - click the active login button  
   - ⇧ Shift (left) + ⌥ Alt (left) + O - log out  
-  - ⇧ Shift (left) + ⌥ Alt (left) + L - click the language switcher trigger  
+  - ⇧ Shift (left) + ⌥ Alt (left) + L - click the language switcher trigger
+  - ⇧ Shift (left) + ⌥ Alt (left) + M - click the Offcanvas menu trigger  
 
   **Language shortcuts (⇧ Shift + two letters)**  
   Hold ⇧ Shift and press two letters of the language code (ISO 639-1) at once or one after the other
